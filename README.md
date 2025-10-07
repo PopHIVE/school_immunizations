@@ -26,6 +26,7 @@ The goal for this project is to format county-level data on school vaccinations 
     -   "full_exempt"
 
 4.  save the formatted dataset as a compressed csv file in the /standard subfolder
+5.  Update the measure_info.json file for the project to incclude descriptions of all variables. I recommend editing the jsons in Microsoft Visual Studio to ensure proper formatting
 
 Other notes:
 
