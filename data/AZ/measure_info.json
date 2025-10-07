@@ -1,17 +1,74 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
+  "pct_AZ": {
+    "full_name": "Percent of children immunized at Kindergarten entry",
+    "measure": "percent",
+    "short_name": "Percent immunized",
+    "long_name": "Percent of children immunized",
+    "category": "childhood_immunization",
+    "short_description": "",
+    "long_description": "Percent of children fully vaccinated (or exempt) with the indicated vaccine",
+    "statement": "",
+    "measure_type": "",
+    "unit": "",
+    "time_resolution": "annual",
+    "sources": [
+      {
+        "id": "schoolvax_az"
+    }
+    ],
+    "citations": [],
+    "layer": []
+  },
+    "N_AZ": {
+    "full_name": "Number of children counted at Kindergarten entry",
+    "measure": "Number",
+    "short_name": "Number eligible",
+    "long_name": "Number eligibile for immunization (denominator)",
+    "category": "childhood_immunization",
+    "short_description": "",
+    "long_description": "Number of children in Kindergarten counted as being eligible for immunization",
+    "statement": "",
+    "measure_type": "",
+    "unit": "",
+    "time_resolution": "annual",
+    "sources": [
+      {
+        "id": "schoolvax_az"
+    }
+    ],
+    "citations": [],
+    "layer": []
+  },
+      "vax": {
+    "full_name": "Vaccine name",
+    "measure": "category",
+    "short_name": "Vaccine name",
+    "long_name": "Vaccine name (or exemption category)",
+    "category": "childhood_immunization",
     "short_description": "",
     "long_description": "",
     "statement": "",
     "measure_type": "",
     "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+    "time_resolution": "annual",
+    "sources": [
+      {
+        "id": "schoolvax_az"
+    }
+    ],
+    "citations": [],
+    "layer": []
+  },
+  "_sources": {
+    "schoolvax_az": {
+      "name": "School vaccination data for Arizona",
+      "location": "Arizona Department of Health Services",
+      "url": "https://apps.azdhs.gov/",
+      "organization": "Arizona Department of Health Services",
+      "organization_url": "https://www.azdhs.gov/",
+      "location_url": "https://apps.azdhs.gov/IDRREportStats",
+
+      "description": "This dataset provides the percentage of children immunized (or exempt) with the indicated vaccine. The data are collected from schools and presented at the county level. The data are obtained from a public dashboard provided by the Arizona Department of Health Services"
+    }
   }
 }

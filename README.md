@@ -27,6 +27,8 @@ The goal for this project is to format county-level data on school vaccinations 
 
 4.  save the formatted dataset as a compressed csv file in the /standard subfolder
 5.  Update the measure_info.json file for the project to incclude descriptions of all variables. I recommend editing the jsons in Microsoft Visual Studio to ensure proper formatting
+6.  run dcf::dcf_process("XX") to process individual datasets, substituting the state abbreviation for XX. This should be done withint the state-specific project
+7.  
 
 Other notes:
 
