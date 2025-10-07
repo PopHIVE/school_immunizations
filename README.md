@@ -28,7 +28,9 @@ The goal for this project is to format county-level data on school vaccinations 
 4.  save the formatted dataset as a compressed csv file in the /standard subfolder
 5.  Update the measure_info.json file for the project to incclude descriptions of all variables. I recommend editing the jsons in Microsoft Visual Studio to ensure proper formatting
 6.  run dcf::dcf_process("XX") to process individual datasets, substituting the state abbreviation for XX. This should be done withint the state-specific project
-7.  
+7.  run dcf::dcf_build() form the root directory (set working directory to school_immunizations. This builds the whole project
+8.  You can see the datasets and their relationships here: <https://github.com/PopHIVE/school_immunizations/blob/main/status.md>
+9.  See all processed files at: <https://dissc-yale.github.io/dcf/report/?repo=PopHIVE/school_immunizations>
 
 Other notes:
 
