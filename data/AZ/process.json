@@ -1,0 +1,35 @@
+{
+  "name": "AZ",
+  "type": "source",
+  "scripts": [
+    {
+      "path": "ingest.R",
+      "manual": false,
+      "frequency": 0,
+      "last_run": "",
+      "run_time": "",
+      "last_status": {
+        "log": "",
+        "success": true
+      }
+    }
+  ],
+  "checked": "",
+  "check_results": [],
+  "raw_state": {
+    "raw/az_immunization_kg_2010_2011.csv": "f3450fbb76262bf4875a46d52fb98289",
+    "raw/az_immunization_kg_2011_2012.csv": "28775c4aa4884248a83d9f6a3e5d14e2",
+    "raw/az_immunization_kg_2012_2013.csv": "484a650edf1c3d240ab375e0c28d67bf",
+    "raw/az_immunization_kg_2013_2014.csv": "eb134b134cd1b8a70625f2ee8d158382",
+    "raw/az_immunization_kg_2014_2015.csv": "9d1390f39479b693c70a4a30a1fef6d3",
+    "raw/az_immunization_kg_2015_2016.csv": "6f0e5582296b54c5ca2193b1a7023a75",
+    "raw/az_immunization_kg_2016_2017.csv": "b57dd202cdf410e8e35a8f87a89c4452",
+    "raw/az_immunization_kg_2017_2018.csv": "bcfa172e52e98c9ceb79efcd8db407ff",
+    "raw/az_immunization_kg_2018_2019.csv": "aed5303255f4385cc75c698037742477",
+    "raw/az_immunization_kg_2019_2020.csv": "748456d48e2367f3f9512a1c9438f90e",
+    "raw/az_immunization_kg_2020_2021.csv": "9dbb6a8ba6aae7b68454581b2831f119",
+    "raw/az_immunization_kg_2021_2022.csv": "d6d23172ba7585294bfa508f1f30602e",
+    "raw/az_immunization_kg_2022_2023.csv": "d05d2028c83e7c1c2c4353ea3bd7fbb2",
+    "raw/az_immunization_kg_2023_2024.csv": "985239463fa9e3877cc6d158b70c8f3a"
+  }
+}
