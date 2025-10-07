@@ -48,7 +48,8 @@ if (!identical(process$raw_state, raw_state)) {
       geography = if_else(county == 'Total', '04', geography),
       vax = if_else(vax == 'exempt_from_every_req_d_vaccine', 'full_exempt', vax),
       vax = gsub('_mmr', 'mmr', vax),
-      time = paste0(year, '-09-01')
+      time = paste0(year, '-09-01'),
+      grade = 'Kindergarten'
     ) %>%
     rename(geography_name = county) %>%
     rename(!!paste0("N_", select.state) := N,!!paste0("pct_", select.state) := value)  %>%
@@ -56,6 +57,7 @@ if (!identical(process$raw_state, raw_state)) {
                   geography,
                   geography_name,
                   vax,
+                  grade,
                   starts_with('N_'),
                   starts_with('pct_'))
   

@@ -1,6 +1,6 @@
 {
   "pct_AZ": {
-    "full_name": "Percent of children immunized at Kindergarten entry",
+    "full_name": "Percent of children immunized at the start of the grade",
     "measure": "percent",
     "short_name": "Percent immunized",
     "long_name": "Percent of children immunized",
@@ -20,13 +20,33 @@
     "layer": []
   },
     "N_AZ": {
-    "full_name": "Number of children counted at Kindergarten entry",
+    "full_name": "Number of children counted in the grade",
     "measure": "Number",
     "short_name": "Number eligible",
     "long_name": "Number eligibile for immunization (denominator)",
     "category": "childhood_immunization",
     "short_description": "",
-    "long_description": "Number of children in Kindergarten counted as being eligible for immunization",
+    "long_description": "Number of children in the grade counted as being eligible for immunization",
+    "statement": "",
+    "measure_type": "",
+    "unit": "",
+    "time_resolution": "annual",
+    "sources": [
+      {
+        "id": "schoolvax_az"
+    }
+    ],
+    "citations": [],
+    "layer": []
+  },
+     "grade": {
+    "full_name": "grade in school",
+    "measure": "category",
+    "short_name": "grade",
+    "long_name": "Grade in school",
+    "category": "childhood_immunization",
+    "short_description": "",
+    "long_description": "Grade in School",
     "statement": "",
     "measure_type": "",
     "unit": "",
