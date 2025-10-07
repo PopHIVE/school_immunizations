@@ -12,6 +12,9 @@ process <- dcf::dcf_process_record()
 
 # process raw if state has changed
 if (!identical(process$raw_state, raw_state)) {
+  
+  #In this example, each year is saved as a separate file
+  #The lapply reads in each of the years and saves in a list
   data.ls <- lapply(list.files('./raw', full.names = T), function(X) {
     #  print(X)
     read_csv(X) %>%
@@ -20,10 +23,12 @@ if (!identical(process$raw_state, raw_state)) {
       mutate(value = as.numeric(value))
   })
   
+  #Reads in a dataframe that has all FIPS codes for the US
   fips_df <- vroom::vroom('../../resources/all_fips.csv.gz') %>%
     filter(state == 'AZ') %>%
     mutate(geography_name = gsub(' County', '', geography_name))
   
+  #Combine all years together using bind_rows(), then format
   data <- data.ls %>%
     bind_rows() %>%
     rename(
@@ -54,6 +59,7 @@ if (!identical(process$raw_state, raw_state)) {
                   starts_with('N_'),
                   starts_with('pct_'))
   
+  #Save standard file as a compressed csv
   vroom::vroom_write(data, './standard/data.csv.gz')
   
   # record processed raw state
