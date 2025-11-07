@@ -2,6 +2,11 @@
 
 The goal for this project is to format county-level data on school vaccinations obtained from the states. As a worked example see the Arizona (AZ) project.
 
+## Getting started
+instal the dcf packages
+    install.packages("remotes")
+remotes::install_github("dissc-yale/dcf")
+
 ## Working on the project
 
 1.  go to ./data/ and find the state you are working on. Open the folder and click the .rproj file to open the project
