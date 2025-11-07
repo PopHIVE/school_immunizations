@@ -30,6 +30,35 @@ remotes::install_github("dissc-yale/dcf")
     -   "medical_exempt"
     -   "full_exempt"
 
+The ingest script shoudl have this structure:
+
+```r
+library(dcf)
+library(tidyverse)
+
+# check raw state
+raw_state <- as.list(tools::md5sum(list.files(
+  "raw", "csv", recursive = TRUE, full.names = TRUE
+)))
+process <- dcf::dcf_process_record()
+
+# process raw if state has changed
+if (!identical(process$raw_state, raw_state)) {
+
+ 
+ ## CODE TO CLEAN RAW DATA 
+ ##xxxx
+  
+  
+  #Save standard file as a compressed csv
+  vroom::vroom_write(data, './standard/data.csv.gz')
+  
+  # record processed raw state
+  process$raw_state <- raw_state
+  dcf::dcf_process_record(updated = process)
+}
+```
+
 4.  save the formatted dataset as a compressed csv file in the /standard subfolder
 5.  Update the measure_info.json file for the project to incclude descriptions of all variables. I recommend editing the jsons in Microsoft Visual Studio to ensure proper formatting
 6.  run dcf::dcf_process("XX") to process individual datasets, substituting the state abbreviation for XX. This should be done withint the state-specific project
