@@ -48,18 +48,22 @@ if (!identical(process$raw_state, raw_state)) {
       geography = if_else(county == 'Total', '04', geography),
       vax = if_else(vax == 'exempt_from_every_req_d_vaccine', 'full_exempt', vax),
       vax = gsub('_mmr', 'mmr', vax),
-      time = paste0(year, '-09-01'),
+      yearpart = substr(year,1,4),
+      time = paste0(yearpart, '-09-01'),
       grade = 'Kindergarten'
     ) %>%
     rename(geography_name = county) %>%
-    rename(!!paste0("N_", select.state) := N,!!paste0("pct_", select.state) := value)  %>%
+    #rename(!!paste0("N_", ) := N,!!paste0("pct_", select.state) := value)  %>%
+    rename(pct=value) %>%
     dplyr::select(time,
                   geography,
                   geography_name,
                   vax,
                   grade,
-                  starts_with('N_'),
-                  starts_with('pct_'))
+                  starts_with('N'),
+                  starts_with('pct')) %>%
+    pivot_wider(id_cols=c(time, geography, geography_name, grade), names_from =vax, values_from=c(N, pct)) %>%
+    mutate(time = as.Date(time))
   
   #Save standard file as a compressed csv
   vroom::vroom_write(data, './standard/data.csv.gz')
