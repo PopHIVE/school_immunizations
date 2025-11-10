@@ -10,9 +10,21 @@ jobs:
       contents: write
     steps:
       - run: sudo apt-get update
-      - run: sudo apt-get install -y libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev \
-          libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libudunits2-dev libproj-dev \
-          libgdal-dev libgeos-dev cmake libnode-dev
+      - run: |
+          sudo apt-get install -y \
+            libcurl4-openssl-dev \
+            libharfbuzz-dev \
+            libfribidi-dev \
+            libfreetype6-dev \
+            libpng-dev \
+            libtiff5-dev \
+            libjpeg-dev \
+            libudunits2-dev \
+            libproj-dev \
+            libgdal-dev \
+            libgeos-dev \
+            cmake \
+            libnode-dev
 
       - uses: actions/checkout@v4
         with:
@@ -21,7 +33,7 @@ jobs:
 
       - uses: r-lib/actions/setup-r@v2
         with:
-          use-public-rspm: true   # ✅ Enables binary installs via Posit Package Manager
+          use-public-rspm: true
 
       - name: Pre-install digest binary to avoid compile error
         run: Rscript -e 'install.packages("digest", repos = "https://packagemanager.posit.co/cran/latest", type = "binary")'
