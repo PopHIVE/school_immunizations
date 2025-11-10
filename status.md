@@ -14,7 +14,7 @@ flowchart LR
     end
     subgraph AZ["`AZ`"]
         direction LR
-        n1["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name</code></li><li><code>missing_info: N_dtap</code></li><li><code>missing_info: N_polio</code></li><li><code>missing_info: N_mmr</code></li><li><code>missing_info: N_hep_b</code></li><li><code>missing_info: N_varicella</code></li><li><code>missing_info: N_personal_exempt</code></li><li><code>missing_info: N_medical_exempt</code></li><li><code>missing_info: N_full_exempt</code></li><li><code>missing_info: pct_dtap</code></li><li><code>missing_info: pct_polio</code></li><li><code>missing_info: pct_mmr</code></li><li><code>missing_info: pct_hep_b</code></li><li><code>missing_info: pct_varicella</code></li><li><code>missing_info: pct_personal_exempt</code></li><li><code>missing_info: pct_medical_exempt</code></li><li><code>missing_info: pct_full_exempt</code></li></ul>`"]:::warn
+        n1["`data.csv.gz`"]:::pass
     end
     subgraph CA["`CA`"]
         direction LR
