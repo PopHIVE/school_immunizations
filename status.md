@@ -154,4 +154,8 @@ flowchart LR
     subgraph WY["`WY`"]
         direction LR
     end
+    subgraph bundle_all_states["`bundle_all_states`"]
+        direction LR
+    end
+    n1 --> bundle_all_states
 ```
