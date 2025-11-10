@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: write
     env:
-      RSPM: https://packagemanager.posit.co/cran/latest   # ✅ Use Posit Package Manager globally
+      RSPM: https://packagemanager.posit.co/cran/latest
     steps:
       - run: sudo apt-get update
       - run: |
@@ -26,7 +26,8 @@ jobs:
             libgdal-dev \
             libgeos-dev \
             cmake \
-            libnode-dev
+            libnode-dev \
+            libgit2-dev    # ✅ Needed for remotes::install_github()
 
       - uses: actions/checkout@v4
         with:
@@ -37,8 +38,11 @@ jobs:
         with:
           use-public-rspm: true
 
-      - name: Pre-install digest to avoid source compile issue
-        run: Rscript -e 'install.packages("digest", repos = "https://packagemanager.posit.co/cran/latest")'
+      # ✅ Install fixed digest directly from GitHub before renv runs
+      - name: Install fixed digest from GitHub
+        run: |
+          Rscript -e 'install.packages("remotes", repos = Sys.getenv("RSPM"))'
+          Rscript -e 'remotes::install_github("eddelbuettel/digest", upgrade = "never")'
 
       - uses: r-lib/actions/setup-renv@v2
 
