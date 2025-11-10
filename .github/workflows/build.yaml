@@ -10,15 +10,27 @@ jobs:
       contents: write
     steps:
       - run: sudo apt-get update
-      - run: sudo apt-get install -y libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libudunits2-dev libproj-dev libgdal-dev libgeos-dev cmake libnode-dev
+      - run: sudo apt-get install -y libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev \
+          libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libudunits2-dev libproj-dev \
+          libgdal-dev libgeos-dev cmake libnode-dev
+
       - uses: actions/checkout@v4
         with:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
           fetch-depth: 0
+
       - uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true   # ✅ Enables binary installs via Posit Package Manager
+
+      - name: Pre-install digest binary to avoid compile error
+        run: Rscript -e 'install.packages("digest", repos = "https://packagemanager.posit.co/cran/latest", type = "binary")'
+
       - uses: r-lib/actions/setup-renv@v2
+
       - run: Rscript -e "renv::install('dissc-yale/dcf')"
       - run: Rscript scripts/build.R
+
       - id: diff
         run: |
           if git diff --exit-code; then
@@ -26,6 +38,7 @@ jobs:
           else
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
+
       - if: ${{ steps.diff.outputs.changed == 'true' }}
         run: |
           git config user.email "actions@github.com"
