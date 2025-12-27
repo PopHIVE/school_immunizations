@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2025-10-06 23:18:32",
+  "checked": "2025-11-09 22:41:50",
   "check_results": {
     "./data/AZ/raw/az_immunization_kg_2010_2011.csv": {
       "data": "not_compressed"
@@ -58,9 +58,7 @@
     "./data/AZ/raw/az_immunization_kg_2023_2024.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/standard/data.csv.gz": {
-      "measures": "missing_info: geography_name"
-    }
+    "./data/AZ/standard/data.csv.gz": []
   },
   "raw_state": {
     "raw/az_immunization_kg_2010_2011.csv": "f3450fbb76262bf4875a46d52fb98289",
@@ -79,7 +77,7 @@
     "raw/az_immunization_kg_2023_2024.csv": "985239463fa9e3877cc6d158b70c8f3a"
   },
   "standard_state": {
-    "./data/AZ/measure_info.json": "bae3caa919fc83a687814d0a554aac67",
-    "./data/AZ/standard/data.csv.gz": "7763082f152139b60bd0af52707af838"
+    "./data/AZ/measure_info.json": "4337bc4340a1ec685143dc81ec2e271b",
+    "./data/AZ/standard/data.csv.gz": "3dfc5f49ddc205032d5d2609e01a9e56"
   }
 }

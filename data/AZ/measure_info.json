@@ -1,83 +1,77 @@
 {
-  "pct_AZ": {
-    "full_name": "Percent of children immunized at the start of the grade",
-    "measure": "percent",
-    "short_name": "Percent immunized",
-    "long_name": "Percent of children immunized",
-    "category": "childhood_immunization",
-    "short_description": "",
-    "long_description": "Percent of children fully vaccinated (or exempt) with the indicated vaccine",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "annual",
-    "sources": [
+ "pct_{variant}": {
+    "full_name": "pct_{variant}",
+    "measure": "pct_{variant}",
+    "short_name": "Percent immunized: {variant}",
+    "long_name": "Percent of children in the grade who are immunized {variant}",
+    "category": "{variant.category}",
+    "long_description": "Percentage of children fully immunized with {variant}",
+    "measure_type": "percent",
+    "unit": "%",
+    "time_resolution": "year",
+   "sources": [
       {
         "id": "schoolvax_az"
     }
     ],
-    "citations": [],
-    "layer": []
+    "variants": {
+      "dtap": {"default": "dtap", "category": "childhood_immunizations"},
+      "polio": {"default": "polio", "category": "childhood_immunizations"},
+      "mmr": {"default": "mmr", "category": "childhood_immunizations"},
+      "hep_b": {"default": "hep_b", "category": "childhood_immunizations"},
+      "varicella": {"default": "varicella", "category": "childhood_immunizations"},
+      "personal exempt": {"default": "personal_exempt", "category": "childhood_immunizations"},
+      "medical_exempt": {"default": "medical_exempt", "category": "childhood_immunizations"},
+      "full_exempt": {"default": "full_exempt", "category": "childhood_immunizations"}
+    }
   },
-    "N_AZ": {
-    "full_name": "Number of children counted in the grade",
-    "measure": "Number",
-    "short_name": "Number eligible",
-    "long_name": "Number eligibile for immunization (denominator)",
-    "category": "childhood_immunization",
-    "short_description": "",
-    "long_description": "Number of children in the grade counted as being eligible for immunization",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "annual",
-    "sources": [
+   "N_{variant}": {
+    "full_name": "N_{variant}",
+    "measure": "N_{variant}",
+    "short_name": "Number immunized: {variant}",
+    "long_name": "Number of children in the grade who are immunized {variant}",
+    "category": "{variant.category}",
+    "long_description": "Number of children fully immunized with {variant}",
+    "measure_type": "integer",
+    "unit": "integer",
+    "time_resolution": "year",
+   "sources": [
       {
         "id": "schoolvax_az"
     }
     ],
-    "citations": [],
-    "layer": []
+    "variants": {
+      "dtap": {"default": "dtap", "category": "childhood_immunizations"},
+      "polio": {"default": "polio", "category": "childhood_immunizations"},
+      "mmr": {"default": "mmr", "category": "childhood_immunizations"},
+      "hep_b": {"default": "hep_b", "category": "childhood_immunizations"},
+      "varicella": {"default": "varicella", "category": "childhood_immunizations"},
+      "personal exempt": {"default": "personal_exempt", "category": "childhood_immunizations"},
+      "medical_exempt": {"default": "medical_exempt", "category": "childhood_immunizations"},
+      "full_exempt": {"default": "full_exempt", "category": "childhood_immunizations"}
+    }
   },
-     "grade": {
-    "full_name": "grade in school",
-    "measure": "category",
-    "short_name": "grade",
-    "long_name": "Grade in school",
-    "category": "childhood_immunization",
-    "short_description": "",
-    "long_description": "Grade in School",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "annual",
+    "geography_name": {
+    "full_name": "geography_name",
+    "measure": "geography_name",
+    "short_name": "Name of state corresponding to the FIPS code in geography",
     "sources": [
       {
         "id": "schoolvax_az"
     }
-    ],
-    "citations": [],
-    "layer": []
+    ]
   },
-      "vax": {
-    "full_name": "Vaccine name",
-    "measure": "category",
-    "short_name": "Vaccine name",
-    "long_name": "Vaccine name (or exemption category)",
-    "category": "childhood_immunization",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "annual",
+    "grade": {
+    "full_name": "grade",
+    "measure": "grade",
+    "short_name": "Grade in school",
+    "long_description": "Grade in school: KG=Kindergartern",
+
     "sources": [
       {
         "id": "schoolvax_az"
     }
-    ],
-    "citations": [],
-    "layer": []
+    ]
   },
   "_sources": {
     "schoolvax_az": {

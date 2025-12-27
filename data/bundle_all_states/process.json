@@ -1,0 +1,20 @@
+{
+  "name": "bundle_all_states",
+  "type": "bundle",
+  "scripts": [
+    {
+      "path": "build.R",
+      "last_run": "",
+      "run_time": "",
+      "last_status": {
+        "log": "",
+        "success": true
+      }
+    }
+  ],
+  "source_files": [
+    "AZ/standard/data.csv.gz"
+  ],
+  "checked": "2025-11-09 22:55:43",
+  "check_results": []
+}
