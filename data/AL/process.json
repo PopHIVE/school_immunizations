@@ -15,5 +15,10 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/Kindergarten school exemptions 2021-2025 (2).xlsx": "55cd6ba3880ffc410a84f90f78540145",
+    "raw/Ninth grade school exemptions 2021-2025.xlsx": "27f3bc40a9a2a767ee95e86b2ddc32a4",
+    "raw/Seventh grade school exemptions 2021-2025 (2).xlsx": "b8b7a3e51dcb3b6bdc0a191bf85e0607"
+  }
 }
