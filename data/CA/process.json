@@ -15,5 +15,9 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/California Vaccine Exemption.xlsx": "afc9af9bff0a2fe109e292c89f243558",
+    "ingest.R": "8fb8dfb78d043d9f4d88b186f0118a7a"
+  }
 }
