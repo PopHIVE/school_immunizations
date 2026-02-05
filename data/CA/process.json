@@ -6,10 +6,10 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2026-02-04 10:22:08",
-      "run_time": 0.461,
+      "last_run": "2025-11-09 22:55:33",
+      "run_time": 0.03,
       "last_status": {
-        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
+        "log": [],
         "success": true
       }
     }
@@ -17,11 +17,7 @@
   "checked": "",
   "check_results": [],
   "raw_state": {
-    "raw/California Vaccine Exemption.xlsx": "afc9af9bff0a2fe109e292c89f243558"
-  },
-  "script_hash": "9845986f4bd1e2718dc30d12781f5c09",
-  "standard_state": {
-    "./data/CA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/CA/standard/data.csv.gz": "b1d4574d1672b378986399225becbc20"
+    "raw/California Vaccine Exemption.xlsx": "afc9af9bff0a2fe109e292c89f243558",
+    "ingest.R": "8fb8dfb78d043d9f4d88b186f0118a7a"
   }
 }
