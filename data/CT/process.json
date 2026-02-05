@@ -6,14 +6,22 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:33",
-      "run_time": 0.02,
+      "last_run": "2026-02-04 10:23:26",
+      "run_time": 0.428,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/CT Vaccine Exemptions 2017-2025_All Grades.xlsx": "523ddccbd481dce5c8d9930ac5ef4b9a"
+  },
+  "script_hash": "d78a04d91dff3f4501a2e1cbbcf79f9b",
+  "standard_state": {
+    "./data/CT/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/CT/standard/data.csv.gz": "3a296e9f09cbaadfd31e53f9ca9a50e0"
+  }
 }

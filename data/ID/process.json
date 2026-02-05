@@ -6,14 +6,23 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:34",
-      "run_time": 0.03,
+      "last_run": "2026-02-04 23:30:42",
+      "run_time": 0.725,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", "", "New names:", "• `` -> `...1`", "• `` -> `...2`", "• `` -> `...3`", "• `` -> `...4`", "• `` -> `...5`", "• `` -> `...6`", "• `` -> `...7`", "• `` -> `...8`", "• `` -> `...9`", "• `` -> `...10`", "• `` -> `...11`", "• `` -> `...12`", "• `` -> `...13`", "• `` -> `...14`", "• `` -> `...15`", "• `` -> `...16`", "• `` -> `...17`", "• `` -> `...18`", "• `` -> `...19`", "• `` -> `...20`", "• `` -> `...21`", "• `` -> `...22`", "• `` -> `...23`", "• `` -> `...24`", "• `` -> `...25`", "• `` -> `...26`", "• `` -> `...27`", "• `` -> `...28`", "• `` -> `...29`", "• `` -> `...30`", "• `` -> `...31`", "• `` -> `...32`", "• `` -> `...33`", "• `` -> `...34`", "• `` -> `...35`", "• `` -> `...36`", "• `` -> `...37`", "• `` -> `...38`", "• `` -> `...39`", "• `` -> `...40`", "• `` -> `...41`", "• `` -> `...42`", "• `` -> `...43`", "• `` -> `...44`", "• `` -> `...45`", "• `` -> `...46`", "• `` -> `...47`", "• `` -> `...48`", "• `` -> `...49`", "• `` -> `...50`"],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/placehold": "68b329da9893e34099c7d8ad5cb9c940",
+    "raw/Yale School Exemption Data Request (2) (1).xlsx": "70457e8db6eb8f96717321b9637993ed"
+  },
+  "script_hash": "a030d98a352b0c66cec6429bc75f3dbd",
+  "standard_state": {
+    "./data/ID/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/ID/standard/data.csv.gz": "322655fea9ee7a6052896f6318c85cf1"
+  }
 }

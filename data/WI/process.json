@@ -6,14 +6,28 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:42",
-      "run_time": 0.03,
+      "last_run": "2026-02-04 23:58:32",
+      "run_time": 0.734,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/School Immunization Rates, Wisconsin, 2018.xlsx": "e380b09690f3c34b88cd4bca7bf4a591",
+    "raw/School Immunization Rates, Wisconsin, 2019.xlsx": "196740c830e929e60de147dd63aa58fb",
+    "raw/School Immunization Rates, Wisconsin, 2020.xlsx": "a5db1581dd3a633218c04f03ea7ffcbe",
+    "raw/School Immunization Rates, Wisconsin, 2021.xlsx": "d2bed57b06c32d81cb2d558c03fe3e50",
+    "raw/School Immunization Rates, Wisconsin, 2022.xlsx": "6f736565269c2823c028fb9fbffdcd08",
+    "raw/School Immunization Rates, Wisconsin, 2023.xlsx": "bdf0d2b62c24951b98091b9faeea16eb",
+    "raw/School Immunization Rates, Wisconsin, 2024.xlsx": "331d7b36b9cb896ae9a657e43a3eda51"
+  },
+  "script_hash": "7307124cf700bf152c9a32ff784d92ce",
+  "standard_state": {
+    "./data/WI/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/WI/standard/data.csv.gz": "fbd31a10c003f80f8978289b69ad8bbb"
+  }
 }

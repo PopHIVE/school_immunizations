@@ -6,14 +6,27 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:34",
-      "run_time": 0.02,
+      "last_run": "2026-02-04 23:32:23",
+      "run_time": 0.488,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/IL_school_immunization_county_aggregated_2019_20.xlsx": "fccdaedfe843c7d220b3fefadcd68815",
+    "raw/IL_school_immunization_county_aggregated_2020_21.xlsx": "bdbe8d821159523bd581d7ed874bd207",
+    "raw/IL_school_immunization_county_aggregated_2022.xlsx": "63817b7fa7cdcbc35428e4d519d1d080",
+    "raw/IL_school_immunization_county_aggregated_2023.xlsx": "5af56ec7cca082a58e9de6553613bac7",
+    "raw/IL_school_immunization_county_aggregated_2024.xlsx": "fc5cb171693a8374e030204b6747276c",
+    "raw/IL_school_immunization_county_aggregated_2025.xlsx": "b7bb8c181af5721d9aa48afc60c47780"
+  },
+  "script_hash": "918f89d3d42e0adf201f8da447f18fe8",
+  "standard_state": {
+    "./data/IL/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/IL/standard/data.csv.gz": "7294e40f12257364690f5a1b47e450db"
+  }
 }

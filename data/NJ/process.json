@@ -6,14 +6,57 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:38",
-      "run_time": 0.02,
+      "last_run": "2026-02-04 10:09:51",
+      "run_time": 0.737,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: ‘dplyr’",
+          "",
+          "The following objects are masked from ‘package:stats’:",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from ‘package:base’:",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "",
+          "Attaching package: ‘vroom’",
+          "",
+          "The following objects are masked from ‘package:readr’:",
+          "",
+          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
+          "    col_factor, col_guess, col_integer, col_logical, col_number,",
+          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
+          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
+          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
+          "    problems, spec",
+          ""
+        ],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/NJ_13-14.csv": "65e4f1bd15cd70aee4c52aee7cd23ee7",
+    "raw/NJ_14-15.csv": "3b2e505b44b14f78ba1308102dd7d647",
+    "raw/NJ_15-16.csv": "13cd7b976e34e1aa079ebdb96c2a1647",
+    "raw/NJ_16-17.csv": "08627cfbcaa66a2f514ac76802ca4d81",
+    "raw/NJ_17-18.csv": "e783650a9a55bcbd195cb300b4f5a5d0",
+    "raw/NJ_18-19.csv": "27fb2d5391ceafe0e7f84dcff68c99a9",
+    "raw/NJ_19-20.csv": "344056711549e736e2ae7c50d989efba",
+    "raw/NJ_20-21.csv": "ccd94394761ca782541709bfff7026f4",
+    "raw/NJ_21-22.csv": "1aec42a25f45e1e291a5010b3f338713",
+    "raw/NJ_22-23.csv": "d745bc2798e1103bca8b0a7d3440206d",
+    "raw/NJ_23-24.csv": "3c242bdfee2f60a31433685dc9c9b767",
+    "raw/NJ_24-25.csv": "6ae0b2bc63f1ee3451d3693b2c45d688"
+  },
+  "script_hash": "a3855facc58e9739bb932a4eb9ec0e99",
+  "standard_state": {
+    "./data/NJ/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/NJ/standard/data.csv.gz": "dc3b9977dbf5e76663619f0fa27464d4"
+  }
 }

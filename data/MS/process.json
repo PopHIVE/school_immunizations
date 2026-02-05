@@ -6,14 +6,24 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:37",
-      "run_time": 0.03,
+      "last_run": "2026-02-05 00:00:18",
+      "run_time": 0.519,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/Medical Exemptions 2019-2022.xlsx": "8adeff0907e84237e6052ef27f8eba27",
+    "raw/Medical Exemptions 2023-2024.xlsx": "332dd683974108fe9be097b268f24f19",
+    "raw/Religious Exemptions 2023-2024.xlsx": "be9eec03e52004429960864d02e87016"
+  },
+  "script_hash": "a7da66cee2cb351f85bdce272bffb677",
+  "standard_state": {
+    "./data/MS/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/MS/standard/data.csv.gz": "4dda61be65589dbc630666f9259e3537"
+  }
 }

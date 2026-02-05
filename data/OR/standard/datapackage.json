@@ -7,5 +7,85 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 1231,
+      "encoding": "ISO-8859-1",
+      "md5": "25ebd3079ef43a5d0b431f5a3c14ac70",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {},
+      "source": [],
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": "NA",
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-02-05 00:00:45.097675",
+      "last_modified": "2026-02-05 00:00:45.097675",
+      "vintage": {},
+      "row_count": 35,
+      "entity_count": 0,
+      "schema": {
+        "fields": [
+          {
+            "name": "time\tgeography\tgeography_name\tgrade\tN_dtap\tN_polio\tN_mmr\tN_hep_b\tN_varicella\tN_personal_exempt\tN_medical_exempt\tN_full_exempt\tpct_dtap\tpct_polio\tpct_mmr\tpct_hep_b\tpct_varicella\tpct_personal_exempt\tpct_medical_exempt\tpct_full_exempt",
+            "duplicates": 0,
+            "time_range": [-1, -1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2025-09-01\t41\tNorth Central\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.257444005270092\t0.04421607378129117\tNA": 1,
+              "2025-09-01\t41001\tBaker\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t19.07134820562561\t0.3028709990300679\tNA": 1,
+              "2025-09-01\t41003\tBenton\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.456163855421688\t0.09193253012048193\tNA": 1,
+              "2025-09-01\t41005\tClackamas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8.835053047290739\t0.10411827705077144\tNA": 1,
+              "2025-09-01\t41007\tClatsop\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8.310546218487396\t0.11073529411764706\tNA": 1,
+              "2025-09-01\t41009\tColumbia\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9.418995222238308\t0.10043434197191256\tNA": 1,
+              "2025-09-01\t41011\tCoos\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8.561801391220914\t0.01956104581434397\tNA": 1,
+              "2025-09-01\t41013\tCrook\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8.811555959963604\t0.05690021231422506\tNA": 1,
+              "2025-09-01\t41015\tCurry\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t12.684955752212389\t0.2019260801665799\tNA": 1,
+              "2025-09-01\t41017\tDeschutes\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11.085589441127816\t0.19486801409767673\tNA": 1,
+              "2025-09-01\t41019\tDouglas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9.775649327028011\t0.050869407057111675\tNA": 1,
+              "2025-09-01\t41021\tGilliam\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.102362204724409\t0\tNA": 1,
+              "2025-09-01\t41023\tGrant\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t12.938479809976245\t0.12470308788598575\tNA": 1,
+              "2025-09-01\t41025\tHarney\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t19.003351206434317\t0.08364611260053618\tNA": 1,
+              "2025-09-01\t41027\tHood River\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7.606269668361172\t0.04478334543694021\tNA": 1,
+              "2025-09-01\t41029\tJackson\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t12.910772129305213\t0.006742910028425993\tNA": 1,
+              "2025-09-01\t41031\tJefferson\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3.9199824715162133\t0\tNA": 1,
+              "2025-09-01\t41033\tJosephine\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t17.34233226837061\t0.026348430746100354\tNA": 1,
+              "2025-09-01\t41035\tKlamath\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.295007549068947\t0.00996477101157524\tNA": 1,
+              "2025-09-01\t41037\tLake\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t14.263839285714285\t0.17392857142857143\tNA": 1,
+              "2025-09-01\t41039\tLane\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8.059082880278945\t0.039841258917716144\tNA": 1,
+              "2025-09-01\t41041\tLincoln\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.293154883530854\t0.05674295055169595\tNA": 1,
+              "2025-09-01\t41043\tLinn\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9.12861567786514\t0.10193471527281393\tNA": 1,
+              "2025-09-01\t41045\tMalheur\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t4.2991730769230765\t0.018692307692307692\tNA": 1,
+              "2025-09-01\t41047\tMarion\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.400748817416396\t0.06387777838657242\tNA": 1,
+              "2025-09-01\t41049\tMorrow\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3.4111014366565082\t0\tNA": 1,
+              "2025-09-01\t41051\tMultnomah\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7.22008960125268\t0.052565705772973925\tNA": 1,
+              "2025-09-01\t41053\tPolk\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.492150170648463\t0.10133105802047783\tNA": 1,
+              "2025-09-01\t41057\tTillamook\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7.406229508196722\t0.11612518628912072\tNA": 1,
+              "2025-09-01\t41059\tUmatilla\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3.7231223948465333\t0.0612807881773399\tNA": 1,
+              "2025-09-01\t41061\tUnion\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8.831390728476821\t0.05181456953642385\tNA": 1,
+              "2025-09-01\t41063\tWallowa\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.875244299674266\t0\tNA": 1,
+              "2025-09-01\t41067\tWashington\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t4.804692864459627\t0.08910589056361651\tNA": 1,
+              "2025-09-01\t41069\tWheeler\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t17.21325301204819\t0.37062535857716583\tNA": 1,
+              "2025-09-01\t41071\tYamhill\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7.695845272206303\t0.0901601979682209\tNA": 1
+            }
+          }
+        ]
+      },
+      "sha512": "1f13fb20df28f9ddeeeee534483b6e6fd73a14e29549db26e939d52889057930021e9c299cd2c1caa19eb4d710a58b941a78bea0f7490b2830a186e1c78a893b"
+    }
+  ],
+  "measure_info": {
+    "example_variable": {
+      "id": "example_variable",
+      "sources": [],
+      "citations": []
+    }
+  }
 }
