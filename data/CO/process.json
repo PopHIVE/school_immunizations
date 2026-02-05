@@ -6,14 +6,46 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:33",
-      "run_time": 0.03,
+      "last_run": "2026-02-04 23:20:25",
+      "run_time": 1.802,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: ‘dplyr’",
+          "",
+          "The following objects are masked from ‘package:stats’:",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from ‘package:base’:",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "",
+          "Attaching package: ‘vroom’",
+          "",
+          "The following objects are masked from ‘package:readr’:",
+          "",
+          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
+          "    col_factor, col_guess, col_integer, col_logical, col_number,",
+          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
+          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
+          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
+          "    problems, spec",
+          ""
+        ],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": "95b93ffad215440291ee1f5dd2d23417"
+  },
+  "script_hash": "c41ede2f864e016ffb601b1a54151a9b",
+  "standard_state": {
+    "./data/CO/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/CO/standard/data.csv.gz": "c14cf1b5875f03841159f4f5ab2e2dec"
+  }
 }
