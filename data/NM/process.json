@@ -6,14 +6,34 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:38",
-      "run_time": 0.18,
+      "last_run": "2026-02-05 00:01:14",
+      "run_time": 0.475,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "", "Attaching package: ‘vroom’", "", "The following objects are masked from ‘package:readr’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/NM_12.csv": "427d79cd0eb9fd00d742fcce58b2d02b",
+    "raw/NM_13.csv": "4b30d7a28aefc18efda5f9f457d6eb08",
+    "raw/NM_14.csv": "f207316819d1a23d8d0e6a5563895053",
+    "raw/NM_15.csv": "7a531ff608b20cc8df34a5316ed96f26",
+    "raw/NM_16.csv": "282ab890831a1fd0f7168c07a68c4dc2",
+    "raw/NM_17.csv": "6c8f730c8db9c5dc9b8e24ad0e2ab170",
+    "raw/NM_18.csv": "efe7457203a3a42d6a2253dbdd82e78e",
+    "raw/NM_19.csv": "6c7538e55a0d3f20d1023af1e4f10903",
+    "raw/NM_20.csv": "c0674e8b46c57d461398a31c34498ca1",
+    "raw/NM_21.csv": "7d8cd89acecaf1ab73c474ac486f4256",
+    "raw/NM_22.csv": "c025ba4c0a580b267d49f93b479c771d",
+    "raw/NM_23.csv": "1b6e0ad0cfd8568962037ceadd7f262b",
+    "raw/NM_24.csv": "8dc7547fad91a60af3a376a8bf011c19"
+  },
+  "script_hash": "35d2073f23cee0996761624b42e86932",
+  "standard_state": {
+    "./data/NM/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/NM/standard/data.csv.gz": "77be38221f7304b942eb05c762222f7f"
+  }
 }

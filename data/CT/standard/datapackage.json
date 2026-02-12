@@ -7,5 +7,114 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 2027,
+      "encoding": "ISO-8859-1",
+      "md5": "3a296e9f09cbaadfd31e53f9ca9a50e0",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {},
+      "source": [],
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": "NA",
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-02-04 10:23:26.373552",
+      "last_modified": "2026-02-04 10:23:26.373552",
+      "vintage": {},
+      "row_count": 64,
+      "entity_count": 0,
+      "schema": {
+        "fields": [
+          {
+            "name": "time\tgeography\tgeography_name\tgrade\tN_dtap\tN_polio\tN_mmr\tN_hep_b\tN_varicella\tN_personal_exempt\tN_medical_exempt\tN_full_exempt\tpct_dtap\tpct_polio\tpct_mmr\tpct_hep_b\tpct_varicella\tpct_personal_exempt\tpct_medical_exempt\tpct_full_exempt",
+            "duplicates": 0,
+            "time_range": [-1, -1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2018-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02102507836990596\t0.003658307210031348\t0.02465830721003135": 1,
+              "2018-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01331656804733728\t0.002334319526627219\t0.01562130177514793": 1,
+              "2018-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0201358024691358\t0.004123456790123457\t0.02422222222222222": 1,
+              "2018-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01671666666666667\t0.004216666666666666\t0.02093333333333334": 1,
+              "2018-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01130065359477124\t0.002310457516339869\t0.01358823529411765": 1,
+              "2018-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01800970873786408\t0.003495145631067961\t0.02147572815533981": 1,
+              "2018-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03023913043478261\t0.002934782608695652\t0.03315217391304347": 1,
+              "2018-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0202\t0.003581818181818182\t0.02378181818181818": 1,
+              "2019-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02219811320754717\t0.003276729559748428\t0.02544654088050315": 1,
+              "2019-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01448048048048048\t0.001798798798798799\t0.01626426426426426": 1,
+              "2019-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02646341463414634\t0.002963414634146341\t0.0294390243902439": 1,
+              "2019-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01852459016393443\t0.001737704918032787\t0.02029508196721311": 1,
+              "2019-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.013\t0.002307947019867549\t0.01532781456953643": 1,
+              "2019-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02208490566037736\t0.002\t0.02412264150943396": 1,
+              "2019-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02997872340425532\t0.003851063829787234\t0.03382978723404256": 1,
+              "2019-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02794444444444444\t0.003851851851851852\t0.03181481481481482": 1,
+              "2020-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02398869158878505\t0.002617788161993769\t0.02660657873487222": 1,
+              "2020-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01652979289940828\t0.001507840236686391\t0.01803757902378059": 1,
+              "2020-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0266346835443038\t0.002784556962025317\t0.02941899601988787": 1,
+              "2020-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02542407407407407\t0.001968148148148148\t0.02739294257324749": 1,
+              "2020-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01280508361204013\t0.001942006688963211\t0.01474725211189691": 1,
+              "2020-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02321826923076923\t0.002865865384615384\t0.02608387393809079": 1,
+              "2020-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03158914893617022\t0.003256382978723404\t0.03484566945236707": 1,
+              "2020-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0223887037037037\t0.002852222222222222\t0.02524128905336251": 1,
+              "2021-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02368354430379747\t0.004003164556962025\t0.02773101265822785": 1,
+              "2021-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01786102719033232\t0.001945619335347432\t0.01981268882175227": 1,
+              "2021-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03115384615384616\t0.002487179487179487\t0.03364102564102564": 1,
+              "2021-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02476785714285714\t0.002410714285714286\t0.02714285714285714": 1,
+              "2021-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.016875\t0.002417857142857143\t0.01929285714285714": 1,
+              "2021-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02472\t0.00233\t0.02704": 1,
+              "2021-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03402325581395349\t0.003302325581395349\t0.03732558139534883": 1,
+              "2021-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02492\t0.00354\t0.02842": 1,
+              "2022-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02412306923975779\t0.00313973169117647\t0.02726280093069204": 1,
+              "2022-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01882719139076667\t0.0021567391389\t0.02098393052973333": 1,
+              "2022-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03226087243850746\t0.003878907236119403\t0.03613977967462687": 1,
+              "2022-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03091298424083333\t0.003210816641\t0.03412380088266666": 1,
+              "2022-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01744971703007722\t0.003069272442471043\t0.02051898947247104": 1,
+              "2022-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02352196630295918\t0.002673290453367347\t0.02619525675602041": 1,
+              "2022-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03022783969853659\t0.005535863797804878\t0.03576370349731707": 1,
+              "2022-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.03126966900142857\t0.00385022129244898\t0.03511989029489796": 1,
+              "2023-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01974444890784983\t0.003407296245733789\t0.02315174542662116": 1,
+              "2023-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01604408724683544\t0.002091172848101266\t0.01813526053797468": 1,
+              "2023-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02581365835820896\t0.002535221791044776\t0.0283488804477612": 1,
+              "2023-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02327225068965517\t0.00268218275862069\t0.02595443396551724": 1,
+              "2023-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01413659951807229\t0.002530399919678715\t0.01666699979919679": 1,
+              "2023-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01882771797872341\t0.004176693723404255\t0.02300441117021277": 1,
+              "2023-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02611687825\t0.00381800125\t0.02993487925": 1,
+              "2023-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0225597385\t0.0027956265\t0.02535536475": 1,
+              "2024-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01604761904761905\t0.003261904761904762\t0.01935374149659864": 1,
+              "2024-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01241479099678457\t0.001591639871382637\t0.01398392282958199": 1,
+              "2024-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01884285714285714\t0.002514285714285715\t0.0214": 1,
+              "2024-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02095081967213115\t0.002065573770491803\t0.0229672131147541": 1,
+              "2024-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01228832116788321\t0.002105839416058394\t0.01436861313868613": 1,
+              "2024-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0182020202020202\t0.001929292929292929\t0.02016161616161616": 1,
+              "2024-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0221304347826087\t0.002717391304347826\t0.02489130434782609": 1,
+              "2024-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02320754716981132\t0.002660377358490566\t0.02583018867924528": 1,
+              "2025-09-01\t09001\tFairfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01423703703703704\t0.003596296296296296\t0.01781851851851852": 1,
+              "2025-09-01\t09003\tHartford\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01161433447098976\t0.002184300341296928\t0.01381569965870307": 1,
+              "2025-09-01\t09005\tLitchfield\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0167536231884058\t0.003507246376811594\t0.0202463768115942": 1,
+              "2025-09-01\t09007\tMiddlesex\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.01828571428571429\t0.002892857142857143\t0.02114285714285715": 1,
+              "2025-09-01\t09009\tNew Haven\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.011042194092827\t0.001928270042194093\t0.012957805907173": 1,
+              "2025-09-01\t09011\tNew London\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.0156\t0.002642105263157895\t0.01826315789473684": 1,
+              "2025-09-01\t09013\tTolland\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02126190476190476\t0.002976190476190476\t0.02421428571428571": 1,
+              "2025-09-01\t09015\tWindham\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.02227659574468085\t0.002936170212765958\t0.02517021276595745": 1
+            }
+          }
+        ]
+      },
+      "sha512": "9caa2d0b1aa607a263977109bc81b00a4c28eb52d6780bd68fa8ebb4a3c63221ef896457f64487eec3241c7edbb2f045fefff2a736869ddeddff0200961caf19"
+    }
+  ],
+  "measure_info": {
+    "example_variable": {
+      "id": "example_variable",
+      "sources": [],
+      "citations": []
+    }
+  }
 }

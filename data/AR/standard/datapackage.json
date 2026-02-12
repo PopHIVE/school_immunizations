@@ -7,5 +7,62 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 260,
+      "encoding": "ISO-8859-1",
+      "md5": "197df52261efd277926baed598a21e84",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {},
+      "source": [],
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": "NA",
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-02-04 10:20:58.962499",
+      "last_modified": "2026-02-04 10:20:58.962499",
+      "vintage": {},
+      "row_count": 12,
+      "entity_count": 0,
+      "schema": {
+        "fields": [
+          {
+            "name": "time\tgeography\tgeography_name\tgrade\tN_dtap\tN_polio\tN_mmr\tN_hep_b\tN_varicella\tN_personal_exempt\tN_medical_exempt\tN_full_exempt\tpct_dtap\tpct_polio\tpct_mmr\tpct_hep_b\tpct_varicella\tpct_personal_exempt\tpct_medical_exempt\tpct_full_exempt",
+            "duplicates": 0,
+            "time_range": [-1, -1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          }
+        ]
+      },
+      "sha512": "b5754e113a47f1d110bf3efa4ef14a2b37d77f2a19349f05cfbed904d68214dc53805809e36bd142d251d47d930208a9224f3773ab14adec3d1e83cf77382570"
+    }
+  ],
+  "measure_info": {
+    "example_variable": {
+      "id": "example_variable",
+      "sources": [],
+      "citations": []
+    }
+  }
 }

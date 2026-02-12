@@ -6,14 +6,21 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:40",
-      "run_time": 0.05,
+      "last_run": "2026-02-05 10:01:57",
+      "run_time": 1.979,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: 'dplyr'", "", "The following objects are masked from 'package:stats':", "", "    filter, lag", "", "The following objects are masked from 'package:base':", "", "    intersect, setdiff, setequal, union", "", "New names:", "* `Total` -> `Total...15`", "* `Total` -> `Total...16`", "* `Total` -> `Total...17`", "* `Total` -> `Total...18`", "* `Total` -> `Total...19`", "* `Total` -> `Total...20`", "* `Total` -> `Total...21`", "* `Total` -> `Total...22`", "* `Total` -> `Total...23`", "* `Total` -> `Total...24`", "* `Total` -> `Total...25`"],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "hash": "3fd534408ed6ce661bf813d0285af359"
+  },
+  "standard_state": {
+    "./data/SD/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/SD/standard/data.csv.gz": "15cac8c8a43e4b4fd9cbd61bb2f6b33f"
+  }
 }

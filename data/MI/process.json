@@ -6,14 +6,26 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:36",
-      "run_time": 0.02,
+      "last_run": "2026-02-05 10:04:34",
+      "run_time": 1.336,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: 'dplyr'", "", "The following objects are masked from 'package:stats':", "", "    filter, lag", "", "The following objects are masked from 'package:base':", "", "    intersect, setdiff, setequal, union", "", "New names:", "* `n` -> `n...10`", "* `%` -> `%...11`", "* `n` -> `n...12`", "* `%` -> `%...13`", "* `n` -> `n...14`", "* `%` -> `%...15`", "* `n` -> `n...16`", "* `%` -> `%...17`", "New names:", "* `n` -> `n...10`", "* `%` -> `%...11`", "* `n` -> `n...12`", "* `%` -> `%...13`", "* `n` -> `n...14`", "* `%` -> `%...15`", "* `n` -> `n...16`", "* `%` -> `%...17`", "New names:", "* `n` -> `n...10`", "* `%` -> `%...11`", "* `n` -> `n...12`", "* `%` -> `%...13`", "* `n` -> `n...14`", "* `%` -> `%...15`", "* `n` -> `n...16`", "* `%` -> `%...17`", "New names:", "* `n` -> `n...10`", "* `%` -> `%...11`", "* `n` -> `n...12`", "* `%` -> `%...13`", "* `n` -> `n...14`", "* `%` -> `%...15`", "* `n` -> `n...16`", "* `%` -> `%...17`"],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "hash": [
+      "e91258e3d3707a50d6af688d51e328e0",
+      "5879dd11e5173b6dd3235e21c55f80f8",
+      "f9f06802cd4dce9034183bed22da593c",
+      "70a32583df46830738c528151140bcfe"
+    ]
+  },
+  "standard_state": {
+    "./data/MI/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/MI/standard/data.csv.gz": "43d783a8780d9cf4af6e1728b8637bae"
+  }
 }

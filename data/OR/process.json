@@ -6,14 +6,22 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:39",
-      "run_time": 0.02,
+      "last_run": "2026-02-05 00:00:45",
+      "run_time": 0.455,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/K-12_school_2025.xlsx": "ef84e3781798ccdcb0ca5666b16c37f1"
+  },
+  "script_hash": "534c82e4d38492b1b454d400c3bac3ad",
+  "standard_state": {
+    "./data/OR/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/OR/standard/data.csv.gz": "25ebd3079ef43a5d0b431f5a3c14ac70"
+  }
 }

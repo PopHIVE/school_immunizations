@@ -6,14 +6,22 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:35",
-      "run_time": 0.04,
+      "last_run": "2026-02-04 23:37:35",
+      "run_time": 0.449,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/Massachusetts Vaccine Exemption.xlsx": "eb095f005e25babe8d8901bc5f6fe5e7"
+  },
+  "script_hash": "a58563c3d17e37be04f5e4f0fd27546d",
+  "standard_state": {
+    "./data/MA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/MA/standard/data.csv.gz": "ffcbffece9f41e1380b5331b59d53f7c"
+  }
 }
