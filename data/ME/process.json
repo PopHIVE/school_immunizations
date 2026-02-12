@@ -6,14 +6,17 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:42",
-      "run_time": 0.039,
+      "last_run": "2026-02-05 10:05:22",
+      "run_time": 1.565,
       "last_status": {
-        "log": [],
-        "success": true
+        "log": "In argument: `n_assessed = coalesce(col_or_na(\"Num Assessed...3\"), col_or_na(\"Assessed...3\"))`.",
+        "success": false
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "hash": ["7cccd7448dca28ef5cc667b18a504483", "7e193e405acb4e5b1e2bb212587dd347", "7799850c82c97a35848d5cc50fa6f9cc", "ecad191f068367e149ed6bcc8c0d5f6e", "6b5c1b336dcf7185dff0189bf78a4838", "616854d195f5fe64a7565c24e202b21d"]
+  }
 }

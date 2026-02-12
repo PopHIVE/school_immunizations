@@ -7,5 +7,178 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 598,
+      "encoding": "ISO-8859-1",
+      "md5": "2bfc00caa64b618be95f0089b11bfbc2",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {},
+      "source": [],
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 5,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-02-05 10:04:34.702832",
+      "last_modified": "2026-02-05 10:04:34.702832",
+      "vintage": {},
+      "row_count": 44,
+      "entity_count": 44,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 43,
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "12-31-2025": 44
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 0,
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "39001": 1,
+              "39003": 1,
+              "39005": 1,
+              "39007": 1,
+              "39009": 1,
+              "39011": 1,
+              "39013": 1,
+              "39015": 1,
+              "39017": 1,
+              "39019": 1,
+              "39021": 1,
+              "39023": 1,
+              "39025": 1,
+              "39027": 1,
+              "39029": 1,
+              "39031": 1,
+              "39033": 1,
+              "39035": 1,
+              "39037": 1,
+              "39039": 1,
+              "39041": 1,
+              "39043": 1,
+              "39045": 1,
+              "39047": 1,
+              "39049": 1,
+              "39051": 1,
+              "39053": 1,
+              "39055": 1,
+              "39057": 1,
+              "39059": 1,
+              "39061": 1,
+              "39063": 1,
+              "39065": 1,
+              "39067": 1,
+              "39069": 1,
+              "39071": 1,
+              "39073": 1,
+              "39075": 1,
+              "39077": 1,
+              "39079": 1,
+              "39081": 1,
+              "39083": 1,
+              "39085": 1,
+              "39087": 1
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 0,
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Adams County": 1,
+              "Allen County": 1,
+              "Ashland County": 1,
+              "Ashtabula County": 1,
+              "Athens County": 1,
+              "Auglaize County": 1,
+              "Belmont County": 1,
+              "Brown County": 1,
+              "Butler County": 1,
+              "Carroll County": 1,
+              "Champaign County": 1,
+              "Clark County": 1,
+              "Clermont County": 1,
+              "Clinton County": 1,
+              "Columbiana County": 1,
+              "Coshocton County": 1,
+              "Crawford County": 1,
+              "Cuyahoga County": 1,
+              "Darke County": 1,
+              "Defiance County": 1,
+              "Delaware County": 1,
+              "Erie County": 1,
+              "Fairfield County": 1,
+              "Fayette County": 1,
+              "Franklin County": 1,
+              "Fulton County": 1,
+              "Gallia County": 1,
+              "Geauga County": 1,
+              "Greene County": 1,
+              "Guernsey County": 1,
+              "Hamilton County": 1,
+              "Hancock County": 1,
+              "Hardin County": 1,
+              "Harrison County": 1,
+              "Henry County": 1,
+              "Highland County": 1,
+              "Hocking County": 1,
+              "Holmes County": 1,
+              "Huron County": 1,
+              "Jackson County": 1,
+              "Jefferson County": 1,
+              "Knox County": 1,
+              "Lake County": 1,
+              "Lawrence County": 1
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 43,
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Kindergarten": 44
+            }
+          },
+          {
+            "name": "pct_mmr_exempt",
+            "duplicates": 11,
+            "time_range": [0, 0],
+            "type": "float",
+            "missing": 1,
+            "mean": 5.337209,
+            "sd": 4.808525,
+            "min": 1.1,
+            "max": 32.2
+          }
+        ]
+      },
+      "sha512": "fd63f963ffa961d4fe5f97d7689e08af656b272dd3ba6e2aaa8519c1eed6faae3ed218bb5ff5bc97f8b8333b07912bfba0d2b2337d949ade068867b6f249ec8d"
+    }
+  ],
+  "measure_info": {
+    "example_variable": {
+      "id": "example_variable",
+      "sources": [],
+      "citations": []
+    }
+  }
 }
