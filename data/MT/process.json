@@ -15,5 +15,13 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/2015-2016 M_R Exemptions.xlsx": "4e2026ff249ef951393217045d3d845c",
+    "raw/2016-2017 M_R Exemptions.xlsx": "8698f372224d23109c4153f087c1897a",
+    "raw/2017-2018 M_R Exemptions.xlsx": "a0d8626fea43d71b82d49d1a24e3d4f8",
+    "raw/2018-2019 M_R Exemptions (1).xlsx": "0b89e8f2748b20bb4062ebbaba5227b8",
+    "raw/2020 Immunization Coverage  (1).xlsx": "ea8d9cb3dd33671f8ef9d5fae505d52e"
+  },
+  "script_hash": "75318dc17b46039dfea0ef9db706852d"
 }

@@ -15,5 +15,14 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/2019-2020 New Hampshire Vaccine Exemptions  (1).xlsx": "1a5f603639ce3d8d08195dcfbd3c72b2",
+    "raw/2020-2021 New Hampshire Vaccine Exemption (1).xlsx": "b94a342889ea595d873c50e973767f9e",
+    "raw/2021-2022 New Hampshire Vaccine Exemption (1).xlsx": "eaeb0e8eb35c14ab5a34a0f5d4c41516",
+    "raw/2022-2023 New Hampshire Vaccine Exemption (1).xlsx": "5775af241ee25ae87fd0ef1f499e8013",
+    "raw/2023-2024 New Hampshire Vaccine Exemption (1).xlsx": "7818b0302ee5f8f79de2a4efaabbc683",
+    "raw/2024-2025 New Hampshire Exemption (1).xlsx": "d1286426efcad10108a75b7bb11f06d0"
+  },
+  "script_hash": "3f8e6cf9176686f54b9a247e0b6ff17a"
 }
