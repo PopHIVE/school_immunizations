@@ -15,5 +15,9 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/kg_county_2023-24.xlsx": "9cf8fa08a53b9b64458712a317749f5d"
+  },
+  "script_hash": "2367d1518e9456a1ee9ed74c27259418"
 }

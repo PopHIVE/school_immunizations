@@ -15,5 +15,9 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/Washington Vaccine Exemption.xlsx": "4febabeb4f517b6dfbe3896219758f8f"
+  },
+  "script_hash": "b517beea26b3f8396a0f287706c00c56"
 }
