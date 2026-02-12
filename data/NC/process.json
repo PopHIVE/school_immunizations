@@ -15,5 +15,9 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/North Carolina Vaccine Exemption.xlsx": "e1d896afbf727145c294fbdda7f0dba4"
+  },
+  "script_hash": "db785e04d8eed2095276305cee66f7fc"
 }

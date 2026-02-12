@@ -1,0 +1,97 @@
+time	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	enrollment	pct_utd	pct_conditional	pct_not_utd
+2022-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	0.2	NA	8385	96	1	1
+2022-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	0.1	NA	5519	91	4	2
+2022-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	0.3	NA	9034	94	2	1
+2022-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	0.3	NA	3497	95	1	0.5
+2022-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	0.4	NA	10922	93	3	2
+2022-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	3	NA	59824	93	2	2
+2022-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	0.5	NA	19223	91	2	4
+2022-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	0.4	NA	40257	95	1	2
+2022-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	0.3	NA	16612	93	0.7000000000000001	3
+2022-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	0.04	NA	5167	94	3	1
+2022-09-01	33	"Definitions:
+(1)Conditionally Enrolled (Ce): Students Have Documentation Of At Least One Dose Of Each Required Vaccine And An Appointment Date For The Next Due Dose(S) Of The Required Vaccine(S).
+(2)Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade.
+(3)Religious Exemption (Re): A Parent Or Legal Guardian Can Object To Immunization(S) Because Of Their Religious Beliefs. They Must Provide A Signed And Notarized Form Stating That The Child Has Not Been Immunized Because Of Religious Beliefs.
+(4)Medical Exemption (Me): A Physician Must Certify That Immunization Against A Particular Disease May Be Detrimental To The Child's Health. The Exemption Shall Exist Only For The Length Of Time, In The Opinion Of The Physician, Such Immunization Would Be Detrimental To The Child. An Exemption From Immunization For One Disease Shall Not Affect Other Required Immunizations.
+(5)Not Up-To-Date (Nutd): Students Do Not Have All Required Immunizations Or Documentation Of All Required Vaccines And Do Not Meet Conditional Enrollment Or Exemption Criteria.
+Total Number Of Schools Reporting Data To Nh Dhhs: 553
+Total Number Of Schools Not Reporting Data To Nh Dhhs:  8 (2 Public, 6 Private)
+Data Sources: Online Surveys Completed By New Hampshire Schools Through Novi Survey. Date Prepared: 5/13/2022
+Report Contributors:
+Data Prepared By:
+New Hampshire Immunization Section Bureau Of Infectious Disease Control Division Of Public Health Services
+Note: All The Data In This Report Are Based On Information Provided To The New Hampshire Department Of Health And Human Services Under Specific Legislative Authority. The Department Is Not Responsible For Any Duplication Or Misrepresentation Of Surveillance Data Released In This Report. Reported Numbers Are Based On Preliminary Data And Counts May Not Exactly Match Data Published By The Centers For Disease Control And Prevention. Data In This Report May Differ From Previously Released Data Due To Ongoing Quality Assurance Activities And Receipt Of New Information. Data Reflects Information Reported Between 11/15/2021 And Completed 2/18/2022."	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+2023-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	0.2	NA	8281	95	0.7000000000000001	1.0999999999999999
+2023-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	0.1	NA	5488	92.2	3.4000000000000004	1
+2023-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	0.2	NA	8527	89	1.5	5
+2023-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	0.3	NA	3495	95.60000000000001	0.8	0.7000000000000001
+2023-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	0.3	NA	11215	92.30000000000001	3.5999999999999996	1.4000000000000001
+2023-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	0.2	NA	52845	94	1.7000000000000002	1.4000000000000001
+2023-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4999999999999996	0.5	NA	19516	89	1.2	5.7
+2023-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.1999999999999997	0.3	NA	42674	95	1	1.6
+2023-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	0.2	NA	15539	93.30000000000001	1.0999999999999999	2.5
+2023-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	0.1	NA	5284	93	1.9	2.5
+2023-09-01	33	"Definitions:
+(1)Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade.
+(2)Conditionally Enrolled (Ce): Students Have Documentation Of At Least One Dose Of Each Required Vaccine And An Appointment Date For The Next Due Dose(S) Of The Required Vaccine(S).
+(3)Religious Exemption (Re): A Parent Or Legal Guardian Can Object To Immunization(S) Because Of Their Religious Beliefs. They Must Provide A Signed Form Stating That The Child Has Not Been Immunized Because Of Religious Beliefs.
+(4)Medical Exemption (Me): A Licensed Health Care Provider Must Certify On Letterhead, That Immunization Against A Particular Disease May Be Detrimental To The Child's Health. The Exemption Shall Exist Only For The Length Of Time, In The Opinion Of A Licensed Health Care Provider; Such Immunization Would Be Detrimental To The Child. An Exemption From Immunization For One Disease Shall Not Affect Other Required Immunizations.
+(5)Not Up-To-Date (Nutd): Students Do Not Have All Required Immunizations Or Documentation Of All Required Vaccines And Do Not Meet Conditional Enrollment Or Exemption Criteria.
+Total Number Of Schools Reporting Data To Nh Dhhs: 575 (456 Public, 119 Private)
+Total Number Of Schools Not Reporting Data To Nh Dhhs:  34 (20 Public, 14 Private)
+Out Of Scope (Oos) = Schools Closed, Students Reported In Other School Reports, Or Virtual Schools:
+12 (6 Public, 6 Private)
+Data Sources: Online Surveys Completed By New Hampshire Schools Through Novi Survey. Date Prepared: 01/27/2023
+Report Contributors:
+New Hampshire Immunization Section Bureau Of Infectious Disease Control Division Of Public Health Services
+Note: All The Data In This Report Is Based On Information Provided To The New Hampshire Department Of Health And Human Services Under Specific Legislative Authority. The Department Is Not Responsible For Any Duplication Or Misrepresentation Of Surveillance Data Released In This Report. Reported Numbers Are Based On Preliminary Data And Counts May Not Exactly Match Data Published By The Centers For Disease Control And Prevention. Data In This Report May Differ From Previously Released Data Due To Ongoing Quality Assurance Activities And Receipt Of New Information. Data Reflects Information Reported Between 8/22/2022 And 01/25/2023, Completed 01/27/2023."	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+2024-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4000000000000004	0.1	NA	8292	94	0.8999999999999999	1.5
+2024-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	0.1	NA	6243	92.4	2.3	1.3
+2024-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	0.2	NA	9276	92	0.8999999999999999	1.4000000000000001
+2024-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	0.2	NA	3496	95.7	0.8999999999999999	0.7000000000000001
+2024-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	0.5	NA	10931	91.8	3.3000000000000003	2
+2024-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	0.2	NA	58324	92.30000000000001	3.3000000000000003	1.3
+2024-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6999999999999997	0.3	NA	19544	91.10000000000001	1	3.9
+2024-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	0.3	NA	43447	94.80000000000001	1.2	1.4000000000000001
+2024-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8000000000000003	0.3	NA	15531	93.60000000000001	0.8	2.4
+2024-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	0.1	NA	4621	93	2.1999999999999997	2.1
+2024-09-01	33	"Definitions:
+(1)Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade
+(2)Conditionally Enrolled (Ce): Students Have Documentation Of At Least One Dose Of Each Required Vaccine And An Appointment Date For The Next Due Dose(S) Of The Required Vaccine(S).
+(3)Religious Exemption (Re): A Parent Or Legal Guardian Can Object To Immunization(S) Because Of Their Religious Beliefs. They Must Provide A Signed Form Stating That The Child Has Not Been Immunized Because Of Religious Beliefs.
+(4)Medical Exemption (Me): A Physician Must Certify That Immunization Against A Particular Disease May Be Detrimental To The Child's Health. The Exemption Shall Exist Only For The Length Of Time, In The Opinion Of The Physician, Such Immunization Would Be Detrimental To The Child. An Exemption From Immunization For One Disease Shall Not Affect Other Required Immunizations.
+(5)Not Up-To-Date (Nutd): Students Do Not Have All Required Immunizations Or Documentation Of All Required Vaccines And Do Not Meet Conditional Enrollment Or Exemption Criteria.
+Total Number Of Schools Reporting Data To Nh Dhhs: 601 (479 Public, 122 Private) Total Number Of Schools Not Reporting Data To Nh Dhhs:  21 (10 Public, 11 Private)
+Out Of Scope (Oos) = Schools Closed, Students Reported In Other School Reports, No Students Currently Enrolled, Or Virtual Schools: 13   (4 Public, 7 Private)
+Data Sources: Online Reports Completed By New Hampshire Schools Through Granite Trace. Date Prepared: 02/07/2024
+Report Contributors:
+New Hampshire Immunization Section Bureau Of Infectious Disease Control Division Of Public Health Services
+Note: All The Data In This Report Are Based Upon Information Provided To The New Hampshire Department Of Health And Human Services Under Specific Legislative Authority. The Department Is Not Responsible For Any Duplication Or Misrepresentation Of Surveillance Data Released In This Report. Reported Numbers Are Based On Preliminary Data And Counts May Not Exactly Match Data Published By The Centers For Disease Control And Prevention. Data In This Report May Differ From Previously Released Data Due To Ongoing Quality Assurance Activities And Receipt Of New Information. Data Reflect Information Reported Between 08/17/2023 And
+12/15/2023, Completed 02/07/2024."	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
+2025-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5999999999999996	NA	8086	93.5	1.5	NA
+2025-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	NA	5253	90.4	3.4000000000000004	NA
+2025-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	NA	8458	90.5	1.5	NA
+2025-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5999999999999996	NA	3500	94.4	1.2	NA
+2025-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	NA	10973	91.10000000000001	4	NA
+2025-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	NA	57393	92.9	2.8000000000000003	NA
+2025-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1000000000000005	NA	19211	91.7	1	NA
+2025-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.7	NA	42036	93.7	2.1999999999999997	NA
+2025-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4999999999999996	NA	14968	93.2	0.7000000000000001	NA
+2025-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	NA	5247	90.60000000000001	3.4000000000000004	NA
+2025-09-01	33	"Nh Division Of Public Health
+Department Of Health And Human Services - Nh Immunization Program 2024/2025 Annual School Immunization Report
+Definitions:
+(1)  Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade.
+(2)  Conditionally Enrolled (Ce): Students Have Documentation Of At Least One Dose Of Each Required Vaccine And An Appointment Date For The Next Due Dose(S) Of The Required Vaccine(S).
+(3)  Religious Exemption (Re): A Parent Or Legal Guardian Can Object To Immunization(S) Because Of Their Religious Beliefs. They Must Provide A Signed Form Stating That The Child Has Not Been Immunized Because Of Religious Beliefs.
+(4)  Medical Exemption (Me): A Physician Must Certify That Immunization Against A Particular Disease May Be Detrimental To The Child's Health. The Exemption Shall Exist Only For The Length Of Time, In The Opinion Of The Physician, Such Immunization Would Be Detrimental To The Child. An Exemption From Immunization For One Disease Shall Not Affect Other Required Immunizations.
+(5)  Not Up-To-Date (Nutd): Students Do Not Have All Required Immunizations Or Documentation Of All Required Vaccines And Do Not Meet Conditional Enrollment Or Exemption Criteria.
+Total Number Of Schools Reporting Data To Nh Dhhs: 601 (482 Public, 117 Private)
+Total Number Of Schools Not Reporting Data To Nh Dhhs:  21 (12 Public, 9 Private)
+Out Of Scope (Oos): Schools Closed, Students Reported In Other School Reports, Or Virtual Schools: 25 (12 Public, 13 Private)
+Data Sources: Online Reports Completed By New Hampshire Schools Through Granite Trace.
+Report Contributors:
+New Hampshire Immunization Section Bureau Of Infectious Disease Control Division Of Public Health
+Note: All The Data In This Report Are Based Upon Information Provided To The New Hampshire Department Of Health And Human Services Under Specific Legislative Authority. The Department Is Not Responsible For Any Duplication Or Misrepresentation Of Surveillance Data Released In This Report. Reported Numbers Are Based On Preliminary Data And Counts May Not Exactly Match Data Published By The Centers For Disease Control And Prevention. Data In This Report May Differ From Previously Released Data Due To Ongoing Quality Assurance Activities And Receipt Of New Information. Data Reflect Information Reported Between
+9/15/2024 And 12/15/2024, Completed 2/5/2025."	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

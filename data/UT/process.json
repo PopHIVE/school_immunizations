@@ -15,5 +15,9 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/Utah Vaccine Exemption.xlsx": "b53c77f652df76fa97f9a511a5e7eeea"
+  },
+  "script_hash": "f47a20738d6908227efbeaeadeec13f8"
 }
