@@ -15,5 +15,18 @@
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/Hawaii 2014-15 Vaccine Exemption.xlsx": "eb3b7cee62b4f7a172f4c1cbaf04baae",
+    "raw/Hawaii 2015-16 Vaccine Exemption (1).xlsx": "1d046a5efcb21dcfb62292e44a0b35f0",
+    "raw/Hawaii 2016-17 Vaccine Exemption.xlsx": "f563760e80cdcc5c946131290d97d882",
+    "raw/Hawaii 2017-18 Vaccine Exemption.xlsx": "3430ca0f52a48067718aa90bb5f0c5bd",
+    "raw/Hawaii 2018-19 Vaccine Exemption.xlsx": "91a2bd485e886e02674ba38868fa40e9",
+    "raw/Hawaii 2019-20 Vaccine Exemption.xlsx": "ee8bd78d7e32b44fb8d517dfdcb71efc",
+    "raw/Hawaii 2021-22 Vaccine Exemption.xlsx": "a5ec2076d17de1584743af22ad230af7",
+    "raw/Hawaii 2022-23 Vaccine Exemption.xlsx": "4f6f6d94e675e56ed60e18f4b70004f5",
+    "raw/Hawaii 2023-24 Vaccine Exemption .xlsx": "c6f8defaab912825dae22d2e24135001",
+    "raw/place": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "script_hash": "de1a3ea8e7d32c6ce4a4253b4b2fd6a1"
 }

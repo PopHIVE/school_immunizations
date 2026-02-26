@@ -4,6 +4,7 @@ library(readxl)
 library(stringr)
 library(vroom)
 library(readr)
+library(tidyr)
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -13,68 +14,87 @@ script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
-  
+
   raw_files <- list.files("./raw", pattern = "\\.xlsx$", full.names = TRUE)
-  
+
   parse_one <- function(path) {
-    data_raw <- readxl::read_excel(path, skip = 1)
+    data_raw <- readxl::read_excel(path, skip = 1, col_names = FALSE) %>%
+      setNames(paste0("c", seq_len(ncol(.))))
+
     year_range <- str_extract(basename(path), "\\d{4}-\\d{2}")
     year_start <- str_extract(year_range, "^\\d{4}")
-    year_end2 <- str_extract(year_range, "\\d{2}$")
-    year_end <- paste0(substr(year_start, 1, 2), year_end2)
-    time <- as.Date(paste0(year_end, "-09-01"))
-    
+    time <- format(as.Date(paste0(year_start, "-09-01")), "%m-%d-%Y")
+
     data_raw %>%
-      rename(
-        school_name = `School Name`,
-        county = County,
-        enrollment = Enrollment,
-        pct_religious = `Religious Exemptions`,
-        pct_medical = `Medical Exemptions`
-      ) %>%
-      filter(!is.na(county)) %>%
       mutate(
-        county = str_trim(county),
-        enrollment = readr::parse_number(as.character(enrollment)),
-        pct_religious = as.numeric(pct_religious),
-        pct_medical = as.numeric(pct_medical),
+        c1 = as.character(c1),
+        c2 = as.character(c2),
+        c3 = as.character(c3),
+        c4 = as.character(c4),
+        c5 = as.character(c5),
+        c6 = as.character(c6),
+        section_county = if_else(
+          str_detect(str_to_upper(str_trim(c1)), "COUNTY$"),
+          str_to_upper(str_trim(str_remove(c1, "\\s+COUNTY$"))),
+          NA_character_
+        )
+      ) %>%
+      tidyr::fill(section_county, .direction = "down") %>%
+      mutate(
+        county = case_when(
+          str_to_upper(str_trim(c2)) %in% c("HAWAII", "HONOLULU", "KAUAI", "MAUI") ~ str_to_upper(str_trim(c2)),
+          str_to_upper(str_trim(c3)) %in% c("HAWAII", "HONOLULU", "KAUAI", "MAUI") ~ str_to_upper(str_trim(c3)),
+          TRUE ~ section_county
+        ),
+        enrollment = readr::parse_number(
+          c4,
+          na = c("", "NA", "NR", "N/R", "DNR", "Enrollment", "Total Enrollment", "Total\r\nEnrollment")
+        ),
+        pct_religious = suppressWarnings(readr::parse_number(c5)),
+        pct_medical = suppressWarnings(readr::parse_number(c6))
+      ) %>%
+      filter(
+        !is.na(county),
+        county %in% c("HAWAII", "HONOLULU", "KAUAI", "MAUI"),
+        !is.na(enrollment),
+        enrollment > 0,
+        str_to_lower(str_trim(c1)) != "school name",
+        !str_detect(str_to_upper(c1), "ALL SCHOOLS")
+      ) %>%
+      mutate(
+        pct_religious = if_else(pct_religious > 1, pct_religious / 100, pct_religious),
+        pct_medical = if_else(pct_medical > 1, pct_medical / 100, pct_medical),
+        N_personal_exempt_school = enrollment * pct_religious,
+        N_medical_exempt_school = enrollment * pct_medical,
         time = time
-      )
+      ) %>%
+      select(time, county, enrollment, N_personal_exempt_school, N_medical_exempt_school)
   }
-  
+
   data_all <- bind_rows(lapply(raw_files, parse_one))
-  
+
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "HI") %>%
-    mutate(geography_name = gsub(" County", "", geography_name))
-  
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-  
+  county_fips <- all_fips %>%
+    filter(state == "HI", nchar(geography) == 5) %>%
+    transmute(
+      geography,
+      geography_name = str_remove(geography_name, " County$"),
+      county = str_to_upper(str_trim(geography_name))
+    )
+
   data_out <- data_all %>%
     group_by(county, time) %>%
     summarize(
-      total_enroll = sum(enrollment, na.rm = TRUE),
-      N_personal_exempt = sum(enrollment * pct_religious, na.rm = TRUE),
-      N_medical_exempt = sum(enrollment * pct_medical, na.rm = TRUE),
-      pct_personal_exempt = ifelse(total_enroll > 0,
-                                   N_personal_exempt / total_enroll,
-                                   NA_real_),
-      pct_medical_exempt = ifelse(total_enroll > 0,
-                                  N_medical_exempt / total_enroll,
-                                  NA_real_),
+      total_enrollment = sum(enrollment, na.rm = TRUE),
+      N_personal_exempt = sum(N_personal_exempt_school, na.rm = TRUE),
+      N_medical_exempt = sum(N_medical_exempt_school, na.rm = TRUE),
+      pct_personal_exempt = if_else(total_enrollment > 0, (N_personal_exempt / total_enrollment) * 100, NA_real_),
+      pct_medical_exempt = if_else(total_enrollment > 0, (N_medical_exempt / total_enrollment) * 100, NA_real_),
       .groups = "drop"
     ) %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    left_join(county_fips, by = "county") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = if_else(is.na(geography_name), "Hawaii", county),
+      geography_name = str_to_title(str_to_lower(geography_name)),
       grade = "Overall",
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -96,9 +116,10 @@ if (!identical(process$raw_state, raw_state) ||
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
       pct_personal_exempt, pct_medical_exempt, pct_full_exempt
     )
-  
-  vroom::vroom_write(data_out, "./standard/data.csv.gz")
-  
+
+  vroom::vroom_write(data_out, "./standard/data.csv.gz", delim = ",")
+  vroom::vroom_write(data_out, "./standard/data.csv", delim = ",")
+
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)

@@ -1,549 +1,549 @@
 time	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	health_district	school_district
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	Bear River	Box Elder
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.6	Bear River	Box Elder
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Bear River	Box Elder
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.2	Bear River	Box Elder
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.3	Bear River	Box Elder
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	Bear River	Cache
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Bear River	Cache
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.7	Bear River	Cache
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Bear River	Cache
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Bear River	Cache
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.4	Bear River	Logan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.2	Bear River	Logan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Bear River	Logan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.3	Bear River	Logan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Bear River	Logan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10	Bear River	Rich
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Bear River	Rich
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.4	Bear River	Rich
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Bear River	Rich
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.8	Bear River	Rich
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.5	Central	Juab
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.2	Central	Juab
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.4	Central	Juab
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.5	Central	Juab
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.6	Central	Juab
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Central	Millard
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.8	Central	Millard
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	Central	Millard
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.2	Central	Millard
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.3	Central	Millard
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.1	Central	North Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.6	Central	North Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.1	Central	North Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.2	Central	North Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.3	Central	North Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.3	Central	Piute
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.3	Central	Piute
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.5	Central	Piute
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Piute
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.1	Central	Piute
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	Central	Sevier
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Central	Sevier
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Central	Sevier
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8	Central	Sevier
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.1	Central	Sevier
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Central	South Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.1	Central	South Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Central	South Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.7	Central	South Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.9	Central	South Sanpete
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.7	Central	Tintic
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	Central	Tintic
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Tintic
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Tintic
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.8	Central	Tintic
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Wayne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.5	Central	Wayne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.7	Central	Wayne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.1	Central	Wayne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	15.6	Central	Wayne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Davis	Davis
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Davis	Davis
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Davis	Davis
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Davis	Davis
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.8	Davis	Davis
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.7	Salt Lake	Canyons
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Salt Lake	Canyons
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.6	Salt Lake	Canyons
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	Salt Lake	Canyons
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.1	Salt Lake	Canyons
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.2	Salt Lake	Granite
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	Salt Lake	Granite
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	Salt Lake	Granite
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	Salt Lake	Granite
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Salt Lake	Granite
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Salt Lake	Jordan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Salt Lake	Jordan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Salt Lake	Jordan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Salt Lake	Jordan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.2	Salt Lake	Jordan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Salt Lake	Murray
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Salt Lake	Murray
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Salt Lake	Murray
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Salt Lake	Murray
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.6	Salt Lake	Murray
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Salt Lake	Salt Lake
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.7	Salt Lake	Salt Lake
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.3	Salt Lake	Salt Lake
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Salt Lake	Salt Lake
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Salt Lake	Salt Lake
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.2	San Juan	San Juan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	San Juan	San Juan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	San Juan	San Juan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	San Juan	San Juan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6	San Juan	San Juan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.6	Southeast	Carbon
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Southeast	Carbon
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.3	Southeast	Carbon
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Southeast	Carbon
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.9	Southeast	Carbon
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Southeast	Emery
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.9	Southeast	Emery
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.3	Southeast	Emery
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.8	Southeast	Emery
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.3	Southeast	Emery
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Southeast	Grand
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Southeast	Grand
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Southeast	Grand
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.1	Southeast	Grand
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8	Southeast	Grand
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.7	Southwest	Beaver
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Southwest	Beaver
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.7	Southwest	Beaver
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Southwest	Beaver
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Southwest	Beaver
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.5	Southwest	Garfield
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.5	Southwest	Garfield
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	Southwest	Garfield
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.7	Southwest	Garfield
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Southwest	Garfield
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Southwest	Iron
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.3	Southwest	Iron
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Southwest	Iron
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.5	Southwest	Iron
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.4	Southwest	Iron
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	20.9	Southwest	Kane
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19.2	Southwest	Kane
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.8	Southwest	Kane
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	16.2	Southwest	Kane
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19.8	Southwest	Kane
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.6	Southwest	Washington
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.7	Southwest	Washington
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.5	Southwest	Washington
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.1	Southwest	Washington
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.6	Southwest	Washington
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Summit	North Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Summit	North Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.5	Summit	North Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.6	Summit	North Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Summit	North Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.3	Summit	Park City
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.4	Summit	Park City
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	Summit	Park City
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.4	Summit	Park City
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	Summit	Park City
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.8	Summit	South Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	Summit	South Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.3	Summit	South Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.9	Summit	South Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11	Summit	South Summit
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Tooele	Tooele
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	Tooele	Tooele
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Tooele	Tooele
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Tooele	Tooele
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Tooele	Tooele
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	TriCounty	Daggett
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	TriCounty	Daggett
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.3	TriCounty	Daggett
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	TriCounty	Daggett
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	TriCounty	Daggett
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.9	TriCounty	Duchesne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	TriCounty	Duchesne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	TriCounty	Duchesne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7	TriCounty	Duchesne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.2	TriCounty	Duchesne
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.6	TriCounty	Uintah
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	TriCounty	Uintah
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	TriCounty	Uintah
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.8	TriCounty	Uintah
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.9	TriCounty	Uintah
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Utah County	Alpine
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Utah County	Alpine
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Utah County	Alpine
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.6	Utah County	Alpine
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.4	Utah County	Alpine
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Utah County	Nebo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Utah County	Nebo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Utah County	Nebo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Utah County	Nebo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9	Utah County	Nebo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	Utah County	Provo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9	Utah County	Provo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Utah County	Provo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.3	Utah County	Provo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Utah County	Provo
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Wasatch	Wasatch
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	Wasatch	Wasatch
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.6	Wasatch	Wasatch
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.8	Wasatch	Wasatch
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.5	Wasatch	Wasatch
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	Weber-Morgan	Morgan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.2	Weber-Morgan	Morgan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	Weber-Morgan	Morgan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.3	Weber-Morgan	Morgan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.3	Weber-Morgan	Morgan
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Weber-Morgan	Ogden
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	Weber-Morgan	Ogden
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	Weber-Morgan	Ogden
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Weber-Morgan	Ogden
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.7	Weber-Morgan	Ogden
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Weber-Morgan	Weber
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Weber-Morgan	Weber
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.7	Weber-Morgan	Weber
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Weber-Morgan	Weber
-2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Weber-Morgan	Weber
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Bear River	Box Elder
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.6	Bear River	Box Elder
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Bear River	Box Elder
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Bear River	Box Elder
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Bear River	Box Elder
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Bear River	Cache
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Bear River	Cache
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.7	Bear River	Cache
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Bear River	Cache
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Bear River	Cache
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.7	Bear River	Logan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Bear River	Logan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Bear River	Logan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Bear River	Logan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Bear River	Logan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Bear River	Rich
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Bear River	Rich
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.4	Bear River	Rich
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Bear River	Rich
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Bear River	Rich
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.1	Central	Juab
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.2	Central	Juab
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.4	Central	Juab
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	Central	Juab
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.2	Central	Juab
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Central	Millard
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.8	Central	Millard
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	Central	Millard
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Central	Millard
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.3	Central	Millard
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.6	Central	North Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.6	Central	North Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.1	Central	North Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.6	Central	North Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.7	Central	North Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Central	Piute
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.3	Central	Piute
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.5	Central	Piute
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.2	Central	Piute
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.6	Central	Piute
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Central	Sevier
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Central	Sevier
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Central	Sevier
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Central	Sevier
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.7	Central	Sevier
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Central	South Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.3	Central	South Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Central	South Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Central	South Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Central	South Sanpete
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.4	Central	Tintic
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	Central	Tintic
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Tintic
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.2	Central	Tintic
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.8	Central	Tintic
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.6	Central	Wayne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.5	Central	Wayne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.7	Central	Wayne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Central	Wayne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8	Central	Wayne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Davis	Davis
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Davis	Davis
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Davis	Davis
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	Davis	Davis
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Davis	Davis
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Salt Lake	Canyons
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Salt Lake	Canyons
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.6	Salt Lake	Canyons
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Salt Lake	Canyons
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	Salt Lake	Canyons
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.5	Salt Lake	Granite
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	Salt Lake	Granite
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	Salt Lake	Granite
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.7	Salt Lake	Granite
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.9	Salt Lake	Granite
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Salt Lake	Jordan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Salt Lake	Jordan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Salt Lake	Jordan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Salt Lake	Jordan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Salt Lake	Jordan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.3	Salt Lake	Murray
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Salt Lake	Murray
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Salt Lake	Murray
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Salt Lake	Murray
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Salt Lake	Murray
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.7	Salt Lake	Salt Lake
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.7	Salt Lake	Salt Lake
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.3	Salt Lake	Salt Lake
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.7	Salt Lake	Salt Lake
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.5	Salt Lake	Salt Lake
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.3	San Juan	San Juan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	San Juan	San Juan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	San Juan	San Juan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	San Juan	San Juan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	San Juan	San Juan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.2	Southeast	Carbon
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Southeast	Carbon
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.3	Southeast	Carbon
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.7	Southeast	Carbon
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Southeast	Carbon
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Southeast	Emery
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.9	Southeast	Emery
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.3	Southeast	Emery
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Southeast	Emery
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.8	Southeast	Emery
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Southeast	Grand
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Southeast	Grand
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Southeast	Grand
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Southeast	Grand
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Southeast	Grand
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.6	Southwest	Beaver
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Southwest	Beaver
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.7	Southwest	Beaver
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	Southwest	Beaver
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	Southwest	Beaver
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Southwest	Garfield
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.5	Southwest	Garfield
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	Southwest	Garfield
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.4	Southwest	Garfield
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.2	Southwest	Garfield
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.7	Southwest	Iron
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.3	Southwest	Iron
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Southwest	Iron
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	Southwest	Iron
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13	Southwest	Iron
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.2	Southwest	Kane
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19.2	Southwest	Kane
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.8	Southwest	Kane
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.8	Southwest	Kane
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12	Southwest	Kane
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	Southwest	Washington
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.7	Southwest	Washington
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.5	Southwest	Washington
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.2	Southwest	Washington
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.2	Southwest	Washington
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	Summit	North Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Summit	North Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.5	Summit	North Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Summit	North Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Summit	North Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Summit	Park City
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.4	Summit	Park City
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	Summit	Park City
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Summit	Park City
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.6	Summit	Park City
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Summit	South Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	Summit	South Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.3	Summit	South Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Summit	South Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Summit	South Summit
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Tooele	Tooele
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	Tooele	Tooele
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Tooele	Tooele
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Tooele	Tooele
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	Tooele	Tooele
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	TriCounty	Daggett
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	TriCounty	Daggett
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.3	TriCounty	Daggett
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	TriCounty	Daggett
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.3	TriCounty	Daggett
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.6	TriCounty	Duchesne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	TriCounty	Duchesne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	TriCounty	Duchesne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6	TriCounty	Duchesne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	TriCounty	Duchesne
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	TriCounty	Uintah
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	TriCounty	Uintah
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	TriCounty	Uintah
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	TriCounty	Uintah
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	TriCounty	Uintah
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Utah County	Alpine
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Utah County	Alpine
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Utah County	Alpine
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Utah County	Alpine
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Utah County	Alpine
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	Utah County	Nebo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Utah County	Nebo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Utah County	Nebo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.3	Utah County	Nebo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Utah County	Nebo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Utah County	Provo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9	Utah County	Provo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Utah County	Provo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Utah County	Provo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	Utah County	Provo
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Wasatch	Wasatch
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	Wasatch	Wasatch
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.6	Wasatch	Wasatch
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.2	Wasatch	Wasatch
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7	Wasatch	Wasatch
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Weber-Morgan	Morgan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.2	Weber-Morgan	Morgan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	Weber-Morgan	Morgan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Weber-Morgan	Morgan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Weber-Morgan	Morgan
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.9	Weber-Morgan	Ogden
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	Weber-Morgan	Ogden
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.8	Weber-Morgan	Ogden
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	Weber-Morgan	Ogden
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Weber-Morgan	Ogden
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	Weber-Morgan	Weber
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Weber-Morgan	Weber
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.7	Weber-Morgan	Weber
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.8	Weber-Morgan	Weber
-2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Weber-Morgan	Weber
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Bear River	Box Elder
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Bear River	Box Elder
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Bear River	Box Elder
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.8	Bear River	Box Elder
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.8	Bear River	Box Elder
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Bear River	Cache
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Bear River	Cache
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Bear River	Cache
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.7	Bear River	Cache
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Bear River	Cache
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.4	Bear River	Logan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.5	Bear River	Logan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.3	Bear River	Logan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.7	Bear River	Logan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Bear River	Logan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.1	Bear River	Rich
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Bear River	Rich
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.3	Bear River	Rich
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Bear River	Rich
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	Bear River	Rich
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.2	Central	Juab
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.9	Central	Juab
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.7	Central	Juab
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.9	Central	Juab
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.1	Central	Juab
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Central	Millard
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.4	Central	Millard
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	Central	Millard
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.2	Central	Millard
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.6	Central	Millard
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.5	Central	North Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.6	Central	North Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.6	Central	North Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.1	Central	North Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.5	Central	North Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	Central	Piute
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Central	Piute
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Piute
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Piute
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.5	Central	Piute
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Central	Sevier
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Central	Sevier
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.4	Central	Sevier
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.4	Central	Sevier
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.5	Central	Sevier
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.2	Central	South Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Central	South Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	Central	South Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Central	South Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.6	Central	South Sanpete
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Tintic
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.8	Central	Tintic
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.1	Central	Tintic
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	Central	Tintic
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	Bear River	Box Elder
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.60	Bear River	Box Elder
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Bear River	Box Elder
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.20	Bear River	Box Elder
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.30	Bear River	Box Elder
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	Bear River	Cache
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Bear River	Cache
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	Bear River	Cache
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Bear River	Cache
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Bear River	Cache
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.40	Bear River	Logan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	Bear River	Logan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Bear River	Logan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.30	Bear River	Logan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Bear River	Logan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.00	Bear River	Rich
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Bear River	Rich
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.40	Bear River	Rich
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Bear River	Rich
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.80	Bear River	Rich
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.50	Central	Juab
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.20	Central	Juab
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.40	Central	Juab
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.50	Central	Juab
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.60	Central	Juab
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Central	Millard
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.80	Central	Millard
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	Central	Millard
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.20	Central	Millard
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.30	Central	Millard
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.10	Central	North Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.60	Central	North Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.10	Central	North Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.20	Central	North Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.30	Central	North Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.30	Central	Piute
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.30	Central	Piute
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.50	Central	Piute
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Piute
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.10	Central	Piute
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	Central	Sevier
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Central	Sevier
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Central	Sevier
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.00	Central	Sevier
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.10	Central	Sevier
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Central	South Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.10	Central	South Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Central	South Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.70	Central	South Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.90	Central	South Sanpete
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.70	Central	Tintic
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	Central	Tintic
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Tintic
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Tintic
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.80	Central	Tintic
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Wayne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.50	Central	Wayne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.70	Central	Wayne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.10	Central	Wayne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	15.60	Central	Wayne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Davis	Davis
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Davis	Davis
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Davis	Davis
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Davis	Davis
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.80	Davis	Davis
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.70	Salt Lake	Canyons
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Salt Lake	Canyons
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.60	Salt Lake	Canyons
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	Salt Lake	Canyons
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.10	Salt Lake	Canyons
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	Salt Lake	Granite
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	Salt Lake	Granite
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	Salt Lake	Granite
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	Salt Lake	Granite
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Salt Lake	Granite
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Salt Lake	Jordan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Salt Lake	Jordan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Salt Lake	Jordan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Salt Lake	Jordan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.20	Salt Lake	Jordan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Salt Lake	Murray
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Salt Lake	Murray
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Salt Lake	Murray
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Salt Lake	Murray
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.60	Salt Lake	Murray
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Salt Lake	Salt Lake
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	Salt Lake	Salt Lake
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.30	Salt Lake	Salt Lake
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Salt Lake	Salt Lake
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Salt Lake	Salt Lake
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	San Juan	San Juan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	San Juan	San Juan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	San Juan	San Juan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	San Juan	San Juan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.00	San Juan	San Juan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.60	Southeast	Carbon
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Southeast	Carbon
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.30	Southeast	Carbon
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Southeast	Carbon
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.90	Southeast	Carbon
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Southeast	Emery
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.90	Southeast	Emery
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.30	Southeast	Emery
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.80	Southeast	Emery
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.30	Southeast	Emery
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Southeast	Grand
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Southeast	Grand
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Southeast	Grand
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.10	Southeast	Grand
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.00	Southeast	Grand
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.70	Southwest	Beaver
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Southwest	Beaver
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	Southwest	Beaver
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Southwest	Beaver
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Southwest	Beaver
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.50	Southwest	Garfield
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.50	Southwest	Garfield
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	Southwest	Garfield
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.70	Southwest	Garfield
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Southwest	Garfield
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Southwest	Iron
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.30	Southwest	Iron
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Southwest	Iron
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.50	Southwest	Iron
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.40	Southwest	Iron
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	20.90	Southwest	Kane
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19.20	Southwest	Kane
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.80	Southwest	Kane
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	16.20	Southwest	Kane
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19.80	Southwest	Kane
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.60	Southwest	Washington
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.70	Southwest	Washington
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.50	Southwest	Washington
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.10	Southwest	Washington
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.60	Southwest	Washington
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Summit	North Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Summit	North Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.50	Summit	North Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.60	Summit	North Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Summit	North Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.30	Summit	Park City
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.40	Summit	Park City
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	Summit	Park City
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.40	Summit	Park City
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	Summit	Park City
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.80	Summit	South Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	Summit	South Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.30	Summit	South Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.90	Summit	South Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.00	Summit	South Summit
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Tooele	Tooele
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	Tooele	Tooele
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Tooele	Tooele
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Tooele	Tooele
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Tooele	Tooele
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	TriCounty	Daggett
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	TriCounty	Daggett
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.30	TriCounty	Daggett
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	TriCounty	Daggett
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	TriCounty	Daggett
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.90	TriCounty	Duchesne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	TriCounty	Duchesne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	TriCounty	Duchesne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.00	TriCounty	Duchesne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.20	TriCounty	Duchesne
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.60	TriCounty	Uintah
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	TriCounty	Uintah
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	TriCounty	Uintah
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.80	TriCounty	Uintah
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.90	TriCounty	Uintah
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Utah County	Alpine
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Utah County	Alpine
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Utah County	Alpine
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.60	Utah County	Alpine
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.40	Utah County	Alpine
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Utah County	Nebo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Utah County	Nebo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Utah County	Nebo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Utah County	Nebo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.00	Utah County	Nebo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	Utah County	Provo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.00	Utah County	Provo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Utah County	Provo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.30	Utah County	Provo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Utah County	Provo
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Wasatch	Wasatch
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	Wasatch	Wasatch
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.60	Wasatch	Wasatch
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.80	Wasatch	Wasatch
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.50	Wasatch	Wasatch
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	Weber-Morgan	Morgan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.20	Weber-Morgan	Morgan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	Weber-Morgan	Morgan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.30	Weber-Morgan	Morgan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.30	Weber-Morgan	Morgan
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Weber-Morgan	Ogden
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	Weber-Morgan	Ogden
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	Weber-Morgan	Ogden
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Weber-Morgan	Ogden
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	Weber-Morgan	Ogden
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Weber-Morgan	Weber
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Weber-Morgan	Weber
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	Weber-Morgan	Weber
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Weber-Morgan	Weber
+2019-09-01	49	Utah	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Weber-Morgan	Weber
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Bear River	Box Elder
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.60	Bear River	Box Elder
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Bear River	Box Elder
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Bear River	Box Elder
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Bear River	Box Elder
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Bear River	Cache
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Bear River	Cache
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	Bear River	Cache
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Bear River	Cache
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Bear River	Cache
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.70	Bear River	Logan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Bear River	Logan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Bear River	Logan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Bear River	Logan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Bear River	Logan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Bear River	Rich
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Bear River	Rich
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.40	Bear River	Rich
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Bear River	Rich
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Bear River	Rich
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.10	Central	Juab
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.20	Central	Juab
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.40	Central	Juab
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	Central	Juab
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.20	Central	Juab
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Central	Millard
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.80	Central	Millard
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	Central	Millard
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Central	Millard
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.30	Central	Millard
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.60	Central	North Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.60	Central	North Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.10	Central	North Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.60	Central	North Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.70	Central	North Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Central	Piute
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.30	Central	Piute
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.50	Central	Piute
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.20	Central	Piute
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.60	Central	Piute
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Central	Sevier
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Central	Sevier
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Central	Sevier
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Central	Sevier
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	Central	Sevier
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Central	South Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.30	Central	South Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Central	South Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Central	South Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Central	South Sanpete
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.40	Central	Tintic
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	Central	Tintic
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Tintic
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.20	Central	Tintic
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.80	Central	Tintic
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.60	Central	Wayne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.50	Central	Wayne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.70	Central	Wayne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Central	Wayne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.00	Central	Wayne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Davis	Davis
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Davis	Davis
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Davis	Davis
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	Davis	Davis
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Davis	Davis
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Salt Lake	Canyons
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Salt Lake	Canyons
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.60	Salt Lake	Canyons
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Salt Lake	Canyons
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	Salt Lake	Canyons
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.50	Salt Lake	Granite
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	Salt Lake	Granite
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	Salt Lake	Granite
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.70	Salt Lake	Granite
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.90	Salt Lake	Granite
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Salt Lake	Jordan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Salt Lake	Jordan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Salt Lake	Jordan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Salt Lake	Jordan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Salt Lake	Jordan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.30	Salt Lake	Murray
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Salt Lake	Murray
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Salt Lake	Murray
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Salt Lake	Murray
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Salt Lake	Murray
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.70	Salt Lake	Salt Lake
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	Salt Lake	Salt Lake
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.30	Salt Lake	Salt Lake
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.70	Salt Lake	Salt Lake
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.50	Salt Lake	Salt Lake
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.30	San Juan	San Juan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	San Juan	San Juan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	San Juan	San Juan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	San Juan	San Juan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	San Juan	San Juan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	Southeast	Carbon
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Southeast	Carbon
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.30	Southeast	Carbon
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	Southeast	Carbon
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Southeast	Carbon
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Southeast	Emery
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.90	Southeast	Emery
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.30	Southeast	Emery
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Southeast	Emery
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.80	Southeast	Emery
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Southeast	Grand
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Southeast	Grand
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Southeast	Grand
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Southeast	Grand
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Southeast	Grand
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.60	Southwest	Beaver
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Southwest	Beaver
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	Southwest	Beaver
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	Southwest	Beaver
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	Southwest	Beaver
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Southwest	Garfield
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.50	Southwest	Garfield
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	Southwest	Garfield
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.40	Southwest	Garfield
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.20	Southwest	Garfield
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.70	Southwest	Iron
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.30	Southwest	Iron
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Southwest	Iron
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	Southwest	Iron
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.00	Southwest	Iron
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.20	Southwest	Kane
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19.20	Southwest	Kane
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.80	Southwest	Kane
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.80	Southwest	Kane
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.00	Southwest	Kane
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	Southwest	Washington
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.70	Southwest	Washington
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.50	Southwest	Washington
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.20	Southwest	Washington
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.20	Southwest	Washington
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	Summit	North Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Summit	North Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.50	Summit	North Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Summit	North Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Summit	North Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Summit	Park City
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.40	Summit	Park City
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	Summit	Park City
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Summit	Park City
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.60	Summit	Park City
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Summit	South Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	Summit	South Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.30	Summit	South Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Summit	South Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Summit	South Summit
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Tooele	Tooele
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	Tooele	Tooele
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Tooele	Tooele
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Tooele	Tooele
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	Tooele	Tooele
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	TriCounty	Daggett
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	TriCounty	Daggett
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.30	TriCounty	Daggett
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	TriCounty	Daggett
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.30	TriCounty	Daggett
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.60	TriCounty	Duchesne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	TriCounty	Duchesne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	TriCounty	Duchesne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.00	TriCounty	Duchesne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	TriCounty	Duchesne
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	TriCounty	Uintah
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	TriCounty	Uintah
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	TriCounty	Uintah
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	TriCounty	Uintah
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	TriCounty	Uintah
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Utah County	Alpine
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Utah County	Alpine
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Utah County	Alpine
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Utah County	Alpine
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Utah County	Alpine
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	Utah County	Nebo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Utah County	Nebo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Utah County	Nebo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.30	Utah County	Nebo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Utah County	Nebo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Utah County	Provo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.00	Utah County	Provo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Utah County	Provo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Utah County	Provo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	Utah County	Provo
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Wasatch	Wasatch
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	Wasatch	Wasatch
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.60	Wasatch	Wasatch
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.20	Wasatch	Wasatch
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.00	Wasatch	Wasatch
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Weber-Morgan	Morgan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.20	Weber-Morgan	Morgan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	Weber-Morgan	Morgan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Weber-Morgan	Morgan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Weber-Morgan	Morgan
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.90	Weber-Morgan	Ogden
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	Weber-Morgan	Ogden
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.80	Weber-Morgan	Ogden
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	Weber-Morgan	Ogden
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Weber-Morgan	Ogden
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	Weber-Morgan	Weber
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Weber-Morgan	Weber
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	Weber-Morgan	Weber
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	Weber-Morgan	Weber
+2019-09-01	49	Utah	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Weber-Morgan	Weber
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Bear River	Box Elder
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Bear River	Box Elder
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Bear River	Box Elder
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.80	Bear River	Box Elder
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.80	Bear River	Box Elder
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Bear River	Cache
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Bear River	Cache
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Bear River	Cache
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.70	Bear River	Cache
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Bear River	Cache
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.40	Bear River	Logan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.50	Bear River	Logan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.30	Bear River	Logan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.70	Bear River	Logan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Bear River	Logan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.10	Bear River	Rich
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Bear River	Rich
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.30	Bear River	Rich
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Bear River	Rich
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	Bear River	Rich
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.20	Central	Juab
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.90	Central	Juab
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.70	Central	Juab
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.90	Central	Juab
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.10	Central	Juab
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Central	Millard
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.40	Central	Millard
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	Central	Millard
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.20	Central	Millard
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.60	Central	Millard
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.50	Central	North Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.60	Central	North Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.60	Central	North Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.10	Central	North Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.50	Central	North Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	Central	Piute
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Central	Piute
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Piute
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Piute
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.50	Central	Piute
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Central	Sevier
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Central	Sevier
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.40	Central	Sevier
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.40	Central	Sevier
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.50	Central	Sevier
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.20	Central	South Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Central	South Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	Central	South Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Central	South Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.60	Central	South Sanpete
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Tintic
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.80	Central	Tintic
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.10	Central	Tintic
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	Central	Tintic
 2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Central	Tintic
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Central	Wayne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	Central	Wayne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.4	Central	Wayne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.3	Central	Wayne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	17.1	Central	Wayne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Davis	Davis
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.7	Davis	Davis
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Davis	Davis
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Davis	Davis
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.2	Davis	Davis
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.8	Salt Lake	Canyons
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.9	Salt Lake	Canyons
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.7	Salt Lake	Canyons
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Salt Lake	Canyons
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.7	Salt Lake	Canyons
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.2	Salt Lake	Granite
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.4	Salt Lake	Granite
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Salt Lake	Granite
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.6	Salt Lake	Granite
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	Salt Lake	Granite
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Salt Lake	Jordan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Salt Lake	Jordan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.5	Salt Lake	Jordan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	Salt Lake	Jordan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.6	Salt Lake	Jordan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Salt Lake	Murray
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Salt Lake	Murray
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.9	Salt Lake	Murray
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.2	Salt Lake	Murray
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.7	Salt Lake	Murray
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.3	Salt Lake	Salt Lake
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.5	Salt Lake	Salt Lake
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.9	Salt Lake	Salt Lake
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.7	Salt Lake	Salt Lake
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.7	Salt Lake	Salt Lake
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.6	San Juan	San Juan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.7	San Juan	San Juan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	San Juan	San Juan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.5	San Juan	San Juan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.2	San Juan	San Juan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3	Southeast	Carbon
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.2	Southeast	Carbon
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Southeast	Carbon
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Southeast	Carbon
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.4	Southeast	Carbon
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	Southeast	Emery
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.1	Southeast	Emery
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Southeast	Emery
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Southeast	Emery
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	Southeast	Emery
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Southeast	Grand
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	Southeast	Grand
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Southeast	Grand
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Southeast	Grand
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Southeast	Grand
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.9	Southwest	Beaver
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2	Southwest	Beaver
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Southwest	Beaver
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Southwest	Beaver
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.8	Southwest	Beaver
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9	Southwest	Garfield
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.2	Southwest	Garfield
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Southwest	Garfield
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	Southwest	Garfield
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Southwest	Garfield
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.5	Southwest	Iron
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.9	Southwest	Iron
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.7	Southwest	Iron
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.1	Southwest	Iron
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10	Southwest	Iron
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.2	Southwest	Kane
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	15	Southwest	Kane
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9	Southwest	Kane
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.4	Southwest	Kane
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13	Southwest	Kane
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.9	Southwest	Washington
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.8	Southwest	Washington
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.3	Southwest	Washington
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.3	Southwest	Washington
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.8	Southwest	Washington
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Central	Wayne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	Central	Wayne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.40	Central	Wayne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.30	Central	Wayne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	17.10	Central	Wayne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Davis	Davis
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	Davis	Davis
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Davis	Davis
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Davis	Davis
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.20	Davis	Davis
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.80	Salt Lake	Canyons
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.90	Salt Lake	Canyons
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.70	Salt Lake	Canyons
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Salt Lake	Canyons
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.70	Salt Lake	Canyons
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	Salt Lake	Granite
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	Salt Lake	Granite
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Salt Lake	Granite
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	Salt Lake	Granite
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	Salt Lake	Granite
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Salt Lake	Jordan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Salt Lake	Jordan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.50	Salt Lake	Jordan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	Salt Lake	Jordan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.60	Salt Lake	Jordan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Salt Lake	Murray
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Salt Lake	Murray
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	Salt Lake	Murray
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	Salt Lake	Murray
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.70	Salt Lake	Murray
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.30	Salt Lake	Salt Lake
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.50	Salt Lake	Salt Lake
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.90	Salt Lake	Salt Lake
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.70	Salt Lake	Salt Lake
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.70	Salt Lake	Salt Lake
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.60	San Juan	San Juan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.70	San Juan	San Juan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	San Juan	San Juan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	San Juan	San Juan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.20	San Juan	San Juan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	Southeast	Carbon
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	Southeast	Carbon
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Southeast	Carbon
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Southeast	Carbon
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.40	Southeast	Carbon
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	Southeast	Emery
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.10	Southeast	Emery
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Southeast	Emery
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Southeast	Emery
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	Southeast	Emery
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Southeast	Grand
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	Southeast	Grand
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Southeast	Grand
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Southeast	Grand
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Southeast	Grand
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.90	Southwest	Beaver
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	Southwest	Beaver
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Southwest	Beaver
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Southwest	Beaver
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	Southwest	Beaver
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.00	Southwest	Garfield
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.20	Southwest	Garfield
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Southwest	Garfield
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	Southwest	Garfield
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Southwest	Garfield
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	Southwest	Iron
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.90	Southwest	Iron
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.70	Southwest	Iron
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.10	Southwest	Iron
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.00	Southwest	Iron
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.20	Southwest	Kane
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	15.00	Southwest	Kane
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.00	Southwest	Kane
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	12.40	Southwest	Kane
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.00	Southwest	Kane
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.90	Southwest	Washington
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.80	Southwest	Washington
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.30	Southwest	Washington
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.30	Southwest	Washington
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	14.80	Southwest	Washington
 2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Summit	North Summit
 2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Summit	North Summit
 2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Summit	North Summit
@@ -559,58 +559,58 @@ time	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_p
 2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Summit	South Summit
 2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Summit	South Summit
 2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	Summit	South Summit
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Tooele	Tooele
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Tooele	Tooele
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.9	Tooele	Tooele
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.6	Tooele	Tooele
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.1	Tooele	Tooele
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	TriCounty	Daggett
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.3	TriCounty	Daggett
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	22.2	TriCounty	Daggett
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.6	TriCounty	Daggett
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0	TriCounty	Daggett
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.8	TriCounty	Duchesne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	TriCounty	Duchesne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	TriCounty	Duchesne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9	TriCounty	Duchesne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.5	TriCounty	Duchesne
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	TriCounty	Uintah
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	TriCounty	Uintah
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.3	TriCounty	Uintah
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.3	TriCounty	Uintah
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.7	TriCounty	Uintah
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Utah County	Alpine
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.9	Utah County	Alpine
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.2	Utah County	Alpine
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.4	Utah County	Alpine
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.2	Utah County	Alpine
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5	Utah County	Nebo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Utah County	Nebo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Utah County	Nebo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.1	Utah County	Nebo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8	Utah County	Nebo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.4	Utah County	Provo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.8	Utah County	Provo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.4	Utah County	Provo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.9	Utah County	Provo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.8	Utah County	Provo
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.5	Wasatch	Wasatch
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.2	Wasatch	Wasatch
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.7	Wasatch	Wasatch
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.7	Wasatch	Wasatch
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.2	Wasatch	Wasatch
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	16.2	Weber-Morgan	Morgan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7	Weber-Morgan	Morgan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	Weber-Morgan	Morgan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Weber-Morgan	Morgan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.6	Weber-Morgan	Morgan
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.5	Weber-Morgan	Ogden
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.1	Weber-Morgan	Ogden
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.2	Weber-Morgan	Ogden
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.3	Weber-Morgan	Ogden
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.9	Weber-Morgan	Ogden
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.5	Weber-Morgan	Weber
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.1	Weber-Morgan	Weber
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4	Weber-Morgan	Weber
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.3	Weber-Morgan	Weber
-2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.1	Weber-Morgan	Weber
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Tooele	Tooele
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Tooele	Tooele
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.90	Tooele	Tooele
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	Tooele	Tooele
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	Tooele	Tooele
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	TriCounty	Daggett
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.30	TriCounty	Daggett
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	22.20	TriCounty	Daggett
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.60	TriCounty	Daggett
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.00	TriCounty	Daggett
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.80	TriCounty	Duchesne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	TriCounty	Duchesne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	TriCounty	Duchesne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.00	TriCounty	Duchesne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.50	TriCounty	Duchesne
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	TriCounty	Uintah
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	TriCounty	Uintah
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.30	TriCounty	Uintah
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.30	TriCounty	Uintah
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.70	TriCounty	Uintah
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Utah County	Alpine
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	10.90	Utah County	Alpine
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	Utah County	Alpine
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.40	Utah County	Alpine
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.20	Utah County	Alpine
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	Utah County	Nebo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Utah County	Nebo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Utah County	Nebo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.10	Utah County	Nebo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.00	Utah County	Nebo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	Utah County	Provo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	13.80	Utah County	Provo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.40	Utah County	Provo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.90	Utah County	Provo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.80	Utah County	Provo
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.50	Wasatch	Wasatch
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.20	Wasatch	Wasatch
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.70	Wasatch	Wasatch
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.70	Wasatch	Wasatch
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	11.20	Wasatch	Wasatch
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	16.20	Weber-Morgan	Morgan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	7.00	Weber-Morgan	Morgan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	Weber-Morgan	Morgan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Weber-Morgan	Morgan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	9.60	Weber-Morgan	Morgan
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.50	Weber-Morgan	Ogden
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.10	Weber-Morgan	Ogden
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	Weber-Morgan	Ogden
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	1.30	Weber-Morgan	Ogden
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	Weber-Morgan	Ogden
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	Weber-Morgan	Weber
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	Weber-Morgan	Weber
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	Weber-Morgan	Weber
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.30	Weber-Morgan	Weber
+2019-09-01	49	Utah	7th grade	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.10	Weber-Morgan	Weber
