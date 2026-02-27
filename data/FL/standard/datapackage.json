@@ -7,5 +7,73 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 822,
+      "encoding": "ISO-8859-1",
+      "md5": "0538453a53b29d1e8a6947beeb2331f5",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {},
+      "source": [],
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": "NA",
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-02-26 19:21:04.856823",
+      "last_modified": "2026-02-26 19:21:04.856823",
+      "vintage": {},
+      "row_count": 23,
+      "entity_count": 0,
+      "schema": {
+        "fields": [
+          {
+            "name": "time\tgeography\tgeography_name\tgrade\tN_dtap\tN_polio\tN_mmr\tN_hep_b\tN_varicella\tN_personal_exempt\tN_medical_exempt\tN_full_exempt\tpct_dtap\tpct_polio\tpct_mmr\tpct_hep_b\tpct_varicella\tpct_personal_exempt\tpct_medical_exempt\tpct_full_exempt\ttotal_pop_4_18",
+            "duplicates": 0,
+            "time_range": [-1, -1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2024-09-01\t12009\tBrevard County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6255\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.700804525051689\t93347": 1,
+              "2024-09-01\t12011\tBroward County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t19390\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.847089120614683\t331618": 1,
+              "2024-09-01\t12013\tCalhoun County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t50\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.9319938176197835\t2588": 1,
+              "2024-09-01\t12017\tCitrus County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1166\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.007212776919114\t19410": 1,
+              "2024-09-01\t12023\tColumbia County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t727\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.725761991021501\t12697": 1,
+              "2024-09-01\t12029\tDixie County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t79\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t2.992424242424242\t2640": 1,
+              "2024-09-01\t12031\tDuval County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8860\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.287973739182333\t167550": 1,
+              "2024-09-01\t12033\tEscambia County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t2785\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.113938926531887\t54459": 1,
+              "2024-09-01\t12037\tFranklin County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t39\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t2.445141065830721\t1595": 1,
+              "2024-09-01\t12045\tGulf County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t86\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3.907314856883235\t2201": 1,
+              "2024-09-01\t12047\tHamilton County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t48\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.9161676646706587\t2505": 1,
+              "2024-09-01\t12057\tHillsborough County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9410\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t4.316058397508519\t218023": 1,
+              "2024-09-01\t12063\tJackson County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t164\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.91365227537923\t8570": 1,
+              "2024-09-01\t12065\tJefferson County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t91\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3.9912280701754383\t2280": 1,
+              "2024-09-01\t12067\tLafayette County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t50\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3.3003300330033\t1515": 1,
+              "2024-09-01\t12069\tLake County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t2633\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5.037113559840833\t52272": 1,
+              "2024-09-01\t12071\tLee County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6535\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.418630233860116\t101813": 1,
+              "2024-09-01\t12081\tManatee County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3393\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.146850486421855\t55199": 1,
+              "2024-09-01\t12086\tMiami-Dade County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t14418\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t4.073226544622425\t353970": 1,
+              "2024-09-01\t12087\tMonroe County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t727\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8.000440189281392\t9087": 1,
+              "2024-09-01\t12093\tOkeechobee County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t229\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t2.827858730550753\t8098": 1,
+              "2024-09-01\t12103\tPinellas County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7402\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6.978278904894789\t106072": 1,
+              "2024-09-01\t12129\tWakulla County\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t180\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t3.0338783077700997\t5933": 1
+            }
+          }
+        ]
+      },
+      "sha512": "9d6196640f71299b8d2645edd5939917a38c057b75232fe79961ff97278927a3821a2fb374e41bd3c562ba86324963cb2c6f5d777a836ee9e1b2ce5e4d7adf76"
+    }
+  ],
+  "measure_info": {
+    "example_variable": {
+      "id": "example_variable",
+      "sources": [],
+      "citations": []
+    }
+  }
 }

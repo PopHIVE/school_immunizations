@@ -6,14 +6,22 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:46",
-      "run_time": 0.039,
+      "last_run": "2026-02-26 19:09:55",
+      "run_time": 0.858,
       "last_status": {
-        "log": [],
+        "log": ["", "Attaching package: 'dplyr'", "", "The following objects are masked from 'package:stats':", "", "    filter, lag", "", "The following objects are masked from 'package:base':", "", "    intersect, setdiff, setequal, union", ""],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/VA_2019-2024.xlsx": "d117f9391dfcda76d5356a6a0cc10727"
+  },
+  "script_hash": "742c3a64c03c00d6fb03159179865d4e",
+  "standard_state": {
+    "./data/VA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/VA/standard/data.csv.gz": "5db45c697cdfa9608a6dfd71595e5f6e"
+  }
 }

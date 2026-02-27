@@ -6,14 +6,44 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:45",
-      "run_time": 0.039,
+      "last_run": "2026-02-26 19:10:24",
+      "run_time": 0.427,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "New names:",
+          "* `` -> `...1`",
+          "* `` -> `...2`",
+          "* `` -> `...3`",
+          "* `` -> `...4`",
+          "* `` -> `...5`",
+          "* `` -> `...6`",
+          "* `` -> `...7`",
+          "* `` -> `...8`",
+          "* `` -> `...9`"
+        ],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/RI_RE rates_Yale_Aug 2025 (1).xlsx": "6ecfd014943cedbc3c5c4b90e83dbaeb"
+  },
+  "script_hash": "0f161d5fbab59d11c0ac4b1a5a3a5a3b",
+  "standard_state": {
+    "./data/RI/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/RI/standard/data.csv.gz": "f3e92718fe42b3eb359310eb69285f16"
+  }
 }

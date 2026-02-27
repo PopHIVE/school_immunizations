@@ -6,14 +6,34 @@
       "path": "ingest.R",
       "manual": false,
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:44",
-      "run_time": 0.039,
+      "last_run": "2026-02-26 19:09:56",
+      "run_time": 0.321,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          ""
+        ],
         "success": true
       }
     }
   ],
   "checked": "",
-  "check_results": []
+  "check_results": [],
+  "raw_state": {
+    "raw/2010-2024 MMR Kindergarten.xlsx": "e00cca9d686a7a6873301d1815efdb90"
+  },
+  "script_hash": "fa0cb7076a42ec682e4c05dfcdc2dbe0",
+  "standard_state": {
+    "./data/NV/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
+    "./data/NV/standard/data.csv.gz": "6b92184e2ef1eaa235ddd53af2c962af"
+  }
 }

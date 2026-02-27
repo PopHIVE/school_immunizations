@@ -7,5 +7,71 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 610,
+      "encoding": "ISO-8859-1",
+      "md5": "f3e92718fe42b3eb359310eb69285f16",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {},
+      "source": [],
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": "NA",
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-02-26 19:21:06.221299",
+      "last_modified": "2026-02-26 19:21:06.221299",
+      "vintage": {},
+      "row_count": 21,
+      "entity_count": 0,
+      "schema": {
+        "fields": [
+          {
+            "name": "time\tgeography\tgeography_name\tgrade\tN_dtap\tN_polio\tN_mmr\tN_hep_b\tN_varicella\tN_personal_exempt\tN_medical_exempt\tN_full_exempt\tpct_dtap\tpct_polio\tpct_mmr\tpct_hep_b\tpct_varicella\tpct_personal_exempt\tpct_medical_exempt\tpct_full_exempt",
+            "duplicates": 0,
+            "time_range": [-1, -1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
+              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
+              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
+              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
+              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
+              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
+              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
+              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
+              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
+              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
+              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
+              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
+              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
+              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
+            }
+          }
+        ]
+      },
+      "sha512": "f99df6dad4924f984ffa3a95271cc7cb52476777a2d093091b8693e5da519c17c656f73e8573afb8fd88ccc6d323eeae28616ae4dc7e34bc8d7b15d675d68504"
+    }
+  ],
+  "measure_info": {
+    "example_variable": {
+      "id": "example_variable",
+      "sources": [],
+      "citations": []
+    }
+  }
 }
