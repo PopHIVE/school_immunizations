@@ -6,7 +6,7 @@ library(vroom)
 library(readr)
 
 raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
+  "Raw", recursive = TRUE, full.names = TRUE
 )))
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
@@ -14,7 +14,7 @@ script_hash <- as.character(tools::md5sum("ingest.R"))
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
   
-  raw_path <- "./raw/Maryland Vaccine Exemption_KG.xlsx"
+  raw_path <- "./Raw/Maryland Vaccine Exemption_KG.xlsx"
   data_raw <- readxl::read_excel(raw_path, sheet = "data")
   
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
@@ -31,6 +31,8 @@ if (!identical(process$raw_state, raw_state) ||
     rename(
       county = County,
       school_year = School_Year,
+      N_enroll = Enrolled_N,
+      N_surveyed = Surveyed_N,
       pct_dtap = DTaP_pct,
       pct_polio = Polio_pct,
       pct_mmr = MMR_pct,
@@ -69,6 +71,7 @@ if (!identical(process$raw_state, raw_state) ||
       N_personal_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
       pct_personal_exempt, pct_medical_exempt, pct_full_exempt
+      , N_enroll, N_surveyed
     )
   
   vroom::vroom_write(data_out, "./standard/data.csv.gz")
