@@ -42,6 +42,13 @@ if (!identical(process$raw_state, raw_state) ||
   
   data_all <- bind_rows(lapply(raw_files, parse_one)) %>%
     mutate(
+      county = str_trim(county),
+      county_join = case_when(
+        county == "DeWitt" ~ "De Witt",
+        county == "La Salle" ~ "LaSalle",
+        county == "Saint Clair" ~ "St. Clair",
+        TRUE ~ county
+      ),
       enrollment = readr::parse_number(as.character(enrollment)),
       N_personal_exempt = readr::parse_number(as.character(N_personal_exempt)),
       N_medical_exempt = readr::parse_number(as.character(N_medical_exempt)),
@@ -62,7 +69,7 @@ if (!identical(process$raw_state, raw_state) ||
   data_out <- data_all %>%
     left_join(
       fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
+      by = c("county_join" = "geography_name")
     ) %>%
     mutate(
       geography = if_else(is.na(geography), state_fips[1], geography),

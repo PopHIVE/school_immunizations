@@ -85,11 +85,11 @@ if (!identical(process$raw_state, raw_state) ||
     transmute(
       time, geography, geography_name, grade,
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
-      N_personal_exempt = n_personal_exempt,
+      N_religious_exempt = n_personal_exempt,
       N_medical_exempt = n_medical_exempt,
       N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
-      pct_personal_exempt,
+      pct_religious_exempt = pct_personal_exempt,
       pct_medical_exempt,
       pct_full_exempt,
       enrollment

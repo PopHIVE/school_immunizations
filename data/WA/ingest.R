@@ -15,14 +15,9 @@ raw_state <- as.list(tools::md5sum(list.files(
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
-parse_end_year <- function(year_str) {
-  m <- str_match(year_str, "(20\\d{2})-(20\\d{2})")
-  if (!is.na(m[1, 1])) return(as.integer(m[1, 3]))
-  m2 <- str_match(year_str, "(20\\d{2})-(\\d{2})")
-  if (is.na(m2[1, 1])) return(NA_integer_)
-  start_year <- m2[1, 2]
-  end_two <- m2[1, 3]
-  as.integer(paste0(substr(start_year, 1, 2), end_two))
+parse_start_year <- function(year_str) {
+  m <- str_match(as.character(year_str), "^(20\\d{2})-(?:20\\d{2}|\\d{2})$")
+  as.integer(m[, 2])
 }
 
 parse_pct_points <- function(x) {
@@ -45,12 +40,9 @@ if (!identical(process$raw_state, raw_state) ||
   sheets <- readxl::excel_sheets(raw_path)
 
   data_all <- bind_rows(lapply(sheets, function(sh) {
-    grade <- case_when(
-      str_detect(tolower(sh), "kindergarten") ~ "Kindergarten",
-      str_detect(tolower(sh), "7th") ~ "7th grade",
-      str_detect(tolower(sh), "k-12") ~ "K-12",
-      TRUE ~ sh
-    )
+    grade <- sh %>%
+      str_remove("\\s+20\\d{2}-20\\d{2}$") %>%
+      str_trim()
 
     d <- readxl::read_excel(raw_path, sheet = sh)
 
@@ -58,8 +50,8 @@ if (!identical(process$raw_state, raw_state) ||
       transmute(
         county = str_to_title(str_trim(County)),
         school_year = `School Year`,
-        end_year = parse_end_year(`School Year`),
-        time = as.Date(paste0(end_year, "-09-01")),
+        start_year = parse_start_year(`School Year`),
+        time = as.Date(paste0(start_year, "-09-01")),
         enrollment = readr::parse_number(as.character(coalesce(
           get_col(d, "Total Enrollment"),
           get_col(d, "Enrollment")
