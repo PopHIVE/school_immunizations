@@ -118,6 +118,7 @@ if (!identical(process$raw_state, raw_state) ||
       pct_mmr = NA_real_,
       pct_hep_b = NA_real_,
       pct_varicella = NA_real_,
+      N_enrolled = Enrolled,
       pct_personal_exempt = ExemptPercent,
       pct_medical_exempt = NA_real_,
       pct_full_exempt = NA_real_
@@ -127,7 +128,8 @@ if (!identical(process$raw_state, raw_state) ||
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
-      pct_personal_exempt, pct_medical_exempt, pct_full_exempt
+      pct_personal_exempt, pct_medical_exempt, pct_full_exempt,
+      N_enrolled
     )
   
   vroom::vroom_write(data_out, "./standard/data.csv.gz")
