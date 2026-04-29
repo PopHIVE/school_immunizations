@@ -1,0 +1,70 @@
+"geography","geography_name","time","grade","pct_dtap","pct_polio","pct_mmr","pct_hep_b","pct_varicella","pct_personal_exempt","pct_medical_exempt","pct_full_exempt","N_personal_exempt","N_medical_exempt","N_full_exempt"
+"56001","Albany County","2018-09-01","19-35 months",70,80,80,81,79,NA,NA,NA,20,2,20
+"56001","Albany County","2018-09-01","6 years",72,NA,72,NA,71,NA,NA,NA,5,2,5
+"56001","Albany County","2018-09-01","13-17 years",67,NA,NA,NA,NA,NA,NA,NA,5,2,5
+"56003","Big Horn County","2018-09-01","19-35 months",NA,NA,NA,NA,NA,NA,NA,NA,0.76,0.82,0.76
+"56003","Big Horn County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,0.84,0.82,0.84
+"56003","Big Horn County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,0.84,0.82,0.84
+"56005","Campbell County","2018-09-01","19-35 months",NA,NA,NA,NA,70.4,NA,NA,NA,0.69,0.76,0.69
+"56005","Campbell County","2018-09-01","6 years",91.5,NA,NA,NA,91.8,NA,NA,NA,0.76,0.76,0.76
+"56005","Campbell County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,0.76,0.76,0.76
+"56007","Carbon County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56007","Carbon County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56007","Carbon County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56009","Converse County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56009","Converse County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56009","Converse County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56011","Crook County","2018-09-01","19-35 months",70.4,83.2,92.7,91.5,91.8,NA,NA,NA,NA,NA,NA
+"56011","Crook County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56011","Crook County","2018-09-01","13-17 years",85.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56013","Fremont County","2018-09-01","19-35 months",NA,NA,62,81,NA,NA,NA,NA,NA,NA,NA
+"56013","Fremont County","2018-09-01","6 years",39,NA,81,NA,NA,NA,NA,NA,NA,NA,NA
+"56013","Fremont County","2018-09-01","13-17 years",70,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56015","Goshen County","2018-09-01","19-35 months",70.4,83.2,92.7,91.5,91.8,NA,NA,NA,NA,NA,NA
+"56015","Goshen County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56015","Goshen County","2018-09-01","13-17 years",85.1,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56017","Hot Springs County","2018-09-01","19-35 months",NA,NA,NA,66,81,NA,NA,NA,NA,NA,NA
+"56017","Hot Springs County","2018-09-01","6 years",73,NA,39,NA,81,NA,NA,NA,NA,NA,NA
+"56017","Hot Springs County","2018-09-01","13-17 years",71,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56019","Johnson County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56019","Johnson County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56019","Johnson County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56021","Laramie County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56021","Laramie County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56021","Laramie County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56023","Lincoln County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56023","Lincoln County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56023","Lincoln County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56025","Natrona County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56025","Natrona County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56025","Natrona County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56027","Niobrara County","2018-09-01","19-35 months",NA,NA,NA,NA,70.4,NA,NA,NA,0.63,0.68,0.63
+"56027","Niobrara County","2018-09-01","6 years",91.5,NA,NA,NA,91.8,NA,NA,NA,0.68,0.68,0.68
+"56027","Niobrara County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,0.68,0.68,0.68
+"56029","Park County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56029","Park County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56029","Park County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56031","Platte County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56031","Platte County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56031","Platte County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56033","Sheridan County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56033","Sheridan County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56033","Sheridan County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56035","Sublette County","2018-09-01","19-35 months",NA,62,66,NA,79,NA,NA,NA,NA,NA,NA
+"56035","Sublette County","2018-09-01","6 years",81,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56035","Sublette County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+"56037","Sweetwater County","2018-09-01","19-35 months",NA,NA,NA,NA,NA,NA,NA,NA,NA,35,NA
+"56037","Sweetwater County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,19,35,19
+"56037","Sweetwater County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,19,35,19
+"56039","Teton County","2018-09-01","19-35 months",NA,NA,NA,NA,NA,NA,NA,NA,NA,31,NA
+"56039","Teton County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,19,31,19
+"56039","Teton County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,19,31,19
+"56041","Uinta County","2018-09-01","19-35 months",NA,NA,NA,NA,NA,NA,NA,NA,NA,37,NA
+"56041","Uinta County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,24,37,24
+"56041","Uinta County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,24,37,24
+"56043","Washakie County","2018-09-01","19-35 months",NA,NA,NA,NA,NA,NA,NA,NA,NA,8,NA
+"56043","Washakie County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,8,NA
+"56043","Washakie County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,NA,8,NA
+"56045","Weston County","2018-09-01","19-35 months",NA,NA,NA,NA,NA,NA,NA,NA,9,0,9
+"56045","Weston County","2018-09-01","6 years",NA,NA,NA,NA,NA,NA,NA,NA,5,0,5
+"56045","Weston County","2018-09-01","13-17 years",NA,NA,NA,NA,NA,NA,NA,NA,5,0,5
