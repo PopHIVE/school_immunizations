@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # NY - School Immunization Survey (School-Level)
 # =============================================================================
@@ -76,7 +77,7 @@ if (!identical(process$raw_state, raw_state)) {
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(data_out, "standard/data.csv.gz", delim = ",")
+  vroom::vroom_write(add_state_column(data_out, "New York"), "standard/data.csv.gz", delim = ",")
 
   process$raw_state <- raw_state
   dcf::dcf_process_record(updated = process)

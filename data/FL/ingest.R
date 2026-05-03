@@ -3,6 +3,7 @@ library(dplyr)
 library(readr)
 library(stringr)
 library(vroom)
+source("../../resources/add_state_column.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -99,7 +100,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(data_out, "standard/data.csv.gz")
+  vroom::vroom_write(add_state_column(data_out, "Florida"), "standard/data.csv.gz")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

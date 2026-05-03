@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # OH - MMR Exemption Rate (Kindergarten) by County
 # =============================================================================
@@ -55,7 +56,7 @@ if (!identical(process$raw_state, raw_state)) {
   data$pct_mmr_exempt <- data$pct_mmr_exempt * scale_rate
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(data, "standard/data.csv.gz", delim = ",")
+  vroom::vroom_write(add_state_column(data, "Ohio"), "standard/data.csv.gz", delim = ",")
 
   process$raw_state <- raw_state
   dcf::dcf_process_record(updated = process)

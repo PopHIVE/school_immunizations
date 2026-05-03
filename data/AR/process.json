@@ -9,7 +9,41 @@
       "last_run": "2026-02-04 10:20:58",
       "run_time": 0.492,
       "last_status": {
-        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
+        "log": [
+          "",
+          "Attaching package: \u2018dplyr\u2019",
+          "",
+          "The following objects are masked from \u2018package:stats\u2019:",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from \u2018package:base\u2019:",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "Registered S3 methods overwritten by 'readr':",
+          "  method                    from ",
+          "  as.data.frame.spec_tbl_df vroom",
+          "  as_tibble.spec_tbl_df     vroom",
+          "  format.col_spec           vroom",
+          "  print.col_spec            vroom",
+          "  print.collector           vroom",
+          "  print.date_names          vroom",
+          "  print.locale              vroom",
+          "  str.col_spec              vroom",
+          "",
+          "Attaching package: \u2018readr\u2019",
+          "",
+          "The following objects are masked from \u2018package:vroom\u2019:",
+          "",
+          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
+          "    col_factor, col_guess, col_integer, col_logical, col_number,",
+          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
+          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
+          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
+          "    problems, spec",
+          ""
+        ],
         "success": true
       }
     }
@@ -19,9 +53,9 @@
   "raw_state": {
     "raw/2014-2025 immunization exemption by school district.xlsx": "7c39352899f5a24f119ce8d23210487a"
   },
-  "script_hash": "d326e1b787c9568333666f1f8610d4f8",
+  "script_hash": "b086d16bbe9b8ecc940758f777d62677",
   "standard_state": {
     "./data/AR/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/AR/standard/data.csv.gz": "197df52261efd277926baed598a21e84"
+    "./data/AR/standard/data.csv.gz": "d2598c411e1fa058d9afb9e10a30e2af"
   }
 }

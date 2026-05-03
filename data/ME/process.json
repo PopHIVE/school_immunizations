@@ -17,6 +17,14 @@
   "checked": "",
   "check_results": [],
   "raw_state": {
-    "hash": ["7cccd7448dca28ef5cc667b18a504483", "7e193e405acb4e5b1e2bb212587dd347", "7799850c82c97a35848d5cc50fa6f9cc", "ecad191f068367e149ed6bcc8c0d5f6e", "6b5c1b336dcf7185dff0189bf78a4838", "616854d195f5fe64a7565c24e202b21d"]
-  }
+    "hash": [
+      "7cccd7448dca28ef5cc667b18a504483",
+      "7e193e405acb4e5b1e2bb212587dd347",
+      "7799850c82c97a35848d5cc50fa6f9cc",
+      "ecad191f068367e149ed6bcc8c0d5f6e",
+      "6b5c1b336dcf7185dff0189bf78a4838",
+      "616854d195f5fe64a7565c24e202b21d"
+    ]
+  },
+  "script_hash": "4dd6996ff6526e897e82c4546d5ee660"
 }

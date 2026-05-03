@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # MI - Immunization Status by Building (Multiple Cohorts)
 # =============================================================================
@@ -95,7 +96,7 @@ if (!identical(process$raw_state, raw_state)) {
     filter(state == "MI")
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(data, "standard/data.csv.gz", delim = ",")
+  vroom::vroom_write(add_state_column(data, "Michigan"), "standard/data.csv.gz", delim = ",")
 
   process$raw_state <- raw_state
   dcf::dcf_process_record(updated = process)

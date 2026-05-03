@@ -1,15 +1,15 @@
-time	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	enrollment	pct_utd	pct_conditional	pct_not_utd
-2022-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	0.20	NA	8385.00	96.00	1.00	1.00
-2022-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	0.10	NA	5519.00	91.00	4.00	2.00
-2022-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	0.30	NA	9034.00	94.00	2.00	1.00
-2022-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.30	NA	3497.00	95.00	1.00	0.50
-2022-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.40	NA	10922.00	93.00	3.00	2.00
-2022-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	3.00	NA	59824.00	93.00	2.00	2.00
-2022-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	0.50	NA	19223.00	91.00	2.00	4.00
-2022-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.40	NA	40257.00	95.00	1.00	2.00
-2022-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.30	NA	16612.00	93.00	0.70	3.00
-2022-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.04	NA	5167.00	94.00	3.00	1.00
-2022-09-01	33	"Definitions:
+time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	enrollment	pct_utd	pct_conditional	pct_not_utd
+2022-09-01	New Hampshire	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	0.20	NA	8385.00	96.00	1.00	1.00
+2022-09-01	New Hampshire	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	0.10	NA	5519.00	91.00	4.00	2.00
+2022-09-01	New Hampshire	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.00	0.30	NA	9034.00	94.00	2.00	1.00
+2022-09-01	New Hampshire	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.30	NA	3497.00	95.00	1.00	0.50
+2022-09-01	New Hampshire	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.40	NA	10922.00	93.00	3.00	2.00
+2022-09-01	New Hampshire	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	3.00	NA	59824.00	93.00	2.00	2.00
+2022-09-01	New Hampshire	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.00	0.50	NA	19223.00	91.00	2.00	4.00
+2022-09-01	New Hampshire	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.40	NA	40257.00	95.00	1.00	2.00
+2022-09-01	New Hampshire	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.30	NA	16612.00	93.00	0.70	3.00
+2022-09-01	New Hampshire	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.00	0.04	NA	5167.00	94.00	3.00	1.00
+2022-09-01	New Hampshire	33	"Definitions:
 (1)Conditionally Enrolled (Ce): Students Have Documentation Of At Least One Dose Of Each Required Vaccine And An Appointment Date For The Next Due Dose(S) Of The Required Vaccine(S).
 (2)Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade.
 (3)Religious Exemption (Re): A Parent Or Legal Guardian Can Object To Immunization(S) Because Of Their Religious Beliefs. They Must Provide A Signed And Notarized Form Stating That The Child Has Not Been Immunized Because Of Religious Beliefs.
@@ -22,17 +22,17 @@ Report Contributors:
 Data Prepared By:
 New Hampshire Immunization Section Bureau Of Infectious Disease Control Division Of Public Health Services
 Note: All The Data In This Report Are Based On Information Provided To The New Hampshire Department Of Health And Human Services Under Specific Legislative Authority. The Department Is Not Responsible For Any Duplication Or Misrepresentation Of Surveillance Data Released In This Report. Reported Numbers Are Based On Preliminary Data And Counts May Not Exactly Match Data Published By The Centers For Disease Control And Prevention. Data In This Report May Differ From Previously Released Data Due To Ongoing Quality Assurance Activities And Receipt Of New Information. Data Reflects Information Reported Between 11/15/2021 And Completed 2/18/2022."	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-2023-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	0.20	NA	8281.00	95.00	0.70	1.10
-2023-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	0.10	NA	5488.00	92.20	3.40	1.00
-2023-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	0.20	NA	8527.00	89.00	1.50	5.00
-2023-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	0.30	NA	3495.00	95.60	0.80	0.70
-2023-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	0.30	NA	11215.00	92.30	3.60	1.40
-2023-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	0.20	NA	52845.00	94.00	1.70	1.40
-2023-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	0.50	NA	19516.00	89.00	1.20	5.70
-2023-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	0.30	NA	42674.00	95.00	1.00	1.60
-2023-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	0.20	NA	15539.00	93.30	1.10	2.50
-2023-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	0.10	NA	5284.00	93.00	1.90	2.50
-2023-09-01	33	"Definitions:
+2023-09-01	New Hampshire	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	0.20	NA	8281.00	95.00	0.70	1.10
+2023-09-01	New Hampshire	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.20	0.10	NA	5488.00	92.20	3.40	1.00
+2023-09-01	New Hampshire	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	0.20	NA	8527.00	89.00	1.50	5.00
+2023-09-01	New Hampshire	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	0.30	NA	3495.00	95.60	0.80	0.70
+2023-09-01	New Hampshire	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	0.30	NA	11215.00	92.30	3.60	1.40
+2023-09-01	New Hampshire	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	0.20	NA	52845.00	94.00	1.70	1.40
+2023-09-01	New Hampshire	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	0.50	NA	19516.00	89.00	1.20	5.70
+2023-09-01	New Hampshire	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.20	0.30	NA	42674.00	95.00	1.00	1.60
+2023-09-01	New Hampshire	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	0.20	NA	15539.00	93.30	1.10	2.50
+2023-09-01	New Hampshire	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	0.10	NA	5284.00	93.00	1.90	2.50
+2023-09-01	New Hampshire	33	"Definitions:
 (1)Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade.
 (2)Conditionally Enrolled (Ce): Students Have Documentation Of At Least One Dose Of Each Required Vaccine And An Appointment Date For The Next Due Dose(S) Of The Required Vaccine(S).
 (3)Religious Exemption (Re): A Parent Or Legal Guardian Can Object To Immunization(S) Because Of Their Religious Beliefs. They Must Provide A Signed Form Stating That The Child Has Not Been Immunized Because Of Religious Beliefs.
@@ -46,17 +46,17 @@ Data Sources: Online Surveys Completed By New Hampshire Schools Through Novi Sur
 Report Contributors:
 New Hampshire Immunization Section Bureau Of Infectious Disease Control Division Of Public Health Services
 Note: All The Data In This Report Is Based On Information Provided To The New Hampshire Department Of Health And Human Services Under Specific Legislative Authority. The Department Is Not Responsible For Any Duplication Or Misrepresentation Of Surveillance Data Released In This Report. Reported Numbers Are Based On Preliminary Data And Counts May Not Exactly Match Data Published By The Centers For Disease Control And Prevention. Data In This Report May Differ From Previously Released Data Due To Ongoing Quality Assurance Activities And Receipt Of New Information. Data Reflects Information Reported Between 8/22/2022 And 01/25/2023, Completed 01/27/2023."	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-2024-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	0.10	NA	8292.00	94.00	0.90	1.50
-2024-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	0.10	NA	6243.00	92.40	2.30	1.30
-2024-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	0.20	NA	9276.00	92.00	0.90	1.40
-2024-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	0.20	NA	3496.00	95.70	0.90	0.70
-2024-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	0.50	NA	10931.00	91.80	3.30	2.00
-2024-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	0.20	NA	58324.00	92.30	3.30	1.30
-2024-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	0.30	NA	19544.00	91.10	1.00	3.90
-2024-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	0.30	NA	43447.00	94.80	1.20	1.40
-2024-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	0.30	NA	15531.00	93.60	0.80	2.40
-2024-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	0.10	NA	4621.00	93.00	2.20	2.10
-2024-09-01	33	"Definitions:
+2024-09-01	New Hampshire	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.40	0.10	NA	8292.00	94.00	0.90	1.50
+2024-09-01	New Hampshire	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.80	0.10	NA	6243.00	92.40	2.30	1.30
+2024-09-01	New Hampshire	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.50	0.20	NA	9276.00	92.00	0.90	1.40
+2024-09-01	New Hampshire	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	0.20	NA	3496.00	95.70	0.90	0.70
+2024-09-01	New Hampshire	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.50	0.50	NA	10931.00	91.80	3.30	2.00
+2024-09-01	New Hampshire	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.90	0.20	NA	58324.00	92.30	3.30	1.30
+2024-09-01	New Hampshire	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.70	0.30	NA	19544.00	91.10	1.00	3.90
+2024-09-01	New Hampshire	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.40	0.30	NA	43447.00	94.80	1.20	1.40
+2024-09-01	New Hampshire	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.80	0.30	NA	15531.00	93.60	0.80	2.40
+2024-09-01	New Hampshire	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	0.10	NA	4621.00	93.00	2.20	2.10
+2024-09-01	New Hampshire	33	"Definitions:
 (1)Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade
 (2)Conditionally Enrolled (Ce): Students Have Documentation Of At Least One Dose Of Each Required Vaccine And An Appointment Date For The Next Due Dose(S) Of The Required Vaccine(S).
 (3)Religious Exemption (Re): A Parent Or Legal Guardian Can Object To Immunization(S) Because Of Their Religious Beliefs. They Must Provide A Signed Form Stating That The Child Has Not Been Immunized Because Of Religious Beliefs.
@@ -69,17 +69,17 @@ Report Contributors:
 New Hampshire Immunization Section Bureau Of Infectious Disease Control Division Of Public Health Services
 Note: All The Data In This Report Are Based Upon Information Provided To The New Hampshire Department Of Health And Human Services Under Specific Legislative Authority. The Department Is Not Responsible For Any Duplication Or Misrepresentation Of Surveillance Data Released In This Report. Reported Numbers Are Based On Preliminary Data And Counts May Not Exactly Match Data Published By The Centers For Disease Control And Prevention. Data In This Report May Differ From Previously Released Data Due To Ongoing Quality Assurance Activities And Receipt Of New Information. Data Reflect Information Reported Between 08/17/2023 And
 12/15/2023, Completed 02/07/2024."	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
-2025-09-01	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	NA	8086.00	93.50	1.50	NA
-2025-09-01	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	NA	5253.00	90.40	3.40	NA
-2025-09-01	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	NA	8458.00	90.50	1.50	NA
-2025-09-01	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	NA	3500.00	94.40	1.20	NA
-2025-09-01	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	NA	10973.00	91.10	4.00	NA
-2025-09-01	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	NA	57393.00	92.90	2.80	NA
-2025-09-01	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	NA	19211.00	91.70	1.00	NA
-2025-09-01	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	NA	42036.00	93.70	2.20	NA
-2025-09-01	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	NA	14968.00	93.20	0.70	NA
-2025-09-01	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	NA	5247.00	90.60	3.40	NA
-2025-09-01	33	"Nh Division Of Public Health
+2025-09-01	New Hampshire	33001	Belknap	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	NA	8086.00	93.50	1.50	NA
+2025-09-01	New Hampshire	33003	Carroll	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.20	NA	5253.00	90.40	3.40	NA
+2025-09-01	New Hampshire	33005	Cheshire	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.90	NA	8458.00	90.50	1.50	NA
+2025-09-01	New Hampshire	33007	Coos	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60	NA	3500.00	94.40	1.20	NA
+2025-09-01	New Hampshire	33009	Grafton	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	NA	10973.00	91.10	4.00	NA
+2025-09-01	New Hampshire	33011	Hillsborough	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.10	NA	57393.00	92.90	2.80	NA
+2025-09-01	New Hampshire	33013	Merrimack	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	4.10	NA	19211.00	91.70	1.00	NA
+2025-09-01	New Hampshire	33015	Rockingham	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70	NA	42036.00	93.70	2.20	NA
+2025-09-01	New Hampshire	33017	Strafford	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.50	NA	14968.00	93.20	0.70	NA
+2025-09-01	New Hampshire	33019	Sullivan	K-12	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.60	NA	5247.00	90.60	3.40	NA
+2025-09-01	New Hampshire	33	"Nh Division Of Public Health
 Department Of Health And Human Services - Nh Immunization Program 2024/2025 Annual School Immunization Report
 Definitions:
 (1)  Up-To-Date (Utd): Students Have All The Nh School Required Vaccines For Their Age And/Or Grade.

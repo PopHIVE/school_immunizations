@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # MT - County Immunization Coverage (2020)
 # =============================================================================
@@ -96,7 +97,7 @@ if (!identical(process$raw_state, raw_state) ||
       )
 
     dir.create("standard", showWarnings = FALSE)
-    vroom::vroom_write(data_out, "standard/data.csv.gz")
+    vroom::vroom_write(add_state_column(data_out, "Montana"), "standard/data.csv.gz")
   }
 
   process$raw_state <- raw_state

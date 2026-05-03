@@ -11,13 +11,13 @@
       "last_status": {
         "log": [
           "",
-          "Attaching package: ‘dplyr’",
+          "Attaching package: \u2018dplyr\u2019",
           "",
-          "The following objects are masked from ‘package:stats’:",
+          "The following objects are masked from \u2018package:stats\u2019:",
           "",
           "    filter, lag",
           "",
-          "The following objects are masked from ‘package:base’:",
+          "The following objects are masked from \u2018package:base\u2019:",
           "",
           "    intersect, setdiff, setequal, union",
           "",
@@ -32,9 +32,9 @@
           "  print.locale              vroom",
           "  str.col_spec              vroom",
           "",
-          "Attaching package: ‘readr’",
+          "Attaching package: \u2018readr\u2019",
           "",
-          "The following objects are masked from ‘package:vroom’:",
+          "The following objects are masked from \u2018package:vroom\u2019:",
           "",
           "    as.col_spec, col_character, col_date, col_datetime, col_double,",
           "    col_factor, col_guess, col_integer, col_logical, col_number,",
@@ -53,9 +53,9 @@
   "raw_state": {
     "Raw/Massachusetts Vaccine Exemption.xlsx": "eb095f005e25babe8d8901bc5f6fe5e7"
   },
-  "script_hash": "04b9500730b33b82e147fb691a933b5e",
+  "script_hash": "e256cf88d52f094ed54520b958e5c4aa",
   "standard_state": {
     "./data/MA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/MA/standard/data.csv.gz": "ffcbffece9f41e1380b5331b59d53f7c"
+    "./data/MA/standard/data.csv.gz": "5e7e3d9b72933882693bb43a4c02e1c0"
   }
 }

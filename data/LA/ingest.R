@@ -5,6 +5,7 @@ library(readxl)
 library(stringr)
 library(vroom)
 library(readr)
+source("../../resources/add_state_column.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -34,12 +35,17 @@ if (!identical(process$raw_state, raw_state) ||
       grade = Grade,
       school_year = SchoolYear,
       parish = Parish,
-      pct_full_exempt = Exemptions
+      pct_any_exempt = Exemptions,
+      pct_hep_b = `HepB (>=3)`,
+      pct_dtap = `Tdap (>=1)`
     ) %>%
     mutate(
-      year_end = str_extract(school_year, "\\d{4}$"),
-      time = as.Date(paste0(year_end, "-09-01")),
-      pct_full_exempt = as.numeric(pct_full_exempt)
+      year_start = str_extract(school_year, "^\\d{4}"),
+      time = as.Date(paste0(year_start, "-09-01")),
+      pct_any_exempt = as.numeric(pct_any_exempt),
+      pct_hep_b = as.numeric(pct_hep_b),
+      pct_dtap = as.numeric(pct_dtap),
+      pct_full_exempt = pct_any_exempt
     ) %>%
     filter(!is.na(time)) %>%
     left_join(
@@ -57,10 +63,8 @@ if (!identical(process$raw_state, raw_state) ||
       N_personal_exempt = NA_real_,
       N_medical_exempt = NA_real_,
       N_full_exempt = NA_real_,
-      pct_dtap = NA_real_,
       pct_polio = NA_real_,
       pct_mmr = NA_real_,
-      pct_hep_b = NA_real_,
       pct_varicella = NA_real_,
       pct_personal_exempt = NA_real_,
       pct_medical_exempt = NA_real_
@@ -70,10 +74,12 @@ if (!identical(process$raw_state, raw_state) ||
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
-      pct_personal_exempt, pct_medical_exempt, pct_full_exempt
+      pct_personal_exempt, pct_medical_exempt, pct_full_exempt,
+      pct_any_exempt
     )
   
-  vroom::vroom_write(data_out, "./standard/data.csv.gz")
+  vroom::vroom_write(add_state_column(data_out, "Louisiana"), "./standard/data.csv.gz")
+  vroom::vroom_write(add_state_column(data_out, "Louisiana"), "./standard/data.csv")
   
   process$raw_state <- raw_state
   process$script_hash <- script_hash

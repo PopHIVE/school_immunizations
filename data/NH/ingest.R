@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # NH - Annual School Immunization Report (Percent by County)
 # =============================================================================
@@ -120,7 +121,7 @@ if (!identical(process$raw_state, raw_state) ||
       )
 
     dir.create("standard", showWarnings = FALSE)
-    vroom::vroom_write(data_out, "standard/data.csv.gz")
+    vroom::vroom_write(add_state_column(data_out, "New Hampshire"), "standard/data.csv.gz")
   }
 
   process$raw_state <- raw_state

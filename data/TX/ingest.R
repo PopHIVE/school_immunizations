@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 #
 # Download
 #
@@ -116,7 +117,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
   
   #Save standard file as a compressed csv
-  vroom::vroom_write(data, './standard/data.csv.gz')
+  vroom::vroom_write(add_state_column(data, "Texas"), './standard/data.csv.gz')
   
   # record processed raw state
   process$raw_state <- raw_state

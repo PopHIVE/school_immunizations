@@ -9,7 +9,41 @@
       "last_run": "2026-02-04 23:36:27",
       "run_time": 0.457,
       "last_status": {
-        "log": ["", "Attaching package: ‘dplyr’", "", "The following objects are masked from ‘package:stats’:", "", "    filter, lag", "", "The following objects are masked from ‘package:base’:", "", "    intersect, setdiff, setequal, union", "", "Registered S3 methods overwritten by 'readr':", "  method                    from ", "  as.data.frame.spec_tbl_df vroom", "  as_tibble.spec_tbl_df     vroom", "  format.col_spec           vroom", "  print.col_spec            vroom", "  print.collector           vroom", "  print.date_names          vroom", "  print.locale              vroom", "  str.col_spec              vroom", "", "Attaching package: ‘readr’", "", "The following objects are masked from ‘package:vroom’:", "", "    as.col_spec, col_character, col_date, col_datetime, col_double,", "    col_factor, col_guess, col_integer, col_logical, col_number,", "    col_skip, col_time, cols, cols_condense, cols_only, date_names,", "    date_names_lang, date_names_langs, default_locale, fwf_cols,", "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,", "    problems, spec", ""],
+        "log": [
+          "",
+          "Attaching package: \u2018dplyr\u2019",
+          "",
+          "The following objects are masked from \u2018package:stats\u2019:",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from \u2018package:base\u2019:",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "Registered S3 methods overwritten by 'readr':",
+          "  method                    from ",
+          "  as.data.frame.spec_tbl_df vroom",
+          "  as_tibble.spec_tbl_df     vroom",
+          "  format.col_spec           vroom",
+          "  print.col_spec            vroom",
+          "  print.collector           vroom",
+          "  print.date_names          vroom",
+          "  print.locale              vroom",
+          "  str.col_spec              vroom",
+          "",
+          "Attaching package: \u2018readr\u2019",
+          "",
+          "The following objects are masked from \u2018package:vroom\u2019:",
+          "",
+          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
+          "    col_factor, col_guess, col_integer, col_logical, col_number,",
+          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
+          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
+          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
+          "    problems, spec",
+          ""
+        ],
         "success": true
       }
     }
@@ -19,9 +53,9 @@
   "raw_state": {
     "raw/LA_parish_21-24.xlsx": "020698a944844f1bd5189e9982b57c1b"
   },
-  "script_hash": "17a5a0f9ddb3d8a69f162882ec7910d6",
+  "script_hash": "91d26a57940ffd2628309d6a2b0053a5",
   "standard_state": {
     "./data/LA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/LA/standard/data.csv.gz": "e690529a6bd5a2c2e2b9688011ba3acc"
+    "./data/LA/standard/data.csv.gz": "11c5e57f0af185b24d6102060ba203d8"
   }
 }

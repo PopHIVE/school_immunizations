@@ -11,13 +11,13 @@
       "last_status": {
         "log": [
           "",
-          "Attaching package: ‘dplyr’",
+          "Attaching package: \u2018dplyr\u2019",
           "",
-          "The following objects are masked from ‘package:stats’:",
+          "The following objects are masked from \u2018package:stats\u2019:",
           "",
           "    filter, lag",
           "",
-          "The following objects are masked from ‘package:base’:",
+          "The following objects are masked from \u2018package:base\u2019:",
           "",
           "    intersect, setdiff, setequal, union",
           "",
@@ -32,9 +32,9 @@
           "  print.locale              vroom",
           "  str.col_spec              vroom",
           "",
-          "Attaching package: ‘readr’",
+          "Attaching package: \u2018readr\u2019",
           "",
-          "The following objects are masked from ‘package:vroom’:",
+          "The following objects are masked from \u2018package:vroom\u2019:",
           "",
           "    as.col_spec, col_character, col_date, col_datetime, col_double,",
           "    col_factor, col_guess, col_integer, col_logical, col_number,",
@@ -58,9 +58,9 @@
     "raw/IL_school_immunization_county_aggregated_2024.xlsx": "fc5cb171693a8374e030204b6747276c",
     "raw/IL_school_immunization_county_aggregated_2025.xlsx": "b7bb8c181af5721d9aa48afc60c47780"
   },
-  "script_hash": "7ace95c801d54ffddcf25c59ad49c8d3",
+  "script_hash": "df87bfdb6f4c45e48a0fac6183ebd20f",
   "standard_state": {
     "./data/IL/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/IL/standard/data.csv.gz": "7294e40f12257364690f5a1b47e450db"
+    "./data/IL/standard/data.csv.gz": "ff89645850081c884733992edb1c362d"
   }
 }

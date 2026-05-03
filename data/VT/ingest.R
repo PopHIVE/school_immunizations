@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # VT - K-12 State and County Immunization & Exemption Percentages (2017-2025)
 # =============================================================================
@@ -129,7 +130,7 @@ if (!identical(process$raw_state, raw_state) ||
       )
 
     dir.create("standard", showWarnings = FALSE)
-    vroom::vroom_write(data_out, "standard/data.csv.gz")
+    vroom::vroom_write(add_state_column(data_out, "Vermont"), "standard/data.csv.gz")
   }
 
   process$raw_state <- raw_state

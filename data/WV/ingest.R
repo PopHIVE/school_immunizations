@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # WV - Exemption Counts by County, School Year, and Grade (Multiple Vaccines)
 # =============================================================================
@@ -103,7 +104,7 @@ if (!identical(process$raw_state, raw_state)) {
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(data, "standard/data.csv.gz", delim = ",")
+  vroom::vroom_write(add_state_column(data, "West Virginia"), "standard/data.csv.gz", delim = ",")
 
   process$raw_state <- raw_state
   dcf::dcf_process_record(updated = process)

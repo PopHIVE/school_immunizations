@@ -11,20 +11,20 @@
       "last_status": {
         "log": [
           "",
-          "Attaching package: ‘dplyr’",
+          "Attaching package: \u2018dplyr\u2019",
           "",
-          "The following objects are masked from ‘package:stats’:",
+          "The following objects are masked from \u2018package:stats\u2019:",
           "",
           "    filter, lag",
           "",
-          "The following objects are masked from ‘package:base’:",
+          "The following objects are masked from \u2018package:base\u2019:",
           "",
           "    intersect, setdiff, setequal, union",
           "",
           "",
-          "Attaching package: ‘vroom’",
+          "Attaching package: \u2018vroom\u2019",
           "",
-          "The following objects are masked from ‘package:readr’:",
+          "The following objects are masked from \u2018package:readr\u2019:",
           "",
           "    as.col_spec, col_character, col_date, col_datetime, col_double,",
           "    col_factor, col_guess, col_integer, col_logical, col_number,",
@@ -43,9 +43,9 @@
   "raw_state": {
     "raw/SC_2019-23.csv": "d7f0e7a6eb92c20f26d85f88074a95a8"
   },
-  "script_hash": "637f8da23927232f52f3338efb6def05",
+  "script_hash": "c70af9f5b1330711da11512c2e5ff21a",
   "standard_state": {
     "./data/SC/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/SC/standard/data.csv.gz": "62194b27a524214607c520f75376037f"
+    "./data/SC/standard/data.csv.gz": "dd7d2f2c237d13ab4d0594df0c282afa"
   }
 }

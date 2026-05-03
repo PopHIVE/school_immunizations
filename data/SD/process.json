@@ -9,7 +9,31 @@
       "last_run": "2026-02-05 10:01:57",
       "run_time": 1.979,
       "last_status": {
-        "log": ["", "Attaching package: 'dplyr'", "", "The following objects are masked from 'package:stats':", "", "    filter, lag", "", "The following objects are masked from 'package:base':", "", "    intersect, setdiff, setequal, union", "", "New names:", "* `Total` -> `Total...15`", "* `Total` -> `Total...16`", "* `Total` -> `Total...17`", "* `Total` -> `Total...18`", "* `Total` -> `Total...19`", "* `Total` -> `Total...20`", "* `Total` -> `Total...21`", "* `Total` -> `Total...22`", "* `Total` -> `Total...23`", "* `Total` -> `Total...24`", "* `Total` -> `Total...25`"],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "New names:",
+          "* `Total` -> `Total...15`",
+          "* `Total` -> `Total...16`",
+          "* `Total` -> `Total...17`",
+          "* `Total` -> `Total...18`",
+          "* `Total` -> `Total...19`",
+          "* `Total` -> `Total...20`",
+          "* `Total` -> `Total...21`",
+          "* `Total` -> `Total...22`",
+          "* `Total` -> `Total...23`",
+          "* `Total` -> `Total...24`",
+          "* `Total` -> `Total...25`"
+        ],
         "success": true
       }
     }
@@ -21,6 +45,7 @@
   },
   "standard_state": {
     "./data/SD/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/SD/standard/data.csv.gz": "15cac8c8a43e4b4fd9cbd61bb2f6b33f"
-  }
+    "./data/SD/standard/data.csv.gz": "bb2ebc04510632306ec95fa6396d7c93"
+  },
+  "script_hash": "e0caf760469e865218a3869d8d39733c"
 }

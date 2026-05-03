@@ -11,20 +11,20 @@
       "last_status": {
         "log": [
           "",
-          "Attaching package: ‘dplyr’",
+          "Attaching package: \u2018dplyr\u2019",
           "",
-          "The following objects are masked from ‘package:stats’:",
+          "The following objects are masked from \u2018package:stats\u2019:",
           "",
           "    filter, lag",
           "",
-          "The following objects are masked from ‘package:base’:",
+          "The following objects are masked from \u2018package:base\u2019:",
           "",
           "    intersect, setdiff, setequal, union",
           "",
           "",
-          "Attaching package: ‘vroom’",
+          "Attaching package: \u2018vroom\u2019",
           "",
-          "The following objects are masked from ‘package:readr’:",
+          "The following objects are masked from \u2018package:readr\u2019:",
           "",
           "    as.col_spec, col_character, col_date, col_datetime, col_double,",
           "    col_factor, col_guess, col_integer, col_logical, col_number,",
@@ -43,9 +43,9 @@
   "raw_state": {
     "raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": "95b93ffad215440291ee1f5dd2d23417"
   },
-  "script_hash": "c41ede2f864e016ffb601b1a54151a9b",
+  "script_hash": "ea81a47f78d45ab33fedfe5927317b9f",
   "standard_state": {
     "./data/CO/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/CO/standard/data.csv.gz": "c14cf1b5875f03841159f4f5ab2e2dec"
+    "./data/CO/standard/data.csv.gz": "9e1bdabb94d6dae2d3c6dda863a53923"
   }
 }

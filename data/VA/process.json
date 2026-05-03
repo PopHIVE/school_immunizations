@@ -9,7 +9,19 @@
       "last_run": "2026-02-26 19:09:55",
       "run_time": 0.858,
       "last_status": {
-        "log": ["", "Attaching package: 'dplyr'", "", "The following objects are masked from 'package:stats':", "", "    filter, lag", "", "The following objects are masked from 'package:base':", "", "    intersect, setdiff, setequal, union", ""],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          ""
+        ],
         "success": true
       }
     }
@@ -19,9 +31,9 @@
   "raw_state": {
     "raw/VA_2019-2024.xlsx": "d117f9391dfcda76d5356a6a0cc10727"
   },
-  "script_hash": "742c3a64c03c00d6fb03159179865d4e",
+  "script_hash": "537df9a89896903361a3b244bfdbb827",
   "standard_state": {
     "./data/VA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/VA/standard/data.csv.gz": "5db45c697cdfa9608a6dfd71595e5f6e"
+    "./data/VA/standard/data.csv.gz": "1cea7e3539f4ee186229284051d34d4c"
   }
 }

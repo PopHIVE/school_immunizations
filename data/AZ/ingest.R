@@ -1,5 +1,6 @@
 library(dcf)
 library(tidyverse)
+source("../../resources/add_state_column.R")
 
 ## change here the 2 digit code being processed here
 select.state = 'AZ'
@@ -95,7 +96,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
   
   #Save standard file as a compressed csv
-  vroom::vroom_write(data, './standard/data.csv.gz')
+  vroom::vroom_write(add_state_column(data, "Arizona"), './standard/data.csv.gz')
   
   # record processed raw state
   process$raw_state <- raw_state

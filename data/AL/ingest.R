@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 #
 # Download
 #
@@ -49,6 +50,13 @@ if (!identical(process$raw_state, raw_state)) {
     if (is.numeric(x)) return(as.numeric(x))
     readr::parse_number(as.character(x))
   }
+
+  normalize_county_name <- function(x) {
+    out <- str_to_title(str_to_lower(x))
+    out <- str_replace_all(out, "^St\\.?\\s*Clair$", "St. Clair")
+    out <- if_else(is.na(out) | out == "Na", "Total", out)
+    out
+  }
   
   infer_grade <- function(path) {
     fn <- tolower(basename(path))
@@ -66,7 +74,7 @@ if (!identical(process$raw_state, raw_state)) {
     filter(state == "AL") %>%
     mutate(
       geography_name = gsub(" County", "", geography_name),
-      geography_name = str_to_title(str_to_lower(geography_name)),
+      geography_name = normalize_county_name(geography_name),
       geography = as.character(geography) # keep as character
     )
   
@@ -91,7 +99,7 @@ if (!identical(process$raw_state, raw_state)) {
       df %>%
         transmute(
           time = sheet_date,
-          geography_name = str_to_title(str_to_lower(County)),
+          geography_name = normalize_county_name(County),
           grade = grade_label,
           
           # denominator (kept for reference / debugging; not used for N_dtap etc.)
@@ -116,6 +124,7 @@ if (!identical(process$raw_state, raw_state)) {
     bind_rows() %>%
     left_join(fips_df, by = "geography_name") %>%
     mutate(
+      geography = if_else(geography_name == "Total", "01", geography),
       # --- REQUIRED vaccine columns should be NA ---
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -181,13 +190,12 @@ if (!identical(process$raw_state, raw_state)) {
   # Debug: unmatched counties (if any)
   print(data_all %>% filter(is.na(geography)) %>% distinct(geography_name) %>% head(50))
   
-  vroom::vroom_write(data_all, "./standard/data.csv.gz")
+  vroom::vroom_write(add_state_column(data_all, "Alabama"), "./standard/data.csv.gz")
   
   # record processed raw state
   process$raw_state <- raw_state
   dcf::dcf_process_record(updated = process)
 }
-
 
 
 

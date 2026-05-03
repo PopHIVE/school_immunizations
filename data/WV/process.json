@@ -335,6 +335,7 @@
   },
   "standard_state": {
     "./data/WV/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/WV/standard/data.csv.gz": "4dafb179e80d630209dfedee3d91e0ab"
-  }
+    "./data/WV/standard/data.csv.gz": "d2a934c9ecf3c86f82f5ab8479442ed3"
+  },
+  "script_hash": "1e6d068f8b78a336a46063d364a58c0e"
 }

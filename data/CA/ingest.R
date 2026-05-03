@@ -1,5 +1,6 @@
 library(dcf)
 library(tidyverse)
+source("../../resources/add_state_column.R")
 
 select.state = 'CA'
 
@@ -232,10 +233,10 @@ if (!identical(process$raw_state, raw_state)) {
     dir.create("standard", showWarnings = FALSE)
     
     # 1) KG output
-    vroom::vroom_write(kg_out, "./standard/data_kg.csv.gz")
+    vroom::vroom_write(add_state_column(kg_out, "California"), "./standard/data_kg.csv.gz")
     
     # 2) 7th grade output
-    vroom::vroom_write(g7_out, "./standard/data_7th.csv.gz")
+    vroom::vroom_write(add_state_column(g7_out, "California"), "./standard/data_7th.csv.gz")
     
     # 3) Combined output (for dcf conventions)
     # (Different columns across KG vs 7th are OK; they’ll be NA where not applicable.)
@@ -244,7 +245,7 @@ if (!identical(process$raw_state, raw_state)) {
       g7_out %>% mutate(source_grade = "7th")
     )
     
-    vroom::vroom_write(data, "./standard/data.csv.gz")
+    vroom::vroom_write(add_state_column(data, "California"), "./standard/data.csv.gz")
     }
     
     # record processed raw state

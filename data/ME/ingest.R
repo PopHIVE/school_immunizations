@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # ME - School Vaccination Rates (Multiple Years)
 # =============================================================================
@@ -142,7 +143,7 @@ if (!identical(process$raw_state, raw_state)) {
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(data_out, "standard/data.csv.gz", delim = ",")
+  vroom::vroom_write(add_state_column(data_out, "Maine"), "standard/data.csv.gz", delim = ",")
 
   process$raw_state <- raw_state
   dcf::dcf_process_record(updated = process)

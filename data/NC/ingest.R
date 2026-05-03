@@ -1,3 +1,4 @@
+source("../../resources/add_state_column.R")
 # =============================================================================
 # NC - Kindergarten Immunization and Exemption by County (2020-2023)
 # =============================================================================
@@ -96,7 +97,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(data_out, "standard/data.csv.gz")
+  vroom::vroom_write(add_state_column(data_out, "North Carolina"), "standard/data.csv.gz")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
