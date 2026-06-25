@@ -1,4 +1,4 @@
-geography	geography_name	time	state	grade	N_students	pct_all_required	pct_conditional	pct_pme	pct_other_lacking	pct_overdue	source_grade	N_students_tdap	N_students_varicella	pct_entrants_vax_tdap	pct_entrants_vax_varicella	pct_conditional_tdap	pct_conditional_varicella	pct_pme_tdap	pct_pme_varicella	pct_other_lacking_tdap	pct_other_lacking_varicella	pct_overdue_tdap	pct_overdue_varicella
+geography	county	time	state	grade	N_enrolled	pct_complete	pct_conditional	pct_pme	pct_incomplete	pct_incomplete	source_grade	N_students_tdap	N_students_varicella	pct_entrants_vax_tdap	pct_entrants_vax_varicella	pct_conditional_tdap	pct_conditional_varicella	pct_pme_tdap	pct_pme_varicella	pct_other_lacking_tdap	pct_other_lacking_varicella	pct_overdue_tdap	pct_overdue_varicella
 06001	Alameda	2019-09-01	California	Kindergarten	21622.00	96.45	1.10	0.65	0.17	1.63	KG	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 06003	Alpine	2019-09-01	California	Kindergarten	9.00	NA	NA	NA	NA	NA	KG	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA
 06005	Amador	2019-09-01	California	Kindergarten	308.00	91.23	4.22	1.95	0.65	1.95	KG	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA

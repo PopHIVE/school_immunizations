@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2024-09-01	Kansas	20001	Allen	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.70
 2024-09-01	Kansas	20003	Anderson	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	3.60
 2024-09-01	Kansas	20005	Atchison	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	2.30

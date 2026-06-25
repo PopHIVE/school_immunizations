@@ -1,4 +1,4 @@
-time,state,geography,geography_name,school_name,grade,n_assessed,pct_exempt_total,pct_exempt_medical,pct_exempt_religious,pct_exempt_philosophical,pct_90_day,pct_missing,pct_dtap,pct_polio,pct_mmr,pct_varicella,pct_tdap,pct_menacwy
+time,state,geography,county,school_name,grade,N_enrolled,pct_full_exempt,pct_medical_exempt,pct_religious_exempt,pct_personal_exempt,pct_conditional,pct_incomplete,pct_dtap,pct_polio,pct_mmr,pct_varicella,pct_tdap,pct_menacwy
 12-31-2019,Maine,23001,Androscoggin County,Acadia Academy,Kindergarten,32.00,9.38,0.00,3.12,6.25,NA,0.00,90.62,90.62,90.62,90.62,NA,NA
 12-31-2019,Maine,23001,Androscoggin County,Auburn Middle School,Kindergarten,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 12-31-2019,Maine,23001,Androscoggin County,Auburn School Department,Kindergarten,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA

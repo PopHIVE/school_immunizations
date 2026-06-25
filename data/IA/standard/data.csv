@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	total_enrolled
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled
 2012-09-01	Iowa	19001	Adair	K-12	NA	NA	NA	NA	NA	0.00	7.00	7.00	NA	NA	NA	NA	NA	0.00	0.80	0.80	868.00
 2012-09-01	Iowa	19003	Adams	K-12	NA	NA	NA	NA	NA	6.00	3.00	9.00	NA	NA	NA	NA	NA	1.20	0.60	1.80	485.00
 2012-09-01	Iowa	19005	Allamakee	K-12	NA	NA	NA	NA	NA	11.00	17.00	28.00	NA	NA	NA	NA	NA	0.50	0.70	1.20	2327.00

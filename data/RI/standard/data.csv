@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2018-09-01	Rhode Island	44	Rhode Island	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.85	0.82	0.94	0.74	0.92	NA	NA	NA
 2019-09-01	Rhode Island	44	Rhode Island	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.85	0.86	0.9	0.71	0.97	NA	NA	NA
 2020-09-01	Rhode Island	44	Rhode Island	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.86	0.87	0.89	0.7	0.87	NA	NA	NA

@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled
 2019-09-01	South Carolina	45001	Abbeville	Overall	NA	NA	NA	NA	NA	71	NA	NA	NA	NA	NA	NA	NA	2.17	NA	NA	3266
 2020-09-01	South Carolina	45001	Abbeville	Overall	NA	NA	NA	NA	NA	67	NA	NA	NA	NA	NA	NA	NA	2.09	NA	NA	3213
 2021-09-01	South Carolina	45001	Abbeville	Overall	NA	NA	NA	NA	NA	87	NA	NA	NA	NA	NA	NA	NA	2.74	NA	NA	3179

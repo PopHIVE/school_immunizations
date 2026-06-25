@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	enrollment	n_religious_exempt	pct_religious_exempt	n_religious_membership_exempt	pct_religious_membership_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled	N_religious_exempt	pct_religious_exempt	N_religious_membership_exempt	pct_religious_membership_exempt
 2018-09-01	Washington	53001	Adams	Kindergarten	NA	NA	NA	NA	NA	8	0	9	NA	NA	NA	NA	NA	1.9230769229999993	0	2.1634615380000004	416	1	0.2403846154	0	0
 2019-09-01	Washington	53001	Adams	Kindergarten	NA	NA	NA	NA	NA	4	3	9	NA	NA	NA	NA	NA	1.00755667506297	0.7556675062999999	2.267002519	397	4	1.0075566750000002	0	0
 2020-09-01	Washington	53001	Adams	Kindergarten	NA	NA	NA	NA	NA	3	2	6	NA	NA	NA	NA	NA	0.6802721088435372	0.4535147391999999	1.360544218	441	1	0.2267573696000001	1	0.2267573696000001

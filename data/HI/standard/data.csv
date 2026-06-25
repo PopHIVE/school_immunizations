@@ -1,4 +1,4 @@
-time,state,geography,geography_name,grade,N_dtap,N_polio,N_mmr,N_hep_b,N_varicella,N_personal_exempt,N_medical_exempt,N_full_exempt,pct_dtap,pct_polio,pct_mmr,pct_hep_b,pct_varicella,pct_personal_exempt,pct_medical_exempt,pct_full_exempt
+time,state,geography,county,grade,N_dtap,N_polio,N_mmr,N_hep_b,N_varicella,N_personal_exempt,N_medical_exempt,N_full_exempt,pct_dtap,pct_polio,pct_mmr,pct_hep_b,pct_varicella,pct_personal_exempt,pct_medical_exempt,pct_full_exempt
 09-01-2014,Hawaii,15001,Hawaii,Overall,NA,NA,NA,NA,NA,730.05,18.49,NA,NA,NA,NA,NA,NA,2.62,0.07,NA
 09-01-2015,Hawaii,15001,Hawaii,Overall,NA,NA,NA,NA,NA,718.27,12.94,NA,NA,NA,NA,NA,NA,2.48,0.04,NA
 09-01-2016,Hawaii,15001,Hawaii,Overall,NA,NA,NA,NA,NA,939.99,12.04,NA,NA,NA,NA,NA,NA,3.40,0.04,NA

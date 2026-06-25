@@ -1,4 +1,4 @@
-time,state,geography,geography_name,grade,vaccine,n_exempt
+time,state,geography,county,grade,vaccine,N_full_exempt
 12-31-2018,West Virginia,54001,Barbour County,Kindergarten,mmr,0.00
 12-31-2019,West Virginia,54001,Barbour County,Kindergarten,mmr,0.00
 12-31-2020,West Virginia,54001,Barbour County,Kindergarten,mmr,0.00

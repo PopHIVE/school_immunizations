@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2020-09-01	Oklahoma	40001	Adair	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.96	0.99	0.99	0.95	0.99	0.01	0.00	NA
 2020-09-01	Oklahoma	40003	Alfalfa	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.92	0.95	0.95	0.83	0.97	0.03	0.00	NA
 2020-09-01	Oklahoma	40005	Atoka	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.91	0.95	0.98	0.88	0.98	0.02	0.00	NA

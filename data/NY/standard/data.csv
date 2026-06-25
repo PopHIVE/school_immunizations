@@ -1,4 +1,4 @@
-time,state,geography,geography_name,school_id,school_name,district,school_type,pct_medical_exemptions,pct_immunized_polio,pct_immunized_measles,pct_immunized_mumps,pct_immunized_rubella,pct_immunized_diphtheria,pct_immunized_hepatitis_b,pct_immunized_varicella,pct_immunized_tdap,pct_immunized_meningococcal,pct_completely_immunized
+time,state,geography,county,school_id,school_name,district,school_type,pct_medical_exempt,pct_polio,pct_mmr,pct_mmr,pct_mmr,pct_dtap,pct_hep_b,pct_varicella,pct_tdap,pct_menacwy,pct_complete
 12-31-2021,New York,36069,Ontario County,430501040004,BLOOMFIELD ELEMENTARY SCHOOL,EAST BLOOMFIELD CENTRAL SCHOOL,Public School,0.00,99.40,100.00,100.00,100.00,100.00,100.00,99.70,NA,NA,99.00
 12-31-2023,New York,36119,Westchester County,661800997127,RYE COUNTRY DAY SCHOOL,NA,Private School,0.00,99.90,100.00,100.00,100.00,100.00,100.00,100.00,100.00,100.00,100.00
 12-31-2023,New York,36053,Madison County,250701040002,HAMILTON ES,HAMILTON CENTRAL SCHOOL,Public School,0.00,100.00,100.00,100.00,100.00,100.00,100.00,100.00,NA,NA,100.00

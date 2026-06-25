@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2010-09-01	Arizona	04001	Apache	Kindergarten	955.00	955.00	955.00	955.00	955.00	955.00	955.00	NA	96.80	97.50	96.60	98.10	5.30	1.40	0.10	NA
 2010-09-01	Arizona	04003	Cochise	Kindergarten	1559.00	1559.00	1559.00	1559.00	1559.00	1559.00	1559.00	NA	97.00	97.00	96.90	98.50	15.40	1.90	0.20	NA
 2010-09-01	Arizona	04005	Coconino	Kindergarten	1305.00	1305.00	1305.00	1305.00	1305.00	1305.00	1305.00	NA	93.40	93.30	93.00	94.60	11.20	5.10	0.30	NA

@@ -1,4 +1,4 @@
-geography,geography_name,time,state,grade,pct_dtap,pct_polio,pct_mmr,pct_hep_b,pct_varicella,pct_personal_exempt,pct_medical_exempt,pct_full_exempt,N_personal_exempt,N_medical_exempt,N_full_exempt
+geography,county,time,state,grade,pct_dtap,pct_polio,pct_mmr,pct_hep_b,pct_varicella,pct_personal_exempt,pct_medical_exempt,pct_full_exempt,N_personal_exempt,N_medical_exempt,N_full_exempt
 56001,Albany County,2018-09-01,Wyoming,19-35 months,70,80,80,81,79,NA,NA,NA,20,2,20
 56001,Albany County,2018-09-01,Wyoming,6 years,72,NA,72,NA,71,NA,NA,NA,5,2,5
 56001,Albany County,2018-09-01,Wyoming,13-17 years,67,NA,NA,NA,NA,NA,NA,NA,5,2,5

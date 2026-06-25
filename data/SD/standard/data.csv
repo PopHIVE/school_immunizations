@@ -1,4 +1,4 @@
-time,state,geography,geography_name,school_name,n_total_audited,n_hep_a,n_hep_b,n_dtap,n_tdap,n_polio,n_mmr_k,n_varicella,n_men_6th,n_medical_exempt,n_religious_exempt
+time,state,geography,county,school_name,N_enrolled,N_hep_a,N_hep_b,N_dtap,N_tdap,N_polio,N_mmr,N_varicella,N_menacwy,N_medical_exempt,N_religious_exempt
 12-31-2018,South Dakota,46003,Aurora County,Aurora Plains Academy Middle School,7.00,6.00,7.00,0.00,6.00,0.00,0.00,0.00,6.00,0.00,0.00
 12-31-2019,South Dakota,46003,Aurora County,Aurora Plains Academy Middle School,3.00,3.00,3.00,0.00,3.00,0.00,0.00,0.00,3.00,0.00,0.00
 12-31-2020,South Dakota,46003,Aurora County,Aurora Plains Academy Middle School,2.00,2.00,2.00,0.00,2.00,0.00,0.00,0.00,2.00,0.00,0.00

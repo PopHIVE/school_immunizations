@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	pct_any_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	pct_full_exempt
 2021-09-01	Louisiana	22001	Acadia	6th Grade	NA	NA	NA	NA	NA	NA	NA	NA	0.7714	NA	NA	0.9844	NA	NA	NA	0.0144	0.0144
 2021-09-01	Louisiana	22003	Allen	6th Grade	NA	NA	NA	NA	NA	NA	NA	NA	0.7437	NA	NA	0.9892	NA	NA	NA	0.0036	0.0036
 2021-09-01	Louisiana	22005	Ascension	6th Grade	NA	NA	NA	NA	NA	NA	NA	NA	0.9451	NA	NA	0.9792	NA	NA	NA	0.0197	0.0197

@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	n_assessed	pct_utd	pct_hib_utd	pct_pcv_utd
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled	pct_complete	pct_hib_utd	pct_pcv_utd
 2020-09-01	Montana	30001	Beaverhead	Overall	NA	NA	NA	NA	NA	NA	NA	NA	86.00	91.40	90.30	91.40	84.90	NA	NA	NA	93.00	82.80	92.50	90.30
 2020-09-01	Montana	30003	Big Horn	Overall	NA	NA	NA	NA	NA	NA	NA	NA	50.90	81.90	83.60	88.90	84.80	NA	NA	NA	171.00	47.40	79.50	74.30
 2020-09-01	Montana	30005	Blaine	Overall	NA	NA	NA	NA	NA	NA	NA	NA	50.00	87.50	79.20	81.30	72.90	NA	NA	NA	48.00	41.70	70.80	75.00

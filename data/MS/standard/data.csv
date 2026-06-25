@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2022-12-31	Mississippi	28033	DeSoto County	Overall	NA	NA	NA	NA	NA	NA	8.00	NA	NA	NA	NA	NA	NA	NA	NA	NA
 2022-12-31	Mississippi	28035	Forrest County	Overall	NA	NA	NA	NA	NA	NA	1.00	NA	NA	NA	NA	NA	NA	NA	NA	NA
 2022-12-31	Mississippi	28045	Hancock County	Overall	NA	NA	NA	NA	NA	NA	3.00	NA	NA	NA	NA	NA	NA	NA	NA	NA

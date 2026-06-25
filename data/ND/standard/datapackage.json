@@ -35,7 +35,10 @@
           {
             "name": "time",
             "duplicates": 927,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -51,7 +54,10 @@
           {
             "name": "geography",
             "duplicates": 886,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -106,9 +112,12 @@
             }
           },
           {
-            "name": "geography_name",
+            "name": "county",
             "duplicates": 886,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -165,7 +174,10 @@
           {
             "name": "grade",
             "duplicates": 930,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -176,9 +188,12 @@
             }
           },
           {
-            "name": "n_enrolled",
+            "name": "N_enrolled",
             "duplicates": 611,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 183.392934,
@@ -187,9 +202,12 @@
             "max": 2451
           },
           {
-            "name": "pct_no_record",
+            "name": "pct_incomplete",
             "duplicates": 610,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 2.032235,
@@ -198,9 +216,12 @@
             "max": 100
           },
           {
-            "name": "pct_pbe",
+            "name": "pct_personal_exempt",
             "duplicates": 482,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 2.787955,
@@ -209,9 +230,12 @@
             "max": 33.333333
           },
           {
-            "name": "pct_me",
+            "name": "pct_medical_exempt",
             "duplicates": 811,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 0.184486,
@@ -220,9 +244,12 @@
             "max": 36
           },
           {
-            "name": "pct_re",
+            "name": "pct_religious_exempt",
             "duplicates": 649,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 0.828233,
@@ -231,9 +258,12 @@
             "max": 33.333333
           },
           {
-            "name": "pct_utd_mmr",
+            "name": "pct_mmr",
             "duplicates": 439,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 93.877437,
@@ -242,9 +272,12 @@
             "max": 100
           },
           {
-            "name": "pct_utd_polio",
+            "name": "pct_polio",
             "duplicates": 447,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 93.888696,
@@ -253,9 +286,12 @@
             "max": 100
           },
           {
-            "name": "pct_utd_dtap",
+            "name": "pct_dtap",
             "duplicates": 700,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 612,
             "mean": 91.372867,
@@ -264,9 +300,12 @@
             "max": 100
           },
           {
-            "name": "pct_utd_hepb",
+            "name": "pct_hep_b",
             "duplicates": 455,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 94.63111,
@@ -275,9 +314,12 @@
             "max": 100
           },
           {
-            "name": "pct_utd_chickenpox",
+            "name": "pct_varicella",
             "duplicates": 433,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 3,
             "mean": 93.567906,
@@ -286,9 +328,12 @@
             "max": 100
           },
           {
-            "name": "pct_utd_tdap",
+            "name": "pct_tdap",
             "duplicates": 565,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 324,
             "mean": 91.418841,
@@ -297,9 +342,12 @@
             "max": 100
           },
           {
-            "name": "pct_utd_mcv4",
+            "name": "pct_menacwy",
             "duplicates": 526,
-            "time_range": [0, 4],
+            "time_range": [
+              0,
+              4
+            ],
             "type": "float",
             "missing": 324,
             "mean": 87.109443,

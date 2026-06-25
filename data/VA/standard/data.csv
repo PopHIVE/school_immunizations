@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	enrollment
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled
 2019-09-01	Virginia	51001	Accomack	7th grade	NA	NA	NA	NA	NA	0	0	0	NA	NA	NA	NA	NA	0	0	0	386
 2019-09-01	Virginia	51001	Accomack	Kindergarten	NA	NA	NA	NA	NA	3	0	3	NA	NA	NA	NA	NA	0.85	0	0.85	352
 2019-09-01	Virginia	51003	Albemarle	7th grade	NA	NA	NA	NA	NA	51	1	52	NA	NA	NA	NA	NA	3.96	0.08	4.04	1288

@@ -33,9 +33,468 @@
       "schema": {
         "fields": [
           {
-            "name": "time\tgeography\tgeography_name\tgrade\tN_dtap\tN_polio\tN_mmr\tN_hep_b\tN_varicella\tN_personal_exempt\tN_medical_exempt\tN_full_exempt\tpct_dtap\tpct_polio\tpct_mmr\tpct_hep_b\tpct_varicella\tpct_personal_exempt\tpct_medical_exempt\tpct_full_exempt",
+            "name": "time",
             "duplicates": 0,
-            "time_range": [-1, -1],
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "county",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_dtap",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_polio",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_mmr",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_hep_b",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_varicella",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_personal_exempt",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_medical_exempt",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "N_full_exempt",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_dtap",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_polio",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_mmr",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_hep_b",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_varicella",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_personal_exempt",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_medical_exempt",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2014-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t613\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2015-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t739\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2016-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6068\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2017-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5873\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2018-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t5841\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2019-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6438\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2020-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6581\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2021-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t6273\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2022-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t7133\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2023-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t8347\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2024-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t9910\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
+              "2025-09-01\t05\tArkansas\tOverall\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t11528\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1
+            }
+          },
+          {
+            "name": "pct_full_exempt",
+            "duplicates": 0,
+            "time_range": [
+              -1,
+              -1
+            ],
             "type": "string",
             "missing": 0,
             "table": {

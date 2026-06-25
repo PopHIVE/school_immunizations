@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2025-09-01	Idaho	16001	Ada	Overall	NA	NA	NA	NA	NA	NA	NA	NA	0.09	0.09	0.09	NA	0.11	NA	NA	NA
 2024-09-01	Idaho	16001	Ada	Overall	NA	NA	NA	NA	NA	NA	NA	NA	0.08	0.08	0.08	NA	0.07	NA	NA	NA
 2023-09-01	Idaho	16001	Ada	Overall	NA	NA	NA	NA	NA	NA	NA	NA	0.06	0.06	0.06	NA	0.06	NA	NA	NA

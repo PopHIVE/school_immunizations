@@ -35,7 +35,10 @@
           {
             "name": "time",
             "duplicates": 8388,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -46,7 +49,10 @@
           {
             "name": "county",
             "duplicates": 8308,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -135,9 +141,12 @@
             }
           },
           {
-            "name": "geography_name",
+            "name": "county",
             "duplicates": 8308,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -228,7 +237,10 @@
           {
             "name": "school_name",
             "duplicates": 4858,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -3769,7 +3781,10 @@
           {
             "name": "district",
             "duplicates": 7580,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -4588,7 +4603,10 @@
           {
             "name": "school_type",
             "duplicates": 8388,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -4599,7 +4617,10 @@
           {
             "name": "grade",
             "duplicates": 8386,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -4610,9 +4631,12 @@
             }
           },
           {
-            "name": "n_students",
+            "name": "N_enrolled",
             "duplicates": 8067,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 51.672825,
@@ -4621,9 +4645,12 @@
             "max": 1262
           },
           {
-            "name": "n_complete",
+            "name": "N_complete",
             "duplicates": 8077,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 46.703456,
@@ -4634,7 +4661,10 @@
           {
             "name": "pct_complete",
             "duplicates": 8004,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "float",
             "missing": 129,
             "mean": 88.388803,
@@ -4643,9 +4673,12 @@
             "max": 100
           },
           {
-            "name": "n_provisional",
+            "name": "N_provisional",
             "duplicates": 8368,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 0.410131,
@@ -4654,9 +4687,12 @@
             "max": 35
           },
           {
-            "name": "n_incomplete",
+            "name": "N_incomplete",
             "duplicates": 8359,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 1.480572,
@@ -4665,9 +4701,12 @@
             "max": 50
           },
           {
-            "name": "n_waiver_total",
+            "name": "N_full_exempt",
             "duplicates": 8338,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 3.07652,
@@ -4676,9 +4715,12 @@
             "max": 274
           },
           {
-            "name": "pct_waiver_total",
+            "name": "pct_full_exempt",
             "duplicates": 8075,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "float",
             "missing": 129,
             "mean": 7.513279,
@@ -4687,9 +4729,12 @@
             "max": 100
           },
           {
-            "name": "n_waiver_medical",
+            "name": "N_medical_exempt",
             "duplicates": 8379,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 0.104887,
@@ -4698,9 +4743,12 @@
             "max": 14
           },
           {
-            "name": "pct_waiver_medical",
+            "name": "pct_medical_exempt",
             "duplicates": 8291,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "float",
             "missing": 129,
             "mean": 0.328072,
@@ -4709,9 +4757,12 @@
             "max": 100
           },
           {
-            "name": "n_waiver_religious",
+            "name": "N_religious_exempt",
             "duplicates": 8359,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 1.2118,
@@ -4720,9 +4771,12 @@
             "max": 116
           },
           {
-            "name": "pct_waiver_religious",
+            "name": "pct_religious_exempt",
             "duplicates": 8198,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "float",
             "missing": 129,
             "mean": 2.908401,
@@ -4731,9 +4785,12 @@
             "max": 100
           },
           {
-            "name": "n_waiver_philosophical",
+            "name": "N_personal_exempt",
             "duplicates": 8353,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "integer",
             "missing": 0,
             "mean": 1.759833,
@@ -4742,9 +4799,12 @@
             "max": 158
           },
           {
-            "name": "pct_waiver_philosophical",
+            "name": "pct_personal_exempt",
             "duplicates": 8168,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "float",
             "missing": 129,
             "mean": 4.276928,
@@ -4755,7 +4815,10 @@
           {
             "name": "geography",
             "duplicates": 8308,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -4846,7 +4909,10 @@
           {
             "name": "state",
             "duplicates": 8389,
-            "time_range": [0, 1],
+            "time_range": [
+              0,
+              1
+            ],
             "type": "string",
             "missing": 0,
             "table": {

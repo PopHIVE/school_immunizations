@@ -1,4 +1,4 @@
-time,state,county,geography_name,school_name,district,school_type,grade,n_students,n_complete,pct_complete,n_provisional,n_incomplete,n_waiver_total,pct_waiver_total,n_waiver_medical,pct_waiver_medical,n_waiver_religious,pct_waiver_religious,n_waiver_philosophical,pct_waiver_philosophical,geography
+time,state,county,county,school_name,district,school_type,grade,N_enrolled,N_complete,pct_complete,N_provisional,N_incomplete,N_full_exempt,pct_full_exempt,N_medical_exempt,pct_medical_exempt,N_religious_exempt,pct_religious_exempt,N_personal_exempt,pct_personal_exempt,geography
 12-31-2023,Michigan,Oakland,Oakland County,Morris Adler Elementary School,Southfield Public School District,Pub,Kindergarten,38.00,33.00,86.80,0.00,1.00,4.00,10.50,0.00,0.00,3.00,7.90,1.00,2.60,26125
 12-31-2023,Michigan,Washtenaw,Washtenaw County,South Arbor Academy,South Arbor Charter Academy,Pub,Kindergarten,74.00,62.00,83.80,0.00,2.00,10.00,13.50,0.00,0.00,6.00,8.10,4.00,5.40,26161
 12-31-2023,Michigan,Monroe,Monroe County,Meadow Montessori School,Ida Public School District,Priv,Kindergarten,11.00,7.00,63.60,0.00,0.00,4.00,36.40,0.00,0.00,0.00,0.00,4.00,36.40,26115

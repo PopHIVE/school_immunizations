@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	enrollment	unit	public_independent	pct_fully_immunized	pct_provisional
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled	unit	public_independent	pct_complete	pct_provisional
 2018-09-01	Vermont	50001	Addison	All grades	NA	NA	NA	NA	NA	NA	NA	NA	95.00	95.00	95.00	95.00	95.00	0.03	NA	NA	4372.00	County	All	95.00	NA
 2018-09-01	Vermont	50003	Bennington	All grades	NA	NA	NA	NA	NA	NA	NA	NA	95.00	95.00	95.00	95.00	95.00	0.02	<0.01	NA	5416.00	County	All	0.93	0.05
 2018-09-01	Vermont	50005	Caledonia	All grades	NA	NA	NA	NA	NA	NA	NA	NA	95.00	95.00	95.00	95.00	95.00	0.02	NA	NA	4758.00	County	All	95.00	NA

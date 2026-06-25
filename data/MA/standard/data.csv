@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_religious_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_religious_exempt	pct_medical_exempt	pct_full_exempt	N_total	N_tdap	pct_tdap	N_menacwy	pct_menacwy
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_religious_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_religious_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled	N_tdap	pct_tdap	N_menacwy	pct_menacwy
 2020-09-01	Massachusetts	25001	Barnstable	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.967	0.967	0.964	0.977	0.965	0.024	0.002	0.026000000000000002	1352	NA	NA	NA	NA
 2021-09-01	Massachusetts	25001	Barnstable	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.962	0.9550000000000001	0.962	0.965	0.9560000000000001	0.021	0.002	0.023	1568	NA	NA	NA	NA
 2022-09-01	Massachusetts	25001	Barnstable	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.9490000000000001	0.9490000000000001	0.9510000000000001	0.9580000000000001	0.9450000000000001	0.03	0.003	0.032	1518	NA	NA	NA	NA

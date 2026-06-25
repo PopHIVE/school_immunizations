@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2025-09-01	Oregon	41001	Baker	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	19.07	0.30	NA
 2025-09-01	Oregon	41003	Benton	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.46	0.09	NA
 2025-09-01	Oregon	41005	Clackamas	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	8.84	0.10	NA

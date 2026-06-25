@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2018-09-01	Connecticut	09001	Fairfield	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.02	<0.01	0.02
 2019-09-01	Connecticut	09001	Fairfield	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.02	<0.01	0.03
 2020-09-01	Connecticut	09001	Fairfield	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	0.02	<0.01	0.03

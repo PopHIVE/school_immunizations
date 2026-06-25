@@ -35,7 +35,10 @@
           {
             "name": "time",
             "duplicates": 43,
-            "time_range": [0, 0],
+            "time_range": [
+              0,
+              0
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -45,7 +48,10 @@
           {
             "name": "geography",
             "duplicates": 0,
-            "time_range": [0, 0],
+            "time_range": [
+              0,
+              0
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -96,9 +102,12 @@
             }
           },
           {
-            "name": "geography_name",
+            "name": "county",
             "duplicates": 0,
-            "time_range": [0, 0],
+            "time_range": [
+              0,
+              0
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -151,7 +160,10 @@
           {
             "name": "grade",
             "duplicates": 43,
-            "time_range": [0, 0],
+            "time_range": [
+              0,
+              0
+            ],
             "type": "string",
             "missing": 0,
             "table": {
@@ -161,7 +173,10 @@
           {
             "name": "pct_mmr_exempt",
             "duplicates": 11,
-            "time_range": [0, 0],
+            "time_range": [
+              0,
+              0
+            ],
             "type": "float",
             "missing": 1,
             "mean": 5.337209,

@@ -1,4 +1,4 @@
-time,state,geography,geography_name,grade,pct_mmr_exempt
+time,state,geography,county,grade,pct_mmr_exempt
 12-31-2025,Ohio,39001,Adams County,Kindergarten,2.40
 12-31-2025,Ohio,39003,Allen County,Kindergarten,8.20
 12-31-2025,Ohio,39005,Ashland County,Kindergarten,8.80

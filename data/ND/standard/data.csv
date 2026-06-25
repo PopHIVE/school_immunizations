@@ -1,4 +1,4 @@
-time,state,geography,geography_name,grade,n_enrolled,pct_no_record,pct_pbe,pct_me,pct_re,pct_utd_mmr,pct_utd_polio,pct_utd_dtap,pct_utd_hepb,pct_utd_chickenpox,pct_utd_tdap,pct_utd_mcv4
+time,state,geography,county,grade,N_enrolled,pct_incomplete,pct_personal_exempt,pct_medical_exempt,pct_religious_exempt,pct_mmr,pct_polio,pct_dtap,pct_hep_b,pct_varicella,pct_tdap,pct_menacwy
 12-31-2019,North Dakota,38001,Adams County,11,14.00,0.00,0.00,0.00,0.00,100.00,100.00,NA,100.00,100.00,100.00,100.00
 12-31-2019,North Dakota,38001,Adams County,7,24.00,0.00,0.00,0.00,0.00,100.00,100.00,NA,100.00,100.00,100.00,100.00
 12-31-2019,North Dakota,38001,Adams County,Kindergarten,32.00,0.00,3.12,0.00,0.00,96.88,96.88,96.88,96.88,96.88,NA,NA

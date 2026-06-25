@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2018-09-01	Wisconsin	55001	Adams	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	NA
 2018-09-01	Wisconsin	55003	Ashland	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	5.00	NA
 2018-09-01	Wisconsin	55005	Barron	Overall	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	6.10	NA

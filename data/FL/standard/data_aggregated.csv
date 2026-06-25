@@ -1,4 +1,4 @@
-time,state,geography,geography_name,grade,N_dtap,N_polio,N_mmr,N_hep_b,N_varicella,N_personal_exempt,N_medical_exempt,N_full_exempt,pct_dtap,pct_polio,pct_mmr,pct_hep_b,pct_varicella,pct_personal_exempt,pct_medical_exempt,pct_full_exempt,total_pop_4_18
+time,state,geography,county,grade,N_dtap,N_polio,N_mmr,N_hep_b,N_varicella,N_personal_exempt,N_medical_exempt,N_full_exempt,pct_dtap,pct_polio,pct_mmr,pct_hep_b,pct_varicella,pct_personal_exempt,pct_medical_exempt,pct_full_exempt,N_enrolled
 2024-09-01,Florida,12009,Brevard County,Overall,NA,NA,NA,NA,NA,NA,NA,6255,NA,NA,NA,NA,NA,NA,NA,6.7,93347
 2024-09-01,Florida,12011,Broward County,Overall,NA,NA,NA,NA,NA,NA,NA,19390,NA,NA,NA,NA,NA,NA,NA,5.85,331618
 2024-09-01,Florida,12013,Calhoun County,Overall,NA,NA,NA,NA,NA,NA,NA,50,NA,NA,NA,NA,NA,NA,NA,1.93,2588

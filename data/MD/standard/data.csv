@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enroll	N_surveyed
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled	N_enrolled
 2016-09-01	Maryland	NA	State of Maryland	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	99.6	99.8	99.4	99.6	99.2	0.8	0.5	NA	68641	67903
 2017-09-01	Maryland	NA	State of Maryland	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	99.6	99.7	99.3	99.5	99	0.9	0.5	NA	71243	70106
 2018-09-01	Maryland	NA	State of Maryland	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	99.1	99.2	98.6	99	98.6	0.9	0.3	NA	68639	67856

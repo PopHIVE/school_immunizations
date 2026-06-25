@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2009-09-01	Nevada	32510	Carson City	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	97.78	NA	NA	NA	NA	NA
 2009-09-01	Nevada	32001	Churchill	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	100	NA	NA	NA	NA	NA
 2009-09-01	Nevada	32003	Clark	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	NA	NA	93.82	NA	NA	NA	NA	NA

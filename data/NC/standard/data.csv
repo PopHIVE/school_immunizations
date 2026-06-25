@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_religious_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_religious_exempt	pct_medical_exempt	pct_full_exempt	enrollment
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_religious_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_religious_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled
 2020-09-01	North Carolina	37001	Alamance	Kindergarten	NA	NA	NA	NA	NA	11	2	13	NA	NA	NA	NA	NA	0.59	0.11	0.7	1859
 2021-09-01	North Carolina	37001	Alamance	Kindergarten	NA	NA	NA	NA	NA	29	2	31	NA	NA	NA	NA	NA	1.43	0.1	1.53	2025
 2022-09-01	North Carolina	37001	Alamance	Kindergarten	NA	NA	NA	NA	NA	33	6	39	NA	NA	NA	NA	NA	1.75	0.32	2.07	1883

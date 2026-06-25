@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt
 2025-09-01	Missouri	29001	Adair	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.02	0.02	0.02	0.01	0.02	NA	NA	NA
 2025-09-01	Missouri	29003	Andrew	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.02	0.02	0.03	0.02	0.03	NA	NA	NA
 2025-09-01	Missouri	29005	Atchison	Kindergarten	NA	NA	NA	NA	NA	NA	NA	NA	0.06	0.06	0.06	0.02	0.06	NA	NA	NA

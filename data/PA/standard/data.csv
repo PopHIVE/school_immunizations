@@ -1,4 +1,4 @@
-time	state	geography	geography_name	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	total_enrolled
+time	state	geography	county	grade	N_dtap	N_polio	N_mmr	N_hep_b	N_varicella	N_personal_exempt	N_medical_exempt	N_full_exempt	pct_dtap	pct_polio	pct_mmr	pct_hep_b	pct_varicella	pct_personal_exempt	pct_medical_exempt	pct_full_exempt	N_enrolled
 2020-09-01	Pennsylvania	42001	Adams	Kindergarten	892	889	888	894	888	21	3	24	97.2	96.8	96.7	97.39999999999999	96.7	2.3	0.3	2.5999999999999996	918
 2020-09-01	Pennsylvania	42001	Adams	7th Grade	1125	1128	1127	1126	1126	25	8	33	98.3	98.6	98.5	98.4	98.4	2.2	0.7000000000000001	2.9000000000000004	1144
 2020-09-01	Pennsylvania	42001	Adams	12th Grade	1194	1199	1199	1192	1187	25	19	44	98.4	98.8	98.8	98.3	97.89999999999999	2.1	1.6	3.7	1213
