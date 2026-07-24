@@ -6,6 +6,21 @@ library(stringr)
 library(vroom)
 source("../../resources/add_state_column.R")
 
+# ---- Download from open-data API ----
+# Source: CDPHE ArcGIS Open Data — Colorado School and Child Care Immunization
+#   County Data (also surfaced on data.colorado.gov). Pulled directly so the
+#   source self-updates; the manual CSV download is no longer required.
+api_url <- paste0(
+  "https://opendata.arcgis.com/api/v3/datasets/",
+  "69a2917e89a0456fbe3f04dfb6767621_1/downloads/data?format=csv&spatialRefId=4326"
+)
+dir.create("raw", showWarnings = FALSE)
+raw_path <- "./raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv"
+try(
+  download.file(api_url, raw_path, mode = "wb", quiet = TRUE),
+  silent = TRUE
+)
+
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", "csv", recursive = TRUE, full.names = TRUE
 )))
@@ -15,12 +30,22 @@ script_hash <- as.character(tools::md5sum("ingest.R"))
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
   
-  raw_path <- "./raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv"
-  data_raw <- readr::read_csv(raw_path, show_col_types = FALSE) %>%
+  data_raw <- readr::read_csv(raw_path, show_col_types = FALSE)
+  # The live API names this column "Year"; older manual exports used "Year_".
+  if ("Year" %in% names(data_raw) && !("Year_" %in% names(data_raw))) {
+    data_raw <- dplyr::rename(data_raw, Year_ = Year)
+  }
+  data_raw <- data_raw %>%
     select(-OBJECTID)
   
+  # The dataset's Metric labels changed over time: older manual exports used
+  # "MedicalExemptions"/"NonMedicalExemptions"; the live API uses
+  # "Medical Exemption"/"Nonmedical Exemption". Accept both.
   data_exempt <- data_raw %>%
-    filter(Metric %in% c("MedicalExemptions", "NonMedicalExemptions")) %>%
+    filter(Metric %in% c(
+      "MedicalExemptions", "NonMedicalExemptions",
+      "Medical Exemption", "Nonmedical Exemption"
+    )) %>%
     mutate(
       year_end = str_extract(Year_, "\\d{4}$"),
       time = as.Date(paste0(year_end, "-09-01")),
@@ -29,8 +54,8 @@ if (!identical(process$raw_state, raw_state) ||
       vaccine_key = gsub("[^a-z0-9]+", "_", vaccine_key),
       vaccine_key = gsub("_+", "_", vaccine_key),
       metric_key = case_when(
-        Metric == "MedicalExemptions" ~ "medical_exempt",
-        Metric == "NonMedicalExemptions" ~ "nonmedical_exempt",
+        Metric %in% c("MedicalExemptions", "Medical Exemption") ~ "medical_exempt",
+        Metric %in% c("NonMedicalExemptions", "Nonmedical Exemption") ~ "nonmedical_exempt",
         TRUE ~ "exempt"
       ),
       value = as.numeric(Value_Percent)
@@ -57,6 +82,9 @@ if (!identical(process$raw_state, raw_state) ||
   data_out <- data_exempt %>%
     rename(county = County) %>%
     mutate(
+      # The live API returns county names in uppercase (e.g. "EL PASO"); the
+      # FIPS lookup uses title case (e.g. "El Paso"). Normalize so the join works.
+      county = str_to_title(county),
       county = if_else(county %in% c("State Total", "State Totals", "Total"), "Total", county)
     ) %>%
     left_join(

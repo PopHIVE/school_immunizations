@@ -1,12 +1,25 @@
 source("../../resources/add_state_column.R")
 # =============================================================================
 # NY - School Immunization Survey (School-Level)
+# Source: Health Data NY (Socrata) dataset btkd-y8bp
+#   https://health.data.ny.gov/Health/School-Immunization-Survey-Beginning-2019-20-Schoo/btkd-y8bp
+# Pulled directly from the open-data API (CSV export) so the source
+# self-updates; the manual .xlsx download is no longer required.
 # =============================================================================
 
 library(dplyr)
-library(readxl)
+library(readr)
 library(stringr)
 library(vroom)
+
+# ---- Download from open-data API ----
+api_url <- "https://health.data.ny.gov/api/views/btkd-y8bp/rows.csv?accessType=DOWNLOAD"
+dir.create("raw", showWarnings = FALSE)
+raw_file <- "raw/ny_school_immunization_survey.csv"
+try(
+  download.file(api_url, raw_file, mode = "wb", quiet = TRUE),
+  silent = TRUE
+)
 
 if (!file.exists("process.json")) {
   process <- list(raw_state = NULL)
@@ -14,7 +27,6 @@ if (!file.exists("process.json")) {
   process <- dcf::dcf_process_record()
 }
 
-raw_file <- "raw/New York School_Immunization_Survey___Beginning_2019-20_School_Year_20250426.xlsx"
 raw_state <- list(hash = tools::md5sum(raw_file))
 
 if (!identical(process$raw_state, raw_state)) {
@@ -23,7 +35,7 @@ if (!identical(process$raw_state, raw_state)) {
     filter(nchar(geography) == 5, state == "NY") %>%
     select(geography, geography_name, state)
 
-  raw <- read_excel(raw_file, sheet = 1)
+  raw <- readr::read_csv(raw_file, show_col_types = FALSE)
 
   percent_cols <- names(raw)[grepl("^Percent ", names(raw))]
 
