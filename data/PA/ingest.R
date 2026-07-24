@@ -7,6 +7,29 @@ library(readr)
 library(purrr)
 source("../../resources/add_state_column.R")
 
+# ---- Download county survey files from PA DOH ----
+# The immunization "rates" page links per-year workbooks; the county files
+# contain "County" in the name (statewide "...for Pa..." / "...State..." files
+# do not). Scrape and download them so the series self-updates.
+options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
+dir.create("raw", showWarnings = FALSE)
+local({
+  pa_page <- "https://www.pa.gov/agencies/health/programs/immunizations/rates"
+  pa_host <- "https://www.pa.gov"
+  tmp <- tempfile(fileext = ".html")
+  if (tryCatch({ download.file(pa_page, tmp, quiet = TRUE); TRUE }, error = function(e) FALSE)) {
+    html <- paste(readLines(tmp, warn = FALSE), collapse = "\n")
+    hrefs <- unlist(str_extract_all(html, 'href="[^"]*\\.(?:xlsx|xls)"'))
+    hrefs <- str_replace_all(hrefs, 'href="|"$', "")
+    hrefs <- unique(hrefs[str_detect(hrefs, regex("county", ignore_case = TRUE))])
+    for (h in hrefs) {
+      url <- if (grepl("^http", h)) h else paste0(pa_host, h)
+      dest <- file.path("raw", utils::URLdecode(basename(h)))
+      try(download.file(url, dest, mode = "wb", quiet = TRUE), silent = TRUE)
+    }
+  }
+})
+
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
 )))
@@ -257,7 +280,15 @@ if (!identical(process$raw_state, raw_state) ||
     parse_county_sheets(path)
   }
 
-  raw_files <- list.files("./raw", pattern = "\\.xlsx$", full.names = TRUE)
+  raw_files <- list.files("./raw", pattern = "\\.(xlsx|xls)$", full.names = TRUE)
+  raw_files <- raw_files[str_detect(basename(raw_files), regex("county", ignore_case = TRUE))]
+  # De-duplicate by school year so an older manual copy and the freshly
+  # downloaded official file for the same year are not both counted.
+  yrs <- vapply(raw_files, function(p) {
+    m <- str_match(basename(p), "(20\\d{2})[-_](\\d{2,4})")
+    if (is.na(m[1, 1])) NA_character_ else m[1, 2]
+  }, character(1))
+  raw_files <- raw_files[!is.na(yrs) & !duplicated(yrs)]
   data_all <- bind_rows(lapply(raw_files, parse_file))
 
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
