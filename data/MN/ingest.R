@@ -1,6 +1,11 @@
 source("../../resources/add_state_column.R")
 # =============================================================================
-# MN - Kindergarten Vaccination Coverage by County (2023-24)
+# MN - Kindergarten Vaccination Coverage by County
+# Source: MN Dept of Health, Annual Immunization Status Report (school data).
+#   County kindergarten files are published as `kcounty<YY><YY>.xlsx` and linked
+#   from the current-year page and the archive page. We scrape those listings and
+#   download every county file, so the series self-updates as MN posts new years.
+#   https://www.health.state.mn.us/people/immunize/stats/school/index.html
 # =============================================================================
 
 library(dcf)
@@ -10,19 +15,37 @@ library(readxl)
 library(readr)
 library(vroom)
 
+# MDH blocks non-browser user agents (HTTP 403); present a browser UA.
+options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
+
+base_url <- "https://www.health.state.mn.us/people/immunize/stats/school/"
+dir.create("raw", showWarnings = FALSE)
+
+# ---- Discover & download county kindergarten files ----
+discover_codes <- function(pages) {
+  codes <- character()
+  for (pg in pages) {
+    tmp <- tempfile(fileext = ".html")
+    ok <- tryCatch({ download.file(paste0(base_url, pg), tmp, quiet = TRUE); TRUE },
+                   error = function(e) FALSE)
+    if (ok) {
+      html <- paste(readLines(tmp, warn = FALSE), collapse = "\n")
+      codes <- c(codes, unlist(str_extract_all(html, "kcounty\\d{4}\\.xlsx")))
+    }
+  }
+  unique(codes)
+}
+files <- discover_codes(c("index.html", "archive.html"))
+for (fn in files) {
+  try(download.file(paste0(base_url, fn), file.path("raw", fn), mode = "wb", quiet = TRUE),
+      silent = TRUE)
+}
+
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
 )))
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
-
-parse_end_year <- function(path) {
-  m <- str_match(basename(path), "(20\\d{2})-(\\d{2})")
-  if (is.na(m[1, 1])) return(NA_integer_)
-  start_year <- m[1, 2]
-  end_two <- m[1, 3]
-  as.integer(paste0(substr(start_year, 1, 2), end_two))
-}
 
 parse_pct_points <- function(x) {
   y <- readr::parse_number(as.character(x))
@@ -34,43 +57,46 @@ parse_pct_points <- function(x) {
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
 
-  raw_path <- "./raw/kg_county_2023-24.xlsx"
-  end_year <- parse_end_year(raw_path)
-  time <- as.Date(paste0(end_year, "-09-01"))
+  process_kcounty <- function(path) {
+    m <- str_match(basename(path), "kcounty(\\d{2})(\\d{2})")
+    if (is.na(m[1, 1])) return(NULL)
+    end_year <- as.integer(paste0("20", m[1, 3]))
+    time <- as.Date(paste0(end_year, "-09-01"))
 
-  raw <- readxl::read_excel(raw_path, sheet = "K_County", col_names = FALSE)
-  header <- raw[2, ] %>% unlist(use.names = FALSE)
-  data_raw <- raw[-c(1, 2), ]
-  names(data_raw) <- header
+    raw <- readxl::read_excel(path, sheet = "K_County", col_names = FALSE)
+    header <- str_replace_all(as.character(unlist(raw[2, ], use.names = FALSE)), "\\s+", " ")
+    df <- raw[-c(1, 2), ]
+    names(df) <- header
+    df <- df %>% mutate(across(everything(), as.character))
 
-  data_clean <- data_raw %>%
-    rename_with(~ str_replace_all(.x, "\\s+", " ")) %>%
-    mutate(across(everything(), as.character)) %>%
-    transmute(
-      county = str_to_title(str_trim(`County`)),
-      enrollment = readr::parse_number(`Kindergarten Enrollment`),
-      pct_dtap = parse_pct_points(`DTaP % Vaccinated`),
-      pct_polio = parse_pct_points(`Polio % Vaccinated`),
-      pct_mmr = parse_pct_points(`MMR % Vaccinated`),
-      pct_hep_b = parse_pct_points(`Hep B % Vaccinated`),
-      pct_varicella = parse_pct_points(`Varicella % Vaccinated`),
-      pct_dtap_nonmedical = parse_pct_points(`DTaP % non-medical`),
-      pct_dtap_medical = parse_pct_points(`DTaP % medical`),
-      pct_polio_nonmedical = parse_pct_points(`Polio % non-medical`),
-      pct_polio_medical = parse_pct_points(`Polio % medical`),
-      pct_mmr_nonmedical = parse_pct_points(`MMR % non-medical`),
-      pct_mmr_medical = parse_pct_points(`MMR % medical`),
-      pct_hep_b_nonmedical = parse_pct_points(`Hep B % non-medical`),
-      pct_hep_b_medical = parse_pct_points(`Hep B % medical`),
-      pct_varicella_nonmedical = parse_pct_points(`Varicella % non-medical`),
-      pct_varicella_medical = parse_pct_points(`Varicella % medical`),
-      pct_varicella_disease_history = parse_pct_points(`Varicella % Disease History`)
+    pick <- function(nm) if (nm %in% names(df)) df[[nm]] else rep(NA_character_, nrow(df))
+
+    tibble(
+      county = str_to_title(str_trim(pick("County"))),
+      enrollment = readr::parse_number(pick("Kindergarten Enrollment")),
+      pct_dtap = parse_pct_points(pick("DTaP % Vaccinated")),
+      pct_polio = parse_pct_points(pick("Polio % Vaccinated")),
+      pct_mmr = parse_pct_points(pick("MMR % Vaccinated")),
+      pct_hep_b = parse_pct_points(pick("Hep B % Vaccinated")),
+      pct_varicella = parse_pct_points(pick("Varicella % Vaccinated")),
+      pct_dtap_nonmedical = parse_pct_points(pick("DTaP % non-medical")),
+      pct_dtap_medical = parse_pct_points(pick("DTaP % medical")),
+      pct_polio_nonmedical = parse_pct_points(pick("Polio % non-medical")),
+      pct_polio_medical = parse_pct_points(pick("Polio % medical")),
+      pct_mmr_nonmedical = parse_pct_points(pick("MMR % non-medical")),
+      pct_mmr_medical = parse_pct_points(pick("MMR % medical")),
+      pct_hep_b_nonmedical = parse_pct_points(pick("Hep B % non-medical")),
+      pct_hep_b_medical = parse_pct_points(pick("Hep B % medical")),
+      pct_varicella_nonmedical = parse_pct_points(pick("Varicella % non-medical")),
+      pct_varicella_medical = parse_pct_points(pick("Varicella % medical")),
+      pct_varicella_disease_history = parse_pct_points(pick("Varicella % Disease History"))
     ) %>%
-    filter(!is.na(county)) %>%
-    mutate(
-      time = time,
-      grade = "Kindergarten"
-    )
+      filter(!is.na(county), !county %in% c("", "Na")) %>%
+      mutate(time = time, grade = "Kindergarten")
+  }
+
+  kcounty_files <- list.files("./raw", pattern = "^kcounty\\d{4}\\.xlsx$", full.names = TRUE)
+  data_clean <- bind_rows(lapply(kcounty_files, process_kcounty))
 
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
   fips_df <- all_fips %>%
@@ -88,7 +114,7 @@ if (!identical(process$raw_state, raw_state) ||
       by = c("county" = "geography_name")
     ) %>%
     mutate(
-      geography = if_else(county == "Statewide", state_fips[1], geography),
+      geography = if_else(county %in% c("Statewide", "Minnesota", "Total"), state_fips[1], geography),
       geography_name = county,
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -115,7 +141,8 @@ if (!identical(process$raw_state, raw_state) ||
       pct_hep_b_nonmedical, pct_hep_b_medical,
       pct_varicella_nonmedical, pct_varicella_medical,
       pct_varicella_disease_history
-    )
+    ) %>%
+    arrange(time, geography_name)
 
   dir.create("standard", showWarnings = FALSE)
   vroom::vroom_write(add_state_column(data_out, "Minnesota"), "standard/data.csv.gz")
