@@ -8,6 +8,27 @@ library(readxl)
 library(stringr)
 library(vroom)
 
+# ---- Download School Vaccination Rates workbooks from Maine CDC ----
+# The immunization data-reports page links a workbook per school year; all of
+# them are served from a single canonical directory. Scrape the page, then pull
+# each file from that directory so the series self-updates as years are added.
+# (maine.gov 403s non-browser agents, so present a browser User-Agent.)
+options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
+dir.create("raw", showWarnings = FALSE)
+me_page <- "https://www.maine.gov/dhhs/mecdc/data-reports/immunization"
+me_base <- "https://www.maine.gov/dhhs/mecdc/sites/maine.gov.dhhs.mecdc/files/immunization-reports/"
+me_tmp <- tempfile(fileext = ".html")
+if (tryCatch({ download.file(me_page, me_tmp, quiet = TRUE); TRUE }, error = function(e) FALSE)) {
+  html <- paste(readLines(me_tmp, warn = FALSE), collapse = "\n")
+  hrefs <- unlist(str_extract_all(html, 'href="[^"]*[Vv]accination[^"]*\\.xlsx"'))
+  hrefs <- str_replace_all(hrefs, 'href="|"$', "")
+  for (bn in unique(basename(hrefs))) {
+    url <- paste0(me_base, gsub(" ", "%20", bn))
+    dest <- file.path("raw", utils::URLdecode(bn))
+    try(download.file(url, dest, mode = "wb", quiet = TRUE), silent = TRUE)
+  }
+}
+
 if (!file.exists("process.json")) {
   process <- list(raw_state = NULL)
 } else {
@@ -113,6 +134,12 @@ if (!identical(process$raw_state, raw_state)) {
 
     bind_rows(k, seventh, twelfth)
   }
+
+  # De-duplicate by school year, preferring freshly downloaded files (names
+  # without a " (1)" suffix) over any older manual copies of the same year.
+  raw_files <- raw_files[order(str_detect(basename(raw_files), "\\(1\\)"))]
+  ey <- vapply(raw_files, function(p) parse_end_year(basename(p)), integer(1))
+  raw_files <- raw_files[!is.na(ey) & !duplicated(ey)]
 
   data <- bind_rows(lapply(raw_files, process_file)) %>%
     mutate(
