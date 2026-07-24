@@ -17,14 +17,14 @@ Compiled 2026-07-24.
 
 ## 🟢 Clean API / open-data endpoints (best for automation)
 
-| State | Source | Endpoint / Notes |
-|---|---|---|
-| CA | CHHS open-data (Socrata) | https://data.chhs.ca.gov/dataset/school-immunizations-in-kindergarten-by-academic-year — CSV + API, kindergarten by year |
-| CO | Colorado Info Marketplace (Socrata `3b5w-8ggf`) | https://data.colorado.gov/dataset/CDPHE-Colorado-School-and-Child-Care-Immunization-/3b5w-8ggf — CSV + API; also CDPHE ArcGIS. Matches the raw CSV exactly. |
-| CT | CT Open Data (Socrata) | https://data.ct.gov/Health-and-Human-Services/2025-2026-Vaccine-Exemption-Rates-by-School-All-Gr/a2a4-pw6c — CSV + API, one dataset per school year |
-| NY | Health Data NY (Socrata `btkd-y8bp`) | CSV: https://health.data.ny.gov/api/views/btkd-y8bp/rows.csv?accessType=DOWNLOAD · JSON: https://health.data.ny.gov/resource/btkd-y8bp.json — verified live; exact match. Pre-2019 in `5pme-xbs5` |
-| NM | NMDOH ArcGIS dashboard | https://www.arcgis.com/apps/dashboards/c40e909922a243968807dc7b10870405 — feature-service backed (queryable), K & 7th grade |
-| RI | RICAIR ArcGIS Hub | https://ricair-data-rihealth.hub.arcgis.com/ — CSV/GeoJSON download + REST feature service |
+| State | Source | Endpoint / Notes | Latest year |
+|---|---|---|---|
+| CA | CHHS open-data (Socrata) | https://data.chhs.ca.gov/dataset/school-immunizations-in-kindergarten-by-academic-year — CSV + API, kindergarten by year | 2024–25 (KG; 7th grade only to 2019–20) |
+| CO | Colorado Info Marketplace (Socrata `3b5w-8ggf`) | https://data.colorado.gov/dataset/CDPHE-Colorado-School-and-Child-Care-Immunization-/3b5w-8ggf — CSV + API; also CDPHE ArcGIS. Matches the raw CSV exactly. | 2025–26 |
+| CT | CT Open Data (Socrata) | https://data.ct.gov/Health-and-Human-Services/2025-2026-Vaccine-Exemption-Rates-by-School-All-Gr/a2a4-pw6c — CSV + API, one dataset per school year | 2024–25 |
+| NY | Health Data NY (Socrata `btkd-y8bp`) | CSV: https://health.data.ny.gov/api/views/btkd-y8bp/rows.csv?accessType=DOWNLOAD · JSON: https://health.data.ny.gov/resource/btkd-y8bp.json — verified live; exact match. Pre-2019 in `5pme-xbs5` | 2024–25 |
+| NM | NMDOH ArcGIS dashboard | https://www.arcgis.com/apps/dashboards/c40e909922a243968807dc7b10870405 — feature-service backed (queryable), K & 7th grade | 2023–24 |
+| RI | RICAIR ArcGIS Hub | https://ricair-data-rihealth.hub.arcgis.com/ — CSV/GeoJSON download + REST feature service | 2024–25 |
 
 ## 🔵 Downloadable static files (Excel/CSV/PDF)
 
@@ -84,6 +84,9 @@ Compiled 2026-07-24.
 ## Ingest priority & progress
 
 1. **API states (rewire `ingest.R` to pull directly, self-updating):** CO, CT, NY, CA — then NM, RI.
+   - ✅ **CT** — rewired to CT Open Data Socrata (`8kid-pp5k`, county/county-equivalent);
+     validated, 256 rows, 2013–2026 (wider than the old manual file). Exemption counts
+     now populated; crosswalk handles the county→planning-region switch (~2022+).
    - ✅ **NY** — rewired to Socrata CSV export (`btkd-y8bp`); validated, 30,951 rows.
    - ✅ **CO** — rewired to CDPHE ArcGIS Open Data CSV; validated, 1,728 rows.
      Reconciled schema drift: `Year`→`Year_`, new `Medical Exemption`/`Nonmedical
