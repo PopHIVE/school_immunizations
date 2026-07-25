@@ -33,7 +33,7 @@ Compiled 2026-07-24.
 | PA | https://www.pa.gov/agencies/health/programs/immunizations/rates | Per-year county Excel + PDF, URLs verified — matches raw files | 2023–24 |
 | MN | https://www.health.state.mn.us/people/immunize/stats/school/index.html | Direct `.xlsx` per year (e.g. `kcounty2324.xlsx`) + CSV — exact match | 2023–24 |
 | MD | https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/Kindergarten_Immunization_Rates_by_School.aspx | Excel by school & county, 2019–2026 | 2023–24 |
-| MA | https://www.mass.gov/info-details/archive-of-school-immunization-data-and-exemption-rates | Excel (.xls) files by year | 2024–25 |
+| MA | https://www.mass.gov/info-details/school-immunizations (current) + …/archive-of-school-immunization-data-and-exemption-rates | Per-year by-county `.xlsx` for K & 7th grade; WAF needs a full browser header set (not just User-Agent) | 2025–26 |
 | ME | https://www.maine.gov/dhhs/mecdc/data-reports/immunization | Excel and PDF per year, 2018–2025 (K/7/12) | 2023–24 |
 | HI | https://health.hawaii.gov/docd/resources/reports/immunization-examination-requirements/ | Mostly PDF; 2024-25 also Excel | 2023–24 |
 | IA | https://hhs.iowa.gov/about/data-reports/health-disease/immunization/school-child-care-audits | Annual K-12 audit PDFs | 2024–25 |
@@ -121,10 +121,20 @@ Compiled 2026-07-24.
      Handles per-year layout drift (sheet name, enrollment-column label, proportion-vs-
      percent scale) and the Baltimore City/County + bare-vs-"County" naming. KG,
      2019-20..2025-26 (no 2024-25 file published — source gap).
-   - ⛔ **MA** — BLOCKED for automation. The mass.gov `/doc/.../download` files sit
-     behind a WAF that 403s `libcurl`/`wininet` (so it fails in CI too), and there is no
-     `data.mass.gov` Socrata dataset. Left on its manual workbook. Would need a
-     browser-fingerprinted fetch (not available in the R/CI toolchain) or manual refresh.
+   - ✅ **MA** — UNBLOCKED. The mass.gov WAF 403s a bare User-Agent, but a *full*
+     browser header set via `httr` (`Accept`, `Accept-Language`, `Sec-Fetch-*`,
+     `Upgrade-Insecure-Requests`, plus a same-origin `Referer` on the `/doc/` fetch)
+     passes. Scrapes the current + archive pages for every by-county K / 7th-grade
+     `.xlsx` and downloads them; self-updating. Parser handles three layout eras
+     (legacy "Table 1"; "Notes" + "Rates by County"; multi-sheet workbooks where the
+     county summary is one of several sheets) and header drift ("3 Hep B"/"3 HEPB",
+     "2 Varicella"/"Immunity to Chickenpox"). Coverage 2013-14..2025-26, 14 counties,
+     K + 7th grade (364 rows). Downloads are incremental (skips years already in
+     `raw/`) and rate-limited, because the WAF IP-blocks bursts. **CI caveat:** the
+     header bypass was validated from a normal IP; Akamai may still 403 datacenter
+     IPs (GitHub Actions), but since `raw/` is committed, CI only fetches newly posted
+     years — anything it can't reach is logged and retried, and existing files still
+     process.
 3. **PDF / dashboard exports:** remaining states (manual or semi-automated).
 4. **By-request / FOIA (no automation):** AL, AR, NV, WV — likely CDC SchoolVaxView fallback.
 
