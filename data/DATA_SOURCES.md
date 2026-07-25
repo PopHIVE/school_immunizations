@@ -112,10 +112,19 @@ Compiled 2026-07-24.
      Vaccination Rates" workbooks and pulls them from the canonical directory;
      self-updating. Now 2018-19..2024-25 (added 2024-25), K/7th/12th, 16 counties.
      Year-level de-dup guard; browser User-Agent required.
-   - ⬜ **MD, MA, PA** — bespoke case (like CA). Current files are hand-curated tidy
-     workbooks; official sources are per-year report-layout Excel behind JS/aspx pages
-     (MD/MA county pages exposed no direct links to a plain fetch) or need the intricate
-     PA multi-sheet parser with inconsistent per-year URLs. Need CA-style rewrites.
+   - ✅ **PA** — scrapes the PA DOH rates page for the per-year "by County" survey
+     workbooks and downloads each (statewide "for Pa"/State files excluded); self-updating.
+     Reader glob extended to legacy `.xls`; de-dup by year. Coverage 2020-21..2024-25
+     (67 counties; K/7th/12th/Totals). Existing multi-layout parser unchanged.
+   - ✅ **MD** — county tables are PDF-only, so aggregate the by-school workbooks
+     (which carry per-school enrollment) to county, enrollment-weighted; self-updating.
+     Handles per-year layout drift (sheet name, enrollment-column label, proportion-vs-
+     percent scale) and the Baltimore City/County + bare-vs-"County" naming. KG,
+     2019-20..2025-26 (no 2024-25 file published — source gap).
+   - ⛔ **MA** — BLOCKED for automation. The mass.gov `/doc/.../download` files sit
+     behind a WAF that 403s `libcurl`/`wininet` (so it fails in CI too), and there is no
+     `data.mass.gov` Socrata dataset. Left on its manual workbook. Would need a
+     browser-fingerprinted fetch (not available in the R/CI toolchain) or manual refresh.
 3. **PDF / dashboard exports:** remaining states (manual or semi-automated).
 4. **By-request / FOIA (no automation):** AL, AR, NV, WV — likely CDC SchoolVaxView fallback.
 
