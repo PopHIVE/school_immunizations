@@ -1,17 +1,29 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_full_exempt": {
+    "id": "N_full_exempt",
+    "short_name": "Total exemptions (count)",
+    "long_name": "Number of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wv_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "wv_school_immunization": {
+      "name": "West Virginia School Immunization Exemptions",
+      "url": "https://oeps.wv.gov/immunizations/Pages/school_coverage_rates.aspx",
+      "organization": "West Virginia Department of Health",
+      "organization_url": "https://dhhr.wv.gov/",
+      "description": "County-level school vaccination exemption counts by vaccine from the West Virginia Office of Epidemiology and Prevention Services.",
+      "restrictions": "2025 exemption counts obtained via a public-records (FOIA) request; not published as a downloadable dataset."
+    }
   }
 }

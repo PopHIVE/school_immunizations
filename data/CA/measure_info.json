@@ -1,17 +1,318 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_students": {
+    "id": "N_students",
+    "short_name": "Students assessed",
+    "long_name": "Number of students assessed",
+    "category": "immunization",
+    "short_description": "Number of students (entrants) assessed for immunization status.",
+    "long_description": "Count of students (school entrants) assessed for immunization status; the enrollment-based denominator for the accompanying percentages.",
+    "statement": "In {location}, {value} students were assessed.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_all_required": {
+    "id": "pct_all_required",
+    "short_name": "All-required coverage",
+    "long_name": "Percent of students with all required immunizations",
+    "category": "immunization",
+    "short_description": "Percentage of students reported as having all required immunizations at school entry.",
+    "long_description": "School-entry assessment category (e.g. California kindergarten reporting): share of students up to date with all required immunizations at entry.",
+    "statement": "In {location}, {value}% of students had all required immunizations.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_conditional": {
+    "id": "pct_conditional",
+    "short_name": "Conditional enrollment rate",
+    "long_name": "Percent of students conditionally enrolled",
+    "category": "immunization",
+    "short_description": "Percentage of assessed school students admitted conditionally while completing required immunizations.",
+    "long_description": "Share of assessed school students who are conditionally (or provisionally) enrolled - permitted to attend while in the process of completing required immunizations and not yet overdue.",
+    "statement": "In {location}, {value}% of school students were conditionally enrolled.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_pme": {
+    "id": "pct_pme",
+    "short_name": "Permanent medical exemption rate",
+    "long_name": "Percent of students with a permanent medical exemption",
+    "category": "immunization",
+    "short_description": "Percentage of students with a permanent medical exemption from immunization requirements.",
+    "long_description": "California kindergarten category: share of students granted a permanent medical exemption (PME) filed through CAIR-ME.",
+    "statement": "In {location}, {value}% of school students had a permanent medical exemption.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_other_lacking": {
+    "id": "pct_other_lacking",
+    "short_name": "Other / not up to date rate",
+    "long_name": "Percent of students lacking one or more required immunizations for other reasons",
+    "category": "immunization",
+    "short_description": "Percentage of students lacking one or more required immunizations for reasons other than exemption, conditional, or overdue status.",
+    "long_description": "School-entry assessment residual category: share of students not up to date and not otherwise classified as exempt, conditional, or overdue.",
+    "statement": "In {location}, {value}% of school students lacked one or more required immunizations for other reasons.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_overdue": {
+    "id": "pct_overdue",
+    "short_name": "Overdue rate",
+    "long_name": "Percent of students overdue for one or more required immunizations",
+    "category": "immunization",
+    "short_description": "Percentage of students past due for one or more required immunizations and not exempt or conditional.",
+    "long_description": "School-entry assessment category: share of students who are overdue for one or more required immunizations and are not otherwise exempt or conditionally enrolled.",
+    "statement": "In {location}, {value}% of school students were overdue for one or more required immunizations.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "N_students_tdap": {
+    "id": "N_students_tdap",
+    "short_name": "Tdap students assessed",
+    "long_name": "Number of 7th-grade students assessed for Tdap immunization",
+    "category": "immunization",
+    "short_description": "Number of 7th-grade students assessed for Tdap immunization status.",
+    "long_description": "Count of 7th-grade students assessed for Tdap immunization; the denominator for the accompanying Tdap percentages.",
+    "statement": "In {location}, {value} 7th-grade students were assessed for Tdap immunization.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "N_students_varicella": {
+    "id": "N_students_varicella",
+    "short_name": "varicella students assessed",
+    "long_name": "Number of 7th-grade students assessed for varicella immunization",
+    "category": "immunization",
+    "short_description": "Number of 7th-grade students assessed for varicella immunization status.",
+    "long_description": "Count of 7th-grade students assessed for varicella immunization; the denominator for the accompanying varicella percentages.",
+    "statement": "In {location}, {value} 7th-grade students were assessed for varicella immunization.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_entrants_vax_tdap": {
+    "id": "pct_entrants_vax_tdap",
+    "short_name": "Tdap coverage (7th grade)",
+    "long_name": "Percent of 7th-grade students up to date for Tdap vaccination",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students up to date for Tdap vaccination.",
+    "long_description": "Share of 7th-grade students reported as up to date for Tdap vaccination in the California school immunization data, enrollment-weighted to the county.",
+    "statement": "In {location}, {value}% of 7th-grade students were up to date for Tdap vaccination.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_entrants_vax_varicella": {
+    "id": "pct_entrants_vax_varicella",
+    "short_name": "varicella coverage (7th grade)",
+    "long_name": "Percent of 7th-grade students up to date for varicella vaccination",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students up to date for varicella vaccination.",
+    "long_description": "Share of 7th-grade students reported as up to date for varicella vaccination in the California school immunization data, enrollment-weighted to the county.",
+    "statement": "In {location}, {value}% of 7th-grade students were up to date for varicella vaccination.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_conditional_tdap": {
+    "id": "pct_conditional_tdap",
+    "short_name": "Tdap conditional rate (7th grade)",
+    "long_name": "Percent of 7th-grade students conditionally enrolled for Tdap",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students conditionally enrolled while completing Tdap requirements.",
+    "long_description": "Share of 7th-grade students conditionally enrolled with respect to the Tdap requirement (in process, not overdue).",
+    "statement": "In {location}, {value}% of 7th-grade students were conditionally enrolled for Tdap.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_conditional_varicella": {
+    "id": "pct_conditional_varicella",
+    "short_name": "varicella conditional rate (7th grade)",
+    "long_name": "Percent of 7th-grade students conditionally enrolled for varicella",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students conditionally enrolled while completing varicella requirements.",
+    "long_description": "Share of 7th-grade students conditionally enrolled with respect to the varicella requirement (in process, not overdue).",
+    "statement": "In {location}, {value}% of 7th-grade students were conditionally enrolled for varicella.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_pme_tdap": {
+    "id": "pct_pme_tdap",
+    "short_name": "Tdap permanent medical exemption rate (7th grade)",
+    "long_name": "Percent of 7th-grade students with a permanent medical exemption for Tdap",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students with a permanent medical exemption from the Tdap requirement.",
+    "long_description": "Share of 7th-grade students granted a permanent medical exemption (PME) from the Tdap requirement.",
+    "statement": "In {location}, {value}% of 7th-grade students had a permanent medical exemption for Tdap.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_pme_varicella": {
+    "id": "pct_pme_varicella",
+    "short_name": "varicella permanent medical exemption rate (7th grade)",
+    "long_name": "Percent of 7th-grade students with a permanent medical exemption for varicella",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students with a permanent medical exemption from the varicella requirement.",
+    "long_description": "Share of 7th-grade students granted a permanent medical exemption (PME) from the varicella requirement.",
+    "statement": "In {location}, {value}% of 7th-grade students had a permanent medical exemption for varicella.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_other_lacking_tdap": {
+    "id": "pct_other_lacking_tdap",
+    "short_name": "Tdap other / not up to date rate (7th grade)",
+    "long_name": "Percent of 7th-grade students lacking Tdap for other reasons",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students not up to date for Tdap for reasons other than exemption, conditional, or overdue status.",
+    "long_description": "Residual category: share of 7th-grade students not up to date for Tdap and not otherwise classified.",
+    "statement": "In {location}, {value}% of 7th-grade students lacked Tdap for other reasons.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_other_lacking_varicella": {
+    "id": "pct_other_lacking_varicella",
+    "short_name": "varicella other / not up to date rate (7th grade)",
+    "long_name": "Percent of 7th-grade students lacking varicella for other reasons",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students not up to date for varicella for reasons other than exemption, conditional, or overdue status.",
+    "long_description": "Residual category: share of 7th-grade students not up to date for varicella and not otherwise classified.",
+    "statement": "In {location}, {value}% of 7th-grade students lacked varicella for other reasons.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_overdue_tdap": {
+    "id": "pct_overdue_tdap",
+    "short_name": "Tdap overdue rate (7th grade)",
+    "long_name": "Percent of 7th-grade students overdue for Tdap",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students overdue for the Tdap vaccination and not exempt or conditional.",
+    "long_description": "Share of 7th-grade students past due for Tdap vaccination and not otherwise exempt or conditionally enrolled.",
+    "statement": "In {location}, {value}% of 7th-grade students were overdue for Tdap.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "pct_overdue_varicella": {
+    "id": "pct_overdue_varicella",
+    "short_name": "varicella overdue rate (7th grade)",
+    "long_name": "Percent of 7th-grade students overdue for varicella",
+    "category": "immunization",
+    "short_description": "Percentage of 7th-grade students overdue for the varicella vaccination and not exempt or conditional.",
+    "long_description": "Share of 7th-grade students past due for varicella vaccination and not otherwise exempt or conditionally enrolled.",
+    "statement": "In {location}, {value}% of 7th-grade students were overdue for varicella.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ca_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "ca_school_immunization": {
+      "name": "California School Immunization Assessment (Kindergarten and 7th grade)",
+      "url": "https://data.chhs.ca.gov/dataset/school-immunizations-in-kindergarten-by-academic-year",
+      "organization": "California Department of Public Health",
+      "organization_url": "https://www.cdph.ca.gov/",
+      "description": "County-level kindergarten and 7th-grade immunization status assembled from CHHS Open Data school-level files (enrollment-weighted to county) plus the CDPH official county report for the most recent year.",
+      "restrictions": "Public data (CHHS Open Data and CDPH). County aggregates from the CHHS school-level files are enrollment-weighted and fall within about one percentage point of official CDPH figures because school percentages are integer-rounded."
+    }
   }
 }

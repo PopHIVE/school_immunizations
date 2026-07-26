@@ -1,17 +1,29 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "pct_mmr_exempt": {
+    "id": "pct_mmr_exempt",
+    "short_name": "MMR exemption rate",
+    "long_name": "Percent of kindergarten students exempt from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Percentage of kindergarten students with an exemption from the MMR vaccination requirement.",
+    "long_description": "Ohio publishes kindergarten MMR data as an exemption rate: the share of kindergarten students with a medical or non-medical exemption from the MMR requirement.",
+    "statement": "In {location}, {value}% of kindergarten students were exempt from MMR vaccination.",
+    "measure_type": "Percent",
+    "unit": "Percent",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "oh_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "oh_school_immunization": {
+      "name": "Ohio Kindergarten Immunization Assessment",
+      "url": "https://data.ohio.gov/wps/portal/gov/data/view/annual-ohio-kindergarten-immunization-level-assessment",
+      "organization": "Ohio Department of Health",
+      "organization_url": "https://odh.ohio.gov/",
+      "description": "County-level kindergarten MMR exemption rates from the annual Ohio Kindergarten Immunization Level Assessment.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

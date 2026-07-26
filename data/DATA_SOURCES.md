@@ -3,7 +3,7 @@
 This document maps each state's `ingest.R` raw data file to its original public
 source on the state Department of Public Health / open-data portal, and records
 whether that source is available as a machine-readable API/open-data endpoint, a
-downloadable static file, a dashboard-only export, or only by records request.
+downloadable static file, a dashboard-only export, or only by records request. Note some states (e.g., NY) currently have school-level data without a clear way to aggregate to county
 
 Compiled 2026-07-24.
 
@@ -35,13 +35,14 @@ Compiled 2026-07-24.
 | MD | https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/Kindergarten_Immunization_Rates_by_School.aspx | Excel by school & county, 2019–2026 | 2023–24 |
 | MA | https://www.mass.gov/info-details/school-immunizations (current) + …/archive-of-school-immunization-data-and-exemption-rates | Per-year by-county `.xlsx` for K & 7th grade; WAF needs a full browser header set (not just User-Agent) | 2025–26 |
 | ME | https://www.maine.gov/dhhs/mecdc/data-reports/immunization | Excel and PDF per year, 2018–2025 (K/7/12) | 2023–24 |
+| OR | https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/VACCINESIMMUNIZATION/GETTINGIMMUNIZED/Documents/SchK-12.xlsx | Statewide K-12 workbook at a fixed URL OHA overwrites each fall (companion `SchPreschool.xlsx`); **rewired & self-updating** | 2024–25 |
 | HI | https://health.hawaii.gov/docd/resources/reports/immunization-examination-requirements/ | Mostly PDF; 2024-25 also Excel | 2023–24 |
 | IA | https://hhs.iowa.gov/about/data-reports/health-disease/immunization/school-child-care-audits | Annual K-12 audit PDFs | 2024–25 |
 | IL | https://www.isbe.net/Pages/Health-Requirements-Student-Data.aspx | Public-use data files (raw) + IDPH Tableau | 2024–25 |
-| IN | https://www.in.gov/health/immunization/school-immunization-data/ | Assessment PDFs + CKAN Excel (`hub.mph.in.gov`) | 2024–25 |
+| IN | https://hub.mph.in.gov/dataset/immunization-division-s-school-supplemental-dashboard | CKAN open-data hub — per-year Excel enumerated via `package_show` API; **rewired & self-updating** | 2025–26 |
 | KS | https://www.kdhe.ks.gov/2016/Kindergarten-Immunization-Data | Annual PDF reports + coalition dashboard | 2023–24 |
 | KY | https://www.chfs.ky.gov/agencies/dph/dehp/Pages/immunization.aspx | Annual PDF; full county data by email request | 2024–25 |
-| LA | https://ldh.la.gov/immunization-program/vaccination-data-resources | LINKS dashboards + parish PDF maps | 2024–25 |
+| LA | https://ldh.la.gov/immunization-program/vaccination-data-resources | Committed multi-year parish workbook (`LA_parish_21-24.xlsx`). LDH `SchoolImmunizationDashboard` on analytics.la.gov is **auth-gated** (view 302-redirects to SSO, `.csv` export 404s) → no public automatable source | 2023–24 |
 | MI | https://www.michigan.gov/en/mdhhs/adult-child-serv/childrenfamilies/Immunizations/Data-Statistics/school-immunization-data | Building-level xlsx/PDF (page blocks bots; offline Jun–Aug 2026 for migration) | 2023–24 |
 | MS | https://msdh.ms.gov/page/14,0,71,688.html | Annual PDF (religious only after Jul 2023) | 2023–24 |
 | MT | https://dphhs.mt.gov/publichealth/immunization/childcareandschoolresources | PDF only; collection stopped after 2018-19 (last is 2020) | 2020–21 (collection ended) |
@@ -51,6 +52,7 @@ Compiled 2026-07-24.
 | SC | https://dph.sc.gov/health-wellness/child-teen-health/vaccine-requirements-info/school-vaccination-coverage-data | PDF; religious-exemption 5-yr report covers 2019–2023 | 2022–23 |
 | OK | https://oklahoma.gov/health/services/personal-health/immunizations.html | Annual PDF + interactive county map | 2023–24 |
 | AZ | https://apps.azdhs.gov/IDRReportStats | Interactive query tool (no export button → raw CSVs scraped) + companion PDFs | 2023–24 |
+| TN | https://github.com/PopHIVE/Ingest/blob/main/data/schoolvax_washpost/raw/KMMRCoverage_County.xlsx | Direct `.xlsx` supplied by TN Dept. of Health to PopHIVE — **do not use the WaPo Tableau/PDF source**. Two columns (`county`, `percent_mmr` = % of kindergartners fully immunized for MMR); 93 counties, single-cohort snapshot, KG/MMR only (no other antigens, no year column in file) | 2024–25 (per WaPo cohort; not stamped in file) |
 
 ## 🟡 Dashboard-only (export or scrape; no clean file)
 
@@ -63,7 +65,6 @@ Compiled 2026-07-24.
 | ND | https://www.hhs.nd.gov/immunizations/coverage-rates | Power BI dashboard; no static file | 2024–25 |
 | NJ | https://www.nj.gov/health/cd/statistics/imm-status-reports/dashboard_only.shtml | Dashboard w/ data table; no confirmed export/API | 2024–25 |
 | OH | https://data.ohio.gov/wps/portal/gov/data/view/annual-ohio-kindergarten-immunization-level-assessment | DataOhio dashboard (launched Apr 2026) | 2024–25 |
-| OR | https://public.tableau.com/app/profile/oregon.immunization.program/viz/OregonSchoolImmunizationandExemptionRates/School-leveldata | Tableau; CSV/crosstab export available | 2025–26 |
 | SD | https://doh.sd.gov/health-data-reports/data-dashboards/school-immunization-dashboard | Dashboard + per-year PDFs; raw file likely a records request | 2023–24 |
 | UT | https://immunize.utah.gov/information-for-the-public/utah-statistics/ | Coverage-report PDFs + dashboard | 2018–19 |
 | VT | https://www.healthvermont.gov/stats/surveillance-reporting-topic/school-vaccination-data | Dashboard only (HIPAA suppression); files by contact | 2017–18 |
@@ -135,8 +136,33 @@ Compiled 2026-07-24.
      IPs (GitHub Actions), but since `raw/` is committed, CI only fetches newly posted
      years — anything it can't reach is logged and retried, and existing files still
      process.
-3. **PDF / dashboard exports:** remaining states (manual or semi-automated).
-4. **By-request / FOIA (no automation):** AL, AR, NV, WV — likely CDC SchoolVaxView fallback.
+3. **From the IIS-dashboard reconnaissance** (`PopHIVE/state_iis_scrapers`): of 26 IIS
+   registry dashboards, only 5 target school-entry survey data. Cross-checked against
+   this project; OR and IN were rewired, LA/KS/NC/UT did not pan out.
+   - ✅ **OR** — was dashboard-only (Tableau); the recon surfaced OHA's direct K-12
+     workbook at a fixed URL (`.../GETTINGIMMUNIZED/Documents/SchK-12.xlsx`) that OHA
+     overwrites each fall. Rewired to `download.file()` it; self-updating. School rows
+     carry `Agency` (=county), adjusted enrollment, and per-antigen coverage **and**
+     exemption percents — enrollment-weighted to county. Now populates antigen
+     coverage too (previously exemptions only). Validated: 35 counties, 2024-25,
+     grade "Overall". Year derived from the sheet name ("K-12 2025").
+   - ✅ **IN** — moved off the committed exemption snapshot to the IDOH open-data hub
+     (CKAN). Enumerates every per-year workbook via the `package_show` API and
+     downloads each; self-updating. Parser resolves cross-year header drift by pattern
+     (2023-24 has no `County_Code` and space-separated rate headers; `Dtap/Td_Rate` vs
+     `Dtap_Rate`); `County_Code` used as FIPS when present, else county-name match.
+     Validated: 1,380 rows, all 92 counties, 2023-24..2025-26, grades K/1/6/7/12,
+     8 antigens. **Trade-off:** the hub file has no medical/religious exemption split
+     (IDOH publishes none there), so exemption columns are NA; in exchange antigen
+     coverage is populated for the first time.
+   - ⛔ **LA** — the recon's LDH `SchoolImmunizationDashboard` on `analytics.la.gov` is
+     a Tableau **Server** behind SSO: the view 302-redirects to login and every `.csv`
+     export 404s. No public automatable source, so LA stays on its committed multi-year
+     parish workbook (richer than the KG-only dashboard anyway). Not rewired.
+   - ⛔ **KS / NC / UT** — recon confirmed still blocked (KS Tableau HTTP 500; NC
+     JS-rendered no export; UT R Shiny, data-request only). No change.
+4. **PDF / dashboard exports:** remaining states (manual or semi-automated).
+5. **By-request / FOIA (no automation):** AL, AR, NV, WV — likely CDC SchoolVaxView fallback.
 
 ### How the rewired scripts run
 CI (`.github/workflows/build.yaml`) runs `scripts/build.R` → `dcf::dcf_build()` daily
