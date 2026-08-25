@@ -5,17 +5,21 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:11",
       "frequency": 0,
-      "last_run": "2026-02-04 10:24:35",
-      "run_time": 0.461,
+      "run_time": 0.03,
       "last_status": {
-        "log": "",
-        "success": false
+        "log": [],
+        "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/HI/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/Hawaii 2014-15 Vaccine Exemption.xlsx": "eb3b7cee62b4f7a172f4c1cbaf04baae",
     "raw/Hawaii 2015-16 Vaccine Exemption (1).xlsx": "1d046a5efcb21dcfb62292e44a0b35f0",
@@ -26,7 +30,11 @@
     "raw/Hawaii 2021-22 Vaccine Exemption.xlsx": "a5ec2076d17de1584743af22ad230af7",
     "raw/Hawaii 2022-23 Vaccine Exemption.xlsx": "4f6f6d94e675e56ed60e18f4b70004f5",
     "raw/Hawaii 2023-24 Vaccine Exemption .xlsx": "c6f8defaab912825dae22d2e24135001",
-    "raw/place": "68b329da9893e34099c7d8ad5cb9c940"
+    "raw/place": "81051bcc2cf1bedf378224b0a93e2877"
   },
-  "script_hash": "fea730039a23da3a83c3060106ba02a3"
+  "script_hash": "02c587793a56e8a3b6b50ebfd5a231f6",
+  "standard_state": {
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/HI/measure_info.json": "e2df994c54c20c68cc6c7e5e38a1aeab",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/HI/standard/data.csv.gz": "6e0224bb227717fcb8beba47523eb186"
+  }
 }

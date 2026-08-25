@@ -5,7 +5,7 @@ library(stringr)
 library(vroom)
 library(readr)
 library(purrr)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
 
 # ---- Download county survey files from PA DOH ----
 # The immunization "rates" page links per-year workbooks; the county files
@@ -78,7 +78,7 @@ if (!identical(process$raw_state, raw_state) ||
     readr::parse_number(nums, locale = locale(grouping_mark = ","))
   }
 
-  build_record <- function(county, grade, counts, pcts, time) {
+  build_record <- function(county, grade, counts, time) {
     base_counts <- list(
       total_enrolled = counts[1],
       N_dtap = counts[2],
@@ -88,13 +88,21 @@ if (!identical(process$raw_state, raw_state) ||
       N_varicella = counts[7]
     )
 
-    base_pcts <- list(
-      pct_dtap = pcts[1] * 100,
-      pct_polio = pcts[2] * 100,
-      pct_mmr = pcts[3] * 100,
-      pct_hep_b = pcts[4] * 100,
-      pct_varicella = pcts[6] * 100
-    )
+    # Percentages are derived from the counts rather than read off the
+    # workbook's "Percent:" rows. Those rows are unusable positionally:
+    # some sheets store them as pre-formatted text ("96.5%") and others as
+    # numeric fractions (0.962), and cells whose underlying count is zero
+    # are left blank, so the surviving values shift left by an amount that
+    # varies per county/grade. The counts rows keep their zeros and their
+    # column order, so they are the reliable source.
+    total_enrolled <- base_counts$total_enrolled
+    pct_of_enrolled <- function(n) {
+      if (is.na(total_enrolled) || total_enrolled <= 0 || is.na(n)) {
+        return(NA_real_)
+      }
+
+      100 * n / total_enrolled
+    }
 
     if (grade == "Kindergarten") {
       med_idx <- 8
@@ -117,31 +125,30 @@ if (!identical(process$raw_state, raw_state) ||
     n_medical <- counts[med_idx]
     n_religious <- counts[rel_idx]
     n_philosophical <- counts[phil_idx]
-    pct_medical <- pcts[med_idx - 1] * 100
-    pct_religious <- pcts[rel_idx - 1] * 100
-    pct_philosophical <- pcts[phil_idx - 1] * 100
+    n_personal <- coalesce(n_religious, 0) + coalesce(n_philosophical, 0)
+    n_full <- coalesce(n_medical, 0) + n_personal
 
     tibble(
       county = county,
       time = time,
       grade = grade,
-      total_enrolled = base_counts$total_enrolled,
+      total_enrolled = total_enrolled,
       N_dtap = base_counts$N_dtap,
       N_polio = base_counts$N_polio,
       N_mmr = base_counts$N_mmr,
       N_hep_b = base_counts$N_hep_b,
       N_varicella = base_counts$N_varicella,
       N_medical_exempt = n_medical,
-      N_personal_exempt = coalesce(n_religious, 0) + coalesce(n_philosophical, 0),
-      N_full_exempt = coalesce(n_medical, 0) + coalesce(n_religious, 0) + coalesce(n_philosophical, 0),
-      pct_dtap = base_pcts$pct_dtap,
-      pct_polio = base_pcts$pct_polio,
-      pct_mmr = base_pcts$pct_mmr,
-      pct_hep_b = base_pcts$pct_hep_b,
-      pct_varicella = base_pcts$pct_varicella,
-      pct_medical_exempt = pct_medical,
-      pct_personal_exempt = coalesce(pct_religious, 0) + coalesce(pct_philosophical, 0),
-      pct_full_exempt = coalesce(pct_medical, 0) + coalesce(pct_religious, 0) + coalesce(pct_philosophical, 0)
+      N_personal_exempt = n_personal,
+      N_full_exempt = n_full,
+      pct_dtap = pct_of_enrolled(base_counts$N_dtap),
+      pct_polio = pct_of_enrolled(base_counts$N_polio),
+      pct_mmr = pct_of_enrolled(base_counts$N_mmr),
+      pct_hep_b = pct_of_enrolled(base_counts$N_hep_b),
+      pct_varicella = pct_of_enrolled(base_counts$N_varicella),
+      pct_medical_exempt = pct_of_enrolled(n_medical),
+      pct_personal_exempt = pct_of_enrolled(n_personal),
+      pct_full_exempt = pct_of_enrolled(n_full)
     )
   }
 
@@ -208,7 +215,6 @@ if (!identical(process$raw_state, raw_state) ||
       }
 
       counts <- extract_numeric_sequence(block[idx, , drop = TRUE])
-      pcts <- extract_numeric_sequence(block[pct_idx, , drop = TRUE])
 
       if (grade == "7th Grade" && length(counts) > 0 && counts[1] == 7) {
         counts <- counts[-1]
@@ -218,11 +224,11 @@ if (!identical(process$raw_state, raw_state) ||
         counts <- counts[-1]
       }
 
-      if (length(counts) < 7 || length(pcts) < 6) {
+      if (length(counts) < 7) {
         return(tibble())
       }
 
-      build_record(county, grade, counts, pcts, time)
+      build_record(county, grade, counts, time)
     })
 
     if (nrow(records) == 0) {
@@ -352,8 +358,7 @@ if (!identical(process$raw_state, raw_state) ||
       total_enrolled
     )
 
-  vroom::vroom_write(add_state_column(data_out, "Pennsylvania"), "./standard/data.csv.gz")
-  vroom::vroom_write(add_state_column(data_out, "Pennsylvania"), "./standard/data.csv")
+  write_standard(data_out, "Pennsylvania", "./standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

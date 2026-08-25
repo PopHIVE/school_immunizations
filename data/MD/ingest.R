@@ -5,16 +5,18 @@ library(readxl)
 library(stringr)
 library(readr)
 library(vroom)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
 
 # =============================================================================
-# MD - Kindergarten Immunization & Exemption Rates (county-level)
+# MD - Kindergarten Immunization & Exemption Rates (school- and county-level)
 # Source: Maryland DoH Center for Immunization, "Percent of Kindergarteners
 #   Vaccinated by School" workbooks (one per school year), linked from
 #   https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/Kindergarten_Immunization_Rates_by_School.aspx
 # The published county tables are PDF-only; these by-school Excel files carry
-# per-school enrollment, so we aggregate to county (enrollment-weighted),
-# self-updating as new years are posted. Output schema unchanged.
+# per-school enrollment, so we keep the per-school rows (type = "school") and
+# also aggregate to county (enrollment-weighted, type = "county"), self-
+# updating as new years are posted -- same school/county split as HI.
 # =============================================================================
 
 options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
@@ -54,16 +56,13 @@ if (!identical(process$raw_state, raw_state) ||
     if (all(is.na(x))) return(x)
     if (max(x, na.rm = TRUE) <= 1.5) x * 100 else x
   }
-  wmean <- function(x, w) {
-    ok <- !is.na(x) & !is.na(w)
-    if (!any(ok) || sum(w[ok]) == 0) return(NA_real_)
-    sum(x[ok] * w[ok]) / sum(w[ok])
-  }
 
   process_school_file <- function(path) {
     m <- str_match(basename(path), "(20\\d{2})-(20\\d{2})")
     if (is.na(m[1, 1])) return(NULL)
-    time <- as.Date(paste0(m[1, 3], "-09-01"))  # school-year END year, Sept 1
+    # The filename carries the school year as a range; m[1, 3] is its END year,
+    # so the start year it is dated to comes from school_year_time_from_end().
+    time <- as.Date(school_year_time_from_end(m[1, 3]))
 
     # The data sheet is named "Kindergarten" in most years but "Sheet1" in
     # others (with a separate "Notes" cover sheet). Pick whichever sheet has
@@ -98,8 +97,9 @@ if (!identical(process$raw_state, raw_state) ||
 
     out <- tibble(
       county = str_squish(as.character(gv("^county$"))),
+      school_name = str_squish(as.character(gv("^school name"))),
+      school_type = str_squish(as.character(gv("^type of school"))),
       enroll = num(enroll_col),
-      surveyed = num(gv("with records")),
       pct_medical = num(gv("medical exemption")),
       pct_religious = num(gv("religious exemption")),
       pct_dtap = num(gv("dtap")),
@@ -126,53 +126,90 @@ if (!identical(process$raw_state, raw_state) ||
   files <- list.files("raw", pattern = "[Vv]accinated.*\\.xlsx$", full.names = TRUE)
   school <- bind_rows(lapply(files, process_school_file))
 
+  # County rate = sum of per-school counts / sum of per-school enrollment, not
+  # an enrollment-weighted mean of the percentages -- so a school with no
+  # figure for a given measure contributes nothing to that measure's numerator
+  # (same treatment HI gives its per-school exemption counts).
   agg <- school %>%
+    mutate(
+      N_dtap = enroll * pct_dtap / 100,
+      N_polio = enroll * pct_polio / 100,
+      N_mmr = enroll * pct_mmr / 100,
+      N_hep_b = enroll * pct_hep_b / 100,
+      N_varicella = enroll * pct_varicella / 100,
+      N_medical_exempt = enroll * pct_medical / 100,
+      N_personal_exempt = enroll * pct_religious / 100
+    ) %>%
     group_by(county, time) %>%
     summarise(
       N_enroll = sum(enroll, na.rm = TRUE),
-      N_surveyed = sum(surveyed, na.rm = TRUE),
-      pct_dtap = wmean(pct_dtap, enroll),
-      pct_polio = wmean(pct_polio, enroll),
-      pct_mmr = wmean(pct_mmr, enroll),
-      pct_hep_b = wmean(pct_hep_b, enroll),
-      pct_varicella = wmean(pct_varicella, enroll),
-      pct_medical_exempt = wmean(pct_medical, enroll),
-      pct_personal_exempt = wmean(pct_religious, enroll),
+      N_dtap = sum(N_dtap, na.rm = TRUE),
+      N_polio = sum(N_polio, na.rm = TRUE),
+      N_mmr = sum(N_mmr, na.rm = TRUE),
+      N_hep_b = sum(N_hep_b, na.rm = TRUE),
+      N_varicella = sum(N_varicella, na.rm = TRUE),
+      N_medical_exempt = sum(N_medical_exempt, na.rm = TRUE),
+      N_personal_exempt = sum(N_personal_exempt, na.rm = TRUE),
       .groups = "drop"
     ) %>%
     mutate(
-      pct_full_exempt = pct_medical_exempt + pct_personal_exempt,
+      pct_dtap = if_else(N_enroll > 0, 100 * N_dtap / N_enroll, NA_real_),
+      pct_polio = if_else(N_enroll > 0, 100 * N_polio / N_enroll, NA_real_),
+      pct_mmr = if_else(N_enroll > 0, 100 * N_mmr / N_enroll, NA_real_),
+      pct_hep_b = if_else(N_enroll > 0, 100 * N_hep_b / N_enroll, NA_real_),
+      pct_varicella = if_else(N_enroll > 0, 100 * N_varicella / N_enroll, NA_real_),
+      pct_medical_exempt = if_else(N_enroll > 0, 100 * N_medical_exempt / N_enroll, NA_real_),
+      pct_personal_exempt = if_else(N_enroll > 0, 100 * N_personal_exempt / N_enroll, NA_real_),
       grade = "Kindergarten"
     )
 
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
   fips_md <- all_fips %>%
     filter(state == "MD", nchar(geography) == 5) %>%
-    mutate(join_key = tolower(gsub(" [Cc]ounty$", "", geography_name))) %>%
-    select(geography, fips_name = geography_name, join_key)
-
-  data_out <- agg %>%
-    mutate(join_key = tolower(gsub(" [Cc]ounty$", "", county))) %>%
-    left_join(fips_md, by = "join_key") %>%
-    filter(!is.na(geography)) %>%
     mutate(
-      geography_name = fips_name,
-      N_dtap = NA_real_, N_polio = NA_real_, N_mmr = NA_real_,
-      N_hep_b = NA_real_, N_varicella = NA_real_,
-      N_personal_exempt = NA_real_, N_medical_exempt = NA_real_, N_full_exempt = NA_real_
+      join_key = tolower(gsub(" [Cc]ounty$", "", geography_name)),
+      # The standard label is the bare county name, as join_county_fips() emits
+      # for the states that use it -- not all_fips' "Allegany County".
+      fips_name = sub("\\s+[Cc]ounty$", "", geography_name)
     ) %>%
+    select(geography, fips_name, join_key)
+
+  join_fips <- function(df) {
+    df %>%
+      mutate(join_key = tolower(gsub(" [Cc]ounty$", "", county))) %>%
+      left_join(fips_md, by = "join_key") %>%
+      filter(!is.na(geography)) %>%
+      mutate(geography_name = fips_name)
+  }
+
+  # Per-school rows, alongside the county aggregates below -- same layout as
+  # HI's school/county split (type + school_name/school_type, NA for county
+  # rows).
+  schools_out <- school %>%
+    join_fips() %>%
     transmute(
-      time, geography, geography_name, grade,
-      N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
-      N_personal_exempt, N_medical_exempt, N_full_exempt,
+      time, geography, geography_name, type = "school",
+      school_name, school_type, grade = "Kindergarten",
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
-      pct_personal_exempt, pct_medical_exempt, pct_full_exempt,
-      N_enroll, N_surveyed
-    ) %>%
-    arrange(time, geography_name)
+      pct_personal_exempt = pct_religious, pct_medical_exempt = pct_medical,
+      N_enroll = enroll
+    )
+
+  counties_out <- agg %>%
+    join_fips() %>%
+    mutate(type = "county", school_name = NA_character_, school_type = NA_character_) %>%
+    transmute(
+      time, geography, geography_name, type, school_name, school_type, grade,
+      pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
+      pct_personal_exempt, pct_medical_exempt,
+      N_enroll
+    )
+
+  data_out <- bind_rows(schools_out, counties_out) %>%
+    arrange(time, geography_name, desc(type), school_name)
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Maryland"), "./standard/data.csv.gz")
+  write_standard(data_out, "Maryland", "./standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

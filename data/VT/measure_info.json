@@ -1,276 +1,4 @@
 {
-  "N_dtap": {
-    "id": "N_dtap",
-    "short_name": "DTaP/Tdap students vaccinated",
-    "long_name": "Number of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "N_polio": {
-    "id": "N_polio",
-    "short_name": "Polio students vaccinated",
-    "long_name": "Number of students up to date for polio (IPV/OPV) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for polio (IPV/OPV) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for polio (IPV/OPV) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for polio (IPV/OPV) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "N_mmr": {
-    "id": "N_mmr",
-    "short_name": "MMR students vaccinated",
-    "long_name": "Number of students up to date for measles-mumps-rubella (MMR) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for measles-mumps-rubella (MMR) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for measles-mumps-rubella (MMR) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "N_hep_b": {
-    "id": "N_hep_b",
-    "short_name": "Hepatitis B students vaccinated",
-    "long_name": "Number of students up to date for hepatitis B vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for hepatitis B vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for hepatitis B vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for hepatitis B vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "N_varicella": {
-    "id": "N_varicella",
-    "short_name": "Varicella students vaccinated",
-    "long_name": "Number of students up to date for varicella (chickenpox) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for varicella (chickenpox) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for varicella (chickenpox) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for varicella (chickenpox) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "N_personal_exempt": {
-    "id": "N_personal_exempt",
-    "short_name": "Non-medical exemptions (count)",
-    "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
-    "category": "immunization",
-    "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "N_medical_exempt": {
-    "id": "N_medical_exempt",
-    "short_name": "Medical exemptions (count)",
-    "long_name": "Number of students with a medical vaccination exemption",
-    "category": "immunization",
-    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "N_full_exempt": {
-    "id": "N_full_exempt",
-    "short_name": "Total exemptions (count)",
-    "long_name": "Number of students with any vaccination exemption",
-    "category": "immunization",
-    "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_dtap": {
-    "id": "pct_dtap",
-    "short_name": "DTaP/Tdap coverage",
-    "long_name": "Percent of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for DTaP/Tdap vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_polio": {
-    "id": "pct_polio",
-    "short_name": "Polio coverage",
-    "long_name": "Percent of students up to date for polio (IPV/OPV) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for polio vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_mmr": {
-    "id": "pct_mmr",
-    "short_name": "MMR coverage",
-    "long_name": "Percent of students up to date for measles-mumps-rubella (MMR) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for MMR vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_hep_b": {
-    "id": "pct_hep_b",
-    "short_name": "Hepatitis B coverage",
-    "long_name": "Percent of students up to date for hepatitis B vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for hepatitis B vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for hepatitis B vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_varicella": {
-    "id": "pct_varicella",
-    "short_name": "Varicella coverage",
-    "long_name": "Percent of students up to date for varicella (chickenpox) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for varicella (chickenpox) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for varicella vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_personal_exempt": {
-    "id": "pct_personal_exempt",
-    "short_name": "Non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical (personal-belief) vaccination exemption",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
-    "statement": "In {location}, {value}% of school students had a non-medical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_medical_exempt": {
-    "id": "pct_medical_exempt",
-    "short_name": "Medical exemption rate",
-    "long_name": "Percent of students with a medical vaccination exemption",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from one or more required vaccines.",
-    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
-    "statement": "In {location}, {value}% of school students had a medical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
-  "pct_full_exempt": {
-    "id": "pct_full_exempt",
-    "short_name": "Total exemption rate",
-    "long_name": "Percent of students with any vaccination exemption",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
-    "statement": "In {location}, {value}% of school students had a vaccination exemption of any kind.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "vt_school_immunization"
-      }
-    ]
-  },
   "N_enrolled": {
     "id": "N_enrolled",
     "short_name": "Students enrolled",
@@ -288,16 +16,16 @@
       }
     ]
   },
-  "pct_complete": {
-    "id": "pct_complete",
-    "short_name": "Up-to-date rate",
-    "long_name": "Percent of students up to date for all required vaccines",
+  "rate_dtap": {
+    "id": "rate_dtap",
+    "short_name": "DTaP/Tdap coverage",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students up to date for all required vaccines.",
-    "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
-    "statement": "In {location}, {value}% of school students were up to date for all required vaccines.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -305,16 +33,322 @@
       }
     ]
   },
-  "pct_provisional": {
-    "id": "pct_provisional",
-    "short_name": "Provisional enrollment rate",
-    "long_name": "Percent of students provisionally enrolled",
+  "rate_polio": {
+    "id": "rate_polio",
+    "short_name": "Polio coverage",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students provisionally enrolled while completing required immunizations.",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr": {
+    "id": "rate_mmr",
+    "short_name": "MMR coverage",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b": {
+    "id": "rate_hep_b",
+    "short_name": "Hepatitis B coverage",
+    "long_name": "Proportion of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella": {
+    "id": "rate_varicella",
+    "short_name": "Varicella coverage",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_personal_exempt": {
+    "id": "rate_personal_exempt",
+    "short_name": "Non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+    "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
+    "short_name": "Religious exemption rate",
+    "long_name": "Proportion of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_fully_immunized": {
+    "id": "rate_fully_immunized",
+    "short_name": "Fully immunized rate",
+    "long_name": "Proportion of students fully immunized for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students recorded as fully immunized for every required vaccine.",
+    "long_description": "Share of assessed school students the state reports as fully immunized across the required schedule, as opposed to provisionally admitted or exempt.",
+    "statement": "In {location}, {value} of school students were fully immunized.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "rate_provisional_admittance": {
+    "id": "rate_provisional_admittance",
+    "short_name": "Provisional admittance rate",
+    "long_name": "Proportion of students provisionally admitted",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students provisionally admitted while completing required immunizations.",
     "long_description": "Share of assessed school students permitted to attend on a provisional basis while completing required immunizations.",
-    "statement": "In {location}, {value}% of school students were provisionally enrolled.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were provisionally admitted.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_dtap": {
+    "id": "flag_dtap",
+    "short_name": "DTaP/Tdap coverage - censoring flag",
+    "long_name": "Why rate_dtap carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_dtap was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_dtap. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_dtap was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_polio": {
+    "id": "flag_polio",
+    "short_name": "Polio coverage - censoring flag",
+    "long_name": "Why rate_polio carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_polio was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_polio. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_polio was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_mmr": {
+    "id": "flag_mmr",
+    "short_name": "MMR coverage - censoring flag",
+    "long_name": "Why rate_mmr carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_mmr was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_mmr. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_mmr was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_hep_b": {
+    "id": "flag_hep_b",
+    "short_name": "Hepatitis B coverage - censoring flag",
+    "long_name": "Why rate_hep_b carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_hep_b was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_hep_b. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_hep_b was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_varicella": {
+    "id": "flag_varicella",
+    "short_name": "Varicella coverage - censoring flag",
+    "long_name": "Why rate_varicella carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_varicella was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_varicella. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_varicella was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_personal_exempt": {
+    "id": "flag_personal_exempt",
+    "short_name": "Non-medical exemption rate - censoring flag",
+    "long_name": "Why rate_personal_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_personal_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_personal_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_personal_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_medical_exempt": {
+    "id": "flag_medical_exempt",
+    "short_name": "Medical exemption rate - censoring flag",
+    "long_name": "Why rate_medical_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_medical_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_medical_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_medical_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_religious_exempt": {
+    "id": "flag_religious_exempt",
+    "short_name": "Religious exemption rate - censoring flag",
+    "long_name": "Why rate_religious_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_religious_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_religious_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_religious_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_fully_immunized": {
+    "id": "flag_fully_immunized",
+    "short_name": "Fully immunized rate - censoring flag",
+    "long_name": "Why rate_fully_immunized carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_fully_immunized was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_fully_immunized. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_fully_immunized was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "vt_school_immunization"
+      }
+    ]
+  },
+  "flag_provisional_admittance": {
+    "id": "flag_provisional_admittance",
+    "short_name": "Provisional admittance rate - censoring flag",
+    "long_name": "Why rate_provisional_admittance carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_provisional_admittance was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_provisional_admittance. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_provisional_admittance was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
     "time_resolution": "Year",
     "sources": [
       {
@@ -328,7 +362,7 @@
       "url": "https://www.healthvermont.gov/stats/surveillance-reporting-topic/school-vaccination-data",
       "organization": "Vermont Department of Health",
       "organization_url": "https://www.healthvermont.gov/",
-      "description": "School- and county-level immunization completeness, provisional, and exemption data from the Vermont DOH school vaccination reports.",
+      "description": "School- and county-level immunization completeness, provisional, and exemption data from the Vermont DOH school vaccination reports. TOP CODING: the workbook prints \">95%\" rather than a figure wherever coverage exceeds 95 percent, which is 660 of its cells. The value kept for those is the bound the workbook printed -- 95 percent, i.e. 0.95 on the rate scale -- and nothing is substituted for it, so no number in this file disagrees with the source. But 0.95 on a top-coded row is a LOWER BOUND, not a measurement: the true value lies somewhere in 0.95-1.00, so averaging over these rows understates coverage. Use flag_<measure> to exclude them or to model them as interval-censored on [0.95, 1.00] when precision matters. Cells marked \"*\", \"**\", \"***\" or \"N/A\" state no bound and are left missing. PER-MEASURE FLAGS -- every rate has a flag_<measure> companion recording what the workbook actually printed for that cell: blank (a figure, nothing censored), \"suppressed\" (an asterisk run), \"top_coded\" (\">95%\", rate = the printed 0.95 bound) or \"missing\" (\"N/A\"). Coverage measures are heavily top-coded -- hepatitis B is 153 of 256 rows -- while rate_medical_exempt is suppressed in 171 of 256. No row in this file carries \"missing\": the workbook's only eight \"N/A\" cells are meningococcal coverage, which is not among the measures ingested. These flags replace the row-level suppressed_flag and censor_direction, which this source no longer emits -- they said only that something on a row was censored, which the per-measure flags say precisely. EXEMPTION CATEGORIES -- the workbook reports three, each kept as its own column: medical (rate_medical_exempt), religious (rate_religious_exempt) and provisional admittance (rate_provisional_admittance). Vermont repealed its philosophical exemption in 2016, so religious is the only non-medical category and the harmonized rate_personal_exempt carries the same number as rate_religious_exempt -- do not add them together. Provisional admittance is a legal status, not an exemption; students admitted while doses are outstanding are still counted as not up to date.",
       "restrictions": "Public data. Vermont suppresses small counts to protect privacy."
     }
   }

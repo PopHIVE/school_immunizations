@@ -3,7 +3,7 @@ library(dplyr)
 library(readxl)
 library(stringr)
 library(vroom)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -38,15 +38,10 @@ if (!identical(process$raw_state, raw_state) ||
       school_year = str_remove(str_squish(`School Year`), "\\*$"),
       time = as.Date(paste0(str_extract(school_year, "^\\d{4}"), "-09-01")),
       pct_mmr = as_pct_points(parse_num(`Up to Date for MMR`)),
-      pct_medical_exempt = as_pct_points(parse_num(`Medical MMR Exemptions`)),
-      pct_personal_exempt = as_pct_points(parse_num(`Religious MMR Exemptions`))
-    ) %>%
-    mutate(
-      pct_full_exempt = if_else(
-        is.na(pct_medical_exempt) & is.na(pct_personal_exempt),
-        NA_real_,
-        coalesce(pct_medical_exempt, 0) + coalesce(pct_personal_exempt, 0)
-      )
+      pct_medical_exempt = as_pct_points(parse_num(`Medical Exemptions`)),
+      pct_mmr_medical_exempt = as_pct_points(parse_num(`Medical MMR Exemptions`)),
+      pct_personal_exempt = as_pct_points(parse_num(`Religious Exemptions`)),
+      pct_mmr_religious_exempt = as_pct_points(parse_num(`Religious MMR Exemptions`))
     ) %>%
     filter(!is.na(time), !is.na(county), county != "")
 
@@ -72,7 +67,6 @@ if (!identical(process$raw_state, raw_state) ||
       N_varicella = NA_real_,
       N_personal_exempt = NA_real_,
       N_medical_exempt = NA_real_,
-      N_full_exempt = NA_real_,
       pct_dtap = NA_real_,
       pct_polio = NA_real_,
       pct_hep_b = NA_real_,
@@ -91,7 +85,6 @@ if (!identical(process$raw_state, raw_state) ||
       N_varicella,
       N_personal_exempt,
       N_medical_exempt,
-      N_full_exempt,
       pct_dtap,
       pct_polio,
       pct_mmr,
@@ -99,11 +92,12 @@ if (!identical(process$raw_state, raw_state) ||
       pct_varicella,
       pct_personal_exempt,
       pct_medical_exempt,
-      pct_full_exempt
+      pct_mmr_medical_exempt,
+      pct_mmr_religious_exempt
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Nevada"), "standard/data.csv.gz")
+  write_standard(data_out, "Nevada", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

@@ -5,45 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:50",
       "frequency": 0,
-      "last_run": "2026-02-26 19:10:24",
-      "run_time": 0.427,
+      "run_time": 0,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "New names:",
-          "* `` -> `...1`",
-          "* `` -> `...2`",
-          "* `` -> `...3`",
-          "* `` -> `...4`",
-          "* `` -> `...5`",
-          "* `` -> `...6`",
-          "* `` -> `...7`",
-          "* `` -> `...8`",
-          "* `` -> `...9`"
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/RI/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/RI_RE rates_Yale_Aug 2025 (1).xlsx": "6ecfd014943cedbc3c5c4b90e83dbaeb"
   },
-  "script_hash": "c857dec3da64fbef9be3c4bb4435f770",
+  "script_hash": "0a188b7d57c5470cb3d5f9c6d8062638",
   "standard_state": {
-    "./data/RI/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/RI/standard/data.csv.gz": "fff6fa36aefcf613a0ddfee8f5a320b4"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/RI/measure_info.json": "7ba157b45a9f0be5e22fc453bd06e199",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/RI/standard/data.csv.gz": "e19cc31b63275824b11445c6220b722e"
   }
 }

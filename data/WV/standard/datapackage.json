@@ -9,14 +9,40 @@
   },
   "resources": [
     {
-      "bytes": 41666,
-      "encoding": "ISO-8859-1",
-      "md5": "4dafb179e80d630209dfedee3d91e0ab",
+      "bytes": 7396,
+      "encoding": "windows-1253",
+      "md5": "66efa0b9a2d54e14b06ffd1e3c83fd06",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
-      "versions": {},
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 07:17:55 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "adding standard files & unzip gz files"
+        ]
+      },
       "source": [],
+      "data_format": "wide",
       "ids": [
         {
           "variable": "geography"
@@ -25,226 +51,602 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-02-05 10:01:59.172167",
-      "last_modified": "2026-02-05 10:01:59.172167",
+      "created": "2026-08-05 09:48:14.713356",
+      "last_modified": "2026-08-25 14:47:58.21475",
       "vintage": {},
-      "row_count": 15714,
-      "entity_count": 54,
+      "row_count": 1980,
+      "entity_count": 55,
       "schema": {
         "fields": [
           {
             "name": "time",
-            "duplicates": 15704,
-            "time_range": [
-              0,
-              8
-            ],
+            "duplicates": 1971,
+            "info": [],
+            "time_range": [0, 8],
             "type": "string",
-            "missing": 108,
+            "missing": 0,
             "table": {
-              "12-31-2018": 1944,
-              "12-31-2019": 1944,
-              "12-31-2020": 1944,
-              "12-31-2021": 1944,
-              "12-31-2022": 1944,
-              "12-31-2023": 1944,
-              "12-31-2024": 1944,
-              "12-31-2025": 1890,
-              "12-31-2026": 108
+              "2017-09-01": 220,
+              "2018-09-01": 220,
+              "2019-09-01": 220,
+              "2020-09-01": 220,
+              "2021-09-01": 220,
+              "2022-09-01": 220,
+              "2023-09-01": 220,
+              "2024-09-01": 220,
+              "2025-09-01": 220
             }
           },
           {
             "name": "geography",
-            "duplicates": 15660,
-            "time_range": [
-              9,
-              9
-            ],
+            "duplicates": 1925,
+            "info": [],
+            "time_range": [0, 8],
             "type": "string",
             "missing": 0,
             "table": {
-              "54001": 291,
-              "54003": 291,
-              "54005": 291,
-              "54007": 291,
-              "54009": 291,
-              "54011": 291,
-              "54013": 291,
-              "54015": 291,
-              "54017": 291,
-              "54019": 291,
-              "54021": 291,
-              "54023": 291,
-              "54025": 291,
-              "54027": 291,
-              "54029": 291,
-              "54031": 291,
-              "54033": 291,
-              "54035": 291,
-              "54037": 291,
-              "54039": 291,
-              "54041": 291,
-              "54043": 291,
-              "54045": 291,
-              "54049": 291,
-              "54051": 291,
-              "54053": 291,
-              "54055": 291,
-              "54057": 291,
-              "54059": 291,
-              "54061": 291,
-              "54063": 291,
-              "54065": 291,
-              "54067": 291,
-              "54069": 291,
-              "54071": 291,
-              "54073": 291,
-              "54075": 291,
-              "54077": 291,
-              "54079": 291,
-              "54081": 291,
-              "54083": 291,
-              "54085": 291,
-              "54087": 291,
-              "54089": 291,
-              "54091": 291,
-              "54093": 291,
-              "54095": 291,
-              "54097": 291,
-              "54099": 291,
-              "54101": 291,
-              "54103": 291,
-              "54105": 291,
-              "54107": 291,
-              "54109": 291
+              "54001": 36,
+              "54003": 36,
+              "54005": 36,
+              "54007": 36,
+              "54009": 36,
+              "54011": 36,
+              "54013": 36,
+              "54015": 36,
+              "54017": 36,
+              "54019": 36,
+              "54021": 36,
+              "54023": 36,
+              "54025": 36,
+              "54027": 36,
+              "54029": 36,
+              "54031": 36,
+              "54033": 36,
+              "54035": 36,
+              "54037": 36,
+              "54039": 36,
+              "54041": 36,
+              "54043": 36,
+              "54045": 36,
+              "54047": 36,
+              "54049": 36,
+              "54051": 36,
+              "54053": 36,
+              "54055": 36,
+              "54057": 36,
+              "54059": 36,
+              "54061": 36,
+              "54063": 36,
+              "54065": 36,
+              "54067": 36,
+              "54069": 36,
+              "54071": 36,
+              "54073": 36,
+              "54075": 36,
+              "54077": 36,
+              "54079": 36,
+              "54081": 36,
+              "54083": 36,
+              "54085": 36,
+              "54087": 36,
+              "54089": 36,
+              "54091": 36,
+              "54093": 36,
+              "54095": 36,
+              "54097": 36,
+              "54099": 36,
+              "54101": 36,
+              "54103": 36,
+              "54105": 36,
+              "54107": 36,
+              "54109": 36
             }
           },
           {
-            "name": "county",
-            "duplicates": 15660,
-            "time_range": [
-              9,
-              9
-            ],
+            "name": "geography_name",
+            "duplicates": 1925,
+            "info": [],
+            "time_range": [0, 8],
             "type": "string",
             "missing": 0,
             "table": {
-              "Barbour County": 291,
-              "Berkeley County": 291,
-              "Boone County": 291,
-              "Braxton County": 291,
-              "Brooke County": 291,
-              "Cabell County": 291,
-              "Calhoun County": 291,
-              "Clay County": 291,
-              "Doddridge County": 291,
-              "Fayette County": 291,
-              "Gilmer County": 291,
-              "Grant County": 291,
-              "Greenbrier County": 291,
-              "Hampshire County": 291,
-              "Hancock County": 291,
-              "Hardy County": 291,
-              "Harrison County": 291,
-              "Jackson County": 291,
-              "Jefferson County": 291,
-              "Kanawha County": 291,
-              "Lewis County": 291,
-              "Lincoln County": 291,
-              "Logan County": 291,
-              "Marion County": 291,
-              "Marshall County": 291,
-              "Mason County": 291,
-              "Mercer County": 291,
-              "Mineral County": 291,
-              "Mingo County": 291,
-              "Monongalia County": 291,
-              "Monroe County": 291,
-              "Morgan County": 291,
-              "Nicholas County": 291,
-              "Ohio County": 291,
-              "Pendleton County": 291,
-              "Pleasants County": 291,
-              "Pocahontas County": 291,
-              "Preston County": 291,
-              "Putnam County": 291,
-              "Raleigh County": 291,
-              "Randolph County": 291,
-              "Ritchie County": 291,
-              "Roane County": 291,
-              "Summers County": 291,
-              "Taylor County": 291,
-              "Tucker County": 291,
-              "Tyler County": 291,
-              "Upshur County": 291,
-              "Wayne County": 291,
-              "Webster County": 291,
-              "Wetzel County": 291,
-              "Wirt County": 291,
-              "Wood County": 291,
-              "Wyoming County": 291
+              "Barbour": 36,
+              "Berkeley": 36,
+              "Boone": 36,
+              "Braxton": 36,
+              "Brooke": 36,
+              "Cabell": 36,
+              "Calhoun": 36,
+              "Clay": 36,
+              "Doddridge": 36,
+              "Fayette": 36,
+              "Gilmer": 36,
+              "Grant": 36,
+              "Greenbrier": 36,
+              "Hampshire": 36,
+              "Hancock": 36,
+              "Hardy": 36,
+              "Harrison": 36,
+              "Jackson": 36,
+              "Jefferson": 36,
+              "Kanawha": 36,
+              "Lewis": 36,
+              "Lincoln": 36,
+              "Logan": 36,
+              "Marion": 36,
+              "Marshall": 36,
+              "Mason": 36,
+              "McDowell": 36,
+              "Mercer": 36,
+              "Mineral": 36,
+              "Mingo": 36,
+              "Monongalia": 36,
+              "Monroe": 36,
+              "Morgan": 36,
+              "Nicholas": 36,
+              "Ohio": 36,
+              "Pendleton": 36,
+              "Pleasants": 36,
+              "Pocahontas": 36,
+              "Preston": 36,
+              "Putnam": 36,
+              "Raleigh": 36,
+              "Randolph": 36,
+              "Ritchie": 36,
+              "Roane": 36,
+              "Summers": 36,
+              "Taylor": 36,
+              "Tucker": 36,
+              "Tyler": 36,
+              "Upshur": 36,
+              "Wayne": 36,
+              "Webster": 36,
+              "Wetzel": 36,
+              "Wirt": 36,
+              "Wood": 36,
+              "Wyoming": 36
             }
           },
           {
             "name": "grade",
-            "duplicates": 15711,
-            "time_range": [
-              9,
-              9
-            ],
+            "duplicates": 1976,
+            "info": [],
+            "time_range": [0, 8],
             "type": "string",
             "missing": 0,
             "table": {
-              "12th Grade": 3888,
-              "7th Grade": 3942,
-              "Kindergarten": 7884
+              "12th Grade": 495,
+              "7th Grade": 495,
+              "all, permanent": 495,
+              "Kindergarten": 495
             }
           },
           {
-            "name": "vaccine",
-            "duplicates": 15705,
-            "time_range": [
-              9,
-              9
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "dtap": 1728,
-              "hep": 1728,
-              "hib": 1728,
-              "ipv": 1728,
-              "menacwy": 1728,
-              "mmr": 1728,
-              "pcv": 1728,
-              "tdap": 1890,
-              "varicella": 1728
-            }
-          },
-          {
-            "name": "N_full_exempt",
-            "duplicates": 15702,
-            "time_range": [
-              0,
-              8
-            ],
+            "name": "N_mmr_exempt",
+            "duplicates": 1969,
+            "info": {
+              "id": "N_mmr_exempt",
+              "short_name": "MMR exemptions",
+              "long_name": "Number of students with a measles-mumps-rubella (MMR) exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the measles-mumps-rubella (MMR) requirement.",
+              "long_description": "Count of students with an exemption from the measles-mumps-rubella (MMR) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a measles-mumps-rubella (MMR) exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
             "type": "integer",
-            "missing": 108,
-            "mean": 0.086826,
-            "sd": 0.427158,
+            "missing": 165,
+            "mean": 0.219284,
+            "sd": 0.80951,
             "min": 0,
             "max": 10
+          },
+          {
+            "name": "N_dtap_exempt",
+            "duplicates": 1973,
+            "info": {
+              "id": "N_dtap_exempt",
+              "short_name": "DTaP exemptions",
+              "long_name": "Number of students with a diphtheria-tetanus-pertussis (DTaP) exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the diphtheria-tetanus-pertussis (DTaP) requirement.",
+              "long_description": "Count of students with an exemption from the diphtheria-tetanus-pertussis (DTaP) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a diphtheria-tetanus-pertussis (DTaP) exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 165,
+            "mean": 0.181267,
+            "sd": 0.555301,
+            "min": 0,
+            "max": 5
+          },
+          {
+            "name": "N_tdap_exempt",
+            "duplicates": 1976,
+            "info": {
+              "id": "N_tdap_exempt",
+              "short_name": "Tdap exemptions",
+              "long_name": "Number of students with a tetanus-diphtheria-pertussis (Tdap) exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the tetanus-diphtheria-pertussis (Tdap) requirement.",
+              "long_description": "Count of students with an exemption from the tetanus-diphtheria-pertussis (Tdap) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a tetanus-diphtheria-pertussis (Tdap) exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 0,
+            "mean": 0.077778,
+            "sd": 0.304938,
+            "min": 0,
+            "max": 3
+          },
+          {
+            "name": "N_hib_exempt",
+            "duplicates": 1977,
+            "info": {
+              "id": "N_hib_exempt",
+              "short_name": "Hib exemptions",
+              "long_name": "Number of students with a Haemophilus influenzae type b (Hib) exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the Haemophilus influenzae type b (Hib) requirement.",
+              "long_description": "Count of students with an exemption from the Haemophilus influenzae type b (Hib) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a Haemophilus influenzae type b (Hib) exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 165,
+            "mean": 0.049587,
+            "sd": 0.21715,
+            "min": 0,
+            "max": 1
+          },
+          {
+            "name": "N_varicella_exempt",
+            "duplicates": 1969,
+            "info": {
+              "id": "N_varicella_exempt",
+              "short_name": "Varicella exemptions",
+              "long_name": "Number of students with a varicella exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the varicella requirement.",
+              "long_description": "Count of students with an exemption from the varicella requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a varicella exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 165,
+            "mean": 0.22865,
+            "sd": 0.80246,
+            "min": 0,
+            "max": 9
+          },
+          {
+            "name": "N_menacwy_exempt",
+            "duplicates": 1977,
+            "info": {
+              "id": "N_menacwy_exempt",
+              "short_name": "MenACWY exemptions",
+              "long_name": "Number of students with a meningococcal conjugate (MenACWY) exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the meningococcal conjugate (MenACWY) requirement.",
+              "long_description": "Count of students with an exemption from the meningococcal conjugate (MenACWY) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a meningococcal conjugate (MenACWY) exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 165,
+            "mean": 0.027548,
+            "sd": 0.163719,
+            "min": 0,
+            "max": 1
+          },
+          {
+            "name": "N_ipv_exempt",
+            "duplicates": 1976,
+            "info": {
+              "id": "N_ipv_exempt",
+              "short_name": "Polio (IPV) exemptions",
+              "long_name": "Number of students with a inactivated poliovirus (IPV) exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the inactivated poliovirus (IPV) requirement.",
+              "long_description": "Count of students with an exemption from the inactivated poliovirus (IPV) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a inactivated poliovirus (IPV) exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 165,
+            "mean": 0.044628,
+            "sd": 0.211814,
+            "min": 0,
+            "max": 2
+          },
+          {
+            "name": "N_pcv_exempt",
+            "duplicates": 1977,
+            "info": {
+              "id": "N_pcv_exempt",
+              "short_name": "Pneumococcal (PCV) exemptions",
+              "long_name": "Number of students with a pneumococcal conjugate (PCV) exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the pneumococcal conjugate (PCV) requirement.",
+              "long_description": "Count of students with an exemption from the pneumococcal conjugate (PCV) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a pneumococcal conjugate (PCV) exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 165,
+            "mean": 0.008815,
+            "sd": 0.093502,
+            "min": 0,
+            "max": 1
+          },
+          {
+            "name": "N_hep_exempt",
+            "duplicates": 1977,
+            "info": {
+              "id": "N_hep_exempt",
+              "short_name": "Hepatitis exemptions",
+              "long_name": "Number of students with a hepatitis exemption",
+              "category": "immunization",
+              "short_description": "Students exempted from the hepatitis requirement.",
+              "long_description": "Count of students with an exemption from the hepatitis requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+              "statement": "In {location}, {value} students had a hepatitis exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wv_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 8],
+            "type": "integer",
+            "missing": 165,
+            "mean": 0.034711,
+            "sd": 0.183097,
+            "min": 0,
+            "max": 1
           }
         ]
       },
-      "sha512": "b981ded8b071e12488daf7e42a29d3cc0282cd1eac84833a2473fa6efba895fe6d4aa7a1884a4b87f28182cb399cc529368217729ce98a5764c09352644a1c6d"
+      "sha512": "fc56280f90b877b01c203d50446dca3bf8088823a3c8e30967ec0eb38a2ffa8a82fd8e6b21ee623edac078bc0c78a8797a73941dce7a943b03ef855b8d9ce63e"
     }
   ],
   "measure_info": {
-    "example_variable": {
-      "id": "example_variable",
-      "sources": [],
-      "citations": []
+    "N_mmr_exempt": {
+      "id": "N_mmr_exempt",
+      "short_name": "MMR exemptions",
+      "long_name": "Number of students with a measles-mumps-rubella (MMR) exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the measles-mumps-rubella (MMR) requirement.",
+      "long_description": "Count of students with an exemption from the measles-mumps-rubella (MMR) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a measles-mumps-rubella (MMR) exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_dtap_exempt": {
+      "id": "N_dtap_exempt",
+      "short_name": "DTaP exemptions",
+      "long_name": "Number of students with a diphtheria-tetanus-pertussis (DTaP) exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the diphtheria-tetanus-pertussis (DTaP) requirement.",
+      "long_description": "Count of students with an exemption from the diphtheria-tetanus-pertussis (DTaP) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a diphtheria-tetanus-pertussis (DTaP) exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_tdap_exempt": {
+      "id": "N_tdap_exempt",
+      "short_name": "Tdap exemptions",
+      "long_name": "Number of students with a tetanus-diphtheria-pertussis (Tdap) exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the tetanus-diphtheria-pertussis (Tdap) requirement.",
+      "long_description": "Count of students with an exemption from the tetanus-diphtheria-pertussis (Tdap) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a tetanus-diphtheria-pertussis (Tdap) exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_hib_exempt": {
+      "id": "N_hib_exempt",
+      "short_name": "Hib exemptions",
+      "long_name": "Number of students with a Haemophilus influenzae type b (Hib) exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the Haemophilus influenzae type b (Hib) requirement.",
+      "long_description": "Count of students with an exemption from the Haemophilus influenzae type b (Hib) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a Haemophilus influenzae type b (Hib) exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_varicella_exempt": {
+      "id": "N_varicella_exempt",
+      "short_name": "Varicella exemptions",
+      "long_name": "Number of students with a varicella exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the varicella requirement.",
+      "long_description": "Count of students with an exemption from the varicella requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a varicella exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_menacwy_exempt": {
+      "id": "N_menacwy_exempt",
+      "short_name": "MenACWY exemptions",
+      "long_name": "Number of students with a meningococcal conjugate (MenACWY) exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the meningococcal conjugate (MenACWY) requirement.",
+      "long_description": "Count of students with an exemption from the meningococcal conjugate (MenACWY) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a meningococcal conjugate (MenACWY) exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_ipv_exempt": {
+      "id": "N_ipv_exempt",
+      "short_name": "Polio (IPV) exemptions",
+      "long_name": "Number of students with a inactivated poliovirus (IPV) exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the inactivated poliovirus (IPV) requirement.",
+      "long_description": "Count of students with an exemption from the inactivated poliovirus (IPV) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a inactivated poliovirus (IPV) exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_pcv_exempt": {
+      "id": "N_pcv_exempt",
+      "short_name": "Pneumococcal (PCV) exemptions",
+      "long_name": "Number of students with a pneumococcal conjugate (PCV) exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the pneumococcal conjugate (PCV) requirement.",
+      "long_description": "Count of students with an exemption from the pneumococcal conjugate (PCV) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a pneumococcal conjugate (PCV) exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "N_hep_exempt": {
+      "id": "N_hep_exempt",
+      "short_name": "Hepatitis exemptions",
+      "long_name": "Number of students with a hepatitis exemption",
+      "category": "immunization",
+      "short_description": "Students exempted from the hepatitis requirement.",
+      "long_description": "Count of students with an exemption from the hepatitis requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+      "statement": "In {location}, {value} students had a hepatitis exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wv_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "wv_school_immunization": {
+        "name": "West Virginia School Immunization Exemptions",
+        "url": "https://oeps.wv.gov/immunizations/Pages/school_coverage_rates.aspx",
+        "organization": "West Virginia Department of Health",
+        "organization_url": "https://dhhr.wv.gov/",
+        "description": "County-level school vaccination exemption counts by vaccine from the West Virginia Office of Epidemiology and Prevention Services.",
+        "restrictions": "2025 exemption counts obtained via a public-records (FOIA) request; not published as a downloadable dataset."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
     }
   }
 }

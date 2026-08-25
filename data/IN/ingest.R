@@ -4,7 +4,8 @@ library(readxl)
 library(stringr)
 library(vroom)
 library(readr)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
 
 # =============================================================================
 # IN - School Immunization Coverage by County & Grade
@@ -89,7 +90,7 @@ if (!identical(process$raw_state, raw_state) ||
   process_year <- function(path) {
     yr <- str_extract(basename(path), "\\d{4}-\\d{4}")
     year_end <- str_extract(yr, "\\d{4}$")
-    time <- as.Date(paste0(year_end, "-09-01"))
+    time <- as.Date(school_year_time_from_end(year_end))
 
     d <- readxl::read_excel(path, sheet = 1, .name_repair = "unique")
     names(d) <- gsub("\\s+", "_", trimws(names(d)))
@@ -114,6 +115,7 @@ if (!identical(process$raw_state, raw_state) ||
       summarize(
         across(all_of(names(rate_patterns)),
                ~ weighted.mean(.x, .enroll, na.rm = TRUE)),
+        N_enrolled = sum(.enroll, na.rm = TRUE),
         .groups = "drop"
       ) %>%
       mutate(time = time)
@@ -160,6 +162,7 @@ if (!identical(process$raw_state, raw_state) ||
     ) %>%
     transmute(
       time, geography, geography_name, grade,
+      N_enrolled,
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
@@ -169,7 +172,7 @@ if (!identical(process$raw_state, raw_state) ||
     arrange(time, geography_name, grade)
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Indiana"), "./standard/data.csv.gz")
+  write_standard(data_out, "Indiana", "./standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

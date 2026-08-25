@@ -5,41 +5,57 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:37",
       "frequency": 0,
-      "last_run": "2026-02-04 10:09:51",
-      "run_time": 0.737,
+      "run_time": 0.02,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "",
-          "Attaching package: \u2018vroom\u2019",
-          "",
-          "The following objects are masked from \u2018package:readr\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/NJ/raw/NJ_13-14.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_14-15.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_15-16.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_16-17.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_17-18.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_18-19.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_19-20.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_20-21.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_21-22.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_22-23.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_23-24.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/raw/NJ_24-25.csv": {
+      "data": "not_compressed"
+    },
+    "data/NJ/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/NJ_13-14.csv": "65e4f1bd15cd70aee4c52aee7cd23ee7",
     "raw/NJ_14-15.csv": "3b2e505b44b14f78ba1308102dd7d647",
@@ -54,9 +70,9 @@
     "raw/NJ_23-24.csv": "3c242bdfee2f60a31433685dc9c9b767",
     "raw/NJ_24-25.csv": "6ae0b2bc63f1ee3451d3693b2c45d688"
   },
-  "script_hash": "6f9fa99e97da1ea47042f23dcd808570",
+  "script_hash": "00dbb9059fc9305e578c7621da160b16",
   "standard_state": {
-    "./data/NJ/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/NJ/standard/data.csv.gz": "9dccae6b556bad06c814c6aaf719c9d5"
+    "./data/NJ/measure_info.json": "d26d11cb93760a3db1a05103b035ccba",
+    "./data/NJ/standard/data.csv.gz": "c10bae3762fe65730af1a752d65c44dd"
   }
 }

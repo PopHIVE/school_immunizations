@@ -7,5 +7,1136 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 3972,
+      "encoding": "windows-1252",
+      "md5": "716ca638619fc2fdc54e720ac325fa9f",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 08:06:45 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "add standardization files for IA MN MT NC NH UT VT WA"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 0,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-08-05 09:48:13.818323",
+      "last_modified": "2026-08-21 11:44:49.5765",
+      "vintage": {},
+      "row_count": 256,
+      "entity_count": 15,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 248,
+            "info": [],
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2017-09-01": 32,
+              "2018-09-01": 32,
+              "2019-09-01": 32,
+              "2020-09-01": 32,
+              "2021-09-01": 32,
+              "2022-09-01": 32,
+              "2023-09-01": 32,
+              "2024-09-01": 32
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 241,
+            "info": [],
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "50": 32,
+              "50001": 16,
+              "50003": 16,
+              "50005": 16,
+              "50007": 16,
+              "50009": 16,
+              "50011": 16,
+              "50013": 16,
+              "50015": 16,
+              "50017": 16,
+              "50019": 16,
+              "50021": 16,
+              "50023": 16,
+              "50025": 16,
+              "50027": 16
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 241,
+            "info": [],
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Addison": 16,
+              "Bennington": 16,
+              "Caledonia": 16,
+              "Chittenden": 16,
+              "Essex": 16,
+              "Franklin": 16,
+              "Grand Isle": 16,
+              "Lamoille": 16,
+              "Orange": 16,
+              "Orleans": 16,
+              "Rutland": 16,
+              "Vermont": 32,
+              "Washington": 16,
+              "Windham": 16,
+              "Windsor": 16
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 254,
+            "info": [],
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "All grades": 136,
+              "Kindergarten only": 120
+            }
+          },
+          {
+            "name": "unit",
+            "duplicates": 252,
+            "info": [],
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "County": 224,
+              "Independent school total": 8,
+              "Public school total": 8,
+              "Statewide": 16
+            }
+          },
+          {
+            "name": "public_independent",
+            "duplicates": 253,
+            "info": [],
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "All": 240,
+              "Independent": 8,
+              "Public": 8
+            }
+          },
+          {
+            "name": "N_enrolled",
+            "duplicates": 18,
+            "info": {
+              "id": "N_enrolled",
+              "short_name": "Students enrolled",
+              "long_name": "Number of students enrolled",
+              "category": "immunization",
+              "short_description": "Number of students enrolled at the reporting level.",
+              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+              "statement": "In {location}, {value} students were enrolled.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "integer",
+            "missing": 0,
+            "mean": 8088.492188,
+            "sd": 18596.271857,
+            "min": 35,
+            "max": 85246
+          },
+          {
+            "name": "rate_dtap",
+            "duplicates": 242,
+            "info": {
+              "id": "rate_dtap",
+              "short_name": "DTaP/Tdap coverage",
+              "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 16,
+            "mean": 0.93875,
+            "sd": 0.020355,
+            "min": 0.85,
+            "max": 0.97
+          },
+          {
+            "name": "rate_polio",
+            "duplicates": 242,
+            "info": {
+              "id": "rate_polio",
+              "short_name": "Polio coverage",
+              "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 16,
+            "mean": 0.940417,
+            "sd": 0.020594,
+            "min": 0.85,
+            "max": 0.97
+          },
+          {
+            "name": "rate_mmr",
+            "duplicates": 241,
+            "info": {
+              "id": "rate_mmr",
+              "short_name": "MMR coverage",
+              "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 16,
+            "mean": 0.94175,
+            "sd": 0.019477,
+            "min": 0.85,
+            "max": 0.98
+          },
+          {
+            "name": "rate_hep_b",
+            "duplicates": 248,
+            "info": {
+              "id": "rate_hep_b",
+              "short_name": "Hepatitis B coverage",
+              "long_name": "Proportion of students up to date for hepatitis B vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 16,
+            "mean": 0.947875,
+            "sd": 0.01019,
+            "min": 0.91,
+            "max": 0.97
+          },
+          {
+            "name": "rate_varicella",
+            "duplicates": 242,
+            "info": {
+              "id": "rate_varicella",
+              "short_name": "Varicella coverage",
+              "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 16,
+            "mean": 0.938333,
+            "sd": 0.024006,
+            "min": 0.77,
+            "max": 0.97
+          },
+          {
+            "name": "rate_personal_exempt",
+            "duplicates": 247,
+            "info": {
+              "id": "rate_personal_exempt",
+              "short_name": "Non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+              "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 30,
+            "mean": 0.034558,
+            "sd": 0.013761,
+            "min": 0.01,
+            "max": 0.08
+          },
+          {
+            "name": "rate_medical_exempt",
+            "duplicates": 249,
+            "info": {
+              "id": "rate_medical_exempt",
+              "short_name": "Medical exemption rate",
+              "long_name": "Proportion of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+              "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 171,
+            "mean": 0.002341,
+            "sd": 0.00092,
+            "min": 0.001,
+            "max": 0.007
+          },
+          {
+            "name": "rate_religious_exempt",
+            "duplicates": 247,
+            "info": {
+              "id": "rate_religious_exempt",
+              "short_name": "Religious exemption rate",
+              "long_name": "Proportion of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+              "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 30,
+            "mean": 0.034558,
+            "sd": 0.013761,
+            "min": 0.01,
+            "max": 0.08
+          },
+          {
+            "name": "rate_fully_immunized",
+            "duplicates": 239,
+            "info": {
+              "id": "rate_fully_immunized",
+              "short_name": "Fully immunized rate",
+              "long_name": "Proportion of students fully immunized for all required vaccines",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students recorded as fully immunized for every required vaccine.",
+              "long_description": "Share of assessed school students the state reports as fully immunized across the required schedule, as opposed to provisionally admitted or exempt.",
+              "statement": "In {location}, {value} of school students were fully immunized.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 16,
+            "mean": 0.922083,
+            "sd": 0.032378,
+            "min": 0.75,
+            "max": 0.96
+          },
+          {
+            "name": "rate_provisional_admittance",
+            "duplicates": 240,
+            "info": {
+              "id": "rate_provisional_admittance",
+              "short_name": "Provisional admittance rate",
+              "long_name": "Proportion of students provisionally admitted",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students provisionally admitted while completing required immunizations.",
+              "long_description": "Share of assessed school students permitted to attend on a provisional basis while completing required immunizations.",
+              "statement": "In {location}, {value} of school students were provisionally admitted.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "float",
+            "missing": 56,
+            "mean": 0.04795,
+            "sd": 0.028396,
+            "min": 0.01,
+            "max": 0.21
+          },
+          {
+            "name": "flag_dtap",
+            "duplicates": 253,
+            "info": {
+              "id": "flag_dtap",
+              "short_name": "DTaP/Tdap coverage - censoring flag",
+              "long_name": "Why rate_dtap carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_dtap was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_dtap. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_dtap was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 143,
+              "suppressed": 16,
+              "top_coded": 97
+            }
+          },
+          {
+            "name": "flag_polio",
+            "duplicates": 253,
+            "info": {
+              "id": "flag_polio",
+              "short_name": "Polio coverage - censoring flag",
+              "long_name": "Why rate_polio carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_polio was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_polio. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_polio was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 126,
+              "suppressed": 16,
+              "top_coded": 114
+            }
+          },
+          {
+            "name": "flag_mmr",
+            "duplicates": 253,
+            "info": {
+              "id": "flag_mmr",
+              "short_name": "MMR coverage - censoring flag",
+              "long_name": "Why rate_mmr carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_mmr was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_mmr. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_mmr was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 108,
+              "suppressed": 16,
+              "top_coded": 132
+            }
+          },
+          {
+            "name": "flag_hep_b",
+            "duplicates": 253,
+            "info": {
+              "id": "flag_hep_b",
+              "short_name": "Hepatitis B coverage - censoring flag",
+              "long_name": "Why rate_hep_b carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_hep_b was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_hep_b. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_hep_b was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 87,
+              "suppressed": 16,
+              "top_coded": 153
+            }
+          },
+          {
+            "name": "flag_varicella",
+            "duplicates": 253,
+            "info": {
+              "id": "flag_varicella",
+              "short_name": "Varicella coverage - censoring flag",
+              "long_name": "Why rate_varicella carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_varicella was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_varicella. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_varicella was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 130,
+              "suppressed": 16,
+              "top_coded": 110
+            }
+          },
+          {
+            "name": "flag_personal_exempt",
+            "duplicates": 254,
+            "info": {
+              "id": "flag_personal_exempt",
+              "short_name": "Non-medical exemption rate - censoring flag",
+              "long_name": "Why rate_personal_exempt carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_personal_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_personal_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_personal_exempt was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 226,
+              "suppressed": 30
+            }
+          },
+          {
+            "name": "flag_medical_exempt",
+            "duplicates": 254,
+            "info": {
+              "id": "flag_medical_exempt",
+              "short_name": "Medical exemption rate - censoring flag",
+              "long_name": "Why rate_medical_exempt carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_medical_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_medical_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_medical_exempt was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 85,
+              "suppressed": 171
+            }
+          },
+          {
+            "name": "flag_religious_exempt",
+            "duplicates": 254,
+            "info": {
+              "id": "flag_religious_exempt",
+              "short_name": "Religious exemption rate - censoring flag",
+              "long_name": "Why rate_religious_exempt carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_religious_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_religious_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_religious_exempt was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 226,
+              "suppressed": 30
+            }
+          },
+          {
+            "name": "flag_fully_immunized",
+            "duplicates": 253,
+            "info": {
+              "id": "flag_fully_immunized",
+              "short_name": "Fully immunized rate - censoring flag",
+              "long_name": "Why rate_fully_immunized carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_fully_immunized was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_fully_immunized. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_fully_immunized was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 186,
+              "suppressed": 16,
+              "top_coded": 54
+            }
+          },
+          {
+            "name": "flag_provisional_admittance",
+            "duplicates": 254,
+            "info": {
+              "id": "flag_provisional_admittance",
+              "short_name": "Provisional admittance rate - censoring flag",
+              "long_name": "Why rate_provisional_admittance carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_provisional_admittance was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_provisional_admittance. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_provisional_admittance was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "vt_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 200,
+              "suppressed": 56
+            }
+          }
+        ]
+      },
+      "sha512": "9dca88cb978eaee4aa6e8d50f1cf2deaf4db9feeba44b0d7fe53ab70d85af5a4dbd467442cd54b42e05d3a5aeb880cd4c1076dea0f7248dc1b4d536a64124bad"
+    }
+  ],
+  "measure_info": {
+    "N_enrolled": {
+      "id": "N_enrolled",
+      "short_name": "Students enrolled",
+      "long_name": "Number of students enrolled",
+      "category": "immunization",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+      "statement": "In {location}, {value} students were enrolled.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_dtap": {
+      "id": "rate_dtap",
+      "short_name": "DTaP/Tdap coverage",
+      "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_polio": {
+      "id": "rate_polio",
+      "short_name": "Polio coverage",
+      "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_mmr": {
+      "id": "rate_mmr",
+      "short_name": "MMR coverage",
+      "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_hep_b": {
+      "id": "rate_hep_b",
+      "short_name": "Hepatitis B coverage",
+      "long_name": "Proportion of students up to date for hepatitis B vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_varicella": {
+      "id": "rate_varicella",
+      "short_name": "Varicella coverage",
+      "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_personal_exempt": {
+      "id": "rate_personal_exempt",
+      "short_name": "Non-medical exemption rate",
+      "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+      "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+      "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_medical_exempt": {
+      "id": "rate_medical_exempt",
+      "short_name": "Medical exemption rate",
+      "long_name": "Proportion of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+      "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_religious_exempt": {
+      "id": "rate_religious_exempt",
+      "short_name": "Religious exemption rate",
+      "long_name": "Proportion of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+      "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_fully_immunized": {
+      "id": "rate_fully_immunized",
+      "short_name": "Fully immunized rate",
+      "long_name": "Proportion of students fully immunized for all required vaccines",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students recorded as fully immunized for every required vaccine.",
+      "long_description": "Share of assessed school students the state reports as fully immunized across the required schedule, as opposed to provisionally admitted or exempt.",
+      "statement": "In {location}, {value} of school students were fully immunized.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "rate_provisional_admittance": {
+      "id": "rate_provisional_admittance",
+      "short_name": "Provisional admittance rate",
+      "long_name": "Proportion of students provisionally admitted",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students provisionally admitted while completing required immunizations.",
+      "long_description": "Share of assessed school students permitted to attend on a provisional basis while completing required immunizations.",
+      "statement": "In {location}, {value} of school students were provisionally admitted.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_dtap": {
+      "id": "flag_dtap",
+      "short_name": "DTaP/Tdap coverage - censoring flag",
+      "long_name": "Why rate_dtap carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_dtap was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_dtap. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_dtap was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_polio": {
+      "id": "flag_polio",
+      "short_name": "Polio coverage - censoring flag",
+      "long_name": "Why rate_polio carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_polio was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_polio. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_polio was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_mmr": {
+      "id": "flag_mmr",
+      "short_name": "MMR coverage - censoring flag",
+      "long_name": "Why rate_mmr carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_mmr was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_mmr. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_mmr was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_hep_b": {
+      "id": "flag_hep_b",
+      "short_name": "Hepatitis B coverage - censoring flag",
+      "long_name": "Why rate_hep_b carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_hep_b was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_hep_b. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_hep_b was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_varicella": {
+      "id": "flag_varicella",
+      "short_name": "Varicella coverage - censoring flag",
+      "long_name": "Why rate_varicella carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_varicella was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_varicella. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_varicella was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_personal_exempt": {
+      "id": "flag_personal_exempt",
+      "short_name": "Non-medical exemption rate - censoring flag",
+      "long_name": "Why rate_personal_exempt carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_personal_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_personal_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_personal_exempt was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_medical_exempt": {
+      "id": "flag_medical_exempt",
+      "short_name": "Medical exemption rate - censoring flag",
+      "long_name": "Why rate_medical_exempt carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_medical_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_medical_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_medical_exempt was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_religious_exempt": {
+      "id": "flag_religious_exempt",
+      "short_name": "Religious exemption rate - censoring flag",
+      "long_name": "Why rate_religious_exempt carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_religious_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_religious_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_religious_exempt was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_fully_immunized": {
+      "id": "flag_fully_immunized",
+      "short_name": "Fully immunized rate - censoring flag",
+      "long_name": "Why rate_fully_immunized carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_fully_immunized was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_fully_immunized. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_fully_immunized was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "flag_provisional_admittance": {
+      "id": "flag_provisional_admittance",
+      "short_name": "Provisional admittance rate - censoring flag",
+      "long_name": "Why rate_provisional_admittance carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_provisional_admittance was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_provisional_admittance. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_provisional_admittance was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "vt_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "vt_school_immunization": {
+        "name": "Vermont School Vaccination Data",
+        "url": "https://www.healthvermont.gov/stats/surveillance-reporting-topic/school-vaccination-data",
+        "organization": "Vermont Department of Health",
+        "organization_url": "https://www.healthvermont.gov/",
+        "description": "School- and county-level immunization completeness, provisional, and exemption data from the Vermont DOH school vaccination reports. TOP CODING: the workbook prints \">95%\" rather than a figure wherever coverage exceeds 95 percent, which is 660 of its cells. The value kept for those is the bound the workbook printed -- 95 percent, i.e. 0.95 on the rate scale -- and nothing is substituted for it, so no number in this file disagrees with the source. But 0.95 on a top-coded row is a LOWER BOUND, not a measurement: the true value lies somewhere in 0.95-1.00, so averaging over these rows understates coverage. Use flag_<measure> to exclude them or to model them as interval-censored on [0.95, 1.00] when precision matters. Cells marked \"*\", \"**\", \"***\" or \"N/A\" state no bound and are left missing. PER-MEASURE FLAGS -- every rate has a flag_<measure> companion recording what the workbook actually printed for that cell: blank (a figure, nothing censored), \"suppressed\" (an asterisk run), \"top_coded\" (\">95%\", rate = the printed 0.95 bound) or \"missing\" (\"N/A\"). Coverage measures are heavily top-coded -- hepatitis B is 153 of 256 rows -- while rate_medical_exempt is suppressed in 171 of 256. No row in this file carries \"missing\": the workbook's only eight \"N/A\" cells are meningococcal coverage, which is not among the measures ingested. These flags replace the row-level suppressed_flag and censor_direction, which this source no longer emits -- they said only that something on a row was censored, which the per-measure flags say precisely. EXEMPTION CATEGORIES -- the workbook reports three, each kept as its own column: medical (rate_medical_exempt), religious (rate_religious_exempt) and provisional admittance (rate_provisional_admittance). Vermont repealed its philosophical exemption in 2016, so religious is the only non-medical category and the harmonized rate_personal_exempt carries the same number as rate_religious_exempt -- do not add them together. Provisional admittance is a legal status, not an exemption; students admitted while doses are outstanding are still counted as not up to date.",
+        "restrictions": "Public data. Vermont suppresses small counts to protect privacy."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
+    }
+  }
 }

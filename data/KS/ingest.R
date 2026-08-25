@@ -4,7 +4,9 @@ library(readxl)
 library(stringr)
 library(vroom)
 library(readr)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -22,7 +24,7 @@ if (!identical(process$raw_state, raw_state) ||
   data_all <- bind_rows(lapply(year_sheets, function(sh) {
     year_end2 <- str_extract(sh, "\\d{2}$")
     year_end <- paste0("20", year_end2)
-    time <- as.Date(paste0(year_end, "-09-01"))
+    time <- as.Date(school_year_time_from_end(year_end))
     readxl::read_excel(raw_path, sheet = sh) %>%
       transmute(
         county = County,
@@ -31,24 +33,9 @@ if (!identical(process$raw_state, raw_state) ||
       )
   }))
   
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "KS") %>%
-    mutate(geography_name = gsub(" County", "", geography_name))
-  
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-  
   data_out <- data_all %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    join_county_fips("KS") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = county,
       grade = "Overall",
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -74,7 +61,7 @@ if (!identical(process$raw_state, raw_state) ||
       pct_personal_exempt, pct_medical_exempt, pct_full_exempt
     )
   
-  vroom::vroom_write(add_state_column(data_out, "Kansas"), "./standard/data.csv.gz")
+  write_standard(data_out, "Kansas", "./standard/data.csv.gz", from = "percent")
   
   process$raw_state <- raw_state
   process$script_hash <- script_hash

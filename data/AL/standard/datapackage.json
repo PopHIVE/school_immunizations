@@ -7,5 +7,937 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 31113,
+      "encoding": "windows-1252",
+      "md5": "e7683d9dd2d0ee0092f0a78f1d60f4f7",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "1d74f6c7bc1fc1b1d48a49935b87221298912413"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Tue Jan 6 11:01:29 2026 -0800"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "debugged clearning process for AL"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 0,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-08-05 09:48:10.698654",
+      "last_modified": "2026-08-24 10:29:43.196835",
+      "vintage": {},
+      "row_count": 1020,
+      "entity_count": 68,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 1015,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2020-09-01": 204,
+              "2021-09-01": 204,
+              "2022-09-01": 204,
+              "2023-09-01": 204,
+              "2024-09-01": 204
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 952,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "01": 15,
+              "01001": 15,
+              "01003": 15,
+              "01005": 15,
+              "01007": 15,
+              "01009": 15,
+              "01011": 15,
+              "01013": 15,
+              "01015": 15,
+              "01017": 15,
+              "01019": 15,
+              "01021": 15,
+              "01023": 15,
+              "01025": 15,
+              "01027": 15,
+              "01029": 15,
+              "01031": 15,
+              "01033": 15,
+              "01035": 15,
+              "01037": 15,
+              "01039": 15,
+              "01041": 15,
+              "01043": 15,
+              "01045": 15,
+              "01047": 15,
+              "01049": 15,
+              "01051": 15,
+              "01053": 15,
+              "01055": 15,
+              "01057": 15,
+              "01059": 15,
+              "01061": 15,
+              "01063": 15,
+              "01065": 15,
+              "01067": 15,
+              "01069": 15,
+              "01071": 15,
+              "01073": 15,
+              "01075": 15,
+              "01077": 15,
+              "01079": 15,
+              "01081": 15,
+              "01083": 15,
+              "01085": 15,
+              "01087": 15,
+              "01089": 15,
+              "01091": 15,
+              "01093": 15,
+              "01095": 15,
+              "01097": 15,
+              "01099": 15,
+              "01101": 15,
+              "01103": 15,
+              "01105": 15,
+              "01107": 15,
+              "01109": 15,
+              "01111": 15,
+              "01113": 15,
+              "01115": 15,
+              "01117": 15,
+              "01119": 15,
+              "01121": 15,
+              "01123": 15,
+              "01125": 15,
+              "01127": 15,
+              "01129": 15,
+              "01131": 15,
+              "01133": 15
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 952,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Autauga": 15,
+              "Baldwin": 15,
+              "Barbour": 15,
+              "Bibb": 15,
+              "Blount": 15,
+              "Bullock": 15,
+              "Butler": 15,
+              "Calhoun": 15,
+              "Chambers": 15,
+              "Cherokee": 15,
+              "Chilton": 15,
+              "Choctaw": 15,
+              "Clarke": 15,
+              "Clay": 15,
+              "Cleburne": 15,
+              "Coffee": 15,
+              "Colbert": 15,
+              "Conecuh": 15,
+              "Coosa": 15,
+              "Covington": 15,
+              "Crenshaw": 15,
+              "Cullman": 15,
+              "Dale": 15,
+              "Dallas": 15,
+              "DeKalb": 15,
+              "Elmore": 15,
+              "Escambia": 15,
+              "Etowah": 15,
+              "Fayette": 15,
+              "Franklin": 15,
+              "Geneva": 15,
+              "Greene": 15,
+              "Hale": 15,
+              "Henry": 15,
+              "Houston": 15,
+              "Jackson": 15,
+              "Jefferson": 15,
+              "Lamar": 15,
+              "Lauderdale": 15,
+              "Lawrence": 15,
+              "Lee": 15,
+              "Limestone": 15,
+              "Lowndes": 15,
+              "Macon": 15,
+              "Madison": 15,
+              "Marengo": 15,
+              "Marion": 15,
+              "Marshall": 15,
+              "Mobile": 15,
+              "Monroe": 15,
+              "Montgomery": 15,
+              "Morgan": 15,
+              "Perry": 15,
+              "Pickens": 15,
+              "Pike": 15,
+              "Randolph": 15,
+              "Russell": 15,
+              "Shelby": 15,
+              "St. Clair": 15,
+              "Sumter": 15,
+              "Talladega": 15,
+              "Tallapoosa": 15,
+              "Total": 15,
+              "Tuscaloosa": 15,
+              "Walker": 15,
+              "Washington": 15,
+              "Wilcox": 15,
+              "Winston": 15
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 1017,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "7th grade": 340,
+              "9th grade": 340,
+              "Kindergarten": 340
+            }
+          },
+          {
+            "name": "N_enrolled",
+            "duplicates": 299,
+            "info": {
+              "id": "N_enrolled",
+              "short_name": "Students enrolled",
+              "long_name": "Number of students enrolled",
+              "category": "immunization",
+              "short_description": "Number of students enrolled at the reporting level.",
+              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+              "statement": "In {location}, {value} students were enrolled.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 1731.852941,
+            "sd": 7127.795015,
+            "min": 8,
+            "max": 67973
+          },
+          {
+            "name": "N_medical_exempt",
+            "duplicates": 998,
+            "info": {
+              "id": "N_medical_exempt",
+              "short_name": "Medical exemptions (count)",
+              "long_name": "Number of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+              "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 1.101961,
+            "sd": 4.735952,
+            "min": 0,
+            "max": 58
+          },
+          {
+            "name": "N_religious_exempt",
+            "duplicates": 918,
+            "info": {
+              "id": "N_religious_exempt",
+              "short_name": "Religious exemptions (count)",
+              "long_name": "Number of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 21.690196,
+            "sd": 93.360856,
+            "min": 0,
+            "max": 1143
+          },
+          {
+            "name": "N_full_exempt",
+            "duplicates": 923,
+            "info": {
+              "id": "N_full_exempt",
+              "short_name": "Total exemptions (count)",
+              "long_name": "Number of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 22.792157,
+            "sd": 97.723127,
+            "min": 0,
+            "max": 1180
+          },
+          {
+            "name": "rate_medical_exempt",
+            "duplicates": 721,
+            "info": {
+              "id": "rate_medical_exempt",
+              "short_name": "Medical exemption rate",
+              "long_name": "Proportion of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+              "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.000561,
+            "sd": 0.001169,
+            "min": 0,
+            "max": 0.009756
+          },
+          {
+            "name": "rate_religious_exempt",
+            "duplicates": 271,
+            "info": {
+              "id": "rate_religious_exempt",
+              "short_name": "Religious exemption rate",
+              "long_name": "Proportion of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+              "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.010524,
+            "sd": 0.00937,
+            "min": 0,
+            "max": 0.061538
+          },
+          {
+            "name": "rate_full_exempt",
+            "duplicates": 276,
+            "info": {
+              "id": "rate_full_exempt",
+              "short_name": "Total exemption rate",
+              "long_name": "Proportion of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+              "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.011095,
+            "sd": 0.009556,
+            "min": 0,
+            "max": 0.061538
+          },
+          {
+            "name": "N_full_medical_exempt",
+            "duplicates": 998,
+            "info": {
+              "id": "N_full_medical_exempt",
+              "short_name": "Full medical exemptions students vaccinated",
+              "long_name": "Number of students up to date for a full medical exemption vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for a full medical exemption vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for a full medical exemption vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for a full medical exemption vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 1.101961,
+            "sd": 4.735952,
+            "min": 0,
+            "max": 58
+          },
+          {
+            "name": "rate_full_medical_exempt",
+            "duplicates": 721,
+            "info": {
+              "id": "rate_full_medical_exempt",
+              "short_name": "Full medical exemption rate",
+              "long_name": "Proportion of students with a full medical exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a full medical exemption from all required vaccines.",
+              "long_description": "Share of assessed school students holding a full medical exemption, as distinct from a partial medical exemption where the student is otherwise up to date.",
+              "statement": "In {location}, {value} of school students had a full medical exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.000561,
+            "sd": 0.001169,
+            "min": 0,
+            "max": 0.009756
+          },
+          {
+            "name": "N_partial_medical_exempt_utd",
+            "duplicates": 1001,
+            "info": {
+              "id": "N_partial_medical_exempt_utd",
+              "short_name": "Partial medical exemption, up to date (count)",
+              "long_name": "Number of students with a partial medical exemption who are otherwise up to date",
+              "category": "immunization",
+              "short_description": "Number of students with a medical exemption from some required vaccines who are up to date on the rest.",
+              "long_description": "Alabama category: count of students with a medical exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+              "statement": "In {location}, {value} school students had a partial medical exemption and were up to date on the rest.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 0.82549,
+            "sd": 4.140437,
+            "min": 0,
+            "max": 63
+          },
+          {
+            "name": "rate_partial_medical_exempt_utd",
+            "duplicates": 790,
+            "info": {
+              "id": "rate_partial_medical_exempt_utd",
+              "short_name": "Partial medical exemption, up to date (rate)",
+              "long_name": "Proportion of students with a partial medical exemption who are otherwise up to date",
+              "category": "immunization",
+              "short_description": "Proportion of students with a medical exemption from some required vaccines who are up to date on the rest.",
+              "long_description": "Alabama category: share of students with a medical exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+              "statement": "In {location}, {value} of school students had a partial medical exemption and were up to date on the rest.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.000408,
+            "sd": 0.001159,
+            "min": 0,
+            "max": 0.016304
+          },
+          {
+            "name": "N_full_religious_exempt",
+            "duplicates": 918,
+            "info": {
+              "id": "N_full_religious_exempt",
+              "short_name": "Full religious exemptions students vaccinated",
+              "long_name": "Number of students up to date for a full religious exemption vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for a full religious exemption vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for a full religious exemption vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for a full religious exemption vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 21.690196,
+            "sd": 93.360856,
+            "min": 0,
+            "max": 1143
+          },
+          {
+            "name": "rate_full_religious_exempt",
+            "duplicates": 271,
+            "info": {
+              "id": "rate_full_religious_exempt",
+              "short_name": "Full religious exemption rate",
+              "long_name": "Proportion of students with a full religious exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a full religious exemption from all required vaccines.",
+              "long_description": "Share of assessed school students holding a full religious exemption, as distinct from a partial religious exemption where the student is otherwise up to date.",
+              "statement": "In {location}, {value} of school students had a full religious exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.010524,
+            "sd": 0.00937,
+            "min": 0,
+            "max": 0.061538
+          },
+          {
+            "name": "N_partial_religious_exempt_utd",
+            "duplicates": 1013,
+            "info": {
+              "id": "N_partial_religious_exempt_utd",
+              "short_name": "Partial religious exemption, up to date (count)",
+              "long_name": "Number of students with a partial religious exemption who are otherwise up to date",
+              "category": "immunization",
+              "short_description": "Number of students with a religious exemption from some required vaccines who are up to date on the rest.",
+              "long_description": "Alabama category: count of students with a religious exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+              "statement": "In {location}, {value} school students had a partial religious exemption and were up to date on the rest.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "integer",
+            "missing": 0,
+            "mean": 0.101961,
+            "sd": 0.516077,
+            "min": 0,
+            "max": 6
+          },
+          {
+            "name": "rate_partial_religious_exempt_utd",
+            "duplicates": 962,
+            "info": {
+              "id": "rate_partial_religious_exempt_utd",
+              "short_name": "Partial religious exemption, up to date (rate)",
+              "long_name": "Proportion of students with a partial religious exemption who are otherwise up to date",
+              "category": "immunization",
+              "short_description": "Proportion of students with a religious exemption from some required vaccines who are up to date on the rest.",
+              "long_description": "Alabama category: share of students with a religious exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+              "statement": "In {location}, {value} of school students had a partial religious exemption and were up to date on the rest.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.000065,
+            "sd": 0.000525,
+            "min": 0,
+            "max": 0.009091
+          }
+        ]
+      },
+      "sha512": "03a41bee9ed5bf70e71aebd654a4215dca5470e2e0659cccefe96f1ddc7ab9b699039c1bf2f5d8dbc809d3f46b6aa4fad1c4d6906f77373c94f7d893524cfe63"
+    }
+  ],
+  "measure_info": {
+    "N_enrolled": {
+      "id": "N_enrolled",
+      "short_name": "Students enrolled",
+      "long_name": "Number of students enrolled",
+      "category": "immunization",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+      "statement": "In {location}, {value} students were enrolled.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_medical_exempt": {
+      "id": "N_medical_exempt",
+      "short_name": "Medical exemptions (count)",
+      "long_name": "Number of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+      "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_religious_exempt": {
+      "id": "N_religious_exempt",
+      "short_name": "Religious exemptions (count)",
+      "long_name": "Number of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_full_exempt": {
+      "id": "N_full_exempt",
+      "short_name": "Total exemptions (count)",
+      "long_name": "Number of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_medical_exempt": {
+      "id": "rate_medical_exempt",
+      "short_name": "Medical exemption rate",
+      "long_name": "Proportion of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+      "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_religious_exempt": {
+      "id": "rate_religious_exempt",
+      "short_name": "Religious exemption rate",
+      "long_name": "Proportion of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+      "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_full_exempt": {
+      "id": "rate_full_exempt",
+      "short_name": "Total exemption rate",
+      "long_name": "Proportion of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+      "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_full_medical_exempt": {
+      "id": "N_full_medical_exempt",
+      "short_name": "Full medical exemptions students vaccinated",
+      "long_name": "Number of students up to date for a full medical exemption vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for a full medical exemption vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for a full medical exemption vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for a full medical exemption vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_full_medical_exempt": {
+      "id": "rate_full_medical_exempt",
+      "short_name": "Full medical exemption rate",
+      "long_name": "Proportion of students with a full medical exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a full medical exemption from all required vaccines.",
+      "long_description": "Share of assessed school students holding a full medical exemption, as distinct from a partial medical exemption where the student is otherwise up to date.",
+      "statement": "In {location}, {value} of school students had a full medical exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_partial_medical_exempt_utd": {
+      "id": "N_partial_medical_exempt_utd",
+      "short_name": "Partial medical exemption, up to date (count)",
+      "long_name": "Number of students with a partial medical exemption who are otherwise up to date",
+      "category": "immunization",
+      "short_description": "Number of students with a medical exemption from some required vaccines who are up to date on the rest.",
+      "long_description": "Alabama category: count of students with a medical exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+      "statement": "In {location}, {value} school students had a partial medical exemption and were up to date on the rest.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_partial_medical_exempt_utd": {
+      "id": "rate_partial_medical_exempt_utd",
+      "short_name": "Partial medical exemption, up to date (rate)",
+      "long_name": "Proportion of students with a partial medical exemption who are otherwise up to date",
+      "category": "immunization",
+      "short_description": "Proportion of students with a medical exemption from some required vaccines who are up to date on the rest.",
+      "long_description": "Alabama category: share of students with a medical exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+      "statement": "In {location}, {value} of school students had a partial medical exemption and were up to date on the rest.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_full_religious_exempt": {
+      "id": "N_full_religious_exempt",
+      "short_name": "Full religious exemptions students vaccinated",
+      "long_name": "Number of students up to date for a full religious exemption vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for a full religious exemption vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for a full religious exemption vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for a full religious exemption vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_full_religious_exempt": {
+      "id": "rate_full_religious_exempt",
+      "short_name": "Full religious exemption rate",
+      "long_name": "Proportion of students with a full religious exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a full religious exemption from all required vaccines.",
+      "long_description": "Share of assessed school students holding a full religious exemption, as distinct from a partial religious exemption where the student is otherwise up to date.",
+      "statement": "In {location}, {value} of school students had a full religious exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_partial_religious_exempt_utd": {
+      "id": "N_partial_religious_exempt_utd",
+      "short_name": "Partial religious exemption, up to date (count)",
+      "long_name": "Number of students with a partial religious exemption who are otherwise up to date",
+      "category": "immunization",
+      "short_description": "Number of students with a religious exemption from some required vaccines who are up to date on the rest.",
+      "long_description": "Alabama category: count of students with a religious exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+      "statement": "In {location}, {value} school students had a partial religious exemption and were up to date on the rest.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_partial_religious_exempt_utd": {
+      "id": "rate_partial_religious_exempt_utd",
+      "short_name": "Partial religious exemption, up to date (rate)",
+      "long_name": "Proportion of students with a partial religious exemption who are otherwise up to date",
+      "category": "immunization",
+      "short_description": "Proportion of students with a religious exemption from some required vaccines who are up to date on the rest.",
+      "long_description": "Alabama category: share of students with a religious exemption from some but not all required vaccines who are up to date on the remaining required vaccines.",
+      "statement": "In {location}, {value} of school students had a partial religious exemption and were up to date on the rest.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "al_school_immunization": {
+        "name": "Alabama School-Entry Immunization Data",
+        "url": "https://www.alabamapublichealth.gov/immunization/school-entry-survey.html",
+        "organization": "Alabama Department of Public Health",
+        "organization_url": "https://www.alabamapublichealth.gov/",
+        "description": "County-level school-entry EXEMPTION data from the Alabama DPH school-entry survey, for kindergarten, 7th and 9th grade. ADPH reports four categories: full medical, partial medical where the student is otherwise up to date, full religious, and partial religious where the student is otherwise up to date. It publishes no coverage, so the coverage columns are empty. MAPPING ONTO THE STANDARD COLUMNS -- Alabama has no philosophical or personal-belief category, and the standard columns are currently filled as: rate_medical_exempt = full medical only (partial medical is excluded, and is available separately as rate_partial_medical_exempt_utd); rate_personal_exempt = full religious; and rate_full_exempt = full religious. The last two mean rate_full_exempt, rate_personal_exempt and rate_full_religious_exempt all carry the same number, so an any-reason exemption total for Alabama is NOT available in rate_full_exempt -- it excludes medical exemptions entirely. Sum rate_full_medical_exempt and rate_full_religious_exempt for a full-exemption total. This mapping was set by an explicit request rather than derived, so it is recorded here rather than silently changed.",
+        "restrictions": "Public data published by the source agency; no access restrictions."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
+    }
+  }
 }

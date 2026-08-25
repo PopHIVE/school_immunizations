@@ -1,4 +1,6 @@
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
 # =============================================================================
 # IA - K-12 Medical and Religious Exemptions by County
 # =============================================================================
@@ -24,19 +26,12 @@ parse_end_year <- function(path) {
   as.integer(paste0(substr(start_year, 1, 2), end_two))
 }
 
-parse_pct_points <- function(x) {
-  y <- readr::parse_number(as.character(x))
-  if (all(is.na(y))) return(y)
-  if (max(y, na.rm = TRUE) <= 1) return(y * 100)
-  y
-}
-
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
 
   read_exempt <- function(path, type) {
     end_year <- parse_end_year(path)
-    time <- as.Date(paste0(end_year, "-09-01"))
+    time <- as.Date(school_year_time_from_end(end_year))
 
     d <- read_delim(
       path,
@@ -51,7 +46,18 @@ if (!identical(process$raw_state, raw_state) ||
         time = time,
         total_enrolled = readr::parse_number(as.character(`Total Enrolled`)),
         n_exempt = readr::parse_number(as.character(`Number of Certificates`)),
-        pct_exempt = parse_pct_points(`Percent of Certificates`),
+        # Computed from the counts the file already carries, not parsed from
+        # `Percent of Certificates`.
+        #
+        # HHS medical-exemption rates are all below 1 percent, so the old
+        # column-global `if (max(y) <= 1) y * 100` test fired on those files and
+        # multiplied every value by 100: Dickinson County 2020-21 has 27 medical
+        # certificates against 2,707 enrolled -- a true 1.0% -- and shipped as
+        # 100%. That is what pushed pct_full_exempt above 100.
+        #
+        # A rate computed from numerator and denominator has no scale to get
+        # wrong, so this needs no assumption about how the file is formatted.
+        pct_exempt = rate_from_counts(n_exempt, total_enrolled),
         type = type
       )
   }
@@ -86,31 +92,17 @@ if (!identical(process$raw_state, raw_state) ||
         NA_real_,
         coalesce(n_medical_exempt, 0) + coalesce(n_personal_exempt, 0)
       ),
-      pct_full_exempt = if_else(
-        is.na(pct_medical_exempt) & is.na(pct_personal_exempt),
-        NA_real_,
-        coalesce(pct_medical_exempt, 0) + coalesce(pct_personal_exempt, 0)
-      )
+      # Taken straight from the combined count over the same denominator, rather
+      # than by adding the two component rates: the medical and religious files
+      # are joined on total_enrolled, so a year where the two disagree on a
+      # county's enrolment would otherwise sum rates with different bases.
+      pct_full_exempt = rate_from_counts(N_full_exempt, total_enrolled)
     )
 
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "IA") %>%
-    mutate(geography_name = gsub(" County$", "", geography_name))
-
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-
+  # The source title-cases county names, which mangles O'Brien to "O'brien".
   data_out <- data_wide %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    join_county_fips("IA") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = county,
       grade = "K-12",
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -137,7 +129,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Iowa"), "standard/data.csv.gz")
+  write_standard(data_out, "Iowa", "standard/data.csv.gz", from = "rate")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

@@ -5,51 +5,30 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:21",
       "frequency": 0,
-      "last_run": "2026-02-04 23:37:35",
-      "run_time": 0.449,
+      "run_time": 5.36,
       "last_status": {
         "log": [
           "",
-          "Attaching package: ‘dplyr’",
+          "Attaching package: 'rvest'",
           "",
-          "The following objects are masked from ‘package:stats’:",
+          "The following object is masked from 'package:readr':",
           "",
-          "    filter, lag",
+          "    guess_encoding",
           "",
-          "The following objects are masked from ‘package:base’:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: ‘readr’",
-          "",
-          "The following objects are masked from ‘package:vroom’:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
+          "Massachusetts: dropping 10 column(s) with no data: N_dtap, N_polio, N_mmr, N_hep_b, N_varicella, N_religious_exempt, N_medical_exempt, N_full_exempt, N_tdap, N_menacwy"
         ],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/MA/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/MA_grade7_by_county_2013-2014.xlsx": "6dd6dca62d4764e9df627150c4039caf",
     "raw/MA_grade7_by_county_2014-2015.xlsx": "b158875e2d3582b3c04e2f73a82da779",
@@ -78,9 +57,9 @@
     "raw/MA_kindergarten_by_county_2024-2025.xlsx": "ed1656d6877a637063ccdfdc9b1d25e8",
     "raw/MA_kindergarten_by_county_2025-2026.xlsx": "bfa27ccdb8d99fda871ced5b3b1645fb"
   },
-  "script_hash": "338a0817a8ca04eec5d4b7c0e7baab6a",
+  "script_hash": "55e41a4a75e53611e9ad29e4941b658f",
   "standard_state": {
-    "./data/MA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/MA/standard/data.csv.gz": "5e7e3d9b72933882693bb43a4c02e1c0"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/MA/measure_info.json": "fc8592f8a5dab8076fe46ea276f28a2f",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/MA/standard/data.csv.gz": "b720b4bc0007f813469f7f02bd5e0b06"
   }
 }

@@ -3,7 +3,7 @@ library(dplyr)
 library(readxl)
 library(stringr)
 library(vroom)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -37,31 +37,19 @@ if (!identical(process$raw_state, raw_state) ||
     transmute(
       school_year = as.character(`School Year`),
       county = county_key(County),
+      school_name = `School Name`,
+      district = `School Division`,
+      school_type = `School Type`,
       grade = parse_grade(Grade),
-      n_medical = as.numeric(`Medical Exemptions`),
-      n_personal = as.numeric(`Religious Exemptions`),
-      enrollment = as.numeric(`Total Enrolled`)
+      N_medical_exempt = as.numeric(`Medical Exemptions`),
+      N_personal_exempt = as.numeric(`Religious Exemptions`),
+      N_enrolled = as.numeric(`Total Enrolled`)
     ) %>%
     mutate(
       start_year = str_extract(school_year, "\\d{4}$"),
       time = as.Date(paste0(start_year, "-09-01"))
     ) %>%
     filter(!is.na(time), !is.na(county), county != "")
-
-  va_agg <- va_clean %>%
-    group_by(time, county, grade) %>%
-    summarize(
-      enrollment = sum(enrollment, na.rm = TRUE),
-      n_medical = sum(n_medical, na.rm = TRUE),
-      n_personal = sum(n_personal, na.rm = TRUE),
-      .groups = "drop"
-    ) %>%
-    mutate(
-      n_full = n_medical + n_personal,
-      pct_medical = if_else(enrollment > 0, (n_medical / enrollment) * 100, NA_real_),
-      pct_personal = if_else(enrollment > 0, (n_personal / enrollment) * 100, NA_real_),
-      pct_full = if_else(enrollment > 0, (n_full / enrollment) * 100, NA_real_)
-    )
 
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
   va_fips <- all_fips %>%
@@ -75,47 +63,56 @@ if (!identical(process$raw_state, raw_state) ||
         str_squish()
     )
 
-  data_out <- va_agg %>%
-    left_join(va_fips, by = "county") %>%
+  va_joined <- va_clean %>%
+    left_join(va_fips, by = "county")
+
+  unmatched <- sort(unique(va_joined$county[is.na(va_joined$geography)]))
+  if (length(unmatched)) {
+    warning(length(unmatched), " county name(s) matched no VA FIPS and were dropped: ",
+            paste(unmatched, collapse = ", "), call. = FALSE)
+  }
+  va_joined <- va_joined %>% filter(!is.na(geography))
+
+  schools <- va_joined %>%
     mutate(
-      N_dtap = NA_real_,
-      N_polio = NA_real_,
-      N_mmr = NA_real_,
-      N_hep_b = NA_real_,
-      N_varicella = NA_real_,
-      pct_dtap = NA_real_,
-      pct_polio = NA_real_,
-      pct_mmr = NA_real_,
-      pct_hep_b = NA_real_,
-      pct_varicella = NA_real_
+      type = "school",
+      pct_medical_exempt = 100 * rate_from_counts(N_medical_exempt, N_enrolled),
+      pct_personal_exempt = 100 * rate_from_counts(N_personal_exempt, N_enrolled)
     ) %>%
-    filter(!is.na(geography)) %>%
     transmute(
-      time,
-      geography,
-      geography_name = county,
-      grade,
-      N_dtap,
-      N_polio,
-      N_mmr,
-      N_hep_b,
-      N_varicella,
-      N_personal_exempt = n_personal,
-      N_medical_exempt = n_medical,
-      N_full_exempt = n_full,
-      pct_dtap,
-      pct_polio,
-      pct_mmr,
-      pct_hep_b,
-      pct_varicella,
-      pct_personal_exempt = pct_personal,
-      pct_medical_exempt = pct_medical,
-      pct_full_exempt = pct_full,
-      enrollment
+      time, geography, geography_name = county, type,
+      school_name, district, school_type, grade,
+      N_medical_exempt, N_personal_exempt, N_enrolled,
+      pct_medical_exempt, pct_personal_exempt
     )
 
+  counties <- va_joined %>%
+    group_by(time, geography, county, grade) %>%
+    summarize(
+      N_medical_exempt = sum(N_medical_exempt, na.rm = TRUE),
+      N_personal_exempt = sum(N_personal_exempt, na.rm = TRUE),
+      N_enrolled = sum(N_enrolled, na.rm = TRUE),
+      .groups = "drop"
+    ) %>%
+    mutate(
+      type = "county",
+      school_name = NA_character_,
+      district = NA_character_,
+      school_type = NA_character_,
+      pct_medical_exempt = 100 * rate_from_counts(N_medical_exempt, N_enrolled),
+      pct_personal_exempt = 100 * rate_from_counts(N_personal_exempt, N_enrolled)
+    ) %>%
+    transmute(
+      time, geography, geography_name = county, type,
+      school_name, district, school_type, grade,
+      N_medical_exempt, N_personal_exempt, N_enrolled,
+      pct_medical_exempt, pct_personal_exempt
+    )
+
+  data_out <- bind_rows(schools, counties)
+
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Virginia"), "standard/data.csv.gz")
+  write_standard(data_out, "Virginia", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

@@ -5,17 +5,21 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:35",
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:43",
-      "run_time": 0.04,
+      "run_time": 0,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/MT/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/2015-2016 M_R Exemptions.xlsx": "4e2026ff249ef951393217045d3d845c",
     "raw/2016-2017 M_R Exemptions.xlsx": "8698f372224d23109c4153f087c1897a",
@@ -23,5 +27,9 @@
     "raw/2018-2019 M_R Exemptions (1).xlsx": "0b89e8f2748b20bb4062ebbaba5227b8",
     "raw/2020 Immunization Coverage  (1).xlsx": "ea8d9cb3dd33671f8ef9d5fae505d52e"
   },
-  "script_hash": "f5c6f38d96dfadb90d8bf79ed5757e1b"
+  "script_hash": "6ffd8f93d8750efe6b833faf8bd440d9",
+  "standard_state": {
+    "./data/MT/measure_info.json": "8d9ccb1105525d8391f9ef1f27589fa5",
+    "./data/MT/standard/data.csv.gz": "151ab7e246353243ba98555211db6294"
+  }
 }

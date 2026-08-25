@@ -1,12 +1,12 @@
 {
-  "n_assessed": {
-    "id": "n_assessed",
+  "N_assessed": {
+    "id": "N_assessed",
     "short_name": "Students assessed",
-    "long_name": "Number of students assessed",
+    "long_name": "Number of students assessed in the immunization survey",
     "category": "immunization",
-    "short_description": "Number of students assessed for immunization status.",
-    "long_description": "Count of students whose immunization status was assessed at the reporting level; the denominator for that record's percentages.",
-    "statement": "In {location}, {value} students were assessed.",
+    "short_description": "Number of school students whose immunization records were assessed.",
+    "long_description": "Count of students whose records were reviewed for this report. This is the survey denominator and is not necessarily the same as total enrolment, since not every enrolled student is always assessed.",
+    "statement": "In {location}, {value} school students were assessed.",
     "measure_type": "Count",
     "unit": "Students",
     "time_resolution": "Year",
@@ -16,16 +16,16 @@
       }
     ]
   },
-  "pct_exempt_total": {
-    "id": "pct_exempt_total",
+  "rate_exempt_total": {
+    "id": "rate_exempt_total",
     "short_name": "Total exemption rate",
-    "long_name": "Percent of students with any vaccination exemption",
+    "long_name": "Proportion of students with any vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
     "long_description": "Share of assessed school students with at least one vaccination exemption of any type, as reported in the Maine School Vaccination Rates workbooks.",
-    "statement": "In {location}, {value}% of school students had a vaccination exemption of any kind.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -33,16 +33,16 @@
       }
     ]
   },
-  "pct_exempt_medical": {
-    "id": "pct_exempt_medical",
+  "rate_exempt_medical": {
+    "id": "rate_exempt_medical",
     "short_name": "Medical exemption rate",
-    "long_name": "Percent of students with a medical vaccination exemption",
+    "long_name": "Proportion of students with a medical vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from one or more required vaccines.",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
     "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines.",
-    "statement": "In {location}, {value}% of school students had a medical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -50,16 +50,16 @@
       }
     ]
   },
-  "pct_exempt_religious": {
-    "id": "pct_exempt_religious",
+  "rate_exempt_religious": {
+    "id": "rate_exempt_religious",
     "short_name": "Religious exemption rate",
-    "long_name": "Percent of students with a religious vaccination exemption",
+    "long_name": "Proportion of students with a religious vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a religious exemption from one or more required vaccines.",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
     "long_description": "Share of assessed school students holding a religious exemption from one or more required vaccines.",
-    "statement": "In {location}, {value}% of school students had a religious vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -67,16 +67,16 @@
       }
     ]
   },
-  "pct_exempt_philosophical": {
-    "id": "pct_exempt_philosophical",
+  "rate_exempt_philosophical": {
+    "id": "rate_exempt_philosophical",
     "short_name": "Philosophical exemption rate",
-    "long_name": "Percent of students with a philosophical vaccination exemption",
+    "long_name": "Proportion of students with a philosophical vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a philosophical (personal-belief) exemption from one or more required vaccines.",
+    "short_description": "Proportion of assessed school students with a philosophical (personal-belief) exemption from one or more required vaccines.",
     "long_description": "Share of assessed school students holding a philosophical or personal-belief exemption from one or more required vaccines.",
-    "statement": "In {location}, {value}% of school students had a philosophical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a philosophical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -84,16 +84,16 @@
       }
     ]
   },
-  "pct_90_day": {
-    "id": "pct_90_day",
+  "rate_90_day": {
+    "id": "rate_90_day",
     "short_name": "90-day provisional rate",
-    "long_name": "Percent of students in the 90-day provisional period",
+    "long_name": "Proportion of students in the 90-day provisional period",
     "category": "immunization",
-    "short_description": "Percentage of students within the 90-day grace period to submit immunization documentation.",
+    "short_description": "Proportion of students within the 90-day grace period to submit immunization documentation.",
     "long_description": "Share of students within the 90-day provisional period allowed to submit immunization documentation after enrolling.",
-    "statement": "In {location}, {value}% of school students were in the 90-day provisional period.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were in the 90-day provisional period.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -101,16 +101,16 @@
       }
     ]
   },
-  "pct_missing": {
-    "id": "pct_missing",
+  "rate_missing": {
+    "id": "rate_missing",
     "short_name": "Missing documentation rate",
-    "long_name": "Percent of students with no immunization record on file",
+    "long_name": "Proportion of students with no immunization record on file",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with no immunization documentation on file.",
+    "short_description": "Proportion of assessed school students with no immunization documentation on file.",
     "long_description": "Share of assessed school students for whom no immunization record was on file at the time of the survey.",
-    "statement": "In {location}, {value}% of school students had no immunization record on file.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had no immunization record on file.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -118,16 +118,16 @@
       }
     ]
   },
-  "pct_dtap": {
-    "id": "pct_dtap",
+  "rate_dtap": {
+    "id": "rate_dtap",
     "short_name": "DTaP/Tdap coverage",
-    "long_name": "Percent of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for DTaP/Tdap vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -135,16 +135,16 @@
       }
     ]
   },
-  "pct_polio": {
-    "id": "pct_polio",
+  "rate_polio": {
+    "id": "rate_polio",
     "short_name": "Polio coverage",
-    "long_name": "Percent of students up to date for polio (IPV/OPV) vaccination",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for polio vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -152,16 +152,16 @@
       }
     ]
   },
-  "pct_mmr": {
-    "id": "pct_mmr",
+  "rate_mmr": {
+    "id": "rate_mmr",
     "short_name": "MMR coverage",
-    "long_name": "Percent of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for MMR vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -169,16 +169,16 @@
       }
     ]
   },
-  "pct_varicella": {
-    "id": "pct_varicella",
+  "rate_varicella": {
+    "id": "rate_varicella",
     "short_name": "Varicella coverage",
-    "long_name": "Percent of students up to date for varicella (chickenpox) vaccination",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for varicella vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -186,16 +186,16 @@
       }
     ]
   },
-  "pct_tdap": {
-    "id": "pct_tdap",
+  "rate_tdap": {
+    "id": "rate_tdap",
     "short_name": "Tdap coverage",
-    "long_name": "Percent of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+    "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for Tdap vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -203,16 +203,16 @@
       }
     ]
   },
-  "pct_menacwy": {
-    "id": "pct_menacwy",
+  "rate_menacwy": {
+    "id": "rate_menacwy",
     "short_name": "Meningococcal (MenACWY) coverage",
-    "long_name": "Percent of students up to date for meningococcal conjugate (MenACWY) vaccination",
+    "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for meningococcal conjugate (MenACWY) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for meningococcal (MenACWY) vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {

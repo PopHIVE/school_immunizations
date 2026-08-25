@@ -5,9 +5,9 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:58",
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:47",
-      "run_time": 0.039,
+      "run_time": 0,
       "last_status": {
         "log": [],
         "success": true
@@ -16,5 +16,5 @@
   ],
   "checked": "",
   "check_results": [],
-  "script_hash": "12e1f16db6298164c4c88d36b1df8b4f"
+  "script_hash": ""
 }

@@ -5,57 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:01",
       "frequency": 0,
-      "last_run": "2026-02-04 10:20:58",
-      "run_time": 0.492,
+      "run_time": 0.01,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/AR/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: school_district", "missing_info: lea", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/2014-2025 immunization exemption by school district.xlsx": "7c39352899f5a24f119ce8d23210487a"
   },
-  "script_hash": "b086d16bbe9b8ecc940758f777d62677",
+  "script_hash": "a7169fc958ade7036c22daad221f3500",
   "standard_state": {
-    "./data/AR/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/AR/standard/data.csv.gz": "d2598c411e1fa058d9afb9e10a30e2af"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AR/measure_info.json": "f00a063502eb7ea8b0d2d0d3723f26a7",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AR/standard/data.csv.gz": "58c01974937430de4625befaacea5c06"
   }
 }

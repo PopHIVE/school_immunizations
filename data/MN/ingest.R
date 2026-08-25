@@ -1,4 +1,6 @@
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
 # =============================================================================
 # MN - Kindergarten Vaccination Coverage by County
 # Source: MN Dept of Health, Annual Immunization Status Report (school data).
@@ -61,7 +63,7 @@ if (!identical(process$raw_state, raw_state) ||
     m <- str_match(basename(path), "kcounty(\\d{2})(\\d{2})")
     if (is.na(m[1, 1])) return(NULL)
     end_year <- as.integer(paste0("20", m[1, 3]))
-    time <- as.Date(paste0(end_year, "-09-01"))
+    time <- as.Date(school_year_time_from_end(end_year))
 
     raw <- readxl::read_excel(path, sheet = "K_County", col_names = FALSE)
     header <- str_replace_all(as.character(unlist(raw[2, ], use.names = FALSE)), "\\s+", " ")
@@ -98,24 +100,11 @@ if (!identical(process$raw_state, raw_state) ||
   kcounty_files <- list.files("./raw", pattern = "^kcounty\\d{4}\\.xlsx$", full.names = TRUE)
   data_clean <- bind_rows(lapply(kcounty_files, process_kcounty))
 
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "MN") %>%
-    mutate(geography_name = gsub(" County$", "", geography_name))
-
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-
+  # Title-casing in the source breaks McLeod, Lac qui Parle and
+  # Lake of the Woods; those used to end up with no county FIPS at all.
   data_out <- data_clean %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    join_county_fips("MN", statewide = c("Statewide", "Minnesota", "Total")) %>%
     mutate(
-      geography = if_else(county %in% c("Statewide", "Minnesota", "Total"), state_fips[1], geography),
-      geography_name = county,
       N_dtap = NA_real_,
       N_polio = NA_real_,
       N_mmr = NA_real_,
@@ -129,23 +118,20 @@ if (!identical(process$raw_state, raw_state) ||
       pct_full_exempt = NA_real_
     ) %>%
     transmute(
-      time, geography, geography_name, grade,
-      N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
+      time, geography, geography_name, grade, enrollment,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
-      pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
       pct_personal_exempt, pct_medical_exempt, pct_full_exempt,
-      enrollment,
-      pct_dtap_nonmedical, pct_dtap_medical,
-      pct_polio_nonmedical, pct_polio_medical,
-      pct_mmr_nonmedical, pct_mmr_medical,
-      pct_hep_b_nonmedical, pct_hep_b_medical,
-      pct_varicella_nonmedical, pct_varicella_medical,
+      N_dtap, pct_dtap, pct_dtap_nonmedical, pct_dtap_medical,
+      N_polio, pct_polio, pct_polio_nonmedical, pct_polio_medical,
+      N_mmr, pct_mmr, pct_mmr_nonmedical, pct_mmr_medical,
+      N_hep_b, pct_hep_b, pct_hep_b_nonmedical, pct_hep_b_medical,
+      N_varicella, pct_varicella, pct_varicella_nonmedical, pct_varicella_medical,
       pct_varicella_disease_history
     ) %>%
     arrange(time, geography_name)
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Minnesota"), "standard/data.csv.gz")
+  write_standard(data_out, "Minnesota", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

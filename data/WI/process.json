@@ -5,51 +5,21 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:56",
       "frequency": 0,
-      "last_run": "2026-02-04 23:58:32",
-      "run_time": 0.734,
+      "run_time": 0.02,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:07",
+  "check_results": {
+    "data/WI/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: school_name", "missing_info: city", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/School Immunization Rates, Wisconsin, 2018.xlsx": "e380b09690f3c34b88cd4bca7bf4a591",
     "raw/School Immunization Rates, Wisconsin, 2019.xlsx": "196740c830e929e60de147dd63aa58fb",
@@ -59,9 +29,9 @@
     "raw/School Immunization Rates, Wisconsin, 2023.xlsx": "bdf0d2b62c24951b98091b9faeea16eb",
     "raw/School Immunization Rates, Wisconsin, 2024.xlsx": "331d7b36b9cb896ae9a657e43a3eda51"
   },
-  "script_hash": "62e8e31d6d512c0d534ceb8eabc9a98a",
+  "script_hash": "2904f939339a2ee8041b1c44ca6e3545",
   "standard_state": {
-    "./data/WI/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/WI/standard/data.csv.gz": "4b0eb5438cf02bbee4c2c7a75d00323e"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WI/measure_info.json": "872fe9dd99600de834adb15fd51ebf07",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WI/standard/data.csv.gz": "4d10658c09a8162cc6036fc3906346b8"
   }
 }

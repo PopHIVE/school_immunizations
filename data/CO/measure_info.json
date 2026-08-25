@@ -1,490 +1,14 @@
 {
-  "pct_hepb_nonmedical_exempt": {
-    "id": "pct_hepb_nonmedical_exempt",
-    "short_name": "hepatitis B non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from hepatitis B vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the hepatitis B vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from hepatitis B vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_covid_medical_exempt": {
-    "id": "pct_covid_medical_exempt",
-    "short_name": "COVID-19 medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from COVID-19 vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the COVID-19 vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from COVID-19 vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_polio_nonmedical_exempt": {
-    "id": "pct_polio_nonmedical_exempt",
-    "short_name": "polio non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from polio vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the polio vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from polio vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_hib_nonmedical_exempt": {
-    "id": "pct_hib_nonmedical_exempt",
-    "short_name": "Hib non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from Hib vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the Hib vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from Hib vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_varicella_nonmedical_exempt": {
-    "id": "pct_varicella_nonmedical_exempt",
-    "short_name": "varicella non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from varicella vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the varicella vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from varicella vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_pcv_nonmedical_exempt": {
-    "id": "pct_pcv_nonmedical_exempt",
-    "short_name": "pneumococcal (PCV) non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from pneumococcal (PCV) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the pneumococcal (PCV) vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from pneumococcal (PCV) vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_mmr_nonmedical_exempt": {
-    "id": "pct_mmr_nonmedical_exempt",
-    "short_name": "MMR non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from MMR vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the MMR vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from MMR vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_polio_medical_exempt": {
-    "id": "pct_polio_medical_exempt",
-    "short_name": "polio medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from polio vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the polio vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from polio vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_dtap_medical_exempt": {
-    "id": "pct_dtap_medical_exempt",
-    "short_name": "DTaP medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from DTaP vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the DTaP vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from DTaP vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_mmr_medical_exempt": {
-    "id": "pct_mmr_medical_exempt",
-    "short_name": "MMR medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from MMR vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the MMR vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from MMR vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_varicella_medical_exempt": {
-    "id": "pct_varicella_medical_exempt",
-    "short_name": "varicella medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from varicella vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the varicella vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from varicella vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_dtap_nonmedical_exempt": {
-    "id": "pct_dtap_nonmedical_exempt",
-    "short_name": "DTaP non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from DTaP vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the DTaP vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from DTaP vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_hepb_medical_exempt": {
-    "id": "pct_hepb_medical_exempt",
-    "short_name": "hepatitis B medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from hepatitis B vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from hepatitis B vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_tdap_nonmedical_exempt": {
-    "id": "pct_tdap_nonmedical_exempt",
-    "short_name": "Tdap non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from Tdap vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the Tdap vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from Tdap vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_pcv_medical_exempt": {
-    "id": "pct_pcv_medical_exempt",
-    "short_name": "pneumococcal (PCV) medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from pneumococcal (PCV) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the pneumococcal (PCV) vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from pneumococcal (PCV) vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_hib_medical_exempt": {
-    "id": "pct_hib_medical_exempt",
-    "short_name": "Hib medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from Hib vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the Hib vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from Hib vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_covid_nonmedical_exempt": {
-    "id": "pct_covid_nonmedical_exempt",
-    "short_name": "COVID-19 non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical exemption from COVID-19 vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption from the COVID-19 vaccination requirement.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a non-medical exemption from COVID-19 vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_tdap_medical_exempt": {
-    "id": "pct_tdap_medical_exempt",
-    "short_name": "Tdap medical exemption rate",
-    "long_name": "Percent of students with a medical exemption from Tdap vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from the Tdap vaccination requirement.",
-    "long_description": "Share of assessed school students holding a medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
-    "statement": "In {location}, {value}% of school students had a medical exemption from Tdap vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_dtap": {
-    "id": "N_dtap",
-    "short_name": "DTaP/Tdap students vaccinated",
-    "long_name": "Number of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_polio": {
-    "id": "N_polio",
-    "short_name": "Polio students vaccinated",
-    "long_name": "Number of students up to date for polio (IPV/OPV) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for polio (IPV/OPV) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for polio (IPV/OPV) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for polio (IPV/OPV) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_mmr": {
-    "id": "N_mmr",
-    "short_name": "MMR students vaccinated",
-    "long_name": "Number of students up to date for measles-mumps-rubella (MMR) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for measles-mumps-rubella (MMR) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for measles-mumps-rubella (MMR) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_hep_b": {
-    "id": "N_hep_b",
-    "short_name": "Hepatitis B students vaccinated",
-    "long_name": "Number of students up to date for hepatitis B vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for hepatitis B vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for hepatitis B vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for hepatitis B vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_varicella": {
-    "id": "N_varicella",
-    "short_name": "Varicella students vaccinated",
-    "long_name": "Number of students up to date for varicella (chickenpox) vaccination",
-    "category": "immunization",
-    "short_description": "Number of assessed school students up to date for varicella (chickenpox) vaccination.",
-    "long_description": "Count of assessed school students reported as up to date for varicella (chickenpox) vaccination. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students were up to date for varicella (chickenpox) vaccination.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_personal_exempt": {
-    "id": "N_personal_exempt",
-    "short_name": "Non-medical exemptions (count)",
-    "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
-    "category": "immunization",
-    "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_medical_exempt": {
-    "id": "N_medical_exempt",
-    "short_name": "Medical exemptions (count)",
-    "long_name": "Number of students with a medical vaccination exemption",
-    "category": "immunization",
-    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "N_full_exempt": {
-    "id": "N_full_exempt",
-    "short_name": "Total exemptions (count)",
-    "long_name": "Number of students with any vaccination exemption",
-    "category": "immunization",
-    "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_dtap": {
-    "id": "pct_dtap",
-    "short_name": "DTaP/Tdap coverage",
-    "long_name": "Percent of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for DTaP/Tdap vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_polio": {
-    "id": "pct_polio",
-    "short_name": "Polio coverage",
-    "long_name": "Percent of students up to date for polio (IPV/OPV) vaccination",
-    "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for polio vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "co_school_immunization"
-      }
-    ]
-  },
-  "pct_mmr": {
-    "id": "pct_mmr",
+  "rate_mmr": {
+    "id": "rate_mmr",
     "short_name": "MMR coverage",
-    "long_name": "Percent of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for MMR vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -492,16 +16,203 @@
       }
     ]
   },
-  "pct_hep_b": {
-    "id": "pct_hep_b",
+  "rate_mmr_medical_exempt": {
+    "id": "rate_mmr_medical_exempt",
+    "short_name": "MMR medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_nonmedical_exempt": {
+    "id": "rate_mmr_nonmedical_exempt",
+    "short_name": "MMR non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap": {
+    "id": "rate_dtap",
+    "short_name": "DTaP/Tdap coverage",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_medical_exempt": {
+    "id": "rate_dtap_medical_exempt",
+    "short_name": "DTaP medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_nonmedical_exempt": {
+    "id": "rate_dtap_nonmedical_exempt",
+    "short_name": "DTaP non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap": {
+    "id": "rate_tdap",
+    "short_name": "Tdap coverage",
+    "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap_medical_exempt": {
+    "id": "rate_tdap_medical_exempt",
+    "short_name": "Tdap medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from Tdap vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the Tdap vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap_nonmedical_exempt": {
+    "id": "rate_tdap_nonmedical_exempt",
+    "short_name": "Tdap non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from Tdap vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the Tdap vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_polio": {
+    "id": "rate_polio",
+    "short_name": "Polio coverage",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_medical_exempt": {
+    "id": "rate_polio_medical_exempt",
+    "short_name": "polio medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_nonmedical_exempt": {
+    "id": "rate_polio_nonmedical_exempt",
+    "short_name": "polio non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b": {
+    "id": "rate_hep_b",
     "short_name": "Hepatitis B coverage",
-    "long_name": "Percent of students up to date for hepatitis B vaccination",
+    "long_name": "Proportion of students up to date for hepatitis B vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for hepatitis B vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
     "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for hepatitis B vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -509,16 +220,50 @@
       }
     ]
   },
-  "pct_varicella": {
-    "id": "pct_varicella",
+  "rate_hep_b_medical_exempt": {
+    "id": "rate_hep_b_medical_exempt",
+    "short_name": "hepatitis B medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_nonmedical_exempt": {
+    "id": "rate_hep_b_nonmedical_exempt",
+    "short_name": "hepatitis B non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella": {
+    "id": "rate_varicella",
     "short_name": "Varicella coverage",
-    "long_name": "Percent of students up to date for varicella (chickenpox) vaccination",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for varicella vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -526,16 +271,16 @@
       }
     ]
   },
-  "pct_personal_exempt": {
-    "id": "pct_personal_exempt",
-    "short_name": "Non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical (personal-belief) vaccination exemption",
+  "rate_varicella_medical_exempt": {
+    "id": "rate_varicella_medical_exempt",
+    "short_name": "varicella medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from varicella vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
-    "statement": "In {location}, {value}% of school students had a non-medical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "short_description": "Proportion of assessed school students with a medical exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -543,16 +288,16 @@
       }
     ]
   },
-  "pct_medical_exempt": {
-    "id": "pct_medical_exempt",
-    "short_name": "Medical exemption rate",
-    "long_name": "Percent of students with a medical vaccination exemption",
+  "rate_varicella_nonmedical_exempt": {
+    "id": "rate_varicella_nonmedical_exempt",
+    "short_name": "varicella non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from varicella vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from one or more required vaccines.",
-    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
-    "statement": "In {location}, {value}% of school students had a medical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -560,16 +305,305 @@
       }
     ]
   },
-  "pct_full_exempt": {
-    "id": "pct_full_exempt",
-    "short_name": "Total exemption rate",
-    "long_name": "Percent of students with any vaccination exemption",
+  "rate_hib": {
+    "id": "rate_hib",
+    "short_name": "Hib coverage",
+    "long_name": "Proportion of students up to date for Haemophilus influenzae type b (Hib) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
-    "statement": "In {location}, {value}% of school students had a vaccination exemption of any kind.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "short_description": "Proportion of assessed school students who are up to date for Haemophilus influenzae type b (Hib) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for Haemophilus influenzae type b (Hib) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Hib vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_hib_medical_exempt": {
+    "id": "rate_hib_medical_exempt",
+    "short_name": "Hib medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from Hib vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the Hib vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from Hib vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_hib_nonmedical_exempt": {
+    "id": "rate_hib_nonmedical_exempt",
+    "short_name": "Hib non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from Hib vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the Hib vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from Hib vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv": {
+    "id": "rate_pcv",
+    "short_name": "Pneumococcal (PCV) coverage",
+    "long_name": "Proportion of students up to date for pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for pneumococcal conjugate (PCV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for pneumococcal conjugate (PCV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for pneumococcal (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv_medical_exempt": {
+    "id": "rate_pcv_medical_exempt",
+    "short_name": "pneumococcal (PCV) medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from pneumococcal (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the pneumococcal (PCV) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from pneumococcal (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv_nonmedical_exempt": {
+    "id": "rate_pcv_nonmedical_exempt",
+    "short_name": "pneumococcal (PCV) non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from pneumococcal (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the pneumococcal (PCV) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from pneumococcal (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_covid": {
+    "id": "rate_covid",
+    "short_name": "COVID-19 coverage",
+    "long_name": "Proportion of students up to date for COVID-19 vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for COVID-19 vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for COVID-19 vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for COVID-19 vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_covid_medical_exempt": {
+    "id": "rate_covid_medical_exempt",
+    "short_name": "COVID-19 medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from COVID-19 vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the COVID-19 vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from COVID-19 vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "rate_covid_nonmedical_exempt": {
+    "id": "rate_covid_nonmedical_exempt",
+    "short_name": "COVID-19 non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical exemption from COVID-19 vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption from the COVID-19 vaccination requirement.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a non-medical exemption from COVID-19 vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_mmr_enrolled": {
+    "id": "N_mmr_enrolled",
+    "short_name": "MMR enrollment",
+    "long_name": "Number of students enrolled in the grades where measles-mumps-rubella (MMR) is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the measles-mumps-rubella (MMR) percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the measles-mumps-rubella (MMR) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where measles-mumps-rubella (MMR) is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_dtap_enrolled": {
+    "id": "N_dtap_enrolled",
+    "short_name": "DTaP enrollment",
+    "long_name": "Number of students enrolled in the grades where diphtheria-tetanus-pertussis (DTaP) is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the diphtheria-tetanus-pertussis (DTaP) percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the diphtheria-tetanus-pertussis (DTaP) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where diphtheria-tetanus-pertussis (DTaP) is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_tdap_enrolled": {
+    "id": "N_tdap_enrolled",
+    "short_name": "Tdap enrollment",
+    "long_name": "Number of students enrolled in the grades where tetanus-diphtheria-pertussis (Tdap) is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the tetanus-diphtheria-pertussis (Tdap) percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the tetanus-diphtheria-pertussis (Tdap) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where tetanus-diphtheria-pertussis (Tdap) is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_polio_enrolled": {
+    "id": "N_polio_enrolled",
+    "short_name": "Polio enrollment",
+    "long_name": "Number of students enrolled in the grades where poliovirus is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the poliovirus percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the poliovirus requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where poliovirus is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b_enrolled": {
+    "id": "N_hep_b_enrolled",
+    "short_name": "Hepatitis B enrollment",
+    "long_name": "Number of students enrolled in the grades where hepatitis B is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the hepatitis B percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the hepatitis B requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where hepatitis B is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_varicella_enrolled": {
+    "id": "N_varicella_enrolled",
+    "short_name": "Varicella enrollment",
+    "long_name": "Number of students enrolled in the grades where varicella is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the varicella percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the varicella requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where varicella is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_hib_enrolled": {
+    "id": "N_hib_enrolled",
+    "short_name": "Hib enrollment",
+    "long_name": "Number of students enrolled in the grades where Haemophilus influenzae type b (Hib) is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the Haemophilus influenzae type b (Hib) percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the Haemophilus influenzae type b (Hib) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where Haemophilus influenzae type b (Hib) is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_pcv_enrolled": {
+    "id": "N_pcv_enrolled",
+    "short_name": "Pneumococcal (PCV) enrollment",
+    "long_name": "Number of students enrolled in the grades where pneumococcal conjugate (PCV) is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the pneumococcal conjugate (PCV) percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the pneumococcal conjugate (PCV) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where pneumococcal conjugate (PCV) is required.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "co_school_immunization"
+      }
+    ]
+  },
+  "N_covid_enrolled": {
+    "id": "N_covid_enrolled",
+    "short_name": "COVID-19 enrollment",
+    "long_name": "Number of students enrolled in the grades where COVID-19 vaccination is required",
+    "category": "immunization",
+    "short_description": "Enrollment used as the denominator for the COVID-19 vaccination percentages.",
+    "long_description": "Count of students enrolled in the grades subject to the COVID-19 vaccination requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+    "statement": "In {location}, {value} students were enrolled in grades where COVID-19 vaccination is required.",
+    "measure_type": "Count",
+    "unit": "Students",
     "time_resolution": "Year",
     "sources": [
       {
@@ -583,7 +617,7 @@
       "url": "https://data.colorado.gov/dataset/CDPHE-Colorado-School-and-Child-Care-Immunization-/3b5w-8ggf",
       "organization": "Colorado Department of Public Health and Environment",
       "organization_url": "https://cdphe.colorado.gov/",
-      "description": "County-level antigen-specific medical and non-medical exemption rates from CDPHE, pulled from the Colorado Information Marketplace (Socrata 3b5w-8ggf) / CDPHE ArcGIS Open Data.",
+      "description": "County-level antigen-specific immunization COVERAGE and EXEMPTION rates from CDPHE, pulled from the Colorado Information Marketplace (Socrata 3b5w-8ggf) / CDPHE ArcGIS Open Data, for child care/preschool, kindergarten and K-12. COLUMN LAYOUT -- one row per county/year/grade, and three columns per vaccine, so every column means the same thing on every row. For each of the nine vaccines (MMR, DTaP, Tdap, polio, hepatitis B, varicella, Hib, PCV, COVID-19): rate_<vaccine> is CDPHE's \"Fully Immunized\" figure, i.e. coverage for that vaccine, and carries the same meaning here as in every other state in this collection; rate_<vaccine>_medical_exempt and rate_<vaccine>_nonmedical_exempt are that vaccine's two exemption rates. Coverage and exemptions are separate columns and must not be combined: an exempt student may still have been vaccinated, so the exemption rate is not one minus coverage, and the three columns do not sum to 1 -- CDPHE also publishes \"In Process\", \"Incomplete Record\" and \"No Record\", which are not ingested. DENOMINATORS -- N_<vaccine>_enrolled is per VACCINE, not per row: CDPHE assesses each vaccine over the grades that require it, so in Adams County 2021/2022 the Tdap denominator is 47,061 against 85,200 for the K-12 vaccines. There is no single N_enrolled for a row; each vaccine's denominator is shared by its coverage and its two exemption columns. SOURCE DUPLICATE -- Larimer County's 2022/2023 Tdap records appear twice, once with the published figures and once with 0 throughout; the figures are kept.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
   }

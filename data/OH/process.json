@@ -5,78 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:47",
       "frequency": 0,
-      "last_run": "2026-02-05 10:04:34",
-      "run_time": 1.293,
+      "run_time": 0.07,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "New names:",
-          "* `` -> `...1`",
-          "* `` -> `...2`",
-          "* `` -> `...3`",
-          "* `` -> `...4`",
-          "* `` -> `...5`",
-          "* `` -> `...6`",
-          "* `` -> `...7`",
-          "* `` -> `...8`",
-          "* `` -> `...9`",
-          "* `` -> `...10`",
-          "* `` -> `...11`",
-          "* `` -> `...12`",
-          "* `` -> `...13`",
-          "* `` -> `...14`",
-          "* `` -> `...15`",
-          "* `` -> `...16`",
-          "* `` -> `...17`",
-          "* `` -> `...18`",
-          "* `` -> `...19`",
-          "* `` -> `...20`",
-          "* `` -> `...21`",
-          "* `` -> `...22`",
-          "* `` -> `...23`",
-          "* `` -> `...24`",
-          "* `` -> `...25`",
-          "* `` -> `...26`",
-          "* `` -> `...27`",
-          "* `` -> `...28`",
-          "* `` -> `...29`",
-          "* `` -> `...30`",
-          "* `` -> `...31`",
-          "* `` -> `...32`",
-          "* `` -> `...33`",
-          "* `` -> `...34`",
-          "* `` -> `...35`",
-          "* `` -> `...36`",
-          "* `` -> `...37`",
-          "* `` -> `...38`",
-          "* `` -> `...39`",
-          "* `` -> `...40`",
-          "* `` -> `...41`",
-          "* `` -> `...42`"
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/OH/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "hash": "f5cf98611014cdbeec41f680d8df5163"
   },
   "standard_state": {
-    "./data/OH/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/OH/standard/data.csv.gz": "4f4735dcc8daa8e3d842382fb4d26ba7"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OH/measure_info.json": "19755b3255005e4a91ca2b08356e0c80",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OH/standard/data.csv.gz": "2ad18b499e5b20d56962e55e6b8df1af"
   },
-  "script_hash": "c094017a0c9f7535cb69f2660272ce29"
+  "script_hash": "bcc0a730dd2e96a358267e18dbeea9d8"
 }

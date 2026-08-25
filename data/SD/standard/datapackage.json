@@ -9,14 +9,40 @@
   },
   "resources": [
     {
-      "bytes": 48403,
-      "encoding": "ISO-8859-1",
-      "md5": "15cac8c8a43e4b4fd9cbd61bb2f6b33f",
+      "bytes": 58778,
+      "encoding": "windows-1252",
+      "md5": "43ee9b560e4cbc08c0b567cc9a822cff",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
-      "versions": {},
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 07:17:55 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "adding standard files & unzip gz files"
+        ]
+      },
       "source": [],
+      "data_format": "wide",
       "ids": [
         {
           "variable": "geography"
@@ -25,189 +51,197 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-02-05 10:01:57.054652",
-      "last_modified": "2026-02-05 10:01:57.054652",
+      "created": "2026-08-05 09:48:13.598454",
+      "last_modified": "2026-08-25 14:47:52.474613",
       "vintage": {},
-      "row_count": 4137,
-      "entity_count": 63,
+      "row_count": 4718,
+      "entity_count": 65,
       "schema": {
         "fields": [
           {
             "name": "time",
-            "duplicates": 4130,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4711,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
-              "12-31-2018": 591,
-              "12-31-2019": 591,
-              "12-31-2020": 591,
-              "12-31-2021": 591,
-              "12-31-2022": 591,
-              "12-31-2023": 591,
-              "12-31-2024": 591
+              "2017-09-01": 674,
+              "2018-09-01": 674,
+              "2019-09-01": 674,
+              "2020-09-01": 674,
+              "2021-09-01": 674,
+              "2022-09-01": 674,
+              "2023-09-01": 674
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 4653,
+            "info": [],
+            "time_range": [0, 6],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Aurora": 56,
+              "Beadle": 112,
+              "Bennett": 42,
+              "Bon Homme": 84,
+              "Brookings": 126,
+              "Brown": 175,
+              "Brule": 49,
+              "Butte": 35,
+              "Campbell": 21,
+              "Charles Mix": 91,
+              "Clark": 84,
+              "Clay": 35,
+              "Codington": 126,
+              "Corson": 77,
+              "Custer": 28,
+              "Davison": 98,
+              "Day": 42,
+              "Deuel": 21,
+              "Dewey": 70,
+              "Douglas": 35,
+              "Edmunds": 77,
+              "Fall River": 49,
+              "Faulk": 49,
+              "Grant": 70,
+              "Gregory": 56,
+              "Haakon": 49,
+              "Hamlin": 63,
+              "Hand": 28,
+              "Hanson": 63,
+              "Harding": 42,
+              "Hughes": 77,
+              "Hutchinson": 133,
+              "Hyde": 28,
+              "Jackson": 42,
+              "Jerauld": 28,
+              "Jones": 28,
+              "Kingsbury": 56,
+              "Lake": 133,
+              "Lawrence": 35,
+              "Lincoln": 133,
+              "Lyman": 49,
+              "Marshall": 56,
+              "McCook": 84,
+              "McPherson": 56,
+              "Meade": 119,
+              "Mellette": 35,
+              "Miner": 21,
+              "Minnehaha": 413,
+              "Moody": 49,
+              "Oglala Lakota": 98,
+              "Pennington": 350,
+              "Perkins": 21,
+              "Potter": 28,
+              "Roberts": 91,
+              "Sanborn": 42,
+              "Spink": 84,
+              "Stanley": 28,
+              "Sully": 28,
+              "Todd": 126,
+              "Tripp": 35,
+              "Turner": 63,
+              "Union": 63,
+              "Walworth": 42,
+              "Yankton": 70,
+              "Ziebach": 21
             }
           },
           {
             "name": "geography",
-            "duplicates": 4074,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4653,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
-              "46003": 49,
-              "46005": 105,
-              "46007": 35,
-              "46009": 77,
-              "46011": 119,
-              "46013": 168,
-              "46015": 42,
-              "46019": 28,
-              "46021": 14,
-              "46023": 84,
-              "46025": 77,
-              "46027": 28,
-              "46029": 119,
-              "46031": 70,
-              "46033": 21,
-              "46035": 91,
-              "46037": 35,
-              "46039": 14,
-              "46041": 63,
-              "46043": 28,
-              "46045": 70,
-              "46047": 42,
-              "46049": 42,
-              "46051": 63,
-              "46053": 49,
-              "46055": 42,
-              "46057": 56,
-              "46059": 21,
-              "46061": 56,
-              "46063": 35,
-              "46065": 70,
-              "46067": 126,
-              "46069": 21,
-              "46071": 35,
-              "46073": 21,
-              "46075": 21,
-              "46077": 49,
-              "46079": 126,
-              "46081": 28,
-              "46083": 126,
-              "46085": 42,
-              "46091": 49,
-              "46093": 112,
-              "46095": 28,
-              "46097": 14,
-              "46099": 406,
-              "46101": 42,
-              "46102": 91,
-              "46103": 343,
-              "46105": 14,
-              "46107": 21,
-              "46109": 84,
-              "46111": 35,
-              "46115": 77,
-              "46117": 21,
-              "46119": 21,
-              "46121": 119,
-              "46123": 28,
-              "46125": 56,
-              "46127": 56,
-              "46129": 35,
-              "46135": 63,
-              "46137": 14
+              "46003": 56,
+              "46005": 112,
+              "46007": 42,
+              "46009": 84,
+              "46011": 126,
+              "46013": 175,
+              "46015": 49,
+              "46019": 35,
+              "46021": 21,
+              "46023": 91,
+              "46025": 84,
+              "46027": 35,
+              "46029": 126,
+              "46031": 77,
+              "46033": 28,
+              "46035": 98,
+              "46037": 42,
+              "46039": 21,
+              "46041": 70,
+              "46043": 35,
+              "46045": 77,
+              "46047": 49,
+              "46049": 49,
+              "46051": 70,
+              "46053": 56,
+              "46055": 49,
+              "46057": 63,
+              "46059": 28,
+              "46061": 63,
+              "46063": 42,
+              "46065": 77,
+              "46067": 133,
+              "46069": 28,
+              "46071": 42,
+              "46073": 28,
+              "46075": 28,
+              "46077": 56,
+              "46079": 133,
+              "46081": 35,
+              "46083": 133,
+              "46085": 49,
+              "46087": 84,
+              "46089": 56,
+              "46091": 56,
+              "46093": 119,
+              "46095": 35,
+              "46097": 21,
+              "46099": 413,
+              "46101": 49,
+              "46102": 98,
+              "46103": 350,
+              "46105": 21,
+              "46107": 28,
+              "46109": 91,
+              "46111": 42,
+              "46115": 84,
+              "46117": 28,
+              "46119": 28,
+              "46121": 126,
+              "46123": 35,
+              "46125": 63,
+              "46127": 63,
+              "46129": 42,
+              "46135": 70,
+              "46137": 21
             }
           },
           {
-            "name": "county",
-            "duplicates": 4074,
-            "time_range": [
-              0,
-              6
-            ],
+            "name": "type",
+            "duplicates": 4716,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
-              "Aurora County": 49,
-              "Beadle County": 105,
-              "Bennett County": 35,
-              "Bon Homme County": 77,
-              "Brookings County": 119,
-              "Brown County": 168,
-              "Brule County": 42,
-              "Butte County": 28,
-              "Campbell County": 14,
-              "Charles Mix County": 84,
-              "Clark County": 77,
-              "Clay County": 28,
-              "Codington County": 119,
-              "Corson County": 70,
-              "Custer County": 21,
-              "Davison County": 91,
-              "Day County": 35,
-              "Deuel County": 14,
-              "Dewey County": 63,
-              "Douglas County": 28,
-              "Edmunds County": 70,
-              "Fall River County": 42,
-              "Faulk County": 42,
-              "Grant County": 63,
-              "Gregory County": 49,
-              "Haakon County": 42,
-              "Hamlin County": 56,
-              "Hand County": 21,
-              "Hanson County": 56,
-              "Harding County": 35,
-              "Hughes County": 70,
-              "Hutchinson County": 126,
-              "Hyde County": 21,
-              "Jackson County": 35,
-              "Jerauld County": 21,
-              "Jones County": 21,
-              "Kingsbury County": 49,
-              "Lake County": 126,
-              "Lawrence County": 28,
-              "Lincoln County": 126,
-              "Lyman County": 42,
-              "Marshall County": 49,
-              "Meade County": 112,
-              "Mellette County": 28,
-              "Miner County": 14,
-              "Minnehaha County": 406,
-              "Moody County": 42,
-              "Oglala Lakota County": 91,
-              "Pennington County": 343,
-              "Perkins County": 14,
-              "Potter County": 21,
-              "Roberts County": 84,
-              "Sanborn County": 35,
-              "Spink County": 77,
-              "Stanley County": 21,
-              "Sully County": 21,
-              "Todd County": 119,
-              "Tripp County": 28,
-              "Turner County": 56,
-              "Union County": 56,
-              "Walworth County": 35,
-              "Yankton County": 63,
-              "Ziebach County": 14
+              "county": 455,
+              "school": 4263
             }
           },
           {
             "name": "school_name",
-            "duplicates": 3546,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4108,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
@@ -268,6 +302,7 @@
               "Brandon Valley Distance Learning Academy Intermediate": 7,
               "Brandon Valley Intermediate": 7,
               "Brentwood Colony Elementary": 7,
+              "Bridgewater Emery Elementary": 7,
               "Bridgewater Emery Middle School": 7,
               "Britton Hecla Elementary": 7,
               "Britton Hecla Middle School": 7,
@@ -284,6 +319,8 @@
               "Camp Crook Elementary": 7,
               "Camridge Colony School": 7,
               "Camrose Colony Elementary": 7,
+              "Canistota Elementary": 7,
+              "Canistota Middle School": 7,
               "Canton Middle School": 7,
               "Canyon Lake Elementary": 7,
               "Castlewood Elementary": 7,
@@ -300,9 +337,9 @@
               "Chester Elementary": 7,
               "Chester Middle School": 7,
               "Cheyenne Elementary": 7,
+              "Cheyenne River-Eagle Butte Primary": 7,
               "Cheyenne River BIE Primary": 7,
               "Cheyenne River BIE Upper Elementary": 7,
-              "Cheyenne River-Eagle Butte Primary": 7,
               "Children's House Montessori Elementary": 7,
               "Choices Alternative school": 7,
               "Christ the King Elementary": 7,
@@ -346,7 +383,6 @@
               "Doland Elementary": 7,
               "Douglas Middle School": 7,
               "Dupree Elementary": 7,
-              "EO Lawrence (Canton)": 7,
               "Eagle Butte Primary": 7,
               "Eagle Butte Primary (Cheyenne River BIE)": 7,
               "Eagle Butte Upper Elementary": 7,
@@ -364,9 +400,12 @@
               "Endeavor Elementary": 7,
               "Enemy Swim Day School": 7,
               "Enning-Union Center Elementary": 7,
+              "EO Lawrence (Canton)": 7,
               "Estelline Elementary": 7,
               "Estelline Middle School": 7,
               "Ethan Elementary": 7,
+              "Eureka Elementary": 7,
+              "Eureka Middle School": 7,
               "Evergreen Colony": 7,
               "Explorer Elementary": 7,
               "Faith Elementary": 7,
@@ -400,11 +439,13 @@
               "Gettysburg Elementary": 7,
               "Gettysburg Middle School": 7,
               "Glendale Colony Elementary": 7,
+              "Golden View Colony School": 7,
               "Gracevale Colony": 7,
               "Grandview Elementary": 7,
               "Grant Deuel Elementary": 7,
               "GrantDeuel Jr. High": 7,
               "Grass Ranch Colony Elementary": 7,
+              "Grassland Colony Elementary": 7,
               "Greenwood Colony Elementary": 7,
               "Gregory Elementary": 7,
               "Gregory Jr. High": 7,
@@ -455,10 +496,10 @@
               "Iroquois Elementary": 7,
               "Iroquois Middle School": 7,
               "Isna Wica Owayawa (Loneman School)": 7,
-              "JDC": 7,
-              "JDC- Wanbec Wiconi Tipi": 7,
               "James Valley Christian Elementary": 7,
               "Jamesville Colony Elementary": 7,
+              "JDC": 7,
+              "JDC- Wanbec Wiconi Tipi": 7,
               "Jefferson Elementary - Pierre": 7,
               "Jefferson Elementary - Watertown": 7,
               "John Paul II Elementary": 7,
@@ -476,7 +517,6 @@
               "Knollwood Heights Elementary": 7,
               "Koch Elementary": 7,
               "L.B. Williams Elementary": 7,
-              "LB Williams Elementary": 7,
               "Lake Preston Elementary": 7,
               "Lake Preston Middle School": 7,
               "Lakeview Colony Elementary": 7,
@@ -488,11 +528,14 @@
               "Laura B. Anderson Elementary": 7,
               "Laura Ingalls Wilder Elementary": 7,
               "Lawrence Elementary": 7,
+              "LB Williams Elementary": 7,
               "Lead Deadwood Elementary": 7,
               "LeadDeadwood Middle School": 7,
               "Lemmon Elementary": 7,
               "Lennox Elementary": 7,
               "Lennox Intermediate": 7,
+              "Leola Elementary": 7,
+              "Leola Jr. High": 7,
               "Liberty Elementary": 7,
               "Liberty Elementary Sanborn": 7,
               "LifeScape Children's Specialty School": 7,
@@ -503,6 +546,7 @@
               "Little Wound Elementary": 7,
               "Little Wound Middle School": 7,
               "Littleburg Elementary": 7,
+              "Long Lake Colony Elementary": 7,
               "Longfellow Elementary": 7,
               "Longvalley Elementary": 7,
               "Lower Brule Elementary": 7,
@@ -523,11 +567,13 @@
               "Maxwell Colony Elementary": 7,
               "May Overby Elementary": 7,
               "Mayfield Colony Elementary": 7,
+              "McCook Central Elementary": 7,
+              "McCook Central Middle School": 7,
               "McCrossan Boys Ranch Middle School": 7,
               "McIntosh Elementary": 7,
               "McIntosh Middle School": 7,
-              "McKinley Elementary (Watertown)": 7,
               "McKinley Elementary - Pierre": 7,
+              "McKinley Elementary (Watertown)": 7,
               "McLaughlin Elementary": 7,
               "McLaughlin Middle School": 7,
               "Meadowbrook Elementary": 7,
@@ -547,13 +593,16 @@
               "Mitchell Christian Elementary": 7,
               "Mitchell Christian Middle School": 7,
               "Mitchell Middle School": 7,
-              "Mobridge Middle School": 7,
               "Mobridge-Pollock (Freeman Da": 7,
+              "Mobridge Middle School": 7,
               "Montessori School of Aberdeen Elementary": 7,
+              "Montrose Elementary": 7,
+              "Montrose Middle School": 7,
               "Mount Vernon Elementary": 7,
               "Mount Vernon Middle School": 7,
               "Mountain View Elementary": 7,
               "Murdo Elementary": 7,
+              "NA": 455,
               "New Beginnings": 7,
               "New Effington Elementary": 7,
               "New Elm Spring Colony Elementary": 7,
@@ -586,6 +635,7 @@
               "Onida Elementary": 7,
               "Onida Elementary  (AgarBluntOnida)": 7,
               "Opal Elementary": 7,
+              "Orland Colony Elementary": 7,
               "Our Home": 7,
               "Our Home ASAP": 7,
               "Our Home Rediscovery": 7,
@@ -625,6 +675,7 @@
               "Red Willow Colony School": 7,
               "Redfield Elementary": 7,
               "Redfield Middle School": 7,
+              "resource center 11": 7,
               "Reva Elementary": 7,
               "Riverside Colony Elementary": 7,
               "Robbinsdale Elementary": 7,
@@ -644,7 +695,6 @@
               "Rustic Acres Elementary": 7,
               "Rutland Elementary": 7,
               "Rutland Jr. High": 7,
-              "SDSBVI Elementary": 7,
               "Sacred Heart Elementary": 7,
               "Sacred Heart Middle School": 7,
               "Sanborn Central Elementary": 7,
@@ -652,6 +702,7 @@
               "Sapa Un Catholic Academy Elementary": 7,
               "Scotland Elementary": 7,
               "Scotland Middle School": 7,
+              "SDSBVI Elementary": 7,
               "Selby Elementary": 7,
               "Selby Middle School": 7,
               "Shamrock Colony Elementary": 7,
@@ -670,9 +721,9 @@
               "Sitting Bull (Little Eagle)": 7,
               "Sonia Sotomayor Elementary": 7,
               "South Canyon Elementary": 7,
+              "South Central- Bonesteel-Fai": 7,
               "South Central Elementary": 7,
               "South Central Middle School": 7,
-              "South Central- Bonesteel-Fai": 7,
               "South Dakota School for the Blind": 7,
               "South Middle School": 7,
               "South Park Elementary": 7,
@@ -680,8 +731,9 @@
               "Spark Alternative": 7,
               "Spearfish Middle School": 7,
               "Spink Colony Elementary": 7,
-              "Spring Creek Elementary": 7,
               "Spring Creek-Elk Mountain": 7,
+              "Spring Creek Colony Elementary": 7,
+              "Spring Creek Elementary": 7,
               "Spring Lake Colony Elementary": 7,
               "Spring Valley Colony Elementary": 7,
               "Springfield Elementary": 7,
@@ -694,6 +746,8 @@
               "St. Katharine Drexel Elementary": 7,
               "St. Lawrence Elementary": 7,
               "St. Martins Elementary": 7,
+              "St. Mary's- Dell Rapids": 7,
+              "St. Mary's-Salem": 7,
               "St. Mary's Elementary - Sioux Falls": 7,
               "St. Michael Elementary": 7,
               "St. Paul's Elementary": 7,
@@ -735,8 +789,8 @@
               "Todd County Middle School": 7,
               "Tri-Valley Elementary in Crooks": 7,
               "Trinity Lutheran Elementary": 7,
-              "Tripp Elementary": 7,
               "Tripp-Delmont Elementary": 7,
+              "Tripp Elementary": 7,
               "Tschetter Colony Elementary": 7,
               "Turtle Creek Elementary School": 7,
               "Tyndall Elementary": 7,
@@ -800,174 +854,525 @@
               "Worthing Elementary": 7,
               "Wounded Knee Elementary": 7,
               "Yankton Middle School": 7,
-              "Zion Luthern School": 7,
-              "resource center 11": 7
+              "Zion Luthern School": 7
             }
           },
           {
-            "name": "N_enrolled",
-            "duplicates": 3868,
-            "time_range": [
-              0,
-              6
-            ],
+            "name": "N_total_audited",
+            "duplicates": 4321,
+            "info": {
+              "id": "N_total_audited",
+              "short_name": "Records audited",
+              "long_name": "Number of student records audited",
+              "category": "immunization",
+              "short_description": "Number of student immunization records audited.",
+              "long_description": "Count of student records the state audited for this report, used as the denominator for the audited counts alongside it.",
+              "statement": "In {location}, {value} student records were audited.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
-            "missing": 848,
-            "mean": 45.480693,
-            "sd": 58.856244,
+            "missing": 861,
+            "mean": 78.530983,
+            "sd": 237.497206,
             "min": 0,
-            "max": 465
+            "max": 4111
           },
           {
             "name": "N_hep_a",
-            "duplicates": 3899,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4359,
+            "info": {
+              "id": "N_hep_a",
+              "short_name": "Hepatitis A students vaccinated",
+              "long_name": "Number of students up to date for hepatitis A vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for hepatitis A vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for hepatitis A vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for hepatitis A vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 30.087986,
-            "sd": 46.895156,
+            "mean": 53.362018,
+            "sd": 184.583632,
             "min": 0,
-            "max": 387
+            "max": 3611
           },
           {
             "name": "N_hep_b",
-            "duplicates": 3890,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4337,
+            "info": {
+              "id": "N_hep_b",
+              "short_name": "Hepatitis B students vaccinated",
+              "long_name": "Number of students up to date for hepatitis B vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for hepatitis B vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for hepatitis B vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for hepatitis B vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 34.262509,
-            "sd": 52.76736,
+            "mean": 60.819415,
+            "sd": 203.770319,
             "min": 0,
-            "max": 445
+            "max": 3875
           },
           {
             "name": "N_dtap",
-            "duplicates": 4001,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4476,
+            "info": {
+              "id": "N_dtap",
+              "short_name": "DTaP/Tdap students vaccinated",
+              "long_name": "Number of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 15.603336,
-            "sd": 26.697877,
+            "mean": 27.744807,
+            "sd": 83.320137,
             "min": 0,
-            "max": 232
+            "max": 1499
           },
           {
             "name": "N_tdap",
-            "duplicates": 3900,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4408,
+            "info": {
+              "id": "N_tdap",
+              "short_name": "Tdap students vaccinated",
+              "long_name": "Number of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 18.028281,
-            "sd": 49.862567,
+            "mean": 31.923696,
+            "sd": 133.915343,
             "min": 0,
-            "max": 457
+            "max": 2924
           },
           {
             "name": "N_polio",
-            "duplicates": 3997,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4472,
+            "info": {
+              "id": "N_polio",
+              "short_name": "Polio students vaccinated",
+              "long_name": "Number of students up to date for polio (IPV/OPV) vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for polio (IPV/OPV) vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for polio (IPV/OPV) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for polio (IPV/OPV) vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 15.639352,
-            "sd": 26.74121,
+            "mean": 27.824502,
+            "sd": 83.457629,
             "min": 0,
-            "max": 231
+            "max": 1499
           },
           {
-            "name": "N_mmr",
-            "duplicates": 3997,
-            "time_range": [
-              0,
-              6
-            ],
+            "name": "N_mmr_k",
+            "duplicates": 4470,
+            "info": {
+              "id": "N_mmr_k",
+              "short_name": "Kindergarten MMR vaccinated students vaccinated",
+              "long_name": "Number of students up to date for a record of MMR vaccination in kindergarten vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for a record of MMR vaccination in kindergarten vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for a record of MMR vaccination in kindergarten vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for a record of MMR vaccination in kindergarten vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 15.652889,
-            "sd": 26.79737,
+            "mean": 27.848665,
+            "sd": 83.589247,
             "min": 0,
-            "max": 234
+            "max": 1509
           },
           {
             "name": "N_varicella",
-            "duplicates": 4000,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4471,
+            "info": {
+              "id": "N_varicella",
+              "short_name": "Varicella students vaccinated",
+              "long_name": "Number of students up to date for varicella (chickenpox) vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for varicella (chickenpox) vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for varicella (chickenpox) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for varicella (chickenpox) vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 15.524776,
-            "sd": 26.572197,
+            "mean": 27.61933,
+            "sd": 82.747143,
             "min": 0,
-            "max": 232
+            "max": 1501
           },
           {
-            "name": "N_menacwy",
-            "duplicates": 3898,
-            "time_range": [
-              0,
-              6
-            ],
+            "name": "N_men_6th",
+            "duplicates": 4399,
+            "info": {
+              "id": "N_men_6th",
+              "short_name": "6th grade meningococcal vaccinated students vaccinated",
+              "long_name": "Number of students up to date for a record of meningococcal vaccination in 6th grade vaccination",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for a record of meningococcal vaccination in 6th grade vaccination.",
+              "long_description": "Count of assessed school students reported as up to date for a record of meningococcal vaccination in 6th grade vaccination. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students were up to date for a record of meningococcal vaccination in 6th grade vaccination.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 17.942954,
-            "sd": 49.8076,
+            "mean": 31.771513,
+            "sd": 133.653468,
             "min": 0,
-            "max": 458
+            "max": 2915
           },
           {
             "name": "N_medical_exempt",
-            "duplicates": 4129,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4706,
+            "info": {
+              "id": "N_medical_exempt",
+              "short_name": "Medical exemptions (count)",
+              "long_name": "Number of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+              "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 0.054387,
-            "sd": 0.377934,
+            "mean": 0.096651,
+            "sd": 0.609432,
             "min": 0,
             "max": 14
           },
           {
             "name": "N_religious_exempt",
-            "duplicates": 4117,
-            "time_range": [
-              0,
-              6
-            ],
+            "duplicates": 4665,
+            "info": {
+              "id": "N_religious_exempt",
+              "short_name": "Religious exemptions (count)",
+              "long_name": "Number of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "sd_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
             "type": "integer",
             "missing": 0,
-            "mean": 1.070099,
-            "sd": 2.466393,
+            "mean": 1.941925,
+            "sd": 6.835201,
             "min": 0,
-            "max": 88
+            "max": 193
           }
         ]
       },
-      "sha512": "ed97a1acca6157a425ba4e47e9d805e6f7c3ae1fc44281069a1ce2642cc3399a52ca24e6543c77de401b5c1ac7853e405e9a1d2e5837c4e9a78cb9a4b2ce279e"
+      "sha512": "915bad4cf29c8face25e7a7aa42cc500a761d68e6e1a86c04d6672770938827ef4ba1c6c28bdc4ee328827d214ac79e0b887accce38f3a376426418281e96105"
     }
   ],
   "measure_info": {
-    "example_variable": {
-      "id": "example_variable",
-      "sources": [],
-      "citations": []
+    "N_total_audited": {
+      "id": "N_total_audited",
+      "short_name": "Records audited",
+      "long_name": "Number of student records audited",
+      "category": "immunization",
+      "short_description": "Number of student immunization records audited.",
+      "long_description": "Count of student records the state audited for this report, used as the denominator for the audited counts alongside it.",
+      "statement": "In {location}, {value} student records were audited.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_hep_a": {
+      "id": "N_hep_a",
+      "short_name": "Hepatitis A students vaccinated",
+      "long_name": "Number of students up to date for hepatitis A vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for hepatitis A vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for hepatitis A vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for hepatitis A vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_hep_b": {
+      "id": "N_hep_b",
+      "short_name": "Hepatitis B students vaccinated",
+      "long_name": "Number of students up to date for hepatitis B vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for hepatitis B vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for hepatitis B vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for hepatitis B vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_dtap": {
+      "id": "N_dtap",
+      "short_name": "DTaP/Tdap students vaccinated",
+      "long_name": "Number of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_tdap": {
+      "id": "N_tdap",
+      "short_name": "Tdap students vaccinated",
+      "long_name": "Number of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_polio": {
+      "id": "N_polio",
+      "short_name": "Polio students vaccinated",
+      "long_name": "Number of students up to date for polio (IPV/OPV) vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for polio (IPV/OPV) vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for polio (IPV/OPV) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for polio (IPV/OPV) vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_mmr_k": {
+      "id": "N_mmr_k",
+      "short_name": "Kindergarten MMR vaccinated students vaccinated",
+      "long_name": "Number of students up to date for a record of MMR vaccination in kindergarten vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for a record of MMR vaccination in kindergarten vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for a record of MMR vaccination in kindergarten vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for a record of MMR vaccination in kindergarten vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_varicella": {
+      "id": "N_varicella",
+      "short_name": "Varicella students vaccinated",
+      "long_name": "Number of students up to date for varicella (chickenpox) vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for varicella (chickenpox) vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for varicella (chickenpox) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for varicella (chickenpox) vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_men_6th": {
+      "id": "N_men_6th",
+      "short_name": "6th grade meningococcal vaccinated students vaccinated",
+      "long_name": "Number of students up to date for a record of meningococcal vaccination in 6th grade vaccination",
+      "category": "immunization",
+      "short_description": "Number of assessed school students up to date for a record of meningococcal vaccination in 6th grade vaccination.",
+      "long_description": "Count of assessed school students reported as up to date for a record of meningococcal vaccination in 6th grade vaccination. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students were up to date for a record of meningococcal vaccination in 6th grade vaccination.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_medical_exempt": {
+      "id": "N_medical_exempt",
+      "short_name": "Medical exemptions (count)",
+      "long_name": "Number of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+      "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "N_religious_exempt": {
+      "id": "N_religious_exempt",
+      "short_name": "Religious exemptions (count)",
+      "long_name": "Number of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "sd_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "sd_school_immunization": {
+        "name": "South Dakota School Immunization Data",
+        "url": "https://doh.sd.gov/health-data-reports/data-dashboards/school-immunization-dashboard",
+        "organization": "South Dakota Department of Health",
+        "organization_url": "https://doh.sd.gov/",
+        "description": "School-level immunization counts by antigen and exemption from the South Dakota DOH school immunization data.",
+        "restrictions": "Public data published by the source agency; no access restrictions."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
     }
   }
 }

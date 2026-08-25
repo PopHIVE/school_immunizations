@@ -5,103 +5,82 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:02",
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:04",
-      "run_time": 0.874,
+      "run_time": 0.02,
       "last_status": {
-        "log": [
-          "\u2500\u2500 Attaching core tidyverse packages \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 tidyverse 2.0.0 \u2500\u2500",
-          "\u2714 dplyr     1.1.4     \u2714 readr     2.1.6",
-          "\u2714 forcats   1.0.1     \u2714 stringr   1.6.0",
-          "\u2714 ggplot2   4.0.1     \u2714 tibble    3.3.0",
-          "\u2714 lubridate 1.9.4     \u2714 tidyr     1.3.2",
-          "\u2714 purrr     1.2.0     ",
-          "\u2500\u2500 Conflicts \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500 tidyverse_conflicts() \u2500\u2500",
-          "\u2716 dplyr::filter() masks stats::filter()",
-          "\u2716 dplyr::lag()    masks stats::lag()",
-          "\u2139 Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors",
-          "Rows: 3314 Columns: 3",
-          "\u2819 processing source AZ (../AZ/ingest.R)\r",
-          "\u2819 processing source AZ (../AZ/ingest.R)\r\u2500\u2500 Column specification \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500",
-          "\u2819 processing source AZ (../AZ/ingest.R)\rDelimiter: \"\\t\"",
-          "chr (3): geography, geography_name, state",
-          "",
-          "\u2819 processing source AZ (../AZ/ingest.R)\r",
-          "",
-          "\u2819 processing source AZ (../AZ/ingest.R)\r\u2139 Use `spec()` to retrieve the full column specification for this data.",
-          "\u2819 processing source AZ (../AZ/ingest.R)\r\u2139 Specify the column types or set `show_col_types = FALSE` to quiet this message.",
-          "\u2819 processing source AZ (../AZ/ingest.R)\r"
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "2025-11-09 22:41:50",
+  "checked": "2026-08-25 15:29:05",
   "check_results": {
-    "./data/AZ/raw/az_immunization_kg_2010_2011.csv": {
+    "data/AZ/raw/az_immunization_kg_2010_2011.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2011_2012.csv": {
+    "data/AZ/raw/az_immunization_kg_2011_2012.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2012_2013.csv": {
+    "data/AZ/raw/az_immunization_kg_2012_2013.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2013_2014.csv": {
+    "data/AZ/raw/az_immunization_kg_2013_2014.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2014_2015.csv": {
+    "data/AZ/raw/az_immunization_kg_2014_2015.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2015_2016.csv": {
+    "data/AZ/raw/az_immunization_kg_2015_2016.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2016_2017.csv": {
+    "data/AZ/raw/az_immunization_kg_2016_2017.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2017_2018.csv": {
+    "data/AZ/raw/az_immunization_kg_2017_2018.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2018_2019.csv": {
+    "data/AZ/raw/az_immunization_kg_2018_2019.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2019_2020.csv": {
+    "data/AZ/raw/az_immunization_kg_2019_2020.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2020_2021.csv": {
+    "data/AZ/raw/az_immunization_kg_2020_2021.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2021_2022.csv": {
+    "data/AZ/raw/az_immunization_kg_2021_2022.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2022_2023.csv": {
+    "data/AZ/raw/az_immunization_kg_2022_2023.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/raw/az_immunization_kg_2023_2024.csv": {
+    "data/AZ/raw/az_immunization_kg_2023_2024.csv": {
       "data": "not_compressed"
     },
-    "./data/AZ/standard/data.csv.gz": []
+    "data/AZ/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
   },
   "raw_state": {
-    "raw/az_immunization_kg_2010_2011.csv": "ff293f613544c7d6031b823c321f0032",
-    "raw/az_immunization_kg_2011_2012.csv": "941ecaebd0108531284f8b27354053f0",
-    "raw/az_immunization_kg_2012_2013.csv": "c9dc83c6cf751258b8eae0dfc6a09ca9",
-    "raw/az_immunization_kg_2013_2014.csv": "2783a3d39ba3c7e2d6e796dfff79f4dc",
-    "raw/az_immunization_kg_2014_2015.csv": "15714ab35c1a61999f9b92d08ce87f3e",
-    "raw/az_immunization_kg_2015_2016.csv": "67cf4103a89c6c28b2e0507a4915ad6a",
-    "raw/az_immunization_kg_2016_2017.csv": "27b98ca5867f7d37a8bcba85d55066cb",
-    "raw/az_immunization_kg_2017_2018.csv": "8a3744cb3065494008f64a3dcbf3b9db",
-    "raw/az_immunization_kg_2018_2019.csv": "66b8454089963f6e8d80b6572057406d",
-    "raw/az_immunization_kg_2019_2020.csv": "3f3b8af1bca4a48cb9dccc74758cb9dc",
-    "raw/az_immunization_kg_2020_2021.csv": "4854e6a274e197d181a3a3fb689561fc",
-    "raw/az_immunization_kg_2021_2022.csv": "75e4b064241f90b7f1d50957feefa45b",
-    "raw/az_immunization_kg_2022_2023.csv": "204cac3f677209e3e963288adaabb96c",
-    "raw/az_immunization_kg_2023_2024.csv": "0d639383e5c856c88a127011e62de459"
+    "raw/az_immunization_kg_2010_2011.csv": "f3450fbb76262bf4875a46d52fb98289",
+    "raw/az_immunization_kg_2011_2012.csv": "28775c4aa4884248a83d9f6a3e5d14e2",
+    "raw/az_immunization_kg_2012_2013.csv": "484a650edf1c3d240ab375e0c28d67bf",
+    "raw/az_immunization_kg_2013_2014.csv": "eb134b134cd1b8a70625f2ee8d158382",
+    "raw/az_immunization_kg_2014_2015.csv": "9d1390f39479b693c70a4a30a1fef6d3",
+    "raw/az_immunization_kg_2015_2016.csv": "6f0e5582296b54c5ca2193b1a7023a75",
+    "raw/az_immunization_kg_2016_2017.csv": "b57dd202cdf410e8e35a8f87a89c4452",
+    "raw/az_immunization_kg_2017_2018.csv": "bcfa172e52e98c9ceb79efcd8db407ff",
+    "raw/az_immunization_kg_2018_2019.csv": "aed5303255f4385cc75c698037742477",
+    "raw/az_immunization_kg_2019_2020.csv": "748456d48e2367f3f9512a1c9438f90e",
+    "raw/az_immunization_kg_2020_2021.csv": "9dbb6a8ba6aae7b68454581b2831f119",
+    "raw/az_immunization_kg_2021_2022.csv": "d6d23172ba7585294bfa508f1f30602e",
+    "raw/az_immunization_kg_2022_2023.csv": "d05d2028c83e7c1c2c4353ea3bd7fbb2",
+    "raw/az_immunization_kg_2023_2024.csv": "985239463fa9e3877cc6d158b70c8f3a"
   },
   "standard_state": {
-    "../AZ/measure_info.json": "59dd53d767046c56429d4976c2e38294",
-    "../AZ/standard/data.csv": "00f0c86674072353b02278e2099e61b8",
-    "../AZ/standard/data.csv.gz": "a7b50339c52cc6ca664c618d0f7e6fa2"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AZ/measure_info.json": "230f52881b0bcb5777748cc2888a8b9b",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AZ/standard/data.csv.gz": "8489234ccec03a0291a19b6309b57cd1"
   },
-  "script_hash": "3de9e1cd7dc354ea008a60031555c1f6"
+  "script_hash": "6f799ea3497cdaa9a1e5d42501121333"
 }

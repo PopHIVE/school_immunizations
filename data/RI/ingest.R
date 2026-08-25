@@ -3,7 +3,7 @@ library(dplyr)
 library(readxl)
 library(stringr)
 library(vroom)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -11,21 +11,10 @@ raw_state <- as.list(tools::md5sum(list.files(
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
-parse_num <- function(x) {
-  x <- str_squish(as.character(x))
-  is_lt <- str_detect(x, "^<")
-  x <- str_remove(x, "^<\\s*")
-  x <- str_replace_all(x, ",", "")
-  out <- suppressWarnings(as.numeric(x))
-  if_else(is_lt & !is.na(out), out / 2, out)
-}
-
-as_pct_points <- function(x) {
-  if (all(is.na(x))) return(x)
-  if (max(x, na.rm = TRUE) <= 1) return(x * 100)
-  x
-}
-
+# The workbook publishes proportions (0.0094 = 0.94%), so the scale is declared
+# rather than inferred. A "<x" cell is a suppressed small cell: it now becomes
+# NA, instead of the old x/2 substitution, which invented a value the source
+# never reported.
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
 
@@ -35,9 +24,18 @@ if (!identical(process$raw_state, raw_state) ||
     col_names = FALSE
   )
 
+  # Row 1 of the workbook reads "Religious exemption rates", and the per-vaccine
+  # columns beneath it are exactly that -- the share of students with a
+  # religious exemption for each series, not the share vaccinated. They are
+  # named as exemptions accordingly; the coverage columns are left missing,
+  # because RIDOH publishes no coverage here and 1 - exemption is not coverage
+  # (a student can be unvaccinated without an exemption, and an exempt student
+  # may still have had the vaccine).
   colnames(ri_raw)[1:9] <- c(
     "state_abbr", "school_year", "grade_raw",
-    "pct_mmr", "pct_dtap", "pct_polio", "pct_varicella", "pct_mcv", "pct_hep_b"
+    "pct_mmr_religious_exempt", "pct_dtap_religious_exempt",
+    "pct_polio_religious_exempt", "pct_varicella_religious_exempt",
+    "pct_menacwy_religious_exempt", "pct_hep_b_religious_exempt"
   )
 
   ri_clean <- ri_raw %>%
@@ -51,11 +49,18 @@ if (!identical(process$raw_state, raw_state) ||
       ),
       start_year = str_extract(school_year, "^\\d{4}"),
       time = suppressWarnings(as.Date(paste0(start_year, "-09-01"), format = "%Y-%m-%d")),
-      pct_mmr = as_pct_points(parse_num(pct_mmr)),
-      pct_dtap = as_pct_points(parse_num(pct_dtap)),
-      pct_polio = as_pct_points(parse_num(pct_polio)),
-      pct_varicella = as_pct_points(parse_num(pct_varicella)),
-      pct_hep_b = as_pct_points(parse_num(pct_hep_b))
+      pct_mmr_religious_exempt =
+        parse_rate(pct_mmr_religious_exempt, from = "rate"),
+      pct_dtap_religious_exempt =
+        parse_rate(pct_dtap_religious_exempt, from = "rate"),
+      pct_polio_religious_exempt =
+        parse_rate(pct_polio_religious_exempt, from = "rate"),
+      pct_varicella_religious_exempt =
+        parse_rate(pct_varicella_religious_exempt, from = "rate"),
+      pct_menacwy_religious_exempt =
+        parse_rate(pct_menacwy_religious_exempt, from = "rate"),
+      pct_hep_b_religious_exempt =
+        parse_rate(pct_hep_b_religious_exempt, from = "rate")
     ) %>%
     filter(!is.na(state_abbr), state_abbr != "", !is.na(time))
 
@@ -75,6 +80,14 @@ if (!identical(process$raw_state, raw_state) ||
       N_personal_exempt = NA_real_,
       N_medical_exempt = NA_real_,
       N_full_exempt = NA_real_,
+      # Coverage: not published by this source (see the header note above).
+      pct_dtap = NA_real_,
+      pct_polio = NA_real_,
+      pct_mmr = NA_real_,
+      pct_hep_b = NA_real_,
+      pct_varicella = NA_real_,
+      # RIDOH reports religious exemptions per vaccine series only: no medical
+      # or any-reason figure, and no all-series total.
       pct_personal_exempt = NA_real_,
       pct_medical_exempt = NA_real_,
       pct_full_exempt = NA_real_
@@ -100,11 +113,17 @@ if (!identical(process$raw_state, raw_state) ||
       pct_varicella,
       pct_personal_exempt,
       pct_medical_exempt,
-      pct_full_exempt
+      pct_full_exempt,
+      pct_dtap_religious_exempt,
+      pct_polio_religious_exempt,
+      pct_mmr_religious_exempt,
+      pct_hep_b_religious_exempt,
+      pct_varicella_religious_exempt,
+      pct_menacwy_religious_exempt
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Rhode Island"), "standard/data.csv.gz")
+  write_standard(data_out, "Rhode Island", "standard/data.csv.gz", from = "rate")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

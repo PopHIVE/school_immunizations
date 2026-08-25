@@ -5,20 +5,39 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:05",
       "frequency": 0,
-      "last_run": "2025-11-09 22:55:33",
-      "run_time": 0.03,
+      "run_time": 2.32,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
-  "raw_state": {
-    "raw/California Vaccine Exemption.xlsx": "afc9af9bff0a2fe109e292c89f243558",
-    "ingest.R": "8fb8dfb78d043d9f4d88b186f0118a7a"
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/CA/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CA/standard/data_grade7.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CA/standard/data_kindergarten.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
   },
-  "script_hash": "adb31c66319e62b0cb4529d4c73251df"
+  "raw_state": {
+    "raw/CA_7th_cdph_2019-20.xlsx": "610e1aac4d18abe06b5a7fd26b23eaf1",
+    "raw/CA_KG_cdph_2022-23.xlsx": "77c7fe7304ea3de7bfb6288407d419f1",
+    "raw/CA_KG_cdph_2023-24.xlsx": "aaf504f37388f6ef9c260847f6a09f5f",
+    "raw/CA_KG_cdph_2024-25.xlsx": "f6fbb8f94d381b14b930849e9f524c46",
+    "raw/California Vaccine Exemption.xlsx": "afc9af9bff0a2fe109e292c89f243558"
+  },
+  "script_hash": "510c2ed62dc9e3110f7a365b06f6c308",
+  "standard_state": {
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CA/measure_info.json": "90c59c8415750398dbf253c191d63b77",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CA/standard/data.csv.gz": "2ba558ef162ad11b4282fb2942e98da7",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CA/standard/data_grade7.csv.gz": "436c4c9f4bd7a3f8d1e8c7d3b4a21689",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CA/standard/data_kindergarten.csv.gz": "832c1081c54f49f1d762f7f6127c6661"
+  }
 }

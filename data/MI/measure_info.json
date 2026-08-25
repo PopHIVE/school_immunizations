@@ -33,16 +33,16 @@
       }
     ]
   },
-  "pct_complete": {
-    "id": "pct_complete",
+  "rate_complete": {
+    "id": "rate_complete",
     "short_name": "Up-to-date rate",
-    "long_name": "Percent of students up to date for all required vaccines",
+    "long_name": "Proportion of students up to date for all required vaccines",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students up to date for all required vaccines.",
+    "short_description": "Proportion of assessed school students up to date for all required vaccines.",
     "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
-    "statement": "In {location}, {value}% of school students were up to date for all required vaccines.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -101,16 +101,16 @@
       }
     ]
   },
-  "pct_full_exempt": {
-    "id": "pct_full_exempt",
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
     "short_name": "Total exemption rate",
-    "long_name": "Percent of students with any vaccination exemption",
+    "long_name": "Proportion of students with any vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
     "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
-    "statement": "In {location}, {value}% of school students had a vaccination exemption of any kind.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -135,16 +135,16 @@
       }
     ]
   },
-  "pct_medical_exempt": {
-    "id": "pct_medical_exempt",
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
     "short_name": "Medical exemption rate",
-    "long_name": "Percent of students with a medical vaccination exemption",
+    "long_name": "Proportion of students with a medical vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a medical exemption from one or more required vaccines.",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
     "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
-    "statement": "In {location}, {value}% of school students had a medical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -169,16 +169,16 @@
       }
     ]
   },
-  "pct_religious_exempt": {
-    "id": "pct_religious_exempt",
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
     "short_name": "Religious exemption rate",
-    "long_name": "Percent of students with a religious vaccination exemption",
+    "long_name": "Proportion of students with a religious vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a religious exemption from one or more required vaccines.",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
     "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
-    "statement": "In {location}, {value}% of school students had a religious vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -203,16 +203,16 @@
       }
     ]
   },
-  "pct_personal_exempt": {
-    "id": "pct_personal_exempt",
+  "rate_personal_exempt": {
+    "id": "rate_personal_exempt",
     "short_name": "Non-medical exemption rate",
-    "long_name": "Percent of students with a non-medical (personal-belief) vaccination exemption",
+    "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+    "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
     "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
-    "statement": "In {location}, {value}% of school students had a non-medical vaccination exemption.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -226,7 +226,7 @@
       "url": "https://www.michigan.gov/en/mdhhs/adult-child-serv/childrenfamilies/Immunizations/Data-Statistics/school-immunization-data",
       "organization": "Michigan Department of Health and Human Services",
       "organization_url": "https://www.michigan.gov/mdhhs",
-      "description": "School- and county-level immunization completeness and exemption data from the MDHHS building-level immunization files.",
+      "description": "School- and county-level immunization completeness and exemption data from the MDHHS building-level immunization files. Note that county rates are derived from reported school rates and may not be exact due to some schoools' data being suppressed.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
   }

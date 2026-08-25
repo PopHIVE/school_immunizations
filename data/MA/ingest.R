@@ -1,4 +1,4 @@
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
 # =============================================================================
 # MA - School Immunization & Exemption Rates by County (Kindergarten & Grade 7)
 # =============================================================================
@@ -220,12 +220,18 @@ if (!identical(process$raw_state, raw_state) ||
     b <- read_county_sheet(path)
     if (is.null(b)) return(NULL)
     get_role <- function(role) if (role %in% names(b)) b[[role]] else NA
-    # Percentages are published as decimals (0-1); force that scale defensively.
-    to_frac <- function(x) {
-      v <- parse_num(x)
-      if (any(!is.na(v)) && max(v, na.rm = TRUE) > 1.5) v <- v / 100
-      v
-    }
+    # MDPH is not consistent between workbooks: 25 of the 26 by-county files
+    # publish proportions, while MA_grade7_by_county_2019-2020.xlsx publishes
+    # percent points (MMR 94.7-100). So the scale is settled per file, and only
+    # from the coverage antigens -- never from the exemption columns, whose
+    # magnitude cannot distinguish the two scales. detect_scale_from_coverage()
+    # errors rather than guessing if a file falls between the two.
+    file_scale <- detect_scale_from_coverage(
+      get_role("dtap"), get_role("polio"), get_role("mmr"),
+      get_role("hep_b"), get_role("varicella"),
+      label = basename(path)
+    )
+    to_frac <- function(x) parse_rate(x, from = file_scale)
     tibble(
       county = str_squish(gsub("[*0-9]", "", as.character(get_role("county")))),
       grade = grade,
@@ -280,17 +286,16 @@ if (!identical(process$raw_state, raw_state) ||
     ) %>%
     arrange(grade, time, county) %>%
     transmute(
-      time, geography, county, grade,
+      time, geography, geography_name = county, grade, N_enrolled,
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_religious_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
       pct_religious_exempt, pct_medical_exempt, pct_full_exempt,
-      N_enrolled, N_tdap, pct_tdap, N_menacwy, pct_menacwy
+      N_tdap, pct_tdap, N_menacwy, pct_menacwy
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Massachusetts"), "./standard/data.csv")
-  vroom::vroom_write(add_state_column(data_out, "Massachusetts"), "./standard/data.csv.gz")
+  write_standard(data_out, "Massachusetts", "./standard/data.csv.gz", from = "rate")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

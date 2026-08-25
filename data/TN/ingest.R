@@ -1,4 +1,4 @@
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
 # =============================================================================
 # TN - Kindergarten MMR Vaccination Coverage by County (2024-25)
 # Source: TN Department of Health, Kindergarten Survey. TN DoH supplied the
@@ -47,7 +47,12 @@ if (!identical(process$raw_state, raw_state) ||
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
   fips_tn <- all_fips %>%
     filter(state == "TN", nchar(geography) == 5) %>%
-    mutate(county_key = tolower(sub(" County$", "", geography_name))) %>%
+    mutate(
+      county_key = tolower(sub(" County$", "", geography_name)),
+      # The standard label is the bare county name, as join_county_fips() emits
+      # for the states that use it -- not all_fips' "Anderson County".
+      geography_name = sub("\\s+County$", "", geography_name)
+    ) %>%
     select(geography, geography_name, county_key)
 
   data_out <- tn_raw %>%
@@ -56,15 +61,17 @@ if (!identical(process$raw_state, raw_state) ||
     mutate(
       time = as.Date("2024-09-01"),
       grade = "Kindergarten",
-      county = geography_name,
+      # Rounded to 1 decimal on the percent scale the source publishes, before
+      # write_standard() converts to a rate; rounding after the conversion
+      # would quantise every county to 0.0 or 0.1.
       pct_mmr = round(suppressWarnings(as.numeric(percent_mmr)), 1)
     ) %>%
     filter(!is.na(geography)) %>%
-    transmute(time, geography, county, grade, pct_mmr) %>%
-    arrange(county)
+    transmute(time, geography, geography_name, grade, pct_mmr) %>%
+    arrange(geography_name)
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Tennessee"), "standard/data.csv.gz")
+  write_standard(data_out, "Tennessee", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

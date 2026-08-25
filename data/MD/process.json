@@ -5,57 +5,32 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:25",
       "frequency": 0,
-      "last_run": "2026-02-04 23:38:12",
-      "run_time": 0.464,
+      "run_time": 5.22,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
-  "raw_state": {
-    "Raw/Maryland Vaccine Exemption_KG.xlsx": "d036a45aba42459abf32d5f368a70b90"
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/MD/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: grade"]
+    }
   },
-  "script_hash": "2109440af41dce9261a9727bfdba3934",
+  "raw_state": {
+    "raw/Percent of Kindergarteners Vaccinated by School 2019-2020.xlsx": "90d79888101e596fe6e115a95b413b97",
+    "raw/Percent of Kindergarteners Vaccinated by School 2020-2021.xlsx": "59b462173a01b5f1a25f47b84aa06849",
+    "raw/Percent of Kindergarteners Vaccinated by School 2021-2022.xlsx": "7279cb717ea86a594ab7b09e99fb5933",
+    "raw/Percent of Kindergarteners Vaccinated by School 2022-2023.xlsx": "ceab2d98efa59ef8f3a27a1705c0aaa2",
+    "raw/Percent of Kindergarteners Vaccinated by School 2023-2024.xlsx": "7505e1cb546382c24e4ddd0834704dc0",
+    "raw/Percent of Kindergarteners Vaccinated by School 2025-2026_04102026.xlsx": "b83f1c6dbdb02b5909ba7aacc5acdaf9"
+  },
+  "script_hash": "deb89fcff272b228c2ce4cedd9262566",
   "standard_state": {
-    "./data/MD/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/MD/standard/data.csv.gz": "4f32102b637b30f96b41d4b31be2c74e"
+    "./data/MD/measure_info.json": "4842076090d22618c9a781c2f095e01b",
+    "./data/MD/standard/data.csv.gz": "657e5042a118ad7349dfe89add07824e"
   }
 }

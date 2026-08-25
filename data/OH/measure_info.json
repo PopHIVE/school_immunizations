@@ -1,14 +1,48 @@
 {
-  "pct_mmr_exempt": {
-    "id": "pct_mmr_exempt",
+  "rate_mmr_exempt": {
+    "id": "rate_mmr_exempt",
     "short_name": "MMR exemption rate",
-    "long_name": "Percent of kindergarten students exempt from MMR vaccination",
+    "long_name": "Proportion of students exempt from MMR vaccination",
     "category": "immunization",
-    "short_description": "Percentage of kindergarten students with an exemption from the MMR vaccination requirement.",
-    "long_description": "Ohio publishes kindergarten MMR data as an exemption rate: the share of kindergarten students with a medical or non-medical exemption from the MMR requirement.",
-    "statement": "In {location}, {value}% of kindergarten students were exempt from MMR vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "short_description": "Proportion of assessed school students with any exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the MMR series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "oh_school_immunization"
+      }
+    ]
+  },
+  "suppressed_flag": {
+    "id": "suppressed_flag",
+    "short_name": "Suppressed value flag",
+    "long_name": "Indicator that at least one rate on this row was censored at source",
+    "category": "immunization",
+    "short_description": "1 if at least one rate on this row was suppressed or top-coded by the source.",
+    "long_description": "Set to 1 where the source published a censoring marker instead of a number for at least one measure on the row. Undirected markers leave the value missing. Where a bound is given, see censor_direction for which way it runs.",
+    "statement": "In {location}, at least one reported rate was censored at source.",
+    "measure_type": "Count",
+    "unit": "Flag",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "oh_school_immunization"
+      }
+    ]
+  },
+  "censor_direction": {
+    "id": "censor_direction",
+    "short_name": "Censoring direction",
+    "long_name": "Direction in which a censored value on this row is bounded",
+    "category": "immunization",
+    "short_description": "Which way a censored value is bounded: left, right, undirected, or a combination.",
+    "long_description": "\"left\" means the source printed a less-than marker, so the true value lies BELOW the stated threshold (a suppressed small cell such as \"<5\"). \"right\" means a greater-than marker, so the true value lies ABOVE it (a top code such as \">95%\"). \"undirected\" means the value was withheld with no bound stated. Combinations are joined with \"+\" where a row carries more than one kind. Empty where nothing was censored. Left- and right-censoring pull an estimate in opposite directions, so they are recorded separately rather than under a single suppression flag.",
+    "statement": "In {location}, censored values on this row were bounded {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
     "time_resolution": "Year",
     "sources": [
       {

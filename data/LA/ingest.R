@@ -5,7 +5,8 @@ library(readxl)
 library(stringr)
 library(vroom)
 library(readr)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/county_fips.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -20,41 +21,40 @@ if (!identical(process$raw_state, raw_state) ||
   data_raw <- readxl::read_excel(raw_path, sheet = "Sheet 1") %>%
     tidyr::fill(Grade, SchoolYear, .direction = "down")
   
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "LA") %>%
-    mutate(geography_name = gsub(" Parish", "", geography_name))
-  
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-  
   data_out <- data_raw %>%
     rename(
       grade = Grade,
       school_year = SchoolYear,
       parish = Parish,
-      pct_any_exempt = Exemptions,
+      pct_full_exempt = Exemptions,
+      pct_complete = `Complete Records`,
+      pct_dtap = `DTaP/TD (>=4)`,
+      pct_tdap = `Tdap (>=1)`,
+      pct_polio = `Polio (>=3)`,
+      pct_mmr = `MMR (>=2)`,
       pct_hep_b = `HepB (>=3)`,
-      pct_dtap = `Tdap (>=1)`
+      pct_hep_a = `HepA (>=2)`,
+      pct_varicella = `Var (>=2)`
     ) %>%
     mutate(
       year_start = str_extract(school_year, "^\\d{4}"),
       time = as.Date(paste0(year_start, "-09-01")),
-      pct_any_exempt = as.numeric(pct_any_exempt),
-      pct_hep_b = as.numeric(pct_hep_b),
+      pct_full_exempt = as.numeric(pct_full_exempt),
+      pct_complete = as.numeric(pct_complete),
       pct_dtap = as.numeric(pct_dtap),
-      pct_full_exempt = pct_any_exempt
+      pct_tdap = as.numeric(pct_tdap),
+      pct_polio = as.numeric(pct_polio),
+      pct_mmr = as.numeric(pct_mmr),
+      pct_hep_b = as.numeric(pct_hep_b),
+      pct_hep_a = as.numeric(pct_hep_a),
+      pct_varicella = as.numeric(pct_varicella),
+      # MenACWY is published as (>=1) for 6th grade and (>=2) for 11th grade,
+      # in mutually exclusive rows, so this is a merge, not an overwrite.
+      pct_mcv4 = coalesce(as.numeric(`MenACWY (>=1)`), as.numeric(`MenACWY (>=2)`))
     ) %>%
     filter(!is.na(time)) %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("parish" = "geography_name")
-    ) %>%
+    join_county_fips("LA", county_col = "parish") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = parish,
       N_dtap = NA_real_,
       N_polio = NA_real_,
       N_mmr = NA_real_,
@@ -63,9 +63,6 @@ if (!identical(process$raw_state, raw_state) ||
       N_personal_exempt = NA_real_,
       N_medical_exempt = NA_real_,
       N_full_exempt = NA_real_,
-      pct_polio = NA_real_,
-      pct_mmr = NA_real_,
-      pct_varicella = NA_real_,
       pct_personal_exempt = NA_real_,
       pct_medical_exempt = NA_real_
     ) %>%
@@ -73,13 +70,12 @@ if (!identical(process$raw_state, raw_state) ||
       time, geography, geography_name, grade,
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
-      pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
-      pct_personal_exempt, pct_medical_exempt, pct_full_exempt,
-      pct_any_exempt
+      pct_dtap, pct_tdap, pct_polio, pct_mmr, pct_hep_b, pct_hep_a,
+      pct_varicella, pct_mcv4,
+      pct_personal_exempt, pct_medical_exempt, pct_full_exempt, pct_complete
     )
   
-  vroom::vroom_write(add_state_column(data_out, "Louisiana"), "./standard/data.csv.gz")
-  vroom::vroom_write(add_state_column(data_out, "Louisiana"), "./standard/data.csv")
+  write_standard(data_out, "Louisiana", "./standard/data.csv.gz", from = "rate")
   
   process$raw_state <- raw_state
   process$script_hash <- script_hash

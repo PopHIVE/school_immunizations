@@ -5,45 +5,64 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:38",
       "frequency": 0,
-      "last_run": "2026-02-05 00:01:14",
-      "run_time": 0.475,
+      "run_time": 0.02,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "",
-          "Attaching package: \u2018vroom\u2019",
-          "",
-          "The following objects are masked from \u2018package:readr\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/NM/raw/NM_12.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_13.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_14.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_15.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_16.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_17.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_18.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_19.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_20.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_21.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_22.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_23.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/raw/NM_24.csv": {
+      "data": "not_compressed"
+    },
+    "data/NM/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
-    "raw/NM_12.csv": "427d79cd0eb9fd00d742fcce58b2d02b",
-    "raw/NM_13.csv": "4b30d7a28aefc18efda5f9f457d6eb08",
-    "raw/NM_14.csv": "f207316819d1a23d8d0e6a5563895053",
+    "raw/NM_12.csv": "7e621530322ca846c88b635026d0dd05",
+    "raw/NM_13.csv": "e2b728b30bf4cfc002d396b658c92f54",
+    "raw/NM_14.csv": "5a8f567bd28f7d4f22f1b24e8247c2d1",
     "raw/NM_15.csv": "7a531ff608b20cc8df34a5316ed96f26",
     "raw/NM_16.csv": "282ab890831a1fd0f7168c07a68c4dc2",
     "raw/NM_17.csv": "6c8f730c8db9c5dc9b8e24ad0e2ab170",
@@ -55,9 +74,9 @@
     "raw/NM_23.csv": "1b6e0ad0cfd8568962037ceadd7f262b",
     "raw/NM_24.csv": "8dc7547fad91a60af3a376a8bf011c19"
   },
-  "script_hash": "60fce36fb8c7ab53d6508c7f28ba471f",
+  "script_hash": "001a214e79ed52ddf7c57cf773aedaac",
   "standard_state": {
-    "./data/NM/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/NM/standard/data.csv.gz": "19a3baa66a1191c5092fc13756f0cad1"
+    "./data/NM/measure_info.json": "824d4ee39632e9fc95021dd149730a8b",
+    "./data/NM/standard/data.csv.gz": "f019065c7fba85d5b9b34f5489933465"
   }
 }

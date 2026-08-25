@@ -1,4 +1,5 @@
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
 # =============================================================================
 # ME - School Vaccination Rates (Multiple Years)
 # =============================================================================
@@ -49,15 +50,22 @@ parse_end_year <- function(filename) {
   as.integer(end)
 }
 
-if (!identical(process$raw_state, raw_state)) {
+script_hash <- as.character(tools::md5sum("ingest.R"))
+
+# Gated on the script as well as the data, like every other state, so an edit
+# to the parsing below is actually applied to standard/.
+if (!identical(process$raw_state, raw_state) ||
+    !identical(process$script_hash, script_hash)) {
   all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
   county_fips_lookup <- all_fips %>%
     filter(nchar(geography) == 5, state == "ME") %>%
+    # Bare county names, matching join_county_fips() in the other states.
+    mutate(geography_name = sub(" County$", "", geography_name)) %>%
     select(geography, geography_name, state)
 
   process_file <- function(path) {
     end_year <- parse_end_year(basename(path))
-    time <- format(as.Date(paste0(end_year, "-12-31")), "%m-%d-%Y")
+    time <- school_year_time_from_end(end_year)
 
     d <- read_excel(path, skip = 4)
     d <- d %>% filter(!is.na(School), !is.na(County))
@@ -144,17 +152,21 @@ if (!identical(process$raw_state, raw_state)) {
   data <- bind_rows(lapply(raw_files, process_file)) %>%
     mutate(
       county = str_to_title(str_trim(county)),
-      geography_name = paste0(county, " County")
+      geography_name = county
     ) %>%
     left_join(county_fips_lookup, by = c("geography_name" = "geography_name")) %>%
     filter(state == "ME")
 
+  # Maine CDC publishes percent points, so that is declared. The old
+  # `if_else(.x <= 1.5, .x * 100, .x)` rescaled per element, turning a school
+  # genuinely reporting 1.2% into 120% while leaving 12% alone -- two scales in
+  # one column. Out-of-range values are dropped in both directions.
   pct_cols <- names(data)[grepl("^pct_", names(data))]
   data <- data %>%
     mutate(
       across(
         all_of(pct_cols),
-        ~ if_else(!is.na(.x) & .x <= 1.5, .x * 100, .x)
+        ~ if_else(!is.na(.x) & (.x < 0 | .x > 100), NA_real_, .x)
       )
     )
 
@@ -170,8 +182,9 @@ if (!identical(process$raw_state, raw_state)) {
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Maine"), "standard/data.csv.gz", delim = ",")
+  write_standard(data_out, "Maine", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
+  process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }

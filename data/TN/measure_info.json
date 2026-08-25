@@ -1,14 +1,14 @@
 {
-  "pct_mmr": {
-    "id": "pct_mmr",
+  "rate_mmr": {
+    "id": "rate_mmr",
     "short_name": "MMR coverage",
-    "long_name": "Percent of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
     "category": "immunization",
-    "short_description": "Percentage of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
     "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-    "statement": "In {location}, {value}% of school students were up to date for MMR vaccination.",
-    "measure_type": "Percent",
-    "unit": "Percent",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {

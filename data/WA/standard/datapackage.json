@@ -7,5 +7,704 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 21081,
+      "encoding": "windows-1252",
+      "md5": "f3eda70bd7b70fd37da730fa9052936d",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "950a610cd8bb1f1a11480da264a68dd63419cfd5",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Wed Mar 25 22:10:45 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 08:06:45 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "modify IL, NC, WA stan dard files",
+          "standardize HI and round data to 2 decimal points",
+          "add standardization files for IA MN MT NC NH UT VT WA"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 5,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-08-05 09:48:13.852594",
+      "last_modified": "2026-08-24 10:32:04.402666",
+      "vintage": {},
+      "row_count": 624,
+      "entity_count": 39,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 618,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2018-09-01": 78,
+              "2019-09-01": 78,
+              "2020-09-01": 117,
+              "2021-09-01": 117,
+              "2022-09-01": 117,
+              "2023-09-01": 117
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 585,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "53001": 16,
+              "53003": 16,
+              "53005": 16,
+              "53007": 16,
+              "53009": 16,
+              "53011": 16,
+              "53013": 16,
+              "53015": 16,
+              "53017": 16,
+              "53019": 16,
+              "53021": 16,
+              "53023": 16,
+              "53025": 16,
+              "53027": 16,
+              "53029": 16,
+              "53031": 16,
+              "53033": 16,
+              "53035": 16,
+              "53037": 16,
+              "53039": 16,
+              "53041": 16,
+              "53043": 16,
+              "53045": 16,
+              "53047": 16,
+              "53049": 16,
+              "53051": 16,
+              "53053": 16,
+              "53055": 16,
+              "53057": 16,
+              "53059": 16,
+              "53061": 16,
+              "53063": 16,
+              "53065": 16,
+              "53067": 16,
+              "53069": 16,
+              "53071": 16,
+              "53073": 16,
+              "53075": 16,
+              "53077": 16
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 585,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Adams": 16,
+              "Asotin": 16,
+              "Benton": 16,
+              "Chelan": 16,
+              "Clallam": 16,
+              "Clark": 16,
+              "Columbia": 16,
+              "Cowlitz": 16,
+              "Douglas": 16,
+              "Ferry": 16,
+              "Franklin": 16,
+              "Garfield": 16,
+              "Grant": 16,
+              "Grays Harbor": 16,
+              "Island": 16,
+              "Jefferson": 16,
+              "King": 16,
+              "Kitsap": 16,
+              "Kittitas": 16,
+              "Klickitat": 16,
+              "Lewis": 16,
+              "Lincoln": 16,
+              "Mason": 16,
+              "Okanogan": 16,
+              "Pacific": 16,
+              "Pend Oreille": 16,
+              "Pierce": 16,
+              "San Juan": 16,
+              "Skagit": 16,
+              "Skamania": 16,
+              "Snohomish": 16,
+              "Spokane": 16,
+              "Stevens": 16,
+              "Thurston": 16,
+              "Wahkiakum": 16,
+              "Walla Walla": 16,
+              "Whatcom": 16,
+              "Whitman": 16,
+              "Yakima": 16
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 621,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "7th grade": 156,
+              "K-12": 234,
+              "Kindergarten": 234
+            }
+          },
+          {
+            "name": "N_personal_exempt",
+            "duplicates": 366,
+            "info": {
+              "id": "N_personal_exempt",
+              "short_name": "Non-medical exemptions (count)",
+              "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
+              "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 287.985577,
+            "sd": 850.8841,
+            "min": 0,
+            "max": 9428
+          },
+          {
+            "name": "N_medical_exempt",
+            "duplicates": 456,
+            "info": {
+              "id": "N_medical_exempt",
+              "short_name": "Medical exemptions (count)",
+              "long_name": "Number of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+              "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 86.719551,
+            "sd": 257.034302,
+            "min": 0,
+            "max": 2964
+          },
+          {
+            "name": "N_full_exempt",
+            "duplicates": 316,
+            "info": {
+              "id": "N_full_exempt",
+              "short_name": "Total exemptions (count)",
+              "long_name": "Number of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 477.807692,
+            "sd": 1318.606891,
+            "min": 0,
+            "max": 12427
+          },
+          {
+            "name": "rate_personal_exempt",
+            "duplicates": 154,
+            "info": {
+              "id": "rate_personal_exempt",
+              "short_name": "Non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+              "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 3,
+            "mean": 0.02616,
+            "sd": 0.022817,
+            "min": 0,
+            "max": 0.367556
+          },
+          {
+            "name": "rate_medical_exempt",
+            "duplicates": 269,
+            "info": {
+              "id": "rate_medical_exempt",
+              "short_name": "Medical exemption rate",
+              "long_name": "Proportion of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+              "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.009358,
+            "sd": 0.011566,
+            "min": 0,
+            "max": 0.155172
+          },
+          {
+            "name": "rate_full_exempt",
+            "duplicates": 107,
+            "info": {
+              "id": "rate_full_exempt",
+              "short_name": "Total exemption rate",
+              "long_name": "Proportion of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+              "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.046523,
+            "sd": 0.029475,
+            "min": 0,
+            "max": 0.219457
+          },
+          {
+            "name": "N_enrolled",
+            "duplicates": 55,
+            "info": {
+              "id": "N_enrolled",
+              "short_name": "Students enrolled",
+              "long_name": "Number of students enrolled",
+              "category": "immunization",
+              "short_description": "Number of students enrolled at the reporting level.",
+              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+              "statement": "In {location}, {value} students were enrolled.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 11933.701923,
+            "sd": 36105.241823,
+            "min": 0,
+            "max": 344682
+          },
+          {
+            "name": "N_religious_exempt",
+            "duplicates": 396,
+            "info": {
+              "id": "N_religious_exempt",
+              "short_name": "Religious exemptions (count)",
+              "long_name": "Number of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 163.054487,
+            "sd": 467.15755,
+            "min": 0,
+            "max": 4048
+          },
+          {
+            "name": "rate_religious_exempt",
+            "duplicates": 178,
+            "info": {
+              "id": "rate_religious_exempt",
+              "short_name": "Religious exemption rate",
+              "long_name": "Proportion of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+              "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.02013,
+            "sd": 0.017136,
+            "min": 0,
+            "max": 0.135747
+          },
+          {
+            "name": "N_religious_membership_exempt",
+            "duplicates": 520,
+            "info": {
+              "id": "N_religious_membership_exempt",
+              "short_name": "Religious membership exemptions (count)",
+              "long_name": "Number of students with a religious membership exemption",
+              "category": "immunization",
+              "short_description": "Number of students exempt as members of a religious body opposed to immunization.",
+              "long_description": "Washington-specific category: count of students exempt as members of a religious body or church whose teachings are contrary to immunization, distinct from a personal religious exemption.",
+              "statement": "In {location}, {value} school students had a religious membership exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 26.575321,
+            "sd": 72.767671,
+            "min": 0,
+            "max": 643
+          },
+          {
+            "name": "rate_religious_membership_exempt",
+            "duplicates": 374,
+            "info": {
+              "id": "rate_religious_membership_exempt",
+              "short_name": "Religious membership exemption rate",
+              "long_name": "Proportion of students with a religious membership exemption",
+              "category": "immunization",
+              "short_description": "Proportion of students exempt as members of a religious body opposed to immunization.",
+              "long_description": "Washington-specific category: share of students exempt as members of a religious body or church whose teachings are contrary to immunization, distinct from a personal religious exemption.",
+              "statement": "In {location}, {value} of school students had a religious membership exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wa_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 1,
+            "mean": 0.003537,
+            "sd": 0.005436,
+            "min": 0,
+            "max": 0.06383
+          }
+        ]
+      },
+      "sha512": "401e49c3e25292595f55bf03bee302a6e82291675c7c1bfe447a87449e6f6136c3bdf21a088a8d1c77d2cd7b2d6e5398ccd2a6666a1fa5e6f7d5063b0e70df2a"
+    }
+  ],
+  "measure_info": {
+    "N_personal_exempt": {
+      "id": "N_personal_exempt",
+      "short_name": "Non-medical exemptions (count)",
+      "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
+      "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "N_medical_exempt": {
+      "id": "N_medical_exempt",
+      "short_name": "Medical exemptions (count)",
+      "long_name": "Number of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+      "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "N_full_exempt": {
+      "id": "N_full_exempt",
+      "short_name": "Total exemptions (count)",
+      "long_name": "Number of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "rate_personal_exempt": {
+      "id": "rate_personal_exempt",
+      "short_name": "Non-medical exemption rate",
+      "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+      "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+      "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "rate_medical_exempt": {
+      "id": "rate_medical_exempt",
+      "short_name": "Medical exemption rate",
+      "long_name": "Proportion of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+      "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "rate_full_exempt": {
+      "id": "rate_full_exempt",
+      "short_name": "Total exemption rate",
+      "long_name": "Proportion of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+      "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "N_enrolled": {
+      "id": "N_enrolled",
+      "short_name": "Students enrolled",
+      "long_name": "Number of students enrolled",
+      "category": "immunization",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+      "statement": "In {location}, {value} students were enrolled.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "N_religious_exempt": {
+      "id": "N_religious_exempt",
+      "short_name": "Religious exemptions (count)",
+      "long_name": "Number of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "rate_religious_exempt": {
+      "id": "rate_religious_exempt",
+      "short_name": "Religious exemption rate",
+      "long_name": "Proportion of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+      "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "N_religious_membership_exempt": {
+      "id": "N_religious_membership_exempt",
+      "short_name": "Religious membership exemptions (count)",
+      "long_name": "Number of students with a religious membership exemption",
+      "category": "immunization",
+      "short_description": "Number of students exempt as members of a religious body opposed to immunization.",
+      "long_description": "Washington-specific category: count of students exempt as members of a religious body or church whose teachings are contrary to immunization, distinct from a personal religious exemption.",
+      "statement": "In {location}, {value} school students had a religious membership exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "rate_religious_membership_exempt": {
+      "id": "rate_religious_membership_exempt",
+      "short_name": "Religious membership exemption rate",
+      "long_name": "Proportion of students with a religious membership exemption",
+      "category": "immunization",
+      "short_description": "Proportion of students exempt as members of a religious body opposed to immunization.",
+      "long_description": "Washington-specific category: share of students exempt as members of a religious body or church whose teachings are contrary to immunization, distinct from a personal religious exemption.",
+      "statement": "In {location}, {value} of school students had a religious membership exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wa_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "wa_school_immunization": {
+        "name": "Washington School Immunization Data",
+        "url": "https://doh.wa.gov/data-and-statistical-reports/washington-tracking-network-wtn/school-immunization",
+        "organization": "Washington State Department of Health",
+        "organization_url": "https://doh.wa.gov/",
+        "description": "County-level school immunization coverage and exemption data, including religious membership exemptions, from the WA DOH school immunization reports.",
+        "restrictions": "Public data published by the source agency; no access restrictions."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
+    }
+  }
 }
