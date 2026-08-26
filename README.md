@@ -1,79 +1,53 @@
 # School Immunizations
 
-The goal for this project is to format county-level data on school vaccinations obtained from the states. As a worked example see the Arizona (AZ) project.
+The goal for this project is to format county-level data on school vaccinations obtained from the states. 
 
-## Getting started
-instal the dcf packages
-    install.packages("remotes")
-remotes::install_github("dissc-yale/dcf")
 
-## Working on the project
+**Publish the granularity the state publishes.** If a source is by school or by
+district, keep those rows and add `school_name` (with `district`/`city` where the
+source has them) rather than aggregating in the ingest — the combined file rolls
+them up to county itself, and it can only do that correctly if it can see the
+denominator on each row. Aggregating early is how WI came to report a 95%
+county religious-waiver rate: it averaged school percentages with no enrolment
+to weight them, so one small school set the county figure.
 
-1.  go to ./data/ and find the state you are working on. Open the folder and click the .rproj file to open the project
+The output is **wide**: index columns (`geography`, `time`, and any stratum the
+source publishes, such as `grade`) plus one column per measure. The vaccine or
+exemption category goes in the COLUMN NAME — `rate_mmr`, `rate_medical_exempt`,
+`N_full_exempt` — not in a `vax` value column. Categories in use:
 
-2.  Save any raw data in the /raw subfolder
+    dtap · polio · mmr · hep_b · varicella
+    personal_exempt · medical_exempt · religious_exempt · full_exempt
 
-3.  Open the ingest.R script. This is where you out the script to clean the data. Import all raw files, process so that the output data should have the following columns :
+## Data source status by state
 
--   geography: (5 digit fips for county, 2 digit fips for state)
--   geography_name: name of the county, or 'Total' for statewide total
--   time (YYYY-09-01), where YYYY is the 4 digit year for the start of the school year
--   pct_XX the percent of children immunized (0-100). XX should be replaced by the state abbreviation. Numeric variable
--   N_XX the number of children in the population (denominator). Numeric variable
--   vax: the name of the vaccine or exemption category:
-    -   "dtap"
-    -   "polio"
-    -   "mmr"
-    -   "hep_b"
-    -   "varicella"
-    -   "personal_exempt"
-    -   "medical_exempt"
-    -   "full_exempt"
+Not every state's data comes from an automated pull. `data/DATA_SOURCES.md`
+tracks, for every state, the public source, how it's accessed (API, static
+download, dashboard-only, or by-request), and the latest school year covered
+— check it before starting work on a state. A few things worth knowing up
+front:
 
-The ingest script shoudl have this structure:
+-   **AK, DE, GA, NE and WY have no data scraped from an API.** AK is a
+    downloadable static file; the rest have no automated download at all.
+-   **AK, WY and ID's raw files were supplied directly by Gregg's students**,
+    not downloaded by `ingest.R` — there is no automated source behind them.
+-   **DE, GA and NE have no source identified yet and no data at all**:
+    `ingest.R` is an empty stub and `raw/` is empty for all three.
+-   **WY has raw data on hand but it isn't ingested yet** — about 140
+    per-county-per-year files sit in `raw/`, but `ingest.R` is still the empty
+    stub and there is no `standard/data.csv.gz`.
+-   **AR only has school-district-level data** — Arkansas publishes no
+    county file, so its `standard/data.csv.gz` has district rows only, not
+    county rows.
 
-```r
-library(dcf)
-library(tidyverse)
-
-# check raw state
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", "csv", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
-
-# process raw if state has changed
-if (!identical(process$raw_state, raw_state)) {
-
- 
- ## CODE TO CLEAN RAW DATA 
- ##xxxx
-  
-  
-  #Save standard file as a compressed csv
-  vroom::vroom_write(data, './standard/data.csv.gz')
-  
-  # record processed raw state
-  process$raw_state <- raw_state
-  dcf::dcf_process_record(updated = process)
-}
-```
-
-4.  save the formatted dataset as a compressed csv file in the /standard subfolder
-5.  Update the measure_info.json file for the project to incclude descriptions of all variables. I recommend editing the jsons in Microsoft Visual Studio to ensure proper formatting
-6.  run dcf::dcf_process("XX") to process individual datasets, substituting the state abbreviation for XX. This should be done withint the state-specific project
-7.  run dcf::dcf_build() form the root directory (set working directory to school_immunizations. This builds the whole project
-8.  You can see the datasets and their relationships here: <https://github.com/PopHIVE/school_immunizations/blob/main/status.md>
-9.  See all processed files at: <https://dissc-yale.github.io/dcf/report/?repo=PopHIVE/school_immunizations>
-
-Other notes:
+## Other notes
 
 This is set up as a Data Collection Framework project, initialized with `dcf::dcf_init`.
 
 You can use the `dcf` package to check the source projects:
 
 ``` r
-dcf::dcf_check_source()
+dcf::dcf_check()
 ```
 
 And process them:

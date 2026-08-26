@@ -7,5 +7,642 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 11269,
+      "encoding": "windows-1252",
+      "md5": "4e1bc0c98f3ed212f32c1a5b62c37d08",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "950a610cd8bb1f1a11480da264a68dd63419cfd5",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Wed Mar 25 22:10:45 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 08:06:45 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "modify IL, NC, WA stan dard files",
+          "standardize HI and round data to 2 decimal points",
+          "add standardization files for IA MN MT NC NH UT VT WA"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 5,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-08-05 09:48:12.623596",
+      "last_modified": "2026-08-24 10:30:37.756577",
+      "vintage": {},
+      "row_count": 397,
+      "entity_count": 100,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 393,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2020-09-01": 100,
+              "2021-09-01": 97,
+              "2022-09-01": 100,
+              "2023-09-01": 100
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 297,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "37001": 4,
+              "37003": 4,
+              "37005": 4,
+              "37007": 4,
+              "37009": 4,
+              "37011": 4,
+              "37013": 4,
+              "37015": 4,
+              "37017": 4,
+              "37019": 4,
+              "37021": 4,
+              "37023": 4,
+              "37025": 4,
+              "37027": 4,
+              "37029": 4,
+              "37031": 4,
+              "37033": 4,
+              "37035": 4,
+              "37037": 4,
+              "37039": 4,
+              "37041": 4,
+              "37043": 3,
+              "37045": 4,
+              "37047": 4,
+              "37049": 4,
+              "37051": 4,
+              "37053": 4,
+              "37055": 4,
+              "37057": 4,
+              "37059": 4,
+              "37061": 4,
+              "37063": 4,
+              "37065": 4,
+              "37067": 4,
+              "37069": 4,
+              "37071": 4,
+              "37073": 3,
+              "37075": 4,
+              "37077": 4,
+              "37079": 4,
+              "37081": 4,
+              "37083": 4,
+              "37085": 4,
+              "37087": 4,
+              "37089": 4,
+              "37091": 4,
+              "37093": 4,
+              "37095": 4,
+              "37097": 4,
+              "37099": 4,
+              "37101": 4,
+              "37103": 4,
+              "37105": 4,
+              "37107": 4,
+              "37109": 4,
+              "37111": 4,
+              "37113": 4,
+              "37115": 4,
+              "37117": 4,
+              "37119": 4,
+              "37121": 4,
+              "37123": 4,
+              "37125": 4,
+              "37127": 4,
+              "37129": 4,
+              "37131": 4,
+              "37133": 4,
+              "37135": 4,
+              "37137": 4,
+              "37139": 4,
+              "37141": 4,
+              "37143": 4,
+              "37145": 4,
+              "37147": 4,
+              "37149": 4,
+              "37151": 4,
+              "37153": 4,
+              "37155": 4,
+              "37157": 4,
+              "37159": 4,
+              "37161": 4,
+              "37163": 4,
+              "37165": 4,
+              "37167": 4,
+              "37169": 4,
+              "37171": 4,
+              "37173": 4,
+              "37175": 4,
+              "37177": 4,
+              "37179": 4,
+              "37181": 4,
+              "37183": 4,
+              "37185": 4,
+              "37187": 3,
+              "37189": 4,
+              "37191": 4,
+              "37193": 4,
+              "37195": 4,
+              "37197": 4,
+              "37199": 4
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 297,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Alamance": 4,
+              "Alexander": 4,
+              "Alleghany": 4,
+              "Anson": 4,
+              "Ashe": 4,
+              "Avery": 4,
+              "Beaufort": 4,
+              "Bertie": 4,
+              "Bladen": 4,
+              "Brunswick": 4,
+              "Buncombe": 4,
+              "Burke": 4,
+              "Cabarrus": 4,
+              "Caldwell": 4,
+              "Camden": 4,
+              "Carteret": 4,
+              "Caswell": 4,
+              "Catawba": 4,
+              "Chatham": 4,
+              "Cherokee": 4,
+              "Chowan": 4,
+              "Clay": 3,
+              "Cleveland": 4,
+              "Columbus": 4,
+              "Craven": 4,
+              "Cumberland": 4,
+              "Currituck": 4,
+              "Dare": 4,
+              "Davidson": 4,
+              "Davie": 4,
+              "Duplin": 4,
+              "Durham": 4,
+              "Edgecombe": 4,
+              "Forsyth": 4,
+              "Franklin": 4,
+              "Gaston": 4,
+              "Gates": 3,
+              "Graham": 4,
+              "Granville": 4,
+              "Greene": 4,
+              "Guilford": 4,
+              "Halifax": 4,
+              "Harnett": 4,
+              "Haywood": 4,
+              "Henderson": 4,
+              "Hertford": 4,
+              "Hoke": 4,
+              "Hyde": 4,
+              "Iredell": 4,
+              "Jackson": 4,
+              "Johnston": 4,
+              "Jones": 4,
+              "Lee": 4,
+              "Lenoir": 4,
+              "Lincoln": 4,
+              "Macon": 4,
+              "Madison": 4,
+              "Martin": 4,
+              "McDowell": 4,
+              "Mecklenburg": 4,
+              "Mitchell": 4,
+              "Montgomery": 4,
+              "Moore": 4,
+              "Nash": 4,
+              "New Hanover": 4,
+              "Northampton": 4,
+              "Onslow": 4,
+              "Orange": 4,
+              "Pamlico": 4,
+              "Pasquotank": 4,
+              "Pender": 4,
+              "Perquimans": 4,
+              "Person": 4,
+              "Pitt": 4,
+              "Polk": 4,
+              "Randolph": 4,
+              "Richmond": 4,
+              "Robeson": 4,
+              "Rockingham": 4,
+              "Rowan": 4,
+              "Rutherford": 4,
+              "Sampson": 4,
+              "Scotland": 4,
+              "Stanly": 4,
+              "Stokes": 4,
+              "Surry": 4,
+              "Swain": 4,
+              "Transylvania": 4,
+              "Tyrrell": 4,
+              "Union": 4,
+              "Vance": 4,
+              "Wake": 4,
+              "Warren": 4,
+              "Washington": 3,
+              "Watauga": 4,
+              "Wayne": 4,
+              "Wilkes": 4,
+              "Wilson": 4,
+              "Yadkin": 4,
+              "Yancey": 4
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 396,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Kindergarten": 397
+            }
+          },
+          {
+            "name": "N_religious_exempt",
+            "duplicates": 314,
+            "info": {
+              "id": "N_religious_exempt",
+              "short_name": "Religious exemptions (count)",
+              "long_name": "Number of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nc_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "integer",
+            "missing": 0,
+            "mean": 21.576826,
+            "sd": 42.38737,
+            "min": 0,
+            "max": 423
+          },
+          {
+            "name": "N_medical_exempt",
+            "duplicates": 380,
+            "info": {
+              "id": "N_medical_exempt",
+              "short_name": "Medical exemptions (count)",
+              "long_name": "Number of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+              "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nc_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "integer",
+            "missing": 0,
+            "mean": 1.166247,
+            "sd": 2.315422,
+            "min": 0,
+            "max": 17
+          },
+          {
+            "name": "N_full_exempt",
+            "duplicates": 312,
+            "info": {
+              "id": "N_full_exempt",
+              "short_name": "Total exemptions (count)",
+              "long_name": "Number of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nc_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "integer",
+            "missing": 0,
+            "mean": 22.743073,
+            "sd": 44.079754,
+            "min": 0,
+            "max": 439
+          },
+          {
+            "name": "rate_religious_exempt",
+            "duplicates": 47,
+            "info": {
+              "id": "rate_religious_exempt",
+              "short_name": "Religious exemption rate",
+              "long_name": "Proportion of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+              "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nc_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.019027,
+            "sd": 0.016534,
+            "min": 0,
+            "max": 0.142857
+          },
+          {
+            "name": "rate_medical_exempt",
+            "duplicates": 221,
+            "info": {
+              "id": "rate_medical_exempt",
+              "short_name": "Medical exemption rate",
+              "long_name": "Proportion of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+              "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nc_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.001144,
+            "sd": 0.002544,
+            "min": 0,
+            "max": 0.025729
+          },
+          {
+            "name": "rate_full_exempt",
+            "duplicates": 37,
+            "info": {
+              "id": "rate_full_exempt",
+              "short_name": "Total exemption rate",
+              "long_name": "Proportion of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+              "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nc_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.020171,
+            "sd": 0.016774,
+            "min": 0,
+            "max": 0.142857
+          },
+          {
+            "name": "N_enrolled",
+            "duplicates": 40,
+            "info": {
+              "id": "N_enrolled",
+              "short_name": "Students enrolled",
+              "long_name": "Number of students enrolled",
+              "category": "immunization",
+              "short_description": "Number of students enrolled at the reporting level.",
+              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+              "statement": "In {location}, {value} students were enrolled.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nc_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "integer",
+            "missing": 0,
+            "mean": 1054.843829,
+            "sd": 1726.844856,
+            "min": 14,
+            "max": 13577
+          }
+        ]
+      },
+      "sha512": "85c37d547f103bba9e0b775ee74710ac9793ad1beab3cda794e37e8fd3a57f103eec7cf611764e186f77fc52e3531c7daadcbbbef787dcd7dbdacbdbfe9b9a0a"
+    }
+  ],
+  "measure_info": {
+    "N_religious_exempt": {
+      "id": "N_religious_exempt",
+      "short_name": "Religious exemptions (count)",
+      "long_name": "Number of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nc_school_immunization"
+        }
+      ]
+    },
+    "N_medical_exempt": {
+      "id": "N_medical_exempt",
+      "short_name": "Medical exemptions (count)",
+      "long_name": "Number of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+      "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nc_school_immunization"
+        }
+      ]
+    },
+    "N_full_exempt": {
+      "id": "N_full_exempt",
+      "short_name": "Total exemptions (count)",
+      "long_name": "Number of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nc_school_immunization"
+        }
+      ]
+    },
+    "rate_religious_exempt": {
+      "id": "rate_religious_exempt",
+      "short_name": "Religious exemption rate",
+      "long_name": "Proportion of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+      "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nc_school_immunization"
+        }
+      ]
+    },
+    "rate_medical_exempt": {
+      "id": "rate_medical_exempt",
+      "short_name": "Medical exemption rate",
+      "long_name": "Proportion of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+      "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nc_school_immunization"
+        }
+      ]
+    },
+    "rate_full_exempt": {
+      "id": "rate_full_exempt",
+      "short_name": "Total exemption rate",
+      "long_name": "Proportion of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+      "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nc_school_immunization"
+        }
+      ]
+    },
+    "N_enrolled": {
+      "id": "N_enrolled",
+      "short_name": "Students enrolled",
+      "long_name": "Number of students enrolled",
+      "category": "immunization",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+      "statement": "In {location}, {value} students were enrolled.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nc_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "nc_school_immunization": {
+        "name": "North Carolina Kindergarten Immunization Data",
+        "url": "https://www.dph.ncdhhs.gov/programs/epidemiology/immunization/data/kindergarten-dashboard",
+        "organization": "North Carolina Department of Health and Human Services",
+        "organization_url": "https://www.dph.ncdhhs.gov/",
+        "description": "County-level kindergarten immunization coverage and exemption data from the NC DPH kindergarten dashboard.",
+        "restrictions": "Public data published by the source agency; no access restrictions."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
+    }
+  }
 }

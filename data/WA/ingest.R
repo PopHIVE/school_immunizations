@@ -1,4 +1,5 @@
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/county_fips.R")
 # =============================================================================
 # WA - Vaccine Exemption Counts and Rates by County
 # =============================================================================
@@ -69,6 +70,15 @@ if (!identical(process$raw_state, raw_state) ||
         )),
         n_personal_exempt = readr::parse_number(as.character(get_col(d, "Personal Count"))),
         pct_personal_exempt = parse_pct_points(get_col(d, "Personal %")),
+        # KNOWN DISCREPANCY, left as published: in 21 of 621 rows -- all 7th
+        # grade, all small counties -- "Religious %" is not "Religious Count"
+        # divided by enrolment. Clallam 2022-23 prints a count of 9 and 4.14%
+        # against an enrolment of 628, where 9/628 is 1.43%; Garfield 2020-21
+        # prints a count of 0 against 7.69%. Both columns are carried through as
+        # DOH publishes them, so audit_rate_scale() reports the disagreement on
+        # every build instead of one being quietly recomputed from the other.
+        # The gap is not a factor of 100, so it is not a scale error -- the
+        # published share looks to be taken over a different denominator.
         n_religious_exempt = readr::parse_number(as.character(get_col(d, "Religious Count"))),
         pct_religious_exempt = parse_pct_points(get_col(d, "Religious %")),
         n_religious_membership_exempt = readr::parse_number(as.character(get_col(d, "Religious Membership Count"))),
@@ -77,24 +87,10 @@ if (!identical(process$raw_state, raw_state) ||
       )
   }))
 
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "WA") %>%
-    mutate(geography_name = gsub(" County$", "", geography_name))
-
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
 
   data_out <- data_all %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    join_county_fips("WA") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = county,
       N_dtap = NA_real_,
       N_polio = NA_real_,
       N_mmr = NA_real_,
@@ -120,7 +116,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Washington"), "standard/data.csv.gz")
+  write_standard(data_out, "Washington", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

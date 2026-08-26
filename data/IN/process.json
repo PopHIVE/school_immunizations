@@ -5,57 +5,29 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:14",
       "frequency": 0,
-      "last_run": "2026-02-04 23:32:58",
-      "run_time": 0.488,
+      "run_time": 0.81,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
-  "raw_state": {
-    "raw/SCHL_VACC_EXEMPTION_RATES (1).xlsx": "d208255e5eb5e9225e365ef2e5b1cd0a"
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/IN/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
   },
-  "script_hash": "febf296adc56f2982f5e06c0f56d9981",
+  "raw_state": {
+    "raw/school-year-2023-2024.xlsx": "61bc57fb1116ff67a8fde38261df1222",
+    "raw/school-year-2024-2025.xlsx": "50397e0e5596f8de07aebc4b6cb55d89",
+    "raw/school-year-2025-2026.xlsx": "6c78a3a88c43bd7b5915fec8f985379d"
+  },
+  "script_hash": "14157db254fd9e9c7a508fb81a0b173f",
   "standard_state": {
-    "./data/IN/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/IN/standard/data.csv.gz": "4437d29b02d983fde09bfea2227d93cd"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IN/measure_info.json": "1862c0d35cb11ef9543d0e9deaa8f2f0",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IN/standard/data.csv.gz": "8a97b76f8748999c2abb4bce58778ffe"
   }
 }

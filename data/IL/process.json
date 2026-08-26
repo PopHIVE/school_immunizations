@@ -5,51 +5,21 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:12",
       "frequency": 0,
-      "last_run": "2026-02-04 23:32:23",
-      "run_time": 0.488,
+      "run_time": 0.03,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/IL/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/IL_school_immunization_county_aggregated_2019_20.xlsx": "fccdaedfe843c7d220b3fefadcd68815",
     "raw/IL_school_immunization_county_aggregated_2020_21.xlsx": "bdbe8d821159523bd581d7ed874bd207",
@@ -58,9 +28,9 @@
     "raw/IL_school_immunization_county_aggregated_2024.xlsx": "fc5cb171693a8374e030204b6747276c",
     "raw/IL_school_immunization_county_aggregated_2025.xlsx": "b7bb8c181af5721d9aa48afc60c47780"
   },
-  "script_hash": "df87bfdb6f4c45e48a0fac6183ebd20f",
+  "script_hash": "22689e2ddc1baeb0df11a8088d7749ea",
   "standard_state": {
-    "./data/IL/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/IL/standard/data.csv.gz": "ff89645850081c884733992edb1c362d"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IL/measure_info.json": "9169742e3cb2183493fa0f89c5482d06",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IL/standard/data.csv.gz": "5dc98968820e4cc4fb9cf8a6fecea5a4"
   }
 }

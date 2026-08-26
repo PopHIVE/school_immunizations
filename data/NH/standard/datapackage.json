@@ -7,5 +7,413 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 830,
+      "encoding": "windows-1252",
+      "md5": "b6b5a06957dbc1959d4de79accdf99ce",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 08:06:45 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "add standardization files for IA MN MT NC NH UT VT WA"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 5,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-08-05 09:48:12.796862",
+      "last_modified": "2026-08-25 11:35:14.92486",
+      "vintage": {},
+      "row_count": 40,
+      "entity_count": 10,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 36,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2021-09-01": 10,
+              "2022-09-01": 10,
+              "2023-09-01": 10,
+              "2024-09-01": 10
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 30,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "33001": 4,
+              "33003": 4,
+              "33005": 4,
+              "33007": 4,
+              "33009": 4,
+              "33011": 4,
+              "33013": 4,
+              "33015": 4,
+              "33017": 4,
+              "33019": 4
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 30,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Belknap": 4,
+              "Carroll": 4,
+              "Cheshire": 4,
+              "Coos": 4,
+              "Grafton": 4,
+              "Hillsborough": 4,
+              "Merrimack": 4,
+              "Rockingham": 4,
+              "Strafford": 4,
+              "Sullivan": 4
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 39,
+            "info": [],
+            "time_range": [0, 3],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "K-12": 40
+            }
+          },
+          {
+            "name": "rate_personal_exempt",
+            "duplicates": 19,
+            "info": {
+              "id": "rate_personal_exempt",
+              "short_name": "Non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+              "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nh_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.030525,
+            "sd": 0.00897,
+            "min": 0.02,
+            "max": 0.059
+          },
+          {
+            "name": "rate_medical_exempt",
+            "duplicates": 33,
+            "info": {
+              "id": "rate_medical_exempt",
+              "short_name": "Medical exemption rate",
+              "long_name": "Proportion of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+              "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nh_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.003035,
+            "sd": 0.004525,
+            "min": 0.0004,
+            "max": 0.03
+          },
+          {
+            "name": "N_enrolled",
+            "duplicates": 0,
+            "info": {
+              "id": "N_enrolled",
+              "short_name": "Students enrolled",
+              "long_name": "Number of students enrolled",
+              "category": "immunization",
+              "short_description": "Number of students enrolled at the reporting level.",
+              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+              "statement": "In {location}, {value} students were enrolled.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nh_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "integer",
+            "missing": 0,
+            "mean": 17653.35,
+            "sd": 17195.287053,
+            "min": 3495,
+            "max": 59824
+          },
+          {
+            "name": "rate_utd",
+            "duplicates": 14,
+            "info": {
+              "id": "rate_utd",
+              "short_name": "Up-to-date rate",
+              "long_name": "Proportion of students up to date for all required vaccines",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students up to date for every vaccine the state requires.",
+              "long_description": "Share of assessed school students recorded as up to date across the full required schedule, rather than for a single antigen.",
+              "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nh_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.929025,
+            "sd": 0.017629,
+            "min": 0.89,
+            "max": 0.96
+          },
+          {
+            "name": "rate_conditional",
+            "duplicates": 22,
+            "info": {
+              "id": "rate_conditional",
+              "short_name": "Conditional enrollment rate",
+              "long_name": "Proportion of students conditionally enrolled",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students admitted conditionally while completing required immunizations.",
+              "long_description": "Share of assessed school students who are conditionally (or provisionally) enrolled - permitted to attend while in the process of completing required immunizations and not yet overdue.",
+              "statement": "In {location}, {value} of school students were conditionally enrolled.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nh_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.018775,
+            "sd": 0.010523,
+            "min": 0.007,
+            "max": 0.04
+          },
+          {
+            "name": "rate_not_utd",
+            "duplicates": 18,
+            "info": {
+              "id": "rate_not_utd",
+              "short_name": "Not-up-to-date rate",
+              "long_name": "Proportion of students not up to date for all required vaccines",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students not up to date for every vaccine the state requires.",
+              "long_description": "Share of assessed school students not recorded as up to date across the full required schedule, excluding those conditionally enrolled.",
+              "statement": "In {location}, {value} of school students were not up to date for all required vaccines.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "nh_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.019425,
+            "sd": 0.011629,
+            "min": 0.005,
+            "max": 0.057
+          }
+        ]
+      },
+      "sha512": "d83ef5bf189b59312ec125248c2c8ede61057b607bc3f12979a5cc70e1b48b23e026bcea67572474d8a379ed2653057f5ef9ac4e0c66be4814475bba8d65623d"
+    }
+  ],
+  "measure_info": {
+    "rate_personal_exempt": {
+      "id": "rate_personal_exempt",
+      "short_name": "Non-medical exemption rate",
+      "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+      "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+      "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nh_school_immunization"
+        }
+      ]
+    },
+    "rate_medical_exempt": {
+      "id": "rate_medical_exempt",
+      "short_name": "Medical exemption rate",
+      "long_name": "Proportion of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+      "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nh_school_immunization"
+        }
+      ]
+    },
+    "N_enrolled": {
+      "id": "N_enrolled",
+      "short_name": "Students enrolled",
+      "long_name": "Number of students enrolled",
+      "category": "immunization",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+      "statement": "In {location}, {value} students were enrolled.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nh_school_immunization"
+        }
+      ]
+    },
+    "rate_utd": {
+      "id": "rate_utd",
+      "short_name": "Up-to-date rate",
+      "long_name": "Proportion of students up to date for all required vaccines",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students up to date for every vaccine the state requires.",
+      "long_description": "Share of assessed school students recorded as up to date across the full required schedule, rather than for a single antigen.",
+      "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nh_school_immunization"
+        }
+      ]
+    },
+    "rate_conditional": {
+      "id": "rate_conditional",
+      "short_name": "Conditional enrollment rate",
+      "long_name": "Proportion of students conditionally enrolled",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students admitted conditionally while completing required immunizations.",
+      "long_description": "Share of assessed school students who are conditionally (or provisionally) enrolled - permitted to attend while in the process of completing required immunizations and not yet overdue.",
+      "statement": "In {location}, {value} of school students were conditionally enrolled.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nh_school_immunization"
+        }
+      ]
+    },
+    "rate_not_utd": {
+      "id": "rate_not_utd",
+      "short_name": "Not-up-to-date rate",
+      "long_name": "Proportion of students not up to date for all required vaccines",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students not up to date for every vaccine the state requires.",
+      "long_description": "Share of assessed school students not recorded as up to date across the full required schedule, excluding those conditionally enrolled.",
+      "statement": "In {location}, {value} of school students were not up to date for all required vaccines.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "nh_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "nh_school_immunization": {
+        "name": "New Hampshire School Immunization Data",
+        "url": "https://www.dhhs.nh.gov/programs-services/disease-prevention/nh-immunization-program/immunization-guidance-schools",
+        "organization": "New Hampshire Department of Health and Human Services",
+        "organization_url": "https://www.dhhs.nh.gov/",
+        "description": "County-level immunization status (up to date, conditional, exempt) from the annual NH DHHS school immunization reports.",
+        "restrictions": "Public data published by the source agency; no access restrictions."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
+    }
+  }
 }

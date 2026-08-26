@@ -5,47 +5,41 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:52",
       "frequency": 0,
-      "last_run": "2026-02-05 10:01:57",
-      "run_time": 1.979,
+      "run_time": 0.54,
       "last_status": {
         "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
           "New names:",
-          "* `Total` -> `Total...15`",
-          "* `Total` -> `Total...16`",
-          "* `Total` -> `Total...17`",
-          "* `Total` -> `Total...18`",
-          "* `Total` -> `Total...19`",
-          "* `Total` -> `Total...20`",
-          "* `Total` -> `Total...21`",
-          "* `Total` -> `Total...22`",
-          "* `Total` -> `Total...23`",
-          "* `Total` -> `Total...24`",
-          "* `Total` -> `Total...25`"
+          "• `Total` -> `Total...15`",
+          "• `Total` -> `Total...16`",
+          "• `Total` -> `Total...17`",
+          "• `Total` -> `Total...18`",
+          "• `Total` -> `Total...19`",
+          "• `Total` -> `Total...20`",
+          "• `Total` -> `Total...21`",
+          "• `Total` -> `Total...22`",
+          "• `Total` -> `Total...23`",
+          "• `Total` -> `Total...24`",
+          "• `Total` -> `Total...25`",
+          "SD: 4718 rows (4263 school, 455 county), school years 2017-09-01, 2018-09-01, 2019-09-01, 2020-09-01, 2021-09-01, 2022-09-01, 2023-09-01"
         ],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/SD/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name"]
+    }
+  },
   "raw_state": {
     "hash": "3fd534408ed6ce661bf813d0285af359"
   },
   "standard_state": {
-    "./data/SD/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/SD/standard/data.csv.gz": "bb2ebc04510632306ec95fa6396d7c93"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/SD/measure_info.json": "4e3cfa3a0c5bacc12a31e1338d1c97c1",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/SD/standard/data.csv.gz": "43ee9b560e4cbc08c0b567cc9a822cff"
   },
-  "script_hash": "e0caf760469e865218a3869d8d39733c"
+  "script_hash": "9fae5a11613a2d8b4e4ba9c85bc6f726"
 }

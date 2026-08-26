@@ -5,19 +5,24 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:11",
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:40",
-      "run_time": 0.041,
+      "run_time": 0.03,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/IA/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/Iowa Vaccine Exemption Data_K-12.xlsx": "efd397b2c396e0e599450bf4fb55a9f0",
+    "raw/K-12/~$Iowa Vaccine Exemption Data.xlsx": "4d80136c2f489ac3d174d68f1179f196",
     "raw/K-12/Medical Exemption/2011-12_Iowa_Medical Exemption data.csv": "de2124413d4c92b9be67ef04c1630b29",
     "raw/K-12/Medical Exemption/2012-13_Iowa_Medical Exemption data.csv": "bc89c3e82c04e0f84294af7bcf77d8bd",
     "raw/K-12/Medical Exemption/2013-14_Iowa_Medical Exemption data.csv": "05c0a92c012c624f258aedb5c760def5",
@@ -45,8 +50,11 @@
     "raw/K-12/Religious Exemption/2021-22_Iowa_Religious Exemption data.csv": "b050e447b15d9630a8ebe70cc69ec6ff",
     "raw/K-12/Religious Exemption/2022-23_Iowa_Religious Exemption data.csv": "037df48ddc202b5b860cf043551a6050",
     "raw/K-12/Religious Exemption/2023-24_Iowa_Religious Exemption data.csv": "1a1aaf3c70c5fabd6f9c2bfcfc7c43bb",
-    "raw/K-12/Religious Exemption/2024-25_Iowa_Religious Exemption data.csv": "cd17fffe0be4fae9b7ba4e33a26f0c9c",
-    "raw/K-12/~$Iowa Vaccine Exemption Data.xlsx": "4d80136c2f489ac3d174d68f1179f196"
+    "raw/K-12/Religious Exemption/2024-25_Iowa_Religious Exemption data.csv": "cd17fffe0be4fae9b7ba4e33a26f0c9c"
   },
-  "script_hash": "6be5c78730ef02db79d2f259b34222ce"
+  "script_hash": "2fcbc4dc08fff07d99700d757246b18a",
+  "standard_state": {
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IA/measure_info.json": "9b4e95d5c5fdeb230304b76292a3cb36",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IA/standard/data.csv.gz": "67774938e0376db0aa19ebc355913b36"
+  }
 }

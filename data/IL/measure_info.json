@@ -1,17 +1,1491 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_polio_religious_exempt": {
+    "id": "N_polio_religious_exempt",
+    "short_name": "Polio religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the polio vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the polio vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from polio vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_polio_medical_exempt": {
+    "id": "N_polio_medical_exempt",
+    "short_name": "Polio medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the polio vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the polio vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from polio vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_polio_non_compliant": {
+    "id": "N_polio_non_compliant",
+    "short_name": "Polio non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from polio vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for polio vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the polio requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the polio vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_dtap_religious_exempt": {
+    "id": "N_dtap_religious_exempt",
+    "short_name": "DTaP religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from diphtheria-tetanus-pertussis (DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the diphtheria-tetanus-pertussis (DTaP) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the diphtheria-tetanus-pertussis (DTaP) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from diphtheria-tetanus-pertussis (DTaP) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_dtap_medical_exempt": {
+    "id": "N_dtap_medical_exempt",
+    "short_name": "DTaP medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from diphtheria-tetanus-pertussis (DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the diphtheria-tetanus-pertussis (DTaP) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the diphtheria-tetanus-pertussis (DTaP) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from diphtheria-tetanus-pertussis (DTaP) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_dtap_non_compliant": {
+    "id": "N_dtap_non_compliant",
+    "short_name": "DTaP non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from diphtheria-tetanus-pertussis (DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for diphtheria-tetanus-pertussis (DTaP) vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the diphtheria-tetanus-pertussis (DTaP) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the diphtheria-tetanus-pertussis (DTaP) vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_measles_religious_exempt": {
+    "id": "N_measles_religious_exempt",
+    "short_name": "Measles religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from measles vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the measles vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the measles vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from measles vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_measles_medical_exempt": {
+    "id": "N_measles_medical_exempt",
+    "short_name": "Measles medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from measles vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the measles vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the measles vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from measles vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_measles_non_compliant": {
+    "id": "N_measles_non_compliant",
+    "short_name": "Measles non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from measles vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for measles vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the measles requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the measles vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_rubella_religious_exempt": {
+    "id": "N_rubella_religious_exempt",
+    "short_name": "Rubella religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the rubella vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the rubella vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from rubella vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_rubella_medical_exempt": {
+    "id": "N_rubella_medical_exempt",
+    "short_name": "Rubella medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the rubella vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the rubella vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from rubella vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_rubella_non_compliant": {
+    "id": "N_rubella_non_compliant",
+    "short_name": "Rubella non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for rubella vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the rubella requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the rubella vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_mumps_religious_exempt": {
+    "id": "N_mumps_religious_exempt",
+    "short_name": "Mumps religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the mumps vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the mumps vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from mumps vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_mumps_medical_exempt": {
+    "id": "N_mumps_medical_exempt",
+    "short_name": "Mumps medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the mumps vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the mumps vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from mumps vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_mumps_non_compliant": {
+    "id": "N_mumps_non_compliant",
+    "short_name": "Mumps non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for mumps vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the mumps requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the mumps vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b_religious_exempt": {
+    "id": "N_hep_b_religious_exempt",
+    "short_name": "Hepatitis B religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the hepatitis B vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from hepatitis B vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b_medical_exempt": {
+    "id": "N_hep_b_medical_exempt",
+    "short_name": "Hepatitis B medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from hepatitis B vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b_non_compliant": {
+    "id": "N_hep_b_non_compliant",
+    "short_name": "Hepatitis B non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for hepatitis B vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the hepatitis B requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the hepatitis B vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_hib_religious_exempt": {
+    "id": "N_hib_religious_exempt",
+    "short_name": "Hib religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from Haemophilus influenzae type b (Hib) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the Haemophilus influenzae type b (Hib) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the Haemophilus influenzae type b (Hib) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from Haemophilus influenzae type b (Hib) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_hib_non_compliant": {
+    "id": "N_hib_non_compliant",
+    "short_name": "Hib non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from Haemophilus influenzae type b (Hib) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for Haemophilus influenzae type b (Hib) vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the Haemophilus influenzae type b (Hib) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the Haemophilus influenzae type b (Hib) vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_varicella_religious_exempt": {
+    "id": "N_varicella_religious_exempt",
+    "short_name": "Varicella religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the varicella (chickenpox) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the varicella (chickenpox) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from varicella (chickenpox) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_varicella_medical_exempt": {
+    "id": "N_varicella_medical_exempt",
+    "short_name": "Varicella medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the varicella (chickenpox) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the varicella (chickenpox) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from varicella (chickenpox) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_varicella_non_compliant": {
+    "id": "N_varicella_non_compliant",
+    "short_name": "Varicella non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for varicella (chickenpox) vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the varicella (chickenpox) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the varicella (chickenpox) vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_tdap_religious_exempt": {
+    "id": "N_tdap_religious_exempt",
+    "short_name": "Tdap religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from tetanus-diphtheria-pertussis booster (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the tetanus-diphtheria-pertussis booster (Tdap) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the tetanus-diphtheria-pertussis booster (Tdap) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from tetanus-diphtheria-pertussis booster (Tdap) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_tdap_medical_exempt": {
+    "id": "N_tdap_medical_exempt",
+    "short_name": "Tdap medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from tetanus-diphtheria-pertussis booster (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the tetanus-diphtheria-pertussis booster (Tdap) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the tetanus-diphtheria-pertussis booster (Tdap) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from tetanus-diphtheria-pertussis booster (Tdap) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_tdap_non_compliant": {
+    "id": "N_tdap_non_compliant",
+    "short_name": "Tdap non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from tetanus-diphtheria-pertussis booster (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for tetanus-diphtheria-pertussis booster (Tdap) vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the tetanus-diphtheria-pertussis booster (Tdap) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the tetanus-diphtheria-pertussis booster (Tdap) vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_pcv_religious_exempt": {
+    "id": "N_pcv_religious_exempt",
+    "short_name": "Pneumococcal (PCV) religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the pneumococcal conjugate (PCV) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the pneumococcal conjugate (PCV) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from pneumococcal conjugate (PCV) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_pcv_medical_exempt": {
+    "id": "N_pcv_medical_exempt",
+    "short_name": "Pneumococcal (PCV) medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the pneumococcal conjugate (PCV) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the pneumococcal conjugate (PCV) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from pneumococcal conjugate (PCV) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_pcv_non_compliant": {
+    "id": "N_pcv_non_compliant",
+    "short_name": "Pneumococcal (PCV) non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for pneumococcal conjugate (PCV) vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the pneumococcal conjugate (PCV) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the pneumococcal conjugate (PCV) vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_menacwy_religious_exempt": {
+    "id": "N_menacwy_religious_exempt",
+    "short_name": "MenACWY religious exemptions (count)",
+    "long_name": "Number of students with a religious exemption from meningococcal conjugate (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from the meningococcal conjugate (MenACWY) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a religious exemption from the meningococcal conjugate (MenACWY) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a religious exemption from meningococcal conjugate (MenACWY) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_menacwy_medical_exempt": {
+    "id": "N_menacwy_medical_exempt",
+    "short_name": "MenACWY medical exemptions (count)",
+    "long_name": "Number of students with a medical exemption from meningococcal conjugate (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from the meningococcal conjugate (MenACWY) vaccination requirement.",
+    "long_description": "Count of assessed school students holding a medical exemption from the meningococcal conjugate (MenACWY) vaccine specifically. Reported by states that break exemption counts out by antigen and by reason.",
+    "statement": "In {location}, {value} school students had a medical exemption from meningococcal conjugate (MenACWY) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_menacwy_non_compliant": {
+    "id": "N_menacwy_non_compliant",
+    "short_name": "MenACWY non-compliant (count)",
+    "long_name": "Number of students neither up to date for nor exempt from meningococcal conjugate (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are neither up to date for meningococcal conjugate (MenACWY) vaccination nor hold an exemption from it.",
+    "long_description": "Unduplicated count of assessed school students out of compliance with the meningococcal conjugate (MenACWY) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. Not one minus the coverage count, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} school students were out of compliance with the meningococcal conjugate (MenACWY) vaccination requirement.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_polio": {
+    "id": "rate_polio",
+    "short_name": "Polio coverage",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_religious_exempt": {
+    "id": "rate_polio_religious_exempt",
+    "short_name": "polio religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the polio series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_medical_exempt": {
+    "id": "rate_polio_medical_exempt",
+    "short_name": "polio medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_non_compliant": {
+    "id": "rate_polio_non_compliant",
+    "short_name": "polio non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for polio vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the polio requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the polio vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap": {
+    "id": "rate_dtap",
+    "short_name": "DTaP/Tdap coverage",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_religious_exempt": {
+    "id": "rate_dtap_religious_exempt",
+    "short_name": "DTaP religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the DTaP series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_medical_exempt": {
+    "id": "rate_dtap_medical_exempt",
+    "short_name": "DTaP medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_non_compliant": {
+    "id": "rate_dtap_non_compliant",
+    "short_name": "DTaP non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for DTaP vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the DTaP requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the DTaP vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_measles": {
+    "id": "rate_measles",
+    "short_name": "Measles coverage",
+    "long_name": "Proportion of students up to date for measles vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for measles vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for measles vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Measles vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_measles_religious_exempt": {
+    "id": "rate_measles_religious_exempt",
+    "short_name": "measles religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from measles vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the measles vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the measles series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from measles vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_measles_medical_exempt": {
+    "id": "rate_measles_medical_exempt",
+    "short_name": "measles medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from measles vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the measles vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the measles vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from measles vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_measles_non_compliant": {
+    "id": "rate_measles_non_compliant",
+    "short_name": "measles non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from measles vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for measles vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the measles requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the measles vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_rubella": {
+    "id": "rate_rubella",
+    "short_name": "Rubella coverage",
+    "long_name": "Proportion of students up to date for rubella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for rubella vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for rubella vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Rubella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_rubella_religious_exempt": {
+    "id": "rate_rubella_religious_exempt",
+    "short_name": "rubella religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the rubella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the rubella series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from rubella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_rubella_medical_exempt": {
+    "id": "rate_rubella_medical_exempt",
+    "short_name": "rubella medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the rubella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the rubella vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from rubella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_rubella_non_compliant": {
+    "id": "rate_rubella_non_compliant",
+    "short_name": "rubella non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for rubella vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the rubella requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the rubella vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_mumps": {
+    "id": "rate_mumps",
+    "short_name": "Mumps coverage",
+    "long_name": "Proportion of students up to date for mumps vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for mumps vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for mumps vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Mumps vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_mumps_religious_exempt": {
+    "id": "rate_mumps_religious_exempt",
+    "short_name": "mumps religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the mumps vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the mumps series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from mumps vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_mumps_medical_exempt": {
+    "id": "rate_mumps_medical_exempt",
+    "short_name": "mumps medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the mumps vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the mumps vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from mumps vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_mumps_non_compliant": {
+    "id": "rate_mumps_non_compliant",
+    "short_name": "mumps non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for mumps vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the mumps requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the mumps vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b": {
+    "id": "rate_hep_b",
+    "short_name": "Hepatitis B coverage",
+    "long_name": "Proportion of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_religious_exempt": {
+    "id": "rate_hep_b_religious_exempt",
+    "short_name": "hepatitis B religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the hepatitis B series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_medical_exempt": {
+    "id": "rate_hep_b_medical_exempt",
+    "short_name": "hepatitis B medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_non_compliant": {
+    "id": "rate_hep_b_non_compliant",
+    "short_name": "hepatitis B non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for hepatitis B vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the hepatitis B requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the hepatitis B vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hib": {
+    "id": "rate_hib",
+    "short_name": "Hib coverage",
+    "long_name": "Proportion of students up to date for Haemophilus influenzae type b (Hib) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for Haemophilus influenzae type b (Hib) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for Haemophilus influenzae type b (Hib) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Hib vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hib_religious_exempt": {
+    "id": "rate_hib_religious_exempt",
+    "short_name": "Haemophilus influenzae type b (Hib) religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from Haemophilus influenzae type b (Hib) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the Haemophilus influenzae type b (Hib) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the Haemophilus influenzae type b (Hib) series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from Haemophilus influenzae type b (Hib) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hib_non_compliant": {
+    "id": "rate_hib_non_compliant",
+    "short_name": "Haemophilus influenzae type b (Hib) non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from Haemophilus influenzae type b (Hib) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for Haemophilus influenzae type b (Hib) vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the Haemophilus influenzae type b (Hib) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the Haemophilus influenzae type b (Hib) vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella": {
+    "id": "rate_varicella",
+    "short_name": "Varicella coverage",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_religious_exempt": {
+    "id": "rate_varicella_religious_exempt",
+    "short_name": "varicella religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the varicella series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_medical_exempt": {
+    "id": "rate_varicella_medical_exempt",
+    "short_name": "varicella medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_non_compliant": {
+    "id": "rate_varicella_non_compliant",
+    "short_name": "varicella non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for varicella vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the varicella requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the varicella vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap": {
+    "id": "rate_tdap",
+    "short_name": "Tdap coverage",
+    "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap_religious_exempt": {
+    "id": "rate_tdap_religious_exempt",
+    "short_name": "Tdap religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from Tdap vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the Tdap vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the Tdap series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap_medical_exempt": {
+    "id": "rate_tdap_medical_exempt",
+    "short_name": "Tdap medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from Tdap vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the Tdap vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap_non_compliant": {
+    "id": "rate_tdap_non_compliant",
+    "short_name": "Tdap non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from Tdap vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for Tdap vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the Tdap requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the Tdap vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv": {
+    "id": "rate_pcv",
+    "short_name": "Pneumococcal (PCV) coverage",
+    "long_name": "Proportion of students up to date for pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for pneumococcal conjugate (PCV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for pneumococcal conjugate (PCV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for pneumococcal (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv_religious_exempt": {
+    "id": "rate_pcv_religious_exempt",
+    "short_name": "pneumococcal conjugate (PCV) religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the pneumococcal conjugate (PCV) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the pneumococcal conjugate (PCV) series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from pneumococcal conjugate (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv_medical_exempt": {
+    "id": "rate_pcv_medical_exempt",
+    "short_name": "pneumococcal (PCV) medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from pneumococcal (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the pneumococcal (PCV) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from pneumococcal (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv_non_compliant": {
+    "id": "rate_pcv_non_compliant",
+    "short_name": "pneumococcal conjugate (PCV) non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for pneumococcal conjugate (PCV) vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the pneumococcal conjugate (PCV) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the pneumococcal conjugate (PCV) vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy": {
+    "id": "rate_menacwy",
+    "short_name": "Meningococcal (MenACWY) coverage",
+    "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy_religious_exempt": {
+    "id": "rate_menacwy_religious_exempt",
+    "short_name": "meningococcal (MenACWY) religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from meningococcal (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the meningococcal (MenACWY) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the meningococcal (MenACWY) series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy_medical_exempt": {
+    "id": "rate_menacwy_medical_exempt",
+    "short_name": "meningococcal (MenACWY) medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from meningococcal (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the meningococcal (MenACWY) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the meningococcal (MenACWY) vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy_non_compliant": {
+    "id": "rate_menacwy_non_compliant",
+    "short_name": "meningococcal (MenACWY) non-compliance rate",
+    "long_name": "Proportion of students neither up to date for nor exempt from meningococcal (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are neither up to date for meningococcal (MenACWY) vaccination nor hold an exemption from it.",
+    "long_description": "Share of assessed school students out of compliance with the meningococcal (MenACWY) requirement: the residual left after up-to-date pupils and pupils holding a medical or religious exemption. It is not one minus coverage, because an exempt pupil counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students were out of compliance with the meningococcal (MenACWY) vaccination requirement.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_school_compliance": {
+    "id": "rate_polio_school_compliance",
+    "short_name": "Polio school compliance rate",
+    "long_name": "Proportion of students in school compliance for polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the polio vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_school_compliance": {
+    "id": "rate_dtap_school_compliance",
+    "short_name": "DTaP school compliance rate",
+    "long_name": "Proportion of students in school compliance for diphtheria-tetanus-pertussis (DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the diphtheria-tetanus-pertussis (DTaP) vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for diphtheria-tetanus-pertussis (DTaP) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_measles_school_compliance": {
+    "id": "rate_measles_school_compliance",
+    "short_name": "Measles school compliance rate",
+    "long_name": "Proportion of students in school compliance for measles vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the measles vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for measles vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_rubella_school_compliance": {
+    "id": "rate_rubella_school_compliance",
+    "short_name": "Rubella school compliance rate",
+    "long_name": "Proportion of students in school compliance for rubella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the rubella vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for rubella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_mumps_school_compliance": {
+    "id": "rate_mumps_school_compliance",
+    "short_name": "Mumps school compliance rate",
+    "long_name": "Proportion of students in school compliance for mumps vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the mumps vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for mumps vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_school_compliance": {
+    "id": "rate_hep_b_school_compliance",
+    "short_name": "Hepatitis B school compliance rate",
+    "long_name": "Proportion of students in school compliance for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the hepatitis B vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_hib_school_compliance": {
+    "id": "rate_hib_school_compliance",
+    "short_name": "Hib school compliance rate",
+    "long_name": "Proportion of students in school compliance for Haemophilus influenzae type b (Hib) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the Haemophilus influenzae type b (Hib) vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for Haemophilus influenzae type b (Hib) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_school_compliance": {
+    "id": "rate_varicella_school_compliance",
+    "short_name": "Varicella school compliance rate",
+    "long_name": "Proportion of students in school compliance for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the varicella (chickenpox) vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for varicella (chickenpox) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap_school_compliance": {
+    "id": "rate_tdap_school_compliance",
+    "short_name": "Tdap school compliance rate",
+    "long_name": "Proportion of students in school compliance for tetanus-diphtheria-pertussis booster (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the tetanus-diphtheria-pertussis booster (Tdap) vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for tetanus-diphtheria-pertussis booster (Tdap) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv_school_compliance": {
+    "id": "rate_pcv_school_compliance",
+    "short_name": "Pneumococcal (PCV) school compliance rate",
+    "long_name": "Proportion of students in school compliance for pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the pneumococcal conjugate (PCV) vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for pneumococcal conjugate (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy_school_compliance": {
+    "id": "rate_menacwy_school_compliance",
+    "short_name": "MenACWY school compliance rate",
+    "long_name": "Proportion of students in school compliance for meningococcal conjugate (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students the source classifies as in compliance for the meningococcal conjugate (MenACWY) vaccination requirement.",
+    "long_description": "Directly published by the source as its own \"School Compliance %\" per vaccine, alongside coverage and a non-compliant headcount; the three do not always reconcile arithmetically, so this is kept as its own measure rather than treated as equivalent to coverage or to one minus the non-compliance rate.",
+    "statement": "In {location}, {value} of school students were in school compliance for meningococcal conjugate (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "il_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "il_school_immunization": {
+      "name": "Illinois School Immunization Data",
+      "url": "https://www.isbe.net/Pages/Health-Requirements-Student-Data.aspx",
+      "organization": "Illinois State Board of Education",
+      "organization_url": "https://www.isbe.net/",
+      "description": "County-level immunization and exemption data from the ISBE public-use immunization data files, published as one sheet per vaccine (Polio, DTaP, Tdap, Measles, Mumps, Rubella, Hepatitis B, Hib, Varicella, Pneumococcal, Meningococcal). Each vaccine carries its own enrollment -- Tdap and Meningococcal assess a 7th/9-12 grade cohort, the rest assess PreK-12 -- so every measure is kept per vaccine rather than collapsed into one antigen's numbers.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

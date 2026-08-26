@@ -1,17 +1,182 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_complete": {
+    "id": "rate_complete",
+    "short_name": "Up-to-date rate",
+    "long_name": "Proportion of students up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students up to date for all required vaccines.",
+    "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
+    "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap": {
+    "id": "rate_dtap",
+    "short_name": "DTaP/Tdap coverage",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_polio": {
+    "id": "rate_polio",
+    "short_name": "Polio coverage",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b": {
+    "id": "rate_hep_b",
+    "short_name": "Hepatitis B coverage",
+    "long_name": "Proportion of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr": {
+    "id": "rate_mmr",
+    "short_name": "MMR coverage",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella": {
+    "id": "rate_varicella",
+    "short_name": "Varicella coverage",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_a": {
+    "id": "rate_hep_a",
+    "short_name": "Hepatitis A coverage",
+    "long_name": "Proportion of students up to date for hepatitis A vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis A vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis A vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis A vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap": {
+    "id": "rate_tdap",
+    "short_name": "Tdap coverage",
+    "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_hpv": {
+    "id": "rate_hpv",
+    "short_name": "HPV coverage",
+    "long_name": "Proportion of students up to date for human papillomavirus (HPV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for human papillomavirus (HPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for human papillomavirus (HPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for HPV vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy": {
+    "id": "rate_menacwy",
+    "short_name": "Meningococcal (MenACWY) coverage",
+    "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ak_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "ak_school_immunization": {
+      "name": "Alaska Vaccination Coverage Report, Kindergarten and Adolescent Series",
+      "url": "https://health.alaska.gov/en/data-and-statistics/data-and-statistics-communicable-diseases/",
+      "organization": "Alaska Department of Health, Division of Public Health",
+      "organization_url": "https://health.alaska.gov/",
+      "description": "Quarterly report built from VacTrAK, Alaska's immunization registry, rather than from a school-entry survey. Two of its tables are school-relevant and ingested: the kindergarten series (ages 5-6, grade = \"Kindergarten\": DTaP, polio, hepatitis B, MMR, varicella, hepatitis A, and an overall up-to-date rate) and the adolescent series (ages 13-17, grade = \"Adolescent\": Tdap, HPV, MenACWY, and an overall up-to-date rate); its 19-35-month and adult tables are out of scope for school immunizations. Some quarters omit the adolescent Tdap and overall rate -- VacTrAK had a forecasting error that made Tdap unassessable for adolescents and adults that quarter, and the overall rate cannot be computed without it -- so HPV and MenACWY are populated but rate_tdap and rate_complete are NA for that grade/quarter. Coverage is broken out by Alaska's 7 public-health regions (Anchorage, Gulf Coast, Interior, Mat-Su, Northern, Southeast, Southwest) plus a statewide figure. Most regions bundle multiple boroughs/census areas and have no FIPS of their own, so they carry geography = NA; Anchorage is coextensive with the Municipality of Anchorage and resolves to that borough's FIPS. Each observation is dated to the school year its reporting quarter falls within (Q1/Q2 snapshots to the school year that ended that calendar year, Q3/Q4 to the one that started it). COVERAGE ONLY -- no exemption or enrollment counts are published in either table.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

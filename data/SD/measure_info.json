@@ -1,17 +1,182 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_hep_a": {
+    "id": "N_hep_a",
+    "short_name": "Hepatitis A students vaccinated",
+    "long_name": "Number of students up to date for hepatitis A vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for hepatitis A vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for hepatitis A vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for hepatitis A vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b": {
+    "id": "N_hep_b",
+    "short_name": "Hepatitis B students vaccinated",
+    "long_name": "Number of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for hepatitis B vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for hepatitis B vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_dtap": {
+    "id": "N_dtap",
+    "short_name": "DTaP/Tdap students vaccinated",
+    "long_name": "Number of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_tdap": {
+    "id": "N_tdap",
+    "short_name": "Tdap students vaccinated",
+    "long_name": "Number of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_polio": {
+    "id": "N_polio",
+    "short_name": "Polio students vaccinated",
+    "long_name": "Number of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for polio (IPV/OPV) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for polio (IPV/OPV) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_mmr_k": {
+    "id": "N_mmr_k",
+    "short_name": "Kindergarten MMR vaccinated students vaccinated",
+    "long_name": "Number of students up to date for a record of MMR vaccination in kindergarten vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for a record of MMR vaccination in kindergarten vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for a record of MMR vaccination in kindergarten vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for a record of MMR vaccination in kindergarten vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_varicella": {
+    "id": "N_varicella",
+    "short_name": "Varicella students vaccinated",
+    "long_name": "Number of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for varicella (chickenpox) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for varicella (chickenpox) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_men_6th": {
+    "id": "N_men_6th",
+    "short_name": "6th grade meningococcal vaccinated students vaccinated",
+    "long_name": "Number of students up to date for a record of meningococcal vaccination in 6th grade vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for a record of meningococcal vaccination in 6th grade vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for a record of meningococcal vaccination in 6th grade vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for a record of meningococcal vaccination in 6th grade vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_medical_exempt": {
+    "id": "N_medical_exempt",
+    "short_name": "Medical exemptions (count)",
+    "long_name": "Number of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "N_religious_exempt": {
+    "id": "N_religious_exempt",
+    "short_name": "Religious exemptions (count)",
+    "long_name": "Number of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+    "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sd_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "sd_school_immunization": {
+      "name": "South Dakota School Immunization Data",
+      "url": "https://doh.sd.gov/health-data-reports/data-dashboards/school-immunization-dashboard",
+      "organization": "South Dakota Department of Health",
+      "organization_url": "https://doh.sd.gov/",
+      "description": "School-level immunization counts by antigen and exemption from the South Dakota DOH school immunization data.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

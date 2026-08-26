@@ -1,17 +1,63 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "nj_school_immunization"
+      }
+    ]
+  },
+  "N_medical_exempt": {
+    "id": "N_medical_exempt",
+    "short_name": "Medical exemptions (count)",
+    "long_name": "Number of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "nj_school_immunization"
+      }
+    ]
+  },
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "nj_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "nj_school_immunization": {
+      "name": "New Jersey School Immunization Status",
+      "url": "https://www.nj.gov/health/cd/statistics/imm-status-reports/",
+      "organization": "New Jersey Department of Health",
+      "organization_url": "https://www.nj.gov/health/",
+      "description": "County-level school immunization and exemption data from the NJDOH immunization status reports.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

@@ -1,17 +1,114 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_dtap_religious_exempt": {
+    "id": "rate_dtap_religious_exempt",
+    "short_name": "DTaP religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the DTaP series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ri_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_religious_exempt": {
+    "id": "rate_polio_religious_exempt",
+    "short_name": "polio religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the polio series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ri_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_religious_exempt": {
+    "id": "rate_mmr_religious_exempt",
+    "short_name": "MMR religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ri_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_religious_exempt": {
+    "id": "rate_hep_b_religious_exempt",
+    "short_name": "hepatitis B religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the hepatitis B series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ri_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_religious_exempt": {
+    "id": "rate_varicella_religious_exempt",
+    "short_name": "varicella religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the varicella series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ri_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy_religious_exempt": {
+    "id": "rate_menacwy_religious_exempt",
+    "short_name": "meningococcal (MenACWY) religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from meningococcal (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the meningococcal (MenACWY) vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the meningococcal (MenACWY) series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ri_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "ri_school_immunization": {
+      "name": "Rhode Island School Immunization Coverage",
+      "url": "https://ricair-data-rihealth.hub.arcgis.com/",
+      "organization": "Rhode Island Department of Health",
+      "organization_url": "https://health.ri.gov/",
+      "description": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. STATE LEVEL ONLY -- Rhode Island supplies no county breakdown here, so geography is the 2-digit state FIPS (44) on every row and this source contributes nothing to county analyses. Small cells are suppressed with a less-than marker; those are left missing.",
+      "restrictions": "Public data supplied by RIDOH."
+    }
   }
 }

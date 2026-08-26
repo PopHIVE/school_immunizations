@@ -1,17 +1,63 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the exemption percentages in the same record. Missing where the source marked a school \"N/R\" (not reported) for that year. Some schools report enrollment of 0; this may be suppression but is not documented so it is kept as in the raw files.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "hi_school_immunization"
+      }
+    ]
+  },
+  "rate_personal_exempt": {
+    "id": "rate_personal_exempt",
+    "short_name": "Non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports. At the school level this is the rate as published by the state. At the county level it is the enrollment-weighted average of the county's school-level rates, not a figure the state publishes directly; schools the state marked \"N/R\" (not reported) that year are excluded from the average, so the county rate may not exactly match one computed if those schools' true rates were known.",
+    "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "hi_school_immunization"
+      }
+    ]
+  },
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey. At the school level this is the rate as published by the state. At the county level it is the enrollment-weighted average of the county's school-level rates, not a figure the state publishes directly; schools the state marked \"N/R\" (not reported) that year are excluded from the average, so the county rate may not exactly match one computed if those schools' true rates were known.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "hi_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "hi_school_immunization": {
+      "name": "Hawaii School Immunization and Exemption Data",
+      "url": "https://health.hawaii.gov/docd/resources/reports/immunization-examination-requirements/",
+      "organization": "Hawaii State Department of Health",
+      "organization_url": "https://health.hawaii.gov/",
+      "description": "School immunization and exemption data from the Hawaii DOH immunization/examination requirements reports. Note that county rates are derived from reported school rates and may not be exact due to some schoools' data being suppressed.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

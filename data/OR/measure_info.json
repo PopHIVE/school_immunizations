@@ -1,17 +1,335 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled (adjusted enrollment)",
+    "category": "immunization",
+    "short_description": "Adjusted enrollment count used as the denominator for the exemption and up-to-date rates.",
+    "long_description": "OHA's \"Adjusted Enrollment\" figure, the denominator the workbook itself uses for every percent column it publishes; this ingest carries it over unchanged rather than deriving its own.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_complete": {
+    "id": "N_complete",
+    "short_name": "Fully up to date (count)",
+    "long_name": "Number of students up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Students who have completed every vaccine required for their grade.",
+    "long_description": "Count of students reported by OHA as having documentation for all required vaccines (\"# With All Vaccines Required\").",
+    "statement": "In {location}, {value} students were up to date for all required vaccines.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_complete": {
+    "id": "rate_complete",
+    "short_name": "Fully up to date rate",
+    "long_name": "Proportion of students up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Share of students who have completed every vaccine required for their grade.",
+    "long_description": "Share of enrolled students with documentation for all required vaccines. For county rows this is recomputed from the summed school-level counts (N_complete / N_enrolled) rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_personal_exempt": {
+    "id": "N_personal_exempt",
+    "short_name": "Nonmedical exemptions, any vaccine (count)",
+    "long_name": "Number of students with a nonmedical exemption from any required vaccine",
+    "category": "immunization",
+    "short_description": "Students with a nonmedical exemption from at least one required vaccine.",
+    "long_description": "Count of students reported by OHA under \"# Nonmedical Exemptions Any Vaccines\" — a nonmedical exemption from at least one required vaccine, not broken out by which one.",
+    "statement": "In {location}, {value} students had a nonmedical exemption from a required vaccine.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_personal_exempt": {
+    "id": "rate_personal_exempt",
+    "short_name": "Nonmedical exemption rate, any vaccine",
+    "long_name": "Proportion of students with a nonmedical exemption from any required vaccine",
+    "category": "immunization",
+    "short_description": "Share of students with a nonmedical exemption from at least one required vaccine.",
+    "long_description": "Share of enrolled students with a nonmedical exemption from at least one required vaccine. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had a nonmedical exemption from a required vaccine.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_dtap_exempt": {
+    "id": "N_dtap_exempt",
+    "short_name": "DTaP/Tdap exemptions (count)",
+    "long_name": "Number of students exempt from the diphtheria-tetanus-pertussis (DTaP/Tdap) requirement",
+    "category": "immunization",
+    "short_description": "Students exempted from the DTaP/Tdap requirement.",
+    "long_description": "Count of students with an exemption from the diphtheria-tetanus-pertussis (DTaP/Tdap) requirement (\"# Exemption: DTaP/Tdap\"). A student exempt from more than one vaccine is counted once per vaccine, so this does not sum with the other per-vaccine exemption counts to N_personal_exempt.",
+    "statement": "In {location}, {value} students had a DTaP/Tdap exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_exempt": {
+    "id": "rate_dtap_exempt",
+    "short_name": "DTaP/Tdap exemption rate",
+    "long_name": "Proportion of students exempt from the diphtheria-tetanus-pertussis (DTaP/Tdap) requirement",
+    "category": "immunization",
+    "short_description": "Share of students exempted from the DTaP/Tdap requirement.",
+    "long_description": "Share of enrolled students with an exemption from the DTaP/Tdap requirement. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had a DTaP/Tdap exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_polio_exempt": {
+    "id": "N_polio_exempt",
+    "short_name": "Polio exemptions (count)",
+    "long_name": "Number of students exempt from the polio (IPV/OPV) requirement",
+    "category": "immunization",
+    "short_description": "Students exempted from the polio requirement.",
+    "long_description": "Count of students with an exemption from the polio requirement (\"# Exemption: Polio\"). A student exempt from more than one vaccine is counted once per vaccine, so this does not sum with the other per-vaccine exemption counts to N_personal_exempt.",
+    "statement": "In {location}, {value} students had a polio exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_exempt": {
+    "id": "rate_polio_exempt",
+    "short_name": "Polio exemption rate",
+    "long_name": "Proportion of students exempt from the polio (IPV/OPV) requirement",
+    "category": "immunization",
+    "short_description": "Share of students exempted from the polio requirement.",
+    "long_description": "Share of enrolled students with an exemption from the polio requirement. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had a polio exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_varicella_exempt": {
+    "id": "N_varicella_exempt",
+    "short_name": "Varicella exemptions (count)",
+    "long_name": "Number of students exempt from the varicella (chickenpox) requirement",
+    "category": "immunization",
+    "short_description": "Students exempted from the varicella requirement.",
+    "long_description": "Count of students with an exemption from the varicella requirement (\"# Exemption: Varicella\"). A student exempt from more than one vaccine is counted once per vaccine, so this does not sum with the other per-vaccine exemption counts to N_personal_exempt.",
+    "statement": "In {location}, {value} students had a varicella exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_exempt": {
+    "id": "rate_varicella_exempt",
+    "short_name": "Varicella exemption rate",
+    "long_name": "Proportion of students exempt from the varicella (chickenpox) requirement",
+    "category": "immunization",
+    "short_description": "Share of students exempted from the varicella requirement.",
+    "long_description": "Share of enrolled students with an exemption from the varicella requirement. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had a varicella exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_mmr1_exempt": {
+    "id": "N_mmr1_exempt",
+    "short_name": "MMR dose 1 exemptions (count)",
+    "long_name": "Number of students exempt from the first measles-mumps-rubella (MMR1) dose requirement",
+    "category": "immunization",
+    "short_description": "Students exempted from the first MMR dose requirement.",
+    "long_description": "Count of students with an exemption from the first required MMR dose (\"# Exemption: MMR1\"). OHA reports the first and second MMR doses as separate requirements, so this is kept distinct from N_mmr2_exempt rather than combined into one MMR measure. A student exempt from more than one vaccine is counted once per vaccine, so this does not sum with the other per-vaccine exemption counts to N_personal_exempt.",
+    "statement": "In {location}, {value} students had an MMR dose 1 exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr1_exempt": {
+    "id": "rate_mmr1_exempt",
+    "short_name": "MMR dose 1 exemption rate",
+    "long_name": "Proportion of students exempt from the first measles-mumps-rubella (MMR1) dose requirement",
+    "category": "immunization",
+    "short_description": "Share of students exempted from the first MMR dose requirement.",
+    "long_description": "Share of enrolled students with an exemption from the first required MMR dose. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had an MMR dose 1 exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_mmr2_exempt": {
+    "id": "N_mmr2_exempt",
+    "short_name": "MMR dose 2 exemptions (count)",
+    "long_name": "Number of students exempt from the second measles-mumps-rubella (MMR2) dose requirement",
+    "category": "immunization",
+    "short_description": "Students exempted from the second MMR dose requirement.",
+    "long_description": "Count of students with an exemption from the second required MMR dose (\"# Exemption: MMR2\"). OHA reports the first and second MMR doses as separate requirements, so this is kept distinct from N_mmr1_exempt rather than combined into one MMR measure. A student exempt from more than one vaccine is counted once per vaccine, so this does not sum with the other per-vaccine exemption counts to N_personal_exempt.",
+    "statement": "In {location}, {value} students had an MMR dose 2 exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr2_exempt": {
+    "id": "rate_mmr2_exempt",
+    "short_name": "MMR dose 2 exemption rate",
+    "long_name": "Proportion of students exempt from the second measles-mumps-rubella (MMR2) dose requirement",
+    "category": "immunization",
+    "short_description": "Share of students exempted from the second MMR dose requirement.",
+    "long_description": "Share of enrolled students with an exemption from the second required MMR dose. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had an MMR dose 2 exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b_exempt": {
+    "id": "N_hep_b_exempt",
+    "short_name": "Hepatitis B exemptions (count)",
+    "long_name": "Number of students exempt from the hepatitis B requirement",
+    "category": "immunization",
+    "short_description": "Students exempted from the hepatitis B requirement.",
+    "long_description": "Count of students with an exemption from the hepatitis B requirement (\"# Exemption: HepB\"). A student exempt from more than one vaccine is counted once per vaccine, so this does not sum with the other per-vaccine exemption counts to N_personal_exempt.",
+    "statement": "In {location}, {value} students had a hepatitis B exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_exempt": {
+    "id": "rate_hep_b_exempt",
+    "short_name": "Hepatitis B exemption rate",
+    "long_name": "Proportion of students exempt from the hepatitis B requirement",
+    "category": "immunization",
+    "short_description": "Share of students exempted from the hepatitis B requirement.",
+    "long_description": "Share of enrolled students with an exemption from the hepatitis B requirement. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had a hepatitis B exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "N_hep_a_exempt": {
+    "id": "N_hep_a_exempt",
+    "short_name": "Hepatitis A exemptions (count)",
+    "long_name": "Number of students exempt from the hepatitis A requirement",
+    "category": "immunization",
+    "short_description": "Students exempted from the hepatitis A requirement.",
+    "long_description": "Count of students with an exemption from the hepatitis A requirement (\"# Exemption: HepA\"). A student exempt from more than one vaccine is counted once per vaccine, so this does not sum with the other per-vaccine exemption counts to N_personal_exempt.",
+    "statement": "In {location}, {value} students had a hepatitis A exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_a_exempt": {
+    "id": "rate_hep_a_exempt",
+    "short_name": "Hepatitis A exemption rate",
+    "long_name": "Proportion of students exempt from the hepatitis A requirement",
+    "category": "immunization",
+    "short_description": "Share of students exempted from the hepatitis A requirement.",
+    "long_description": "Share of enrolled students with an exemption from the hepatitis A requirement. For county rows this is recomputed from the summed school-level counts rather than averaged from the schools' published percentages.",
+    "statement": "In {location}, {value} of school students had a hepatitis A exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "or_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "or_school_immunization": {
+      "name": "Oregon School Immunization Exemptions, K-12",
+      "url": "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/VACCINESIMMUNIZATION/GETTINGIMMUNIZED/Documents/SchK-12.xlsx",
+      "organization": "Oregon Health Authority, Public Health Division",
+      "organization_url": "https://www.oregon.gov/oha/PH/",
+      "description": "Statewide K-12 school immunization workbook published each fall by the Oregon Health Authority (OHA). School-level rows carry the county (Agency), adjusted enrollment, the share up to date on all required vaccines, and a count and percent exempt per required vaccine (DTaP/Tdap, polio, varicella, MMR1, MMR2, HepB, HepA, plus any nonmedical exemption); this ingest enrollment-weights the school-level counts up to the county level by summing rather than averaging. OHA overwrites the workbook at a fixed URL each year, so the series is self-updating.",
+      "restrictions": "Public data published by the Oregon Health Authority; no access restrictions. County values are aggregates of school-level counts and may differ slightly from any official county figures OHA reports separately."
+    }
   }
 }

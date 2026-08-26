@@ -1,17 +1,182 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_dtap": {
+    "id": "rate_dtap",
+    "short_name": "DTaP/Tdap coverage",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_tdap": {
+    "id": "rate_tdap",
+    "short_name": "Tdap coverage",
+    "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_polio": {
+    "id": "rate_polio",
+    "short_name": "Polio coverage",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr": {
+    "id": "rate_mmr",
+    "short_name": "MMR coverage",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_a": {
+    "id": "rate_hep_a",
+    "short_name": "Hepatitis A coverage",
+    "long_name": "Proportion of students up to date for hepatitis A vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis A vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis A vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis A vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_mcv4": {
+    "id": "rate_mcv4",
+    "short_name": "Meningococcal (MCV4) coverage",
+    "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY/MCV4) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY/MCV4) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY/MCV4) vaccination in the state's annual school immunization survey. Louisiana reports this as MenACWY (>=1 dose) for 6th grade and MenACWY (>=2 doses) for 11th grade; the two grade-specific columns are merged into this one measure.",
+    "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_complete": {
+    "id": "rate_complete",
+    "short_name": "Up-to-date rate",
+    "long_name": "Proportion of students up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students up to date for all required vaccines.",
+    "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey), reported by LDH as \"Complete Records\".",
+    "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella": {
+    "id": "rate_varicella",
+    "short_name": "Varicella coverage",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b": {
+    "id": "rate_hep_b",
+    "short_name": "Hepatitis B coverage",
+    "long_name": "Proportion of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
+    "short_name": "Total exemption rate",
+    "long_name": "Proportion of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "la_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "la_school_immunization": {
+      "name": "Louisiana School Immunization Coverage",
+      "url": "https://ldh.la.gov/immunization-program/vaccination-data-resources",
+      "organization": "Louisiana Department of Health",
+      "organization_url": "https://ldh.la.gov/",
+      "description": "Parish-level coverage and exemption data from a multi-year Louisiana Office of Public Health school immunization workbook, covering kindergarten, 6th, and 11th grade. The workbook reports a different antigen panel per grade: kindergarten gets DTaP/TD (>=4 doses) and Polio (>=3); 6th and 11th grade get Tdap (>=1) and MenACWY (>=1 for 6th, >=2 for 11th, merged here into rate_mcv4); all three grades get HepB, HepA, MMR, and Varicella (HepA and MMR are populated for only some years). \"Complete Records\", the source's overall up-to-date share, is carried over as rate_complete.",
+      "restrictions": "Public data. Ingested from a committed multi-year parish workbook because the LDH online dashboard is behind authentication."
+    }
   }
 }

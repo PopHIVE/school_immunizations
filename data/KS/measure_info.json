@@ -1,17 +1,29 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
+    "short_name": "Total exemption rate",
+    "long_name": "Proportion of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ks_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "ks_school_immunization": {
+      "name": "Kansas Kindergarten Immunization Data",
+      "url": "https://www.kdhe.ks.gov/2016/Kindergarten-Immunization-Data",
+      "organization": "Kansas Department of Health and Environment",
+      "organization_url": "https://www.kdhe.ks.gov/",
+      "description": "County-level kindergarten immunization and exemption data from the annual KDHE reports.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

@@ -1,17 +1,131 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_personal_exempt": {
+    "id": "N_personal_exempt",
+    "short_name": "Non-medical exemptions (count)",
+    "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "N_medical_exempt": {
+    "id": "N_medical_exempt",
+    "short_name": "Medical exemptions (count)",
+    "long_name": "Number of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "N_full_exempt": {
+    "id": "N_full_exempt",
+    "short_name": "Total exemptions (count)",
+    "long_name": "Number of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "rate_personal_exempt": {
+    "id": "rate_personal_exempt",
+    "short_name": "Non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+    "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
+    "short_name": "Total exemption rate",
+    "long_name": "Proportion of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "ia_school_immunization": {
+      "name": "Iowa School and Child Care Immunization Audit",
+      "url": "https://hhs.iowa.gov/about/data-reports/health-disease/immunization/school-child-care-audits",
+      "organization": "Iowa Department of Health and Human Services",
+      "organization_url": "https://hhs.iowa.gov/",
+      "description": "County-level K-12 EXEMPTION data from the annual Iowa HHS school and child-care audit reports. Medical and religious certificates are published in separate files, each with a certificate count and the audited enrolment. RATES ARE COMPUTED FROM THE COUNTS, not read from the published percentage column. Iowa's medical-exemption rates are all below 1 percent, which used to defeat a scale check and get the whole file multiplied by 100 -- Dickinson County 2020-21, with 27 medical certificates against 2,707 enrolled, shipped as 100 percent instead of 1.0 percent. Dividing the certificate count by the audited enrolment removes the question of scale entirely. rate_full_exempt is the combined certificate count over the same denominator, rather than the sum of the two component rates, because the two files are joined on enrolment and can disagree about a county's audited total.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

@@ -1,17 +1,46 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_religious_exempt": {
+    "id": "N_religious_exempt",
+    "short_name": "Religious exemptions (count)",
+    "long_name": "Number of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students holding a religious exemption from one or more required vaccines, as reported by MSDH (\"Parent or Patient Refusal: Religious\"). Mississippi has not permitted non-religious personal-belief exemptions.",
+    "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ms_school_immunization"
+      }
+    ]
+  },
+  "N_medical_exempt": {
+    "id": "N_medical_exempt",
+    "short_name": "Medical exemptions (count)",
+    "long_name": "Number of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ms_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "ms_school_immunization": {
+      "name": "Mississippi School Immunization Data",
+      "url": "https://msdh.ms.gov/page/14,0,71,688.html",
+      "organization": "Mississippi State Department of Health",
+      "organization_url": "https://msdh.ms.gov/",
+      "description": "County-level school immunization and exemption data from the annual MSDH reports (religious exemptions permitted after July 2023).",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

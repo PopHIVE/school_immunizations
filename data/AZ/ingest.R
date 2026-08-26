@@ -1,6 +1,7 @@
 library(dcf)
 library(tidyverse)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
 
 ## change here the 2 digit code being processed here
 select.state = 'AZ'
@@ -38,7 +39,9 @@ if (!identical(process$raw_state, raw_state) ||
       year = 'School Year',
       county = County,
       grade = Grade,
-      N = Enrolled
+      # The denominator of every published percentage in the ADHS table, so it
+      # is carried through as N_enrolled rather than dropped.
+      N_enrolled = Enrolled
     ) %>%
     left_join(fips_df, by = c('county' = 'geography_name')) %>%
     mutate(
@@ -52,7 +55,7 @@ if (!identical(process$raw_state, raw_state) ||
       vax = if_else(vax == 'exempt_from_every_req_d_vaccine', 'full_exempt', vax),
       vax = gsub('_mmr', 'mmr', vax),
       yearpart = sub(".*-", "", year),
-      time = paste0(yearpart, '-09-01'),
+      time = school_year_time_from_end(yearpart),
       grade = 'Kindergarten'
     ) %>%
     rename(geography_name = county) %>%
@@ -60,10 +63,11 @@ if (!identical(process$raw_state, raw_state) ||
     dplyr::select(time,
                   geography,
                   geography_name,
-                  vax,
                   grade,
+                  N_enrolled,
+                  vax,
                   starts_with('pct')) %>%
-    pivot_wider(id_cols = c(time, geography, geography_name, grade),
+    pivot_wider(id_cols = c(time, geography, geography_name, grade, N_enrolled),
                 names_from = vax,
                 values_from = pct) %>%
     rename(
@@ -73,30 +77,21 @@ if (!identical(process$raw_state, raw_state) ||
       pct_hep_b = hep_b,
       pct_varicella = varicella,
       pct_personal_exempt = personal_exempt,
-      pct_medical_exempt = medical_exempt
+      pct_medical_exempt = medical_exempt,
+      pct_full_exempt = full_exempt
     ) %>%
-    mutate(
-      time = as.Date(time),
-      N_dtap = NA_real_,
-      N_polio = NA_real_,
-      N_mmr = NA_real_,
-      N_hep_b = NA_real_,
-      N_varicella = NA_real_,
-      N_personal_exempt = NA_real_,
-      N_medical_exempt = NA_real_,
-      N_full_exempt = NA_real_,
-      pct_full_exempt = NA_real_
-    ) %>%
+    mutate(time = as.Date(time)) %>%
+    # No N_<measure> columns: ADHS publishes only the enrolment count and the
+    # shares, not the vaccinated/exempt numerators.
     transmute(
       time, geography, geography_name, grade,
-      N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
-      N_personal_exempt, N_medical_exempt, N_full_exempt,
+      N_enrolled,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
       pct_personal_exempt, pct_medical_exempt, pct_full_exempt
     )
   
   #Save standard file as a compressed csv
-  vroom::vroom_write(add_state_column(data, "Arizona"), './standard/data.csv.gz')
+  write_standard(data, "Arizona", './standard/data.csv.gz', from = "percent")
   
   # record processed raw state
   process$raw_state <- raw_state

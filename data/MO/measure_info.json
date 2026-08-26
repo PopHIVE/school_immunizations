@@ -1,17 +1,267 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_dtap_exempt": {
+    "id": "rate_dtap_exempt",
+    "short_name": "DTaP exemption rate",
+    "long_name": "Proportion of students exempt from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the DTaP series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_medical_exempt": {
+    "id": "rate_dtap_medical_exempt",
+    "short_name": "DTaP medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_dtap_religious_exempt": {
+    "id": "rate_dtap_religious_exempt",
+    "short_name": "DTaP religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the DTaP series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_exempt": {
+    "id": "rate_polio_exempt",
+    "short_name": "polio exemption rate",
+    "long_name": "Proportion of students exempt from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the polio series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_medical_exempt": {
+    "id": "rate_polio_medical_exempt",
+    "short_name": "polio medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_religious_exempt": {
+    "id": "rate_polio_religious_exempt",
+    "short_name": "polio religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the polio series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_exempt": {
+    "id": "rate_mmr_exempt",
+    "short_name": "MMR exemption rate",
+    "long_name": "Proportion of students exempt from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the MMR series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_medical_exempt": {
+    "id": "rate_mmr_medical_exempt",
+    "short_name": "MMR medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_religious_exempt": {
+    "id": "rate_mmr_religious_exempt",
+    "short_name": "MMR religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_exempt": {
+    "id": "rate_hep_b_exempt",
+    "short_name": "hepatitis B exemption rate",
+    "long_name": "Proportion of students exempt from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the hepatitis B series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_medical_exempt": {
+    "id": "rate_hep_b_medical_exempt",
+    "short_name": "hepatitis B medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_religious_exempt": {
+    "id": "rate_hep_b_religious_exempt",
+    "short_name": "hepatitis B religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the hepatitis B series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_exempt": {
+    "id": "rate_varicella_exempt",
+    "short_name": "varicella exemption rate",
+    "long_name": "Proportion of students exempt from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the varicella series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_medical_exempt": {
+    "id": "rate_varicella_medical_exempt",
+    "short_name": "varicella medical exemption rate",
+    "long_name": "Proportion of students with a medical exemption from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
+    "statement": "In {location}, {value} of school students had a medical exemption from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_religious_exempt": {
+    "id": "rate_varicella_religious_exempt",
+    "short_name": "varicella religious exemption rate",
+    "long_name": "Proportion of students with a religious exemption from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding a religious exemption from the varicella series specifically. An exemption rate, not a coverage rate.",
+    "statement": "In {location}, {value} of school students had a religious exemption from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mo_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "mo_school_immunization": {
+      "name": "Missouri School Immunization Data",
+      "url": "https://health.mo.gov/living/families/schoolhealth/dashboard.php",
+      "organization": "Missouri Department of Health and Senior Services",
+      "organization_url": "https://health.mo.gov/",
+      "description": "County-level per-series EXEMPTION rates from the Missouri DHSS school immunization dashboard, workbook \"Exemption Rates for Kindergarteners in Missouri Schools, by Vaccine Series\", covering kindergarten, 7th grade and K-12. Medical, religious and total are reported for each series. EXEMPTIONS ONLY -- this source publishes no coverage, so the coverage columns are empty. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. Medical and religious do not always sum exactly to the reported total, since each is rounded to three decimals at source.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

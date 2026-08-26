@@ -5,47 +5,30 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:07",
       "frequency": 0,
-      "last_run": "2026-02-04 23:20:25",
-      "run_time": 1.802,
+      "run_time": 0.81,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "",
-          "Attaching package: \u2018vroom\u2019",
-          "",
-          "The following objects are masked from \u2018package:readr\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
-  "raw_state": {
-    "raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": "95b93ffad215440291ee1f5dd2d23417"
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/CO/raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": {
+      "data": "not_compressed"
+    },
+    "data/CO/standard/data.csv.gz": {
+      "measures": ["missing_info: grade", "missing_info: geography_name"]
+    }
   },
-  "script_hash": "ea81a47f78d45ab33fedfe5927317b9f",
+  "raw_state": {
+    "raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": "58344d391df26cccbccd79e1f5c65a5f"
+  },
+  "script_hash": "0866833ca19876930e861931b543b0b2",
   "standard_state": {
-    "./data/CO/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/CO/standard/data.csv.gz": "9e1bdabb94d6dae2d3c6dda863a53923"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CO/measure_info.json": "08ba13c4bab6b3ab7fedee0cd01fd262",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CO/standard/data.csv.gz": "d97595353a33a20fa2a2253fd128a544"
   }
 }

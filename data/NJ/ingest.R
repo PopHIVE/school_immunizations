@@ -4,7 +4,9 @@ library(tidyr)
 library(readr)
 library(stringr)
 library(vroom)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", "csv", recursive = TRUE, full.names = TRUE
@@ -79,8 +81,8 @@ if (!identical(process$raw_state, raw_state) ||
         values_to = "value"
       ) %>%
       mutate(
-        grade = str_match(grade_metric, "^(.*)_(ExemptCount|ExemptPercent)$")[, 2],
-        metric = str_match(grade_metric, "^(.*)_(ExemptCount|ExemptPercent)$")[, 3],
+        grade = str_match(grade_metric, "^(.*)_(Total|ExemptCount|ExemptPercent)$")[, 2],
+        metric = str_match(grade_metric, "^(.*)_(Total|ExemptCount|ExemptPercent)$")[, 3],
         value = readr::parse_number(as.character(value)),
         year = year
       ) %>%
@@ -93,20 +95,11 @@ if (!identical(process$raw_state, raw_state) ||
   data_all <- bind_rows(lapply(raw_files, parse_one_file)) %>%
     group_by(county, grade, year) %>%
     summarize(
+      Total = if (all(is.na(Total))) NA_real_ else max(Total, na.rm = TRUE),
       ExemptCount = if (all(is.na(ExemptCount))) NA_real_ else max(ExemptCount, na.rm = TRUE),
       ExemptPercent = if (all(is.na(ExemptPercent))) NA_real_ else max(ExemptPercent, na.rm = TRUE),
       .groups = "drop"
     )
-  
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "NJ") %>%
-    mutate(geography_name = gsub(" County", "", geography_name))
-  
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
   
   normalize_grade <- function(x) {
     x <- str_to_lower(x)
@@ -121,21 +114,20 @@ if (!identical(process$raw_state, raw_state) ||
     )
   }
   
+  # Every sheet ends with "Note:" and "Source:" lines that land in the county
+  # column; 138 of them used to survive into the output with no geography.
   data_out <- data_all %>%
-    mutate(
-      county = str_trim(county),
-      county = if_else(county %in% c("State Totals", "State Total", "Total"), "Total", county)
-    ) %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
+    mutate(county = str_trim(county)) %>%
+    join_county_fips(
+      "NJ",
+      statewide = c("State Totals", "State Total", "Total"),
+      drop = c("^note:", "^source:")
     ) %>%
     mutate(
-      geography = if_else(county == "Total", state_fips[1], geography),
-      geography_name = county,
       yearpart = str_extract(year, "\\d{4}$"),
-      time = as.Date(paste0(yearpart, "-09-01")),
+      time = as.Date(school_year_time_from_end(yearpart)),
       grade = normalize_grade(grade),
+      N_enrolled = Total,
       N_dtap = NA_real_,
       N_polio = NA_real_,
       N_mmr = NA_real_,
@@ -155,14 +147,14 @@ if (!identical(process$raw_state, raw_state) ||
     ) %>%
     filter(!is.na(time)) %>%
     transmute(
-      time, geography, geography_name, grade,
+      time, geography, geography_name, grade, N_enrolled,
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
       pct_personal_exempt, pct_medical_exempt, pct_full_exempt
     )
   
-  vroom::vroom_write(add_state_column(data_out, "New Jersey"), "./standard/data.csv.gz")
+  write_standard(data_out, "New Jersey", "./standard/data.csv.gz", from = "percent")
   
   process$raw_state <- raw_state
   process$script_hash <- script_hash

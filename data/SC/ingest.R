@@ -4,7 +4,9 @@ library(tidyr)
 library(readr)
 library(stringr)
 library(vroom)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", "csv", recursive = TRUE, full.names = TRUE
@@ -81,30 +83,15 @@ if (!identical(process$raw_state, raw_state) ||
     select(state, county, year, metric, value) %>%
     pivot_wider(names_from = metric, values_from = value)
   
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "SC") %>%
-    mutate(geography_name = gsub(" County", "", geography_name))
-  
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-  
   data_out <- data_wide %>%
-    mutate(
-      county = str_trim(county),
-      county = if_else(county %in% c("State Totals", "State Total", "Total"), "Total", county)
-    ) %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
+    mutate(county = str_trim(county)) %>%
+    join_county_fips(
+      "SC",
+      statewide = c("State Totals", "State Total", "Total", "Statewide")
     ) %>%
     mutate(
-      geography = if_else(county == "Total", state_fips[1], geography),
-      geography_name = county,
       yearpart = sub(".*-", "", year),
-      time = as.Date(paste0(yearpart, "-09-01")),
+      time = as.Date(school_year_time_from_end(yearpart)),
       grade = "Overall",
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -133,7 +120,7 @@ if (!identical(process$raw_state, raw_state) ||
       N_enrolled
     )
   
-  vroom::vroom_write(add_state_column(data_out, "South Carolina"), "./standard/data.csv.gz")
+  write_standard(data_out, "South Carolina", "./standard/data.csv.gz", from = "percent")
   
   process$raw_state <- raw_state
   process$script_hash <- script_hash

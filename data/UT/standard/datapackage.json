@@ -7,5 +7,247 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 3640,
+      "encoding": "windows-1252",
+      "md5": "ceadb860e4e606023799fecd57e34bf0",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 08:06:45 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "add standardization files for IA MN MT NC NH UT VT WA"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 2,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-08-05 09:48:13.697361",
+      "last_modified": "2026-08-24 10:32:01.444212",
+      "vintage": {},
+      "row_count": 615,
+      "entity_count": 1,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 610,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2018-09-01": 123,
+              "2019-09-01": 123,
+              "2020-09-01": 123,
+              "2021-09-01": 123,
+              "2022-09-01": 123
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 614,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "49": 615
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 614,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Utah": 615
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 612,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "7th grade": 205,
+              "K-12": 205,
+              "Kindergarten": 205
+            }
+          },
+          {
+            "name": "rate_full_exempt",
+            "duplicates": 485,
+            "info": {
+              "id": "rate_full_exempt",
+              "short_name": "Total exemption rate",
+              "long_name": "Proportion of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+              "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ut_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 4],
+            "type": "float",
+            "missing": 16,
+            "mean": 0.053988,
+            "sd": 0.03394,
+            "min": 0,
+            "max": 0.222
+          },
+          {
+            "name": "health_district",
+            "duplicates": 602,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Bear River": 60,
+              "Central": 120,
+              "Davis": 15,
+              "Salt Lake": 75,
+              "San Juan": 15,
+              "Southeast": 45,
+              "Southwest": 75,
+              "Summit": 45,
+              "Tooele": 15,
+              "TriCounty": 45,
+              "Utah County": 45,
+              "Wasatch": 15,
+              "Weber-Morgan": 45
+            }
+          },
+          {
+            "name": "school_district",
+            "duplicates": 574,
+            "info": [],
+            "time_range": [0, 4],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Alpine": 15,
+              "Beaver": 15,
+              "Box Elder": 15,
+              "Cache": 15,
+              "Canyons": 15,
+              "Carbon": 15,
+              "Daggett": 15,
+              "Davis": 15,
+              "Duchesne": 15,
+              "Emery": 15,
+              "Garfield": 15,
+              "Grand": 15,
+              "Granite": 15,
+              "Iron": 15,
+              "Jordan": 15,
+              "Juab": 15,
+              "Kane": 15,
+              "Logan": 15,
+              "Millard": 15,
+              "Morgan": 15,
+              "Murray": 15,
+              "Nebo": 15,
+              "North Sanpete": 15,
+              "North Summit": 15,
+              "Ogden": 15,
+              "Park City": 15,
+              "Piute": 15,
+              "Provo": 15,
+              "Rich": 15,
+              "Salt Lake": 15,
+              "San Juan": 15,
+              "Sevier": 15,
+              "South Sanpete": 15,
+              "South Summit": 15,
+              "Tintic": 15,
+              "Tooele": 15,
+              "Uintah": 15,
+              "Wasatch": 15,
+              "Washington": 15,
+              "Wayne": 15,
+              "Weber": 15
+            }
+          }
+        ]
+      },
+      "sha512": "5137942246b4b1a2a3d3485b64981b574b21f0884232ed4268df250e0f8ea41cc104928fd791d66d82a3069cc2c59c5b90a8374c2b801ad2f650235d1b464a03"
+    }
+  ],
+  "measure_info": {
+    "rate_full_exempt": {
+      "id": "rate_full_exempt",
+      "short_name": "Total exemption rate",
+      "long_name": "Proportion of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+      "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ut_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "ut_school_immunization": {
+        "name": "Utah School Immunization Coverage",
+        "url": "https://immunize.utah.gov/information-for-the-public/utah-statistics/",
+        "organization": "Utah Department of Health and Human Services",
+        "organization_url": "https://dhhs.utah.gov/",
+        "description": "County- and health-district-level school immunization and exemption data from the Utah DHHS coverage reports.",
+        "restrictions": "Public data published by the source agency; no access restrictions."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
+    }
+  }
 }

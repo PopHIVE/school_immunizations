@@ -1,0 +1,226 @@
+---
+title: "State Ingests vs. Washington Post School Vaccination Data"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE, fig.width = 9)
+
+library(dplyr)
+library(readr)
+library(tidyr)
+library(purrr)
+library(stringr)
+library(ggplot2)
+library(forcats)
+library(scales)
+library(knitr)
+
+theme_set(theme_minimal(base_size = 12))
+```
+
+```{r load-data, include=FALSE}
+state_dirs <- list.dirs(".", recursive = FALSE, full.names = FALSE)
+state_dirs <- sort(state_dirs[grepl("^[A-Z]{2}$", state_dirs)])
+
+has_rate_mmr <- function(state) {
+  f <- file.path(state, "standard", "data.csv.gz")
+  if (!file.exists(f)) return(FALSE)
+  nm <- names(read_csv(f, n_max = 0, show_col_types = FALSE))
+  all(c("geography", "time", "grade", "rate_mmr") %in% nm)
+}
+
+mmr_states <- state_dirs[map_lgl(state_dirs, has_rate_mmr)]
+mmr_states <- setdiff(mmr_states, c("AK", "ND"))
+
+# For states that report more than one grade, keep the kindergarten (or the
+# nearest school-entry-equivalent) cohort so one row represents one
+# county-year, matching the WaPo/CDC school-entry convention.
+pick_entry_grade <- function(df) {
+  g <- unique(df$grade)
+  if (any(str_detect(g, regex("kind", ignore_case = TRUE)))) {
+    df <- filter(df, str_detect(grade, regex("kind", ignore_case = TRUE)))
+  } else if ("Overall" %in% g) {
+    df <- filter(df, grade == "Overall")
+  } else if ("Totals" %in% g) {
+    df <- filter(df, grade == "Totals")
+  }
+  df
+}
+
+read_state_mmr <- function(state) {
+  f <- file.path(state, "standard", "data.csv.gz")
+  df <- read_csv(f, col_types = cols(
+    geography = col_character(),
+    geography_name = col_character(),
+    time = col_date(),
+    grade = col_character(),
+    rate_mmr = col_double()
+  ), col_select = any_of(c("geography", "geography_name", "time", "grade", "rate_mmr")))
+  df <- pick_entry_grade(df)
+  df %>%
+    mutate(
+      state_abb = state,
+      year_start = as.integer(format(time, "%Y")),
+      geography = str_pad(geography, 5, pad = "0")
+    ) %>%
+    filter(!is.na(rate_mmr), rate_mmr > 0.3, rate_mmr <= 1) %>%
+    select(state_abb, geography, geography_name, year_start, rate_mmr) %>%
+    distinct(state_abb, geography, year_start, .keep_all = TRUE)
+}
+
+ours <- map_dfr(mmr_states, read_state_mmr)
+
+wapo_url <- paste0(
+  "https://raw.githubusercontent.com/washingtonpost/",
+  "data-school-vaccination-rates/refs/heads/main/vaxrates_counties.csv"
+)
+
+wapo_raw <- read_csv(wapo_url, show_col_types = FALSE)
+
+wapo <- wapo_raw %>%
+  transmute(
+    state_abb = state_abb,
+    geography = str_pad(as.character(fiptxt), 5, pad = "0"),
+    county_name = str_to_title(county),
+    `2018` = `2018-2019`,
+    `2019` = `2019-2020`,
+    `2023` = `2023-2024`,
+    `2024` = `2024-2025`
+  ) %>%
+  pivot_longer(c(`2018`, `2019`, `2023`, `2024`),
+               names_to = "year_start", values_to = "wapo_rate") %>%
+  mutate(year_start = as.integer(year_start), wapo_rate = wapo_rate / 100) %>%
+  filter(!is.na(wapo_rate))
+
+# Tennessee's WaPo county figure is overridden downstream by PopHIVE's own
+# ingest with the TN DOH file (per DATA_SOURCES.md, WaPo's raw TN numbers are
+# considered unreliable), so compare our TN data against PopHIVE's processed
+# schoolvax_washpost output rather than the raw WaPo CSV above.
+pophive_counties_url <- paste0(
+  "https://raw.githubusercontent.com/PopHIVE/Ingest/main/",
+  "data/schoolvax_washpost/standard/data_counties.csv.gz"
+)
+
+wapo_tn_pophive <- read_csv(pophive_counties_url, show_col_types = FALSE) %>%
+  transmute(
+    state_abb = "TN",
+    geography = str_pad(as.character(geography), 5, pad = "0"),
+    county_name = NA_character_,
+    year_start = as.integer(format(time, "%Y")),
+    wapo_rate = wapo_county_vax_rate / 100
+  ) %>%
+  filter(str_starts(geography, "47"), !is.na(wapo_rate))
+
+# Swap in the standard (PopHIVE-processed, TN-DOH-overridden) TN rows
+# everywhere `wapo` is used, not just in the Tennessee-specific section.
+wapo <- wapo %>%
+  filter(state_abb != "TN") %>%
+  bind_rows(wapo_tn_pophive)
+```
+
+## Matched county-year coverage
+
+```{r matched}
+matched <- inner_join(ours, wapo, by = c("state_abb", "geography", "year_start")) %>%
+  mutate(diff = rate_mmr - wapo_rate, avg = (rate_mmr + wapo_rate) / 2)
+```
+
+```{r availability-tile, fig.height=6}
+avail <- full_join(
+  ours %>% distinct(state_abb, year_start) %>% mutate(has_ours = TRUE),
+  wapo %>% distinct(state_abb, year_start) %>% mutate(has_wapo = TRUE),
+  by = c("state_abb", "year_start")
+) %>%
+  filter(state_abb %in% unique(matched$state_abb) | state_abb %in% unique(ours$state_abb)) %>%
+  mutate(
+    coverage = case_when(
+      coalesce(has_ours, FALSE) & coalesce(has_wapo, FALSE) ~ "Both",
+      coalesce(has_ours, FALSE) ~ "Our ingest only",
+      coalesce(has_wapo, FALSE) ~ "WaPo only"
+    )
+  )
+
+ggplot(avail, aes(x = factor(year_start), y = fct_rev(state_abb), fill = coverage)) +
+  geom_tile(color = "white", linewidth = 0.4) +
+  scale_fill_manual(values = c(
+    "Both" = "#31a354",
+    "Our ingest only" = "#2c7fb8",
+    "WaPo only" = "#d95f0e"
+  )) +
+  labs(x = "School year (start)", y = NULL, fill = NULL,
+       title = "County-level MMR-rate coverage by source, state, and year")
+```
+
+## Our rate vs. WaPo rate, matched county-years
+
+```{r scatter, fig.height=7}
+ggplot(matched, aes(x = wapo_rate, y = rate_mmr, color = state_abb)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "grey40") +
+  geom_point(alpha = 0.6, size = 1.6) +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  coord_equal() +
+  labs(x = "WaPo county MMR rate", y = "Our ingest county MMR rate", color = "State",
+       title = "County-year MMR coverage: our ingest vs. Washington Post")
+```
+
+```{r scatter-facet, fig.height=8}
+ggplot(matched, aes(x = wapo_rate, y = rate_mmr)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "grey60") +
+  geom_point(alpha = 0.5, size = 1, color = "#2c7fb8") +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  facet_wrap(~state_abb) +
+  labs(x = "WaPo county MMR rate", y = "Our ingest county MMR rate",
+       title = "Same comparison, faceted by state")
+```
+
+## Time series, both sources
+
+```{r timeseries, fig.height=10}
+ts_ours <- ours %>%
+  group_by(state_abb, year_start) %>%
+  summarise(rate = mean(rate_mmr), .groups = "drop") %>%
+  mutate(source = "Our ingest")
+
+ts_wapo <- wapo %>%
+  filter(state_abb %in% unique(ours$state_abb)) %>%
+  group_by(state_abb, year_start) %>%
+  summarise(rate = mean(wapo_rate), .groups = "drop") %>%
+  mutate(source = "WaPo")
+
+bind_rows(ts_ours, ts_wapo) %>%
+  ggplot(aes(x = year_start, y = rate, color = source)) +
+  geom_line(linewidth = 0.8) +
+  geom_point(size = 1.5) +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  scale_color_manual(values = c("Our ingest" = "#2c7fb8", "WaPo" = "#d95f0e")) +
+  facet_wrap(~state_abb, ncol = 3) +
+  labs(x = "School year (start)", y = "State-average county MMR rate", color = NULL,
+       title = "State-average MMR coverage over time, by source")
+```
+
+## Louisiana by parish
+
+```{r louisiana, fig.height=6}
+la <- inner_join(
+  ours %>% filter(state_abb == "LA"),
+  wapo %>% filter(state_abb == "LA"),
+  by = c("state_abb", "geography", "year_start")
+)
+
+ggplot(la, aes(x = wapo_rate, y = rate_mmr)) +
+  geom_abline(slope = 1, intercept = 0, linetype = "dashed", color = "grey50") +
+  geom_point(color = "#3182bd", size = 2, alpha = 0.7) +
+  scale_x_continuous(labels = percent_format(accuracy = 1)) +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  coord_equal() +
+  labs(x = "WaPo county MMR rate", y = "LA DOH county MMR rate (our ingest)",
+       title = "Louisiana: state-supplied figures vs. WaPo's county estimate")
+```

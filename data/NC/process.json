@@ -5,19 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:35",
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:43",
-      "run_time": 0.038,
+      "run_time": 0.02,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/NC/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/North Carolina Vaccine Exemption.xlsx": "e1d896afbf727145c294fbdda7f0dba4"
   },
-  "script_hash": "1b29a11b32b177c2389dd06511aa43fa"
+  "script_hash": "08c9a529b181001ef5bb58f3097068e7",
+  "standard_state": {
+    "./data/NC/measure_info.json": "542680a7c581776c9639791ef6db2f7d",
+    "./data/NC/standard/data.csv.gz": "4e1bc0c98f3ed212f32c1a5b62c37d08"
+  }
 }

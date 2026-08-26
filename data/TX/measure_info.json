@@ -1,17 +1,29 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_conscientious_exemption": {
+    "id": "rate_conscientious_exemption",
+    "short_name": "Conscientious exemption rate",
+    "long_name": "Proportion of students with a conscientious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a conscientious exemption from vaccination requirements, as defined under Texas law.",
+    "long_description": "Share of assessed school students holding a conscientious exemption (an affidavit declining vaccination for reasons of conscience, including religious belief) from one or more required vaccines. Texas tracks this affidavit-based exemption separately from medical exemptions, which are not captured in this source.",
+    "statement": "In {location}, {value} of school students had a conscientious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tx_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "tx_school_immunization": {
+      "name": "Texas School Immunization Coverage",
+      "url": "https://www.dshs.texas.gov/immunizations/data/school",
+      "organization": "Texas Department of State Health Services",
+      "organization_url": "https://www.dshs.texas.gov/",
+      "description": "County-level school immunization and exemption data from the annual DSHS Annual Report of Immunization Status.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

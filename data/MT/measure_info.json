@@ -1,17 +1,199 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_dtap": {
+    "id": "rate_dtap",
+    "short_name": "DTaP/Tdap coverage",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_polio": {
+    "id": "rate_polio",
+    "short_name": "Polio coverage",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr": {
+    "id": "rate_mmr",
+    "short_name": "MMR coverage",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b": {
+    "id": "rate_hep_b",
+    "short_name": "Hepatitis B coverage",
+    "long_name": "Proportion of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella": {
+    "id": "rate_varicella",
+    "short_name": "Varicella coverage",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "N_assessed": {
+    "id": "N_assessed",
+    "short_name": "Students assessed",
+    "long_name": "Number of students assessed in the immunization survey",
+    "category": "immunization",
+    "short_description": "Number of school students whose immunization records were assessed.",
+    "long_description": "Count of students whose records were reviewed for this report. This is the survey denominator and is not necessarily the same as total enrolment, since not every enrolled student is always assessed.",
+    "statement": "In {location}, {value} school students were assessed.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_utd": {
+    "id": "rate_utd",
+    "short_name": "Up-to-date rate",
+    "long_name": "Proportion of students up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students up to date for every vaccine the state requires.",
+    "long_description": "Share of assessed school students recorded as up to date across the full required schedule, rather than for a single antigen.",
+    "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_hib_utd": {
+    "id": "rate_hib_utd",
+    "short_name": "Hib coverage",
+    "long_name": "Proportion of students up to date for Haemophilus influenzae type b (Hib) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for Haemophilus influenzae type b (Hib) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for Haemophilus influenzae type b (Hib) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Hib vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_pcv_utd": {
+    "id": "rate_pcv_utd",
+    "short_name": "Pneumococcal (PCV) coverage",
+    "long_name": "Proportion of students up to date for pneumococcal conjugate (PCV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for pneumococcal conjugate (PCV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for pneumococcal conjugate (PCV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for pneumococcal (PCV) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician- or APRN-certified medical exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
+    "short_name": "Religious exemption rate",
+    "long_name": "Proportion of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students holding a notarized religious exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey. Montana law does not offer a separate philosophical exemption, so this is a religious exemption specifically.",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "mt_school_immunization": {
+      "name": "Montana School Immunization Data",
+      "url": "https://dphhs.mt.gov/publichealth/immunization/childcareandschoolresources",
+      "organization": "Montana Department of Public Health and Human Services",
+      "organization_url": "https://dphhs.mt.gov/",
+      "description": "County-level immunization completeness and exemption data from the Montana DPHHS school immunization reports.",
+      "restrictions": "Public data. Montana ended routine school immunization data collection after the 2018-19 school year."
+    }
   }
 }

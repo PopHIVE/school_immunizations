@@ -5,7 +5,9 @@ library(readxl)
 library(stringr)
 library(vroom)
 library(readr)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -58,51 +60,57 @@ if (!identical(process$raw_state, raw_state) ||
       values_to = "value"
     ) %>%
     mutate(
-      vax = str_extract(vax_year, "^[^_]+"),
+      # Everything before the trailing "NN-NN" year range is the vaccine name.
+      # This used to be str_extract(vax_year, "^[^_]+"), which stops at the
+      # first underscore: "Hepatitis_B_23-24" yielded "Hepatitis", matched
+      # nothing in vax_map, and both hepatitis series were dropped -- which is
+      # why pct_hep_b was entirely missing for Idaho.
+      vax = str_replace(vax_year, "_\\d{2}-\\d{2}$", ""),
       year_range = str_extract(vax_year, "\\d{2}-\\d{2}$"),
       year_end2 = str_extract(year_range, "\\d{2}$"),
       year_end = paste0("20", year_end2),
-      time = as.Date(paste0(year_end, "-09-01")),
-      value = readr::parse_number(as.character(value))
+      time = as.Date(school_year_time_from_end(year_end)),
+      value = parse_rate(value, from = "rate")
     ) %>%
     filter(!is.na(time), !is.na(vax))
-  
+
+  # DHW's workbook is an exemption request ("Yale School Exemption Data
+  # Request"): every cell is the share of students EXEMPT from that series, not
+  # the share vaccinated. The columns are therefore named as exemptions, and the
+  # coverage columns are left missing -- the source publishes no coverage, and
+  # 1 - exemption is not coverage (a student can be unvaccinated without an
+  # exemption, and an exempt student may still have had the vaccine).
   vax_map <- c(
     "DTaP" = "dtap",
     "Polio" = "polio",
     "MMR" = "mmr",
     "Varicella" = "varicella",
-    "Hepatitis_B" = "hep_b"
+    "Hepatitis_A" = "hep_a",
+    "Hepatitis_B" = "hep_b",
+    # DHW's heading for the meningococcal requirement (IDAPA 16.02.15 requires
+    # MenACWY at 7th and 12th grade).
+    "Meningitis" = "menacwy"
   )
-  
+
+  unmapped <- setdiff(unique(data_long$vax), names(vax_map))
+  if (length(unmapped)) {
+    stop("ID: unmapped vaccine column(s): ", paste(unmapped, collapse = ", "),
+         call. = FALSE)
+  }
+
   data_wide <- data_long %>%
-    mutate(vax_key = vax_map[vax]) %>%
-    filter(!is.na(vax_key)) %>%
+    mutate(vax_key = paste0("pct_", vax_map[vax], "_exempt")) %>%
     select(county, time, vax_key, value) %>%
     pivot_wider(names_from = vax_key, values_from = value)
-  
-  for (col in c("dtap", "polio", "mmr", "hep_b", "varicella")) {
+
+  exempt_cols <- paste0("pct_", unname(vax_map), "_exempt")
+  for (col in exempt_cols) {
     if (!col %in% names(data_wide)) data_wide[[col]] <- NA_real_
   }
-  
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "ID") %>%
-    mutate(geography_name = gsub(" County", "", geography_name))
-  
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-  
+
   data_out <- data_wide %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    join_county_fips("ID") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = county,
       grade = "Overall",
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -112,11 +120,13 @@ if (!identical(process$raw_state, raw_state) ||
       N_personal_exempt = NA_real_,
       N_medical_exempt = NA_real_,
       N_full_exempt = NA_real_,
-      pct_dtap = dtap,
-      pct_polio = polio,
-      pct_mmr = mmr,
-      pct_hep_b = hep_b,
-      pct_varicella = varicella,
+      # Coverage: not published by this source (see above).
+      pct_dtap = NA_real_,
+      pct_polio = NA_real_,
+      pct_mmr = NA_real_,
+      pct_hep_b = NA_real_,
+      pct_varicella = NA_real_,
+      # DHW reports the exemption total per series, not split by reason.
       pct_personal_exempt = NA_real_,
       pct_medical_exempt = NA_real_,
       pct_full_exempt = NA_real_
@@ -126,10 +136,13 @@ if (!identical(process$raw_state, raw_state) ||
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
-      pct_personal_exempt, pct_medical_exempt, pct_full_exempt
+      pct_personal_exempt, pct_medical_exempt, pct_full_exempt,
+      pct_dtap_exempt, pct_polio_exempt, pct_mmr_exempt,
+      pct_hep_a_exempt, pct_hep_b_exempt, pct_varicella_exempt,
+      pct_menacwy_exempt
     )
   
-  vroom::vroom_write(add_state_column(data_out, "Idaho"), "./standard/data.csv.gz")
+  write_standard(data_out, "Idaho", "./standard/data.csv.gz", from = "rate")
   
   process$raw_state <- raw_state
   process$script_hash <- script_hash

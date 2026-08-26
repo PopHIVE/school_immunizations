@@ -1,17 +1,131 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_dtap_exempt": {
+    "id": "rate_dtap_exempt",
+    "short_name": "DTaP exemption rate",
+    "long_name": "Proportion of students exempt from DTaP vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the DTaP vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the DTaP series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from DTaP vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "id_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_exempt": {
+    "id": "rate_polio_exempt",
+    "short_name": "polio exemption rate",
+    "long_name": "Proportion of students exempt from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the polio series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "id_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_exempt": {
+    "id": "rate_mmr_exempt",
+    "short_name": "MMR exemption rate",
+    "long_name": "Proportion of students exempt from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the MMR series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "id_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_a_exempt": {
+    "id": "rate_hep_a_exempt",
+    "short_name": "hepatitis A exemption rate",
+    "long_name": "Proportion of students exempt from hepatitis A vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the hepatitis A vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the hepatitis A series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from hepatitis A vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "id_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_exempt": {
+    "id": "rate_hep_b_exempt",
+    "short_name": "hepatitis B exemption rate",
+    "long_name": "Proportion of students exempt from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the hepatitis B series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "id_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_exempt": {
+    "id": "rate_varicella_exempt",
+    "short_name": "varicella exemption rate",
+    "long_name": "Proportion of students exempt from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the varicella series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "id_school_immunization"
+      }
+    ]
+  },
+  "rate_menacwy_exempt": {
+    "id": "rate_menacwy_exempt",
+    "short_name": "meningococcal (MenACWY) exemption rate",
+    "long_name": "Proportion of students exempt from meningococcal (MenACWY) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the meningococcal (MenACWY) vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the meningococcal (MenACWY) series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from meningococcal (MenACWY) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "id_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "id_school_immunization": {
+      "name": "Idaho School Immunization Report",
+      "url": "https://www.gethealthy.dhw.idaho.gov/idaho-school-immunization-report",
+      "organization": "Idaho Department of Health and Welfare",
+      "organization_url": "https://healthandwelfare.idaho.gov/",
+      "description": "County-level per-series EXEMPTION rates from the Idaho DHW school immunization report (supplied to PopHIVE as \"Yale School Exemption Data Request\"), aggregated over kindergarten, 1st, 7th and 12th grade. EXEMPTIONS ONLY -- this source publishes no coverage, so the coverage columns are empty and only rate_<series>_exempt is populated. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. DHW notes that schools self-report aggregate counts and that arithmetic errors sometimes persist.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

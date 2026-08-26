@@ -5,17 +5,21 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:37",
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:43",
-      "run_time": 0.039,
+      "run_time": 0.02,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/NH/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/2019-2020 New Hampshire Vaccine Exemptions  (1).xlsx": "1a5f603639ce3d8d08195dcfbd3c72b2",
     "raw/2020-2021 New Hampshire Vaccine Exemption (1).xlsx": "b94a342889ea595d873c50e973767f9e",
@@ -24,5 +28,9 @@
     "raw/2023-2024 New Hampshire Vaccine Exemption (1).xlsx": "7818b0302ee5f8f79de2a4efaabbc683",
     "raw/2024-2025 New Hampshire Exemption (1).xlsx": "d1286426efcad10108a75b7bb11f06d0"
   },
-  "script_hash": "6cdf2a4c80c69c81675145dc2cb6f45f"
+  "script_hash": "a281656774c55124a4de24eb103fe69c",
+  "standard_state": {
+    "./data/NH/measure_info.json": "24c06f799e255783e803f649ae39bea2",
+    "./data/NH/standard/data.csv.gz": "b6b5a06957dbc1959d4de79accdf99ce"
+  }
 }

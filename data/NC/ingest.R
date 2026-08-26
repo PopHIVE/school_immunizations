@@ -1,4 +1,5 @@
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/county_fips.R")
 # =============================================================================
 # NC - Kindergarten Immunization and Exemption by County (2020-2023)
 # =============================================================================
@@ -53,24 +54,10 @@ if (!identical(process$raw_state, raw_state) ||
       )
     )
 
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "NC") %>%
-    mutate(geography_name = gsub(" County$", "", geography_name))
-
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-
+  # Title-casing in the source turns McDowell into "Mcdowell".
   data_out <- data_clean %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    join_county_fips("NC") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = county,
       grade = "Kindergarten",
       N_dtap = NA_real_,
       N_polio = NA_real_,
@@ -97,7 +84,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "North Carolina"), "standard/data.csv.gz")
+  write_standard(data_out, "North Carolina", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

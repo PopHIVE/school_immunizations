@@ -9,699 +9,394 @@
   },
   "resources": [
     {
-      "bytes": 610,
-      "encoding": "ISO-8859-1",
-      "md5": "f3e92718fe42b3eb359310eb69285f16",
+      "bytes": 577,
+      "encoding": "windows-1250",
+      "md5": "e19cc31b63275824b11445c6220b722e",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
-      "versions": {},
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "08f01de9d938477d2cc751299507ab78ed156e13"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Fri Feb 27 14:28:02 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardization for FL, NV, RI, VA"
+        ]
+      },
       "source": [],
+      "data_format": "wide",
       "ids": [
         {
           "variable": "geography"
         }
       ],
-      "id_length": "NA",
+      "id_length": 2,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-02-26 19:21:06.221299",
-      "last_modified": "2026-02-26 19:21:06.221299",
+      "created": "2026-08-05 09:48:13.390539",
+      "last_modified": "2026-08-25 14:39:43.570145",
       "vintage": {},
       "row_count": 21,
-      "entity_count": 0,
+      "entity_count": 1,
       "schema": {
         "fields": [
           {
             "name": "time",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
+            "duplicates": 14,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
+              "2018-09-01": 3,
+              "2019-09-01": 3,
+              "2020-09-01": 3,
+              "2021-09-01": 3,
+              "2022-09-01": 3,
+              "2023-09-01": 3,
+              "2024-09-01": 3
             }
           },
           {
             "name": "geography",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
+            "duplicates": 20,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
+              "44": 21
             }
           },
           {
-            "name": "county",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
+            "name": "geography_name",
+            "duplicates": 20,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
+              "Rhode Island": 21
             }
           },
           {
             "name": "grade",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
+            "duplicates": 18,
+            "info": [],
+            "time_range": [0, 6],
             "type": "string",
             "missing": 0,
             "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
+              "12": 7,
+              "7": 7,
+              "Kindergarten": 7
             }
           },
           {
-            "name": "N_dtap",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
+            "name": "rate_dtap_religious_exempt",
+            "duplicates": 6,
+            "info": {
+              "id": "rate_dtap_religious_exempt",
+              "short_name": "DTaP religious exemption rate",
+              "long_name": "Proportion of students with a religious exemption from DTaP vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from the DTaP vaccination requirement.",
+              "long_description": "Share of assessed school students holding a religious exemption from the DTaP series specifically. An exemption rate, not a coverage rate.",
+              "statement": "In {location}, {value} of school students had a religious exemption from DTaP vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ri_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 7,
+            "mean": 0.008783,
+            "sd": 0.003282,
+            "min": 0.004946,
+            "max": 0.015482
           },
           {
-            "name": "N_polio",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
+            "name": "rate_polio_religious_exempt",
+            "duplicates": 6,
+            "info": {
+              "id": "rate_polio_religious_exempt",
+              "short_name": "polio religious exemption rate",
+              "long_name": "Proportion of students with a religious exemption from polio vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from the polio vaccination requirement.",
+              "long_description": "Share of assessed school students holding a religious exemption from the polio series specifically. An exemption rate, not a coverage rate.",
+              "statement": "In {location}, {value} of school students had a religious exemption from polio vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ri_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 7,
+            "mean": 0.00755,
+            "sd": 0.004115,
+            "min": 0.002594,
+            "max": 0.01538
           },
           {
-            "name": "N_mmr",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
+            "name": "rate_mmr_religious_exempt",
+            "duplicates": 6,
+            "info": {
+              "id": "rate_mmr_religious_exempt",
+              "short_name": "MMR religious exemption rate",
+              "long_name": "Proportion of students with a religious exemption from MMR vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from the MMR vaccination requirement.",
+              "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically. An exemption rate, not a coverage rate.",
+              "statement": "In {location}, {value} of school students had a religious exemption from MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ri_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 7,
+            "mean": 0.007841,
+            "sd": 0.004162,
+            "min": 0.003373,
+            "max": 0.0162
           },
           {
-            "name": "N_hep_b",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
+            "name": "rate_hep_b_religious_exempt",
+            "duplicates": 6,
+            "info": {
+              "id": "rate_hep_b_religious_exempt",
+              "short_name": "hepatitis B religious exemption rate",
+              "long_name": "Proportion of students with a religious exemption from hepatitis B vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from the hepatitis B vaccination requirement.",
+              "long_description": "Share of assessed school students holding a religious exemption from the hepatitis B series specifically. An exemption rate, not a coverage rate.",
+              "statement": "In {location}, {value} of school students had a religious exemption from hepatitis B vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ri_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 7,
+            "mean": 0.006924,
+            "sd": 0.003475,
+            "min": 0.002964,
+            "max": 0.013432
           },
           {
-            "name": "N_varicella",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
+            "name": "rate_varicella_religious_exempt",
+            "duplicates": 6,
+            "info": {
+              "id": "rate_varicella_religious_exempt",
+              "short_name": "varicella religious exemption rate",
+              "long_name": "Proportion of students with a religious exemption from varicella vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from the varicella vaccination requirement.",
+              "long_description": "Share of assessed school students holding a religious exemption from the varicella series specifically. An exemption rate, not a coverage rate.",
+              "statement": "In {location}, {value} of school students had a religious exemption from varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ri_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 7,
+            "mean": 0.007474,
+            "sd": 0.004462,
+            "min": 0,
+            "max": 0.015995
           },
           {
-            "name": "N_personal_exempt",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "N_medical_exempt",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "N_full_exempt",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_dtap",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_polio",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_mmr",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_hep_b",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_varicella",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_personal_exempt",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_medical_exempt",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
-          },
-          {
-            "name": "pct_full_exempt",
-            "duplicates": 0,
-            "time_range": [
-              -1,
-              -1
-            ],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2018-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.49456789999999995\t0.2594454\t0.3405221\t0.29998379999999997\t0.3891682\tNA\tNA\tNA": 1,
-              "2018-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8482306000000001\t0.8208683\t0.9394382\t0.7387815\t0.9211966\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5598551\t0.3457929\t0.4116582\t0.2963939\t0.4116582\tNA\tNA\tNA": 1,
-              "2019-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8498327\t0.8588735000000001\t0.9040773999999999\t0.7142210999999999\t0.9673628\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5199597\t0.36900370000000005\t0.44448170000000004\t0.394163\t0.43609529999999996\tNA\tNA\tNA": 1,
-              "2020-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.8553029\t0.8653653000000001\t0.8854900000000001\t0.7043670999999999\t0.8653653000000001\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.5903298\t0.44977510000000004\t0.3373313\t0.4310345\t0.5153673\tNA\tNA\tNA": 1,
-              "2021-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.9115685\t0.9867493999999999\t0.7142186\t0.9679541\t0\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.6809\t0.4103\t0.45389999999999997\t0.45389999999999997\t0.48009999999999997\tNA\tNA\tNA": 1,
-              "2022-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.1791\t1.1693\t1.2872\t1.1103\t1.2577\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t0.7035\t0.3254\t0.4661\t0.3254\t0.4485\tNA\tNA\tNA": 1,
-              "2023-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.3473000000000002\t1.3667\t1.4054\t1.1728\t1.3764\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t12\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\t7\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.207\t0.8047000000000001\t0.7681\t0.7407\t0.7955\tNA\tNA\tNA": 1,
-              "2024-09-01\t44\tRhode Island\tKindergarten\tNA\tNA\tNA\tNA\tNA\tNA\tNA\tNA\t1.5482\t1.538\t1.6199999999999999\t1.3432\t1.5995\tNA\tNA\tNA": 1
-            }
+            "name": "rate_menacwy_religious_exempt",
+            "duplicates": 7,
+            "info": {
+              "id": "rate_menacwy_religious_exempt",
+              "short_name": "meningococcal (MenACWY) religious exemption rate",
+              "long_name": "Proportion of students with a religious exemption from meningococcal (MenACWY) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from the meningococcal (MenACWY) vaccination requirement.",
+              "long_description": "Share of assessed school students holding a religious exemption from the meningococcal (MenACWY) series specifically. An exemption rate, not a coverage rate.",
+              "statement": "In {location}, {value} of school students had a religious exemption from meningococcal (MenACWY) vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ri_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 8,
+            "mean": 0.006987,
+            "sd": 0.002924,
+            "min": 0,
+            "max": 0.012345
           }
         ]
       },
-      "sha512": "f99df6dad4924f984ffa3a95271cc7cb52476777a2d093091b8693e5da519c17c656f73e8573afb8fd88ccc6d323eeae28616ae4dc7e34bc8d7b15d675d68504"
+      "sha512": "e331690d8005b8d64bb74eef84a921efd77e800e006e7cc7e31d6ded8d8966e27cf0f55bdf5384bd261246540b7cede16665f6a529471d5704305ff602beb078"
     }
   ],
   "measure_info": {
-    "example_variable": {
-      "id": "example_variable",
-      "sources": [],
-      "citations": []
+    "rate_dtap_religious_exempt": {
+      "id": "rate_dtap_religious_exempt",
+      "short_name": "DTaP religious exemption rate",
+      "long_name": "Proportion of students with a religious exemption from DTaP vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from the DTaP vaccination requirement.",
+      "long_description": "Share of assessed school students holding a religious exemption from the DTaP series specifically. An exemption rate, not a coverage rate.",
+      "statement": "In {location}, {value} of school students had a religious exemption from DTaP vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ri_school_immunization"
+        }
+      ]
+    },
+    "rate_polio_religious_exempt": {
+      "id": "rate_polio_religious_exempt",
+      "short_name": "polio religious exemption rate",
+      "long_name": "Proportion of students with a religious exemption from polio vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from the polio vaccination requirement.",
+      "long_description": "Share of assessed school students holding a religious exemption from the polio series specifically. An exemption rate, not a coverage rate.",
+      "statement": "In {location}, {value} of school students had a religious exemption from polio vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ri_school_immunization"
+        }
+      ]
+    },
+    "rate_mmr_religious_exempt": {
+      "id": "rate_mmr_religious_exempt",
+      "short_name": "MMR religious exemption rate",
+      "long_name": "Proportion of students with a religious exemption from MMR vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from the MMR vaccination requirement.",
+      "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically. An exemption rate, not a coverage rate.",
+      "statement": "In {location}, {value} of school students had a religious exemption from MMR vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ri_school_immunization"
+        }
+      ]
+    },
+    "rate_hep_b_religious_exempt": {
+      "id": "rate_hep_b_religious_exempt",
+      "short_name": "hepatitis B religious exemption rate",
+      "long_name": "Proportion of students with a religious exemption from hepatitis B vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from the hepatitis B vaccination requirement.",
+      "long_description": "Share of assessed school students holding a religious exemption from the hepatitis B series specifically. An exemption rate, not a coverage rate.",
+      "statement": "In {location}, {value} of school students had a religious exemption from hepatitis B vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ri_school_immunization"
+        }
+      ]
+    },
+    "rate_varicella_religious_exempt": {
+      "id": "rate_varicella_religious_exempt",
+      "short_name": "varicella religious exemption rate",
+      "long_name": "Proportion of students with a religious exemption from varicella vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from the varicella vaccination requirement.",
+      "long_description": "Share of assessed school students holding a religious exemption from the varicella series specifically. An exemption rate, not a coverage rate.",
+      "statement": "In {location}, {value} of school students had a religious exemption from varicella vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ri_school_immunization"
+        }
+      ]
+    },
+    "rate_menacwy_religious_exempt": {
+      "id": "rate_menacwy_religious_exempt",
+      "short_name": "meningococcal (MenACWY) religious exemption rate",
+      "long_name": "Proportion of students with a religious exemption from meningococcal (MenACWY) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from the meningococcal (MenACWY) vaccination requirement.",
+      "long_description": "Share of assessed school students holding a religious exemption from the meningococcal (MenACWY) series specifically. An exemption rate, not a coverage rate.",
+      "statement": "In {location}, {value} of school students had a religious exemption from meningococcal (MenACWY) vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ri_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "ri_school_immunization": {
+        "name": "Rhode Island School Immunization Coverage",
+        "url": "https://ricair-data-rihealth.hub.arcgis.com/",
+        "organization": "Rhode Island Department of Health",
+        "organization_url": "https://health.ri.gov/",
+        "description": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. STATE LEVEL ONLY -- Rhode Island supplies no county breakdown here, so geography is the 2-digit state FIPS (44) on every row and this source contributes nothing to county analyses. Small cells are suppressed with a less-than marker; those are left missing.",
+        "restrictions": "Public data supplied by RIDOH."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
     }
   }
 }

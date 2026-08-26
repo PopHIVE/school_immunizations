@@ -1,17 +1,63 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_full_exempt": {
+    "id": "N_full_exempt",
+    "short_name": "Total exemptions (count)",
+    "long_name": "Number of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "nm_school_immunization"
+      }
+    ]
+  },
+  "total_pop_18": {
+    "id": "total_pop_18",
+    "short_name": "Population aged ≤18",
+    "long_name": "Population aged 18 and under",
+    "category": "immunization",
+    "short_description": "Population aged 18 and under in the county.",
+    "long_description": "Population aged 18 and under, used as the denominator for the exemption rate and count in the same record. It is a resident population figure published alongside the exemption data, not a school enrolment count.",
+    "statement": "In {location}, the population aged 18 and under was {value}.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "nm_school_immunization"
+      }
+    ]
+  },
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
+    "short_name": "Total exemption rate",
+    "long_name": "Proportion of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "nm_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "nm_school_immunization": {
+      "name": "New Mexico School Immunization Coverage",
+      "url": "https://www.arcgis.com/apps/dashboards/c40e909922a243968807dc7b10870405",
+      "organization": "New Mexico Department of Health",
+      "organization_url": "https://www.nmhealth.org/",
+      "description": "County-level kindergarten and 7th-grade coverage and exemption data from the NMDOH ArcGIS dashboard feature service.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

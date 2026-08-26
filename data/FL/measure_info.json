@@ -1,17 +1,63 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "N_full_exempt": {
+    "id": "N_full_exempt",
+    "short_name": "Total exemptions (count)",
+    "long_name": "Number of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "fl_school_immunization"
+      }
+    ]
+  },
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
+    "short_name": "Total exemption rate",
+    "long_name": "Proportion of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "fl_school_immunization"
+      }
+    ]
+  },
+  "total_pop_4_18": {
+    "id": "total_pop_4_18",
+    "short_name": "Population aged 4-18",
+    "long_name": "Census population aged 4 to 18",
+    "category": "immunization",
+    "short_description": "Census population aged 4 to 18 in the county.",
+    "long_description": "Population aged 4 to 18 from census estimates, used as an approximate denominator where the state publishes exemption counts without an enrolment figure. It is a resident population, not an enrolment count, so rates derived from it are approximate.",
+    "statement": "In {location}, the population aged 4 to 18 was {value}.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "fl_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "fl_school_immunization": {
+      "name": "Florida School Immunization Data",
+      "url": "https://www.flhealthcharts.gov/charts/CommunicableDiseases/default.aspx",
+      "organization": "Florida Department of Health",
+      "organization_url": "https://www.floridahealth.gov/",
+      "description": "County-level school immunization data from Florida Health Charts.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

@@ -5,57 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:48",
       "frequency": 0,
-      "last_run": "2026-02-05 00:00:45",
-      "run_time": 0.455,
+      "run_time": 0.36,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
-  "raw_state": {
-    "raw/K-12_school_2025.xlsx": "ef84e3781798ccdcb0ca5666b16c37f1"
+  "checked": "2026-08-25 15:33:52",
+  "check_results": {
+    "data/OR/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: grade"]
+    }
   },
-  "script_hash": "bc56a9dc1675399f33048275d74b6136",
+  "raw_state": {
+    "raw/SchK-12.xlsx": "8e629af1b7d0ebc85c47f086d2857b3b"
+  },
+  "script_hash": "b18c6695084324f2c92cb10bd9a13438",
   "standard_state": {
-    "./data/OR/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/OR/standard/data.csv.gz": "c635e508f915664ab33b55ae95b83064"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OR/measure_info.json": "a57d6dd63df67c5245ae57db6ac0046d",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OR/standard/data.csv.gz": "78bb99dad51c2f12d398af70afbedb4b"
   }
 }

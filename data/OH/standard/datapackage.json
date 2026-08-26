@@ -9,14 +9,40 @@
   },
   "resources": [
     {
-      "bytes": 598,
-      "encoding": "ISO-8859-1",
-      "md5": "2bfc00caa64b618be95f0089b11bfbc2",
+      "bytes": 968,
+      "encoding": "windows-1252",
+      "md5": "2ad18b499e5b20d56962e55e6b8df1af",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
-      "versions": {},
+      "versions": {
+        "hash": [
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
+        ],
+        "author": [
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 12 07:17:55 2026 -0500"
+        ],
+        "message": [
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "adding standard files & unzip gz files"
+        ]
+      },
       "source": [],
+      "data_format": "wide",
       "ids": [
         {
           "variable": "geography"
@@ -25,33 +51,29 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-02-05 10:04:34.702832",
-      "last_modified": "2026-02-05 10:04:34.702832",
+      "created": "2026-08-05 09:48:12.946812",
+      "last_modified": "2026-08-25 14:47:47.576075",
       "vintage": {},
-      "row_count": 44,
-      "entity_count": 44,
+      "row_count": 88,
+      "entity_count": 88,
       "schema": {
         "fields": [
           {
             "name": "time",
-            "duplicates": 43,
-            "time_range": [
-              0,
-              0
-            ],
+            "duplicates": 87,
+            "info": [],
+            "time_range": [0, 0],
             "type": "string",
             "missing": 0,
             "table": {
-              "12-31-2025": 44
+              "2024-09-01": 88
             }
           },
           {
             "name": "geography",
             "duplicates": 0,
-            "time_range": [
-              0,
-              0
-            ],
+            "info": [],
+            "time_range": [0, 0],
             "type": "string",
             "missing": 0,
             "table": {
@@ -98,102 +120,262 @@
               "39081": 1,
               "39083": 1,
               "39085": 1,
-              "39087": 1
+              "39087": 1,
+              "39089": 1,
+              "39091": 1,
+              "39093": 1,
+              "39095": 1,
+              "39097": 1,
+              "39099": 1,
+              "39101": 1,
+              "39103": 1,
+              "39105": 1,
+              "39107": 1,
+              "39109": 1,
+              "39111": 1,
+              "39113": 1,
+              "39115": 1,
+              "39117": 1,
+              "39119": 1,
+              "39121": 1,
+              "39123": 1,
+              "39125": 1,
+              "39127": 1,
+              "39129": 1,
+              "39131": 1,
+              "39133": 1,
+              "39135": 1,
+              "39137": 1,
+              "39139": 1,
+              "39141": 1,
+              "39143": 1,
+              "39145": 1,
+              "39147": 1,
+              "39149": 1,
+              "39151": 1,
+              "39153": 1,
+              "39155": 1,
+              "39157": 1,
+              "39159": 1,
+              "39161": 1,
+              "39163": 1,
+              "39165": 1,
+              "39167": 1,
+              "39169": 1,
+              "39171": 1,
+              "39173": 1,
+              "39175": 1
             }
           },
           {
-            "name": "county",
+            "name": "geography_name",
             "duplicates": 0,
-            "time_range": [
-              0,
-              0
-            ],
+            "info": [],
+            "time_range": [0, 0],
             "type": "string",
             "missing": 0,
             "table": {
-              "Adams County": 1,
-              "Allen County": 1,
-              "Ashland County": 1,
-              "Ashtabula County": 1,
-              "Athens County": 1,
-              "Auglaize County": 1,
-              "Belmont County": 1,
-              "Brown County": 1,
-              "Butler County": 1,
-              "Carroll County": 1,
-              "Champaign County": 1,
-              "Clark County": 1,
-              "Clermont County": 1,
-              "Clinton County": 1,
-              "Columbiana County": 1,
-              "Coshocton County": 1,
-              "Crawford County": 1,
-              "Cuyahoga County": 1,
-              "Darke County": 1,
-              "Defiance County": 1,
-              "Delaware County": 1,
-              "Erie County": 1,
-              "Fairfield County": 1,
-              "Fayette County": 1,
-              "Franklin County": 1,
-              "Fulton County": 1,
-              "Gallia County": 1,
-              "Geauga County": 1,
-              "Greene County": 1,
-              "Guernsey County": 1,
-              "Hamilton County": 1,
-              "Hancock County": 1,
-              "Hardin County": 1,
-              "Harrison County": 1,
-              "Henry County": 1,
-              "Highland County": 1,
-              "Hocking County": 1,
-              "Holmes County": 1,
-              "Huron County": 1,
-              "Jackson County": 1,
-              "Jefferson County": 1,
-              "Knox County": 1,
-              "Lake County": 1,
-              "Lawrence County": 1
+              "Adams": 1,
+              "Allen": 1,
+              "Ashland": 1,
+              "Ashtabula": 1,
+              "Athens": 1,
+              "Auglaize": 1,
+              "Belmont": 1,
+              "Brown": 1,
+              "Butler": 1,
+              "Carroll": 1,
+              "Champaign": 1,
+              "Clark": 1,
+              "Clermont": 1,
+              "Clinton": 1,
+              "Columbiana": 1,
+              "Coshocton": 1,
+              "Crawford": 1,
+              "Cuyahoga": 1,
+              "Darke": 1,
+              "Defiance": 1,
+              "Delaware": 1,
+              "Erie": 1,
+              "Fairfield": 1,
+              "Fayette": 1,
+              "Franklin": 1,
+              "Fulton": 1,
+              "Gallia": 1,
+              "Geauga": 1,
+              "Greene": 1,
+              "Guernsey": 1,
+              "Hamilton": 1,
+              "Hancock": 1,
+              "Hardin": 1,
+              "Harrison": 1,
+              "Henry": 1,
+              "Highland": 1,
+              "Hocking": 1,
+              "Holmes": 1,
+              "Huron": 1,
+              "Jackson": 1,
+              "Jefferson": 1,
+              "Knox": 1,
+              "Lake": 1,
+              "Lawrence": 1,
+              "Licking": 1,
+              "Logan": 1,
+              "Lorain": 1,
+              "Lucas": 1,
+              "Madison": 1,
+              "Mahoning": 1,
+              "Marion": 1,
+              "Medina": 1,
+              "Meigs": 1,
+              "Mercer": 1,
+              "Miami": 1,
+              "Monroe": 1,
+              "Montgomery": 1,
+              "Morgan": 1,
+              "Morrow": 1,
+              "Muskingum": 1,
+              "Noble": 1,
+              "Ottawa": 1,
+              "Paulding": 1,
+              "Perry": 1,
+              "Pickaway": 1,
+              "Pike": 1,
+              "Portage": 1,
+              "Preble": 1,
+              "Putnam": 1,
+              "Richland": 1,
+              "Ross": 1,
+              "Sandusky": 1,
+              "Scioto": 1,
+              "Seneca": 1,
+              "Shelby": 1,
+              "Stark": 1,
+              "Summit": 1,
+              "Trumbull": 1,
+              "Tuscarawas": 1,
+              "Union": 1,
+              "Van Wert": 1,
+              "Vinton": 1,
+              "Warren": 1,
+              "Washington": 1,
+              "Wayne": 1,
+              "Williams": 1,
+              "Wood": 1,
+              "Wyandot": 1
             }
           },
           {
             "name": "grade",
-            "duplicates": 43,
-            "time_range": [
-              0,
-              0
-            ],
+            "duplicates": 87,
+            "info": [],
+            "time_range": [0, 0],
             "type": "string",
             "missing": 0,
             "table": {
-              "Kindergarten": 44
+              "Kindergarten": 88
             }
           },
           {
-            "name": "pct_mmr_exempt",
-            "duplicates": 11,
-            "time_range": [
-              0,
-              0
-            ],
+            "name": "rate_mmr_exempt",
+            "duplicates": 31,
+            "info": {
+              "id": "rate_mmr_exempt",
+              "short_name": "MMR exemption rate",
+              "long_name": "Proportion of students exempt from MMR vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with any exemption from the MMR vaccination requirement.",
+              "long_description": "Share of assessed school students holding an exemption of any kind from the MMR series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+              "statement": "In {location}, {value} of school students were exempt from MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "oh_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 0],
             "type": "float",
             "missing": 1,
-            "mean": 5.337209,
-            "sd": 4.808525,
-            "min": 1.1,
-            "max": 32.2
+            "mean": 0.052,
+            "sd": 0.040006,
+            "min": 0,
+            "max": 0.322
           }
         ]
       },
-      "sha512": "fd63f963ffa961d4fe5f97d7689e08af656b272dd3ba6e2aaa8519c1eed6faae3ed218bb5ff5bc97f8b8333b07912bfba0d2b2337d949ade068867b6f249ec8d"
+      "sha512": "cfadb4405d5be8b5992364b1e0f89577b66af7dedfafd7c94db2c12eb240cc9a54c0a41be2abe82532417a00127a52e2b20c5afda7d41483164c12e729c5b475"
     }
   ],
   "measure_info": {
-    "example_variable": {
-      "id": "example_variable",
-      "sources": [],
-      "citations": []
+    "rate_mmr_exempt": {
+      "id": "rate_mmr_exempt",
+      "short_name": "MMR exemption rate",
+      "long_name": "Proportion of students exempt from MMR vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with any exemption from the MMR vaccination requirement.",
+      "long_description": "Share of assessed school students holding an exemption of any kind from the MMR series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+      "statement": "In {location}, {value} of school students were exempt from MMR vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "oh_school_immunization"
+        }
+      ]
+    },
+    "suppressed_flag": {
+      "id": "suppressed_flag",
+      "short_name": "Suppressed value flag",
+      "long_name": "Indicator that at least one rate on this row was censored at source",
+      "category": "immunization",
+      "short_description": "1 if at least one rate on this row was suppressed or top-coded by the source.",
+      "long_description": "Set to 1 where the source published a censoring marker instead of a number for at least one measure on the row. Undirected markers leave the value missing. Where a bound is given, see censor_direction for which way it runs.",
+      "statement": "In {location}, at least one reported rate was censored at source.",
+      "measure_type": "Count",
+      "unit": "Flag",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "oh_school_immunization"
+        }
+      ]
+    },
+    "censor_direction": {
+      "id": "censor_direction",
+      "short_name": "Censoring direction",
+      "long_name": "Direction in which a censored value on this row is bounded",
+      "category": "immunization",
+      "short_description": "Which way a censored value is bounded: left, right, undirected, or a combination.",
+      "long_description": "\"left\" means the source printed a less-than marker, so the true value lies BELOW the stated threshold (a suppressed small cell such as \"<5\"). \"right\" means a greater-than marker, so the true value lies ABOVE it (a top code such as \">95%\"). \"undirected\" means the value was withheld with no bound stated. Combinations are joined with \"+\" where a row carries more than one kind. Empty where nothing was censored. Left- and right-censoring pull an estimate in opposite directions, so they are recorded separately rather than under a single suppression flag.",
+      "statement": "In {location}, censored values on this row were bounded {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "oh_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "oh_school_immunization": {
+        "name": "Ohio Kindergarten Immunization Assessment",
+        "url": "https://data.ohio.gov/wps/portal/gov/data/view/annual-ohio-kindergarten-immunization-level-assessment",
+        "organization": "Ohio Department of Health",
+        "organization_url": "https://odh.ohio.gov/",
+        "description": "County-level kindergarten MMR exemption rates from the annual Ohio Kindergarten Immunization Level Assessment.",
+        "restrictions": "Public data published by the source agency; no access restrictions."
+      },
+      "id": "_sources"
+    }
+  },
+  "change_report": {
+    "data.csv.gz": {
+      "state": "unchanged"
     }
   }
 }

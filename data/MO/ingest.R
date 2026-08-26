@@ -5,7 +5,9 @@ library(readxl)
 library(stringr)
 library(vroom)
 library(readr)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
+source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -41,16 +43,36 @@ if (!identical(process$raw_state, raw_state) ||
     }
     data_raw <- data_raw %>% mutate(across(everything(), as.character))
     
+    # The workbook is titled "Exemption Rates for Kindergarteners in Missouri
+    # Schools, by Vaccine Series", and each series has Medical / Religious /
+    # Total columns. These are exemption shares, not coverage, so they are named
+    # as exemptions here and the coverage columns are left missing: DHSS
+    # publishes no coverage, and 1 - exemption is not coverage (a student can be
+    # unvaccinated without an exemption, and an exempt student may still have
+    # had the vaccine).
+    #
+    # The medical and religious components are now kept as well; previously only
+    # the total was read and the split was discarded.
     data_raw %>%
       transmute(
         school_year = school_year,
         county = county,
-        pct_dtap = dtap_total,
-        pct_hep_b = hep_b_total,
-        pct_polio = polio_total,
-        pct_mmr = mmr_total,
-        pct_varicella = varicella_total,
-        grade = grade_label
+        grade = grade_label,
+        pct_dtap_exempt = dtap_total,
+        pct_dtap_medical_exempt = dtap_med,
+        pct_dtap_religious_exempt = dtap_rel,
+        pct_hep_b_exempt = hep_b_total,
+        pct_hep_b_medical_exempt = hep_b_med,
+        pct_hep_b_religious_exempt = hep_b_rel,
+        pct_polio_exempt = polio_total,
+        pct_polio_medical_exempt = polio_med,
+        pct_polio_religious_exempt = polio_rel,
+        pct_mmr_exempt = mmr_total,
+        pct_mmr_medical_exempt = mmr_med,
+        pct_mmr_religious_exempt = mmr_rel,
+        pct_varicella_exempt = varicella_total,
+        pct_varicella_medical_exempt = varicella_med,
+        pct_varicella_religious_exempt = varicella_rel
       )
   }
   
@@ -59,29 +81,17 @@ if (!identical(process$raw_state, raw_state) ||
   })) %>%
     mutate(
       year_end = str_extract(school_year, "\\d{4}$"),
-      time = as.Date(paste0(year_end, "-09-01")),
-      across(starts_with("pct_"), ~ readr::parse_number(as.character(.x)))
+      time = as.Date(school_year_time_from_end(year_end)),
+      across(starts_with("pct_"), ~ parse_rate(.x, from = "rate"))
     ) %>%
     filter(!is.na(time))
   
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  fips_df <- all_fips %>%
-    filter(state == "MO") %>%
-    mutate(geography_name = gsub(" County", "", geography_name))
-  
-  state_fips <- fips_df %>%
-    filter(nchar(geography) == 2) %>%
-    distinct(geography) %>%
-    pull(geography)
-  
+  # "St. Louis City" and "St. Louis County" are separate FIPS (29510 and
+  # 29189); stripping " County" off the reference names used to make both
+  # unmatchable, so 36 rows landed on the state total instead.
   data_out <- data_all %>%
-    left_join(
-      fips_df %>% filter(nchar(geography) == 5),
-      by = c("county" = "geography_name")
-    ) %>%
+    join_county_fips("MO") %>%
     mutate(
-      geography = if_else(is.na(geography), state_fips[1], geography),
-      geography_name = county,
       N_dtap = NA_real_,
       N_polio = NA_real_,
       N_mmr = NA_real_,
@@ -90,6 +100,14 @@ if (!identical(process$raw_state, raw_state) ||
       N_personal_exempt = NA_real_,
       N_medical_exempt = NA_real_,
       N_full_exempt = NA_real_,
+      # Coverage: not published by this source (see parse_sheet above).
+      pct_dtap = NA_real_,
+      pct_polio = NA_real_,
+      pct_mmr = NA_real_,
+      pct_hep_b = NA_real_,
+      pct_varicella = NA_real_,
+      # DHSS reports exemptions per vaccine series, not one figure across all
+      # series, so there is no all-series medical/religious/any total to give.
       pct_personal_exempt = NA_real_,
       pct_medical_exempt = NA_real_,
       pct_full_exempt = NA_real_
@@ -99,10 +117,16 @@ if (!identical(process$raw_state, raw_state) ||
       N_dtap, N_polio, N_mmr, N_hep_b, N_varicella,
       N_personal_exempt, N_medical_exempt, N_full_exempt,
       pct_dtap, pct_polio, pct_mmr, pct_hep_b, pct_varicella,
-      pct_personal_exempt, pct_medical_exempt, pct_full_exempt
+      pct_personal_exempt, pct_medical_exempt, pct_full_exempt,
+      pct_dtap_exempt, pct_dtap_medical_exempt, pct_dtap_religious_exempt,
+      pct_polio_exempt, pct_polio_medical_exempt, pct_polio_religious_exempt,
+      pct_mmr_exempt, pct_mmr_medical_exempt, pct_mmr_religious_exempt,
+      pct_hep_b_exempt, pct_hep_b_medical_exempt, pct_hep_b_religious_exempt,
+      pct_varicella_exempt, pct_varicella_medical_exempt,
+      pct_varicella_religious_exempt
     )
   
-  vroom::vroom_write(add_state_column(data_out, "Missouri"), "./standard/data.csv.gz")
+  write_standard(data_out, "Missouri", "./standard/data.csv.gz", from = "rate")
   
   process$raw_state <- raw_state
   process$script_hash <- script_hash

@@ -1,17 +1,148 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
+    "short_name": "Religious exemption rate",
+    "long_name": "Proportion of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "rate_personal_exempt": {
+    "id": "rate_personal_exempt",
+    "short_name": "Non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+    "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
+    "short_name": "Total exemption rate",
+    "long_name": "Proportion of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "flag_medical_exempt": {
+    "id": "flag_medical_exempt",
+    "short_name": "Medical exemption rate - censoring flag",
+    "long_name": "Why rate_medical_exempt was recoded from a censoring marker on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_medical_exempt was published as a number, bottom-coded, top-coded, or never reported.",
+    "long_description": "Per-measure companion to rate_medical_exempt. BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\" (a small school-level share withheld to protect privacy); rate_medical_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_medical_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_medical_exempt is NA in this case.",
+    "statement": "In {location}, rate_medical_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "flag_religious_exempt": {
+    "id": "flag_religious_exempt",
+    "short_name": "Religious exemption rate - censoring flag",
+    "long_name": "Why rate_religious_exempt was recoded from a censoring marker on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_religious_exempt was published as a number, bottom-coded, top-coded, or never reported.",
+    "long_description": "Per-measure companion to rate_religious_exempt. BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\" (a small school-level share withheld to protect privacy); rate_religious_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_religious_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_religious_exempt is NA in this case.",
+    "statement": "In {location}, rate_religious_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "flag_personal_exempt": {
+    "id": "flag_personal_exempt",
+    "short_name": "Non-medical exemption rate - censoring flag",
+    "long_name": "Why rate_personal_exempt was recoded from a censoring marker on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_personal_exempt was published as a number, bottom-coded, top-coded, or never reported.",
+    "long_description": "Per-measure companion to rate_personal_exempt (Wisconsin's \"Personal Conviction Waiver\", spelled \"Wavier\" in the 2021-2024 workbooks). BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\"; rate_personal_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_personal_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_personal_exempt is NA in this case.",
+    "statement": "In {location}, rate_personal_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "flag_full_exempt": {
+    "id": "flag_full_exempt",
+    "short_name": "Total exemption rate - censoring flag",
+    "long_name": "Why rate_full_exempt was recoded from a censoring marker on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_full_exempt was published as a number, bottom-coded, top-coded, or never reported.",
+    "long_description": "Per-measure companion to rate_full_exempt (Wisconsin's \"Waived All Vaccines\"). BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\"; rate_full_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_full_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_full_exempt is NA in this case.",
+    "statement": "In {location}, rate_full_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "wi_school_immunization": {
+      "name": "Wisconsin School Immunization Data",
+      "url": "https://www.dhs.wisconsin.gov/library/collection/p-01892",
+      "organization": "Wisconsin Department of Health Services",
+      "organization_url": "https://www.dhs.wisconsin.gov/",
+      "description": "School-level immunization and waiver data from the Wisconsin DHS student immunization reports, aggregated to county here. MAJOR CAVEAT -- these county figures are not county rates. DHS suppresses any school-level share below 5 percent as \"<5\", which covers about 95 percent of cells: for the health waiver, 2,980 of 3,011 schools in 2023-24, and in 38 of 72 counties every single school is suppressed. The workbook publishes no enrolment column, so the surviving schools cannot be weighted and the county figure is an unweighted mean over them. Because suppression removes exactly the low values, the schools that remain are the high outliers, and every county figure in this file rests on precisely one school. A value of 0.82 therefore describes one small school, not the county. Use N_schools and N_schools_reported to see how thin each figure is, and prefer a source with denominators for county-level comparison.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

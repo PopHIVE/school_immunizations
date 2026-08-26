@@ -1,17 +1,199 @@
 {
-  "example_variable": {
-    "id": "example_variable",
-    "short_name": "",
-    "long_name": "",
-    "category": "",
-    "short_description": "",
-    "long_description": "",
-    "statement": "",
-    "measure_type": "",
-    "unit": "",
-    "time_resolution": "",
-    "restrictions": "",
-    "sources": [],
-    "citations": []
+  "rate_medical_exemptions": {
+    "id": "rate_medical_exemptions",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_polio": {
+    "id": "rate_immunized_polio",
+    "short_name": "polio immunization",
+    "long_name": "Proportion of students immunized against polio",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against polio.",
+    "long_description": "Share of enrolled students reported as adequately immunized against polio in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against polio.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_measles": {
+    "id": "rate_immunized_measles",
+    "short_name": "measles immunization",
+    "long_name": "Proportion of students immunized against measles",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against measles.",
+    "long_description": "Share of enrolled students reported as adequately immunized against measles in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against measles.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_mumps": {
+    "id": "rate_immunized_mumps",
+    "short_name": "mumps immunization",
+    "long_name": "Proportion of students immunized against mumps",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against mumps.",
+    "long_description": "Share of enrolled students reported as adequately immunized against mumps in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against mumps.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_rubella": {
+    "id": "rate_immunized_rubella",
+    "short_name": "rubella immunization",
+    "long_name": "Proportion of students immunized against rubella",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against rubella.",
+    "long_description": "Share of enrolled students reported as adequately immunized against rubella in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against rubella.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_diphtheria": {
+    "id": "rate_immunized_diphtheria",
+    "short_name": "diphtheria immunization",
+    "long_name": "Proportion of students immunized against diphtheria",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against diphtheria.",
+    "long_description": "Share of enrolled students reported as adequately immunized against diphtheria in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against diphtheria.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_hepatitis_b": {
+    "id": "rate_immunized_hepatitis_b",
+    "short_name": "hepatitis B immunization",
+    "long_name": "Proportion of students immunized against hepatitis B",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against hepatitis B.",
+    "long_description": "Share of enrolled students reported as adequately immunized against hepatitis B in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against hepatitis B.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_varicella": {
+    "id": "rate_immunized_varicella",
+    "short_name": "varicella immunization",
+    "long_name": "Proportion of students immunized against varicella",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against varicella.",
+    "long_description": "Share of enrolled students reported as adequately immunized against varicella in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against varicella.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_tdap": {
+    "id": "rate_immunized_tdap",
+    "short_name": "Tdap immunization",
+    "long_name": "Proportion of students immunized against Tdap",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against Tdap.",
+    "long_description": "Share of enrolled students reported as adequately immunized against Tdap in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against Tdap.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_immunized_meningococcal": {
+    "id": "rate_immunized_meningococcal",
+    "short_name": "meningococcal disease immunization",
+    "long_name": "Proportion of students immunized against meningococcal disease",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as immunized against meningococcal disease.",
+    "long_description": "Share of enrolled students reported as adequately immunized against meningococcal disease in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were immunized against meningococcal disease.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "rate_completely_immunized": {
+    "id": "rate_completely_immunized",
+    "short_name": "Completely immunized rate",
+    "long_name": "Proportion of students completely immunized",
+    "category": "immunization",
+    "short_description": "Proportion of students at the school reported as completely immunized for all required vaccines.",
+    "long_description": "Share of enrolled students reported as completely immunized (all required vaccines) in the New York State School Immunization Survey. Reported at the individual-school level.",
+    "statement": "In {location}, {value} of students were completely immunized.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
+  "_sources": {
+    "ny_school_immunization": {
+      "name": "New York State School Immunization Survey",
+      "url": "https://health.data.ny.gov/Health/School-Immunization-Survey-Beginning-2019-20-Schoo/btkd-y8bp",
+      "organization": "New York State Department of Health",
+      "organization_url": "https://www.health.ny.gov/",
+      "description": "School-level immunization and medical-exemption percentages from the NYS School Immunization Survey, pulled from the Health Data NY open-data API (CSV export).",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    }
   }
 }

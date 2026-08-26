@@ -5,57 +5,47 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:08",
       "frequency": 0,
-      "last_run": "2026-02-04 10:23:26",
-      "run_time": 0.428,
+      "run_time": 0.67,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: \u2018dplyr\u2019",
-          "",
-          "The following objects are masked from \u2018package:stats\u2019:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
-  "raw_state": {
-    "raw/CT Vaccine Exemptions 2017-2025_All Grades.xlsx": "523ddccbd481dce5c8d9930ac5ef4b9a"
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/CT/raw/ct_county_immunization_exemption_8kid-pp5k.csv": {
+      "data": "not_compressed"
+    },
+    "data/CT/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CT/standard/data_7th.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CT/standard/data_all_grades.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CT/standard/data_k.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CT/standard/data_pre_k.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
   },
-  "script_hash": "049c3d4e30db72b1cd45eb5a06126ec8",
+  "raw_state": {
+    "raw/CT Vaccine Exemptions 2017-2025_All Grades.xlsx": "523ddccbd481dce5c8d9930ac5ef4b9a",
+    "raw/ct_county_immunization_exemption_8kid-pp5k.csv": "6366ef2c2b6e3eedd6b5d9819132201b"
+  },
+  "script_hash": "dc0e3228a3c44f23488a318a997986ac",
   "standard_state": {
-    "./data/CT/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/CT/standard/data.csv.gz": "2cce50f7744b4864466b7d7ee2a2bd0f"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/measure_info.json": "b6d164e26603431be9b4fbe3d1f87773",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data.csv.gz": "7f303726e7dd9ed27a974561e2c19c0b",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_7th.csv.gz": "d45e7e1081de11e93eeaef3fb45ee7e0",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_all_grades.csv.gz": "7629c2f6b3b1043d7e1be77471f7f001",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_k.csv.gz": "a7c8253c6a081a118c5d508d326332b7",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_pre_k.csv.gz": "9bc885c80846950157c44ae41fa118fd"
   }
 }

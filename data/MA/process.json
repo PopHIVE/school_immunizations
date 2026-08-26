@@ -5,57 +5,61 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:21",
       "frequency": 0,
-      "last_run": "2026-02-04 23:37:35",
-      "run_time": 0.449,
+      "run_time": 5.36,
       "last_status": {
         "log": [
           "",
-          "Attaching package: \u2018dplyr\u2019",
+          "Attaching package: 'rvest'",
           "",
-          "The following objects are masked from \u2018package:stats\u2019:",
+          "The following object is masked from 'package:readr':",
           "",
-          "    filter, lag",
+          "    guess_encoding",
           "",
-          "The following objects are masked from \u2018package:base\u2019:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: \u2018readr\u2019",
-          "",
-          "The following objects are masked from \u2018package:vroom\u2019:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          ""
+          "Massachusetts: dropping 10 column(s) with no data: N_dtap, N_polio, N_mmr, N_hep_b, N_varicella, N_religious_exempt, N_medical_exempt, N_full_exempt, N_tdap, N_menacwy"
         ],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
-  "raw_state": {
-    "Raw/Massachusetts Vaccine Exemption.xlsx": "eb095f005e25babe8d8901bc5f6fe5e7"
+  "checked": "2026-08-25 15:29:05",
+  "check_results": {
+    "data/MA/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
   },
-  "script_hash": "e256cf88d52f094ed54520b958e5c4aa",
+  "raw_state": {
+    "raw/MA_grade7_by_county_2013-2014.xlsx": "6dd6dca62d4764e9df627150c4039caf",
+    "raw/MA_grade7_by_county_2014-2015.xlsx": "b158875e2d3582b3c04e2f73a82da779",
+    "raw/MA_grade7_by_county_2015-2016.xlsx": "0d992b4513660e65adc997fe2de47b52",
+    "raw/MA_grade7_by_county_2016-2017.xlsx": "a092c857e45d0cde54e5b1db0fdcf023",
+    "raw/MA_grade7_by_county_2017-2018.xlsx": "92010941bcf773211e44a0dcca962cef",
+    "raw/MA_grade7_by_county_2018-2019.xlsx": "dc45790b6de056a978e7d7d53e4923e5",
+    "raw/MA_grade7_by_county_2019-2020.xlsx": "13bc33cd250edcdc8749cc5618824e81",
+    "raw/MA_grade7_by_county_2020-2021.xlsx": "6b2e5c4f4675e467b07fe9f22042e211",
+    "raw/MA_grade7_by_county_2021-2022.xlsx": "6a72f671f81640307c291dc676875acc",
+    "raw/MA_grade7_by_county_2022-2023.xlsx": "5bcec350aedfb70fe7084af4189d0e68",
+    "raw/MA_grade7_by_county_2023-2024.xlsx": "a559c47b7c6d198977aa37758774e32b",
+    "raw/MA_grade7_by_county_2024-2025.xlsx": "86bbcfe707d54e09fe59972d080fc2ff",
+    "raw/MA_grade7_by_county_2025-2026.xlsx": "8b111bd1bb76824af4b6aa933b5a9db3",
+    "raw/MA_kindergarten_by_county_2013-2014.xlsx": "36818fcfd532bbad7f45821586ec035c",
+    "raw/MA_kindergarten_by_county_2014-2015.xlsx": "68c247cba27fb776000de6f659fdee84",
+    "raw/MA_kindergarten_by_county_2015-2016.xlsx": "7c18a4ebf518993e02e5b56f9c8415fd",
+    "raw/MA_kindergarten_by_county_2016-2017.xlsx": "4cc0cb858d4a50273b3ce7004ff5f92c",
+    "raw/MA_kindergarten_by_county_2017-2018.xlsx": "dfc784f76c82fb17e7dc4f156153b652",
+    "raw/MA_kindergarten_by_county_2018-2019.xlsx": "ee960819fc619f72ed88f550402b1e4e",
+    "raw/MA_kindergarten_by_county_2019-2020.xlsx": "731e363b8a233351bc0b9d3e99a7b0d2",
+    "raw/MA_kindergarten_by_county_2020-2021.xlsx": "4371fa603cec1f0b8abec6719e1dfaf1",
+    "raw/MA_kindergarten_by_county_2021-2022.xlsx": "e4b99ade6397780f31665a55d6cd55ba",
+    "raw/MA_kindergarten_by_county_2022-2023.xlsx": "c0aae28d68deed79b51ef00347df92f5",
+    "raw/MA_kindergarten_by_county_2023-2024.xlsx": "6e6a483b28e7ab44f7da2af99073701e",
+    "raw/MA_kindergarten_by_county_2024-2025.xlsx": "ed1656d6877a637063ccdfdc9b1d25e8",
+    "raw/MA_kindergarten_by_county_2025-2026.xlsx": "bfa27ccdb8d99fda871ced5b3b1645fb"
+  },
+  "script_hash": "55e41a4a75e53611e9ad29e4941b658f",
   "standard_state": {
-    "./data/MA/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/MA/standard/data.csv.gz": "5e7e3d9b72933882693bb43a4c02e1c0"
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/MA/measure_info.json": "fc8592f8a5dab8076fe46ea276f28a2f",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/MA/standard/data.csv.gz": "b720b4bc0007f813469f7f02bd5e0b06"
   }
 }

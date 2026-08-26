@@ -3,7 +3,7 @@ library(dplyr)
 library(readr)
 library(stringr)
 library(vroom)
-source("../../resources/add_state_column.R")
+source("../../resources/rate_scale.R")
 
 raw_state <- as.list(tools::md5sum(list.files(
   "raw", recursive = TRUE, full.names = TRUE
@@ -21,14 +21,38 @@ parse_exempt <- function(x) {
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
 
-  combined_path <- "raw/Florida Vaccine Exemption Data (Scraped)/Florida Exemption Data (23 Counties).csv"
-  fl_raw <- readr::read_csv(combined_path, show_col_types = FALSE)
+  # Every scraped file is census-tract level with the same five columns:
+  # tract, county, state, population aged 4-18, exemptions aged 4-18. Only the
+  # HEADERS differ -- the 23-county roll-up and 39 of the per-county files use
+  # "Census,County,State,TotalPop4_18yrs,TotalExempt4_18yrs", while five
+  # (Martin, Union, Volusia, Walton, Washington) carry a truncated
+  # "attributes.*" header that names only three of the five columns. Reading
+  # positionally with skip = 1 handles both. The roll-up and the per-county
+  # files cover disjoint counties (23 + 44 = all 67), so there is no overlap.
+  scraped_dir <- "raw/Florida Vaccine Exemption Data (Scraped)"
+  fl_cols <- c("census", "county", "state", "total_pop_4_18", "total_exempt_4_18")
+
+  read_scraped <- function(path) {
+    readr::read_csv(
+      path,
+      skip           = 1,
+      col_names      = fl_cols,
+      col_types      = readr::cols(.default = readr::col_character()),
+      show_col_types = FALSE,
+      progress       = FALSE
+    )
+  }
+
+  scraped_files <- list.files(scraped_dir, pattern = "\\.csv$", full.names = TRUE)
+  fl_raw <- bind_rows(lapply(scraped_files, read_scraped))
 
   fl_clean <- fl_raw %>%
     transmute(
-      county = str_squish(County),
-      total_pop_4_18 = suppressWarnings(as.numeric(str_replace_all(TotalPop4_18yrs, ",", ""))),
-      total_exempt_4_18 = parse_exempt(TotalExempt4_18yrs)
+      county = str_squish(county),
+      total_pop_4_18 = suppressWarnings(
+        as.numeric(str_replace_all(str_squish(total_pop_4_18), ",", ""))
+      ),
+      total_exempt_4_18 = parse_exempt(total_exempt_4_18)
     ) %>%
     filter(!is.na(county), county != "") %>%
     group_by(county) %>%
@@ -54,8 +78,17 @@ if (!identical(process$raw_state, raw_state) ||
       geography_name
     )
 
-  data_out <- fl_clean %>%
-    left_join(fl_fips, by = c("county" = "geography_name")) %>%
+  fl_joined <- fl_clean %>%
+    left_join(fl_fips, by = c("county" = "geography_name"))
+
+  # Report counties that failed the FIPS join instead of dropping them silently.
+  unmatched <- sort(unique(fl_joined$county[is.na(fl_joined$geography)]))
+  if (length(unmatched)) {
+    warning(length(unmatched), " county name(s) matched no FL FIPS and were dropped: ",
+            paste(unmatched, collapse = ", "), call. = FALSE)
+  }
+
+  data_out <- fl_joined %>%
     mutate(
       grade = "Overall",
       N_dtap = NA_real_,
@@ -78,7 +111,9 @@ if (!identical(process$raw_state, raw_state) ||
     transmute(
       time,
       geography,
-      geography_name = county,
+      # FDOH labels these "Alachua County"; the standard label is the bare name,
+      # as join_county_fips() emits for the states that use it.
+      geography_name = sub("\\s+County$", "", county),
       grade,
       N_dtap,
       N_polio,
@@ -100,7 +135,7 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  vroom::vroom_write(add_state_column(data_out, "Florida"), "standard/data.csv.gz")
+  write_standard(data_out, "Florida", "standard/data.csv.gz", from = "percent")
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash

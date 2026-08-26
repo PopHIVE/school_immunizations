@@ -5,19 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:55",
       "frequency": 0,
-      "last_run": "2026-02-04 09:54:46",
-      "run_time": 0.039,
+      "run_time": 0.02,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:07",
+  "check_results": {
+    "data/WA/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "raw/Washington Vaccine Exemption.xlsx": "4febabeb4f517b6dfbe3896219758f8f"
   },
-  "script_hash": "8ff682beed5030de51c911a8e5197fd1"
+  "script_hash": "4429789caf98795c263b21ed55396630",
+  "standard_state": {
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WA/measure_info.json": "32aaf4ded4f12918525f9d0b7f750598",
+    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WA/standard/data.csv.gz": "f3eda70bd7b70fd37da730fa9052936d"
+  }
 }

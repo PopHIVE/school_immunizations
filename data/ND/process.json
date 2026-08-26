@@ -5,35 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
+      "last_run": "2026-08-25 14:47:36",
       "frequency": 0,
-      "last_run": "2026-02-05 10:01:57",
-      "run_time": 1.923,
+      "run_time": 0.54,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          ""
-        ],
+        "log": "ND: 5270 rows (4231 school, 1039 county), school years 2018-09-01, 2019-09-01, 2020-09-01, 2021-09-01, 2022-09-01, 2023-09-01, 2024-09-01",
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": [],
+  "checked": "2026-08-25 15:29:06",
+  "check_results": {
+    "data/ND/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: grade"]
+    }
+  },
   "raw_state": {
     "hash": "f6f7a35378b64c6295bff79335247ecc"
   },
   "standard_state": {
-    "./data/ND/measure_info.json": "e1f060e85fbfa5cba93f2a712b591c54",
-    "./data/ND/standard/data.csv.gz": "2a5965d80257977625d0ee64b60eaecb"
+    "./data/ND/measure_info.json": "34e7f9d7c88ac02a3e4c39afceb1c05b",
+    "./data/ND/standard/data.csv.gz": "95e1b14d93a90b3a5b049557f215eb3c"
   },
-  "script_hash": "9b6d1dcf66b7eecfb17930fee8786709"
+  "script_hash": "2292792d786283e65b13966aff30fbf4"
 }
