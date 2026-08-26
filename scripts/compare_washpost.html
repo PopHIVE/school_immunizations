@@ -1573,6 +1573,66 @@ Vaccination Data</h1>
 </div>
 
 
+<div id="latest-year-of-our-data-by-state" class="section level2">
+<h2>Latest year of our data, by state</h2>
+<pre class="r"><code>latest_year_for &lt;- function(state) {
+  f &lt;- file.path(data_dir, state, &quot;standard&quot;, &quot;data.csv.gz&quot;)
+  if (!file.exists(f)) return(NA_integer_)
+  nm &lt;- names(read_csv(f, n_max = 0, show_col_types = FALSE))
+  if (!&quot;time&quot; %in% nm) return(NA_integer_)
+  d &lt;- read_csv(f, col_types = cols(time = col_date()), col_select = &quot;time&quot;)
+  if (!nrow(d) || all(is.na(d$time))) return(NA_integer_)
+  max(as.integer(format(d$time, &quot;%Y&quot;)), na.rm = TRUE)
+}
+
+tibble(state_abb = state_dirs) %&gt;%
+  mutate(latest_year_num = map_int(state_abb, latest_year_for)) %&gt;%
+  group_by(latest_year_num) %&gt;%
+  summarise(states = paste(sort(state_abb), collapse = &quot;, &quot;), .groups = &quot;drop&quot;) %&gt;%
+  arrange(desc(latest_year_num)) %&gt;%
+  mutate(latest_year = if_else(is.na(latest_year_num), &quot;Not yet ingested&quot;, as.character(latest_year_num))) %&gt;%
+  select(latest_year, states) %&gt;%
+  kable(col.names = c(&quot;Year&quot;, &quot;States&quot;))</code></pre>
+<table>
+<colgroup>
+<col width="15%" />
+<col width="84%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Year</th>
+<th align="left">States</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">2025</td>
+<td align="left">CO, CT, IN, MA, MD, MN, PA, WV</td>
+</tr>
+<tr class="even">
+<td align="left">2024</td>
+<td align="left">AK, AL, AR, CA, FL, IA, ID, IL, KY, LA, ME, MO, ND, NH,
+NJ, NV, NY, OH, OR, RI, TN, VA, VT, WI</td>
+</tr>
+<tr class="odd">
+<td align="left">2023</td>
+<td align="left">AZ, HI, KS, MI, MS, NC, NM, OK, SD, TX, WA</td>
+</tr>
+<tr class="even">
+<td align="left">2022</td>
+<td align="left">SC, UT</td>
+</tr>
+<tr class="odd">
+<td align="left">2020</td>
+<td align="left">MT</td>
+</tr>
+<tr class="even">
+<td align="left">Not yet ingested</td>
+<td align="left">DE, GA, NE, WY</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div id="matched-county-year-coverage" class="section level2">
 <h2>Matched county-year coverage</h2>
 <pre class="r"><code>matched &lt;- inner_join(ours, wapo, by = c(&quot;state_abb&quot;, &quot;geography&quot;, &quot;year_start&quot;)) %&gt;%

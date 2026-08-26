@@ -25,11 +25,13 @@ theme_set(theme_minimal(base_size = 12))
 ```
 
 ```{r load-data, include=FALSE}
-state_dirs <- list.dirs(".", recursive = FALSE, full.names = FALSE)
+data_dir <- "../data"
+
+state_dirs <- list.dirs(data_dir, recursive = FALSE, full.names = FALSE)
 state_dirs <- sort(state_dirs[grepl("^[A-Z]{2}$", state_dirs)])
 
 has_rate_mmr <- function(state) {
-  f <- file.path(state, "standard", "data.csv.gz")
+  f <- file.path(data_dir, state, "standard", "data.csv.gz")
   if (!file.exists(f)) return(FALSE)
   nm <- names(read_csv(f, n_max = 0, show_col_types = FALSE))
   all(c("geography", "time", "grade", "rate_mmr") %in% nm)
@@ -54,7 +56,7 @@ pick_entry_grade <- function(df) {
 }
 
 read_state_mmr <- function(state) {
-  f <- file.path(state, "standard", "data.csv.gz")
+  f <- file.path(data_dir, state, "standard", "data.csv.gz")
   df <- read_csv(f, col_types = cols(
     geography = col_character(),
     geography_name = col_character(),
@@ -122,6 +124,29 @@ wapo_tn_pophive <- read_csv(pophive_counties_url, show_col_types = FALSE) %>%
 wapo <- wapo %>%
   filter(state_abb != "TN") %>%
   bind_rows(wapo_tn_pophive)
+```
+
+## Latest year of our data, by state
+
+```{r latest-year}
+latest_year_for <- function(state) {
+  f <- file.path(data_dir, state, "standard", "data.csv.gz")
+  if (!file.exists(f)) return(NA_integer_)
+  nm <- names(read_csv(f, n_max = 0, show_col_types = FALSE))
+  if (!"time" %in% nm) return(NA_integer_)
+  d <- read_csv(f, col_types = cols(time = col_date()), col_select = "time")
+  if (!nrow(d) || all(is.na(d$time))) return(NA_integer_)
+  max(as.integer(format(d$time, "%Y")), na.rm = TRUE)
+}
+
+tibble(state_abb = state_dirs) %>%
+  mutate(latest_year_num = map_int(state_abb, latest_year_for)) %>%
+  group_by(latest_year_num) %>%
+  summarise(states = paste(sort(state_abb), collapse = ", "), .groups = "drop") %>%
+  arrange(desc(latest_year_num)) %>%
+  mutate(latest_year = if_else(is.na(latest_year_num), "Not yet ingested", as.character(latest_year_num))) %>%
+  select(latest_year, states) %>%
+  kable(col.names = c("Year", "States"))
 ```
 
 ## Matched county-year coverage

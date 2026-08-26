@@ -50,6 +50,40 @@
       }
     ]
   },
+  "N_complete": {
+    "id": "N_complete",
+    "short_name": "Properly immunized (count)",
+    "long_name": "Number of kindergarten students with proper immunization documentation",
+    "category": "immunization",
+    "short_description": "Kindergarten students reported as having proper immunization documentation on file.",
+    "long_description": "Count of kindergarten students (public and private schools, excluding schools for the deaf/blind and virtual schools) with proper immunization documentation, as required by section 1003.22(8), Florida Statutes.",
+    "statement": "In {location}, {value} kindergarten students had proper immunization documentation.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "fl_kindergarten_immunization_levels"
+      }
+    ]
+  },
+  "rate_complete": {
+    "id": "rate_complete",
+    "short_name": "Properly immunized rate",
+    "long_name": "Proportion of kindergarten students with proper immunization documentation",
+    "category": "immunization",
+    "short_description": "Share of kindergarten students reported as having proper immunization documentation on file.",
+    "long_description": "Share of kindergarten students (public and private schools, excluding schools for the deaf/blind and virtual schools) with proper immunization documentation, as required by section 1003.22(8), Florida Statutes.",
+    "statement": "In {location}, {value} of kindergarten students had proper immunization documentation.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "fl_kindergarten_immunization_levels"
+      }
+    ]
+  },
   "_sources": {
     "fl_school_immunization": {
       "name": "Florida School Immunization Data",
@@ -57,6 +91,14 @@
       "organization": "Florida Department of Health",
       "organization_url": "https://www.floridahealth.gov/",
       "description": "County-level school immunization data from Florida Health Charts.",
+      "restrictions": "Public data published by the source agency; no access restrictions."
+    },
+    "fl_kindergarten_immunization_levels": {
+      "name": "Immunization Levels in Kindergarten",
+      "url": "https://www.flhealthcharts.gov/ChartsDashboards/rdPage.aspx?rdReport=NonVitalIndNoGrp.Dataviewer&cid=75",
+      "organization": "Florida Department of Health",
+      "organization_url": "https://www.floridahealth.gov/",
+      "description": "County-level percentage of kindergarten students with proper immunization documentation, 2007-2026, from FLHealthCHARTS.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
   }

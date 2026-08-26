@@ -17,10 +17,15 @@
   "checked": "2026-08-25 15:29:05",
   "check_results": {
     "data/FL/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: grade"]
+      "measures": [
+        "missing_info: geography_name",
+        "missing_info: grade"
+      ]
     }
   },
   "raw_state": {
+    "raw/FL_kindergarten_early10yr.xlsx": "4bb41a4c867027057c3f324cdb1ac861",
+    "raw/FL_kindergarten_recent10yr.xlsx": "bba5796aa84bfbf5d879522d2668997f",
     "raw/Florida Data PDFs": "81051bcc2cf1bedf378224b0a93e2877",
     "raw/Florida Vaccine Exemption Data (Scraped)/Alachua County.csv": "29693daffce1017dbd2b9023fe571542",
     "raw/Florida Vaccine Exemption Data (Scraped)/Baker County.csv": "0ec7991336e9af1fff902a40e20755a6",
@@ -75,7 +80,7 @@
     "raw/Tetanus 4-18 year olds 2014-2023.xlsx": "62a5f12c063d81fe7eb1f6e98bfa9c72",
     "raw/Varicella 4-18 year olds 2014-2023.xlsx": "41c6543049c09b11912bcad026d131e9"
   },
-  "script_hash": "2ea73a3b3f7912e1d465ba1ad7b30d46",
+  "script_hash": "58981b51b8b53d4852210dc2128adb55",
   "standard_state": {
     "C:/Users/as5325/Desktop/repos/school_immunizations/data/FL/measure_info.json": "1020778d7f521ce0f62b65ed2897db3e",
     "C:/Users/as5325/Desktop/repos/school_immunizations/data/FL/standard/data.csv.gz": "7b8c86a797bee6d51b21009bf25a01cd"
