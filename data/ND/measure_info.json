@@ -124,7 +124,7 @@
     "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
     "category": "immunization",
     "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this is the childhood DTaP series, assessed only at the Kindergarten checkpoint; it is not reported (NA) for the 7th- and 11th-grade cohorts, which are surveyed for the separate Tdap booster instead.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
     "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
     "measure_type": "Rate",
     "unit": "Rate",
@@ -175,7 +175,7 @@
     "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
     "category": "immunization",
     "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this is the adolescent Tdap booster, assessed only at the 7th- and 11th-grade checkpoints; it is not reported (NA) for the Kindergarten cohort, which is surveyed for the separate childhood DTaP series instead.",
+    "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
     "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
     "measure_type": "Rate",
     "unit": "Rate",
@@ -192,7 +192,7 @@
     "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY) vaccination",
     "category": "immunization",
     "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY) vaccination.",
-    "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this vaccine is assessed only at the 7th- and 11th-grade checkpoints; it is not reported (NA) for the Kindergarten cohort, which is not yet due for it.",
+    "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
     "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
     "measure_type": "Rate",
     "unit": "Rate",
@@ -209,8 +209,21 @@
       "url": "https://www.hhs.nd.gov/immunizations/coverage-rates",
       "organization": "North Dakota Health and Human Services",
       "organization_url": "https://www.hhs.nd.gov/",
-      "description": "School- and county-level immunization coverage, incompletion, and exemption data from the ND HHS coverage-rate reports, reported per grade cohort (Kindergarten, 7th, 11th/12th). County rows are derived as an enrollment-weighted mean of that county's school rates, since ND HHS does not publish county-level figures directly. Rates are blanked (NA) at the school level for small enrollment counts (mostly enrollment under 6), consistent with the state's small-cell suppression practice for student privacy.",
+      "description": "County-level school immunization coverage, incompletion, and exemption data from the ND HHS coverage-rate reports.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level school immunization coverage, incompletion, and exemption data from the ND HHS coverage-rate reports.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, school rows (see the type column), by grade, by school year"
     }
   }
 }

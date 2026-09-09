@@ -1,0 +1,20 @@
+[
+  {
+    "id": "idoh_ckan",
+    "access": "ckan",
+    "url": "https://hub.mph.in.gov/api/3/action/package_show?id=f4e11e6e-2e4f-41b1-a46c-c6d43c6ce1a3",
+    "page_url": "https://hub.mph.in.gov/dataset/immunization-division-s-school-supplemental-dashboard",
+    "pattern": "immunization-data_school-year",
+    "type": "xlsx",
+    "dest_glob": "raw/school-year-*.xlsx",
+    "publish_month": 5,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2025,
+    "ci_reachable": true,
+    "notes": "Per-year school workbooks enumerated through the CKAN package_show API; no exemption split.",
+    "last_check_time": "2026-09-09 14:14:05",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

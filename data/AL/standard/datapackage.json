@@ -9,32 +9,36 @@
   },
   "resources": [
     {
-      "bytes": 31113,
-      "encoding": "windows-1252",
-      "md5": "e7683d9dd2d0ee0092f0a78f1d60f4f7",
+      "bytes": 79976,
+      "encoding": "ISO-8859-1",
+      "md5": "2582681bb6c3a0f66d7e8e96eecf77b2",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "1d74f6c7bc1fc1b1d48a49935b87221298912413"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Tue Jan 6 11:01:29 2026 -0800"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,22 +55,28 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:10.698654",
-      "last_modified": "2026-08-24 10:29:43.196835",
+      "created": "2026-09-08 15:14:55.676426",
+      "last_modified": "2026-09-08 15:14:55.676426",
       "vintage": {},
-      "row_count": 1020,
+      "row_count": 1568,
       "entity_count": 68,
       "schema": {
         "fields": [
           {
             "name": "time",
-            "duplicates": 1015,
+            "duplicates": 1557,
             "info": [],
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "string",
             "missing": 0,
             "table": {
-              "2020-09-01": 204,
+              "2014-09-01": 68,
+              "2015-09-01": 68,
+              "2016-09-01": 68,
+              "2017-09-01": 68,
+              "2018-09-01": 68,
+              "2019-09-01": 68,
+              "2020-09-01": 344,
               "2021-09-01": 204,
               "2022-09-01": 204,
               "2023-09-01": 204,
@@ -75,176 +85,149 @@
           },
           {
             "name": "geography",
-            "duplicates": 952,
+            "duplicates": 1500,
             "info": [],
-            "time_range": [0, 4],
-            "type": "string",
+            "time_range": [0, 10],
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "01": 15,
-              "01001": 15,
-              "01003": 15,
-              "01005": 15,
-              "01007": 15,
-              "01009": 15,
-              "01011": 15,
-              "01013": 15,
-              "01015": 15,
-              "01017": 15,
-              "01019": 15,
-              "01021": 15,
-              "01023": 15,
-              "01025": 15,
-              "01027": 15,
-              "01029": 15,
-              "01031": 15,
-              "01033": 15,
-              "01035": 15,
-              "01037": 15,
-              "01039": 15,
-              "01041": 15,
-              "01043": 15,
-              "01045": 15,
-              "01047": 15,
-              "01049": 15,
-              "01051": 15,
-              "01053": 15,
-              "01055": 15,
-              "01057": 15,
-              "01059": 15,
-              "01061": 15,
-              "01063": 15,
-              "01065": 15,
-              "01067": 15,
-              "01069": 15,
-              "01071": 15,
-              "01073": 15,
-              "01075": 15,
-              "01077": 15,
-              "01079": 15,
-              "01081": 15,
-              "01083": 15,
-              "01085": 15,
-              "01087": 15,
-              "01089": 15,
-              "01091": 15,
-              "01093": 15,
-              "01095": 15,
-              "01097": 15,
-              "01099": 15,
-              "01101": 15,
-              "01103": 15,
-              "01105": 15,
-              "01107": 15,
-              "01109": 15,
-              "01111": 15,
-              "01113": 15,
-              "01115": 15,
-              "01117": 15,
-              "01119": 15,
-              "01121": 15,
-              "01123": 15,
-              "01125": 15,
-              "01127": 15,
-              "01129": 15,
-              "01131": 15,
-              "01133": 15
-            }
+            "mean": 1048.644133,
+            "sd": 143.923128,
+            "min": 1,
+            "max": 1133
           },
           {
             "name": "geography_name",
-            "duplicates": 952,
+            "duplicates": 1500,
             "info": [],
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "string",
             "missing": 0,
             "table": {
-              "Autauga": 15,
-              "Baldwin": 15,
-              "Barbour": 15,
-              "Bibb": 15,
-              "Blount": 15,
-              "Bullock": 15,
-              "Butler": 15,
-              "Calhoun": 15,
-              "Chambers": 15,
-              "Cherokee": 15,
-              "Chilton": 15,
-              "Choctaw": 15,
-              "Clarke": 15,
-              "Clay": 15,
-              "Cleburne": 15,
-              "Coffee": 15,
-              "Colbert": 15,
-              "Conecuh": 15,
-              "Coosa": 15,
-              "Covington": 15,
-              "Crenshaw": 15,
-              "Cullman": 15,
-              "Dale": 15,
-              "Dallas": 15,
-              "DeKalb": 15,
-              "Elmore": 15,
-              "Escambia": 15,
-              "Etowah": 15,
-              "Fayette": 15,
-              "Franklin": 15,
-              "Geneva": 15,
-              "Greene": 15,
-              "Hale": 15,
-              "Henry": 15,
-              "Houston": 15,
-              "Jackson": 15,
-              "Jefferson": 15,
-              "Lamar": 15,
-              "Lauderdale": 15,
-              "Lawrence": 15,
-              "Lee": 15,
-              "Limestone": 15,
-              "Lowndes": 15,
-              "Macon": 15,
-              "Madison": 15,
-              "Marengo": 15,
-              "Marion": 15,
-              "Marshall": 15,
-              "Mobile": 15,
-              "Monroe": 15,
-              "Montgomery": 15,
-              "Morgan": 15,
-              "Perry": 15,
-              "Pickens": 15,
-              "Pike": 15,
-              "Randolph": 15,
-              "Russell": 15,
-              "Shelby": 15,
-              "St. Clair": 15,
-              "Sumter": 15,
-              "Talladega": 15,
-              "Tallapoosa": 15,
-              "Total": 15,
-              "Tuscaloosa": 15,
-              "Walker": 15,
-              "Washington": 15,
-              "Wilcox": 15,
-              "Winston": 15
+              "Alabama": 27,
+              "Autauga": 23,
+              "Baldwin": 23,
+              "Barbour": 23,
+              "Bibb": 23,
+              "Blount": 23,
+              "Bullock": 23,
+              "Butler": 23,
+              "Calhoun": 23,
+              "Chambers": 23,
+              "Cherokee": 23,
+              "Chilton": 23,
+              "Choctaw": 23,
+              "Clarke": 23,
+              "Clay": 23,
+              "Cleburne": 23,
+              "Coffee": 23,
+              "Colbert": 23,
+              "Conecuh": 23,
+              "Coosa": 23,
+              "Covington": 23,
+              "Crenshaw": 23,
+              "Cullman": 23,
+              "Dale": 23,
+              "Dallas": 23,
+              "DeKalb": 23,
+              "Elmore": 23,
+              "Escambia": 23,
+              "Etowah": 23,
+              "Fayette": 23,
+              "Franklin": 23,
+              "Geneva": 23,
+              "Greene": 23,
+              "Hale": 23,
+              "Henry": 23,
+              "Houston": 23,
+              "Jackson": 23,
+              "Jefferson": 23,
+              "Lamar": 23,
+              "Lauderdale": 23,
+              "Lawrence": 23,
+              "Lee": 23,
+              "Limestone": 23,
+              "Lowndes": 23,
+              "Macon": 23,
+              "Madison": 23,
+              "Marengo": 23,
+              "Marion": 23,
+              "Marshall": 23,
+              "Mobile": 23,
+              "Monroe": 23,
+              "Montgomery": 23,
+              "Morgan": 23,
+              "Perry": 23,
+              "Pickens": 23,
+              "Pike": 23,
+              "Randolph": 23,
+              "Russell": 23,
+              "Shelby": 23,
+              "St. Clair": 23,
+              "Sumter": 23,
+              "Talladega": 23,
+              "Tallapoosa": 23,
+              "Tuscaloosa": 23,
+              "Walker": 23,
+              "Washington": 23,
+              "Wilcox": 23,
+              "Winston": 23
+            }
+          },
+          {
+            "name": "type",
+            "duplicates": 1566,
+            "info": [],
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "county": 1541,
+              "state": 27
             }
           },
           {
             "name": "grade",
-            "duplicates": 1017,
+            "duplicates": 1564,
             "info": [],
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "string",
             "missing": 0,
             "table": {
               "7th grade": 340,
               "9th grade": 340,
-              "Kindergarten": 340
+              "All grades": 478,
+              "Kindergarten": 410
+            }
+          },
+          {
+            "name": "school_type",
+            "duplicates": 1564,
+            "info": [],
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "NA": 1020,
+              "private": 2,
+              "public": 70,
+              "public and private": 476
+            }
+          },
+          {
+            "name": "source",
+            "duplicates": 1566,
+            "info": [],
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "request_workbook": 1020,
+              "survey_pdf": 548
             }
           },
           {
             "name": "N_enrolled",
-            "duplicates": 299,
+            "duplicates": 365,
             "info": {
               "id": "N_enrolled",
               "short_name": "Students enrolled",
@@ -262,17 +245,102 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "integer",
             "missing": 0,
-            "mean": 1731.852941,
-            "sd": 7127.795015,
-            "min": 8,
-            "max": 67973
+            "mean": 8645.002551,
+            "sd": 56050.671207,
+            "min": 0,
+            "max": 836374
+          },
+          {
+            "name": "N_valid_certificate",
+            "duplicates": 1036,
+            "info": {
+              "id": "N_valid_certificate",
+              "short_name": "Valid certificate (count)",
+              "long_name": "Number of students with a valid immunization certificate",
+              "category": "immunization",
+              "short_description": "Number of enrolled students with a valid immunization certificate.",
+              "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+              "statement": "In {location}, {value} school students with a valid immunization certificate.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "integer",
+            "missing": 1020,
+            "mean": 20230.695255,
+            "sd": 87488.867441,
+            "min": 0,
+            "max": 785420
+          },
+          {
+            "name": "rate_valid_certificate",
+            "duplicates": 1024,
+            "info": {
+              "id": "rate_valid_certificate",
+              "short_name": "Valid certificate",
+              "long_name": "Proportion of students with a valid immunization certificate",
+              "category": "immunization",
+              "short_description": "Proportion of enrolled students with a valid immunization certificate.",
+              "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+              "statement": "In {location}, {value} of school students with a valid immunization certificate.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 1023,
+            "mean": 0.937949,
+            "sd": 0.045785,
+            "min": 0.598415,
+            "max": 1
+          },
+          {
+            "name": "flag_valid_certificate",
+            "duplicates": 1565,
+            "info": {
+              "id": "flag_valid_certificate",
+              "short_name": "Valid certificate - censoring flag",
+              "long_name": "Why rate_valid_certificate carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_valid_certificate was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_valid_certificate. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_valid_certificate was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 546,
+              "NA": 1020,
+              "missing": 2
+            }
           },
           {
             "name": "N_medical_exempt",
-            "duplicates": 998,
+            "duplicates": 1516,
             "info": {
               "id": "N_medical_exempt",
               "short_name": "Medical exemptions (count)",
@@ -290,73 +358,17 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "integer",
             "missing": 0,
-            "mean": 1.101961,
-            "sd": 4.735952,
+            "mean": 4.813776,
+            "sd": 42.761278,
             "min": 0,
-            "max": 58
-          },
-          {
-            "name": "N_religious_exempt",
-            "duplicates": 918,
-            "info": {
-              "id": "N_religious_exempt",
-              "short_name": "Religious exemptions (count)",
-              "long_name": "Number of students with a religious vaccination exemption",
-              "category": "immunization",
-              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
-              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
-              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "al_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 4],
-            "type": "integer",
-            "missing": 0,
-            "mean": 21.690196,
-            "sd": 93.360856,
-            "min": 0,
-            "max": 1143
-          },
-          {
-            "name": "N_full_exempt",
-            "duplicates": 923,
-            "info": {
-              "id": "N_full_exempt",
-              "short_name": "Total exemptions (count)",
-              "long_name": "Number of students with any vaccination exemption",
-              "category": "immunization",
-              "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-              "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
-              "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "al_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 4],
-            "type": "integer",
-            "missing": 0,
-            "mean": 22.792157,
-            "sd": 97.723127,
-            "min": 0,
-            "max": 1180
+            "max": 1206
           },
           {
             "name": "rate_medical_exempt",
-            "duplicates": 721,
+            "duplicates": 925,
             "info": {
               "id": "rate_medical_exempt",
               "short_name": "Medical exemption rate",
@@ -374,17 +386,45 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "float",
-            "missing": 1,
-            "mean": 0.000561,
-            "sd": 0.001169,
+            "missing": 3,
+            "mean": 0.000518,
+            "sd": 0.001097,
             "min": 0,
-            "max": 0.009756
+            "max": 0.016062
+          },
+          {
+            "name": "N_religious_exempt",
+            "duplicates": 1384,
+            "info": {
+              "id": "N_religious_exempt",
+              "short_name": "Religious exemptions (count)",
+              "long_name": "Number of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "integer",
+            "missing": 0,
+            "mean": 54.446429,
+            "sd": 324.64879,
+            "min": 0,
+            "max": 6457
           },
           {
             "name": "rate_religious_exempt",
-            "duplicates": 271,
+            "duplicates": 354,
             "info": {
               "id": "rate_religious_exempt",
               "short_name": "Religious exemption rate",
@@ -402,17 +442,45 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "float",
-            "missing": 1,
-            "mean": 0.010524,
-            "sd": 0.00937,
+            "missing": 3,
+            "mean": 0.008507,
+            "sd": 0.008521,
             "min": 0,
             "max": 0.061538
           },
           {
+            "name": "N_full_exempt",
+            "duplicates": 1380,
+            "info": {
+              "id": "N_full_exempt",
+              "short_name": "Total exemptions (count)",
+              "long_name": "Number of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "integer",
+            "missing": 0,
+            "mean": 59.260204,
+            "sd": 354.031023,
+            "min": 0,
+            "max": 6842
+          },
+          {
             "name": "rate_full_exempt",
-            "duplicates": 276,
+            "duplicates": 352,
             "info": {
               "id": "rate_full_exempt",
               "short_name": "Total exemption rate",
@@ -430,17 +498,17 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "float",
-            "missing": 0,
-            "mean": 0.011095,
-            "sd": 0.009556,
+            "missing": 3,
+            "mean": 0.009025,
+            "sd": 0.008702,
             "min": 0,
             "max": 0.061538
           },
           {
             "name": "N_full_medical_exempt",
-            "duplicates": 998,
+            "duplicates": 1516,
             "info": {
               "id": "N_full_medical_exempt",
               "short_name": "Full medical exemptions students vaccinated",
@@ -458,17 +526,17 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "integer",
             "missing": 0,
-            "mean": 1.101961,
-            "sd": 4.735952,
+            "mean": 4.813776,
+            "sd": 42.761278,
             "min": 0,
-            "max": 58
+            "max": 1206
           },
           {
             "name": "rate_full_medical_exempt",
-            "duplicates": 721,
+            "duplicates": 925,
             "info": {
               "id": "rate_full_medical_exempt",
               "short_name": "Full medical exemption rate",
@@ -486,17 +554,46 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "float",
-            "missing": 1,
-            "mean": 0.000561,
-            "sd": 0.001169,
+            "missing": 3,
+            "mean": 0.000518,
+            "sd": 0.001097,
             "min": 0,
-            "max": 0.009756
+            "max": 0.016062
+          },
+          {
+            "name": "flag_full_medical_exempt",
+            "duplicates": 1565,
+            "info": {
+              "id": "flag_full_medical_exempt",
+              "short_name": "Full medical exemption rate - censoring flag",
+              "long_name": "Why rate_full_medical_exempt carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_full_medical_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_full_medical_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_full_medical_exempt was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 546,
+              "NA": 1020,
+              "missing": 2
+            }
           },
           {
             "name": "N_partial_medical_exempt_utd",
-            "duplicates": 1001,
+            "duplicates": 1506,
             "info": {
               "id": "N_partial_medical_exempt_utd",
               "short_name": "Partial medical exemption, up to date (count)",
@@ -514,17 +611,17 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "integer",
             "missing": 0,
-            "mean": 0.82549,
-            "sd": 4.140437,
+            "mean": 6.46875,
+            "sd": 54.704663,
             "min": 0,
-            "max": 63
+            "max": 1494
           },
           {
             "name": "rate_partial_medical_exempt_utd",
-            "duplicates": 790,
+            "duplicates": 971,
             "info": {
               "id": "rate_partial_medical_exempt_utd",
               "short_name": "Partial medical exemption, up to date (rate)",
@@ -542,17 +639,46 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "float",
-            "missing": 1,
-            "mean": 0.000408,
-            "sd": 0.001159,
+            "missing": 3,
+            "mean": 0.000476,
+            "sd": 0.00111,
             "min": 0,
             "max": 0.016304
           },
           {
+            "name": "flag_partial_medical_exempt_utd",
+            "duplicates": 1565,
+            "info": {
+              "id": "flag_partial_medical_exempt_utd",
+              "short_name": "Partial medical exemption, up to date (rate) - censoring flag",
+              "long_name": "Why rate_partial_medical_exempt_utd carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_partial_medical_exempt_utd was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_partial_medical_exempt_utd. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_partial_medical_exempt_utd was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 546,
+              "NA": 1020,
+              "missing": 2
+            }
+          },
+          {
             "name": "N_full_religious_exempt",
-            "duplicates": 918,
+            "duplicates": 1384,
             "info": {
               "id": "N_full_religious_exempt",
               "short_name": "Full religious exemptions students vaccinated",
@@ -570,17 +696,17 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "integer",
             "missing": 0,
-            "mean": 21.690196,
-            "sd": 93.360856,
+            "mean": 54.446429,
+            "sd": 324.64879,
             "min": 0,
-            "max": 1143
+            "max": 6457
           },
           {
             "name": "rate_full_religious_exempt",
-            "duplicates": 271,
+            "duplicates": 354,
             "info": {
               "id": "rate_full_religious_exempt",
               "short_name": "Full religious exemption rate",
@@ -598,17 +724,46 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "float",
-            "missing": 1,
-            "mean": 0.010524,
-            "sd": 0.00937,
+            "missing": 3,
+            "mean": 0.008507,
+            "sd": 0.008521,
             "min": 0,
             "max": 0.061538
           },
           {
+            "name": "flag_full_religious_exempt",
+            "duplicates": 1565,
+            "info": {
+              "id": "flag_full_religious_exempt",
+              "short_name": "Full religious exemption rate - censoring flag",
+              "long_name": "Why rate_full_religious_exempt carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_full_religious_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_full_religious_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_full_religious_exempt was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 546,
+              "NA": 1020,
+              "missing": 2
+            }
+          },
+          {
             "name": "N_partial_religious_exempt_utd",
-            "duplicates": 1013,
+            "duplicates": 1499,
             "info": {
               "id": "N_partial_religious_exempt_utd",
               "short_name": "Partial religious exemption, up to date (count)",
@@ -626,17 +781,17 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "integer",
             "missing": 0,
-            "mean": 0.101961,
-            "sd": 0.516077,
+            "mean": 9.267219,
+            "sd": 103.865964,
             "min": 0,
-            "max": 6
+            "max": 3384
           },
           {
             "name": "rate_partial_religious_exempt_utd",
-            "duplicates": 962,
+            "duplicates": 1226,
             "info": {
               "id": "rate_partial_religious_exempt_utd",
               "short_name": "Partial religious exemption, up to date (rate)",
@@ -654,17 +809,216 @@
                 }
               ]
             },
-            "time_range": [0, 4],
+            "time_range": [0, 10],
             "type": "float",
-            "missing": 1,
-            "mean": 0.000065,
-            "sd": 0.000525,
+            "missing": 3,
+            "mean": 0.000324,
+            "sd": 0.00145,
             "min": 0,
-            "max": 0.009091
+            "max": 0.035294
+          },
+          {
+            "name": "flag_partial_religious_exempt_utd",
+            "duplicates": 1565,
+            "info": {
+              "id": "flag_partial_religious_exempt_utd",
+              "short_name": "Partial religious exemption, up to date (rate) - censoring flag",
+              "long_name": "Why rate_partial_religious_exempt_utd carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_partial_religious_exempt_utd was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_partial_religious_exempt_utd. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_partial_religious_exempt_utd was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 546,
+              "NA": 1020,
+              "missing": 2
+            }
+          },
+          {
+            "name": "N_expired_certificate",
+            "duplicates": 1193,
+            "info": {
+              "id": "N_expired_certificate",
+              "short_name": "Expired certificate (count)",
+              "long_name": "Number of students with an expired immunization certificate",
+              "category": "immunization",
+              "short_description": "Number of enrolled students with an expired immunization certificate.",
+              "long_description": "Students whose certificate of immunization has expired and has not been renewed (Alabama).",
+              "statement": "In {location}, {value} school students with an expired immunization certificate.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "integer",
+            "missing": 1020,
+            "mean": 924.421533,
+            "sd": 4081.243035,
+            "min": 0,
+            "max": 41955
+          },
+          {
+            "name": "rate_expired_certificate",
+            "duplicates": 1023,
+            "info": {
+              "id": "rate_expired_certificate",
+              "short_name": "Expired certificate",
+              "long_name": "Proportion of students with an expired immunization certificate",
+              "category": "immunization",
+              "short_description": "Proportion of enrolled students with an expired immunization certificate.",
+              "long_description": "Students whose certificate of immunization has expired and has not been renewed (Alabama).",
+              "statement": "In {location}, {value} of school students with an expired immunization certificate.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 6],
+            "type": "float",
+            "missing": 1023,
+            "mean": 0.048372,
+            "sd": 0.041345,
+            "min": 0,
+            "max": 0.401585
+          },
+          {
+            "name": "flag_expired_certificate",
+            "duplicates": 1565,
+            "info": {
+              "id": "flag_expired_certificate",
+              "short_name": "Expired certificate - censoring flag",
+              "long_name": "Why rate_expired_certificate carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_expired_certificate was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_expired_certificate. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_expired_certificate was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 546,
+              "NA": 1020,
+              "missing": 2
+            }
+          },
+          {
+            "name": "N_no_certificate",
+            "duplicates": 1398,
+            "info": {
+              "id": "N_no_certificate",
+              "short_name": "No certificate (count)",
+              "long_name": "Number of students with no valid immunization certificate",
+              "category": "immunization",
+              "short_description": "Number of enrolled students with no valid immunization certificate.",
+              "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+              "statement": "In {location}, {value} school students with no valid immunization certificate.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 1160,
+            "mean": 240.078431,
+            "sd": 1137.420418,
+            "min": 0,
+            "max": 13531
+          },
+          {
+            "name": "rate_no_certificate",
+            "duplicates": 1246,
+            "info": {
+              "id": "rate_no_certificate",
+              "short_name": "No certificate",
+              "long_name": "Proportion of students with no valid immunization certificate",
+              "category": "immunization",
+              "short_description": "Proportion of enrolled students with no valid immunization certificate.",
+              "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+              "statement": "In {location}, {value} of school students with no valid immunization certificate.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 1163,
+            "mean": 0.00932,
+            "sd": 0.015119,
+            "min": 0,
+            "max": 0.145202
+          },
+          {
+            "name": "flag_no_certificate",
+            "duplicates": 1565,
+            "info": {
+              "id": "flag_no_certificate",
+              "short_name": "No certificate - censoring flag",
+              "long_name": "Why rate_no_certificate carries no value on this row",
+              "category": "immunization",
+              "short_description": "Whether rate_no_certificate was published as a number, suppressed, not reported, or censored at a bound.",
+              "long_description": "Per-measure companion to rate_no_certificate. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+              "statement": "In {location}, rate_no_certificate was {value}.",
+              "measure_type": "Category",
+              "unit": "Category",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "al_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 10],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "1": 406,
+              "NA": 1160,
+              "missing": 2
+            }
           }
         ]
       },
-      "sha512": "03a41bee9ed5bf70e71aebd654a4215dca5470e2e0659cccefe96f1ddc7ab9b699039c1bf2f5d8dbc809d3f46b6aa4fad1c4d6906f77373c94f7d893524cfe63"
+      "sha512": "7bc7da2b6d38044ecffa43f543f1de1b4f4cab08c65d48d9d39e8724d8260d595255630dbb705ad1cb7ae8ddba42ffd40c98e615b8c7e4915f8567153d750c42"
     }
   ],
   "measure_info": {
@@ -685,6 +1039,57 @@
         }
       ]
     },
+    "N_valid_certificate": {
+      "id": "N_valid_certificate",
+      "short_name": "Valid certificate (count)",
+      "long_name": "Number of students with a valid immunization certificate",
+      "category": "immunization",
+      "short_description": "Number of enrolled students with a valid immunization certificate.",
+      "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+      "statement": "In {location}, {value} school students with a valid immunization certificate.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_valid_certificate": {
+      "id": "rate_valid_certificate",
+      "short_name": "Valid certificate",
+      "long_name": "Proportion of students with a valid immunization certificate",
+      "category": "immunization",
+      "short_description": "Proportion of enrolled students with a valid immunization certificate.",
+      "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+      "statement": "In {location}, {value} of school students with a valid immunization certificate.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "flag_valid_certificate": {
+      "id": "flag_valid_certificate",
+      "short_name": "Valid certificate - censoring flag",
+      "long_name": "Why rate_valid_certificate carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_valid_certificate was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_valid_certificate. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_valid_certificate was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
     "N_medical_exempt": {
       "id": "N_medical_exempt",
       "short_name": "Medical exemptions (count)",
@@ -693,40 +1098,6 @@
       "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
       "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
       "statement": "In {location}, {value} school students had a medical vaccination exemption.",
-      "measure_type": "Count",
-      "unit": "Students",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "al_school_immunization"
-        }
-      ]
-    },
-    "N_religious_exempt": {
-      "id": "N_religious_exempt",
-      "short_name": "Religious exemptions (count)",
-      "long_name": "Number of students with a religious vaccination exemption",
-      "category": "immunization",
-      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
-      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
-      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
-      "measure_type": "Count",
-      "unit": "Students",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "al_school_immunization"
-        }
-      ]
-    },
-    "N_full_exempt": {
-      "id": "N_full_exempt",
-      "short_name": "Total exemptions (count)",
-      "long_name": "Number of students with any vaccination exemption",
-      "category": "immunization",
-      "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-      "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
-      "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
       "measure_type": "Count",
       "unit": "Students",
       "time_resolution": "Year",
@@ -753,6 +1124,23 @@
         }
       ]
     },
+    "N_religious_exempt": {
+      "id": "N_religious_exempt",
+      "short_name": "Religious exemptions (count)",
+      "long_name": "Number of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
     "rate_religious_exempt": {
       "id": "rate_religious_exempt",
       "short_name": "Religious exemption rate",
@@ -763,6 +1151,23 @@
       "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
       "measure_type": "Rate",
       "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_full_exempt": {
+      "id": "N_full_exempt",
+      "short_name": "Total exemptions (count)",
+      "long_name": "Number of students with any vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+      "measure_type": "Count",
+      "unit": "Students",
       "time_resolution": "Year",
       "sources": [
         {
@@ -821,6 +1226,23 @@
         }
       ]
     },
+    "flag_full_medical_exempt": {
+      "id": "flag_full_medical_exempt",
+      "short_name": "Full medical exemption rate - censoring flag",
+      "long_name": "Why rate_full_medical_exempt carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_full_medical_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_full_medical_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_full_medical_exempt was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
     "N_partial_medical_exempt_utd": {
       "id": "N_partial_medical_exempt_utd",
       "short_name": "Partial medical exemption, up to date (count)",
@@ -848,6 +1270,23 @@
       "statement": "In {location}, {value} of school students had a partial medical exemption and were up to date on the rest.",
       "measure_type": "Rate",
       "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "flag_partial_medical_exempt_utd": {
+      "id": "flag_partial_medical_exempt_utd",
+      "short_name": "Partial medical exemption, up to date (rate) - censoring flag",
+      "long_name": "Why rate_partial_medical_exempt_utd carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_partial_medical_exempt_utd was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_partial_medical_exempt_utd. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_partial_medical_exempt_utd was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
       "time_resolution": "Year",
       "sources": [
         {
@@ -889,6 +1328,23 @@
         }
       ]
     },
+    "flag_full_religious_exempt": {
+      "id": "flag_full_religious_exempt",
+      "short_name": "Full religious exemption rate - censoring flag",
+      "long_name": "Why rate_full_religious_exempt carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_full_religious_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_full_religious_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_full_religious_exempt was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
     "N_partial_religious_exempt_utd": {
       "id": "N_partial_religious_exempt_utd",
       "short_name": "Partial religious exemption, up to date (count)",
@@ -923,6 +1379,125 @@
         }
       ]
     },
+    "flag_partial_religious_exempt_utd": {
+      "id": "flag_partial_religious_exempt_utd",
+      "short_name": "Partial religious exemption, up to date (rate) - censoring flag",
+      "long_name": "Why rate_partial_religious_exempt_utd carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_partial_religious_exempt_utd was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_partial_religious_exempt_utd. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_partial_religious_exempt_utd was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_expired_certificate": {
+      "id": "N_expired_certificate",
+      "short_name": "Expired certificate (count)",
+      "long_name": "Number of students with an expired immunization certificate",
+      "category": "immunization",
+      "short_description": "Number of enrolled students with an expired immunization certificate.",
+      "long_description": "Students whose certificate of immunization has expired and has not been renewed (Alabama).",
+      "statement": "In {location}, {value} school students with an expired immunization certificate.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_expired_certificate": {
+      "id": "rate_expired_certificate",
+      "short_name": "Expired certificate",
+      "long_name": "Proportion of students with an expired immunization certificate",
+      "category": "immunization",
+      "short_description": "Proportion of enrolled students with an expired immunization certificate.",
+      "long_description": "Students whose certificate of immunization has expired and has not been renewed (Alabama).",
+      "statement": "In {location}, {value} of school students with an expired immunization certificate.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "flag_expired_certificate": {
+      "id": "flag_expired_certificate",
+      "short_name": "Expired certificate - censoring flag",
+      "long_name": "Why rate_expired_certificate carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_expired_certificate was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_expired_certificate. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_expired_certificate was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "N_no_certificate": {
+      "id": "N_no_certificate",
+      "short_name": "No certificate (count)",
+      "long_name": "Number of students with no valid immunization certificate",
+      "category": "immunization",
+      "short_description": "Number of enrolled students with no valid immunization certificate.",
+      "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+      "statement": "In {location}, {value} school students with no valid immunization certificate.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "rate_no_certificate": {
+      "id": "rate_no_certificate",
+      "short_name": "No certificate",
+      "long_name": "Proportion of students with no valid immunization certificate",
+      "category": "immunization",
+      "short_description": "Proportion of enrolled students with no valid immunization certificate.",
+      "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+      "statement": "In {location}, {value} of school students with no valid immunization certificate.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
+    "flag_no_certificate": {
+      "id": "flag_no_certificate",
+      "short_name": "No certificate - censoring flag",
+      "long_name": "Why rate_no_certificate carries no value on this row",
+      "category": "immunization",
+      "short_description": "Whether rate_no_certificate was published as a number, suppressed, not reported, or censored at a bound.",
+      "long_description": "Per-measure companion to rate_no_certificate. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+      "statement": "In {location}, rate_no_certificate was {value}.",
+      "measure_type": "Category",
+      "unit": "Category",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "al_school_immunization"
+        }
+      ]
+    },
     "_sources": {
       "al_school_immunization": {
         "name": "Alabama School-Entry Immunization Data",
@@ -933,6 +1508,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level school-entry EXEMPTION data from the Alabama DPH school-entry survey, for kindergarten, 7th and 9th grade. ADPH reports four categories: full medical, partial medical where the student is otherwise up to date, full religious, and partial religious where the student is otherwise up to date.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "County, state rows (see the type column), by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

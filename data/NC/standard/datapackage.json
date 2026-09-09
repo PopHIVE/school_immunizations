@@ -10,20 +10,22 @@
   "resources": [
     {
       "bytes": 11269,
-      "encoding": "windows-1252",
-      "md5": "4e1bc0c98f3ed212f32c1a5b62c37d08",
+      "encoding": "ISO-8859-1",
+      "md5": "595fa37fa8bad5adb0cebc3fcddaef32",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
-          "950a610cd8bb1f1a11480da264a68dd63419cfd5",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
-          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
+          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5",
+          "950a610cd8bb1f1a11480da264a68dd63419cfd5"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
@@ -31,18 +33,20 @@
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
-          "Wed Mar 25 22:10:45 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
-          "Thu Feb 12 08:06:45 2026 -0500"
+          "Thu Feb 12 08:06:45 2026 -0500",
+          "Wed Mar 25 22:10:45 2026 -0400"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
-          "modify IL, NC, WA stan dard files",
           "standardize HI and round data to 2 decimal points",
-          "add standardization files for IA MN MT NC NH UT VT WA"
+          "add standardization files for IA MN MT NC NH UT VT WA",
+          "modify IL, NC, WA stan dard files"
         ]
       },
       "source": [],
@@ -55,8 +59,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.623596",
-      "last_modified": "2026-08-24 10:30:37.756577",
+      "created": "2026-09-09 10:09:05.903844",
+      "last_modified": "2026-09-09 10:09:05.903844",
       "vintage": {},
       "row_count": 397,
       "entity_count": 100,
@@ -81,110 +85,12 @@
             "duplicates": 297,
             "info": [],
             "time_range": [0, 3],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "37001": 4,
-              "37003": 4,
-              "37005": 4,
-              "37007": 4,
-              "37009": 4,
-              "37011": 4,
-              "37013": 4,
-              "37015": 4,
-              "37017": 4,
-              "37019": 4,
-              "37021": 4,
-              "37023": 4,
-              "37025": 4,
-              "37027": 4,
-              "37029": 4,
-              "37031": 4,
-              "37033": 4,
-              "37035": 4,
-              "37037": 4,
-              "37039": 4,
-              "37041": 4,
-              "37043": 3,
-              "37045": 4,
-              "37047": 4,
-              "37049": 4,
-              "37051": 4,
-              "37053": 4,
-              "37055": 4,
-              "37057": 4,
-              "37059": 4,
-              "37061": 4,
-              "37063": 4,
-              "37065": 4,
-              "37067": 4,
-              "37069": 4,
-              "37071": 4,
-              "37073": 3,
-              "37075": 4,
-              "37077": 4,
-              "37079": 4,
-              "37081": 4,
-              "37083": 4,
-              "37085": 4,
-              "37087": 4,
-              "37089": 4,
-              "37091": 4,
-              "37093": 4,
-              "37095": 4,
-              "37097": 4,
-              "37099": 4,
-              "37101": 4,
-              "37103": 4,
-              "37105": 4,
-              "37107": 4,
-              "37109": 4,
-              "37111": 4,
-              "37113": 4,
-              "37115": 4,
-              "37117": 4,
-              "37119": 4,
-              "37121": 4,
-              "37123": 4,
-              "37125": 4,
-              "37127": 4,
-              "37129": 4,
-              "37131": 4,
-              "37133": 4,
-              "37135": 4,
-              "37137": 4,
-              "37139": 4,
-              "37141": 4,
-              "37143": 4,
-              "37145": 4,
-              "37147": 4,
-              "37149": 4,
-              "37151": 4,
-              "37153": 4,
-              "37155": 4,
-              "37157": 4,
-              "37159": 4,
-              "37161": 4,
-              "37163": 4,
-              "37165": 4,
-              "37167": 4,
-              "37169": 4,
-              "37171": 4,
-              "37173": 4,
-              "37175": 4,
-              "37177": 4,
-              "37179": 4,
-              "37181": 4,
-              "37183": 4,
-              "37185": 4,
-              "37187": 3,
-              "37189": 4,
-              "37191": 4,
-              "37193": 4,
-              "37195": 4,
-              "37197": 4,
-              "37199": 4
-            }
+            "mean": 37099.992443,
+            "sd": 57.771165,
+            "min": 37001,
+            "max": 37199
           },
           {
             "name": "geography_name",
@@ -505,7 +411,7 @@
           }
         ]
       },
-      "sha512": "85c37d547f103bba9e0b775ee74710ac9793ad1beab3cda794e37e8fd3a57f103eec7cf611764e186f77fc52e3531c7daadcbbbef787dcd7dbdacbdbfe9b9a0a"
+      "sha512": "3c8851b3ce27783b946c90621c0935fc675c2665d88c85e7fbe3e4242bd23e6a851493f6a79f08d19145a3dfa1069c2c5d8afada9fd8d96595f08282b69d04fd"
     }
   ],
   "measure_info": {
@@ -638,6 +544,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level kindergarten immunization coverage and exemption data from the NC DPH kindergarten dashboard.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

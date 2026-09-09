@@ -4,8 +4,8 @@
     "short_name": "Students enrolled",
     "long_name": "Number of students enrolled",
     "category": "immunization",
-    "short_description": "Number of kindergarten students enrolled at the reporting level.",
-    "long_description": "Kindergarten enrollment count as published by ADHS in the same table as the coverage and exemption percentages, and the denominator those percentages are taken over.",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
     "statement": "In {location}, {value} students were enrolled.",
     "measure_type": "Count",
     "unit": "Students",
@@ -138,11 +138,11 @@
   "rate_full_exempt": {
     "id": "rate_full_exempt",
     "short_name": "Total exemption rate",
-    "long_name": "Proportion of students exempt from every required vaccine",
+    "long_name": "Proportion of students with any vaccination exemption",
     "category": "immunization",
-    "short_description": "Proportion of enrolled kindergarten students exempt from every required vaccine.",
-    "long_description": "ADHS publishes this as '% Exempt from Every Req'd Vaccine', so it counts students holding an exemption covering all required vaccines rather than students with any exemption from any single vaccine, and it is smaller than the medical and personal exemption rates combined. Reported from the 2015-2016 school year onward; earlier years are missing because the column did not exist.",
-    "statement": "In {location}, {value} of school students were exempt from every required vaccine.",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
     "measure_type": "Rate",
     "unit": "Rate",
     "time_resolution": "Year",
@@ -160,6 +160,19 @@
       "organization_url": "https://www.azdhs.gov/",
       "description": "County-level school immunization and exemption data from the ADHS immunization reporting query tool.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level school immunization and exemption data from the ADHS immunization reporting query tool.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
     }
   }
 }

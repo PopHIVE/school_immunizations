@@ -6,10 +6,24 @@ library(vroom)
 library(readr)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
+# =============================================================================
+# MS - Medical and religious exemption counts by county
+#
+# Parsed: raw/Medical Exemptions 2023-2024.xlsx and raw/Religious Exemptions
+# 2023-2024.xlsx, record-level exemption workbooks obtained from the
+# Mississippi State Department of Health by request (one row per exemption,
+# no enrolment), so the output is counts only.
+#
+# Not parsed: the MSDH School Immunization Compliance Reports 2021-22 to
+# 2024-25 and Medical and Religious Exemptions Reports 2022-23 to 2024-25
+# (linked from msdh.ms.gov page 14,0,71,63). Their county figures are drawn
+# as bar charts and choropleth maps with no value labels in the text layer;
+# only the region and state totals are text.
+# =============================================================================
+
+raw_state <- raw_state_md5()
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

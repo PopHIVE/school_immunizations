@@ -1,0 +1,38 @@
+[
+  {
+    "id": "msdh_exemption_records",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://msdh.ms.gov/page/14,0,71,63.html",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 5,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Record-level medical and religious exemption workbooks obtained by request.",
+    "last_check_time": "2026-09-09 14:14:54",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "compliance_report_pdf",
+    "access": "static",
+    "url": "https://msdh.ms.gov/page/resources/21255.pdf",
+    "page_url": "https://msdh.ms.gov/page/14,0,71,63.html",
+    "pattern": null,
+    "type": "pdf",
+    "dest_glob": null,
+    "publish_month": 5,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "School Immunization Compliance Reports 2021-22 to 2024-25 and Medical and Religious Exemptions Reports 2022-23 to 2024-25, linked from the page. Not ingested: county figures are drawn as bar charts and choropleth maps with no value labels in the text layer; only region and state totals are text.",
+    "last_check_time": "2026-09-09 14:14:54",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

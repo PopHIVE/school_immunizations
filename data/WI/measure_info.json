@@ -16,6 +16,23 @@
       }
     ]
   },
+  "flag_medical_exempt": {
+    "id": "flag_medical_exempt",
+    "short_name": "Medical exemption rate - censoring flag",
+    "long_name": "Why rate_medical_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_medical_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_medical_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_medical_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
   "rate_religious_exempt": {
     "id": "rate_religious_exempt",
     "short_name": "Religious exemption rate",
@@ -26,6 +43,23 @@
     "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
     "measure_type": "Rate",
     "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "flag_religious_exempt": {
+    "id": "flag_religious_exempt",
+    "short_name": "Religious exemption rate - censoring flag",
+    "long_name": "Why rate_religious_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_religious_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_religious_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_religious_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
     "time_resolution": "Year",
     "sources": [
       {
@@ -50,6 +84,23 @@
       }
     ]
   },
+  "flag_personal_exempt": {
+    "id": "flag_personal_exempt",
+    "short_name": "Non-medical exemption rate - censoring flag",
+    "long_name": "Why rate_personal_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_personal_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_personal_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_personal_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
   "rate_full_exempt": {
     "id": "rate_full_exempt",
     "short_name": "Total exemption rate",
@@ -67,67 +118,67 @@
       }
     ]
   },
-  "flag_medical_exempt": {
-    "id": "flag_medical_exempt",
-    "short_name": "Medical exemption rate - censoring flag",
-    "long_name": "Why rate_medical_exempt was recoded from a censoring marker on this row",
-    "category": "immunization",
-    "short_description": "Whether rate_medical_exempt was published as a number, bottom-coded, top-coded, or never reported.",
-    "long_description": "Per-measure companion to rate_medical_exempt. BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\" (a small school-level share withheld to protect privacy); rate_medical_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_medical_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_medical_exempt is NA in this case.",
-    "statement": "In {location}, rate_medical_exempt was {value}.",
-    "measure_type": "Category",
-    "unit": "Category",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "wi_school_immunization"
-      }
-    ]
-  },
-  "flag_religious_exempt": {
-    "id": "flag_religious_exempt",
-    "short_name": "Religious exemption rate - censoring flag",
-    "long_name": "Why rate_religious_exempt was recoded from a censoring marker on this row",
-    "category": "immunization",
-    "short_description": "Whether rate_religious_exempt was published as a number, bottom-coded, top-coded, or never reported.",
-    "long_description": "Per-measure companion to rate_religious_exempt. BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\" (a small school-level share withheld to protect privacy); rate_religious_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_religious_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_religious_exempt is NA in this case.",
-    "statement": "In {location}, rate_religious_exempt was {value}.",
-    "measure_type": "Category",
-    "unit": "Category",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "wi_school_immunization"
-      }
-    ]
-  },
-  "flag_personal_exempt": {
-    "id": "flag_personal_exempt",
-    "short_name": "Non-medical exemption rate - censoring flag",
-    "long_name": "Why rate_personal_exempt was recoded from a censoring marker on this row",
-    "category": "immunization",
-    "short_description": "Whether rate_personal_exempt was published as a number, bottom-coded, top-coded, or never reported.",
-    "long_description": "Per-measure companion to rate_personal_exempt (Wisconsin's \"Personal Conviction Waiver\", spelled \"Wavier\" in the 2021-2024 workbooks). BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\"; rate_personal_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_personal_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_personal_exempt is NA in this case.",
-    "statement": "In {location}, rate_personal_exempt was {value}.",
-    "measure_type": "Category",
-    "unit": "Category",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "wi_school_immunization"
-      }
-    ]
-  },
   "flag_full_exempt": {
     "id": "flag_full_exempt",
     "short_name": "Total exemption rate - censoring flag",
-    "long_name": "Why rate_full_exempt was recoded from a censoring marker on this row",
+    "long_name": "Why rate_full_exempt carries no value on this row",
     "category": "immunization",
-    "short_description": "Whether rate_full_exempt was published as a number, bottom-coded, top-coded, or never reported.",
-    "long_description": "Per-measure companion to rate_full_exempt (Wisconsin's \"Waived All Vaccines\"). BLANK means the source printed a figure and nothing was recoded. \"bottom_coded\" means DHS suppressed the cell as \"<5\"; rate_full_exempt is set to 0.04 rather than left NA. \"top_coded\" means DHS printed \">95\"; rate_full_exempt is set to 0.96. Neither substitute is a measurement -- both mark the value as bounded rather than observed. \"no_report_received\" means the school's Comment column reads \"No report received\"; rate_full_exempt is NA in this case.",
+    "short_description": "Whether rate_full_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_full_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
     "statement": "In {location}, rate_full_exempt was {value}.",
     "measure_type": "Category",
     "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_1dose_24m": {
+    "id": "rate_mmr_1dose_24m",
+    "short_name": "MMR 1 dose(s), 24 months (registry)",
+    "long_name": "Proportion of residents aged 24 months with 1 dose(s) of MMR in the state immunization registry",
+    "category": "immunization",
+    "short_description": "Share of residents aged 24 months recorded in the state immunization registry as having 1 dose(s) of MMR.",
+    "long_description": "Registry-based coverage: the share of children aged 24 months in the county with 1 MMR dose(s) recorded in the state immunization information system, by calendar year. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students, and changes to registry exclusion rules move the series.",
+    "statement": "In {location}, {value} of residents aged 24 months had 1 MMR dose(s) in the immunization registry.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_2dose_6y": {
+    "id": "rate_mmr_2dose_6y",
+    "short_name": "MMR 2 dose(s), age 6 (registry)",
+    "long_name": "Proportion of residents aged 6 with 2 dose(s) of MMR in the state immunization registry",
+    "category": "immunization",
+    "short_description": "Share of residents aged 6 recorded in the state immunization registry as having 2 dose(s) of MMR.",
+    "long_description": "Registry-based coverage: the share of children aged 6 in the county with 2 MMR dose(s) recorded in the state immunization information system, by calendar year. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students, and changes to registry exclusion rules move the series. Wyoming's report cards carry the same measure under an age label that changes between years (6 years of age on the 2018 cards, 7-years-old on the 2019 to 2021 cards); the column keeps one name so the series stays in one column.",
+    "statement": "In {location}, {value} of residents aged 6 had 2 MMR dose(s) in the immunization registry.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wi_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_2dose_6_18y": {
+    "id": "rate_mmr_2dose_6_18y",
+    "short_name": "MMR 2 dose(s), ages 6 to 18 (registry)",
+    "long_name": "Proportion of residents aged 6 to 18 with 2 dose(s) of MMR in the state immunization registry",
+    "category": "immunization",
+    "short_description": "Share of residents aged 6 to 18 recorded in the state immunization registry as having 2 dose(s) of MMR.",
+    "long_description": "Registry-based coverage: the share of children aged 6 to 18 in the county with 2 MMR dose(s) recorded in the state immunization information system, by calendar year. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students, and changes to registry exclusion rules move the series.",
+    "statement": "In {location}, {value} of residents aged 6 to 18 had 2 MMR dose(s) in the immunization registry.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -141,8 +192,21 @@
       "url": "https://www.dhs.wisconsin.gov/library/collection/p-01892",
       "organization": "Wisconsin Department of Health Services",
       "organization_url": "https://www.dhs.wisconsin.gov/",
-      "description": "School-level immunization and waiver data from the Wisconsin DHS student immunization reports, aggregated to county here. MAJOR CAVEAT -- these county figures are not county rates. DHS suppresses any school-level share below 5 percent as \"<5\", which covers about 95 percent of cells: for the health waiver, 2,980 of 3,011 schools in 2023-24, and in 38 of 72 counties every single school is suppressed. The workbook publishes no enrolment column, so the surviving schools cannot be weighted and the county figure is an unweighted mean over them. Because suppression removes exactly the low values, the schools that remain are the high outliers, and every county figure in this file rests on precisely one school. A value of 0.82 therefore describes one small school, not the county. Use N_schools and N_schools_reported to see how thin each figure is, and prefer a source with denominators for county-level comparison.",
+      "description": "Two DHS series in one file, told apart by the type column. SCHOOL ROWS (type = school) carry the waiver shares from the annual student immunization reports, one row per school and school year. DHS suppresses any share below 5 percent as \"<5\", which covers about 95 percent of cells, and publishes no enrolment, so these rows are NOT rolled up to county here: an unweighted mean over the few unsuppressed schools described one small school, not the county. COUNTY ROWS (type = county) are MMR coverage from the Wisconsin Immunization Registry (WIR), by calendar year, for three age groups: 1 dose at 24 months (rate_mmr_1dose_24m), 2 doses at age 6 (rate_mmr_2dose_6y) and 2 doses at ages 6 to 18 (rate_mmr_2dose_6_18y). These are registry measures of resident children, not the school survey, so they are named distinctly and must not be compared with survey MMR figures in other states. Calendar year N is dated to the school year ending in N. From 2023 DHS excludes long-inactive registry records from the denominator, which breaks the 6-18 series; the 2025 release also redefined the age bands and restated every year.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "Two DHS series in one file, told apart by the type column. SCHOOL ROWS (type = school) carry the waiver shares from the annual student immunization reports, one row per school and school year.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, school rows (see the type column), by grade, by school year"
     }
   }
 }

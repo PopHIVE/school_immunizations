@@ -84,6 +84,40 @@
       }
     ]
   },
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
+    "short_name": "Religious exemption rate",
+    "long_name": "Proportion of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "mt_school_immunization"
+      }
+    ]
+  },
   "N_assessed": {
     "id": "N_assessed",
     "short_name": "Students assessed",
@@ -152,40 +186,6 @@
       }
     ]
   },
-  "rate_medical_exempt": {
-    "id": "rate_medical_exempt",
-    "short_name": "Medical exemption rate",
-    "long_name": "Proportion of students with a medical vaccination exemption",
-    "category": "immunization",
-    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
-    "long_description": "Share of assessed school students with a physician- or APRN-certified medical exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey.",
-    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
-    "measure_type": "Rate",
-    "unit": "Rate",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "mt_school_immunization"
-      }
-    ]
-  },
-  "rate_religious_exempt": {
-    "id": "rate_religious_exempt",
-    "short_name": "Religious exemption rate",
-    "long_name": "Proportion of students with a religious vaccination exemption",
-    "category": "immunization",
-    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
-    "long_description": "Share of assessed school students holding a notarized religious exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey. Montana law does not offer a separate philosophical exemption, so this is a religious exemption specifically.",
-    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
-    "measure_type": "Rate",
-    "unit": "Rate",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "mt_school_immunization"
-      }
-    ]
-  },
   "_sources": {
     "mt_school_immunization": {
       "name": "Montana School Immunization Data",
@@ -194,6 +194,19 @@
       "organization_url": "https://dphhs.mt.gov/",
       "description": "County-level immunization completeness and exemption data from the Montana DPHHS school immunization reports.",
       "restrictions": "Public data. Montana ended routine school immunization data collection after the 2018-19 school year."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level immunization completeness and exemption data from the Montana DPHHS school immunization reports.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
     }
   }
 }

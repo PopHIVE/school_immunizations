@@ -226,8 +226,21 @@
       "url": "https://www.michigan.gov/en/mdhhs/adult-child-serv/childrenfamilies/Immunizations/Data-Statistics/school-immunization-data",
       "organization": "Michigan Department of Health and Human Services",
       "organization_url": "https://www.michigan.gov/mdhhs",
-      "description": "School- and county-level immunization completeness and exemption data from the MDHHS building-level immunization files. Note that county rates are derived from reported school rates and may not be exact due to some schoools' data being suppressed.",
+      "description": "School- and county-level immunization completeness and exemption data from the MDHHS building-level immunization files.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "School- and county-level immunization completeness and exemption data from the MDHHS building-level immunization files.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, school rows (see the type column), by grade, by school year"
     }
   }
 }

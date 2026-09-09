@@ -7,19 +7,64 @@ library(readr)
 library(tidyr)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
+sources <- read_sources()
+src <- source_entry(sources, "doh_exemption_reports")
 process <- dcf::dcf_process_record()
+prev <- process$fetch_state
+
+# DOH's report page lists one immunization/examination report per school
+# year. Through 2023-24 they are PDFs only, and the workbooks in raw/ named
+# "Hawaii <year> Vaccine Exemption.xlsx" were transcribed from them by hand.
+# From 2024-25 DOH also posts the report as xlsx, which is what the pattern
+# in sources.json matches; those are fetched into raw/ under their own names
+# and parsed by parse_official() below. A posted year is never revised, so a
+# file already on disk is not re-requested.
+#
+# There is no 2020-21 report on the page at all (it goes 2019-2020 PDF, then
+# 2021-22 PDF), which is why that school year is absent from the output.
+dir.create("raw", showWarnings = FALSE)
+links <- discover_links(src$page_url, src$pattern, must_find = FALSE)
+recs <- list()
+if (nrow(links)) {
+  recs <- fetch_many(links$url, dest_fn = function(u) file.path("raw", basename(u)),
+                     type = "xlsx", if_exists = "skip", previous = prev)
+}
+process <- record_fetch(process, recs)
+
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
 
   raw_files <- list.files("./raw", pattern = "\\.xlsx$", full.names = TRUE)
+  OFFICIAL_PATTERN <- "Immunization_Examination_Req_Report_for_School_Year_(\\d{2})_\\d{2}\\.xlsx$"
+  official_files <- raw_files[grepl(OFFICIAL_PATTERN, basename(raw_files))]
+  transcribed_files <- setdiff(raw_files, official_files)
 
   COUNTIES <- c("HAWAII", "HONOLULU", "KAUAI", "MAUI")
+
+  # The transcribed workbooks write the school type in upper case ("PUBLIC")
+  # and DOH's own file in title case ("Public"); the output carries one
+  # spelling. A value outside the known set is set to NA and reported with
+  # its count, so a shifted column or a stray fragment in a future workbook
+  # shows up in the log rather than as a new category.
+  SCHOOL_TYPES <- c("Public", "Private", "Charter", "DHS", "Day Care Center")
+  normalize_school_type <- function(x, label) {
+    x <- str_squish(as.character(x))
+    out <- SCHOOL_TYPES[match(str_to_upper(x), str_to_upper(SCHOOL_TYPES))]
+    bad <- !is.na(x) & x != "" & is.na(out)
+    if (any(bad)) {
+      message(sprintf(
+        "HI: %s: %d row(s) with a school type outside %s set to NA: %s",
+        label, sum(bad), paste(SCHOOL_TYPES, collapse = "/"),
+        paste(unique(x[bad]), collapse = "; ")))
+    }
+    out
+  }
 
   # Column layout is not stable across years. 2014-15 through 2018-19 order
   # (school, school type, island); 2019-20 on order (school, county, school
@@ -133,40 +178,89 @@ if (!identical(process$raw_state, raw_state) ||
         # just with no measurement for that year.
         N_personal_exempt = enrollment * pct_religious,
         N_medical_exempt = enrollment * pct_medical,
+        school_type = normalize_school_type(school_type, basename(path)),
         time = time
       ) %>%
       select(time, county, school_name, school_type, enrollment,
              N_personal_exempt, N_medical_exempt)
   }
 
-  schools <- bind_rows(lapply(raw_files, parse_one))
+  # DOH's own xlsx (2024-25 on): one sheet, header in row 1 (School Name,
+  # County, School Type, Enrollment, Religious Exemptions, Medical Exemptions,
+  # No Immunization Record, Missing Immunizations, Total Not Up to Date,
+  # Missing Physical Examinations), values as proportions. The first rows are
+  # the four county totals ("HAWAII COUNTY (K-12)"), then statewide rows
+  # ("HAWAII STATE - ALL SCHOOLS (K-12)", "(K)", "(7)"), then each county's
+  # schools under a bare "HAWAII COUNTY" section label with no data. Every
+  # school row carries its county in the County column, so no fill-down is
+  # needed, and the county rows are DOH's own totals, so they are taken as
+  # published rather than re-summed from the schools. The statewide rows are
+  # not kept: the output has never carried a state row, and the combined
+  # file derives its own totals. Missing Physical Examinations is not an
+  # immunization measure and is not carried either.
+  #
+  # "Total Not Up to Date" is the sum of the two exemption shares, no record
+  # and missing immunizations (checked against the county rows).
+  parse_official <- function(path) {
+    year_start <- 2000L + as.integer(str_match(basename(path), OFFICIAL_PATTERN)[, 2])
+    time <- school_year_time(year_start)
 
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  county_fips <- all_fips %>%
-    filter(state == "HI", nchar(geography) == 5) %>%
-    transmute(
-      geography,
-      geography_name = str_remove(geography_name, " County$"),
-      county = str_to_upper(str_trim(geography_name))
-    )
+    d <- readxl::read_excel(path, col_types = "text")
+    expected <- c("School Name", "County", "School Type", "Enrollment",
+                  "Religious Exemptions", "Medical Exemptions",
+                  "No Immunization Record", "Missing Immunizations",
+                  "Total Not Up to Date")
+    missing <- setdiff(expected, names(d))
+    if (length(missing)) {
+      stop("HI: ", basename(path), " lacks column(s): ", paste(missing, collapse = ", "),
+           call. = FALSE)
+    }
 
-  schools <- schools %>%
-    left_join(county_fips, by = "county") %>%
+    d %>%
+      transmute(
+        time = time,
+        school_name = str_squish(`School Name`),
+        county = str_to_upper(str_squish(County)),
+        school_type = str_squish(`School Type`),
+        enrollment = readr::parse_number(Enrollment, na = c("", "NA", "NR", "N/R", "DNR")),
+        pct_personal_exempt = parse_rate(`Religious Exemptions`, from = "rate"),
+        pct_medical_exempt = parse_rate(`Medical Exemptions`, from = "rate"),
+        pct_no_record = parse_rate(`No Immunization Record`, from = "rate"),
+        pct_missing_immunizations = parse_rate(`Missing Immunizations`, from = "rate"),
+        pct_not_utd = parse_rate(`Total Not Up to Date`, from = "rate")
+      ) %>%
+      mutate(
+        is_county_total = str_detect(school_name, "^[A-Z]+ COUNTY \\(K-12\\)$") &
+          county %in% COUNTIES,
+        is_state = str_detect(school_name, "^HAWAII STATE"),
+        is_section = str_detect(school_name, "^[A-Z]+ COUNTY$") & is.na(county)
+      ) %>%
+      filter(!is.na(school_name), !is_state, !is_section) %>%
+      mutate(
+        type = if_else(is_county_total, "county", "school"),
+        school_name = if_else(is_county_total, NA_character_, school_name),
+        # County totals carry "-" for the type; blanked before the check so
+        # it is not reported as an unknown value.
+        school_type = if_else(is_county_total, NA_character_, school_type),
+        school_type = normalize_school_type(school_type, basename(path))
+      ) %>%
+      select(-is_county_total, -is_state, -is_section)
+  }
+
+  schools <- bind_rows(lapply(transcribed_files, parse_one)) %>%
     mutate(
-      geography_name = str_to_title(str_to_lower(geography_name)),
       type = "school",
-      grade = "Overall",
       pct_personal_exempt = if_else(!is.na(enrollment) & enrollment > 0,
                                      N_personal_exempt / enrollment, NA_real_),
       pct_medical_exempt = if_else(!is.na(enrollment) & enrollment > 0,
                                     N_medical_exempt / enrollment, NA_real_)
     )
 
-  # County totals, summed across every school in the county at that school
-  # year. NA (not-reported) schools are excluded from the sum by na.rm, not
-  # from the school-level rows above.
+  # County totals for the transcribed years, summed across every school in
+  # the county at that school year. NA (not-reported) schools are excluded
+  # from the sum by na.rm, not from the school-level rows above.
   counties <- schools %>%
-    group_by(time, geography, geography_name) %>%
+    group_by(time, county) %>%
     summarize(
       enrollment = sum(enrollment, na.rm = TRUE),
       N_personal_exempt = sum(N_personal_exempt, na.rm = TRUE),
@@ -176,35 +270,36 @@ if (!identical(process$raw_state, raw_state) ||
       pct_medical_exempt = if_else(enrollment > 0, N_medical_exempt / enrollment, NA_real_),
       .groups = "drop"
     ) %>%
-    mutate(type = "county", grade = "Overall", school_name = NA_character_, school_type = NA_character_)
+    mutate(type = "county", school_name = NA_character_, school_type = NA_character_)
 
-  # N_personal_exempt/N_medical_exempt are dropped from the output, not just
-  # the placeholder DTaP/polio/MMR/hep B/varicella measures HI never reports:
-  # HI publishes only the exemption RATE per school, so the count columns
-  # above are back-computed as enrollment * rate and inherit both the
-  # source's rounding and, at the county level, compounding across every
-  # school in it. rate_personal_exempt/rate_medical_exempt are the actual
-  # published values and are kept.
-  data_out <- bind_rows(schools, counties) %>%
-    select(-county) %>%
-    mutate(
-      N_full_exempt = NA_real_,
-      pct_full_exempt = NA_real_
-    ) %>%
+  official <- bind_rows(lapply(official_files, parse_official))
+
+  # N_personal_exempt/N_medical_exempt are dropped from the output: HI
+  # publishes only the exemption RATE per school, so the count columns above
+  # are back-computed as enrollment * rate and inherit both the source's
+  # rounding and, at the county level, compounding across every school in
+  # it. rate_personal_exempt/rate_medical_exempt are the actual published
+  # values and are kept.
+  data_out <- bind_rows(schools, counties, official) %>%
+    mutate(grade = "Overall") %>%
+    join_county_fips("HI") %>%
     select(
       time, geography, geography_name, type, school_name, school_type, grade,
-      enrollment, N_full_exempt,
-      pct_personal_exempt, pct_medical_exempt, pct_full_exempt
+      enrollment, pct_personal_exempt, pct_medical_exempt,
+      pct_no_record, pct_missing_immunizations, pct_not_utd
     )
 
   message(sprintf(
-    "Hawaii: %d rows from %d workbooks (%d school, %d county)",
+    "Hawaii: %d rows from %d workbooks (%d school, %d county), school years %s",
     nrow(data_out), length(raw_files),
-    sum(data_out$type == "school"), sum(data_out$type == "county")))
+    sum(data_out$type == "school"), sum(data_out$type == "county"),
+    paste(sort(unique(data_out$time)), collapse = ", ")))
 
-  write_standard(data_out, "Hawaii", "./standard/data.csv.gz", from = "rate")
+  out <- write_standard(data_out, "Hawaii", "./standard/data.csv.gz", from = "rate")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

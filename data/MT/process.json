@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/MT/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -27,9 +27,9 @@
     "raw/2018-2019 M_R Exemptions (1).xlsx": "0b89e8f2748b20bb4062ebbaba5227b8",
     "raw/2020 Immunization Coverage  (1).xlsx": "ea8d9cb3dd33671f8ef9d5fae505d52e"
   },
-  "script_hash": "6ffd8f93d8750efe6b833faf8bd440d9",
+  "script_hash": "257c92450973e3987d086e17f0f8b2d3",
   "standard_state": {
-    "./data/MT/measure_info.json": "8d9ccb1105525d8391f9ef1f27589fa5",
-    "./data/MT/standard/data.csv.gz": "151ab7e246353243ba98555211db6294"
+    "./data/MT/measure_info.json": "4639217bd612e35ddd0ec80e83dfa4dd",
+    "./data/MT/standard/data.csv.gz": "a039729b6e78e891e4d16c8fe6185377"
   }
 }

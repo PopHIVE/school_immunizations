@@ -1,0 +1,63 @@
+# Weekly source check: reachability, new files upstream, staleness. Added
+# 2026-09-08 and not yet exercised on GitHub Actions; the first scheduled run
+# after this lands is the verification, or trigger it by hand with
+# workflow_dispatch (states empty = all, fetch = false).
+name: check sources
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      states:
+        description: 'Comma-separated state codes to check (empty = all)'
+        required: false
+        default: ''
+      fetch:
+        description: 'Download newly posted files into raw/ (no parsing)'
+        type: boolean
+        default: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - run: sudo apt-get update
+      - run: sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+      - uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          fetch-depth: 0
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.4.2'
+          use-public-rspm: true
+      - uses: r-lib/actions/setup-renv@v2
+      - run: Rscript -e "renv::install('dissc-yale/dcf')"
+      - id: check
+        run: |
+          set +e
+          ARGS=""
+          if [ -n "${{ github.event.inputs.states }}" ]; then ARGS="$ARGS --states=${{ github.event.inputs.states }}"; fi
+          if [ "${{ github.event.inputs.fetch }}" = "true" ]; then ARGS="$ARGS --fetch"; fi
+          Rscript scripts/check_sources.R $ARGS
+          echo "exit=$?" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with:
+          name: check_sources
+          path: check_sources.json
+      - run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add data/SOURCE_STATUS.md data/*/sources.json
+          if [ "${{ github.event.inputs.fetch }}" = "true" ]; then git add data/*/raw; fi
+          if ! git diff --cached --quiet; then
+            git commit -m "source check"
+            git push
+          fi
+      - if: ${{ steps.check.outputs.exit == '2' }}
+        run: |
+          echo "One or more sources are unreachable or their discovery pattern matched nothing; see data/SOURCE_STATUS.md"
+          exit 1

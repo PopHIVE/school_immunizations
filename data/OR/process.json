@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:33:52",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/OR/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: grade"]
@@ -23,9 +23,24 @@
   "raw_state": {
     "raw/SchK-12.xlsx": "8e629af1b7d0ebc85c47f086d2857b3b"
   },
-  "script_hash": "b18c6695084324f2c92cb10bd9a13438",
+  "script_hash": "5302c572235e7c16f857ff6b3d0b2e38",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OR/measure_info.json": "a57d6dd63df67c5245ae57db6ac0046d",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OR/standard/data.csv.gz": "78bb99dad51c2f12d398af70afbedb4b"
+    "./data/OR/measure_info.json": "b97822e7955a4558ae6f173b013b3b5b",
+    "./data/OR/standard/data.csv.gz": "69888bca480fce0f10c33e189611a071"
+  },
+  "fetch_state": {
+    "raw/SchK-12.xlsx": {
+      "url": "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/VACCINESIMMUNIZATION/GETTINGIMMUNIZED/Documents/SchK-12.xlsx",
+      "dest": "raw/SchK-12.xlsx",
+      "status": "unchanged",
+      "http_status": 200,
+      "bytes": 402766,
+      "sha256": "1ec0083e48bbf116d8911b3be9e8e87503ba0f5e325ad10a48e06c56b636db24",
+      "etag": "\"{5F51D93E-2E18-4222-9C80-DE77FA26F969},40\"",
+      "last_modified": "Wed, 19 Aug 2026 04:54:19 GMT",
+      "fetched_at": "2026-09-04 16:20:59",
+      "attempts": 1,
+      "error": {}
+    }
   }
 }

@@ -1,7 +1,16 @@
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 # =============================================================================
 # UT - Vaccine Exemption Rates by School District (2018-2023)
+#
+# Parsed: raw/Utah Vaccine Exemption.xlsx, total exemption rates by school
+# district and local health district (K, 7th, K-12) obtained from the Utah
+# Department of Health and Human Services by request.
+#
+# Not parsed: the immunize.utah.gov school immunization data is now an Adobe
+# Captivate HTML presentation, and the 160-page annual coverage reports give
+# school figures per local health district, not county.
 # =============================================================================
 
 library(dcf)
@@ -11,9 +20,7 @@ library(readxl)
 library(readr)
 library(vroom)
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
+raw_state <- raw_state_md5()
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

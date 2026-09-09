@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 12168,
-      "encoding": "windows-1252",
+      "encoding": "ISO-8859-1",
       "md5": "c10bae3762fe65730af1a752d65c44dd",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "dc26589b9abf9358696c7245dabb3bd7be4e6f72"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 5 00:17:25 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.82509",
-      "last_modified": "2026-08-25 11:34:47.501715",
+      "created": "2026-09-09 09:43:32.059765",
+      "last_modified": "2026-09-09 09:43:32.059875",
       "vintage": {},
       "row_count": 1584,
       "entity_count": 22,
@@ -85,32 +89,12 @@
             "duplicates": 1562,
             "info": [],
             "time_range": [0, 11],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "34": 72,
-              "34001": 72,
-              "34003": 72,
-              "34005": 72,
-              "34007": 72,
-              "34009": 72,
-              "34011": 72,
-              "34013": 72,
-              "34015": 72,
-              "34017": 72,
-              "34019": 72,
-              "34021": 72,
-              "34023": 72,
-              "34025": 72,
-              "34027": 72,
-              "34029": 72,
-              "34031": 72,
-              "34033": 72,
-              "34035": 72,
-              "34037": 72,
-              "34039": 72,
-              "34041": 72
-            }
+            "mean": 32476.136364,
+            "sd": 7081.700178,
+            "min": 34,
+            "max": 34041
           },
           {
             "name": "geography_name",
@@ -311,6 +295,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level school immunization and exemption data from the NJDOH immunization status reports.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

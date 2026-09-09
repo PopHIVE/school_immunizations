@@ -1,4 +1,72 @@
 {
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sc_school_immunization"
+      }
+    ]
+  },
+  "flag_enrolled": {
+    "id": "flag_enrolled",
+    "short_name": "Enrollment - censoring flag",
+    "long_name": "Why N_enrolled carries a bound or no value on this row",
+    "category": "immunization",
+    "short_description": "Whether N_enrolled was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to N_enrolled. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, N_enrolled was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sc_school_immunization"
+      }
+    ]
+  },
+  "rate_utd": {
+    "id": "rate_utd",
+    "short_name": "Up-to-date rate",
+    "long_name": "Proportion of students up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students up to date for every vaccine the state requires.",
+    "long_description": "Share of assessed school students recorded as up to date across the full required schedule, rather than for a single antigen.",
+    "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sc_school_immunization"
+      }
+    ]
+  },
+  "flag_utd": {
+    "id": "flag_utd",
+    "short_name": "Up-to-date rate - censoring flag",
+    "long_name": "Why rate_utd carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_utd was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_utd. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_utd was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "sc_school_immunization"
+      }
+    ]
+  },
   "N_personal_exempt": {
     "id": "N_personal_exempt",
     "short_name": "Non-medical exemptions (count)",
@@ -33,23 +101,6 @@
       }
     ]
   },
-  "N_enrolled": {
-    "id": "N_enrolled",
-    "short_name": "Students enrolled",
-    "long_name": "Number of students enrolled",
-    "category": "immunization",
-    "short_description": "Number of students enrolled at the reporting level.",
-    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
-    "statement": "In {location}, {value} students were enrolled.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "sc_school_immunization"
-      }
-    ]
-  },
   "_sources": {
     "sc_school_immunization": {
       "name": "South Carolina School Vaccination Coverage",
@@ -58,6 +109,19 @@
       "organization_url": "https://dph.sc.gov/",
       "description": "County-level school vaccination coverage and exemption data from SC DPH reports.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level school vaccination coverage and exemption data from SC DPH reports.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, school, state rows (see the type column), by grade, by school year"
     }
   }
 }

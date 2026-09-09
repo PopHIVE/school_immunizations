@@ -1,0 +1,20 @@
+[
+  {
+    "id": "act676_district_workbook",
+    "access": "request",
+    "url": null,
+    "page_url": "https://healthy.arkansas.gov/programs-services/community-family-child-health/immunizations/",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 3,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Act 676 exemption counts by school district, 2013-14 onward, held in raw/. ADH publishes no county file; county-level kindergarten coverage was supplied to the Washington Post by request.",
+    "last_check_time": "2026-09-09 14:13:42",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

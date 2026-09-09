@@ -1,0 +1,38 @@
+[
+  {
+    "id": "osdh_county_tables",
+    "access": "index_page",
+    "url": null,
+    "page_url": "https://oklahoma.gov/health/services/personal-health/immunizations/imm-shot-records.html",
+    "pattern": "kindergarten-survey/.*(CountySummaryTable|KGSCountyRates).*\\.xlsx",
+    "type": "xlsx",
+    "dest_glob": "raw/OK_County_*.xlsx",
+    "publish_month": 6,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2025,
+    "ci_reachable": true,
+    "notes": "Kindergarten survey county rate tables per school year, 21-22 onward. The 19-20 and 20-21 tables are no longer linked and exist only as the committed raw/ copies. Filename convention changed in 24-25 (CountySummaryTable<YY-YY> -> KGSCountyRates<YYYYYY>).",
+    "last_check_time": "2026-09-09 14:15:12",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "osdh_school_level",
+    "access": "index_page",
+    "url": null,
+    "page_url": "https://oklahoma.gov/health/services/personal-health/immunizations/imm-shot-records.html",
+    "pattern": "KSurvey_OSDH_SchoolLevelResults_.*\\.xlsx",
+    "type": "xlsx",
+    "dest_glob": "raw/KSurvey_OSDH_SchoolLevelResults.xlsx",
+    "publish_month": 6,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2025,
+    "ci_reachable": true,
+    "notes": "School-level kindergarten survey results, all years in one workbook (2017-18 onward), replaced in place each year with a new sheet appended; stored under a fixed name so the next edition overwrites it.",
+    "last_check_time": "2026-09-09 14:15:13",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

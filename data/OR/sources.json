@@ -1,0 +1,20 @@
+[
+  {
+    "id": "oha_k12_workbook",
+    "access": "static",
+    "url": "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/VACCINESIMMUNIZATION/GETTINGIMMUNIZED/Documents/SchK-12.xlsx",
+    "page_url": "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/VACCINESIMMUNIZATION/GETTINGIMMUNIZED/Pages/SchRateMap.aspx",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/SchK-12.xlsx",
+    "publish_month": 5,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2024,
+    "ci_reachable": true,
+    "notes": "Statewide K-12 workbook at a fixed URL that OHA overwrites each year; only the current year is available.",
+    "last_check_time": "2026-09-09 14:15:13",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

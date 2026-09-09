@@ -5,18 +5,63 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:08",
+      "last_run": "2026-09-04 17:34:22",
       "frequency": 0,
-      "run_time": 0.67,
+      "run_time": 6.167,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "",
+          "Attaching package: 'vroom'",
+          "",
+          "The following objects are masked from 'package:readr':",
+          "",
+          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
+          "    col_factor, col_guess, col_integer, col_logical, col_number,",
+          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
+          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
+          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
+          "    problems, spec",
+          "",
+          "fetch: fetched ct_school_k_2025.csv (106,640 bytes)",
+          "fetch: fetched ct_school_7_2025.csv (86,392 bytes)",
+          "fetch: fetched ct_school_exempt_2025.csv (149,082 bytes)",
+          "Connecticut: dropping 1 source percentage(s) outside [-5, 105]:",
+          "  2025-2026 Northwest Hills 7th pct_hep_a_non_compliant = -893",
+          "Connecticut: dropping 1 county enrolment(s) that equal or exceed the statewide row:",
+          "  2012-2013 Windham Pre-K: N_enrolled=20397 vs state 20397",
+          "Connecticut (7th): dropping 5 column(s) with no data: rate_all_required_full_exempt, rate_flu, rate_flu_religious_exempt, rate_flu_medical_exempt, rate_flu_non_compliant",
+          "Connecticut (K): dropping 13 column(s) with no data: rate_all_required_full_exempt, rate_tdap, rate_tdap_religious_exempt, rate_tdap_medical_exempt, rate_tdap_non_compliant, rate_menacwy, rate_menacwy_religious_exempt, rate_menacwy_medical_exempt, rate_menacwy_non_compliant, rate_flu, rate_flu_religious_exempt, rate_flu_medical_exempt, rate_flu_non_compliant",
+          "Connecticut (Pre-K): dropping 37 column(s) with no data: rate_all_required, rate_all_required_religious_exempt, rate_all_required_medical_exempt, rate_all_required_full_exempt, rate_all_required_non_compliant, rate_dtap, rate_dtap_religious_exempt, rate_dtap_medical_exempt, rate_dtap_non_compliant, rate_tdap, rate_tdap_religious_exempt, rate_tdap_medical_exempt, rate_tdap_non_compliant, rate_polio, rate_polio_religious_exempt, rate_polio_medical_exempt, rate_polio_non_compliant, rate_mmr, rate_mmr_religious_exempt, rate_mmr_medical_exempt, rate_mmr_non_compliant, rate_hep_a, rate_hep_a_religious_exempt, rate_hep_a_medical_exempt, rate_hep_a_non_compliant, rate_hep_b, rate_hep_b_religious_exempt, rate_hep_b_medical_exempt, rate_hep_b_non_compliant, rate_varicella, rate_varicella_religious_exempt, rate_varicella_medical_exempt, rate_varicella_non_compliant, rate_menacwy, rate_menacwy_religious_exempt, rate_menacwy_medical_exempt, rate_menacwy_non_compliant",
+          "Connecticut (All Grades): dropping 39 column(s) with no data: N_enrolled, rate_all_required, rate_all_required_non_compliant, rate_dtap, rate_dtap_religious_exempt, rate_dtap_medical_exempt, rate_dtap_non_compliant, rate_tdap, rate_tdap_religious_exempt, rate_tdap_medical_exempt, rate_tdap_non_compliant, rate_polio, rate_polio_religious_exempt, rate_polio_medical_exempt, rate_polio_non_compliant, rate_mmr, rate_mmr_religious_exempt, rate_mmr_medical_exempt, rate_mmr_non_compliant, rate_hep_a, rate_hep_a_religious_exempt, rate_hep_a_medical_exempt, rate_hep_a_non_compliant, rate_hep_b, rate_hep_b_religious_exempt, rate_hep_b_medical_exempt, rate_hep_b_non_compliant, rate_varicella, rate_varicella_religious_exempt, rate_varicella_medical_exempt, rate_varicella_non_compliant, rate_menacwy, rate_menacwy_religious_exempt, rate_menacwy_medical_exempt, rate_menacwy_non_compliant, rate_flu, rate_flu_religious_exempt, rate_flu_medical_exempt, rate_flu_non_compliant",
+          "Connecticut schools: 2594 rows, 7th=514 All Grades=1355 K=725, 2025-09-01 to 2025-09-01"
+        ],
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/CT/raw/ct_county_immunization_exemption_8kid-pp5k.csv": {
+      "data": "not_compressed"
+    },
+    "data/CT/raw/ct_school_7_2025.csv": {
+      "data": "not_compressed"
+    },
+    "data/CT/raw/ct_school_exempt_2025.csv": {
+      "data": "not_compressed"
+    },
+    "data/CT/raw/ct_school_k_2025.csv": {
       "data": "not_compressed"
     },
     "data/CT/standard/data.csv.gz": {
@@ -33,19 +78,76 @@
     },
     "data/CT/standard/data_pre_k.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CT/standard/data_schools.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade", "missing_info: school_name", "missing_info: school_type", "missing_info: city", "missing_info: planning_region"]
     }
   },
   "raw_state": {
     "raw/CT Vaccine Exemptions 2017-2025_All Grades.xlsx": "523ddccbd481dce5c8d9930ac5ef4b9a",
-    "raw/ct_county_immunization_exemption_8kid-pp5k.csv": "6366ef2c2b6e3eedd6b5d9819132201b"
+    "raw/ct_county_immunization_exemption_8kid-pp5k.csv": "6366ef2c2b6e3eedd6b5d9819132201b",
+    "raw/ct_school_7_2025.csv": "b8555db7616a80f4bf8f45f5a57b0774",
+    "raw/ct_school_exempt_2025.csv": "5b34a267a76a8b30a1350055df076730",
+    "raw/ct_school_k_2025.csv": "835ec8b43373a1fe529e457dfccd4387"
   },
-  "script_hash": "dc0e3228a3c44f23488a318a997986ac",
+  "script_hash": "0edf58b52195e9eef16b948654cbc422",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/measure_info.json": "b6d164e26603431be9b4fbe3d1f87773",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data.csv.gz": "7f303726e7dd9ed27a974561e2c19c0b",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_7th.csv.gz": "d45e7e1081de11e93eeaef3fb45ee7e0",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_all_grades.csv.gz": "7629c2f6b3b1043d7e1be77471f7f001",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_k.csv.gz": "a7c8253c6a081a118c5d508d326332b7",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/CT/standard/data_pre_k.csv.gz": "9bc885c80846950157c44ae41fa118fd"
+    "./data/CT/measure_info.json": "e93ecb94a57c032382eea96904a9d78f",
+    "./data/CT/standard/data.csv.gz": "0c9db7c9b781260f5bd78dbb1bdc198a",
+    "./data/CT/standard/data_7th.csv.gz": "6b34d32711499ea5a5c4915997acb1b8",
+    "./data/CT/standard/data_all_grades.csv.gz": "1e506b62c026c2ed6a55102fc0bbaf15",
+    "./data/CT/standard/data_k.csv.gz": "59d05aeadb74e591477d77499738dccb",
+    "./data/CT/standard/data_pre_k.csv.gz": "32ac4c3f1642c30783d2fae2828dbcdc",
+    "./data/CT/standard/data_schools.csv.gz": "40951a354f7594e9c2a11aa855d7f36f"
+  },
+  "fetch_state": {
+    "raw/ct_county_immunization_exemption_8kid-pp5k.csv": {
+      "url": "https://data.ct.gov/resource/8kid-pp5k.csv?$limit=50000",
+      "dest": "raw/ct_county_immunization_exemption_8kid-pp5k.csv",
+      "status": "unchanged",
+      "http_status": 200,
+      "bytes": 194206,
+      "sha256": "0c8ec38b0644119d98439e7c15de61b19582c690f3e54a0e3ca930db8520b013",
+      "etag": "\"aW5kaWEuNDU3M18yXzMwaDV4cXNTUVFtc2F6cUgzN0FyMkdlMHlUOFhN---gzipBJhXxrvo2MvouReCEXlFFw28Afw--gzip--gzip\"",
+      "last_modified": "Wed, 22 Jul 2026 18:18:18 GMT",
+      "fetched_at": "2026-09-04 21:40:13",
+      "attempts": 1
+    },
+    "raw/ct_school_k_2025.csv": {
+      "url": "https://data.ct.gov/resource/iux5-vrzq.csv?$limit=50000",
+      "dest": "raw/ct_school_k_2025.csv",
+      "status": "unchanged",
+      "http_status": 200,
+      "bytes": 106640,
+      "sha256": "d10808788ff8c63f22b925523f52f79ee689d3664bdc9264b31dcd6489eb0504",
+      "etag": "\"aW5kaWEuNDU3NV8zXzU0cVlid0ZmS25sSEJGSmtwTlVMeFI1eDNoLVU0---gzipMbpP5cXshqIXs2TUSa1DmslZv4E--gzip--gzip\"",
+      "last_modified": "Wed, 22 Jul 2026 18:17:35 GMT",
+      "fetched_at": "2026-09-04 21:40:13",
+      "attempts": 1
+    },
+    "raw/ct_school_7_2025.csv": {
+      "url": "https://data.ct.gov/resource/rz57-x4bb.csv?$limit=50000",
+      "dest": "raw/ct_school_7_2025.csv",
+      "status": "unchanged",
+      "http_status": 200,
+      "bytes": 86392,
+      "sha256": "da619e7a0e6c1b536dd3d5701baf67d4e2ba7cf1ddb410bf49a624787c01e39b",
+      "etag": "\"Z29sZi40OTg0NF8zXzUzLTBIMmszZ1dyZVdra2N6TndRYXlwc1ZMM3pj---gzipiC8T6j4kjso1e7SLnromvqSdzFQ--gzip--gzip\"",
+      "last_modified": "Wed, 22 Jul 2026 18:18:20 GMT",
+      "fetched_at": "2026-09-04 21:40:16",
+      "attempts": 1
+    },
+    "raw/ct_school_exempt_2025.csv": {
+      "url": "https://data.ct.gov/resource/a2a4-pw6c.csv?$limit=50000",
+      "dest": "raw/ct_school_exempt_2025.csv",
+      "status": "unchanged",
+      "http_status": 200,
+      "bytes": 149082,
+      "sha256": "da550c063acdbbd08f44d9f610ebdf77a197e50927825045beada3fab986f925",
+      "etag": "\"Z29sZi40OTg0NV8zXzM0cnpWWnMzVnRQd3hPYnVsRmxuWDF4YzFTSE1j---gziptaNsYtzM0wPD0XmzBBecbBHEWyw--gzip--gzip\"",
+      "last_modified": "Wed, 22 Jul 2026 18:13:53 GMT",
+      "fetched_at": "2026-09-04 21:40:18",
+      "attempts": 1
+    }
   }
 }

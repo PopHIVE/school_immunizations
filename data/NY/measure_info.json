@@ -16,6 +16,23 @@
       }
     ]
   },
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
+    "short_name": "Religious exemption rate",
+    "long_name": "Proportion of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ny_school_immunization"
+      }
+    ]
+  },
   "rate_immunized_polio": {
     "id": "rate_immunized_polio",
     "short_name": "polio immunization",
@@ -194,6 +211,19 @@
       "organization_url": "https://www.health.ny.gov/",
       "description": "School-level immunization and medical-exemption percentages from the NYS School Immunization Survey, pulled from the Health Data NY open-data API (CSV export).",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "School-level immunization and medical-exemption percentages from the NYS School Immunization Survey, pulled from the Health Data NY open-data API (CSV export).",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per school, by school year"
     }
   }
 }

@@ -1,6 +1,7 @@
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
 source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 # =============================================================================
 # MN - Kindergarten Vaccination Coverage by County
 # Source: MN Dept of Health, Annual Immunization Status Report (school data).
@@ -17,36 +18,32 @@ library(readxl)
 library(readr)
 library(vroom)
 
-# MDH blocks non-browser user agents (HTTP 403); present a browser UA.
-options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
+sources <- read_sources()
+src <- source_entry(sources, "mdh_county_workbooks")
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
 
-base_url <- "https://www.health.state.mn.us/people/immunize/stats/school/"
 dir.create("raw", showWarnings = FALSE)
 
 # ---- Discover & download county kindergarten files ----
-discover_codes <- function(pages) {
-  codes <- character()
-  for (pg in pages) {
-    tmp <- tempfile(fileext = ".html")
-    ok <- tryCatch({ download.file(paste0(base_url, pg), tmp, quiet = TRUE); TRUE },
-                   error = function(e) FALSE)
-    if (ok) {
-      html <- paste(readLines(tmp, warn = FALSE), collapse = "\n")
-      codes <- c(codes, unlist(str_extract_all(html, "kcounty\\d{4}\\.xlsx")))
-    }
-  }
-  unique(codes)
-}
-files <- discover_codes(c("index.html", "archive.html"))
-for (fn in files) {
-  try(download.file(paste0(base_url, fn), file.path("raw", fn), mode = "wb", quiet = TRUE),
-      silent = TRUE)
-}
+# The current-year page (page_url) lists this year's workbook and the archive
+# page (url) the earlier ones. Neither listing blocks the other: raw/ is
+# committed, so a page that is down is a warning and the run goes on with
+# whatever the other page lists plus what is on disk. MDH revises the
+# current-year workbook in place, so every discovered file is re-fetched
+# (conditionally, on ETag / Last-Modified) rather than skipped when present.
+# fetch.R sends the browser header set MDH requires (it 403s bare clients).
+links <- unique(c(
+  discover_links(src$page_url, src$pattern, must_find = FALSE)$url,
+  discover_links(src$url, src$pattern, must_find = FALSE)$url
+))
+recs <- fetch_many(links,
+  dest_fn = function(u) file.path("raw", basename(u)),
+  if_exists = "replace", previous = prev
+)
+process <- record_fetch(process, recs)
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 parse_pct_points <- function(x) {
@@ -131,9 +128,11 @@ if (!identical(process$raw_state, raw_state) ||
     arrange(time, geography_name)
 
   dir.create("standard", showWarnings = FALSE)
-  write_standard(data_out, "Minnesota", "standard/data.csv.gz", from = "percent")
+  out <- write_standard(data_out, "Minnesota", "standard/data.csv.gz", from = "percent")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

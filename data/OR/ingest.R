@@ -7,6 +7,7 @@ library(readr)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
 source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 
 # =============================================================================
 # OR - K-12 School Immunization Exemptions & Enrollment, School and County
@@ -24,47 +25,34 @@ source("../../resources/county_fips.R")
 #   Preschool: same directory, SchPreschool.xlsx (child-care; not ingested here)
 # =============================================================================
 
-# OHA serves the file behind an F5 load balancer; a browser UA avoids blocks.
-options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
-
-k12_url <- paste0(
-  "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/VACCINESIMMUNIZATION/",
-  "GETTINGIMMUNIZED/Documents/SchK-12.xlsx"
-)
-dir.create("raw", showWarnings = FALSE)
-raw_path <- "./raw/SchK-12.xlsx"
-
-# Download to a temp file and only move it into raw/ once it is there and
-# readable.
-#
-# download.file() writes straight to its destination and TRUNCATES it when the
-# transfer fails, so `try(download.file(..., raw_path))` did not merely fail to
-# refresh the snapshot -- it destroyed the copy already on disk. One blocked
-# request from OHA's load balancer took out data/OR/raw/SchK-12.xlsx entirely and
-# the ingest then errored with "`path` does not exist".
-tmp <- tempfile(fileext = ".xlsx")
-ok <- tryCatch({
-  download.file(k12_url, tmp, mode = "wb", quiet = TRUE)
-  # A block page or an error body downloads "successfully"; readxl reading it is
-  # the check that matters.
-  readxl::excel_sheets(tmp)
-  TRUE
-}, error = function(e) FALSE, warning = function(w) FALSE)
-
-if (ok) {
-  file.copy(tmp, raw_path, overwrite = TRUE)
-} else if (file.exists(raw_path)) {
-  message("OR: download failed; keeping the existing raw/SchK-12.xlsx")
-} else {
-  stop("OR: could not download ", k12_url,
-       " and there is no raw/SchK-12.xlsx to fall back on.")
-}
-unlink(tmp)
-
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
+sources <- read_sources()
+src <- source_entry(sources, "oha_k12_workbook")
 process <- dcf::dcf_process_record()
+prev <- process$fetch_state
+
+dir.create("raw", showWarnings = FALSE)
+raw_path <- "raw/SchK-12.xlsx"
+
+# The workbook is downloaded to a temp file, checked to open as a workbook,
+# and only then copied over raw/. That is now the shared fetch layer's job
+# (resources/fetch.R), which also sends the browser header set OHA's F5 load
+# balancer wants, retries, and records the outcome in process.json.
+#
+# The reason this matters here: download.file() writes straight to its
+# destination and TRUNCATES it when the transfer fails, so the earlier
+# `try(download.file(..., raw_path))` did not merely fail to refresh the
+# snapshot -- it destroyed the copy already on disk. One blocked request from
+# OHA's load balancer took out data/OR/raw/SchK-12.xlsx entirely and the
+# ingest then errored with "`path` does not exist". A failed fetch now leaves
+# raw/ untouched and the ingest continues on the committed copy.
+#
+# OHA overwrites the file in place each year, so it is always re-requested
+# (the default if_exists = "replace"); an unchanged file is detected by hash
+# and does not trigger a re-parse.
+rec <- fetch_file(src$url, raw_path, type = "xlsx", previous = prev[[raw_path]])
+process <- record_fetch(process, rec)
+
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 # Percent columns are printed as strings like "93.3%"; parse_number() strips
@@ -181,9 +169,12 @@ if (!identical(process$raw_state, raw_state) ||
     paste(sort(unique(data$time)), collapse = ", ")))
 
   dir.create("standard", showWarnings = FALSE)
-  write_standard(data, "Oregon", "./standard/data.csv.gz", from = "percent")
+  out <- write_standard(data, "Oregon", "./standard/data.csv.gz",
+                        from = "percent")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

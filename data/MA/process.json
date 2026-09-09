@@ -23,7 +23,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/MA/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -57,9 +57,9 @@
     "raw/MA_kindergarten_by_county_2024-2025.xlsx": "ed1656d6877a637063ccdfdc9b1d25e8",
     "raw/MA_kindergarten_by_county_2025-2026.xlsx": "bfa27ccdb8d99fda871ced5b3b1645fb"
   },
-  "script_hash": "55e41a4a75e53611e9ad29e4941b658f",
+  "script_hash": "36b784084f5fa06259bbb959ca400a98",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/MA/measure_info.json": "fc8592f8a5dab8076fe46ea276f28a2f",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/MA/standard/data.csv.gz": "b720b4bc0007f813469f7f02bd5e0b06"
+    "./data/MA/measure_info.json": "06a8f13156f33fb5600954e9bd4cf067",
+    "./data/MA/standard/data.csv.gz": "294b1dfcc9730fbc54548845ae9e18a2"
   }
 }

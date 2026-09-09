@@ -7,6 +7,7 @@ library(vroom)
 source("../../resources/rate_scale.R")
 source("../../resources/county_fips.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 
 # =============================================================================
 # CA - Kindergarten and 7th-grade school immunization assessment, by county
@@ -90,10 +91,16 @@ workbook <- "raw/California Vaccine Exemption.xlsx"
 # ---- Download the CDPH report tables ----------------------------------------
 #
 # The workbook is supplied by hand and has no URL, so it is left alone. The
-# report tables are downloaded to a temporary path and only moved into place
-# when the new copy is at least as large as the one on disk: CDPH occasionally
-# serves a truncated or WAF-blocked response, which would otherwise silently
-# replace a good file with a stub and drop whole school years from the output.
+# report tables go through fetch_file(): downloaded to a temporary path,
+# checked to open as a workbook, and only then copied into raw/. CDPH
+# occasionally serves a truncated or WAF-blocked response, which used to be
+# caught by a size comparison against the copy on disk; validation now does
+# that, and a failed refresh keeps the committed file with a warning.
+#
+# The URL list stays here. sources.json points at the report index page, which
+# is scanned below only to report a newly posted report workbook that this
+# list does not know about; nothing unlisted is downloaded, since each year's
+# tables need their own sheet/skip/column mapping in the readers further down.
 report_urls <- c(
   "raw/CA_KG_cdph_2024-25.xlsx" =
     "https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/2024-25KindergartenReport.xlsx",
@@ -108,31 +115,41 @@ report_urls <- c(
     "https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/2020SchoolAssessmentReport.xlsx"
 )
 
-dir.create("raw", showWarnings = FALSE)
-for (dest in names(report_urls)) {
-  tmp <- paste0(dest, ".part")
-  ok <- tryCatch({
-    download.file(report_urls[[dest]], tmp, mode = "wb", quiet = TRUE)
-    TRUE
-  }, error = function(e) FALSE, warning = function(w) FALSE)
+sources <- read_sources()
+src <- source_entry(sources, "cdph_report_tables")
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
 
-  if (ok && file.exists(tmp)) {
-    old <- if (file.exists(dest)) file.size(dest) else 0
-    if (file.size(tmp) >= old) {
-      file.rename(tmp, dest)
-    } else {
-      warning(sprintf(
-        "kept existing %s: download gave %.0f kB against %.0f kB on disk",
-        basename(dest), file.size(tmp) / 1e3, old / 1e3), call. = FALSE)
-    }
+dir.create("raw", showWarnings = FALSE)
+recs <- fetch_many(unname(report_urls), dests = names(report_urls),
+                   type = "xlsx", previous = prev)
+process <- record_fetch(process, recs)
+
+# Report workbooks on the CDPH index page that the list above does not carry.
+# The page can be unreachable without blocking the ingest (raw/ is committed),
+# and a new year is only reported, never fetched, until a reader exists for it.
+#
+# Two posted workbooks are deliberately not in the list: their county tables
+# (kindergarten 2019-20..2021-22 with 1st grade 2021-22; 7th grade
+# 2019-20..2021-22 with 8th grade 2021-22, Tdap and varicella) are the rows
+# the hand-supplied workbook already carries, so they are not reported as new.
+report_urls_covered <- c(
+  "2022AssessmentSchoolReport.xlsx",
+  "2020-22Grade7Report.xlsx"
+)
+
+posted <- discover_links(src$page_url, src$pattern, must_find = FALSE)
+if (isTRUE(attr(posted, "fetched"))) {
+  file_key <- function(u) tolower(basename(utils::URLdecode(u)))
+  known <- c(file_key(unname(report_urls)), tolower(report_urls_covered))
+  new_reports <- posted$url[!file_key(posted$url) %in% known]
+  if (length(new_reports)) {
+    message("CA: report workbook(s) on the CDPH page not in report_urls:\n  ",
+            paste(new_reports, collapse = "\n  "))
   }
-  unlink(tmp)
 }
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
@@ -614,7 +631,12 @@ if (!identical(process$raw_state, raw_state) ||
                  "California (7th grade)",
                  "./standard/data_grade7.csv.gz", from = "rate")
 
+  # The 7th-grade series ended in 2021-22, so the latest year is the
+  # kindergarten cohort's; recorded on the fetched source only.
+  update_latest_year(latest_school_year(wide), ids = "cdph_report_tables")
+
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

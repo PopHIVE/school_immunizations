@@ -107,8 +107,21 @@
       "url": "https://ricair-data-rihealth.hub.arcgis.com/",
       "organization": "Rhode Island Department of Health",
       "organization_url": "https://health.ri.gov/",
-      "description": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. STATE LEVEL ONLY -- Rhode Island supplies no county breakdown here, so geography is the 2-digit state FIPS (44) on every row and this source contributes nothing to county analyses. Small cells are suppressed with a less-than marker; those are left missing.",
+      "description": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. STATE LEVEL ONLY -- Rhode Island supplies no county breakdown here, so geography is the 2-digit state FIPS (44) on every row and this source contributes nothing to county analyses. Small cells are suppressed with a less-than marker; those are left missing with suppressed_flag = 1 and censor_direction = \"left\".",
       "restrictions": "Public data supplied by RIDOH."
+    }
+  },
+  "_catalog": {
+    "summary": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
     }
   }
 }

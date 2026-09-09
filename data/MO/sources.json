@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dhss_dashboard_workbook",
+    "access": "dashboard",
+    "url": null,
+    "page_url": "https://health.mo.gov/living/families/schoolhealth/dashboard.php",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "Raw/*.xlsx",
+    "publish_month": 12,
+    "publish_lag_years": 0,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Per-series exemption rates workbook from the DHSS Tableau dashboard; no file endpoint.",
+    "last_check_time": "2026-09-09 14:14:54",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

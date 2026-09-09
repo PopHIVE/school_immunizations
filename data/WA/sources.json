@@ -1,0 +1,114 @@
+[
+  {
+    "id": "doh_school_year_workbooks",
+    "access": "index_page",
+    "url": null,
+    "page_url": "https://doh.wa.gov/data-and-statistical-reports/washington-tracking-network-wtn/school-immunization/dashboard",
+    "pattern": "\\d{4}-\\d{4}SchoolYear\\.xlsx",
+    "type": "xlsx",
+    "dest_glob": "raw/*SchoolYear.xlsx",
+    "publish_month": 6,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2025,
+    "ci_reachable": true,
+    "notes": "Per-year state, county and district immunization status by grade and vaccine (2016-17 onward). The 2025-26 link carries a document-number prefix (3481176-2025-2026SchoolYear.xlsx); saved without it. The same page posts a per-school workbook for each year (<YYYY>-<YYYY>SchoolBuilding.xlsx, about 23 MB each; 2025-26 is 3481175-2025-2026BuildingRates.xlsx), not downloaded or ingested.",
+    "last_check_time": "2026-09-09 14:16:56",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "doh_request_workbook",
+    "access": "manual",
+    "url": null,
+    "page_url": null,
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/Washington Vaccine Exemption.xlsx",
+    "publish_month": null,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "County exemption workbook obtained by request (Kindergarten and K-12 2018-19 to 2023-24, 7th grade 2020-21 to 2023-24). Superseded by doh_school_year_workbooks, which reproduces it except for five counties in 2021-22 and four county-year rows the public files omit (see ingest.R); no longer parsed.",
+    "last_check_time": "2026-09-09 14:16:56",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "socrata_school_datasets",
+    "access": "socrata",
+    "url": "https://data.wa.gov/resource/9zru-c2kz.csv",
+    "page_url": "https://data.wa.gov/browse?q=immunization%20data%20by%20school",
+    "pattern": null,
+    "type": "csv",
+    "dest_glob": "raw/wa_socrata_*.csv",
+    "publish_month": null,
+    "publish_lag_years": null,
+    "latest_year_ingested": 2016,
+    "ci_reachable": true,
+    "datasets": [
+      {
+        "id": "3nrj-de9w",
+        "title": "Kindergarten Immunization Data, 2014-2015",
+        "year": 2014,
+        "grade": "Kindergarten",
+        "dest": "raw/wa_socrata_2014_k.csv"
+      },
+      {
+        "id": "i89p-imif",
+        "title": "Immunization data for all students, kindergarten through 12th grade, 2014-2015 school year",
+        "year": 2014,
+        "grade": "K-12",
+        "dest": "raw/wa_socrata_2014_k12.csv"
+      },
+      {
+        "id": "raxi-vijr",
+        "title": "Kindergarten Immunization Data, 2015-2016",
+        "year": 2015,
+        "grade": "Kindergarten",
+        "dest": "raw/wa_socrata_2015_k.csv"
+      },
+      {
+        "id": "9vf7-7een",
+        "title": "Sixth (6th) grade immunization data by school, 2015-2016",
+        "year": 2015,
+        "grade": "6th grade",
+        "dest": "raw/wa_socrata_2015_6th.csv"
+      },
+      {
+        "id": "ie96-cgrn",
+        "title": "All students, kindergarten through 12th grade, immunization data by school, 2015-2016",
+        "year": 2015,
+        "grade": "K-12",
+        "dest": "raw/wa_socrata_2015_k12.csv"
+      },
+      {
+        "id": "kck7-yb2v",
+        "title": "Kindergarten Immunization Data, 2016-17",
+        "year": 2016,
+        "grade": "Kindergarten",
+        "dest": "raw/wa_socrata_2016_k.csv"
+      },
+      {
+        "id": "emhz-m99x",
+        "title": "Sixth (6th) grade immunization data by school, 2016-2017",
+        "year": 2016,
+        "grade": "6th grade",
+        "dest": "raw/wa_socrata_2016_6th.csv"
+      },
+      {
+        "id": "9zru-c2kz",
+        "title": "All students, kindergarten through 12th grade, immunization data by school, 2016-2017",
+        "year": 2016,
+        "grade": "K-12",
+        "dest": "raw/wa_socrata_2016_k12.csv"
+      }
+    ],
+    "notes": "School-level survey results DOH published on data.wa.gov before the WTN workbooks: one dataset per school year and cohort (Kindergarten, Sixth Grade, K-12) for 2014-15, 2015-16 and 2016-17, found through the Socrata catalog (api.us.socrata.com, domains=data.wa.gov, q=immunization) on 2026-09-09. A closed series: nothing was added after 2016-17 and the dataset ids do not change, so each file is fetched once (if_exists = skip) to raw/wa_socrata_<start year>_<k|6th|k12>.csv and parsed into standard/data_schools_2014_2016.csv.gz. The dataset titled 'Sixth (6th) grade immunization data, 2014-2015' (mgne-w2kv) is a copy of the 2014-15 K-12 table (i89p-imif), row for row with the K-12 columns, so there is no sixth-grade table for 2014-15 and it is not fetched. 'Asotin County Immunization Data by School' (jzrz-dku2) is a single-county extract and is not used. url points at the 2016-17 K-12 dataset for the source check.",
+    "last_check_time": "2026-09-09 14:16:59",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

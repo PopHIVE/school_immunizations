@@ -1,12 +1,29 @@
 {
-  "N_personal_exempt": {
-    "id": "N_personal_exempt",
-    "short_name": "Non-medical exemptions (count)",
-    "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+  "N_immunization_certificate": {
+    "id": "N_immunization_certificate",
+    "short_name": "Certificate of immunization (count)",
+    "long_name": "Number of students with a certificate of immunization",
     "category": "immunization",
-    "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+    "short_description": "Number of enrolled students with a certificate of immunization.",
+    "long_description": "Students holding a full certificate of immunization: vaccinated as the state's school law requires, with no provisional status and no exemption. Iowa's \"Fully Vaccinated by Law\" category.",
+    "statement": "In {location}, {value} school students with a certificate of immunization.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "N_provisional": {
+    "id": "N_provisional",
+    "short_name": "Provisional students (count)",
+    "long_name": "Number of students provisionally enrolled",
+    "category": "immunization",
+    "short_description": "Number of assessed school students provisionally enrolled while completing required immunizations.",
+    "long_description": "Count of assessed school students permitted to attend on a provisional basis while completing required immunizations.",
+    "statement": "In {location}, {value} school students were provisionally enrolled.",
     "measure_type": "Count",
     "unit": "Students",
     "time_resolution": "Year",
@@ -33,6 +50,40 @@
       }
     ]
   },
+  "N_religious_exempt": {
+    "id": "N_religious_exempt",
+    "short_name": "Religious exemptions (count)",
+    "long_name": "Number of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+    "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "N_personal_exempt": {
+    "id": "N_personal_exempt",
+    "short_name": "Non-medical exemptions (count)",
+    "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
   "N_full_exempt": {
     "id": "N_full_exempt",
     "short_name": "Total exemptions (count)",
@@ -50,14 +101,82 @@
       }
     ]
   },
-  "rate_personal_exempt": {
-    "id": "rate_personal_exempt",
-    "short_name": "Non-medical exemption rate",
-    "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+  "N_no_certificate": {
+    "id": "N_no_certificate",
+    "short_name": "No certificate (count)",
+    "long_name": "Number of students with no valid immunization certificate",
     "category": "immunization",
-    "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
-    "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+    "short_description": "Number of enrolled students with no valid immunization certificate.",
+    "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+    "statement": "In {location}, {value} school students with no valid immunization certificate.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "N_valid_certificate": {
+    "id": "N_valid_certificate",
+    "short_name": "Valid certificate (count)",
+    "long_name": "Number of students with a valid immunization certificate",
+    "category": "immunization",
+    "short_description": "Number of enrolled students with a valid immunization certificate.",
+    "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+    "statement": "In {location}, {value} school students with a valid immunization certificate.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "rate_immunization_certificate": {
+    "id": "rate_immunization_certificate",
+    "short_name": "Certificate of immunization",
+    "long_name": "Proportion of students with a certificate of immunization",
+    "category": "immunization",
+    "short_description": "Proportion of enrolled students with a certificate of immunization.",
+    "long_description": "Students holding a full certificate of immunization: vaccinated as the state's school law requires, with no provisional status and no exemption. Iowa's \"Fully Vaccinated by Law\" category.",
+    "statement": "In {location}, {value} of school students with a certificate of immunization.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "rate_provisional": {
+    "id": "rate_provisional",
+    "short_name": "Provisional certificate",
+    "long_name": "Proportion of students with a provisional certificate",
+    "category": "immunization",
+    "short_description": "Proportion of enrolled students with a provisional certificate.",
+    "long_description": "Students admitted on a provisional certificate while completing the required series.",
+    "statement": "In {location}, {value} of school students with a provisional certificate.",
     "measure_type": "Rate",
     "unit": "Rate",
     "time_resolution": "Year",
@@ -84,6 +203,40 @@
       }
     ]
   },
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
+    "short_name": "Religious exemption rate",
+    "long_name": "Proportion of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "rate_personal_exempt": {
+    "id": "rate_personal_exempt",
+    "short_name": "Non-medical exemption rate",
+    "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+    "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
   "rate_full_exempt": {
     "id": "rate_full_exempt",
     "short_name": "Total exemption rate",
@@ -101,16 +254,33 @@
       }
     ]
   },
-  "N_enrolled": {
-    "id": "N_enrolled",
-    "short_name": "Students enrolled",
-    "long_name": "Number of students enrolled",
+  "rate_no_certificate": {
+    "id": "rate_no_certificate",
+    "short_name": "No certificate",
+    "long_name": "Proportion of students with no valid immunization certificate",
     "category": "immunization",
-    "short_description": "Number of students enrolled at the reporting level.",
-    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
-    "statement": "In {location}, {value} students were enrolled.",
-    "measure_type": "Count",
-    "unit": "Students",
+    "short_description": "Proportion of enrolled students with no valid immunization certificate.",
+    "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+    "statement": "In {location}, {value} of school students with no valid immunization certificate.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ia_school_immunization"
+      }
+    ]
+  },
+  "rate_valid_certificate": {
+    "id": "rate_valid_certificate",
+    "short_name": "Valid certificate",
+    "long_name": "Proportion of students with a valid immunization certificate",
+    "category": "immunization",
+    "short_description": "Proportion of enrolled students with a valid immunization certificate.",
+    "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+    "statement": "In {location}, {value} of school students with a valid immunization certificate.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -126,6 +296,19 @@
       "organization_url": "https://hhs.iowa.gov/",
       "description": "County-level K-12 EXEMPTION data from the annual Iowa HHS school and child-care audit reports. Medical and religious certificates are published in separate files, each with a certificate count and the audited enrolment. RATES ARE COMPUTED FROM THE COUNTS, not read from the published percentage column. Iowa's medical-exemption rates are all below 1 percent, which used to defeat a scale check and get the whole file multiplied by 100 -- Dickinson County 2020-21, with 27 medical certificates against 2,707 enrolled, shipped as 100 percent instead of 1.0 percent. Dividing the certificate count by the audited enrolment removes the question of scale entirely. rate_full_exempt is the combined certificate count over the same denominator, rather than the sum of the two component rates, because the two files are joined on enrolment and can disagree about a county's audited total.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level K-12 EXEMPTION data from the annual Iowa HHS school and child-care audit reports. Medical and religious certificates are published in separate files, each with a certificate count and the audited enrolment.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, state rows (see the type column), by grade, by school year"
     }
   }
 }

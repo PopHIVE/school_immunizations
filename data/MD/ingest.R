@@ -7,6 +7,7 @@ library(readr)
 library(vroom)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 
 # =============================================================================
 # MD - Kindergarten Immunization & Exemption Rates (school- and county-level)
@@ -19,31 +20,42 @@ source("../../resources/school_year.R")
 # updating as new years are posted -- same school/county split as HI.
 # =============================================================================
 
-options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
-md_host <- "https://health.maryland.gov"
-dir.create("raw", showWarnings = FALSE)
+sources <- read_sources()
+src <- source_entry(sources, "mdh_by_school")
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
 
 # ---- Download by-school workbooks ----
-local({
-  page <- paste0(md_host, "/phpa/OIDEOR/IMMUN/Pages/Kindergarten_Immunization_Rates_by_School.aspx")
-  tmp <- tempfile(fileext = ".html")
-  if (tryCatch({ download.file(page, tmp, quiet = TRUE); TRUE }, error = function(e) FALSE)) {
-    html <- paste(readLines(tmp, warn = FALSE), collapse = "\n")
-    hrefs <- unlist(str_extract_all(html, 'href="[^"]*[Vv]accinated[^"]*\\.xlsx"'))
-    hrefs <- str_replace_all(hrefs, 'href="|"$', "")
-    hrefs <- unique(hrefs[str_detect(hrefs, "^/phpa/")])  # health.maryland.gov-hosted only
-    for (h in hrefs) {
-      dest <- file.path("raw", utils::URLdecode(basename(h)))
-      try(download.file(paste0(md_host, gsub(" ", "%20", h)), dest, mode = "wb", quiet = TRUE),
-          silent = TRUE)
-    }
-  }
-})
+# The page links one workbook per school year, all under Shared Documents/
+# rate_tables/ with spaces in the name; the file is kept under its decoded
+# basename. A year already in raw/ is skipped, and a listing that cannot be
+# fetched is a warning: raw/ is committed and the run continues on it.
+# MDH does revise posted workbooks in place (the 2023-2024 and 2025-2026 files
+# both carried a September 2026 Last-Modified, and the 2023-2024 one now has a
+# different layout and row count from the copy in raw/), so a skipped file can
+# lag the site; that is deliberate, since re-fetching would rewrite settled
+# years.
+#
+# There are two ways to adopt a revision, and neither is done automatically:
+#   * Delete the raw file. The next run fetches whatever MDH now posts under
+#     that name and the year is re-parsed from it. This takes one year at a
+#     time and leaves the others as they are.
+#   * Switch to if_exists = "replace" (conditional = TRUE is already the
+#     default, so an unchanged file costs one round trip and no transfer).
+#     Every posted year then follows the site; with the live 2023-2024
+#     workbook that would rewrite that year from about 1,689 rows to 1,128
+#     under the revised layout.
+# Either changes a settled year's rows, so it is a decision to be taken and
+# recorded, not something a nightly run should do on its own.
+dir.create("raw", showWarnings = FALSE)
+links <- discover_links(src$page_url, src$pattern, must_find = FALSE)
+recs <- fetch_many(links$url,
+  dest_fn = function(u) file.path("raw", utils::URLdecode(basename(u))),
+  if_exists = "skip", previous = prev
+)
+process <- record_fetch(process, recs)
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
@@ -124,6 +136,18 @@ if (!identical(process$raw_state, raw_state) ||
   }
 
   files <- list.files("raw", pattern = "[Vv]accinated.*\\.xlsx$", full.names = TRUE)
+  # One workbook per school year. raw/ also holds a hand-saved copy of the
+  # 2025-2026 workbook (..._04102026.xlsx, saved 10 Apr 2026) that MDH has
+  # since revised under the plain name: four school names and one school's
+  # enrollment differ. Where a year has both, the plainly named file, the one
+  # the fetch above maintains, is parsed; counting both would double that
+  # year's county aggregates.
+  file_year <- str_match(basename(files), "(20\\d{2})-(20\\d{2})")[, 3]
+  has_suffix <- str_detect(basename(files), "20\\d{2}-20\\d{2}_")
+  # Plain names first within a year, then the first file per year.
+  keep <- order(has_suffix)
+  keep <- keep[!is.na(file_year[keep]) & !duplicated(file_year[keep])]
+  files <- files[sort(keep)]
   school <- bind_rows(lapply(files, process_school_file))
 
   # County rate = sum of per-school counts / sum of per-school enrollment, not
@@ -209,9 +233,11 @@ if (!identical(process$raw_state, raw_state) ||
     arrange(time, geography_name, desc(type), school_name)
 
   dir.create("standard", showWarnings = FALSE)
-  write_standard(data_out, "Maryland", "./standard/data.csv.gz", from = "percent")
+  out <- write_standard(data_out, "Maryland", "./standard/data.csv.gz", from = "percent")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

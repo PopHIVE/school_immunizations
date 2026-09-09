@@ -8,10 +8,23 @@ library(readr)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
 source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
+# =============================================================================
+# KY - Exemption rates by county and grade (K, 7th, 11th), 2019-20 to 2024-25
+#
+# Parsed: raw/KY_2020-2025.xlsx, medical, religious and overall exemption
+# rates by county and grade obtained from the Kentucky Department for Public
+# Health by request.
+#
+# Not parsed: the "Annual School Immunization Coverage Assessment Report for
+# Kentucky Counties" (K, 7th and 11th coverage). The 2024-25 PDF URL
+# (chfs.ky.gov/agencies/dph/dehp/imm/2425AnnualSchoolSurveyReport.pdf)
+# answers 404 and the healthtracking.ky.gov pages render their links in
+# JavaScript, so no file link was found.
+# =============================================================================
+
+raw_state <- raw_state_md5()
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

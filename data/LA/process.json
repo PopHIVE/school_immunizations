@@ -5,27 +5,28 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:15",
+      "last_run": "2026-09-09 10:08:17",
       "frequency": 0,
-      "run_time": 0.01,
+      "run_time": 0.083,
       "last_status": {
-        "log": [],
+        "log": "Louisiana: dropping 10 column(s) with no data: N_dtap, N_polio, N_mmr, N_hep_b, N_varicella, N_personal_exempt, N_medical_exempt, N_full_exempt, rate_personal_exempt, rate_medical_exempt",
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:33:52",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/LA/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
     }
   },
   "raw_state": {
-    "raw/LA_parish_21-24.xlsx": "020698a944844f1bd5189e9982b57c1b"
+    "raw/LA_parish_21-24.xlsx": "020698a944844f1bd5189e9982b57c1b",
+    "raw/~$LA_parish_21-24.xlsx": "03fb7d54c2fa1981002189eb216b31ee"
   },
-  "script_hash": "80a994698810044293fc0d42a4d4ac63",
+  "script_hash": "79470a24e8fd7ff84fa7e4ec17e1674b",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/LA/measure_info.json": "99b234432abfba428b598fa889a32296",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/LA/standard/data.csv.gz": "e5c316c075a6763bc9f2cdebbb28850f"
+    "./data/LA/measure_info.json": "6e6032a20ba275ae95fed25f2600fac3",
+    "./data/LA/standard/data.csv.gz": "d457adfe5e9aa4659a64067af0e8c8a5"
   }
 }

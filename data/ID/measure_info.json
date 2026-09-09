@@ -127,5 +127,18 @@
       "description": "County-level per-series EXEMPTION rates from the Idaho DHW school immunization report (supplied to PopHIVE as \"Yale School Exemption Data Request\"), aggregated over kindergarten, 1st, 7th and 12th grade. EXEMPTIONS ONLY -- this source publishes no coverage, so the coverage columns are empty and only rate_<series>_exempt is populated. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. DHW notes that schools self-report aggregate counts and that arithmetic errors sometimes persist.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "County-level per-series EXEMPTION rates from the Idaho DHW school immunization report (supplied to PopHIVE as \"Yale School Exemption Data Request\"), aggregated over kindergarten, 1st, 7th and 12th grade.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

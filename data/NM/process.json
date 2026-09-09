@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/NM/raw/NM_12.csv": {
       "data": "not_compressed"
@@ -74,9 +74,9 @@
     "raw/NM_23.csv": "1b6e0ad0cfd8568962037ceadd7f262b",
     "raw/NM_24.csv": "8dc7547fad91a60af3a376a8bf011c19"
   },
-  "script_hash": "001a214e79ed52ddf7c57cf773aedaac",
+  "script_hash": "8fd5e98451922cb3e1785f24068140d6",
   "standard_state": {
-    "./data/NM/measure_info.json": "824d4ee39632e9fc95021dd149730a8b",
-    "./data/NM/standard/data.csv.gz": "f019065c7fba85d5b9b34f5489933465"
+    "./data/NM/measure_info.json": "35ff3a4dbfe88fd64f0c4c02d629d389",
+    "./data/NM/standard/data.csv.gz": "5739854dcad4b3c15d97531f4f781e6e"
   }
 }

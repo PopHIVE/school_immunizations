@@ -1,0 +1,422 @@
+"OBJECTID","District","SDID","CESA","Type","District_Name","Percent_Immunized","Percent_Immunized_TXT","Shape.STArea()","Shape.STLength()"
+1,"Adams-Friendship Area","0014",5,"Unified","Adams-Friendship Area Sch Dist",81.31868132,"81.3%",2436405189.32577,260601.189997232
+2,"Albany","0063",2,"Unified","Albany Sch Dist",93.21428571,"93.2%",323055614.230849,164666.342087099
+3,"Algoma","0070",7,"Unified","Algoma Sch Dist",88.26219512,"88.3%",349444067.145761,91072.9443452746
+4,"Alma","0084",4,"Unified","Alma Sch Dist",96.44444444,"96.4%",693590059.582348,369064.83614617
+5,"Alma Center","0091",4,"Unified","Alma Center Sch Dist",90.4109589,"90.4%",679407483.599786,163807.563822689
+6,"Almond-Bancroft","0105",5,"Unified","Almond-Bancroft Sch Dist",90.55555556,"90.6%",548529374.033953,198340.207031454
+7,"Altoona","0112",10,"Unified","Altoona Sch Dist",90.25423729,"90.3%",67053729.9665283,81517.8816076801
+8,"Amery","0119",11,"Unified","Amery Sch Dist",86.38968481,"86.4%",853691667.2608,266893.542620092
+9,"Antigo Unified","0140",9,"Unified","Antigo Unified Sch Dist",87.77895855,"87.8%",2829575798.80386,337768.664086017
+10,"Appleton Area","0147",6,"Unified","Appleton Area Sch Dist",95.05533485,"95.1%",225562204.97555,81230.4051074604
+11,"Arcadia","0154",4,"Unified","Arcadia Sch Dist",99.30981595,"99.3%",1078661598.76415,333055.736237775
+12,"Argyle","0161",3,"Unified","Argyle Sch Dist",90.84745763,"90.8%",400080967.112511,205178.529297225
+13,"Arrowhead UHS","2450",1,"Secondary","Arrowhead UHS Sch Dist",95.15899383,"95.2%",328585273.020118,100449.668798018
+14,"Ashland","0170",12,"Unified","Ashland Sch Dist",91.71855542,"91.7%",2236926136.7566,345674.400773575
+15,"Ashwaubenon","0182",7,"Unified","Ashwaubenon Sch Dist",94.14710485,"94.1%",51532006.9907711,48197.6749137226
+16,"Athens","0196",9,"Unified","Athens Sch Dist",87.1040724,"87.1%",811544125.809596,153262.555627657
+17,"Auburndale","0203",5,"Unified","Auburndale Sch Dist",90.26442308,"90.3%",771142084.021269,198534.260429984
+18,"Augusta","0217",10,"Unified","Augusta Sch Dist",90.41322314,"90.4%",849745043.853549,207441.413916941
+19,"Baldwin-Woodville Area","0231",11,"Unified","Baldwin-Woodville Area Sch Dist",92.29432213,"92.3%",598244586.902843,228657.582076806
+20,"Bangor","0245",4,"Unified","Bangor Sch Dist",95.45454545,"95.5%",473358077.697873,175131.614496929
+21,"Baraboo","0280",5,"Unified","Baraboo Sch Dist",93.30680174,"93.3%",778256377.983636,173644.605744563
+22,"Barneveld","0287",3,"Unified","Barneveld Sch Dist",55.33910534,"55.3%",325456281.159101,97517.3828291476
+23,"Barron Area","0308",11,"Unified","Barron Area Sch Dist",81.86864015,"81.9%",949085455.67768,330882.021589598
+24,"Bayfield","0315",12,"Unified","Bayfield Sch Dist",86.51399491,"86.5%",1202234828.49545,538803.918244288
+25,"Beaver Dam Unified","0336",6,"Unified","Beaver Dam Unified Sch Dist",88.70505886,"88.7%",574548024.199739,185167.790573095
+26,"Beecher-Dunbar-Pembine","4263",8,"Unified","Beecher-Dunbar-Pembine Sch Dist",86.26609442,"86.3%",1174919214.38558,164909.462410813
+27,"Belleville","0350",2,"Unified","Belleville Sch Dist",95.58985667,"95.6%",345538121.925323,158327.044647993
+28,"Belmont Community","0364",3,"Unified","Belmont Community Sch Dist",88,"88%",487088079.872712,159956.919400611
+29,"Beloit","0413",2,"Unified","Beloit Sch Dist",96.0599654,"96.1%",83740371.854598,88071.1789682532
+30,"Beloit Turner","0422",2,"Unified","Beloit Turner Sch Dist",92.57213014,"92.6%",143888214.961239,122760.245306425
+31,"Benton","0427",3,"Unified","Benton Sch Dist",87.21461187,"87.2%",155076721.984559,180363.058203735
+32,"Berlin Area","0434",6,"Unified","Berlin Area Sch Dist",94.35240964,"94.4%",1033406278.29176,273254.265456647
+33,"Big Foot UHS","6013",2,"Secondary","Big Foot UHS Sch Dist",92.98245614,"93%",363391614.81063,132173.918453798
+34,"Birchwood","0441",11,"Unified","Birchwood Sch Dist",86.00823045,"86%",1227402106.63028,243148.597732909
+35,"Black Hawk","2240",3,"Unified","Black Hawk Sch Dist",93.05555556,"93.1%",639172573.478745,274375.363585245
+36,"Black River Falls","0476",4,"Unified","Black River Falls Sch Dist",93.19640565,"93.2%",2359439733.48153,374353.083795494
+37,"Blair-Taylor","0485",4,"Unified","Blair-Taylor Sch Dist",98.98477157,"99%",890496478.585809,264803.576902696
+38,"Bloomer","0497",10,"Unified","Bloomer Sch Dist",93.23248408,"93.2%",877950151.008064,229294.518123603
+39,"Bonduel","0602",8,"Unified","Bonduel Sch Dist",89.70588235,"89.7%",763209442.358742,218867.410118109
+40,"Boscobel Area","0609",3,"Unified","Boscobel Area Sch Dist",87.80487805,"87.8%",851123731.684966,329435.953469656
+41,"Bowler","0623",8,"Unified","Bowler Sch Dist",90.16393443,"90.2%",647243298.25879,126075.56415695
+42,"Boyceville Community","0637",11,"Unified","Boyceville Community Sch Dist",89.44365193,"89.4%",840886295.471408,345543.84553633
+43,"Brighton #1","0657",2,"Elementary","Brighton #1 Sch Dist",91.41414141,"91.4%",161396074.838946,58300.9377854596
+44,"Brillion","0658",7,"Unified","Brillion Sch Dist",88.99371069,"89%",320062177.492291,183769.760127751
+45,"Bristol #1","0665",2,"Elementary","Bristol #1 Sch Dist",90.33412888,"90.3%",155843255.520522,54174.3797206097
+46,"Brodhead","0700",2,"Unified","Brodhead Sch Dist",95.69049951,"95.7%",475026118.764656,209368.384771035
+47,"Brown Deer","0721",1,"Unified","Brown Deer Sch Dist",89.99393572,"90%",21693613.7243976,24143.3119098242
+48,"Bruce","0735",10,"Unified","Bruce Sch Dist",96.90721649,"96.9%",1427341102.89878,274603.064936469
+49,"Burlington Area","0777",2,"Unified","Burlington Area Sch Dist",89.44141689,"89.4%",477674382.18322,141757.08582882
+50,"Cadott Community","0870",10,"Unified","Cadott Community Sch Dist",89.74358974,"89.7%",788201370.493552,203206.185815862
+51,"Cambria-Friesland","0882",5,"Unified","Cambria-Friesland Sch Dist",62.08333333,"62.1%",412944584.148544,207234.244543107
+52,"Cambridge","0896",2,"Unified","Cambridge Sch Dist",92.34972678,"92.3%",313414301.640566,165002.490622439
+53,"Cameron","0903",11,"Unified","Cameron Sch Dist",98.44810863,"98.4%",367743730.613834,161155.572162455
+54,"Campbellsport","0910",6,"Unified","Campbellsport Sch Dist",88.19133034,"88.2%",886817105.84655,224848.55085275
+55,"Cashton","0980",4,"Unified","Cashton Sch Dist",96.0443038,"96%",582274213.335531,285799.264004971
+56,"Cassville","0994",3,"Unified","Cassville Sch Dist",93.10344828,"93.1%",434578626.901388,272120.010036194
+57,"Cedar Grove-Belgium Area","1029",7,"Unified","Cedar Grove-Belgium Area Sch Dist",90.53905391,"90.5%",187098206.391357,99753.3877499371
+58,"Cedarburg","1015",1,"Unified","Cedarburg Sch Dist",92.72435897,"92.7%",170694413.865388,70629.9810324098
+59,"Westosha Central UHS","5054",2,"Secondary","Central/Westosha UHS Sch Dist",91.03392569,"91%",670261070.008966,148446.642552238
+60,"Chequamegon","1071",12,"Unified","Chequamegon Sch Dist",94.64285714,"94.6%",3962815038.58017,440293.778988766
+61,"Chetek-Weyerhaeuser Area","1080",11,"Unified","Chetek-Weyerhaeuser Area Sch Dist",90.76086957,"90.8%",1334941792.46147,320674.613564841
+62,"Chilton","1085",7,"Unified","Chilton Sch Dist",90.2972028,"90.3%",517604248.898225,229048.599968784
+63,"Chippewa Falls Area Unified","1092",10,"Unified","Chippewa Falls Area Unified Sch Dist",91.02908277,"91%",1167573751.16703,236354.692038713
+64,"Clayton","1120",11,"Unified","Clayton Sch Dist",82.43727599,"82.4%",299974170.041078,132567.234907169
+65,"Clinton Community","1134",2,"Unified","Clinton Community Sch Dist",89.60915157,"89.6%",533402121.585339,153676.136310556
+66,"Clintonville","1141",8,"Unified","Clintonville Sch Dist",91.98782961,"92%",838993978.582777,207754.251160186
+67,"Colby","1162",10,"Unified","Colby Sch Dist",88.09261301,"88.1%",844537836.485729,230182.535476943
+68,"Coleman","1169",8,"Unified","Coleman Sch Dist",96.37096774,"96.4%",996854138.970534,220055.100418487
+69,"Colfax","1176",11,"Unified","Colfax Sch Dist",95.23809524,"95.2%",952584604.206691,266363.232619411
+70,"Columbus","1183",5,"Unified","Columbus Sch Dist",97.24770642,"97.2%",650491196.677157,218544.038681679
+71,"Cornell","1204",10,"Unified","Cornell Sch Dist",90.94650206,"90.9%",526117476.446542,141078.147285874
+72,"Crandon","1218",8,"Unified","Crandon Sch Dist",92.17809868,"92.2%",2816792662.79248,345475.966593402
+73,"Crivitz","1232",8,"Unified","Crivitz Sch Dist",93.96226415,"94%",1491825123.0746,225570.487852267
+74,"Cuba City","1246",3,"Unified","Cuba City Sch Dist",93.03977273,"93%",376036751.207362,275607.891212485
+75,"Cudahy","1253",1,"Unified","Cudahy Sch Dist",91.81731684,"91.8%",23107883.8089139,20145.6498726261
+76,"Cumberland","1260",11,"Unified","Cumberland Sch Dist",88.55291577,"88.6%",985667614.716901,203554.839255241
+77,"D C Everest Area","4970",9,"Unified","D C Everest Area Sch Dist",93.23748669,"93.2%",835386854.378351,157821.264480374
+78,"Darlington Community","1295",3,"Unified","Darlington Community Sch Dist",86.05927552,"86.1%",767219342.798403,325575.251833078
+79,"De Pere","1414",7,"Unified","De Pere Sch Dist",90.38376709,"90.4%",321925528.500161,135499.312841887
+80,"Deerfield Community","1309",2,"Unified","Deerfield Community Sch Dist",95.2,"95.2%",200669362.73937,152434.614890701
+81,"DeForest Area","1316",2,"Unified","De Forest Area Sch Dist",94.8854041,"94.9%",436423035.527033,154327.309193377
+82,"Delavan-Darien","1380",2,"Unified","Delavan-Darien Sch Dist",91.03291714,"91%",472414073.920572,152151.23090236
+83,"Denmark","1407",7,"Unified","Denmark Sch Dist",93.374613,"93.4%",713908352.873729,173971.394141907
+84,"Dodgeland","2744",6,"Unified","Dodgeland Sch Dist",88.10861423,"88.1%",422879801.015545,253561.341614424
+85,"Dodgeville","1428",3,"Unified","Dodgeville Sch Dist",96.78030303,"96.8%",910179068.235458,319013.57528161
+86,"Dover #1","1449",2,"Elementary","Dover #1 Sch Dist",92.04545455,"92%",54187849.1993777,35807.1688407052
+87,"Drummond Area","1491",12,"Unified","Drummond Area Sch Dist",87.61061947,"87.6%",3668443908.91801,284974.844489962
+88,"East Troy Community","1540",2,"Unified","East Troy Community Sch Dist",91.5913829,"91.6%",444922130.884526,116867.900339195
+89,"Eau Claire Area","1554",10,"Unified","Eau Claire Area Sch Dist",91.67266372,"91.7%",1011089451.08026,384030.03982739
+90,"Edgar","1561",9,"Unified","Edgar Sch Dist",90.60955519,"90.6%",420744993.646051,161955.055079583
+91,"Edgerton","1568",2,"Unified","Edgerton Sch Dist",92.29177444,"92.3%",442401635.309028,130310.582443425
+92,"Elcho","1582",9,"Unified","Elcho Sch Dist",36.44067797,"36.4%",1696762708.06608,214878.182421323
+93,"Eleva-Strum","1600",10,"Unified","Eleva-Strum Sch Dist",86.9955157,"87%",639934410.258359,200424.683848342
+94,"Elk Mound Area","1645",11,"Unified","Elk Mound Area Sch Dist",85.06550218,"85.1%",456820810.496043,182127.903736485
+95,"Elkhart Lake-Glenbeulah","1631",7,"Unified","Elkhart Lake-Glenbeulah Sch Dist",91.875,"91.9%",270617704.881326,220096.788893088
+96,"Elkhorn Area","1638",2,"Unified","Elkhorn Area Sch Dist",93.03400462,"93%",422117287.891029,161508.983721899
+97,"Ellsworth Community","1659",11,"Unified","Ellsworth Community Sch Dist",90.39900249,"90.4%",1180011584.79446,219043.733704402
+98,"Elmbrook","0714",1,"Unified","Elmbrook Sch Dist",92.36827033,"92.4%",159623147.306416,61169.4404872178
+99,"Elmwood","1666",11,"Unified","Elmwood Sch Dist",91.66666667,"91.7%",502459992.034313,193771.27414612
+100,"Evansville Community","1694",2,"Unified","Evansville Community Sch Dist",92.40356083,"92.4%",502366980.604727,199503.53452681
+101,"Fall Creek","1729",10,"Unified","Fall Creek Sch Dist",87.44292237,"87.4%",548488783.03572,205481.779927064
+102,"Fall River","1736",5,"Unified","Fall River Sch Dist",85.34653465,"85.3%",238347689.861578,156238.54912069
+103,"Fennimore Community","1813",3,"Unified","Fennimore Community Sch Dist",89.54489545,"89.5%",707466586.744189,278422.898982439
+104,"Flambeau","5757",10,"Unified","Flambeau Sch Dist",88.04123711,"88%",2120307114.54737,270930.278471552
+105,"Florence","1855",8,"Unified","Florence County Sch Dist",72.95918367,"73%",2654221275.38289,265564.52717341
+106,"Fond Du Lac","1862",6,"Unified","Fond du Lac Sch Dist",89.95412118,"90%",398998557.55809,163234.65532015
+107,"Fontana J8","1870",2,"Elementary","Fontana J8 Sch Dist",88.05970149,"88.1%",59100392.8001803,52320.8531235695
+108,"Fort Atkinson","1883",2,"Unified","Fort Atkinson Sch Dist",90.98918702,"91%",524698244.75368,189627.408128464
+109,"Fox Point J2","1890",1,"Elementary","Fox Point J2 Sch Dist",93.45454545,"93.5%",18356672.1062966,26522.4767653013
+110,"Franklin Public","1900",1,"Unified","Franklin Public Sch Dist",94.83013294,"94.8%",139938504.616544,63146.2553473975
+111,"Frederic","1939",11,"Unified","Frederic Sch Dist",89.51048951,"89.5%",807547086.124364,167832.333573064
+112,"Freedom Area","1953",6,"Unified","Freedom Area Sch Dist",100,"100%",383638467.399927,112752.030004281
+113,"Galesville-Ettrick-Trempealeau","2009",4,"Unified","Galesville-Ettrick-Trempealeau Sch Dist",94.93763756,"94.9%",905521867.007394,203086.073440254
+114,"Geneva J4","2044",2,"Elementary","Geneva J4 Sch Dist",82.23684211,"82.2%",29338463.5253233,27443.0390401291
+115,"Genoa City J2","2051",2,"Elementary","Genoa City J2 Sch Dist",87.36616702,"87.4%",86843573.1067241,54915.8253104647
+116,"Germantown","2058",1,"Unified","Germantown Sch Dist",91.40310523,"91.4%",279989746.019681,101235.084866329
+117,"Gibraltar Area","2114",7,"Unified","Gibraltar Area Sch Dist",89.39670932,"89.4%",723089835.362319,292888.95029887
+118,"Gilman","2135",10,"Unified","Gilman Sch Dist",86.15916955,"86.2%",1744011768.64678,262805.911658215
+119,"Gilmanton","2142",10,"Unified","Gilmanton Sch Dist",92.06349206,"92.1%",487187317.275099,147132.878000907
+120,"Glendale-River Hills","2184",1,"Elementary","Glendale-River Hills Sch Dist",94.18254764,"94.2%",31562406.7524318,41240.5295074735
+121,"Glenwood City","2198",11,"Unified","Glenwood City Sch Dist",70.83333333,"70.8%",599164836.691742,253579.482973114
+122,"Goodman-Armstrong Creek","2212",8,"Unified","Goodman-Armstrong Creek Sch Dist",84.21052632,"84.2%",843102862.33383,131343.414574326
+123,"Grafton","2217",1,"Unified","Grafton Sch Dist",90.61763319,"90.6%",105396933.275234,72725.0314030796
+124,"Granton Area","2226",10,"Unified","Granton Area Sch Dist",96.91629956,"96.9%",396789011.312484,136240.286994885
+125,"Green Bay Area","2289",7,"Unified","Green Bay Area Public Sch Dist",91.03491664,"91%",492711046.051298,177382.534632601
+126,"Green Lake","2310",6,"Unified","Green Lake Sch Dist",92.77978339,"92.8%",204901560.800861,132183.031867586
+127,"Greendale","2296",1,"Unified","Greendale Sch Dist",91.27013863,"91.3%",26928510.2812248,27887.4498497635
+128,"Greenfield","2303",1,"Unified","Greenfield Sch Dist",92.91023442,"92.9%",35664054.518382,62821.1829093263
+129,"Greenwood","2394",10,"Unified","Greenwood Sch Dist",90.57142857,"90.6%",763286530.922603,167580.109339568
+130,"Gresham","2415",8,"Unified","Gresham Sch Dist",92.40924092,"92.4%",288411817.680958,100642.963936296
+131,"Hamilton","2420",1,"Unified","Hamilton Sch Dist",95.45632589,"95.5%",185935491.792991,84329.4594900747
+132,"Hartford J1","2443",6,"Elementary","Hartford J1 Sch Dist",90.25674786,"90.3%",239658190.515574,135613.905851737
+133,"Hartford UHS","2436",6,"Secondary","Hartford UHS Sch Dist",92.42779079,"92.4%",887264696.917186,246802.223282361
+134,"Hartland-Lakeside J3","2460",1,"Elementary","Hartland-Lakeside J3 Sch Dist",90.53097345,"90.5%",46691837.1808707,44697.8935379563
+135,"Hayward Community","2478",12,"Unified","Hayward Community Sch Dist",90.70455891,"90.7%",3290433219.47236,316530.079591818
+136,"Herman-Neosho-Rubicon","2525",6,"Elementary","Herman-Neosho-Rubicon Sch Dist",82.13166144,"82.1%",402510808.320725,176172.73673828
+137,"Highland","2527",3,"Unified","Highland Sch Dist",100,"100%",353047431.405814,140703.321590459
+138,"Hilbert","2534",7,"Unified","Hilbert Sch Dist",87.79443255,"87.8%",267502366.604904,133794.45827709
+139,"Hillsboro","2541",4,"Unified","Hillsboro Sch Dist",96.81908549,"96.8%",691000239.118073,264356.408962471
+140,"Holmen","2562",4,"Unified","Holmen Sch Dist",94.51092612,"94.5%",503003380.221848,165910.046514923
+141,"Horicon","2576",6,"Unified","Horicon Sch Dist",98.61286255,"98.6%",258130299.821944,158374.786783562
+142,"Hortonville Area","2583",6,"Unified","Hortonville Area Sch Dist",91.75329175,"91.8%",555502554.546222,148013.399473373
+143,"Howard-Suamico","2604",7,"Unified","Howard-Suamico Sch Dist",91.68970283,"91.7%",281150134.805688,166787.765389049
+144,"Howards Grove","2605",7,"Unified","Howards Grove Sch Dist",93.08108108,"93.1%",257861378.293014,155987.43079323
+145,"Butternut","0840",12,"Unified",,-3,"No data",1254555482.55631,207608.956521607
+146,"Cochrane-Fountain City","1155",4,"Unified",,-3,"No data",809241029.949177,321718.11064491
+147,"De Soto Area","1421",4,"Unified",,-3,"No data",797300228.868472,241154.192554053
+148,"Erin","1687",6,"Elementary",,-3,"No data",117578612.449099,61409.8149595556
+149,"Gillett","2128",8,"Unified",,-3,"No data",573066750.303482,148855.357125796
+150,"Grantsburg","2233",11,"Unified",,-3,"No data",1397345679.0938,203465.653042679
+151,"Holy Hill Area","2570",6,"Elementary",,-3,"No data",127516982.911517,80369.5096039148
+152,"Hudson","2611",11,"Unified","Hudson Sch Dist",88.58355223,"88.6%",345069642.265571,165678.49783557
+153,"Hurley","2618",12,"Unified","Hurley Sch Dist",92.50457038,"92.5%",2614592080.14964,294791.656502479
+154,"Hustisford","2625",6,"Unified","Hustisford Sch Dist",96.89922481,"96.9%",251765389.059586,188785.521249667
+155,"Independence","2632",4,"Unified","Independence Sch Dist",100,"100%",477803677.681961,210579.648469997
+156,"Iola-Scandinavia","2639",5,"Unified","Iola-Scandinavia Sch Dist",88.40070299,"88.4%",681215677.531879,185659.16130289
+157,"Iowa-Grant","2646",3,"Unified","Iowa-Grant Sch Dist",95.06531205,"95.1%",796779596.320091,299509.343122321
+158,"Ithaca","2660",3,"Unified","Ithaca Sch Dist",89.97289973,"90%",428003126.199594,302483.332700516
+159,"Janesville","2695",2,"Unified","Janesville Sch Dist",96.02141507,"96%",408287764.149235,103006.472589389
+160,"Jefferson","2702",2,"Unified","Jefferson Sch Dist",93.24090121,"93.2%",513903251.638052,213952.527755597
+161,"Johnson Creek","2730",2,"Unified","Johnson Creek Sch Dist",96.35761589,"96.4%",206948445.840447,156851.739006831
+162,"Juda","2737",2,"Unified","Juda Sch Dist",69.89528796,"69.9%",272877235.696029,153409.556799583
+163,"Kaukauna Area","2758",6,"Unified","Kaukauna Area Sch Dist",92.72323631,"92.7%",351433172.78937,144241.518200373
+164,"Kenosha","2793",1,"Unified","Kenosha Sch Dist",84.95173493,"85%",409839560.730841,93423.2650835358
+165,"Kettle Moraine","1376",1,"Unified","Kettle Moraine Sch Dist",89.38223938,"89.4%",398828621.069488,168588.837398944
+166,"Kewaskum","2800",6,"Unified","Kewaskum Sch Dist",90.66115702,"90.7%",696041898.739292,186903.538599056
+167,"Kewaunee","2814",7,"Unified","Kewaunee Sch Dist",92.54947614,"92.5%",655934075.390342,133668.562105586
+168,"Kickapoo Area","5960",3,"Unified","Kickapoo Area Sch Dist",87.68577495,"87.7%",730442904.455067,288733.778820255
+169,"Kiel Area","2828",7,"Unified","Kiel Area Sch Dist",91.86241611,"91.9%",544161046.941735,174976.636802863
+170,"Kimberly Area","2835",6,"Unified","Kimberly Area Sch Dist",93.37478143,"93.4%",67666413.1585688,43990.690101613
+171,"Kohler","2842",7,"Unified","Kohler Sch Dist",94.42231076,"94.4%",53027239.5698247,64170.6821700485
+172,"La Crosse","2849",4,"Unified","La Crosse Sch Dist",92.4674886,"92.5%",479039713.059349,215194.497885469
+173,"La Farge","2863",4,"Unified","La Farge Sch Dist",86.45418327,"86.5%",351307868.796764,144623.481122254
+174,"Lac du Flambeau #1","1848",9,"Elementary","Lac du Flambeau #1 Sch Dist",89.0625,"89.1%",685290258.820165,121779.26649546
+175,"Ladysmith","2856",10,"Unified","Ladysmith Sch Dist",92.22222222,"92.2%",576985010.632242,165142.152964799
+176,"Lake Country","3862",1,"Elementary","Lake Country Sch Dist",94.79166667,"94.8%",43333332.8652677,45975.7579765083
+177,"Lake Geneva-Genoa City UHS","2884",2,"Secondary","Lake Geneva-Genoa City UHS Sch Dist",92.81934996,"92.8%",458316463.998653,131962.058073252
+178,"Lake Geneva J1","2885",2,"Elementary","Lake Geneva J1 Sch Dist",87.02997275,"87%",267999474.044946,125223.097120484
+179,"Lake Holcombe","2891",10,"Unified","Lake Holcombe Sch Dist",90.63670412,"90.6%",948323000.623965,185481.112395257
+180,"Lake Mills Area","2898",2,"Unified","Lake Mills Area Sch Dist",92.28210246,"92.3%",378072623.563534,181747.858535362
+181,"Lakeland UHS","3647",9,"Secondary","Lakeland UHS Sch Dist",95.95959596,"96%",4032159533.39622,333685.508977377
+182,"Lancaster Community","2912",3,"Unified","Lancaster Community Sch Dist",94.64646465,"94.6%",703120983.697842,343061.719092151
+183,"Laona","2940",8,"Unified","Laona Sch Dist",90.97222222,"91%",1288535782.21075,192860.806749751
+184,"Lena","2961",8,"Unified","Lena Sch Dist",92.61904762,"92.6%",449213503.065979,110567.806085193
+185,"Linn J4","3087",2,"Elementary","Linn J4 Sch Dist",85.86956522,"85.9%",74133489.9813444,45528.5997853198
+186,"Linn J6","3094",2,"Elementary","Linn J6 Sch Dist",85.13513514,"85.1%",80656428.342283,52212.8468174065
+187,"Little Chute Area","3129",6,"Unified","Little Chute Area Sch Dist",73.67214368,"73.7%",16037384.7255167,19889.1497086711
+188,"Lodi","3150",5,"Unified","Lodi Sch Dist",93.01861702,"93%",470100879.668298,140353.676862019
+189,"Lomira","3171",6,"Unified","Lomira Sch Dist",92.30769231,"92.3%",365577606.084946,166549.916189479
+190,"Luck","3213",11,"Unified","Luck Sch Dist",90.05102041,"90.1%",578237032.274696,217386.786653953
+191,"Luxemburg-Casco","3220",7,"Unified","Luxemburg-Casco Sch Dist",94.75262369,"94.8%",875311676.517396,163727.19326605
+192,"Madison Metropolitan","3269",2,"Unified","Madison Metropolitan Sch Dist",91.45032747,"91.5%",468699187.884639,318723.970180035
+193,"Manawa","3276",6,"Unified","Manawa Sch Dist",93.05555556,"93.1%",559481514.781266,148258.721600138
+194,"Manitowoc","3290",7,"Unified","Manitowoc Sch Dist",93.27131112,"93.3%",465093234.132208,151006.676714844
+195,"Maple","3297",12,"Unified","Maple Sch Dist",90.1614143,"90.2%",2444557515.1381,275186.233710636
+196,"Maple Dale-Indian Hill","1897",1,"Elementary","Maple Dale-Indian Hill Sch Dist",93.37899543,"93.4%",30354222.9622123,25638.5852048184
+197,"Marathon City","3304",9,"Unified","Marathon City Sch Dist",92.13333333,"92.1%",537764853.96357,160789.535492918
+198,"Marinette","3311",8,"Unified","Marinette Sch Dist",89.75966562,"89.8%",506928027.090593,200823.894830998
+199,"Marion","3318",8,"Unified","Marion Sch Dist",89.03508772,"89%",651391872.242117,192122.53290341
+200,"Markesan","3325",6,"Unified","Markesan Sch Dist",89.91060026,"89.9%",882083223.033764,264980.469735521
+201,"Marshall","3332",2,"Unified","Marshall Sch Dist",97.44160178,"97.4%",272041750.492606,102370.540507509
+202,"Marshfield Unified","3339",5,"Unified","Marshfield Unified Sch Dist",94.92156341,"94.9%",967322241.846691,225587.685663947
+203,"Mauston","3360",5,"Unified","Mauston Sch Dist",87.1886121,"87.2%",1033442474.89564,230505.485099176
+204,"Mcfarland","3381",2,"Unified","McFarland Sch Dist",88.75715454,"88.8%",112761436.406989,111709.052284103
+205,"Medford Area Public","3409",10,"Unified","Medford Area Public Sch Dist",92.14387127,"92.1%",1826455918.80747,234428.374084844
+206,"Melrose-Mindoro","3428",4,"Unified","Melrose-Mindoro Sch Dist",94.4591029,"94.5%",955984129.065237,237961.845422144
+207,"Menasha Joint","3430",6,"Unified","Menasha Joint Sch Dist",93.02251824,"93%",46086606.1392171,35363.7828667162
+208,"Menominee Indian","3434",8,"Unified","Menominee Indian Sch Dist",98.77300613,"98.8%",1903903106.77742,197897.755705275
+209,"Menomonee Falls","3437",1,"Unified","Menomonee Falls Sch Dist",95.25773196,"95.3%",109462955.793903,55810.8515321711
+210,"Mequon-Thiensville","3479",1,"Unified","Mequon-Thiensville Sch Dist",95.43701799,"95.4%",228051284.557428,66268.7071641611
+211,"Mercer","3484",12,"Unified","Mercer Sch Dist",88.14814815,"88.1%",997733823.836307,143193.98185052
+212,"Merrill Area","3500",9,"Unified","Merrill Area Sch Dist",90.09051929,"90.1%",2829539436.45693,280064.373456713
+213,"Merton Community","3528",1,"Elementary","Merton Community Sch Dist",92.45901639,"92.5%",62350241.5729987,50177.4950309383
+214,"Middleton-Cross Plains Area","3549",2,"Unified","Middleton-Cross Plains Area Sch Dist",95.73531435,"95.7%",379041570.096345,198955.011413252
+215,"Milton","3612",2,"Unified","Milton Sch Dist",93.91734575,"93.9%",582975128.421,145411.459246191
+216,"Mineral Point Unified","3633",3,"Unified","Mineral Point Unified Sch Dist",90.8974359,"90.9%",649144532.367233,282610.087334387
+217,"Mishicot","3661",7,"Unified","Mishicot Sch Dist",92.64069264,"92.6%",510054092.522614,119222.792893241
+218,"Mondovi","3668",10,"Unified","Mondovi Sch Dist",94.53044376,"94.5%",953320627.822122,209689.923506829
+219,"Monona Grove","3675",2,"Unified","Monona Grove Sch Dist",93.20536258,"93.2%",116126350.286667,108205.763852009
+220,"Monroe","3682",2,"Unified","Monroe Sch Dist",92.44264507,"92.4%",765350687.890575,257940.142901745
+221,"Montello","3689",5,"Unified","Montello Sch Dist",85.24305556,"85.2%",884528439.119185,200183.247743908
+222,"Monticello","3696",2,"Unified","Monticello Sch Dist",94.96644295,"95%",311187613.470864,169002.403086054
+223,"Mosinee","3787",9,"Unified","Mosinee Sch Dist",91.12697603,"91.1%",1204684779.40619,225331.770036764
+224,"Mount Horeb Area","3794",2,"Unified","Mount Horeb Area Sch Dist",91.20466861,"91.2%",697511877.526539,214370.493375028
+225,"Mukwonago","3822",1,"Unified","Mukwonago Sch Dist",93.67747099,"93.7%",419703183.916592,141314.151589922
+226,"Muskego-Norway","3857",1,"Unified","Muskego-Norway Sch Dist",94.75451112,"94.8%",209124817.631581,69020.5301376472
+227,"Necedah Area","3871",5,"Unified","Necedah Area Sch Dist",83.99412628,"84%",1151600637.67711,211559.160775037
+228,"Neenah Joint","3892",6,"Unified","Neenah Joint Sch Dist",89.83024927,"89.8%",296853491.261539,107917.781610555
+229,"Neillsville","3899",10,"Unified","Neillsville Sch Dist",88.21470245,"88.2%",1393147890.99209,203634.280669418
+230,"Nekoosa","3906",5,"Unified","Nekoosa Sch Dist",89.91270611,"89.9%",821499808.744517,160918.043863438
+231,"New Auburn","3920",10,"Unified","New Auburn Sch Dist",94.63087248,"94.6%",457422736.466872,186054.387092121
+232,"New Berlin","3925",1,"Unified","New Berlin Sch Dist",88.43325162,"88.4%",167628994.142767,56419.4989557178
+233,"New Glarus","3934",2,"Unified","New Glarus Sch Dist",88.79581152,"88.8%",371334921.318344,156521.021401397
+234,"New Holstein","3941",7,"Unified","New Holstein Sch Dist",92.08984375,"92.1%",648495569.57781,170845.717138418
+235,"New Lisbon","3948",5,"Unified","New Lisbon Sch Dist",94.71890971,"94.7%",599014584.182001,199868.730783849
+236,"New London","3955",6,"Unified","New London Sch Dist",88.74862788,"88.7%",773749346.751063,243718.806463096
+237,"New Richmond","3962",11,"Unified","New Richmond Sch Dist",92.01125176,"92%",791079672.006847,251752.521185662
+238,"Niagara","3969",8,"Unified","Niagara Sch Dist",91.18329466,"91.2%",378794438.934986,97139.4364028817
+239,"Nicolet UHS","2177",1,"Secondary","Nicolet Union High Sch Sch Dist",98.40225564,"98.4%",80273306.3344162,59340.5408153713
+240,"Norris","3976",1,"Unified","Norris Sch Dist",84.93150685,"84.9%",5986413.34518741,14171.9586863404
+241,"North Cape","4690",2,"Elementary","North Cape Sch Dist",96.53465347,"96.5%",98278227.320303,79412.5485006254
+242,"North Crawford","2016",3,"Unified","North Crawford Sch Dist",74.59459459,"74.6%",796881051.064836,332624.407307861
+243,"North Fond Du Lac","3983",6,"Unified","North Fond du Lac Sch Dist",93.19264806,"93.2%",141291202.655322,81542.5086848122
+244,"North Lakeland","0616",9,"Elementary","North Lakeland Sch Dist",92,"92%",1442323937.90583,192150.220156888
+245,"Northern Ozaukee","1945",1,"Unified","Northern Ozaukee Sch Dist",86.90807799,"86.9%",307212635.441706,119382.030410893
+246,"Northland Pines","1526",9,"Unified","Northland Pines Sch Dist",88.00856531,"88%",2558403817.60847,284640.973782933
+247,"Northwood","3654",12,"Unified","Northwood Sch Dist",87.65432099,"87.7%",2261832382.33525,207263.770992384
+248,"Norwalk-Ontario-Wilton","3990",4,"Unified","Norwalk-Ontario-Wilton Sch Dist",95.01718213,"95%",735149456.654022,203241.670908135
+249,"Norway J7","4011",2,"Elementary","Norway J7 Sch Dist",100,"100%",41840443.2819719,31799.0205497151
+250,"Oak Creek-Franklin Joint","4018",1,"Unified","Oak Creek-Franklin Joint Sch Dist",92.14907591,"92.1%",159830667.869449,70405.7788266741
+251,"Oakfield","4025",6,"Unified","Oakfield Sch Dist",92.43856333,"92.4%",306249502.001744,136550.870491269
+252,"Oconomowoc Area","4060",1,"Unified","Oconomowoc Area Sch Dist",93.6909785,"93.7%",587832436.18148,191687.163077144
+253,"Oconto Falls Public","4074",8,"Unified","Oconto Falls Public Sch Dist",92.46615656,"92.5%",920570866.913697,248438.65376897
+254,"Oconto Unified","4067",8,"Unified","Oconto Unified Sch Dist",91.58878505,"91.6%",510606394.859121,161880.450303463
+255,"Omro","4088",6,"Unified","Omro Sch Dist",93.09090909,"93.1%",488849136.492511,211636.723331125
+256,"Onalaska","4095",4,"Unified","Onalaska Sch Dist",93.28383395,"93.3%",70828013.4508696,66284.8765940111
+257,"Oostburg","4137",7,"Unified","Oostburg Sch Dist",92.37623762,"92.4%",202030310.327426,130304.375632787
+258,"Oregon","4144",2,"Unified","Oregon Sch Dist",95.44987147,"95.4%",428771071.722719,187087.84462534
+259,"Osceola","4165",11,"Unified","Osceola Sch Dist",51.79726815,"51.8%",590659661.702437,195408.39975565
+260,"Oshkosh Area","4179",6,"Unified","Oshkosh Area Sch Dist",90.60211999,"90.6%",527923985.38774,266328.315117652
+261,"Owen-Withee","4207",10,"Unified","Owen-Withee Sch Dist",51.40664962,"51.4%",818163198.944683,205834.247150861
+262,"Palmyra-Eagle Area","4221",2,"Unified","Palmyra-Eagle Area Sch Dist",88.75219684,"88.8%",388873574.182007,138110.892649808
+263,"Pardeeville Area","4228",5,"Unified","Pardeeville Area Sch Dist",78.89273356,"78.9%",456162825.910608,170570.809669907
+264,"Paris J1","4235",2,"Elementary","Paris J1 Sch Dist",89.96138996,"90%",176744447.317528,58362.7873783418
+265,"Parkview","4151",2,"Unified","Parkview Sch Dist",94.13875598,"94.1%",596383589.882132,192099.423147498
+266,"Pecatonica Area","0490",3,"Unified","Pecatonica Area Sch Dist",92.11195929,"92.1%",551609630.328032,201917.19410964
+267,"Pepin Area","4270",11,"Unified","Pepin Area Sch Dist",92.94605809,"92.9%",413225797.023232,117027.990337992
+268,"Peshtigo","4305",8,"Unified","Peshtigo Sch Dist",87.92007266,"87.9%",457710082.315785,136665.006528606
+269,"Pewaukee","4312",1,"Unified","Pewaukee Sch Dist",93.6529372,"93.7%",76860217.8456233,49914.6928182267
+270,"Phillips","4347",12,"Unified","Phillips Sch Dist",90.14925373,"90.1%",3111814255.09046,308565.293607396
+271,"Pittsville","4368",5,"Unified","Pittsville Sch Dist",89.29219601,"89.3%",1863772690.79032,250064.05699293
+272,"Platteville","4389",3,"Unified","Platteville Sch Dist",88.9931207,"89%",704341391.873152,228439.768754321
+273,"Plum City","4459",11,"Unified","Plum City Sch Dist",94.56066946,"94.6%",423775249.357256,162334.953936951
+274,"Plymouth Joint","4473",7,"Unified","Plymouth Joint Sch Dist",88.68821293,"88.7%",623503293.943148,248176.629334184
+275,"Port Edwards","4508",5,"Unified","Port Edwards Sch Dist",90.88785047,"90.9%",308971870.567073,104743.362395928
+276,"Portage Community","4501",5,"Unified","Portage Community Sch Dist",90.22201228,"90.2%",1041796073.82176,253389.615331594
+277,"Potosi","4529",3,"Unified","Potosi Sch Dist",89.27444795,"89.3%",311883950.897347,228302.358926141
+278,"Poynette","4536",5,"Unified","Poynette Sch Dist",83.59840954,"83.6%",489352482.789868,148810.36085493
+279,"Prairie Du Chien Area","4543",3,"Unified","Prairie du Chien Area Sch Dist",86.5404837,"86.5%",442359214.711266,176180.922892832
+280,"Prairie Farm Public","4557",11,"Unified","Prairie Farm Public Sch Dist",98.93048128,"98.9%",463098578.323963,209340.68755575
+281,"Prescott","4578",11,"Unified","Prescott Sch Dist",96.16919393,"96.2%",374770358.772274,119334.3301154
+282,"Princeton","4606",5,"Unified","Princeton Sch Dist",91.15853659,"91.2%",451807893.066714,161222.561415987
+283,"Racine Unified","4620",1,"Unified","Racine Unified Sch Dist",85.33114395,"85.3%",485378273.372829,89452.3990133973
+284,"Randall J1","4627",2,"Elementary","Randall J1 Sch Dist",93.57945425,"93.6%",83061815.0454008,73971.5321708666
+285,"Randolph","4634",5,"Unified","Randolph Sch Dist",94.32485323,"94.3%",296627825.173829,188384.468646887
+286,"Random Lake","4641",7,"Unified","Random Lake Sch Dist",91.83381089,"91.8%",451270479.266407,157324.74652467
+287,"Raymond #14","4686",2,"Elementary","Raymond #14 Sch Dist",97.19626168,"97.2%",149049522.233513,55954.6847577832
+288,"Reedsburg","4753",5,"Unified","Reedsburg Sch Dist",88.81777108,"88.8%",1188554835.87624,323568.892086296
+289,"Reedsville","4760",7,"Unified","Reedsville Sch Dist",93.33333333,"93.3%",561980465.163405,168819.221983568
+290,"Rhinelander","4781",9,"Unified","Rhinelander Sch Dist",93.70199693,"93.7%",2037741136.03156,331441.438285107
+291,"Rib Lake","4795",9,"Unified","Rib Lake Sch Dist",86.72376874,"86.7%",1481338246.5835,218179.421342784
+292,"Rice Lake Area","4802",11,"Unified","Rice Lake Area Sch Dist",91.79304193,"91.8%",1248540678.49088,242360.550110912
+293,"Richland","4851",3,"Unified","Richland Sch Dist",81.14075437,"81.1%",1282291649.53569,424538.368086986
+294,"Richmond","3122",1,"Elementary","Richmond Sch Dist",91.89189189,"91.9%",31546692.4092715,27453.0686685811
+295,"Rio Community","4865",5,"Unified","Rio Community Sch Dist",91.52542373,"91.5%",370992356.241321,153749.525377865
+296,"Mellen","3427",12,"Unified",,-3,"No data",1092736234.39935,152813.593235298
+297,"Minocqua J1","3640",9,"Elementary",,-3,"No data",1334623515.92731,190677.2650375
+298,"North Lake","3514",1,"Elementary",,-3,"No data",61198558.4188667,53124.4499078475
+299,"Osseo-Fairchild","4186",10,"Unified",,-3,"No data",1473998051.98375,349276.753201481
+300,"Phelps","4330",9,"Unified",,-3,"No data",582567583.651353,116571.465829883
+301,"Port Washington-Saukville","4515",1,"Unified",,-3,"No data",152791229.846822,93827.2232637566
+302,"Prentice","4571",9,"Unified",,-3,"No data",2210090005.2916,267678.311630966
+303,"Ripon Area","4872",6,"Unified","Ripon Area Sch Dist",91.75118323,"91.8%",560042272.378436,237021.009261749
+304,"River Falls","4893",11,"Unified","River Falls Sch Dist",87.90960452,"87.9%",737102424.419881,195972.678325558
+305,"River Ridge","4904",3,"Unified","River Ridge Sch Dist",94.81765835,"94.8%",1014137101.42366,322243.255106828
+306,"River Valley","5523",3,"Unified","River Valley Sch Dist",99.5507637,"99.6%",1457545685.36268,424571.817735589
+307,"Riverdale","3850",3,"Unified","Riverdale Sch Dist",87.26708075,"87.3%",969225034.29063,324270.835124055
+308,"Rosendale-Brandon","4956",6,"Unified","Rosendale-Brandon Sch Dist",91.60621762,"91.6%",642306408.192735,240586.498175822
+309,"Rosholt","4963",5,"Unified","Rosholt Sch Dist",92.82407407,"92.8%",792149710.034761,194984.691841377
+310,"Royall","1673",4,"Unified","Royall Sch Dist",94.20600858,"94.2%",590737680.938335,226726.885525539
+311,"Saint Croix Central","2422",11,"Unified","Saint Croix Central Sch Dist",85.64905414,"85.6%",441144679.371919,169654.644963982
+312,"Saint Croix Falls","5019",11,"Unified","Saint Croix Falls Sch Dist",89.66789668,"89.7%",787963682.217763,279062.355807236
+313,"Saint Francis","5026",1,"Unified","Saint Francis Sch Dist",92.03373946,"92%",12412241.2610303,19854.2463182727
+314,"Sauk Prairie","5100",5,"Unified","Sauk Prairie Sch Dist",91.60502959,"91.6%",1154216273.02588,313887.421763638
+315,"Sevastopol","5130",7,"Unified","Sevastopol Sch Dist",81.81818182,"81.8%",606064294.841983,132338.684922963
+316,"Seymour Community","5138",7,"Unified","Seymour Community Sch Dist",89.9948427,"90%",850403590.0916,188501.836795711
+317,"Sharon J11","5258",2,"Elementary","Sharon J11 Sch Dist",93.33333333,"93.3%",92890501.0086919,57222.5525969457
+318,"Shawano","5264",8,"Unified","Shawano Sch Dist",91.06120652,"91.1%",859846588.154363,242161.987306584
+319,"Sheboygan Area","5271",7,"Unified","Sheboygan Area Sch Dist",92.39380236,"92.4%",254041306.399794,252515.978089857
+320,"Sheboygan Falls","5278",7,"Unified","Sheboygan Falls Sch Dist",97.09412508,"97.1%",275219747.217987,139804.167390916
+321,"Shiocton","5348",6,"Unified","Shiocton Sch Dist",90.30054645,"90.3%",555467414.341164,160200.983503591
+322,"Shorewood","5355",1,"Unified","Shorewood Sch Dist",89.16155419,"89.2%",7926560.17032085,12483.3286048836
+323,"Shullsburg","5362",3,"Unified","Shullsburg Sch Dist",87.38170347,"87.4%",457343634.102131,231121.541845933
+324,"Silver Lake J1","5369",2,"Elementary","Silver Lake J1 Sch Dist",91.14219114,"91.1%",25040113.1418689,26654.2644218598
+325,"Siren","5376",11,"Unified","Siren Sch Dist",92.21967963,"92.2%",587841665.124099,136645.319209907
+326,"Slinger","5390",6,"Unified","Slinger Sch Dist",90.58858679,"90.6%",385816413.474999,120067.865529953
+327,"Solon Springs","5397",12,"Unified","Solon Springs Sch Dist",97.72727273,"97.7%",865556400.599993,144076.746459253
+328,"Somerset","5432",11,"Unified","Somerset Sch Dist",96.54705484,"96.5%",309166555.818739,223390.115796905
+329,"South Milwaukee","5439",1,"Unified","South Milwaukee Sch Dist",91.4764622,"91.5%",23271203.0578441,21399.2140283701
+330,"South Shore","4522",12,"Unified","South Shore Sch Dist",78.28282828,"78.3%",1603454986.64564,226111.083844724
+331,"Southern Door County","5457",7,"Unified","Southern Door County Sch Dist",89.24302789,"89.2%",1009785181.00983,203955.316576148
+332,"Southwestern Wisconsin","2485",3,"Unified","Southwestern Wisconsin Sch Dist",89.70037453,"89.7%",272890290.462087,144208.62579833
+333,"Sparta Area","5460",4,"Unified","Sparta Area Sch Dist",89.31506849,"89.3%",1449801116.97911,293549.200872139
+334,"Spencer","5467",10,"Unified","Spencer Sch Dist",94.61172742,"94.6%",412242912.638367,109963.543748448
+335,"Spring Valley","5586",11,"Unified","Spring Valley Sch Dist",86.07954545,"86.1%",562937147.338767,250458.812510465
+336,"Stanley-Boyd Area","5593",10,"Unified","Stanley-Boyd Area Sch Dist",89.16666667,"89.2%",967167558.369915,218134.264746255
+337,"Stevens Point Area Public","5607",5,"Unified","Stevens Point Area Public Sch Dist",91.03645461,"91%",1962312043.42791,298798.448982451
+338,"Stockbridge","5614",7,"Unified","Stockbridge Sch Dist",86.60287081,"86.6%",137030352.829621,140704.16739168
+339,"Stone Bank","3542",1,"Elementary","Stone Bank Sch Dist",91.90140845,"91.9%",54439824.7620119,48722.437228085
+340,"Stoughton Area","5621",2,"Unified","Stoughton Area Sch Dist",94.38483548,"94.4%",545037473.370746,195470.780685657
+341,"Stratford","5628",9,"Unified","Stratford Sch Dist",92.50614251,"92.5%",596721042.372483,170122.981324775
+342,"Sturgeon Bay","5642",7,"Unified","Sturgeon Bay Sch Dist",86.82972719,"86.8%",45831040.2762245,84982.8978990567
+343,"Sun Prairie Area","5656",2,"Unified","Sun Prairie Area Sch Dist",91.90413736,"91.9%",391501369.943419,128690.099398667
+344,"Superior","5663",12,"Unified","Superior Sch Dist",93.33175131,"93.3%",2217271847.94486,219110.06756786
+345,"Swallow","3510",1,"Elementary","Swallow Sch Dist",92.40780911,"92.4%",29024897.3961282,40365.3207961605
+346,"Thorp","5726",10,"Unified","Thorp Sch Dist",90.41353383,"90.4%",809885766.766227,202061.046649051
+347,"Three Lakes","5733",9,"Unified","Three Lakes Sch Dist",87.39130435,"87.4%",1617619246.39422,259069.398632956
+348,"Tigerton","5740",8,"Unified","Tigerton Sch Dist",94.50549451,"94.5%",499048777.124522,140241.408323523
+349,"Tomah Area","5747",4,"Unified","Tomah Area Sch Dist",90.35985474,"90.4%",2339355489.38505,344689.160225919
+350,"Tomahawk","5754",9,"Unified","Tomahawk Sch Dist",83.95061728,"84%",2239460550.9102,293033.439638675
+351,"Tomorrow River","0126",5,"Unified","Tomorrow River Sch Dist",75.45064378,"75.5%",505998033.272531,149522.972322634
+352,"Trevor-Wilmot Consolidated","5780",2,"Elementary","Trevor-Wilmot Consolidated Sch Dist",90.81196581,"90.8%",51369448.962324,41075.0147606395
+353,"Tri-County Area","4375",5,"Unified","Tri-County Area Sch Dist",43.25744308,"43.3%",1107152029.00005,234515.491535712
+354,"Turtle Lake","5810",11,"Unified","Turtle Lake Sch Dist",91.10629067,"91.1%",594178970.612366,203585.136870242
+355,"Twin Lakes #4","5817",2,"Elementary","Twin Lakes #4 Sch Dist",84.92647059,"84.9%",20293900.8370876,29288.4666794779
+356,"Two Rivers Public","5824",7,"Unified","Two Rivers Public Sch Dist",95.58541267,"95.6%",145776161.971545,67442.1774337604
+357,"Union Grove J1","5859",2,"Elementary","Union Grove J1 Sch Dist",97.66146993,"97.7%",52025463.7439401,35722.1377237931
+358,"Union Grove UHS","5852",2,"Secondary","Union Grove UHS Sch Dist",93.1166348,"93.1%",401688829.423098,98874.9197427256
+359,"Unity","0238",11,"Unified","Unity Sch Dist",87.06986444,"87.1%",774725911.581728,207785.424173297
+360,"Valders Area","5866",7,"Unified","Valders Area Sch Dist",94.77459016,"94.8%",592788191.916046,161437.355077289
+361,"Viroqua Area","5985",4,"Unified","Viroqua Area Sch Dist",84.97109827,"85%",929697229.710431,283334.226888564
+362,"Wabeno Area","5992",8,"Unified","Wabeno Area Sch Dist",81.81818182,"81.8%",1841659323.55594,242188.1513462
+363,"Walworth J1","6022",2,"Elementary","Walworth J1 Sch Dist",88.60465116,"88.6%",130739784.87344,76034.1826026236
+364,"Washburn","6027",12,"Unified","Washburn Sch Dist",80.63973064,"80.6%",1022486616.86953,168766.000500057
+365,"Washington Island","6069",7,"Unified","Washington Island Sch Dist",91.93548387,"91.9%",133208234.99288,125113.241604725
+366,"Washington-Caldwell","6104",2,"Elementary","Washington-Caldwell Sch Dist",97.39583333,"97.4%",45487918.1191777,56066.9413784699
+367,"Waterford Graded J1","6113",2,"Elementary","Waterford Graded J1 Sch Dist",94.67576792,"94.7%",231726651.619139,153955.504963205
+368,"Waterford UHS","6083",2,"Secondary","Waterford UHS Sch Dist",99.58333333,"99.6%",417337884.360173,127820.828076094
+369,"Waterloo","6118",2,"Unified","Waterloo Sch Dist",93.12101911,"93.1%",408861014.762298,143357.961401364
+370,"Watertown Unified","6125",2,"Unified","Watertown Unified Sch Dist",89.99678353,"90%",795708724.667114,289063.69079437
+371,"Waukesha","6174",1,"Unified","Waukesha Sch Dist",91.3945712,"91.4%",341744416.175524,107508.013275958
+372,"Waunakee Community","6181",2,"Unified","Waunakee Community Sch Dist",93.79247848,"93.8%",277158399.872033,140814.403768006
+373,"Waupaca","6195",5,"Unified","Waupaca Sch Dist",88.24951644,"88.2%",804689043.720713,172266.175684998
+374,"Waupun","6216",6,"Unified","Waupun Sch Dist",92.00206398,"92%",874004884.036713,251226.708143253
+375,"Wausau","6223",9,"Unified","Wausau Sch Dist",93.15086433,"93.2%",1341582927.74861,215254.223365392
+376,"Wausaukee","6230",8,"Unified","Wausaukee Sch Dist",93.75,"93.8%",2214463470.86509,309135.854373926
+377,"Wautoma Area","6237",5,"Unified","Wautoma Area Sch Dist",89.26123382,"89.3%",881237820.022666,201392.676345664
+378,"Wauwatosa","6244",1,"Unified","Wauwatosa Sch Dist",86.89277251,"86.9%",64190839.4495538,63414.591721927
+379,"Webster","6293",11,"Unified","Webster Sch Dist",92.20183486,"92.2%",2624353959.34251,297539.391562148
+380,"West Allis-West Milwaukee","6300",1,"Unified","West Allis-West Milwaukee Sch Dist",86.95516812,"87%",66807798.70675,55994.4726215382
+381,"West Bend","6307",6,"Unified","West Bend Sch Dist",91.73799127,"91.7%",492873908.054892,118840.255960637
+382,"West De Pere","6328",7,"Unified","West De Pere Sch Dist",93.55474247,"93.6%",237882400.952351,95794.9757648227
+383,"West Salem","6370",4,"Unified","West Salem Sch Dist",93.02979202,"93%",471855437.984842,168773.494521328
+384,"Westby Area","6321",4,"Unified","Westby Area Sch Dist",92.33067729,"92.3%",843404236.252081,362229.690921099
+385,"Westfield","6335",5,"Unified","Westfield Sch Dist",88.07251908,"88.1%",1433120869.25316,350564.819074813
+386,"Weston","6354",3,"Unified","Weston Sch Dist",93.75,"93.8%",486361743.362599,220229.917423239
+387,"Weyauwega-Fremont","6384",6,"Unified","Weyauwega-Fremont Sch Dist",90.13398295,"90.1%",762373466.151663,219505.879733079
+388,"Wheatland J1","6412",2,"Elementary","Wheatland J1 Sch Dist",86.863711,"86.9%",150803765.683574,69349.9654492253
+389,"White Lake","6440",8,"Unified","White Lake Sch Dist",48.68421053,"48.7%",992235696.04894,166094.678342817
+390,"Whitefish Bay","6419",1,"Unified","Whitefish Bay Sch Dist",95.62764457,"95.6%",10236399.1253186,17330.9369190001
+391,"Whitehall","6426",4,"Unified","Whitehall Sch Dist",83.29113924,"83.3%",709330473.617146,263382.646471966
+392,"Whitewater Unified","6461",2,"Unified","Whitewater Unified Sch Dist",87.39240506,"87.4%",658246911.48664,168065.827751475
+393,"Whitnall","6470",1,"Unified","Whitnall Sch Dist",90.26369168,"90.3%",39358980.1663222,40702.028651599
+394,"Wild Rose","6475",5,"Unified","Wild Rose Sch Dist",85.9375,"85.9%",725791346.672212,230261.220654198
+395,"Wilmot UHS","6545",2,"Secondary","Wilmot UHS Sch Dist",93.92324094,"93.9%",230749822.34017,71832.8659313114
+396,"Winneconne Community","6608",6,"Unified","Winneconne Community Sch Dist",90.46822742,"90.5%",651740687.901073,191462.952029504
+397,"Wisconsin Dells","6678",5,"Unified","Wisconsin Dells Sch Dist",83.46368715,"83.5%",924545029.928048,233854.961578705
+398,"Wisconsin Heights","0469",2,"Unified","Wisconsin Heights Sch Dist",93.33333333,"93.3%",508131813.516882,217039.217969764
+399,"Wisconsin Rapids","6685",5,"Unified","Wisconsin Rapids Sch Dist",91.01809462,"91%",1200863549.47165,219434.456214337
+400,"Wittenberg-Birnamwood","6692",8,"Unified","Wittenberg-Birnamwood Sch Dist",93.35106383,"93.4%",1297221463.53344,193092.297510518
+401,"Wonewoc-Union Center","6713",4,"Unified","Wonewoc-Union Center Sch Dist",90.25787966,"90.3%",463614686.984382,287850.101451206
+402,"Woodruff J1","6720",9,"Elementary","Woodruff J1 Sch Dist",93.44894027,"93.4%",569921814.05826,123005.834954475
+403,"Wrightstown Community","6734",7,"Unified","Wrightstown Community Sch Dist",94.25019425,"94.3%",405167181.477155,153456.325695872
+404,"Yorkville J2","6748",2,"Elementary","Yorkville J2 Sch Dist",96.49890591,"96.5%",137061257.663197,61765.90790948
+405,"Abbotsford","0007",10,"Unified","Abbotsford Sch Dist",86.20689655,"86.2%",222348810.386512,113939.445943304
+406,"Clear Lake","1127",11,"Unified","Clear Lake Sch Dist",90.50179211,"90.5%",562393155.29528,174594.360805443
+407,"Milwaukee","3619",1,"Unified","Milwaukee Sch Dist",79.21088488,"79.2%",468706066.617636,240858.573890624
+408,"Shell Lake","5306",11,"Unified","Shell Lake Sch Dist",89.32496075,"89.3%",829298501.495211,186478.837274263
+409,"Spooner Area","5474",11,"Unified","Spooner Area Sch Dist",91.66666667,"91.7%",2797929783.964,358481.556742396
+410,"Pulaski Community","4613",7,"Unified","Pulaski Community Sch Dist",92.43081932,"92.4%",942630204.034189,290408.670919375
+411,"Menomonie Area","3444",11,"Unified","Menomonie Area Sch Dist",91.93251534,"91.9%",1275156443.4107,360502.900661705
+412,"Wauzeka-Steuben","6251",3,"Unified","Wauzeka-Steuben Sch Dist",90.46052632,"90.5%",461034116.979047,204385.463260036
+413,"Loyal","3206",10,"Unified","Loyal Sch Dist",93.83697813,"93.8%",579163630.15033,180434.699104675
+414,"Verona Area","5901",2,"Unified","Verona Area Sch Dist",89.85853077,"89.9%",259935367.062415,149520.248066604
+415,"Mayville","3367",6,"Unified","Mayville Sch Dist",84.63886063,"84.6%",482660776.099222,195819.181920161
+416,"Durand-Arkansaw","1499",11,"Unified","Durand-Arkansaw Sch Dist",90.94608342,"90.9%",1506908317.60822,556597.261571573
+417,"Seneca Area","5124",3,"Unified","Seneca Area Sch Dist",92.46031746,"92.5%",569512611.577282,333755.426874446
+418,"Salem","5068",2,"Elementary",,-3,"No data",85836633.4397034,50148.4915710168
+419,"Suring Public","5670",8,"Unified",,-3,"No data",1574385487.66061,221639.257466899
+420,"Williams Bay","6482",2,"Unified",,-3,"No data",49135323.4783219,48496.6605015958
+421,"Winter","6615",12,"Unified",,-3,"No data",3525205329.00009,285548.018400392

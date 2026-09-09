@@ -5,7 +5,7 @@
     "long_name": "Number of students enrolled",
     "category": "immunization",
     "short_description": "Number of students enrolled at the reporting level.",
-    "long_description": "Enrollment count reported by the source. Used as the denominator for the exemption percentages in the same record. Missing where the source marked a school \"N/R\" (not reported) for that year. Some schools report enrollment of 0; this may be suppression but is not documented so it is kept as in the raw files.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
     "statement": "In {location}, {value} students were enrolled.",
     "measure_type": "Count",
     "unit": "Students",
@@ -22,7 +22,7 @@
     "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
     "category": "immunization",
     "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
-    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports. At the school level this is the rate as published by the state. At the county level it is the enrollment-weighted average of the county's school-level rates, not a figure the state publishes directly; schools the state marked \"N/R\" (not reported) that year are excluded from the average, so the county rate may not exactly match one computed if those schools' true rates were known.",
+    "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
     "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
     "measure_type": "Rate",
     "unit": "Rate",
@@ -39,8 +39,59 @@
     "long_name": "Proportion of students with a medical vaccination exemption",
     "category": "immunization",
     "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
-    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey. At the school level this is the rate as published by the state. At the county level it is the enrollment-weighted average of the county's school-level rates, not a figure the state publishes directly; schools the state marked \"N/R\" (not reported) that year are excluded from the average, so the county rate may not exactly match one computed if those schools' true rates were known.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
     "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "hi_school_immunization"
+      }
+    ]
+  },
+  "rate_no_record": {
+    "id": "rate_no_record",
+    "short_name": "No immunization record rate",
+    "long_name": "Proportion of students with no immunization record on file",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students for whom no immunization record was on file.",
+    "long_description": "Share of assessed school students with no immunization record at all, which is distinct from having an incomplete record or an exemption.",
+    "statement": "In {location}, {value} of school students had no immunization record on file.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "hi_school_immunization"
+      }
+    ]
+  },
+  "rate_missing_immunizations": {
+    "id": "rate_missing_immunizations",
+    "short_name": "Missing immunizations rate",
+    "long_name": "Proportion of students whose record is missing one or more required immunizations",
+    "category": "immunization",
+    "short_description": "Proportion of enrolled students with an immunization record on file that lacks one or more required immunizations.",
+    "long_description": "Share of enrolled students whose immunization record is on file but incomplete for one or more required vaccines. Distinct from rate_no_record (no record on file at all) and from the exemption rates; Hawaii reports the four categories so that they sum to its not-up-to-date total.",
+    "statement": "In {location}, {value} of school students were missing one or more required immunizations.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "hi_school_immunization"
+      }
+    ]
+  },
+  "rate_not_utd": {
+    "id": "rate_not_utd",
+    "short_name": "Not-up-to-date rate",
+    "long_name": "Proportion of students not up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students not up to date for every vaccine the state requires.",
+    "long_description": "Share of assessed school students not recorded as up to date across the full required schedule, excluding those conditionally enrolled.",
+    "statement": "In {location}, {value} of school students were not up to date for all required vaccines.",
     "measure_type": "Rate",
     "unit": "Rate",
     "time_resolution": "Year",
@@ -56,8 +107,21 @@
       "url": "https://health.hawaii.gov/docd/resources/reports/immunization-examination-requirements/",
       "organization": "Hawaii State Department of Health",
       "organization_url": "https://health.hawaii.gov/",
-      "description": "School immunization and exemption data from the Hawaii DOH immunization/examination requirements reports. Note that county rates are derived from reported school rates and may not be exact due to some schoools' data being suppressed.",
+      "description": "County-level school immunization and exemption data from the Hawaii DOH immunization/examination requirements reports.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level school immunization and exemption data from the Hawaii DOH immunization/examination requirements reports.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, school rows (see the type column), by grade, by school year"
     }
   }
 }

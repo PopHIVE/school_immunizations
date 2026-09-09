@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 3972,
-      "encoding": "windows-1252",
-      "md5": "716ca638619fc2fdc54e720ac325fa9f",
+      "encoding": "ISO-8859-1",
+      "md5": "1955548853c003ee8f8bcc7f7eec1899",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 08:06:45 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:13.818323",
-      "last_modified": "2026-08-21 11:44:49.5765",
+      "created": "2026-09-09 10:10:55.392284",
+      "last_modified": "2026-09-09 10:10:55.392284",
       "vintage": {},
       "row_count": 256,
       "entity_count": 15,
@@ -81,25 +85,12 @@
             "duplicates": 241,
             "info": [],
             "time_range": [0, 7],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "50": 32,
-              "50001": 16,
-              "50003": 16,
-              "50005": 16,
-              "50007": 16,
-              "50009": 16,
-              "50011": 16,
-              "50013": 16,
-              "50015": 16,
-              "50017": 16,
-              "50019": 16,
-              "50021": 16,
-              "50023": 16,
-              "50025": 16,
-              "50027": 16
-            }
+            "mean": 43768.5,
+            "sd": 16556.409913,
+            "min": 50,
+            "max": 50027
           },
           {
             "name": "geography_name",
@@ -761,7 +752,7 @@
           }
         ]
       },
-      "sha512": "9dca88cb978eaee4aa6e8d50f1cf2deaf4db9feeba44b0d7fe53ab70d85af5a4dbd467442cd54b42e05d3a5aeb880cd4c1076dea0f7248dc1b4d536a64124bad"
+      "sha512": "8b4237ce2db62c2c5a1d12f8306bf2dd3fa1d2f59d4e51379fd76960728dbb343aa8b5dca57a4e31b8f4dff291389d6ff0a42cd3107bb8eab0820d3b5a5cfedd"
     }
   ],
   "measure_info": {
@@ -1132,6 +1123,20 @@
         "restrictions": "Public data. Vermont suppresses small counts to protect privacy."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "School- and county-level immunization completeness, provisional, and exemption data from the Vermont DOH school vaccination reports. TOP CODING: the workbook prints \">95%\" rather than a figure wherever coverage exceeds 95 percent, which is 660 of its cells.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

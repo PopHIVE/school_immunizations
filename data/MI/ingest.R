@@ -1,54 +1,131 @@
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 # =============================================================================
 # MI - Immunization Status by Building (Multiple Cohorts)
 # =============================================================================
 
+library(dcf)
 library(dplyr)
 library(readxl)
 library(stringr)
 library(vroom)
+
+sources <- read_sources()
+src <- source_entry(sources, "mdhhs_building_files")
 
 if (!file.exists("process.json")) {
   process <- list(raw_state = NULL)
 } else {
   process <- dcf::dcf_process_record()
 }
+prev <- process$fetch_state
+
+# MDHHS posts one building-level workbook per cohort per year on its school
+# immunization data page, and links only the current year there: as of
+# September 2026 the page carries the 2025 Kindergarten, Seventh-Grade and
+# New-Entrants files. The media hrefs carry ?rev=&hash= query strings that
+# change when the file is re-uploaded, so the query is stripped when naming
+# the copy in raw/. Each year's workbook is final once posted (the 2024
+# "PROVISIONAL All Grades" workbook in raw/ was the exception, and it was
+# hand-downloaded), so files already on disk are not re-requested.
+#
+# michigan.gov intermittently blocks non-browser clients; when the index
+# page cannot be read the ingest continues on what is committed in raw/.
+dir.create("raw", showWarnings = FALSE)
+dest_from_url <- function(u) file.path("raw", basename(sub("\\?.*$", "", u)))
+
+links <- discover_links(src$page_url, src$pattern, must_find = FALSE)
+recs <- list()
+if (nrow(links)) {
+  recs <- fetch_many(links$url, dest_fn = dest_from_url, type = "xlsx",
+                     if_exists = "skip", previous = prev)
+}
+
+# The 2024 files are no longer linked from the page, but the Kindergarten and
+# New-Entrants workbooks still exist at the same media path (verified
+# 2026-09-04; Seventh-Grade-...-2024.xlsx returns 404, so it is not listed).
+# These are one attempt each with no committed copy to fall back on, so a
+# miss is reported and the ingest goes on without the file.
+mdhhs_media <- paste0(
+  "https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/",
+  "Adult-and-Childrens-Services/Children-and-Families/Immunization-Information/",
+  "School-Waiver-Information"
+)
+unlisted <- c(
+  "Kindergarten-Immunization-Status-by-Building-2024.xlsx",
+  "New-Entrants-Immunization-Status-by-Building-2024.xlsx"
+)
+for (f in unlisted) {
+  dest <- file.path("raw", f)
+  rec <- tryCatch(
+    fetch_file(paste0(mdhhs_media, "/", f), dest, type = "xlsx",
+               if_exists = "skip", retries = 1L, previous = prev[[dest]]),
+    error = function(e) {
+      message("MI: ", conditionMessage(e))
+      NULL
+    }
+  )
+  if (!is.null(rec)) recs <- c(recs, list(rec))
+}
+process <- record_fetch(process, recs)
 
 script_hash <- as.character(tools::md5sum("ingest.R"))
+raw_state <- raw_state_md5()
 
 # All building-level workbooks share one layout (title block, then a header row
 # of NAME/DISTRICT/TYPE/COUNTY/... at row 8). Filenames are inconsistent across
-# years -- 2019-2021 use "Kind_2019_For Website.xlsx" / "7th_2021.xlsx" while
-# 2022+ use "... Immunization Status by Building ...", so match on extension and
-# exclude the one workbook that is not building-level:
+# years -- 2019-2021 use "Kind_2019_For Website.xlsx" / "7th_2021.xlsx",
+# 2022-2023 "... Immunization Status by Building ...", and the downloads from
+# 2024 on "Kindergarten-Immunization-Status-by-Building-2025.xlsx" -- so match
+# on extension and exclude the one workbook that is not building-level:
 #   "Waiver data by county 2019 - 2023.xlsx" is county x waiver-rate for a
 #   combined 2019-2023 period, with no school or year detail.
+#
+# A PROVISIONAL workbook is superseded by the final one for the same end
+# year. "PROVISIONAL All Grades Immunization Status by Building 2024.xlsx"
+# holds one sheet per cohort (Kindergarten, Seventh, New Entrants,
+# Childcare); read from its first sheet it duplicated the final 2023-24
+# kindergarten rows under a grade of "All Grades". It stays in raw/ as a
+# record, and is parsed only if no final workbook for its end year is on
+# disk. The final Kindergarten and New-Entrants 2024 files are, so it is
+# not.
+#
+# Seventh-Grade-Immunization-Status-by-Building-2024.xlsx returns 404 on
+# the MDHHS media path (checked 2026-09-04), so 2023-24 has no seventh-grade
+# rows. scripts/check_sources.R reports a newly linked file the pattern in
+# sources.json matches, so it will show up there if MDHHS posts it.
 raw_files <- list.files("raw", pattern = "\\.xlsx$", full.names = TRUE)
 raw_files <- raw_files[!grepl("Waiver data by county", basename(raw_files))]
-raw_state <- list(hash = tools::md5sum(raw_files))
+file_end_year <- as.integer(str_match(basename(raw_files), "(20\\d{2})")[, 2])
+is_provisional <- grepl("PROVISIONAL", basename(raw_files), ignore.case = TRUE)
+superseded <- is_provisional & file_end_year %in% file_end_year[!is_provisional]
+if (any(superseded)) {
+  message("MI: not parsing provisional workbook(s) superseded by a final one: ",
+          paste(basename(raw_files)[superseded], collapse = ", "))
+}
+raw_files <- raw_files[!superseded]
 
 if (!identical(process$raw_state, raw_state) ||
     !identical(process$script_hash, script_hash)) {
-  all_fips <- vroom::vroom("../../resources/all_fips.csv.gz", show_col_types = FALSE)
-  # Bare county names, matching what join_county_fips() emits for every other
-  # state, so geography_name reads "Wayne" here and not "Wayne County".
-  county_fips_lookup <- all_fips %>%
-    filter(nchar(geography) == 5, state == "MI") %>%
-    mutate(geography_name = sub(" County$", "", geography_name)) %>%
-    select(geography, geography_name, state)
-
   # Matched most-specific first: "kind" covers Kindergarten*, Kind_2019 and
   # Kindergarten_2021; "7th" covers 7th_2019 as well as "Seventh Graders".
+  # "New Entrants" is spelled with a space in the hand-downloaded 2023 file
+  # and with a hyphen in the files fetched from the media path.
   detect_grade <- function(filename) {
     fname <- tolower(filename)
-    if (str_detect(fname, "new entrants")) return("New Entrants")
+    if (str_detect(fname, "new[ _-]entrants")) return("New Entrants")
     if (str_detect(fname, "all grades")) return("All Grades")
     if (str_detect(fname, "kind")) return("Kindergarten")
     if (str_detect(fname, "seventh|7th")) return("7th Grade")
     "Unknown"
   }
 
+  # The year in the filename is the one in the workbook's own title ("2023
+  # IMMUNIZATION STATUS OF KINDERGARTEN STUDENTS"), and it is read as the END
+  # of the school year: a file named 2025 is school year 2024-25 and is dated
+  # 2024-09-01. Every year in raw/ is dated the same way.
   detect_end_year <- function(filename) {
     m <- str_match(filename, "(20\\d{2})")
     if (is.na(m[1, 1])) return(NA_integer_)
@@ -76,7 +153,7 @@ if (!identical(process$raw_state, raw_state) ||
     d %>%
       transmute(
         time = time,
-        geography_name = str_to_title(normalize_county(COUNTY)),
+        county = normalize_county(COUNTY),
         school_name = NAME,
         district = DISTRICT,
         school_type = TYPE,
@@ -125,18 +202,11 @@ if (!identical(process$raw_state, raw_state) ||
     warning("no grade detected for: ", paste(unknown, collapse = ", "), call. = FALSE)
   }
 
+  # Any county label other than the two recoded above and the non-county
+  # "No County Affiliation" stops the build here rather than being dropped.
   schools <- bind_rows(lapply(raw_files, process_file)) %>%
-    left_join(county_fips_lookup, by = c("geography_name" = "geography_name"))
-
-  # Report counties that failed the FIPS join instead of dropping them silently.
-  unmatched <- sort(unique(schools$geography_name[is.na(schools$geography)]))
-  if (length(unmatched)) {
-    warning(length(unmatched), " county name(s) matched no MI FIPS and were dropped: ",
-            paste(unmatched, collapse = ", "), call. = FALSE)
-  }
-  schools <- schools %>%
-    filter(!is.na(geography), state == "MI") %>%
-    select(-state) %>%
+    join_county_fips("MI", drop = "^No County Affiliation$") %>%
+    select(-county) %>%
     mutate(type = "school")
 
   # County totals, summed across every building in the county at that grade and
@@ -180,9 +250,11 @@ if (!identical(process$raw_state, raw_state) ||
     paste(sort(unique(data$time)), collapse = ", ")))
 
   dir.create("standard", showWarnings = FALSE)
-  write_standard(data, "Michigan", "standard/data.csv.gz", from = "percent")
+  out <- write_standard(data, "Michigan", "standard/data.csv.gz", from = "percent")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

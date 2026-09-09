@@ -6,6 +6,7 @@ library(vroom)
 library(readr)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 
 # =============================================================================
 # IN - School Immunization Coverage by County & Grade
@@ -27,38 +28,43 @@ source("../../resources/school_year.R")
 #   "Dtap/Td_Rate"; 2025-26 uses "Dtap_Rate". Columns are resolved by pattern.
 # =============================================================================
 
-ua <- "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36"
+sources <- read_sources()
+src <- source_entry(sources, "idoh_ckan")
 pkg_id <- "f4e11e6e-2e4f-41b1-a46c-c6d43c6ce1a3"
-api_url <- paste0("https://hub.mph.in.gov/api/3/action/package_show?id=", pkg_id)
 
 dir.create("raw", showWarnings = FALSE)
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
 
 # ---- Discover & download every per-year school workbook via the CKAN API ----
-resp <- httr::GET(api_url, httr::user_agent(ua), httr::timeout(120))
-pkg <- jsonlite::fromJSON(rawToChar(httr::content(resp, "raw")), simplifyDataFrame = TRUE)
-resources <- pkg$result$resources
+# The package listing is the only way to learn that a new year exists, but the
+# hub being down must not stop the run: raw/ is committed, so on failure we
+# warn and parse what is on disk. The per-year workbooks never change once
+# posted, so an existing one that opens as a workbook is not re-requested.
+res <- tryCatch(
+  ckan_resources("https://hub.mph.in.gov", pkg_id, pattern = src$pattern),
+  error = function(e) {
+    warning("IN: could not list CKAN resources (", conditionMessage(e),
+            "); proceeding on the committed raw/ files", call. = FALSE)
+    NULL
+  }
+)
 
-data_res <- resources[
-  grepl("immunization-data_school-year", resources$url, ignore.case = TRUE), ,
-  drop = FALSE
-]
-
-for (i in seq_len(nrow(data_res))) {
-  url <- data_res$url[i]
-  yr <- str_extract(url, "\\d{4}-\\d{4}")
-  dest <- file.path("raw", paste0("school-year-", yr, ".xlsx"))
-  try({
-    r <- httr::GET(url, httr::user_agent(ua), httr::timeout(180))
-    if (httr::status_code(r) == 200) {
-      writeBin(httr::content(r, "raw"), dest)
-    }
-  }, silent = TRUE)
+if (!is.null(res) && nrow(res)) {
+  recs <- fetch_many(
+    res$url,
+    dest_fn = function(u) {
+      file.path("raw", paste0("school-year-", str_extract(u, "\\d{4}-\\d{4}"), ".xlsx"))
+    },
+    type = "xlsx", if_exists = "skip", previous = prev
+  )
+  st <- vapply(recs, function(r) r$status, character(1))
+  message("IN fetch: ", length(st), " file(s): ",
+          paste(names(table(st)), table(st), collapse = ", "))
+  process <- record_fetch(process, recs)
 }
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
@@ -172,9 +178,11 @@ if (!identical(process$raw_state, raw_state) ||
     arrange(time, geography_name, grade)
 
   dir.create("standard", showWarnings = FALSE)
-  write_standard(data_out, "Indiana", "./standard/data.csv.gz", from = "percent")
+  out <- write_standard(data_out, "Indiana", "./standard/data.csv.gz", from = "percent")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

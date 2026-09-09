@@ -59,5 +59,18 @@
       "description": "County-level school immunization and exemption data from the Kentucky Department for Public Health.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "County-level school immunization and exemption data from the Kentucky Department for Public Health.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

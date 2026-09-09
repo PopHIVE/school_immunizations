@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 830,
-      "encoding": "windows-1252",
-      "md5": "b6b5a06957dbc1959d4de79accdf99ce",
+      "encoding": "ISO-8859-1",
+      "md5": "4463b558fd4c34d9f53731925df90010",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 08:06:45 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.796862",
-      "last_modified": "2026-08-25 11:35:14.92486",
+      "created": "2026-09-09 10:09:06.710717",
+      "last_modified": "2026-09-09 10:09:06.710717",
       "vintage": {},
       "row_count": 40,
       "entity_count": 10,
@@ -77,20 +81,12 @@
             "duplicates": 30,
             "info": [],
             "time_range": [0, 3],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "33001": 4,
-              "33003": 4,
-              "33005": 4,
-              "33007": 4,
-              "33009": 4,
-              "33011": 4,
-              "33013": 4,
-              "33015": 4,
-              "33017": 4,
-              "33019": 4
-            }
+            "mean": 33010,
+            "sd": 5.817745,
+            "min": 33001,
+            "max": 33019
           },
           {
             "name": "geography_name",
@@ -293,7 +289,7 @@
           }
         ]
       },
-      "sha512": "d83ef5bf189b59312ec125248c2c8ede61057b607bc3f12979a5cc70e1b48b23e026bcea67572474d8a379ed2653057f5ef9ac4e0c66be4814475bba8d65623d"
+      "sha512": "e20f1a9adc6f9f9613a7f57eff8cc3bf6660ac81f39d7cf215f362b662c608ba809a93a296c91a6225a0264ff00a73b3b53621d087a2f4028e5a895524da37ba"
     }
   ],
   "measure_info": {
@@ -409,6 +405,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level immunization status (up to date, conditional, exempt) from the annual NH DHHS school immunization reports.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

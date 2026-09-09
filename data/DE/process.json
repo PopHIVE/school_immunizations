@@ -5,15 +5,72 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:10",
+      "last_run": "2026-09-08 14:50:31",
       "frequency": 0,
-      "run_time": 0.02,
+      "run_time": 8.904,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "fetch: fetched https://dhss.delaware.gov/dph/dpc/school-immunizations/ (243,210 bytes)",
+          "fetch: fetched School_Survey_Coverage_Rates.pdf (348,895 bytes)",
+          "fetch: fetched School_Survey_Exemption_Rates.pdf (444,456 bytes)",
+          "DE charts: 2 file(s): 2 updated, 0 unchanged, 0 skipped, 0 failed",
+          "DE: coverage chart clusters with fewer than five labels: 2016-17 (1), 2017-18 (1)",
+          "DE: 7 statewide rows, school years 2016-09-01 to 2022-09-01"
+        ],
         "success": true
       }
     }
   ],
-  "checked": "",
-  "check_results": []
+  "checked": "2026-09-09 10:11:02",
+  "check_results": {
+    "data/DE/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
+    }
+  },
+  "fetch_state": {
+    "raw/School_Survey_Coverage_Rates.pdf": {
+      "url": "https://dhss.delaware.gov/wp-content/uploads/sites/12/dph/pdf/School_Survey_Coverage_Rates.pdf",
+      "dest": "raw/School_Survey_Coverage_Rates.pdf",
+      "status": "unchanged",
+      "http_status": 304,
+      "bytes": 348895,
+      "sha256": "f6c2b18d801f1b89d04ebf92e4ad371615495891cd021b7948e2b6b6490c955f",
+      "etag": "\"692e8ac6-552df\"",
+      "last_modified": "Tue, 02 Dec 2025 06:44:22 GMT",
+      "fetched_at": "2026-09-09 14:07:54",
+      "attempts": 1
+    },
+    "raw/School_Survey_Exemption_Rates.pdf": {
+      "url": "https://dhss.delaware.gov/wp-content/uploads/sites/12/dph/pdf/School_Survey_Exemption_Rates.pdf",
+      "dest": "raw/School_Survey_Exemption_Rates.pdf",
+      "status": "unchanged",
+      "http_status": 304,
+      "bytes": 444456,
+      "sha256": "4844b93360390b4151b35368da05f4a98634f2d673dcab4321a152ffcf124ede",
+      "etag": "\"692e8ac6-6c828\"",
+      "last_modified": "Tue, 02 Dec 2025 06:44:22 GMT",
+      "fetched_at": "2026-09-09 14:07:57",
+      "attempts": 1
+    }
+  },
+  "raw_state": {
+    "raw/School_Survey_Coverage_Rates.pdf": "c5c491f7b3bfbe4724be81269a366ba8",
+    "raw/School_Survey_Exemption_Rates.pdf": "d0046ad9bf14ec220a30fde833d31d66"
+  },
+  "script_hash": "3d7f9fddd4cd0415bbc9974cdc190f29",
+  "standard_state": {
+    "./data/DE/measure_info.json": "be6ce5aa0d610062e5dda34e8ef746ff",
+    "./data/DE/standard/data.csv.gz": "e63ade90e7902b7021b4a430abc8851c"
+  }
 }

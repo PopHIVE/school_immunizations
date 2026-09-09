@@ -17,6 +17,12 @@
 # Uses base R only (no jsonlite/vroom) so it runs both locally and in CI without
 # adding dependencies. Run from the repo root:  Rscript scripts/generate_measure_info.R
 # Optionally pass state abbreviations to restrict:  Rscript scripts/generate_measure_info.R OR CT
+#
+# Follow-up not done here: dcf (2026-08-20 on) merges a parent measure_info.json
+# found up to two directories above each source into every source's file, so
+# the dictionary below could live once in data/measure_info.json instead of
+# being copied into 51 files. Kept per state for now so each state's file stays
+# self-contained for readers of that folder.
 # =============================================================================
 
 # ---- minimal JSON writer -----------------------------------------------------
@@ -844,6 +850,143 @@ MEASURES$rate_all_required_non_compliant <- list(
   measure_type = "Rate", unit = "Rate", time_resolution = "Year")
 MEASURES$rate_flu <- m_coverage("Influenza", "influenza", "influenza")
 
+# ---- registry (IIS) coverage measures -----------------------------------------
+# Wisconsin publishes county MMR coverage from its immunization registry by
+# calendar year and age group. These describe resident children, not a school
+# cohort, so they carry the age group in the name rather than reusing rate_mmr.
+m_registry <- function(short, ages, doses) {
+  list(
+    short_name = paste0("MMR ", doses, " dose(s), ", short, " (registry)"),
+    long_name = paste0("Proportion of residents aged ", ages, " with ", doses,
+                       " dose(s) of MMR in the state immunization registry"),
+    category = "immunization",
+    short_description = paste0("Share of residents aged ", ages, " recorded in the state ",
+      "immunization registry as having ", doses, " dose(s) of MMR."),
+    long_description = paste0("Registry-based coverage: the share of children aged ", ages,
+      " in the county with ", doses, " MMR dose(s) recorded in the state immunization ",
+      "information system, by calendar year. Not a school-entry survey measure: the ",
+      "denominator is resident children in the registry, not enrolled students, and ",
+      "changes to registry exclusion rules move the series."),
+    statement = paste0("In {location}, {value} of residents aged ", ages, " had ", doses,
+                       " MMR dose(s) in the immunization registry."),
+    measure_type = "Rate", unit = "Rate", time_resolution = "Year")
+}
+MEASURES$rate_mmr_1dose_24m <- m_registry("24 months", "24 months", "1")
+MEASURES$rate_mmr_2dose_6y <- m_registry("age 6", "6", "2")
+MEASURES$rate_mmr_2dose_6y$long_description <- paste0(
+  MEASURES$rate_mmr_2dose_6y$long_description,
+  " Wyoming's report cards carry the same measure under an age label that changes ",
+  "between years (6 years of age on the 2018 cards, 7-years-old on the 2019 to 2021 ",
+  "cards); the column keeps one name so the series stays in one column.")
+MEASURES$rate_mmr_2dose_6_18y <- m_registry("ages 6 to 18", "6 to 18", "2")
+
+# ---- per-antigen count, exemption and incomplete measures --------------------
+# Washington's DOH tables carry, for every antigen, a coverage count and rate,
+# an exemption count and rate, and an "incomplete" count and rate (students
+# who are neither up to date for that antigen nor exempt from it). Its antigens
+# are the individual diseases (diphtheria, tetanus, pertussis, measles, mumps,
+# rubella) rather than the combined products, plus a DT grouping. Oregon adds
+# per-dose MMR exemption counts (mmr1, mmr2) and hepatitis A. Entries other
+# states already defined above are kept as they are.
+m_vax_exempt_count <- function(short_name, long_name) list(
+  short_name = paste0(short_name, " exemptions (count)"),
+  long_name = paste0("Number of students exempt from ", long_name, " vaccination"),
+  category = "immunization",
+  short_description = paste0("Number of assessed school students with an exemption of any kind from the ",
+    long_name, " vaccination requirement."),
+  long_description = paste0("Count of assessed school students holding an exemption of any kind from the ",
+    long_name, " series. A student exempt from more than one vaccine is counted once per vaccine, ",
+    "so these counts do not sum to a number of exempt students."),
+  statement = paste0("In {location}, {value} school students were exempt from ", long_name, " vaccination."),
+  measure_type = "Count", unit = "Students", time_resolution = "Year")
+m_vax_incomplete_rate <- function(short_name, long_name) list(
+  short_name = paste0(short_name, " incomplete rate"),
+  long_name = paste0("Proportion of students with incomplete ", long_name, " vaccination"),
+  category = "immunization",
+  short_description = paste0("Proportion of assessed school students neither up to date for ",
+    long_name, " vaccination nor exempt from it."),
+  long_description = paste0("Share of assessed school students out of compliance with the ", long_name,
+    " requirement: not up to date and holding no exemption. It is not one minus coverage, because ",
+    "an exempt student counts as compliant while unvaccinated."),
+  statement = paste0("In {location}, {value} of school students had incomplete ", long_name, " vaccination."),
+  measure_type = "Rate", unit = "Rate", time_resolution = "Year")
+m_vax_incomplete_count <- function(short_name, long_name) list(
+  short_name = paste0(short_name, " incomplete (count)"),
+  long_name = paste0("Number of students with incomplete ", long_name, " vaccination"),
+  category = "immunization",
+  short_description = paste0("Number of assessed school students neither up to date for ",
+    long_name, " vaccination nor exempt from it."),
+  long_description = paste0("Count of assessed school students out of compliance with the ", long_name,
+    " requirement: not up to date and holding no exemption."),
+  statement = paste0("In {location}, {value} school students had incomplete ", long_name, " vaccination."),
+  measure_type = "Count", unit = "Students", time_resolution = "Year")
+vax_antigens <- list(
+  pertussis = c("Pertussis", "pertussis"),
+  diphtheria = c("Diphtheria", "diphtheria"),
+  tetanus = c("Tetanus", "tetanus"),
+  measles = c("Measles", "measles"),
+  mumps = c("Mumps", "mumps"),
+  rubella = c("Rubella", "rubella"),
+  dt = c("DT", "diphtheria-tetanus (DT/DTaP)"),
+  polio = c("Polio", "polio"),
+  mmr = c("MMR", "measles-mumps-rubella (MMR)"),
+  mmr1 = c("MMR dose 1", "first-dose measles-mumps-rubella (MMR)"),
+  mmr2 = c("MMR dose 2", "second-dose measles-mumps-rubella (MMR)"),
+  hep_a = c("Hepatitis A", "hepatitis A"),
+  hep_b = c("Hepatitis B", "hepatitis B"),
+  varicella = c("Varicella", "varicella (chickenpox)"))
+for (a in names(vax_antigens)) {
+  short <- vax_antigens[[a]][1]
+  lab <- vax_antigens[[a]][2]
+  if (is.null(MEASURES[[paste0("rate_", a)]])) {
+    MEASURES[[paste0("rate_", a)]] <- m_coverage(short, lab, short)
+  }
+  if (is.null(MEASURES[[paste0("N_", a)]])) {
+    MEASURES[[paste0("N_", a)]] <- m_count(short, lab)
+  }
+  if (is.null(MEASURES[[paste0("rate_", a, "_exempt")]])) {
+    MEASURES[[paste0("rate_", a, "_exempt")]] <- antigen_exempt_any(lab)
+  }
+  if (is.null(MEASURES[[paste0("N_", a, "_exempt")]])) {
+    MEASURES[[paste0("N_", a, "_exempt")]] <- m_vax_exempt_count(short, lab)
+  }
+  MEASURES[[paste0("rate_", a, "_incomplete")]] <- m_vax_incomplete_rate(short, lab)
+  MEASURES[[paste0("N_", a, "_incomplete")]] <- m_vax_incomplete_count(short, lab)
+}
+
+MEASURES$N_conditional <- list(
+  short_name = "Conditional students (count)",
+  long_name = "Number of students conditionally enrolled",
+  category = "immunization",
+  short_description = "Number of assessed school students admitted conditionally while completing required immunizations.",
+  long_description = "Count of assessed school students who are conditionally enrolled: permitted to attend while in the process of completing required immunizations and not yet overdue.",
+  statement = "In {location}, {value} school students were conditionally enrolled.",
+  measure_type = "Count", unit = "Students", time_resolution = "Year")
+MEASURES$rate_out_of_compliance <- list(
+  short_name = "Out-of-compliance rate",
+  long_name = "Proportion of students out of compliance with immunization requirements",
+  category = "immunization",
+  short_description = "Proportion of assessed school students who are not complete, not conditionally enrolled, and not exempt.",
+  long_description = "Share of assessed school students the state classifies as out of compliance: no complete record, no conditional status, and no exemption on file. Washington reports this as the residual after complete, conditional and exempt students.",
+  statement = "In {location}, {value} of school students were out of compliance with immunization requirements.",
+  measure_type = "Rate", unit = "Rate", time_resolution = "Year")
+MEASURES$N_out_of_compliance <- list(
+  short_name = "Out-of-compliance students (count)",
+  long_name = "Number of students out of compliance with immunization requirements",
+  category = "immunization",
+  short_description = "Number of assessed school students who are not complete, not conditionally enrolled, and not exempt.",
+  long_description = "Count of assessed school students the state classifies as out of compliance: no complete record, no conditional status, and no exemption on file.",
+  statement = "In {location}, {value} school students were out of compliance with immunization requirements.",
+  measure_type = "Count", unit = "Students", time_resolution = "Year")
+MEASURES$rate_missing_immunizations <- list(
+  short_name = "Missing immunizations rate",
+  long_name = "Proportion of students whose record is missing one or more required immunizations",
+  category = "immunization",
+  short_description = "Proportion of enrolled students with an immunization record on file that lacks one or more required immunizations.",
+  long_description = "Share of enrolled students whose immunization record is on file but incomplete for one or more required vaccines. Distinct from rate_no_record (no record on file at all) and from the exemption rates; Hawaii reports the four categories so that they sum to its not-up-to-date total.",
+  statement = "In {location}, {value} of school students were missing one or more required immunizations.",
+  measure_type = "Rate", unit = "Rate", time_resolution = "Year")
+
 # ---- all-required-schedule exemption rates -----------------------------------
 # CT reports exemptions against its whole required schedule as well as per
 # antigen, under the same "All" series that gives rate_all_required coverage.
@@ -935,6 +1078,17 @@ MEASURES$rate_any_exempt <- list(
   statement = "In {location}, {value} of school students had an exemption of any kind.",
   measure_type = "Rate", unit = "Rate", time_resolution = "Year")
 
+# Oklahoma's column names carry the source's "up to date" wording; they are
+# the same quantities as the rate_<vaccine> coverage measures, and its
+# exemption columns are the standard medical / non-medical / total split.
+for (a in c("dtap", "polio", "mmr", "hep_b", "hep_a", "varicella")) {
+  MEASURES[[paste0("rate_utd_", a)]] <- MEASURES[[paste0("rate_", a)]]
+}
+MEASURES$rate_utd_all <- MEASURES$rate_utd
+MEASURES$rate_medical <- MEASURES$rate_medical_exempt
+MEASURES$rate_non_medical <- MEASURES$rate_personal_exempt
+MEASURES$rate_total <- MEASURES$rate_full_exempt
+
 # ---- denominators and counts not already covered ----------------------------
 MEASURES$N_assessed <- m_denom(
   "Students assessed",
@@ -958,6 +1112,14 @@ MEASURES$total_pop_4_18 <- m_denom(
     "where the state publishes exemption counts without an enrolment figure. It is a resident ",
     "population, not an enrolment count, so rates derived from it are approximate."),
   "In {location}, the population aged 4 to 18 was {value}.")
+MEASURES$total_pop_18 <- m_denom(
+  "Population aged 0-18",
+  "Resident population aged 18 and under",
+  "County resident population aged 18 and under, used as the exemption denominator.",
+  paste0("Resident population aged 18 and under, as published alongside the exemption ",
+    "counts (New Mexico). It is a resident population, not an enrolment count, so rates ",
+    "derived from it are approximate."),
+  "In {location}, the population aged 18 and under was {value}.")
 MEASURES$N_exempt <- m_count("Exemptions", "an exemption")
 MEASURES$N_mmr_k <- m_count("Kindergarten MMR vaccinated", "a record of MMR vaccination in kindergarten")
 MEASURES$N_men_6th <- m_count("6th grade meningococcal vaccinated", "a record of meningococcal vaccination in 6th grade")
@@ -975,6 +1137,145 @@ MEASURES$N_schools_reported <- m_denom(
     "N_schools the county figure rests on a small and non-random subset of its schools -- the ",
     "unsuppressed ones -- and should not be read as a county-wide rate."),
   "In {location}, {value} schools had unsuppressed figures.")
+
+# ---- certificate-status measures (IA, AL, TN) ------------------------------
+# Iowa's audit and Alabama's school entry survey classify every enrolled
+# student by the certificate on file rather than by antigen: a certificate
+# of immunization (fully vaccinated by law), a provisional certificate, a
+# medical or religious exemption certificate, an expired certificate, or
+# none. "Valid" is the sum of the first four. Tennessee's compliance
+# assessment adds temporary certificates and recent transfers, and counts
+# schools by coverage band.
+m_status_rate <- function(short, long, desc) list(
+  short_name = short,
+  long_name = paste0("Proportion of students ", long),
+  category = "immunization",
+  short_description = paste0("Proportion of enrolled students ", long, "."),
+  long_description = desc,
+  statement = paste0("In {location}, {value} of school students ", long, "."),
+  measure_type = "Rate", unit = "Rate", time_resolution = "Year")
+m_status_count <- function(short, long, desc) list(
+  short_name = paste0(short, " (count)"),
+  long_name = paste0("Number of students ", long),
+  category = "immunization",
+  short_description = paste0("Number of enrolled students ", long, "."),
+  long_description = desc,
+  statement = paste0("In {location}, {value} school students ", long, "."),
+  measure_type = "Count", unit = "Students", time_resolution = "Year")
+status_measures <- list(
+  immunization_certificate = list("Certificate of immunization",
+    "with a certificate of immunization",
+    "Students holding a full certificate of immunization: vaccinated as the state's school law requires, with no provisional status and no exemption. Iowa's \"Fully Vaccinated by Law\" category."),
+  valid_certificate = list("Valid certificate",
+    "with a valid immunization certificate",
+    "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\"."),
+  provisional = list("Provisional certificate",
+    "with a provisional certificate",
+    "Students admitted on a provisional certificate while completing the required series."),
+  no_certificate = list("No certificate",
+    "with no valid immunization certificate",
+    "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\"."),
+  expired_certificate = list("Expired certificate",
+    "with an expired immunization certificate",
+    "Students whose certificate of immunization has expired and has not been renewed (Alabama)."),
+  temporary_certificate = list("Temporary certificate",
+    "with a temporary immunization certificate",
+    "Students admitted on a temporary certificate while catching up on the required series (Tennessee)."),
+  transfer = list("Recent transfer",
+    "who transferred in within 30 days",
+    "Students who transferred into the school within the 30 days before the assessment and were not yet required to have a complete record (Tennessee, public schools only)."),
+  fully_immunized = list("Fully immunized",
+    "fully immunized",
+    "Students the state reports as fully immunized across the required schedule.")
+)
+for (nm in names(status_measures)) {
+  s <- status_measures[[nm]]
+  if (is.null(MEASURES[[paste0("rate_", nm)]])) {
+    MEASURES[[paste0("rate_", nm)]] <- m_status_rate(s[[1]], s[[2]], s[[3]])
+  }
+  if (is.null(MEASURES[[paste0("N_", nm)]])) {
+    MEASURES[[paste0("N_", nm)]] <- m_status_count(s[[1]], s[[2]], s[[3]])
+  }
+}
+m_school_band <- function(band, cond) list(
+  short_name = paste0("Schools with ", band, " coverage (count)"),
+  long_name = paste0("Number of schools with ", band, " of students fully immunized"),
+  category = "immunization",
+  short_description = paste0("Number of schools in the county where ", cond, " of kindergarten students were fully immunized."),
+  long_description = paste0("Count of surveyed schools in the county whose fully-immunized share falls in the ", band, " band, as published in Tennessee's kindergarten compliance assessment."),
+  statement = paste0("In {location}, {value} schools had ", band, " of students fully immunized."),
+  measure_type = "Count", unit = "Schools", time_resolution = "Year")
+MEASURES$N_missing <- list(
+  short_name = "Missing documentation (count)",
+  long_name = "Number of students with no immunization record on file",
+  category = "immunization",
+  short_description = "Number of assessed school students with no immunization documentation on file.",
+  long_description = "Count of assessed school students for whom no immunization record was on file at the time of the survey; the count behind rate_missing.",
+  statement = "In {location}, {value} school students had no immunization record on file.",
+  measure_type = "Count", unit = "Students", time_resolution = "Year")
+MEASURES$N_schools_95plus <- m_school_band("95-100%", "95% or more")
+MEASURES$N_schools_90_94 <- m_school_band("90-94.9%", "90% to 94.9%")
+MEASURES$N_schools_under_90 <- m_school_band("under 90%", "fewer than 90%")
+
+# ---- registry (IIS) coverage by age group (WY) --------------------------------
+# Wyoming's county report cards are built from the state registry (WyIR):
+# resident children by age group, not a school cohort. Named for the dose
+# and age like the Wisconsin MMR measures above.
+m_registry_series <- function(short, what, ages) list(
+  short_name = paste0(short, ", ", ages, " (registry)"),
+  long_name = paste0("Proportion of residents aged ", ages, " with ", what,
+                     " in the state immunization registry"),
+  category = "immunization",
+  short_description = paste0("Share of residents aged ", ages, " recorded in the state ",
+    "immunization registry as having ", what, "."),
+  long_description = paste0("Registry-based coverage: the share of children aged ", ages,
+    " in the county with ", what, " recorded in the state immunization information ",
+    "system. Not a school-entry survey measure: the denominator is resident children in ",
+    "the registry, not enrolled students. The age label on the source card can change ",
+    "between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to ",
+    "2021 cards); the column name keeps one age so the series stays in one column."),
+  statement = paste0("In {location}, {value} of residents aged ", ages, " had ", what,
+                     " in the immunization registry."),
+  measure_type = "Rate", unit = "Rate", time_resolution = "Year")
+registry_measures <- list(
+  rate_series_19_35m = c("4:3:1:3:3:1:4 series", "the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV)", "19 to 35 months"),
+  rate_dtap_4dose_19_35m = c("DTaP 4 doses", "4 doses of DTaP", "19 to 35 months"),
+  rate_polio_3dose_19_35m = c("Polio 3 doses", "3 doses of polio vaccine", "19 to 35 months"),
+  rate_mmr_1dose_19_35m = c("MMR 1 dose", "1 dose of MMR", "19 to 35 months"),
+  rate_hib_3dose_19_35m = c("Hib 3 doses", "3 doses of Hib", "19 to 35 months"),
+  rate_hep_b_3dose_19_35m = c("Hepatitis B 3 doses", "3 doses of hepatitis B vaccine", "19 to 35 months"),
+  rate_varicella_1dose_19_35m = c("Varicella 1 dose", "1 dose of varicella vaccine", "19 to 35 months"),
+  rate_pcv_4dose_19_35m = c("PCV 4 doses", "4 doses of pneumococcal conjugate vaccine", "19 to 35 months"),
+  rate_hep_a_2dose_19_35m = c("Hepatitis A 2 doses", "2 doses of hepatitis A vaccine", "19 to 35 months"),
+  rate_rotavirus_2dose_19_35m = c("Rotavirus 2 doses", "2 doses of rotavirus vaccine", "19 to 35 months"),
+  rate_series_6y = c("5:4:2:3:3:2:4 series", "the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV)", "6 (labelled 7 on the 2019 to 2021 cards)"),
+  rate_dtap_5dose_6y = c("DTaP 5 doses", "5 doses of DTaP", "6 (labelled 7 on the 2019 to 2021 cards)"),
+  rate_varicella_2dose_6y = c("Varicella 2 doses", "2 doses of varicella vaccine", "6 (labelled 7 on the 2019 to 2021 cards)"),
+  rate_menacwy_1dose_13_17y = c("MenACWY 1 dose", "1 dose of MenACWY", "13 to 17"),
+  rate_menacwy_2dose_16_18y = c("MenACWY 2 doses", "2 doses of MenACWY", "16 to 18"),
+  rate_hpv_2dose_13_17y = c("HPV 2 doses", "2 doses of HPV vaccine", "13 to 17"),
+  rate_tdap_13_17y = c("Tdap", "1 dose of Tdap", "13 to 17")
+)
+for (nm in names(registry_measures)) {
+  r <- registry_measures[[nm]]
+  MEASURES[[nm]] <- m_registry_series(r[1], r[2], r[3])
+}
+MEASURES$N_waivers_under_5y <- list(
+  short_name = "Immunization waivers, under 5 (count)",
+  long_name = "Number of immunization waivers on file for children under 5",
+  category = "immunization",
+  short_description = "Number of approved immunization waivers for children under 5 years old in the county.",
+  long_description = "Count of waivers approved and recorded in the state's immunization waiver database for children under 5 (child care age), as printed on Wyoming's county report cards. A standing count, not a school cohort.",
+  statement = "In {location}, {value} immunization waivers were on file for children under 5.",
+  measure_type = "Count", unit = "Waivers", time_resolution = "Year")
+MEASURES$N_waivers_5y_plus <- list(
+  short_name = "Immunization waivers, 5 and over (count)",
+  long_name = "Number of immunization waivers on file for children 5 and over",
+  category = "immunization",
+  short_description = "Number of approved immunization waivers for children 5 years old and over in the county.",
+  long_description = "Count of waivers approved and recorded in the state's immunization waiver database for children 5 and over (school age), as printed on Wyoming's county report cards. A standing count, not a school cohort.",
+  statement = "In {location}, {value} immunization waivers were on file for children 5 and over.",
+  measure_type = "Count", unit = "Waivers", time_resolution = "Year")
 
 # ---- per-measure censoring flags ---------------------------------------------
 # flag_<x> says what the source printed for rate_<x> on this row, which the
@@ -1014,6 +1315,16 @@ for (rc in grep("^rate_", names(MEASURES), value = TRUE)) {
     statement = paste0("In {location}, ", rc, " was {value}."),
     measure_type = "Category", unit = "Category", time_resolution = "Year")
 }
+# California also flags its enrollment count, which the source bottom-codes
+# for small grades.
+MEASURES$flag_enrolled <- list(
+  short_name = "Enrollment - censoring flag",
+  long_name = "Why N_enrolled carries a bound or no value on this row",
+  category = "immunization",
+  short_description = "Whether N_enrolled was published as a number, suppressed, not reported, or censored at a bound.",
+  long_description = paste0("Per-measure companion to N_enrolled. ", CENSOR_FLAG_VALUES),
+  statement = "In {location}, N_enrolled was {value}.",
+  measure_type = "Category", unit = "Category", time_resolution = "Year")
 
 # ---- censoring / suppression -------------------------------------------------
 MEASURES$suppressed_flag <- list(
@@ -1121,10 +1432,15 @@ add_src("NY", "New York State School Immunization Survey",
   "New York State Department of Health", "https://www.health.ny.gov/",
   "School-level immunization and medical-exemption percentages from the NYS School Immunization Survey, pulled from the Health Data NY open-data API (CSV export).")
 
-add_src("NM", "New Mexico School Immunization Coverage",
-  "https://www.arcgis.com/apps/dashboards/c40e909922a243968807dc7b10870405",
+add_src("NM", "New Mexico Immunization Exemptions by County",
+  "https://www.nmhealth.org/about/phd/idb/imp/siis/data",
   "New Mexico Department of Health", "https://www.nmhealth.org/",
-  "County-level kindergarten and 7th-grade coverage and exemption data from the NMDOH ArcGIS dashboard feature service.")
+  paste0("County counts of residents aged 18 and under holding a vaccination exemption, by ",
+    "calendar year, from NMDOH's immunization program data page, with the county population ",
+    "under 18 as the denominator (rate_full_exempt). These are not school-survey figures and ",
+    "carry no grade or coverage: grade is \"Overall\". Calendar year N is dated to the school ",
+    "year ending in N. NMDOH's ArcGIS school immunization dashboard (kindergarten and 7th ",
+    "grade by county) is not ingested; it exposes no queryable layer."))
 
 add_src("RI", "Rhode Island School Immunization Coverage",
   "https://ricair-data-rihealth.hub.arcgis.com/",
@@ -1260,6 +1576,18 @@ add_src("AZ", "Arizona School Immunization Coverage",
   "Arizona Department of Health Services", "https://www.azdhs.gov/",
   "County-level school immunization and exemption data from the ADHS immunization reporting query tool.")
 
+add_src("DE", "Delaware School Immunization Survey",
+  "https://dhss.delaware.gov/dph/dpc/school-immunizations/",
+  "Delaware Division of Public Health", "https://dhss.delaware.gov/dph/",
+  "Statewide kindergarten immunization survey results read from the two chart PDFs DPH publishes: per-antigen coverage (DTaP, MMR, polio, hepatitis B, varicella) and immunization status (fully immunized, medical exemption, religious exemption, out of compliance), 2016-17 to 2022-23. No county figures are published.",
+  "Public data published by the source agency; statewide only, values read from chart labels.")
+
+add_src("WY", "Wyoming County Immunization Report Cards",
+  "https://health.wyo.gov/publichealth/immunization/immunization-data/wyoming-county-report-cards/",
+  "Wyoming Department of Health", "https://health.wyo.gov/",
+  "County report cards built from the Wyoming Immunization Registry (WyIR): registry coverage by age group (19 to 35 months, age 6, adolescents) and approved immunization waiver counts, 2018 to 2023. Registry measures describe resident children, not a school cohort.",
+  "Public data published by the source agency; the workbooks in raw/ were supplied to the project because the agency site blocks automated clients.")
+
 add_src("TN", "Tennessee Kindergarten MMR Coverage",
   "https://www.tn.gov/health/cedep/immunization-program.html",
   "Tennessee Department of Health", "https://www.tn.gov/health.html",
@@ -1366,17 +1694,20 @@ add_src("WA", "Washington School Immunization Data",
 add_src("WI", "Wisconsin School Immunization Data",
   "https://www.dhs.wisconsin.gov/library/collection/p-01892",
   "Wisconsin Department of Health Services", "https://www.dhs.wisconsin.gov/",
-  paste0("School-level immunization and waiver data from the Wisconsin DHS student immunization ",
-    "reports, aggregated to county here. ",
-    "MAJOR CAVEAT -- these county figures are not county rates. DHS suppresses any school-level ",
-    "share below 5 percent as \"<5\", which covers about 95 percent of cells: for the health ",
-    "waiver, 2,980 of 3,011 schools in 2023-24, and in 38 of 72 counties every single school is ",
-    "suppressed. The workbook publishes no enrolment column, so the surviving schools cannot be ",
-    "weighted and the county figure is an unweighted mean over them. Because suppression removes ",
-    "exactly the low values, the schools that remain are the high outliers, and every county ",
-    "figure in this file rests on precisely one school. A value of 0.82 therefore describes one ",
-    "small school, not the county. Use N_schools and N_schools_reported to see how thin each ",
-    "figure is, and prefer a source with denominators for county-level comparison."))
+  paste0("Two DHS series in one file, told apart by the type column. ",
+    "SCHOOL ROWS (type = school) carry the waiver shares from the annual student immunization ",
+    "reports, one row per school and school year. DHS suppresses any share below 5 percent as ",
+    "\"<5\", which covers about 95 percent of cells, and publishes no enrolment, so these rows ",
+    "are NOT rolled up to county here: an unweighted mean over the few unsuppressed schools ",
+    "described one small school, not the county. ",
+    "COUNTY ROWS (type = county) are MMR coverage from the Wisconsin Immunization Registry ",
+    "(WIR), by calendar year, for three age groups: 1 dose at 24 months (rate_mmr_1dose_24m), ",
+    "2 doses at age 6 (rate_mmr_2dose_6y) and 2 doses at ages 6 to 18 (rate_mmr_2dose_6_18y). ",
+    "These are registry measures of resident children, not the school survey, so they are ",
+    "named distinctly and must not be compared with survey MMR figures in other states. ",
+    "Calendar year N is dated to the school year ending in N. From 2023 DHS excludes ",
+    "long-inactive registry records from the denominator, which breaks the 6-18 series; the ",
+    "2025 release also redefined the age bands and restated every year."))
 
 add_src("AL", "Alabama School-Entry Immunization Data",
   "https://www.alabamapublichealth.gov/immunization/school-entry-survey.html",
@@ -1438,12 +1769,95 @@ INDEX_COLS <- c(
   "time", "state", "geography", "geography_name", "county", "grade",
   "school_name", "school_id", "district", "school_type", "source_grade",
   "health_district", "school_district", "unit", "public_independent", "vaccine",
-  "city",
+  "city", "type", "lea", "planning_region", "zipcode", "address", "facility_number",
+  "grade_range", "region", "source", "district_id",
   # How long a period a row covers. MS publishes one workbook per school year
   # and one covering three at once; multi_year marks the latter so a cumulative
   # count is not read as a single year's.
   "period_years", "multi_year"
 )
+
+# ---- _catalog block ----------------------------------------------------------
+# PopHIVE/Ingest reads a `_catalog` object from every measure_info.json to
+# build the website's data-sources index (summary, search terms, and one line
+# per standard file saying how it is stratified). The summary is the first
+# sentence or two of the source description, trimmed to about forty words;
+# the file lines come from the file names and the columns each file carries.
+
+catalog_summary <- function(description, min_words = 25L, max_words = 45L) {
+  txt <- gsub("\\s+", " ", description)
+  # keep whole sentences until the summary is long enough to say something
+  sentences <- strsplit(txt, "(?<=[a-z0-9)\"])\\. (?=[A-Z\"])", perl = TRUE)[[1]]
+  out <- character()
+  for (s in sentences) {
+    out <- c(out, s)
+    if (length(strsplit(paste(out, collapse = " "), " ")[[1]]) >= min_words) break
+  }
+  first <- paste(out, collapse = ". ")
+  words <- strsplit(first, " ")[[1]]
+  if (length(words) > max_words) first <- paste(words[seq_len(max_words)], collapse = " ")
+  first <- sub("[.,;: ]+$", "", trimws(first))
+  paste0(first, ".")
+}
+
+FILE_STRATA <- c(
+  data_kindergarten = "Kindergarten cohort only",
+  data_k = "Kindergarten cohort only",
+  data_grade7 = "7th grade cohort only",
+  data_7th = "7th grade cohort only",
+  data_pre_k = "Pre-kindergarten cohort only",
+  data_all_grades = "All grades combined",
+  data_exemptions = "Exemption measures only",
+  data_schools = "One row per school",
+  data_districts = "One row per school district",
+  data_schools_2014_2016 = "One row per school, 2014-15 to 2016-17 (data.wa.gov datasets)",
+  data_survey_counties = "County totals from the school-level survey export (see README)",
+  data_county_mmr = "County registry MMR coverage only"
+)
+
+describe_file <- function(path) {
+  cols <- read_header(path)
+  stem <- sub("\\.csv\\.gz$", "", basename(path))
+  if (stem != "data" && stem %in% names(FILE_STRATA)) return(unname(FILE_STRATA[[stem]]))
+  unit <- if ("type" %in% cols) {
+    # the type column names the geographic unit of each row; list the
+    # units the file actually carries rather than guessing
+    classes <- rep("NULL", length(cols))
+    classes[cols == "type"] <- "character"
+    types <- tryCatch(
+      sort(unique(read.csv(gzfile(path), colClasses = classes)$type)),
+      error = function(e) character())
+    types <- types[!is.na(types) & nzchar(types)]
+    if (!length(types)) {
+      "County rows and school rows (see the type column)"
+    } else {
+      lab <- paste(types, collapse = ", ")
+      paste0(toupper(substr(lab, 1, 1)), substr(lab, 2, nchar(lab)),
+             " rows (see the type column)")
+    }
+  } else if (any(c("school_name", "school_id") %in% cols)) {
+    "One row per school"
+  } else if ("school_district" %in% cols || "lea" %in% cols) {
+    "One row per school district"
+  } else {
+    "One row per county"
+  }
+  strata <- c(if ("grade" %in% cols) "grade")
+  if (length(strata)) unit <- paste0(unit, ", by ", paste(strata, collapse = " and "))
+  paste0(unit, ", by school year")
+}
+
+catalog_block <- function(abbr, source_entry, standard_dir) {
+  files <- sort(list.files(standard_dir, pattern = "\\.csv\\.gz$"))
+  file_list <- list()
+  for (f in files) file_list[[f]] <- describe_file(file.path(standard_dir, f))
+  list(
+    summary = catalog_summary(source_entry$description),
+    search_terms = c("Childhood immunizations", "Measles", "School vaccination", "Vaccine exemptions"),
+    bucket = list(),
+    files = file_list
+  )
+}
 
 # ---- build one state ---------------------------------------------------------
 read_header <- function(path) {
@@ -1451,11 +1865,15 @@ read_header <- function(path) {
   on.exit(close(con))
   line <- readLines(con, n = 1L, warn = FALSE)
   sep <- if (grepl("\t", line, fixed = TRUE)) "\t" else ","
-  strsplit(line, sep, fixed = TRUE)[[1]]
+  gsub('"', "", strsplit(line, sep, fixed = TRUE)[[1]])
 }
 
 build_state <- function(abbr, data_path, out_path) {
-  cols <- read_header(data_path)
+  standard_dir <- dirname(data_path)
+  # measures are collected across every standard file, not just data.csv.gz,
+  # so a cohort or district file's columns are documented too
+  cols <- unique(unlist(lapply(
+    list.files(standard_dir, pattern = "\\.csv\\.gz$", full.names = TRUE), read_header)))
   source_id <- STATE_SOURCE[[abbr]]
   if (is.null(source_id)) {
     message("  [skip] ", abbr, ": no source registered")
@@ -1480,6 +1898,7 @@ build_state <- function(abbr, data_path, out_path) {
   }
   out[["_sources"]] <- list()
   out[["_sources"]][[source_id]] <- SOURCES[[source_id]]
+  out[["_catalog"]] <- catalog_block(abbr, SOURCES[[source_id]], standard_dir)
 
   writeLines(emit_json(out, 0L), out_path)
   message("  [ok]   ", abbr, ": ", length(known), " measures -> ", out_path)

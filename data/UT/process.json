@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:04",
   "check_results": {
     "data/UT/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade", "missing_info: health_district", "missing_info: school_district"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/Utah Vaccine Exemption.xlsx": "b53c77f652df76fa97f9a511a5e7eeea"
   },
-  "script_hash": "75633ff8ec2cda87bd66a33465f23b04",
+  "script_hash": "7be18fcfe23da70dcb3c456f121c8e30",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/UT/measure_info.json": "c4bd031dabd3a141c5e1c4dad7d38818",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/UT/standard/data.csv.gz": "ceadb860e4e606023799fecd57e34bf0"
+    "./data/UT/measure_info.json": "2f3de84a46fd83bfc14bc52143d535b8",
+    "./data/UT/standard/data.csv.gz": "ceadb860e4e606023799fecd57e34bf0"
   }
 }

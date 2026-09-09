@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:07",
+  "checked": "2026-09-09 10:11:04",
   "check_results": {
     "data/VA/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: district", "missing_info: school_type", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/VA_2019-2024.xlsx": "d117f9391dfcda76d5356a6a0cc10727"
   },
-  "script_hash": "6076ddbb51be35e946b275649d1c1c96",
+  "script_hash": "737695c12f52274448f8b963a551f9f4",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/VA/measure_info.json": "7e6c761a38cc9214e39e810c1844e7cb",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/VA/standard/data.csv.gz": "a089ca3b19aff260ada06063494232e6"
+    "./data/VA/measure_info.json": "06e0fa6813125b1d4dac42aec4e69112",
+    "./data/VA/standard/data.csv.gz": "a089ca3b19aff260ada06063494232e6"
   }
 }

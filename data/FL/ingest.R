@@ -6,6 +6,7 @@ library(stringr)
 library(vroom)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 
 # FLHealthCHARTS serves "Immunization Levels in Kindergarten" (cid=75) --
 # percent of kindergarten students with proper immunization documentation, by
@@ -22,10 +23,17 @@ source("../../resources/school_year.R")
 # (that max year - 10) to get the next window back. FDOH's own earliest year
 # for this indicator is 2007, so two windows always cover the full series
 # without a gap, this year or in any future one.
+#
+# sources.json holds the report-viewer base URL (rdReport and cid); the export
+# parameters and the window year are added here, since they are what make the
+# request an Excel export rather than the on-screen report.
+sources <- read_sources()
+src <- source_entry(sources, "flhealthcharts_kindergarten")
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
+
 kg_query <- function(drp_year = NULL) {
   params <- c(
-    rdReport             = "NonVitalIndNoGrp.TenYrsRpt",
-    cid                  = "75",
     rdReportFormat       = "NativeExcel",
     rdExportTableID      = "dtTenYrsDataGrid",
     rdShowGridlines      = "True",
@@ -35,48 +43,39 @@ kg_query <- function(drp_year = NULL) {
   )
   if (!is.null(drp_year)) params["drpYear"] <- as.character(drp_year)
   paste0(
-    "https://www.flhealthcharts.gov/ChartsDashboards/rdPage.aspx?",
+    src$url, "&",
     paste(names(params), unname(params), sep = "=", collapse = "&")
   )
 }
 
-# Download to a temp file and only move it into raw/ once it is there and
-# readable, so a blocked/failed request cannot truncate the copy already on
-# disk (see OR/ingest.R for the incident that made this the pattern).
-download_kg_xlsx <- function(url, dest) {
-  tmp <- tempfile(fileext = ".xlsx")
-  ok <- tryCatch({
-    download.file(url, tmp, mode = "wb", quiet = TRUE)
-    readxl::excel_sheets(tmp)
-    TRUE
-  }, error = function(e) FALSE, warning = function(w) FALSE)
-
-  if (ok) {
-    file.copy(tmp, dest, overwrite = TRUE)
-  } else if (!file.exists(dest)) {
-    stop("FL: could not download ", url, " and there is no ", dest,
-         " to fall back on.")
-  } else {
-    message("FL: download failed for ", url, "; keeping existing ", dest)
-  }
-  unlink(tmp)
-}
-
+# fetch_file() downloads to a temp file, checks that it opens as a workbook,
+# and only then copies it over raw/, so a blocked or failed request cannot
+# truncate the copy already on disk (see OR/ingest.R for the incident that
+# made this the pattern). A failed refresh keeps the committed file with a
+# warning; only a missing committed file is fatal. The two calls stay in this
+# order because the second window's end year is read from the first.
+#
+# The report viewer generates the workbook on every request, so its bytes
+# differ from run to run while the cells do not. content_key compares cell
+# values instead, so an identical export leaves raw/ (and the parse gate)
+# alone instead of rewriting the workbook nightly.
 dir.create("raw", showWarnings = FALSE)
 kg_recent_path <- "raw/FL_kindergarten_recent10yr.xlsx"
 kg_early_path  <- "raw/FL_kindergarten_early10yr.xlsx"
 
-download_kg_xlsx(kg_query(), kg_recent_path)
+rec_recent <- fetch_file(kg_query(), kg_recent_path, type = "xlsx",
+                         content_key = workbook_content_key,
+                         previous = prev[[kg_recent_path]])
 kg_recent_years <- suppressWarnings(as.integer(as.character(
   unlist(readxl::read_excel(kg_recent_path, col_names = FALSE)[2, ])
 )))
 kg_max_year <- max(kg_recent_years, na.rm = TRUE)
-download_kg_xlsx(kg_query(kg_max_year - 10L), kg_early_path)
+rec_early <- fetch_file(kg_query(kg_max_year - 10L), kg_early_path,
+                        type = "xlsx", content_key = workbook_content_key,
+                        previous = prev[[kg_early_path]])
+process <- record_fetch(process, list(rec_recent, rec_early))
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 parse_exempt <- function(x) {
@@ -295,7 +294,13 @@ if (!identical(process$raw_state, raw_state) ||
                   "Florida (kindergarten)",
                   "standard/data_kindergarten.csv.gz", from = "rate")
 
+  # Only the kindergarten source is fetched; the scraped exemptions are a
+  # single hand-supplied year.
+  update_latest_year(latest_school_year(wide %>% filter(grade %in% KG_GRADES)),
+                     ids = "flhealthcharts_kindergarten")
+
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

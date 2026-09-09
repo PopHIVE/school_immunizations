@@ -9,32 +9,36 @@
   },
   "resources": [
     {
-      "bytes": 14915,
-      "encoding": "windows-1252",
-      "md5": "116a88c46f0fa718de8449a141c18ce5",
+      "bytes": 14913,
+      "encoding": "ISO-8859-1",
+      "md5": "1268e65498fadfcaa247e1b9569f71b3",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "dc26589b9abf9358696c7245dabb3bd7be4e6f72"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 5 00:17:25 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:11.146723",
-      "last_modified": "2026-08-24 10:30:04.464428",
+      "created": "2026-09-09 10:08:12.40828",
+      "last_modified": "2026-09-09 10:08:12.40828",
       "vintage": {},
       "row_count": 308,
       "entity_count": 44,
@@ -80,54 +84,12 @@
             "duplicates": 264,
             "info": [],
             "time_range": [0, 6],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "16001": 7,
-              "16003": 7,
-              "16005": 7,
-              "16007": 7,
-              "16009": 7,
-              "16011": 7,
-              "16013": 7,
-              "16015": 7,
-              "16017": 7,
-              "16019": 7,
-              "16021": 7,
-              "16023": 7,
-              "16025": 7,
-              "16027": 7,
-              "16029": 7,
-              "16031": 7,
-              "16033": 7,
-              "16035": 7,
-              "16037": 7,
-              "16039": 7,
-              "16041": 7,
-              "16043": 7,
-              "16045": 7,
-              "16047": 7,
-              "16049": 7,
-              "16051": 7,
-              "16053": 7,
-              "16055": 7,
-              "16057": 7,
-              "16059": 7,
-              "16061": 7,
-              "16063": 7,
-              "16065": 7,
-              "16067": 7,
-              "16069": 7,
-              "16071": 7,
-              "16073": 7,
-              "16075": 7,
-              "16077": 7,
-              "16079": 7,
-              "16081": 7,
-              "16083": 7,
-              "16085": 7,
-              "16087": 7
-            }
+            "mean": 16044,
+            "sd": 25.43818,
+            "min": 16001,
+            "max": 16087
           },
           {
             "name": "geography_name",
@@ -392,7 +354,7 @@
           }
         ]
       },
-      "sha512": "84d851fb23156b403b5118977b10cac927d895d0f725bee5a9d26390834d76502cb71f7685ce30229eadc0d30884a30841438eb75089f5bfec7b1b971b125b0e"
+      "sha512": "dba480d84125c27e9755af460f58f96db4ac20d34b4c10c1b318e7946c8939b47239142c722781fb162dd944fff6c8a632e27ffe8014ef74f8907b0627deab7e"
     }
   ],
   "measure_info": {
@@ -525,6 +487,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level per-series EXEMPTION rates from the Idaho DHW school immunization report (supplied to PopHIVE as \"Yale School Exemption Data Request\"), aggregated over kindergarten, 1st, 7th and 12th grade.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

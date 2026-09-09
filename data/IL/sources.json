@@ -1,0 +1,20 @@
+[
+  {
+    "id": "isbe_public_use_files",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://www.isbe.net/Pages/Health-Requirements-Student-Data.aspx",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/IL_school_immunization_county_aggregated_*.xlsx",
+    "publish_month": 4,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "ISBE immunization survey public-use files, aggregated to county by hand; IDPH also publishes a Tableau dashboard.",
+    "last_check_time": "2026-09-09 14:14:05",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

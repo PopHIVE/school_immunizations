@@ -1,5 +1,6 @@
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 # =============================================================================
 # ME - School Vaccination Rates (Multiple Years)
 # =============================================================================
@@ -9,35 +10,34 @@ library(readxl)
 library(stringr)
 library(vroom)
 
-# ---- Download School Vaccination Rates workbooks from Maine CDC ----
-# The immunization data-reports page links a workbook per school year; all of
-# them are served from a single canonical directory. Scrape the page, then pull
-# each file from that directory so the series self-updates as years are added.
-# (maine.gov 403s non-browser agents, so present a browser User-Agent.)
-options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
-dir.create("raw", showWarnings = FALSE)
-me_page <- "https://www.maine.gov/dhhs/mecdc/data-reports/immunization"
-me_base <- "https://www.maine.gov/dhhs/mecdc/sites/maine.gov.dhhs.mecdc/files/immunization-reports/"
-me_tmp <- tempfile(fileext = ".html")
-if (tryCatch({ download.file(me_page, me_tmp, quiet = TRUE); TRUE }, error = function(e) FALSE)) {
-  html <- paste(readLines(me_tmp, warn = FALSE), collapse = "\n")
-  hrefs <- unlist(str_extract_all(html, 'href="[^"]*[Vv]accination[^"]*\\.xlsx"'))
-  hrefs <- str_replace_all(hrefs, 'href="|"$', "")
-  for (bn in unique(basename(hrefs))) {
-    url <- paste0(me_base, gsub(" ", "%20", bn))
-    dest <- file.path("raw", utils::URLdecode(bn))
-    try(download.file(url, dest, mode = "wb", quiet = TRUE), silent = TRUE)
-  }
-}
+sources <- read_sources()
+src <- source_entry(sources, "mecdc_workbooks")
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
 
-if (!file.exists("process.json")) {
-  process <- list(raw_state = NULL)
-} else {
-  process <- dcf::dcf_process_record()
-}
+# ---- Download School Vaccination Rates workbooks from Maine CDC ----
+# The immunization data-reports page links a workbook per school year, but the
+# hrefs are not all live: the 2020-2021 and 2022-2023 links point at paths
+# under data-reports/ that 404, while every workbook, those included, is served
+# from the immunization-reports directory under its basename. So the listing
+# supplies the file names and each one is fetched from that directory. A year's
+# workbook does not change once posted, so files already in raw/ are skipped;
+# a listing that cannot be fetched is a warning and the run continues on raw/.
+# fetch.R sends the browser header set maine.gov requires (it 403s bare
+# clients).
+dir.create("raw", showWarnings = FALSE)
+me_base <- "https://www.maine.gov/dhhs/mecdc/sites/maine.gov.dhhs.mecdc/files/immunization-reports/"
+links <- discover_links(src$page_url, src$pattern, must_find = FALSE)
+me_files <- unique(utils::URLdecode(basename(links$href)))
+recs <- fetch_many(
+  paste0(me_base, utils::URLencode(me_files, reserved = FALSE)),
+  dests = file.path("raw", me_files),
+  if_exists = "skip", previous = prev
+)
+process <- record_fetch(process, recs)
 
 raw_files <- list.files("raw", pattern = "School Vaccination Rates|School-Vaccination-Rates", full.names = TRUE)
-raw_state <- list(hash = tools::md5sum(raw_files))
+raw_state <- raw_state_md5()
 
 parse_end_year <- function(filename) {
   # Handles YYYY-YYYY and YYYY-YY patterns
@@ -182,9 +182,11 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  write_standard(data_out, "Maine", "standard/data.csv.gz", from = "percent")
+  out <- write_standard(data_out, "Maine", "standard/data.csv.gz", from = "percent")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

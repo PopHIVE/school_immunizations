@@ -10,13 +10,14 @@
   "resources": [
     {
       "bytes": 4477,
-      "encoding": "windows-1252",
+      "encoding": "ISO-8859-1",
       "md5": "8489234ccec03a0291a19b6309b57cd1",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
@@ -26,6 +27,7 @@
           "222e7864ddeb33b9b6ef324d79f72ae7814c6b66"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
@@ -35,6 +37,7 @@
           "Weinberger <daniel.weinberger@yale.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
@@ -44,6 +47,7 @@
           "Mon Oct 6 21:02:35 2025 -0400"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -63,8 +67,8 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:10.776682",
-      "last_modified": "2026-08-21 12:49:30.424128",
+      "created": "2026-09-09 09:43:32.433347",
+      "last_modified": "2026-09-09 09:43:32.43343",
       "vintage": {},
       "row_count": 208,
       "entity_count": 16,
@@ -98,26 +102,12 @@
             "duplicates": 192,
             "info": [],
             "time_range": [0, 12],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "04": 13,
-              "04001": 13,
-              "04003": 13,
-              "04005": 13,
-              "04007": 13,
-              "04009": 13,
-              "04011": 13,
-              "04012": 13,
-              "04013": 13,
-              "04015": 13,
-              "04017": 13,
-              "04019": 13,
-              "04021": 13,
-              "04023": 13,
-              "04025": 13,
-              "04027": 13
-            }
+            "mean": 3763.25,
+            "sd": 973.005367,
+            "min": 4,
+            "max": 4027
           },
           {
             "name": "geography_name",
@@ -164,8 +154,8 @@
               "short_name": "Students enrolled",
               "long_name": "Number of students enrolled",
               "category": "immunization",
-              "short_description": "Number of kindergarten students enrolled at the reporting level.",
-              "long_description": "Kindergarten enrollment count as published by ADHS in the same table as the coverage and exemption percentages, and the denominator those percentages are taken over.",
+              "short_description": "Number of students enrolled at the reporting level.",
+              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
               "statement": "In {location}, {value} students were enrolled.",
               "measure_type": "Count",
               "unit": "Students",
@@ -386,11 +376,11 @@
             "info": {
               "id": "rate_full_exempt",
               "short_name": "Total exemption rate",
-              "long_name": "Proportion of students exempt from every required vaccine",
+              "long_name": "Proportion of students with any vaccination exemption",
               "category": "immunization",
-              "short_description": "Proportion of enrolled kindergarten students exempt from every required vaccine.",
-              "long_description": "ADHS publishes this as '% Exempt from Every Req'd Vaccine', so it counts students holding an exemption covering all required vaccines rather than students with any exemption from any single vaccine, and it is smaller than the medical and personal exemption rates combined. Reported from the 2015-2016 school year onward; earlier years are missing because the column did not exist.",
-              "statement": "In {location}, {value} of school students were exempt from every required vaccine.",
+              "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+              "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
               "measure_type": "Rate",
               "unit": "Rate",
               "time_resolution": "Year",
@@ -419,8 +409,8 @@
       "short_name": "Students enrolled",
       "long_name": "Number of students enrolled",
       "category": "immunization",
-      "short_description": "Number of kindergarten students enrolled at the reporting level.",
-      "long_description": "Kindergarten enrollment count as published by ADHS in the same table as the coverage and exemption percentages, and the denominator those percentages are taken over.",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
       "statement": "In {location}, {value} students were enrolled.",
       "measure_type": "Count",
       "unit": "Students",
@@ -553,11 +543,11 @@
     "rate_full_exempt": {
       "id": "rate_full_exempt",
       "short_name": "Total exemption rate",
-      "long_name": "Proportion of students exempt from every required vaccine",
+      "long_name": "Proportion of students with any vaccination exemption",
       "category": "immunization",
-      "short_description": "Proportion of enrolled kindergarten students exempt from every required vaccine.",
-      "long_description": "ADHS publishes this as '% Exempt from Every Req'd Vaccine', so it counts students holding an exemption covering all required vaccines rather than students with any exemption from any single vaccine, and it is smaller than the medical and personal exemption rates combined. Reported from the 2015-2016 school year onward; earlier years are missing because the column did not exist.",
-      "statement": "In {location}, {value} of school students were exempt from every required vaccine.",
+      "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+      "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+      "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
       "measure_type": "Rate",
       "unit": "Rate",
       "time_resolution": "Year",
@@ -577,6 +567,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level school immunization and exemption data from the ADHS immunization reporting query tool.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

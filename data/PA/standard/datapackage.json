@@ -10,39 +10,43 @@
   "resources": [
     {
       "bytes": 132951,
-      "encoding": "windows-1252",
-      "md5": "21c7bf21932727bb63110d1f1f31f884",
+      "encoding": "ISO-8859-1",
+      "md5": "230fd857ee09259b3d4f8af2c19612c7",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
-          "80d0a2a1c83cd038436b25776890e49b22b7452c",
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
-          "dc26589b9abf9358696c7245dabb3bd7be4e6f72"
+          "dc26589b9abf9358696c7245dabb3bd7be4e6f72",
+          "80d0a2a1c83cd038436b25776890e49b22b7452c"
         ],
         "author": [
-          "weinbergerlab <dweinber@gmail.com>",
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
-          "cawerin <aiwenc@andrew.cmu.edu>"
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "weinbergerlab <dweinber@gmail.com>"
         ],
         "date": [
-          "Fri Jul 24 15:51:25 2026 -0400",
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
-          "Thu Feb 5 00:17:25 2026 -0500"
+          "Thu Feb 5 00:17:25 2026 -0500",
+          "Fri Jul 24 15:51:25 2026 -0400"
         ],
         "message": [
-          "Rewire PA ingest to download county survey files from PA DOH",
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
-          "mass standardization"
+          "mass standardization",
+          "Rewire PA ingest to download county survey files from PA DOH"
         ]
       },
       "source": [],
@@ -55,8 +59,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:13.369675",
-      "last_modified": "2026-08-24 10:31:55.836882",
+      "created": "2026-09-08 09:57:54.834968",
+      "last_modified": "2026-09-08 09:57:54.834968",
       "vintage": {},
       "row_count": 1606,
       "entity_count": 67,
@@ -83,77 +87,12 @@
             "duplicates": 1539,
             "info": [],
             "time_range": [0, 5],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "42001": 24,
-              "42003": 24,
-              "42005": 24,
-              "42007": 24,
-              "42009": 24,
-              "42011": 24,
-              "42013": 24,
-              "42015": 24,
-              "42017": 24,
-              "42019": 24,
-              "42021": 24,
-              "42023": 24,
-              "42025": 24,
-              "42027": 24,
-              "42029": 24,
-              "42031": 24,
-              "42033": 24,
-              "42035": 24,
-              "42037": 24,
-              "42039": 24,
-              "42041": 24,
-              "42043": 24,
-              "42045": 24,
-              "42047": 24,
-              "42049": 24,
-              "42051": 24,
-              "42053": 24,
-              "42055": 24,
-              "42057": 24,
-              "42059": 24,
-              "42061": 24,
-              "42063": 24,
-              "42065": 24,
-              "42067": 24,
-              "42069": 24,
-              "42071": 24,
-              "42073": 24,
-              "42075": 24,
-              "42077": 24,
-              "42079": 24,
-              "42081": 24,
-              "42083": 24,
-              "42085": 24,
-              "42087": 24,
-              "42089": 24,
-              "42091": 24,
-              "42093": 24,
-              "42095": 24,
-              "42097": 24,
-              "42099": 24,
-              "42101": 24,
-              "42103": 24,
-              "42105": 24,
-              "42107": 24,
-              "42109": 24,
-              "42111": 24,
-              "42113": 22,
-              "42115": 24,
-              "42117": 24,
-              "42119": 24,
-              "42121": 24,
-              "42123": 24,
-              "42125": 24,
-              "42127": 24,
-              "42129": 24,
-              "42131": 24,
-              "42133": 24
-            }
+            "mean": 42066.942715,
+            "sd": 38.680179,
+            "min": 42001,
+            "max": 42133
           },
           {
             "name": "geography_name",
@@ -724,7 +663,7 @@
           }
         ]
       },
-      "sha512": "58bfe6d1ee36ca753c1f367ea40e0d0e899912d382d4cbb6168e56cb5eac6c6e7e13882310507011f85d7df32117cd3f113cb0a701987ac4a164cb80f72d5e37"
+      "sha512": "c389b4a59b5e616cf68bb0160984c959a0008756bd5a539ffc3305beef59c94a2407609017a160f723cd3e0c5c3ccfed9f94d33d6961ba44668856beb115ff45"
     }
   ],
   "measure_info": {
@@ -1027,6 +966,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level immunization and exemption data from the annual PA DOH 'by County' school immunization survey workbooks (kindergarten, 7th, and 12th grade).",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

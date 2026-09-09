@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kdph_workbook",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://www.chfs.ky.gov/agencies/dph/dehp/Pages/immunization.aspx",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 6,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Exemption rates by county and grade obtained by request.",
+    "last_check_time": "2026-09-09 14:14:05",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "annual_county_report_pdf",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://healthtracking.ky.gov/Topics/immunizations/Pages/childhood-immunizations.aspx",
+    "pattern": null,
+    "type": "pdf",
+    "dest_glob": null,
+    "publish_month": 6,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Annual School Immunization Coverage Assessment Report for Kentucky Counties (K, 7th, 11th coverage), published as a PDF. The 2024-25 file at chfs.ky.gov/agencies/dph/dehp/imm/2425AnnualSchoolSurveyReport.pdf answered HTTP 404 on 2026-09-08; the healthtracking.ky.gov pages that link the report render their links in JavaScript. Not ingested: no file link found.",
+    "last_check_time": "2026-09-09 14:14:05",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

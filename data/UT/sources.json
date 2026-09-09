@@ -1,0 +1,20 @@
+[
+  {
+    "id": "udhhs_exemption_workbook",
+    "access": "request",
+    "url": null,
+    "page_url": "https://immunize.utah.gov/information-for-the-public/utah-statistics/",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 8,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Exemption rates by school district and health district obtained by request. The school immunization data on the page is now an Adobe Captivate HTML presentation, and the 160-page annual coverage reports give school figures per local health district, not county.",
+    "last_check_time": "2026-09-09 14:16:56",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

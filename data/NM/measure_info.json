@@ -18,11 +18,11 @@
   },
   "total_pop_18": {
     "id": "total_pop_18",
-    "short_name": "Population aged ≤18",
-    "long_name": "Population aged 18 and under",
+    "short_name": "Population aged 0-18",
+    "long_name": "Resident population aged 18 and under",
     "category": "immunization",
-    "short_description": "Population aged 18 and under in the county.",
-    "long_description": "Population aged 18 and under, used as the denominator for the exemption rate and count in the same record. It is a resident population figure published alongside the exemption data, not a school enrolment count.",
+    "short_description": "County resident population aged 18 and under, used as the exemption denominator.",
+    "long_description": "Resident population aged 18 and under, as published alongside the exemption counts (New Mexico). It is a resident population, not an enrolment count, so rates derived from it are approximate.",
     "statement": "In {location}, the population aged 18 and under was {value}.",
     "measure_type": "Count",
     "unit": "Students",
@@ -52,12 +52,25 @@
   },
   "_sources": {
     "nm_school_immunization": {
-      "name": "New Mexico School Immunization Coverage",
-      "url": "https://www.arcgis.com/apps/dashboards/c40e909922a243968807dc7b10870405",
+      "name": "New Mexico Immunization Exemptions by County",
+      "url": "https://www.nmhealth.org/about/phd/idb/imp/siis/data",
       "organization": "New Mexico Department of Health",
       "organization_url": "https://www.nmhealth.org/",
-      "description": "County-level kindergarten and 7th-grade coverage and exemption data from the NMDOH ArcGIS dashboard feature service.",
+      "description": "County counts of residents aged 18 and under holding a vaccination exemption, by calendar year, from NMDOH's immunization program data page, with the county population under 18 as the denominator (rate_full_exempt). These are not school-survey figures and carry no grade or coverage: grade is \"Overall\". Calendar year N is dated to the school year ending in N. NMDOH's ArcGIS school immunization dashboard (kindergarten and 7th grade by county) is not ingested; it exposes no queryable layer.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County counts of residents aged 18 and under holding a vaccination exemption, by calendar year, from NMDOH's immunization program data page, with the county population under 18 as the denominator (rate_full_exempt).",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
     }
   }
 }

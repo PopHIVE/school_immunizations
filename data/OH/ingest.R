@@ -1,8 +1,17 @@
 source("../../resources/rate_scale.R")
 source("../../resources/county_fips.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
 # =============================================================================
 # OH - MMR Exemption Rate (Kindergarten) by County
+#
+# Parsed: raw/Ohio % of Students with MMR Exemption.xlsx, a hand export of
+# the 2024-25 kindergarten MMR exemption map from the DataOhio "Annual Ohio
+# Kindergarten Immunization Level Assessment" view.
+#
+# Not parsed: the DataOhio view itself (2017-18 to current, county and
+# school) is a state Tableau Server with guest access and no data endpoint,
+# so the single ingested year is the hand export above.
 #
 # The ODH file is a map graphic, not a table: the top of the sheet is the map's
 # county callouts, and the tabular data sits below it in TWO side-by-side
@@ -26,7 +35,7 @@ if (!file.exists("process.json")) {
 }
 
 raw_file <- "raw/Ohio % of Students with MMR Exemption.xlsx"
-raw_state <- list(hash = tools::md5sum(raw_file))
+raw_state <- raw_state_md5()
 
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

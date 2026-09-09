@@ -2,14 +2,26 @@ library(dcf)
 library(tidyverse)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
+source("../../resources/fetch.R")
+
+# =============================================================================
+# AZ - Kindergarten coverage and exemptions by county, 2010-11 to 2023-24
+#
+# Parsed: raw/az_immunization_kg_<start>_<end>.csv, one file per school year,
+# captured by hand from the ADHS Immunization Data Report query tool
+# (apps.azdhs.gov/IDRReportStats), which has no export endpoint.
+#
+# Not parsed: the ADHS 2024-25 county kindergarten MMR PDF under
+# azdhs.gov/documents/.../statistics-reports/. Its table is the share of
+# schools at or above 95% MMR coverage per county, not a coverage rate, so
+# the IDRReportStats app remains the source.
+# =============================================================================
 
 ## change here the 2 digit code being processed here
 select.state = 'AZ'
 
 # check raw state
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", "csv", recursive = TRUE, full.names = TRUE
-)))
+raw_state <- raw_state_md5(pattern = "csv")
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

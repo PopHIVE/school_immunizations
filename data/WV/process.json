@@ -5,29 +5,29 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:58",
+      "last_run": "2026-09-09 10:11:01",
       "frequency": 0,
-      "run_time": 0.94,
+      "run_time": 0.44,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:29:07",
+  "checked": "2026-09-09 10:11:04",
   "check_results": {
     "data/WV/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
     }
   },
   "raw_state": {
-    "hash": "7860710392149d43e903b357376e4d76",
-    "script": "4471b4d3aa5c10761ea8408b3b9c7c0d",
+    "hash": "331241f07e940f54e3c922c7f79bbdb3",
+    "script": "6b5416428008e310a5dfd2218f3374b9",
     "force": "2026-02-05"
   },
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WV/measure_info.json": "5521f45756ece6e88cb84d11ff1e24a0",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WV/standard/data.csv.gz": "66efa0b9a2d54e14b06ffd1e3c83fd06"
+    "./data/WV/measure_info.json": "1725c039c43313fb3e427908862f9f26",
+    "./data/WV/standard/data.csv.gz": "eea95210f68c0936b47277cd205114d8"
   },
-  "script_hash": "4471b4d3aa5c10761ea8408b3b9c7c0d"
+  "script_hash": "6b5416428008e310a5dfd2218f3374b9"
 }

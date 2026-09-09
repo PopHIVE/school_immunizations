@@ -178,5 +178,18 @@
       "description": "School-level immunization counts by antigen and exemption from the South Dakota DOH school immunization data.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "School-level immunization counts by antigen and exemption from the South Dakota DOH school immunization data.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, school rows (see the type column), by school year"
+    }
   }
 }

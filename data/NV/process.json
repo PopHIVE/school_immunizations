@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/NV/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/2010-2024 MMR Kindergarten.xlsx": "e00cca9d686a7a6873301d1815efdb90"
   },
-  "script_hash": "bd70f430cea055b7a5bd99cae922c999",
+  "script_hash": "6085e270b272af229379f9897b8026d4",
   "standard_state": {
-    "./data/NV/measure_info.json": "105f8865ce322827a236e3a2a8e897e0",
-    "./data/NV/standard/data.csv.gz": "622f203da9a17602076a833488621923"
+    "./data/NV/measure_info.json": "9f43fa2b7434961ceff757c4482b1adf",
+    "./data/NV/standard/data.csv.gz": "2b8b9e273e785de7f670918d9b6a2dec"
   }
 }

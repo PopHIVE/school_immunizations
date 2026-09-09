@@ -7,10 +7,20 @@ library(readr)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
 source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
+# =============================================================================
+# KS - Total exemption rate by county, 2019-20 to 2023-24
+#
+# Parsed: raw/ks_20-24.xlsx, one sheet per school year, transcribed from the
+# KDHE kindergarten immunization reports.
+#
+# Not parsed: the KDHE kindergarten immunization data and coverage pages
+# (kdhe.ks.gov/2016/Kindergarten-Immunization-Data) carry no file links; the
+# per-county report cards sit behind the ArchiveCenter application.
+# =============================================================================
+
+raw_state <- raw_state_md5()
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

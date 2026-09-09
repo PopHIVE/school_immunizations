@@ -1487,5 +1487,18 @@
       "description": "County-level immunization and exemption data from the ISBE public-use immunization data files, published as one sheet per vaccine (Polio, DTaP, Tdap, Measles, Mumps, Rubella, Hepatitis B, Hib, Varicella, Pneumococcal, Meningococcal). Each vaccine carries its own enrollment -- Tdap and Meningococcal assess a 7th/9-12 grade cohort, the rest assess PreK-12 -- so every measure is kept per vaccine rather than collapsed into one antigen's numbers.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "County-level immunization and exemption data from the ISBE public-use immunization data files, published as one sheet per vaccine (Polio, DTaP, Tdap, Measles, Mumps, Rubella, Hepatitis B, Hib, Varicella, Pneumococcal, Meningococcal).",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

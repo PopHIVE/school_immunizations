@@ -1,0 +1,38 @@
+[
+  {
+    "id": "cdph_report_tables",
+    "access": "static",
+    "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/School/tk-12-reports.aspx",
+    "page_url": "https://www.cdph.ca.gov/Programs/CID/DCDC/Pages/Immunization/School/tk-12-reports.aspx",
+    "pattern": "Report.*\\.xlsx",
+    "type": "xlsx",
+    "dest_glob": "raw/CA_*_cdph_*.xlsx",
+    "publish_month": 5,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2024,
+    "ci_reachable": true,
+    "notes": "Per-year CDPH county report workbooks (kindergarten; 7th grade through 2019-20). URLs are listed in ingest.R; the page is scraped for new years.",
+    "last_check_time": "2026-09-09 14:13:48",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "exemption_workbook",
+    "access": "manual",
+    "url": null,
+    "page_url": null,
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/California Vaccine Exemption.xlsx",
+    "publish_month": null,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Hand-supplied exemption workbook; no public URL.",
+    "last_check_time": "2026-09-09 14:13:48",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

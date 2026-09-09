@@ -28,7 +28,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/SD/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name"]
@@ -38,8 +38,8 @@
     "hash": "3fd534408ed6ce661bf813d0285af359"
   },
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/SD/measure_info.json": "4e3cfa3a0c5bacc12a31e1338d1c97c1",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/SD/standard/data.csv.gz": "43ee9b560e4cbc08c0b567cc9a822cff"
+    "./data/SD/measure_info.json": "b0e3c13da436aabab12e5762aa623dff",
+    "./data/SD/standard/data.csv.gz": "58835ed90b77b1acecff9e1484ea97a2"
   },
-  "script_hash": "9fae5a11613a2d8b4e4ba9c85bc6f726"
+  "script_hash": "afdb09688affe0fda1a0d841671b9e14"
 }

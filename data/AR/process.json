@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/AR/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: school_district", "missing_info: lea", "missing_info: grade"]
@@ -25,7 +25,7 @@
   },
   "script_hash": "a7169fc958ade7036c22daad221f3500",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AR/measure_info.json": "f00a063502eb7ea8b0d2d0d3723f26a7",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AR/standard/data.csv.gz": "58c01974937430de4625befaacea5c06"
+    "./data/AR/measure_info.json": "6b398407e1952cb22cf494107eec3143",
+    "./data/AR/standard/data.csv.gz": "58c01974937430de4625befaacea5c06"
   }
 }

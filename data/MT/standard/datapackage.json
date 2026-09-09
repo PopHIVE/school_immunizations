@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 3388,
-      "encoding": "windows-1252",
-      "md5": "151ab7e246353243ba98555211db6294",
+      "encoding": "ISO-8859-1",
+      "md5": "a039729b6e78e891e4d16c8fe6185377",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 08:06:45 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.59687",
-      "last_modified": "2026-08-25 11:31:29.298361",
+      "created": "2026-09-09 10:09:05.789538",
+      "last_modified": "2026-09-09 10:09:05.789538",
       "vintage": {},
       "row_count": 224,
       "entity_count": 57,
@@ -77,67 +81,12 @@
             "duplicates": 167,
             "info": [],
             "time_range": [0, 3],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "30": 3,
-              "30001": 4,
-              "30003": 4,
-              "30005": 4,
-              "30007": 4,
-              "30009": 4,
-              "30011": 4,
-              "30013": 4,
-              "30015": 4,
-              "30017": 4,
-              "30019": 4,
-              "30021": 4,
-              "30023": 4,
-              "30025": 4,
-              "30027": 4,
-              "30029": 4,
-              "30031": 4,
-              "30033": 4,
-              "30035": 4,
-              "30037": 3,
-              "30039": 4,
-              "30041": 4,
-              "30043": 4,
-              "30045": 3,
-              "30047": 4,
-              "30049": 4,
-              "30051": 4,
-              "30053": 4,
-              "30055": 4,
-              "30057": 4,
-              "30059": 4,
-              "30061": 4,
-              "30063": 4,
-              "30065": 4,
-              "30067": 4,
-              "30069": 3,
-              "30071": 4,
-              "30073": 4,
-              "30075": 4,
-              "30077": 4,
-              "30079": 4,
-              "30081": 4,
-              "30083": 4,
-              "30085": 4,
-              "30087": 4,
-              "30089": 4,
-              "30091": 4,
-              "30093": 4,
-              "30095": 4,
-              "30097": 4,
-              "30099": 4,
-              "30101": 4,
-              "30103": 4,
-              "30105": 4,
-              "30107": 4,
-              "30109": 4,
-              "30111": 4
-            }
+            "mean": 29653.941964,
+            "sd": 3459.377136,
+            "min": 30,
+            "max": 30111
           },
           {
             "name": "geography_name",
@@ -174,12 +123,12 @@
               "Lewis and Clark": 4,
               "Liberty": 4,
               "Lincoln": 4,
+              "MONTANA": 3,
               "Madison": 4,
               "McCone": 4,
               "Meagher": 4,
               "Mineral": 4,
               "Missoula": 4,
-              "MONTANA": 3,
               "Musselshell": 4,
               "Park": 4,
               "Petroleum": 3,
@@ -366,7 +315,7 @@
               "long_name": "Proportion of students with a religious vaccination exemption",
               "category": "immunization",
               "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
-              "long_description": "Share of assessed school students holding a notarized religious exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey. Montana law does not offer a separate philosophical exemption, so this is a religious exemption specifically.",
+              "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
               "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -394,7 +343,7 @@
               "long_name": "Proportion of students with a medical vaccination exemption",
               "category": "immunization",
               "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
-              "long_description": "Share of assessed school students with a physician- or APRN-certified medical exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
               "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -527,7 +476,7 @@
           }
         ]
       },
-      "sha512": "62dc261d5bcaf690b36dd615652249fddace124f07f1c4cbad6f7bd103cd8f98a5fe37731187b2e1ea55b9c192722e93a9f86e30806b6bf2656a8360bf625564"
+      "sha512": "a5fc81ed4cc6f2eea9101abd8eab2d2fe847e713bf06c9deda91d50ce642a74f35c0008dbfa65846836ed87e51053c85890f6a49afd416120f6d63f01f89441b"
     }
   ],
   "measure_info": {
@@ -616,6 +565,40 @@
         }
       ]
     },
+    "rate_religious_exempt": {
+      "id": "rate_religious_exempt",
+      "short_name": "Religious exemption rate",
+      "long_name": "Proportion of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+      "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "mt_school_immunization"
+        }
+      ]
+    },
+    "rate_medical_exempt": {
+      "id": "rate_medical_exempt",
+      "short_name": "Medical exemption rate",
+      "long_name": "Proportion of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+      "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "mt_school_immunization"
+        }
+      ]
+    },
     "N_assessed": {
       "id": "N_assessed",
       "short_name": "Students assessed",
@@ -684,40 +667,6 @@
         }
       ]
     },
-    "rate_medical_exempt": {
-      "id": "rate_medical_exempt",
-      "short_name": "Medical exemption rate",
-      "long_name": "Proportion of students with a medical vaccination exemption",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
-      "long_description": "Share of assessed school students with a physician- or APRN-certified medical exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey.",
-      "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "mt_school_immunization"
-        }
-      ]
-    },
-    "rate_religious_exempt": {
-      "id": "rate_religious_exempt",
-      "short_name": "Religious exemption rate",
-      "long_name": "Proportion of students with a religious vaccination exemption",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
-      "long_description": "Share of assessed school students holding a notarized religious exemption from one or more required vaccines, as reported by county in the state's annual school immunization survey. Montana law does not offer a separate philosophical exemption, so this is a religious exemption specifically.",
-      "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "mt_school_immunization"
-        }
-      ]
-    },
     "_sources": {
       "mt_school_immunization": {
         "name": "Montana School Immunization Data",
@@ -728,6 +677,20 @@
         "restrictions": "Public data. Montana ended routine school immunization data collection after the 2018-19 school year."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level immunization completeness and exemption data from the Montana DPHHS school immunization reports.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

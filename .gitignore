@@ -5,3 +5,6 @@
 .Rdata
 .DS_Store
 renv
+
+# CI artifact from scripts/check_sources.R
+check_sources.json

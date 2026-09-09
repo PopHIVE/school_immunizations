@@ -5,30 +5,86 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:51",
+      "last_run": "2026-09-08 14:52:28",
       "frequency": 0,
-      "run_time": 0.02,
+      "run_time": 6.762,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "",
+          "Attaching package: 'vroom'",
+          "",
+          "The following objects are masked from 'package:readr':",
+          "",
+          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
+          "    col_factor, col_guess, col_integer, col_logical, col_number,",
+          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
+          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
+          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
+          "    problems, spec",
+          "",
+          "fetch: fetched https://dph.sc.gov/health-wellness/child-teen-health/school-vaccination-coverage-data (362,034 bytes)",
+          "SC 45-day reports: 2 file(s): 0 updated, 2 unchanged, 0 skipped, 0 failed",
+          "SC: split 'SchoMcclellanville' into 'Scho' / 'Mcclellanville' (45_day_report_2025.pdf)",
+          "SC: split 'HoMcCormick' into 'Ho' / 'McCormick' (45_day_report_2025.pdf)",
+          "SC: 45-day report rows per year: 2024=1516, 2025=1520",
+          "SC: 2 row(s) with no city, 2 with no grade range",
+          "SC: 3271 rows (5 state, 230 county, 3036 school), school years 2018-09-01 to 2025-09-01"
+        ],
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/SC/raw/SC_2019-23.csv": {
       "data": "not_compressed"
     },
     "data/SC/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: grade"]
+      "data": "geography_nas",
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: city", "missing_info: grade_range", "missing_info: grade"]
     }
   },
   "raw_state": {
+    "raw/45_day_report_2024.pdf": "a31decf268fc34548c81cb9038068f3a",
+    "raw/45_day_report_2025.pdf": "b1c4d602843cde3d77ea27a481f18ab3",
     "raw/SC_2019-23.csv": "d7f0e7a6eb92c20f26d85f88074a95a8"
   },
-  "script_hash": "02d6c205bd477e204f6f8ae783791ca6",
+  "script_hash": "fc471268bc211ff282f282dcbea66f6b",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/SC/measure_info.json": "79ba4f9dd464e47053aca68ff7ac5ce1",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/SC/standard/data.csv.gz": "5cfc43d3861d6ac58fb5bf19dddb75d0"
+    "./data/SC/measure_info.json": "73b4c5072f7afeb388f074ffe9ea4ce3",
+    "./data/SC/standard/data.csv.gz": "2c50e566d5d72f08941986af978cde7b"
+  },
+  "fetch_state": {
+    "raw/45_day_report_2025.pdf": {
+      "url": "https://dph.sc.gov/sites/scdph/files/2026-03/45_Day_Report_25-26_20260310.pdf",
+      "dest": "raw/45_day_report_2025.pdf",
+      "status": "unchanged",
+      "http_status": 304,
+      "bytes": 1571880,
+      "sha256": "075d93b07fa965f29a15317b3a05df7608033a75624a4e767a5e80d563ef637c",
+      "last_modified": "Tue, 10 Mar 2026 14:43:46 GMT",
+      "fetched_at": "2026-09-08 18:59:17",
+      "attempts": 1
+    },
+    "raw/45_day_report_2024.pdf": {
+      "url": "https://dph.sc.gov/sites/scdph/files/2026-03/45_Day_Report_24-25_20260310.pdf",
+      "dest": "raw/45_day_report_2024.pdf",
+      "status": "skipped",
+      "bytes": 1871184,
+      "sha256": "ac761f80bf5c2b490daecf5faf4da2195b94b67ca4e0a8544bf160f1be9c3fea",
+      "fetched_at": "2026-09-08 18:59:18",
+      "attempts": 0
+    }
   }
 }

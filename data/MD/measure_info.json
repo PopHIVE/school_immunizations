@@ -141,8 +141,21 @@
       "url": "https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/Kindergarten_Immunization_Rates_by_School.aspx",
       "organization": "Maryland Department of Health",
       "organization_url": "https://health.maryland.gov/",
-      "description": "School- and county-level kindergarten coverage from the Maryland by-school immunization workbooks; county values are the sum of per-school counts divided by the sum of per-school enrollment.",
-      "restrictions": "Public data. County values are aggregated from the by-school workbooks, used because Maryland publishes county tables only as PDF."
+      "description": "County-level kindergarten coverage aggregated (enrollment-weighted) from the Maryland by-school immunization workbooks.",
+      "restrictions": "Public data. County values are enrollment-weighted aggregates of the by-school workbooks, used because Maryland publishes county tables only as PDF."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level kindergarten coverage aggregated (enrollment-weighted) from the Maryland by-school immunization workbooks.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, school rows (see the type column), by grade, by school year"
     }
   }
 }

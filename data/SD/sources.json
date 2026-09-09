@@ -1,0 +1,20 @@
+[
+  {
+    "id": "doh_data_request",
+    "access": "request",
+    "url": null,
+    "page_url": "https://doh.sd.gov/health-data-reports/data-dashboards/school-immunization-dashboard",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 8,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "School-level counts obtained by data request; the dashboard has no export.",
+    "last_check_time": "2026-09-09 14:15:16",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

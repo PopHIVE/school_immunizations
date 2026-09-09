@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/IN/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -25,9 +25,50 @@
     "raw/school-year-2024-2025.xlsx": "50397e0e5596f8de07aebc4b6cb55d89",
     "raw/school-year-2025-2026.xlsx": "6c78a3a88c43bd7b5915fec8f985379d"
   },
-  "script_hash": "14157db254fd9e9c7a508fb81a0b173f",
+  "script_hash": "eb0ee24511b77bf725bc1f9fd0e42042",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IN/measure_info.json": "1862c0d35cb11ef9543d0e9deaa8f2f0",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IN/standard/data.csv.gz": "8a97b76f8748999c2abb4bce58778ffe"
+    "./data/IN/measure_info.json": "741a17c9ac219b6adda5679346076687",
+    "./data/IN/standard/data.csv.gz": "e4bb07cd445dcf5bb4f5333614a395a8"
+  },
+  "fetch_state": {
+    "raw/school-year-2023-2024.xlsx": {
+      "url": "https://hub.mph.in.gov/dataset/f4e11e6e-2e4f-41b1-a46c-c6d43c6ce1a3/resource/0c777e9d-6817-43ee-9527-e9b366b4eef1/download/immunization-data_school-year-2023-2024.xlsx",
+      "dest": "raw/school-year-2023-2024.xlsx",
+      "status": "skipped",
+      "http_status": "NA",
+      "bytes": 694952,
+      "sha256": "3a00c52eaf4a1317376cb51b2eceaa85fe08ef6e81fe0e8bd8eff857707c21d4",
+      "etag": {},
+      "last_modified": {},
+      "fetched_at": "2026-09-04 16:19:06",
+      "attempts": 0,
+      "error": {}
+    },
+    "raw/school-year-2024-2025.xlsx": {
+      "url": "https://hub.mph.in.gov/dataset/f4e11e6e-2e4f-41b1-a46c-c6d43c6ce1a3/resource/0312dc24-bd75-4f20-8367-e9660c5e801c/download/immunization-data_school-year-2024-2025.xlsx",
+      "dest": "raw/school-year-2024-2025.xlsx",
+      "status": "skipped",
+      "http_status": "NA",
+      "bytes": 656845,
+      "sha256": "5f12569d5c161c781f73d6409e94b828bdc53bf002a489d8fc7f081749307f39",
+      "etag": {},
+      "last_modified": {},
+      "fetched_at": "2026-09-04 16:19:06",
+      "attempts": 0,
+      "error": {}
+    },
+    "raw/school-year-2025-2026.xlsx": {
+      "url": "https://hub.mph.in.gov/dataset/f4e11e6e-2e4f-41b1-a46c-c6d43c6ce1a3/resource/f564cceb-cb5b-4496-88dd-fe46b3b8c719/download/immunization-data_school-year-2025-2026.xlsx",
+      "dest": "raw/school-year-2025-2026.xlsx",
+      "status": "skipped",
+      "http_status": "NA",
+      "bytes": 659576,
+      "sha256": "26f313a6944e2a7ef2454ebcd4e91533668fa77f38d2fdb0f68ad4c389078d04",
+      "etag": {},
+      "last_modified": {},
+      "fetched_at": "2026-09-04 16:19:06",
+      "attempts": 0,
+      "error": {}
+    }
   }
 }

@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 15280,
-      "encoding": "windows-1252",
-      "md5": "e5c316c075a6763bc9f2cdebbb28850f",
+      "encoding": "ISO-8859-1",
+      "md5": "d457adfe5e9aa4659a64067af0e8c8a5",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "dc26589b9abf9358696c7245dabb3bd7be4e6f72"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 5 00:17:25 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:11.463135",
-      "last_modified": "2026-08-24 11:39:49.938364",
+      "created": "2026-09-09 10:08:17.417277",
+      "last_modified": "2026-09-09 10:08:17.417277",
       "vintage": {},
       "row_count": 704,
       "entity_count": 64,
@@ -77,74 +81,12 @@
             "duplicates": 640,
             "info": [],
             "time_range": [0, 3],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "22001": 11,
-              "22003": 11,
-              "22005": 11,
-              "22007": 11,
-              "22009": 11,
-              "22011": 11,
-              "22013": 11,
-              "22015": 11,
-              "22017": 11,
-              "22019": 11,
-              "22021": 11,
-              "22023": 11,
-              "22025": 11,
-              "22027": 11,
-              "22029": 11,
-              "22031": 11,
-              "22033": 11,
-              "22035": 11,
-              "22037": 11,
-              "22039": 11,
-              "22041": 11,
-              "22043": 11,
-              "22045": 11,
-              "22047": 11,
-              "22049": 11,
-              "22051": 11,
-              "22053": 11,
-              "22055": 11,
-              "22057": 11,
-              "22059": 11,
-              "22061": 11,
-              "22063": 11,
-              "22065": 11,
-              "22067": 11,
-              "22069": 11,
-              "22071": 11,
-              "22073": 11,
-              "22075": 11,
-              "22077": 11,
-              "22079": 11,
-              "22081": 11,
-              "22083": 11,
-              "22085": 11,
-              "22087": 11,
-              "22089": 11,
-              "22091": 11,
-              "22093": 11,
-              "22095": 11,
-              "22097": 11,
-              "22099": 11,
-              "22101": 11,
-              "22103": 11,
-              "22105": 11,
-              "22107": 11,
-              "22109": 11,
-              "22111": 11,
-              "22113": 11,
-              "22115": 11,
-              "22117": 11,
-              "22119": 11,
-              "22121": 11,
-              "22123": 11,
-              "22125": 11,
-              "22127": 11
-            }
+            "mean": 22064,
+            "sd": 36.972174,
+            "min": 22001,
+            "max": 22127
           },
           {
             "name": "geography_name",
@@ -404,7 +346,23 @@
           {
             "name": "rate_varicella",
             "duplicates": 242,
-            "info": [],
+            "info": {
+              "id": "rate_varicella",
+              "short_name": "Varicella coverage",
+              "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "la_school_immunization"
+                }
+              ]
+            },
             "time_range": [0, 3],
             "type": "float",
             "missing": 1,
@@ -422,7 +380,7 @@
               "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY/MCV4) vaccination",
               "category": "immunization",
               "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY/MCV4) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY/MCV4) vaccination in the state's annual school immunization survey. Louisiana reports this as MenACWY (>=1 dose) for 6th grade and MenACWY (>=2 doses) for 11th grade; the two grade-specific columns are merged into this one measure.",
+              "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY/MCV4) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
               "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -478,7 +436,7 @@
               "long_name": "Proportion of students up to date for all required vaccines",
               "category": "immunization",
               "short_description": "Proportion of assessed school students up to date for all required vaccines.",
-              "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey), reported by LDH as \"Complete Records\".",
+              "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
               "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -499,7 +457,7 @@
           }
         ]
       },
-      "sha512": "35561f19b86d36066691fe59722f6e6588bbb065a8c3e13c7f87e7c663c6b2bfabb41e6133fbe5ca5e404d2e9b61b17f72905480381fd0116adf193adacfcb95"
+      "sha512": "8d9c72f352ef6cab73e96534744e64cfcf2c8c8651497e5b4fd46f5d4ab219ea31c21ac19b1fa82dca89ae1b1b7de6ad641964182d5973fd1e4979446eb51a1a"
     }
   ],
   "measure_info": {
@@ -571,6 +529,23 @@
         }
       ]
     },
+    "rate_hep_b": {
+      "id": "rate_hep_b",
+      "short_name": "Hepatitis B coverage",
+      "long_name": "Proportion of students up to date for hepatitis B vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "la_school_immunization"
+        }
+      ]
+    },
     "rate_hep_a": {
       "id": "rate_hep_a",
       "short_name": "Hepatitis A coverage",
@@ -588,48 +563,31 @@
         }
       ]
     },
+    "rate_varicella": {
+      "id": "rate_varicella",
+      "short_name": "Varicella coverage",
+      "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "la_school_immunization"
+        }
+      ]
+    },
     "rate_mcv4": {
       "id": "rate_mcv4",
       "short_name": "Meningococcal (MCV4) coverage",
       "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY/MCV4) vaccination",
       "category": "immunization",
       "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY/MCV4) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY/MCV4) vaccination in the state's annual school immunization survey. Louisiana reports this as MenACWY (>=1 dose) for 6th grade and MenACWY (>=2 doses) for 11th grade; the two grade-specific columns are merged into this one measure.",
+      "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY/MCV4) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
       "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "la_school_immunization"
-        }
-      ]
-    },
-    "rate_complete": {
-      "id": "rate_complete",
-      "short_name": "Up-to-date rate",
-      "long_name": "Proportion of students up to date for all required vaccines",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students up to date for all required vaccines.",
-      "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey), reported by LDH as \"Complete Records\".",
-      "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "la_school_immunization"
-        }
-      ]
-    },
-    "rate_hep_b": {
-      "id": "rate_hep_b",
-      "short_name": "Hepatitis B coverage",
-      "long_name": "Proportion of students up to date for hepatitis B vaccination",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-      "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
       "time_resolution": "Year",
@@ -656,16 +614,47 @@
         }
       ]
     },
+    "rate_complete": {
+      "id": "rate_complete",
+      "short_name": "Up-to-date rate",
+      "long_name": "Proportion of students up to date for all required vaccines",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students up to date for all required vaccines.",
+      "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
+      "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "la_school_immunization"
+        }
+      ]
+    },
     "_sources": {
       "la_school_immunization": {
         "name": "Louisiana School Immunization Coverage",
         "url": "https://ldh.la.gov/immunization-program/vaccination-data-resources",
         "organization": "Louisiana Department of Health",
         "organization_url": "https://ldh.la.gov/",
-        "description": "Parish-level coverage and exemption data from a multi-year Louisiana Office of Public Health school immunization workbook, covering kindergarten, 6th, and 11th grade. The workbook reports a different antigen panel per grade: kindergarten gets DTaP/TD (>=4 doses) and Polio (>=3); 6th and 11th grade get Tdap (>=1) and MenACWY (>=1 for 6th, >=2 for 11th, merged here into rate_mcv4); all three grades get HepB, HepA, MMR, and Varicella (HepA and MMR are populated for only some years). \"Complete Records\", the source's overall up-to-date share, is carried over as rate_complete.",
+        "description": "Parish-level coverage and exemption data from a multi-year Louisiana Office of Public Health school immunization workbook.",
         "restrictions": "Public data. Ingested from a committed multi-year parish workbook because the LDH online dashboard is behind authentication."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "Parish-level coverage and exemption data from a multi-year Louisiana Office of Public Health school immunization workbook.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

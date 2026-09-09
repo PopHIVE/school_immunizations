@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dataohio_dashboard",
+    "access": "dashboard",
+    "url": null,
+    "page_url": "https://data.ohio.gov/wps/portal/gov/data/view/annual-ohio-kindergarten-immunization-level-assessment",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 4,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Annual Ohio Kindergarten Immunization Level Assessment on DataOhio (2017-18 to current, county and school): a state Tableau Server with guest access and no data endpoint. The single ingested year, 2024-25, is a hand export in raw/.",
+    "last_check_time": "2026-09-09 14:15:10",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

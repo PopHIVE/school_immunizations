@@ -161,5 +161,18 @@
       "description": "County-level school vaccination exemption counts by vaccine from the West Virginia Office of Epidemiology and Prevention Services.",
       "restrictions": "2025 exemption counts obtained via a public-records (FOIA) request; not published as a downloadable dataset."
     }
+  },
+  "_catalog": {
+    "summary": "County-level school vaccination exemption counts by vaccine from the West Virginia Office of Epidemiology and Prevention Services.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

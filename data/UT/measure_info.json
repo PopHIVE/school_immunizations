@@ -25,5 +25,18 @@
       "description": "County- and health-district-level school immunization and exemption data from the Utah DHHS coverage reports.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "County- and health-district-level school immunization and exemption data from the Utah DHHS coverage reports.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per school district, by grade, by school year"
+    }
   }
 }

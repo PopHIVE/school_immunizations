@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/ID/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/Yale School Exemption Data Request (2) (1).xlsx": "70457e8db6eb8f96717321b9637993ed"
   },
-  "script_hash": "f3463662be914fc0060e53e7d8b9532b",
+  "script_hash": "c5d7c47c17e3551aa5406eb750e9d741",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/ID/measure_info.json": "c170dda0283f4e635894d318784c664a",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/ID/standard/data.csv.gz": "116a88c46f0fa718de8449a141c18ce5"
+    "./data/ID/measure_info.json": "1843ef03dfeae56077440a41ed6e5d2d",
+    "./data/ID/standard/data.csv.gz": "1268e65498fadfcaa247e1b9569f71b3"
   }
 }

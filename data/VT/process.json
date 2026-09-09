@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:07",
+  "checked": "2026-09-09 10:11:04",
   "check_results": {
     "data/VT/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade", "missing_info: unit", "missing_info: public_independent"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/VT K-12 state and county-level data 2017 thru 2025.xlsx": "a608389b00a54b38bdd11ae10a31d728"
   },
-  "script_hash": "9183b71eae2b4baa75011ad2fb84cc25",
+  "script_hash": "d4eba5edc2bc311e696b363109b355d9",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/VT/measure_info.json": "46503c5f3ee44b512213c8f2f6a9d08d",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/VT/standard/data.csv.gz": "716ca638619fc2fdc54e720ac325fa9f"
+    "./data/VT/measure_info.json": "031e715d0e1a89b7d6b92f41832e214f",
+    "./data/VT/standard/data.csv.gz": "1955548853c003ee8f8bcc7f7eec1899"
   }
 }
