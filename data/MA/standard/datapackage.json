@@ -9,44 +9,48 @@
   },
   "resources": [
     {
-      "bytes": 8646,
-      "encoding": "windows-1252",
-      "md5": "b720b4bc0007f813469f7f02bd5e0b06",
+      "bytes": 8881,
+      "encoding": "ISO-8859-1",
+      "md5": "294b1dfcc9730fbc54548845ae9e18a2",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
-          "6a222f8025358c808c6658c87f0797e88d2b4ae7",
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "baf817e95ab25fbede6264a9c10a597730661971",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
-          "dc26589b9abf9358696c7245dabb3bd7be4e6f72"
+          "dc26589b9abf9358696c7245dabb3bd7be4e6f72",
+          "6a222f8025358c808c6658c87f0797e88d2b4ae7"
         ],
         "author": [
-          "weinbergerlab <dweinber@gmail.com>",
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
-          "cawerin <aiwenc@andrew.cmu.edu>"
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "weinbergerlab <dweinber@gmail.com>"
         ],
         "date": [
-          "Fri Jul 24 22:23:54 2026 -0400",
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Mar 26 09:57:33 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
-          "Thu Feb 5 00:17:25 2026 -0500"
+          "Thu Feb 5 00:17:25 2026 -0500",
+          "Fri Jul 24 22:23:54 2026 -0400"
         ],
         "message": [
-          "MA data",
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "modify MA, MD standard files",
           "standardize HI and round data to 2 decimal points",
-          "mass standardization"
+          "mass standardization",
+          "MA data"
         ]
       },
       "source": [],
@@ -59,8 +63,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:11.507622",
-      "last_modified": "2026-08-25 14:47:21.604422",
+      "created": "2026-09-04 12:20:46.162423",
+      "last_modified": "2026-09-04 12:20:46.162423",
       "vintage": {},
       "row_count": 364,
       "entity_count": 14,
@@ -94,24 +98,12 @@
             "duplicates": 350,
             "info": [],
             "time_range": [0, 12],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "25001": 26,
-              "25003": 26,
-              "25005": 26,
-              "25007": 26,
-              "25009": 26,
-              "25011": 26,
-              "25013": 26,
-              "25015": 26,
-              "25017": 26,
-              "25019": 26,
-              "25021": 26,
-              "25023": 26,
-              "25025": 26,
-              "25027": 26
-            }
+            "mean": 25014,
+            "sd": 8.073355,
+            "min": 25001,
+            "max": 25027
           },
           {
             "name": "geography_name",
@@ -235,7 +227,7 @@
           },
           {
             "name": "rate_mmr",
-            "duplicates": 243,
+            "duplicates": 240,
             "info": {
               "id": "rate_mmr",
               "short_name": "MMR coverage",
@@ -263,7 +255,7 @@
           },
           {
             "name": "rate_hep_b",
-            "duplicates": 253,
+            "duplicates": 251,
             "info": {
               "id": "rate_hep_b",
               "short_name": "Hepatitis B coverage",
@@ -291,7 +283,7 @@
           },
           {
             "name": "rate_varicella",
-            "duplicates": 225,
+            "duplicates": 221,
             "info": {
               "id": "rate_varicella",
               "short_name": "Varicella coverage",
@@ -459,10 +451,27 @@
           }
         ]
       },
-      "sha512": "72fd3bd5f6805ad56d9bb2e02382f12d02a973551f02e0da006c9d32c359366fe0c401394fffdc8139cf1bdee380fe83a540695dd866ce6bb3ca8582c098d8e9"
+      "sha512": "a22421ccb8a3d767d34898e3d21a2831f726d35665c79391a4e80913f2ef2441bc9f5129dbd79a4e66fb13608296f217dd240a178524833bfb7b97d8c3d5f860"
     }
   ],
   "measure_info": {
+    "N_enrolled": {
+      "id": "N_enrolled",
+      "short_name": "Students enrolled",
+      "long_name": "Number of students enrolled",
+      "category": "immunization",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+      "statement": "In {location}, {value} students were enrolled.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ma_school_immunization"
+        }
+      ]
+    },
     "rate_dtap": {
       "id": "rate_dtap",
       "short_name": "DTaP/Tdap coverage",
@@ -599,23 +608,6 @@
         }
       ]
     },
-    "N_enrolled": {
-      "id": "N_enrolled",
-      "short_name": "Students enrolled",
-      "long_name": "Number of students enrolled",
-      "category": "immunization",
-      "short_description": "Number of students enrolled at the reporting level.",
-      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
-      "statement": "In {location}, {value} students were enrolled.",
-      "measure_type": "Count",
-      "unit": "Students",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "ma_school_immunization"
-        }
-      ]
-    },
     "rate_tdap": {
       "id": "rate_tdap",
       "short_name": "Tdap coverage",
@@ -660,6 +652,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level kindergarten and 7th-grade coverage and exemption data from the annual MDPH by-county school immunization workbooks.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

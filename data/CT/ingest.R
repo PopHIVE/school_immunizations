@@ -8,11 +8,13 @@ library(vroom)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
 source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 
 # =============================================================================
-# CT - County/County-equivalent Immunization & Exemption Rates (county-level)
+# CT - County/County-equivalent Immunization & Exemption Rates (county-level),
+#      plus the by-school tables (school-level, standard/data_schools.csv.gz)
 #
-# Two sources, stacked on the same (time, geography, grade) key:
+# Two county sources, stacked on the same (time, geography, grade) key:
 #
 #   1. CT Open Data (Socrata) dataset 8kid-pp5k, "County or County Equivalent
 #      Immunizations and Exemption Rates by School Year, Grade, Vaccine, and
@@ -52,21 +54,131 @@ source("../../resources/county_fips.R")
 #   per grade, each with that grade's own all-NA columns dropped:
 #   standard/data_7th.csv.gz, data_k.csv.gz, data_pre_k.csv.gz and
 #   data_all_grades.csv.gz.
+#
+# School-level: DPH also publishes three by-school tables on the same portal
+#   (kindergarten coverage and exemptions, seventh-grade coverage and
+#   exemptions, all-grades exemptions). They are parsed separately into
+#   standard/data_schools.csv.gz -- see the school block at the end -- and do
+#   not feed data.csv.gz or the per-grade files.
 # =============================================================================
 
-api_url <- "https://data.ct.gov/resource/8kid-pp5k.csv?$limit=50000"
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
+
 dir.create("raw", showWarnings = FALSE)
 raw_file <- "raw/ct_county_immunization_exemption_8kid-pp5k.csv"
 all_grades_file <- "raw/CT Vaccine Exemptions 2017-2025_All Grades.xlsx"
-try(download.file(api_url, raw_file, mode = "wb", quiet = TRUE), silent = TRUE)
 
-# Both raw files are hashed -- the all-grades workbook is .xlsx, so a pattern
+# The county extract used to be download.file()'d straight onto raw_file, and
+# download.file() truncates its destination when the transfer fails, so a
+# failed refresh destroyed the committed copy (the incident data/OR/ingest.R
+# documents). socrata_csv() downloads to a temporary file, checks it is a CSV
+# with the expected header and that it did not fill the $limit, and only then
+# copies it over the committed one; a failure warns and leaves raw/ alone.
+county_rec <- socrata_csv(
+  "data.ct.gov", "8kid-pp5k", raw_file,
+  expect_cols = c("school_year", "county_equivalent", "grade", "vaccine_series"),
+  previous = prev[[raw_file]]
+)
+process <- record_fetch(process, county_rec)
+
+# ---- By-school tables: discovery and download --------------------------------
+# sources.json carries the three dataset ids, but the ingest does not trust
+# them to stay put and finds the tables through the Socrata catalog instead.
+# What it found in September 2026 is that the ids do NOT change: iux5-vrzq,
+# rz57-x4bb and a2a4-pw6c were created on 2022-05-05 as the "2021-2022 ..."
+# tables (the story page n5kk-6ext still links them under those titles), and
+# each has since been retitled "2025-2026 ..." and overwritten in place. The
+# portal keeps only the current year. So the year in the title is the only
+# record of which survey a download holds, and each table is saved under it
+# -- raw/ct_school_<k|7|exempt>_<start year>.csv -- so that the snapshots
+# accumulate here across years even though the portal keeps one.
+#
+# A file for the newest year in the catalog is refreshed on every run (DPH
+# can revise the current survey in place); a file for any earlier year is
+# kept as is, since the portal no longer serves that year and a refresh
+# would only ever fetch the wrong one.
+#
+# The catalog can be unreachable without blocking the ingest: raw/ is
+# committed, and the parse below runs on whatever is on disk.
+ct_catalog <- function(q) {
+  url <- sprintf(
+    "https://api.us.socrata.com/api/catalog/v1?domains=data.ct.gov&q=%s&limit=50",
+    utils::URLencode(q, reserved = TRUE)
+  )
+  resp <- tryCatch(
+    httr::GET(url, httr::add_headers(.headers = browser_headers(accept = "application/json")),
+              httr::timeout(60)),
+    error = function(e) e
+  )
+  if (inherits(resp, "error") || httr::status_code(resp) != 200L) {
+    warning("CT: Socrata catalog query failed for '", q, "': ",
+            if (inherits(resp, "error")) conditionMessage(resp) else paste("HTTP", httr::status_code(resp)),
+            call. = FALSE)
+    return(NULL)
+  }
+  js <- jsonlite::fromJSON(httr::content(resp, "text", encoding = "UTF-8"),
+                           simplifyVector = FALSE)
+  rows <- lapply(js$results, function(r) {
+    data.frame(id = r$resource$id, name = r$resource$name,
+               type = r$resource$type %||% NA_character_,
+               stringsAsFactors = FALSE)
+  })
+  if (!length(rows)) return(NULL)
+  do.call(rbind, rows)
+}
+
+catalog <- do.call(rbind, Filter(Negate(is.null), list(
+  ct_catalog("immunization rates by school"),
+  ct_catalog("vaccine exemption rates by school")
+)))
+
+school_kind <- function(name) {
+  n <- tolower(name)
+  dplyr::case_when(
+    grepl("kindergarten", n) & grepl("immunization rates by school", n) ~ "k",
+    grepl("seventh grade", n) & grepl("immunization rates by school", n) ~ "7",
+    grepl("exemption rates by school", n) & grepl("all grades", n) ~ "exempt",
+    TRUE ~ NA_character_
+  )
+}
+
+school_recs <- list()
+if (!is.null(catalog) && nrow(catalog)) {
+  found <- catalog %>%
+    filter(type == "dataset") %>%
+    distinct(id, .keep_all = TRUE) %>%
+    mutate(kind = school_kind(name),
+           start_year = school_year_end_from_label(name) - 1L) %>%
+    filter(!is.na(kind))
+  untitled <- found %>% filter(is.na(start_year))
+  if (nrow(untitled)) {
+    warning("CT: by-school dataset(s) with no school year in the title, not fetched: ",
+            paste(sprintf("%s (%s)", untitled$name, untitled$id), collapse = "; "),
+            call. = FALSE)
+  }
+  found <- found %>%
+    filter(!is.na(start_year)) %>%
+    group_by(kind) %>%
+    mutate(current = start_year == max(start_year)) %>%
+    ungroup() %>%
+    mutate(dest = sprintf("raw/ct_school_%s_%d.csv", kind, start_year))
+  for (i in seq_len(nrow(found))) {
+    school_recs[[found$dest[i]]] <- socrata_csv(
+      "data.ct.gov", found$id[i], found$dest[i],
+      expect_cols = c("school_name", "planning_region"),
+      if_exists = if (found$current[i]) "replace" else "skip",
+      previous = prev[[found$dest[i]]]
+    )
+    if (i < nrow(found)) Sys.sleep(2)
+  }
+  process <- record_fetch(process, school_recs)
+}
+
+# Every raw file is hashed -- the all-grades workbook is .xlsx, so a pattern
 # matching only "csv" would leave it out of the gate and a replaced workbook
 # would not trigger a reprocess.
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", "\\.(csv|xlsx)$", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
@@ -311,7 +423,152 @@ if (!identical(process$raw_state, raw_state) ||
                    sprintf("Connecticut (%s)", g), path, from = "rate")
   }
 
+  update_latest_year(latest_school_year(wide %>% filter(grade != "All Grades")),
+                     ids = "socrata_county")
+  update_latest_year(latest_school_year(wide %>% filter(grade == "All Grades")),
+                     ids = "all_grades_workbook")
+
+  # ---- By-school tables -------------------------------------------------------
+  # One row per school x grade x survey year, in standard/data_schools.csv.gz.
+  # The kindergarten and seventh-grade tables give per-antigen coverage and
+  # the three exemption shares; the all-grades table gives the exemption
+  # shares only. Every figure is a percent of the school's students in that
+  # grade (DPH: "the number of students with the required number of doses
+  # divided by the total number of students"), on percent points like the
+  # county extract, and there is no enrolment column, so no denominator is
+  # carried.
+  #
+  # Two markers stand in for a figure, always for every measure on the row:
+  #   DS   Data Suppressed -- a small school, withheld to protect the count.
+  #        The value is NA and flag_<measure> is "suppressed".
+  #   DNC  Did Not Complete -- the school did not finish the survey, so there
+  #        is nothing behind the cell. The value is NA and the flag is
+  #        "missing". Neither marker is one of the forms is_censored()
+  #        recognises, so the flags are set here rather than by censor_flag().
+  # The county extract has no markers at all, which is why this is the first
+  # place in the CT ingest that carries a flag column.
+  #
+  # Column keys match the county file's vax_map, so rate_hep_b here is the
+  # same measure as rate_hep_b there, and "All" becomes all_required. The
+  # exemption shares are not broken out by antigen in these tables -- they are
+  # the share of students exempt from anything -- so they take the
+  # all_required prefix, as the county file's own "All" series and the
+  # all-grades workbook do.
+  school_vax_map <- c(
+    polio = "polio", dtap = "dtap", mmr = "mmr", hepb = "hep_b",
+    varicella = "varicella", var = "varicella", hepa = "hep_a",
+    mcv = "menacwy", tdap = "tdap", all = "all_required"
+  )
+  school_exempt_map <- c(
+    ex_rel = "all_required_religious_exempt",
+    ex_med = "all_required_medical_exempt",
+    ex_tot = "all_required_full_exempt"
+  )
+  school_grade <- c(k = "K", `7` = "7th", exempt = "All Grades")
+
+  school_flag <- function(x) {
+    chr <- trimws(as.character(x))
+    out <- rep(CENSOR_FLAG_NONE, length(chr))
+    out[is.na(chr) | chr == ""] <- NA_character_
+    out[!is.na(chr) & toupper(chr) == "DS"] <- "suppressed"
+    out[!is.na(chr) & toupper(chr) == "DNC"] <- "missing"
+    out
+  }
+
+  # The by-school tables spell one planning region two ways ("Western" and
+  # "Western CT") within the same year; both are the Western Connecticut
+  # region. "Middlesex" also appears once, on a row whose city field holds
+  # the school's name instead of a town; ct_xwalk resolves it to Middlesex
+  # County (09007), which is what DPH wrote, and it is carried as such rather
+  # than guessed onto a planning region.
+  school_xwalk <- c(ct_xwalk, "Western CT" = "Western Connecticut")
+
+  read_school_file <- function(path) {
+    m <- str_match(basename(path), "^ct_school_(k|7|exempt)_(\\d{4})\\.csv$")
+    kind <- m[, 2]
+    start_year <- as.integer(m[, 3])
+    d <- readr::read_csv(path, show_col_types = FALSE,
+                         col_types = readr::cols(.default = "c"))
+    measure_map <- c(school_vax_map, school_exempt_map)
+    present <- intersect(names(d), names(measure_map))
+    unknown <- setdiff(names(d), c("school_name", "school_type", "address", "city",
+                                   "zipcode", "planning_region", present))
+    if (length(unknown)) {
+      stop("CT: unmapped column(s) in ", basename(path), ": ",
+           paste(unknown, collapse = ", "), call. = FALSE)
+    }
+    # DS and DNC are row-level statuses; a row with a marker in one measure
+    # and a number in another would be a layout change worth knowing about.
+    marker <- vapply(present, function(cc) toupper(trimws(d[[cc]])) %in% c("DS", "DNC"),
+                     logical(nrow(d)))
+    if (is.matrix(marker) && any(rowSums(marker) %% length(present) != 0)) {
+      stop("CT: DS/DNC marks part of a row in ", basename(path), call. = FALSE)
+    }
+    out <- tibble(
+      time = as.Date(school_year_time(start_year)),
+      grade = unname(school_grade[kind]),
+      school_name = d$school_name,
+      school_type = d$school_type,
+      city = d$city,
+      planning_region = d$planning_region
+    )
+    for (cc in present) {
+      key <- measure_map[[cc]]
+      out[[paste0("pct_", key)]] <- clean_numeric(d[[cc]])
+      out[[paste0("flag_", key)]] <- school_flag(d[[cc]])
+    }
+    out
+  }
+
+  school_files <- list.files("raw", "^ct_school_(k|7|exempt)_\\d{4}\\.csv$",
+                             full.names = TRUE)
+  if (length(school_files)) {
+    schools <- bind_rows(lapply(school_files, read_school_file)) %>%
+      mutate(fips_name = coalesce(unname(school_xwalk[planning_region]),
+                                  planning_region)) %>%
+      join_county_fips("CT", county_col = "fips_name") %>%
+      select(-fips_name)
+
+    school_pct <- grep("^pct_", names(schools), value = TRUE)
+    school_order <- as.vector(t(outer(
+      paste0("pct_", unname(school_vax_map)),
+      c("", "_religious_exempt", "_medical_exempt", "_full_exempt"),
+      paste0
+    )))
+    school_order <- unique(school_order)
+    unordered <- setdiff(school_pct, school_order)
+    if (length(unordered)) {
+      stop("CT: school_order does not name: ", paste(unordered, collapse = ", "),
+           call. = FALSE)
+    }
+    ordered <- intersect(school_order, school_pct)
+    schools_out <- schools %>%
+      select(time, geography, geography_name, grade, school_name, school_type,
+             city, planning_region,
+             all_of(as.vector(rbind(ordered, sub("^pct_", "flag_", ordered))))) %>%
+      arrange(time, grade, geography_name, school_name)
+
+    message(sprintf(
+      "Connecticut schools: %d rows, %s, %s",
+      nrow(schools_out),
+      paste(sprintf("%s=%d", names(table(schools_out$grade)), table(schools_out$grade)),
+            collapse = " "),
+      paste(range(schools_out$time), collapse = " to ")))
+
+    schools_wide <- write_standard(schools_out, "Connecticut (schools)",
+                                   "./standard/data_schools.csv.gz",
+                                   from = "percent")
+    for (kind in names(school_grade)) {
+      update_latest_year(
+        latest_school_year(schools_wide %>% filter(grade == school_grade[[kind]])),
+        ids = c(k = "socrata_school_k", `7` = "socrata_school_7",
+                exempt = "socrata_school_exempt_all")[[kind]]
+      )
+    }
+  }
+
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

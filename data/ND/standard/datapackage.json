@@ -9,32 +9,36 @@
   },
   "resources": [
     {
-      "bytes": 104527,
-      "encoding": "windows-1252",
-      "md5": "95e1b14d93a90b3a5b049557f215eb3c",
+      "bytes": 104506,
+      "encoding": "ISO-8859-1",
+      "md5": "6068af10e1609e922482c2adca3c721a",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 07:17:55 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.747131",
-      "last_modified": "2026-08-25 14:47:36.781752",
+      "created": "2026-09-09 10:09:06.166225",
+      "last_modified": "2026-09-09 10:09:06.166225",
       "vintage": {},
       "row_count": 5270,
       "entity_count": 53,
@@ -143,63 +147,12 @@
             "duplicates": 5217,
             "info": [],
             "time_range": [1, 2],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "38001": 30,
-              "38003": 80,
-              "38005": 127,
-              "38007": 14,
-              "38009": 73,
-              "38011": 65,
-              "38013": 73,
-              "38015": 319,
-              "38017": 520,
-              "38019": 64,
-              "38021": 67,
-              "38023": 39,
-              "38025": 49,
-              "38027": 44,
-              "38029": 70,
-              "38031": 39,
-              "38033": 43,
-              "38035": 273,
-              "38037": 53,
-              "38039": 53,
-              "38041": 54,
-              "38043": 43,
-              "38045": 90,
-              "38047": 54,
-              "38049": 97,
-              "38051": 63,
-              "38053": 106,
-              "38055": 153,
-              "38057": 63,
-              "38059": 208,
-              "38061": 84,
-              "38063": 56,
-              "38065": 38,
-              "38067": 112,
-              "38069": 45,
-              "38071": 75,
-              "38073": 62,
-              "38075": 63,
-              "38077": 146,
-              "38079": 153,
-              "38081": 90,
-              "38083": 38,
-              "38085": 55,
-              "38087": 6,
-              "38089": 195,
-              "38091": 41,
-              "38093": 168,
-              "38095": 44,
-              "38097": 98,
-              "38099": 89,
-              "38101": 336,
-              "38103": 62,
-              "38105": 188
-            }
+            "mean": 38053.924478,
+            "sd": 32.397934,
+            "min": 38001,
+            "max": 38105
           },
           {
             "name": "type",
@@ -246,8 +199,8 @@
               "Beulah Middle School": 6,
               "Bishop Ryan Catholic School": 21,
               "Bismarck High School": 6,
-              "Bismarck Public Schools-Homeschool": 1,
               "Bismarck Public Schools Home School": 10,
+              "Bismarck Public Schools-Homeschool": 1,
               "Bob Callies Elem School": 8,
               "Bottineau Elem School": 7,
               "Bottineau Jr-Sr High School": 11,
@@ -380,10 +333,10 @@
               "Holy Spirit Elem School": 8,
               "Home School Vcps": 2,
               "Homeschooled Students Stanley Community Public School District #2": 1,
-              "Hope-Page Elem School": 4,
               "Hope Christian Academy": 15,
               "Hope High School": 8,
               "Hope Page High School": 2,
+              "Hope-Page Elem School": 4,
               "Horace Elem School": 8,
               "Horace High School": 3,
               "Horace Mann Roosevelt Elem School": 7,
@@ -411,8 +364,8 @@
               "Kindred Elem School": 7,
               "Kindred High School": 11,
               "Kindred Home School": 3,
-              "Kindred Public School - Homeschool": 1,
               "Kindred Public School (Homeschool)": 1,
+              "Kindred Public School - Homeschool": 1,
               "Kulm Public School": 20,
               "L E Berger Elem School": 7,
               "Lake Agassiz Elem School": 8,
@@ -468,9 +421,9 @@
               "Mary Stark Elem School": 8,
               "Max Public School": 19,
               "May-Port Cg Middle-High School": 13,
-              "Mcclusky-Goodrich Public School": 5,
               "Mcclusky Elem School": 3,
               "Mcclusky High School": 11,
+              "Mcclusky-Goodrich Public School": 5,
               "Mckinley Elem School": 14,
               "Mcvay Elem School": 7,
               "Meadowlark Elementary School": 1,
@@ -644,11 +597,11 @@
               "Turtle Mountain Community Middle School": 6,
               "Twin Buttes Elem School": 9,
               "Underwood Public School": 18,
+              "Valley City Jr-Sr High School": 12,
+              "Valley Middle School": 5,
               "Valley-Edinburg Elem School-Crystal": 4,
               "Valley-Edinburg Elem School-Hoople": 8,
               "Valley-Edinburg High School": 5,
-              "Valley City Jr-Sr High School": 12,
-              "Valley Middle School": 5,
               "Velva Public School": 20,
               "Victor Solheim Elem School": 7,
               "Victory Christian School": 8,
@@ -773,7 +726,7 @@
           },
           {
             "name": "rate_personal_exempt",
-            "duplicates": 4416,
+            "duplicates": 4417,
             "info": {
               "id": "rate_personal_exempt",
               "short_name": "Non-medical exemption rate",
@@ -857,7 +810,7 @@
           },
           {
             "name": "rate_mmr",
-            "duplicates": 4243,
+            "duplicates": 4247,
             "info": {
               "id": "rate_mmr",
               "short_name": "MMR coverage",
@@ -885,7 +838,7 @@
           },
           {
             "name": "rate_polio",
-            "duplicates": 4235,
+            "duplicates": 4238,
             "info": {
               "id": "rate_polio",
               "short_name": "Polio coverage",
@@ -920,7 +873,7 @@
               "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
               "category": "immunization",
               "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this is the childhood DTaP series, assessed only at the Kindergarten checkpoint; it is not reported (NA) for the 7th- and 11th-grade cohorts, which are surveyed for the separate Tdap booster instead.",
+              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
               "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -941,7 +894,7 @@
           },
           {
             "name": "rate_hep_b",
-            "duplicates": 4293,
+            "duplicates": 4296,
             "info": {
               "id": "rate_hep_b",
               "short_name": "Hepatitis B coverage",
@@ -969,7 +922,7 @@
           },
           {
             "name": "rate_varicella",
-            "duplicates": 4228,
+            "duplicates": 4231,
             "info": {
               "id": "rate_varicella",
               "short_name": "Varicella coverage",
@@ -1004,7 +957,7 @@
               "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
               "category": "immunization",
               "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this is the adolescent Tdap booster, assessed only at the 7th- and 11th-grade checkpoints; it is not reported (NA) for the Kindergarten cohort, which is surveyed for the separate childhood DTaP series instead.",
+              "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
               "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -1025,14 +978,14 @@
           },
           {
             "name": "rate_menacwy",
-            "duplicates": 4394,
+            "duplicates": 4393,
             "info": {
               "id": "rate_menacwy",
               "short_name": "Meningococcal (MenACWY) coverage",
               "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY) vaccination",
               "category": "immunization",
               "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this vaccine is assessed only at the 7th- and 11th-grade checkpoints; it is not reported (NA) for the Kindergarten cohort, which is not yet due for it.",
+              "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
               "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -1053,7 +1006,7 @@
           }
         ]
       },
-      "sha512": "a692115d28626f4268ab21c6953f51d58df1742dae53e7cfb0d752a84aacd74a301dce873e7e96af18381b16fe1e2433c07b16291f00d51ac1d3dffdbd19d71b"
+      "sha512": "1e1bf1cc7a2a6989b530570ae2d5d633fd5ddd50a7dac6375a27e98409d647b6e73b4ec3ae559247a89352c9a6d3e9e7fa7245ed4647879524ac86352deb284d"
     }
   ],
   "measure_info": {
@@ -1182,7 +1135,7 @@
       "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
       "category": "immunization",
       "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this is the childhood DTaP series, assessed only at the Kindergarten checkpoint; it is not reported (NA) for the 7th- and 11th-grade cohorts, which are surveyed for the separate Tdap booster instead.",
+      "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
       "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
@@ -1233,7 +1186,7 @@
       "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
       "category": "immunization",
       "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this is the adolescent Tdap booster, assessed only at the 7th- and 11th-grade checkpoints; it is not reported (NA) for the Kindergarten cohort, which is surveyed for the separate childhood DTaP series instead.",
+      "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
       "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
@@ -1250,7 +1203,7 @@
       "long_name": "Proportion of students up to date for meningococcal conjugate (MenACWY) vaccination",
       "category": "immunization",
       "short_description": "Proportion of assessed school students who are up to date for meningococcal conjugate (MenACWY) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description. In North Dakota this vaccine is assessed only at the 7th- and 11th-grade checkpoints; it is not reported (NA) for the Kindergarten cohort, which is not yet due for it.",
+      "long_description": "Share of assessed school students reported as up to date for meningococcal conjugate (MenACWY) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
       "statement": "In {location}, {value} of school students were up to date for meningococcal (MenACWY) vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
@@ -1267,10 +1220,24 @@
         "url": "https://www.hhs.nd.gov/immunizations/coverage-rates",
         "organization": "North Dakota Health and Human Services",
         "organization_url": "https://www.hhs.nd.gov/",
-        "description": "School- and county-level immunization coverage, incompletion, and exemption data from the ND HHS coverage-rate reports, reported per grade cohort (Kindergarten, 7th, 11th/12th). County rows are derived as an enrollment-weighted mean of that county's school rates, since ND HHS does not publish county-level figures directly. Rates are blanked (NA) at the school level for small enrollment counts (mostly enrollment under 6), consistent with the state's small-cell suppression practice for student privacy.",
+        "description": "County-level school immunization coverage, incompletion, and exemption data from the ND HHS coverage-rate reports.",
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level school immunization coverage, incompletion, and exemption data from the ND HHS coverage-rate reports.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "County, school rows (see the type column), by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

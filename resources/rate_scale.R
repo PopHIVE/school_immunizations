@@ -35,7 +35,7 @@
 CENSOR_LEFT_PATTERN  <- "^\\s*[<≤]"
 CENSOR_RIGHT_PATTERN <- "^\\s*[>≥]"
 CENSOR_UNDIRECTED_PATTERN <-
-  "^\\s*(?:\\*+|n/?a|-{2,}|\\.|nr)\\s*$"
+  "^\\s*(?:\\*+|n/?a|-{2,}|\\.|nr\\**)\\s*$"
 
 CENSORING_PATTERN <- paste0(
   CENSOR_LEFT_PATTERN, "|", CENSOR_RIGHT_PATTERN, "|", CENSOR_UNDIRECTED_PATTERN
@@ -107,7 +107,9 @@ censor_direction <- function(x) {
 # map them to "missing" instead.
 CENSOR_FLAG_NONE <- ""
 SUPPRESSED_PATTERN <- "^\\s*\\*+\\s*$"
-MISSING_PATTERN <- "^\\s*(?:n/?a|-{2,}|\\.|nr)\\s*$"
+# "NR" may carry footnote asterisks ("NR**"); those are still not-reported
+# cells, not suppressed ones.
+MISSING_PATTERN <- "^\\s*(?:n/?a|-{2,}|\\.|nr\\**)\\s*$"
 
 censor_flag <- function(x) {
   chr <- trimws(as.character(x))

@@ -14,9 +14,10 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:01",
   "check_results": {
     "data/AK/standard/data.csv.gz": {
+      "data": "geography_nas",
       "measures": ["missing_info: grade", "missing_info: geography_name", "missing_info: type"]
     }
   },
@@ -24,5 +25,9 @@
     "raw/2024 Alaska Vaccination Coverage Report by Region.xlsx": "fde6deb91d02ebee15b98762bf5ce2a6",
     "raw/2025 Alaska Vaccination Coverage (1).xlsx": "3bd9a9e54883ed116cb8d602bf46c050"
   },
-  "script_hash": "83c2104d431d0ac3e645de03d6574b7e"
+  "script_hash": "83c2104d431d0ac3e645de03d6574b7e",
+  "standard_state": {
+    "./data/AK/measure_info.json": "cc8e7f2fb41e93dda75e2892f8c4d75e",
+    "./data/AK/standard/data.csv.gz": "13f71b66cbe46a0b40cd249308d5a898"
+  }
 }

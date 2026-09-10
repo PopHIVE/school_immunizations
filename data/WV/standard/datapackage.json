@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 7396,
-      "encoding": "windows-1253",
-      "md5": "66efa0b9a2d54e14b06ffd1e3c83fd06",
+      "encoding": "ISO-8859-1",
+      "md5": "eea95210f68c0936b47277cd205114d8",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 07:17:55 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:14.713356",
-      "last_modified": "2026-08-25 14:47:58.21475",
+      "created": "2026-09-09 10:11:01.229188",
+      "last_modified": "2026-09-09 10:11:01.229188",
       "vintage": {},
       "row_count": 1980,
       "entity_count": 55,
@@ -82,65 +86,12 @@
             "duplicates": 1925,
             "info": [],
             "time_range": [0, 8],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "54001": 36,
-              "54003": 36,
-              "54005": 36,
-              "54007": 36,
-              "54009": 36,
-              "54011": 36,
-              "54013": 36,
-              "54015": 36,
-              "54017": 36,
-              "54019": 36,
-              "54021": 36,
-              "54023": 36,
-              "54025": 36,
-              "54027": 36,
-              "54029": 36,
-              "54031": 36,
-              "54033": 36,
-              "54035": 36,
-              "54037": 36,
-              "54039": 36,
-              "54041": 36,
-              "54043": 36,
-              "54045": 36,
-              "54047": 36,
-              "54049": 36,
-              "54051": 36,
-              "54053": 36,
-              "54055": 36,
-              "54057": 36,
-              "54059": 36,
-              "54061": 36,
-              "54063": 36,
-              "54065": 36,
-              "54067": 36,
-              "54069": 36,
-              "54071": 36,
-              "54073": 36,
-              "54075": 36,
-              "54077": 36,
-              "54079": 36,
-              "54081": 36,
-              "54083": 36,
-              "54085": 36,
-              "54087": 36,
-              "54089": 36,
-              "54091": 36,
-              "54093": 36,
-              "54095": 36,
-              "54097": 36,
-              "54099": 36,
-              "54101": 36,
-              "54103": 36,
-              "54105": 36,
-              "54107": 36,
-              "54109": 36
-            }
+            "mean": 54055,
+            "sd": 31.757036,
+            "min": 54001,
+            "max": 54109
           },
           {
             "name": "geography_name",
@@ -217,8 +168,8 @@
             "table": {
               "12th Grade": 495,
               "7th Grade": 495,
-              "all, permanent": 495,
-              "Kindergarten": 495
+              "Kindergarten": 495,
+              "all, permanent": 495
             }
           },
           {
@@ -475,7 +426,7 @@
           }
         ]
       },
-      "sha512": "fc56280f90b877b01c203d50446dca3bf8088823a3c8e30967ec0eb38a2ffa8a82fd8e6b21ee623edac078bc0c78a8797a73941dce7a943b03ef855b8d9ce63e"
+      "sha512": "4eeda16ae75ed93c1a0ce94fe1c83a7fac1d2e58d009e2c05690ed4b93fe82bcadead653a6b8e755e218145a70926c483a3cf2334199b2667f1cc36a5d49e5da"
     }
   ],
   "measure_info": {
@@ -642,6 +593,20 @@
         "restrictions": "2025 exemption counts obtained via a public-records (FOIA) request; not published as a downloadable dataset."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level school vaccination exemption counts by vaccine from the West Virginia Office of Epidemiology and Prevention Services.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

@@ -4,10 +4,23 @@ library(readxl)
 library(stringr)
 library(vroom)
 source("../../resources/rate_scale.R")
+source("../../resources/fetch.R")
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
+# =============================================================================
+# VA - Student Immunization Survey exemption counts by school and county,
+# 2019-20 to 2024-25
+#
+# Parsed: raw/VA_2019-2024.xlsx (sheet "Exemption Data"), medical and
+# religious exemption counts and enrolment by school, tabulated from the VDH
+# Student Immunization Survey reports. County rows are summed from the
+# schools.
+#
+# Not parsed: the VDH SIS reports page
+# (vdh.virginia.gov/immunization/datamanagement/sisreports/) has only a
+# step-by-step guide PDF and an embedded exemption dashboard; no file.
+# =============================================================================
+
+raw_state <- raw_state_md5()
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

@@ -365,5 +365,18 @@
       "description": "School- and county-level immunization completeness, provisional, and exemption data from the Vermont DOH school vaccination reports. TOP CODING: the workbook prints \">95%\" rather than a figure wherever coverage exceeds 95 percent, which is 660 of its cells. The value kept for those is the bound the workbook printed -- 95 percent, i.e. 0.95 on the rate scale -- and nothing is substituted for it, so no number in this file disagrees with the source. But 0.95 on a top-coded row is a LOWER BOUND, not a measurement: the true value lies somewhere in 0.95-1.00, so averaging over these rows understates coverage. Use flag_<measure> to exclude them or to model them as interval-censored on [0.95, 1.00] when precision matters. Cells marked \"*\", \"**\", \"***\" or \"N/A\" state no bound and are left missing. PER-MEASURE FLAGS -- every rate has a flag_<measure> companion recording what the workbook actually printed for that cell: blank (a figure, nothing censored), \"suppressed\" (an asterisk run), \"top_coded\" (\">95%\", rate = the printed 0.95 bound) or \"missing\" (\"N/A\"). Coverage measures are heavily top-coded -- hepatitis B is 153 of 256 rows -- while rate_medical_exempt is suppressed in 171 of 256. No row in this file carries \"missing\": the workbook's only eight \"N/A\" cells are meningococcal coverage, which is not among the measures ingested. These flags replace the row-level suppressed_flag and censor_direction, which this source no longer emits -- they said only that something on a row was censored, which the per-measure flags say precisely. EXEMPTION CATEGORIES -- the workbook reports three, each kept as its own column: medical (rate_medical_exempt), religious (rate_religious_exempt) and provisional admittance (rate_provisional_admittance). Vermont repealed its philosophical exemption in 2016, so religious is the only non-medical category and the harmonized rate_personal_exempt carries the same number as rate_religious_exempt -- do not add them together. Provisional admittance is a legal status, not an exemption; students admitted while doses are outstanding are still counted as not up to date.",
       "restrictions": "Public data. Vermont suppresses small counts to protect privacy."
     }
+  },
+  "_catalog": {
+    "summary": "School- and county-level immunization completeness, provisional, and exemption data from the Vermont DOH school vaccination reports. TOP CODING: the workbook prints \">95%\" rather than a figure wherever coverage exceeds 95 percent, which is 660 of its cells.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

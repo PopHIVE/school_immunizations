@@ -1,4 +1,5 @@
 source("../../resources/rate_scale.R")
+source("../../resources/fetch.R")
 # =============================================================================
 # MA - School Immunization & Exemption Rates by County (Kindergarten & Grade 7)
 # =============================================================================
@@ -10,8 +11,13 @@ source("../../resources/rate_scale.R")
 #
 # NOTE: www.mass.gov sits behind a WAF that returns a "Not allowed" HTML page to
 # non-browser clients. Setting only a User-Agent is NOT enough (download.file
-# would silently save the block page); we must present a full browser header set
-# via httr. The /doc/.../download endpoints also expect a same-origin Referer.
+# would silently save the block page); we must present the full browser header
+# set that browser_headers() in resources/fetch.R carries (Accept, Accept-
+# Language, Sec-Fetch-*, Upgrade-Insecure-Requests). The /doc/.../download
+# endpoints also expect a same-origin Referer. The WAF also blocks datacenter
+# IP ranges outright, so CI cannot reach mass.gov at all (sources.json marks
+# both entries ci_reachable = false); new years are fetched from a workstation
+# and committed, and a run that cannot reach the pages proceeds on raw/.
 
 library(dcf)
 library(dplyr)
@@ -23,43 +29,31 @@ library(httr)
 library(rvest)
 library(xml2)
 
+sources <- read_sources()
+src_pages <- list(
+  current = source_entry(sources, "mass_gov_current"),
+  archive = source_entry(sources, "mass_gov_archive")
+)
 pages <- c(
-  current = "https://www.mass.gov/info-details/school-immunizations",
-  archive = "https://www.mass.gov/info-details/archive-of-school-immunization-data-and-exemption-rates"
+  current = src_pages$current$page_url,
+  archive = src_pages$archive$page_url
 )
 
-browser_ua <- paste0(
-  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 ",
-  "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-)
-browser_headers <- httr::add_headers(
-  "User-Agent" = browser_ua,
-  "Accept" = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-  "Accept-Language" = "en-US,en;q=0.9",
-  "Sec-Fetch-Dest" = "document",
-  "Sec-Fetch-Mode" = "navigate",
-  "Sec-Fetch-Site" = "none",
-  "Upgrade-Insecure-Requests" = "1"
-)
+dir.create("raw", showWarnings = FALSE)
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
 
 # ---- 1. Scrape both pages for by-county Kindergarten / Grade 7 links ---------
-collect_links <- function(page_url) {
-  resp <- tryCatch(GET(page_url, browser_headers), error = function(e) NULL)
-  if (is.null(resp) || status_code(resp) != 200) {
-    return(character())
-  }
-  html <- content(resp, "text", encoding = "UTF-8")
-  hrefs <- xml2::xml_attr(rvest::html_elements(xml2::read_html(html), "a"), "href")
-  hrefs <- hrefs[!is.na(hrefs)]
-  # by-county rate workbooks only (exclude by-school, combined, other grades)
-  keep <- grepl("/doc/.*(kindergarten|grade-7).*by-county.*/download", hrefs, ignore.case = TRUE) &
-    !grepl("by-school|three-year|combined|program", hrefs, ignore.case = TRUE)
-  hrefs[keep]
-}
-
-links <- unique(unlist(lapply(pages, collect_links), use.names = FALSE))
-links <- ifelse(grepl("^https?://", links), links, paste0("https://www.mass.gov", links))
-links <- unique(links)
+# Either page being unreachable (WAF, outage, datacenter IP) is a warning, not
+# a stop: every year already fetched is committed under raw/.
+links <- unique(unlist(lapply(names(pages), function(p) {
+  hits <- discover_links(
+    pages[[p]], src_pages[[p]]$pattern,
+    exclude = "by-school|three-year|combined|program",
+    must_find = FALSE, headers = browser_headers()
+  )
+  hits$url
+}), use.names = FALSE))
 
 # Derive grade and school-year start from the slug. Two slug patterns exist:
 #   YYYY-YYYY-<grade>-...-by-county           (recent years)
@@ -75,42 +69,17 @@ slug_year <- function(u) {
 }
 
 # ---- 2. Download workbooks we do not already have ----------------------------
-# The per-year files are immutable once published, so we only fetch years that
-# are missing from raw/. In steady state that is 0-1 requests. This matters:
-# the mass.gov WAF rate-limits aggressively and will 403 an IP that bursts many
-# requests, so we also warm up with a page visit, space requests out, and back
-# off on failure (whatever is missed is retried on the next run).
-dir.create("raw", showWarnings = FALSE)
-
+# The per-year files are immutable once published, so fetch_file() is called
+# with if_exists = "skip": a year whose workbook is already on disk and opens
+# costs no request. In steady state that is zero workbook requests and only the
+# two page requests above. This matters: the mass.gov WAF rate-limits
+# aggressively and will 403 an IP that bursts many requests, so before any
+# download we warm up with a page visit, space requests out, and back off on
+# failure (whatever is missed is retried on the next run). A block page served
+# as HTTP 200 fails fetch_file()'s workbook validation and never reaches raw/.
 is_workbook <- function(path) {
   file.exists(path) &&
     tryCatch(length(readxl::excel_sheets(path)) > 0, error = function(e) FALSE)
-}
-
-download_workbook <- function(url, dest) {
-  for (attempt in seq_len(3L)) {
-    tmp <- tempfile(fileext = ".xlsx")
-    ok <- tryCatch({
-      resp <- GET(
-        url, browser_headers,
-        add_headers(Referer = pages[["archive"]]),
-        write_disk(tmp, overwrite = TRUE)
-      )
-      status_code(resp) == 200
-    }, error = function(e) FALSE)
-    # Guard against the WAF block page (HTTP 403/200 but not a workbook).
-    valid <- ok && tryCatch(length(readxl::excel_sheets(tmp)) > 0,
-      error = function(e) FALSE
-    )
-    if (valid) {
-      file.copy(tmp, dest, overwrite = TRUE)
-      unlink(tmp)
-      return(TRUE)
-    }
-    unlink(tmp)
-    Sys.sleep(5 * attempt) # back off before retrying a throttled request
-  }
-  FALSE
 }
 
 if (length(links)) {
@@ -122,25 +91,32 @@ if (length(links)) {
       "MA_%s_by_county_%d-%d.xlsx",
       if_else(grade == "Kindergarten", "kindergarten", "grade7"),
       year_start, year_start + 1L
-    ))) %>%
-    filter(!vapply(dest, is_workbook, logical(1))) # skip years already downloaded
+    )))
 
-  if (nrow(meta)) {
-    tryCatch(GET(pages[["archive"]], browser_headers), error = function(e) NULL) # warm up WAF cookie
-    for (i in seq_len(nrow(meta))) {
-      if (!download_workbook(meta$url[i], meta$dest[i])) {
-        message("MA: could not download (will retry next run): ", meta$url[i])
-      }
+  if (!all(vapply(meta$dest, is_workbook, logical(1)))) {
+    tryCatch(GET(pages[["archive"]], add_headers(.headers = browser_headers())),
+             error = function(e) NULL) # warm up WAF cookie
+  }
+  recs <- vector("list", nrow(meta))
+  for (i in seq_len(nrow(meta))) {
+    recs[[i]] <- fetch_file(
+      meta$url[i], meta$dest[i], type = "xlsx",
+      headers = browser_headers(referer = pages[["archive"]]),
+      if_exists = "skip", retries = 3L, backoff = c(5, 10, 15),
+      previous = prev[[meta$dest[i]]]
+    )
+    if (i < nrow(meta) && recs[[i]]$status != "skipped") {
       Sys.sleep(3) # be polite between requests
     }
   }
+  st <- vapply(recs, function(r) r$status, character(1))
+  message("MA fetch: ", length(st), " file(s): ",
+          paste(names(table(st)), table(st), collapse = ", "))
+  process <- record_fetch(process, recs)
 }
 
 # ---- 3. Gate reprocessing on raw-file / script changes -----------------------
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
@@ -295,9 +271,11 @@ if (!identical(process$raw_state, raw_state) ||
     )
 
   dir.create("standard", showWarnings = FALSE)
-  write_standard(data_out, "Massachusetts", "./standard/data.csv.gz", from = "rate")
+  out <- write_standard(data_out, "Massachusetts", "./standard/data.csv.gz", from = "rate")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

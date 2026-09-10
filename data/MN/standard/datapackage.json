@@ -10,39 +10,43 @@
   "resources": [
     {
       "bytes": 19837,
-      "encoding": "windows-1252",
-      "md5": "1df44191f0984ba0ac82ddeb824ae2be",
+      "encoding": "ISO-8859-1",
+      "md5": "a3d4db452234ba6259e914b1a6237a7e",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
-          "9422ffb9535c1460796e60e506c8118ef610484c",
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
-          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
+          "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5",
+          "9422ffb9535c1460796e60e506c8118ef610484c"
         ],
         "author": [
-          "weinbergerlab <dweinber@gmail.com>",
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
-          "cawerin <aiwenc@andrew.cmu.edu>"
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "weinbergerlab <dweinber@gmail.com>"
         ],
         "date": [
-          "Fri Jul 24 15:09:42 2026 -0400",
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
-          "Thu Feb 12 08:06:45 2026 -0500"
+          "Thu Feb 12 08:06:45 2026 -0500",
+          "Fri Jul 24 15:09:42 2026 -0400"
         ],
         "message": [
-          "Rewire MN ingest to download county files from MDH (multi-year)",
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
-          "add standardization files for IA MN MT NC NH UT VT WA"
+          "add standardization files for IA MN MT NC NH UT VT WA",
+          "Rewire MN ingest to download county files from MDH (multi-year)"
         ]
       },
       "source": [],
@@ -55,8 +59,8 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.362144",
-      "last_modified": "2026-08-25 14:47:33.444759",
+      "created": "2026-09-04 17:39:07.142019",
+      "last_modified": "2026-09-04 17:39:07.142019",
       "vintage": {},
       "row_count": 264,
       "entity_count": 88,
@@ -80,98 +84,12 @@
             "duplicates": 176,
             "info": [],
             "time_range": [0, 2],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "27": 3,
-              "27001": 3,
-              "27003": 3,
-              "27005": 3,
-              "27007": 3,
-              "27009": 3,
-              "27011": 3,
-              "27013": 3,
-              "27015": 3,
-              "27017": 3,
-              "27019": 3,
-              "27021": 3,
-              "27023": 3,
-              "27025": 3,
-              "27027": 3,
-              "27029": 3,
-              "27031": 3,
-              "27033": 3,
-              "27035": 3,
-              "27037": 3,
-              "27039": 3,
-              "27041": 3,
-              "27043": 3,
-              "27045": 3,
-              "27047": 3,
-              "27049": 3,
-              "27051": 3,
-              "27053": 3,
-              "27055": 3,
-              "27057": 3,
-              "27059": 3,
-              "27061": 3,
-              "27063": 3,
-              "27065": 3,
-              "27067": 3,
-              "27069": 3,
-              "27071": 3,
-              "27073": 3,
-              "27075": 3,
-              "27077": 3,
-              "27079": 3,
-              "27081": 3,
-              "27083": 3,
-              "27085": 3,
-              "27087": 3,
-              "27089": 3,
-              "27091": 3,
-              "27093": 3,
-              "27095": 3,
-              "27097": 3,
-              "27099": 3,
-              "27101": 3,
-              "27103": 3,
-              "27105": 3,
-              "27107": 3,
-              "27109": 3,
-              "27111": 3,
-              "27113": 3,
-              "27115": 3,
-              "27117": 3,
-              "27119": 3,
-              "27121": 3,
-              "27123": 3,
-              "27125": 3,
-              "27127": 3,
-              "27129": 3,
-              "27131": 3,
-              "27133": 3,
-              "27135": 3,
-              "27137": 3,
-              "27139": 3,
-              "27141": 3,
-              "27143": 3,
-              "27145": 3,
-              "27147": 3,
-              "27149": 3,
-              "27151": 3,
-              "27153": 3,
-              "27155": 3,
-              "27157": 3,
-              "27159": 3,
-              "27161": 3,
-              "27163": 3,
-              "27165": 3,
-              "27167": 3,
-              "27169": 3,
-              "27171": 3,
-              "27173": 3
-            }
+            "mean": 26779.5,
+            "sd": 2874.052243,
+            "min": 27,
+            "max": 27173
           },
           {
             "name": "geography_name",
@@ -760,95 +678,10 @@
           }
         ]
       },
-      "sha512": "12724e858a254950b1c8350ec6115b2a14a8c2350cf9a8f6b318e46ceee2d87b9b8833c3c3185aa47f69511f2132c74e4ac03a481acd2f69576711d410fd4f42"
+      "sha512": "72307bd5b75f27a0bb3dcf1407eb7716dd97863faf0cdad034d5150e78383293b64545ddbe020111b308b59f42e168cb6922b8d0d58858954c05701a7ea74acb"
     }
   ],
   "measure_info": {
-    "rate_dtap": {
-      "id": "rate_dtap",
-      "short_name": "DTaP/Tdap coverage",
-      "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-      "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "mn_school_immunization"
-        }
-      ]
-    },
-    "rate_polio": {
-      "id": "rate_polio",
-      "short_name": "Polio coverage",
-      "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-      "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "mn_school_immunization"
-        }
-      ]
-    },
-    "rate_mmr": {
-      "id": "rate_mmr",
-      "short_name": "MMR coverage",
-      "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-      "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "mn_school_immunization"
-        }
-      ]
-    },
-    "rate_hep_b": {
-      "id": "rate_hep_b",
-      "short_name": "Hepatitis B coverage",
-      "long_name": "Proportion of students up to date for hepatitis B vaccination",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-      "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "mn_school_immunization"
-        }
-      ]
-    },
-    "rate_varicella": {
-      "id": "rate_varicella",
-      "short_name": "Varicella coverage",
-      "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
-      "category": "immunization",
-      "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
-      "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-      "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
-      "measure_type": "Rate",
-      "unit": "Rate",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "mn_school_immunization"
-        }
-      ]
-    },
     "N_enrolled": {
       "id": "N_enrolled",
       "short_name": "Students enrolled",
@@ -859,6 +692,23 @@
       "statement": "In {location}, {value} students were enrolled.",
       "measure_type": "Count",
       "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "mn_school_immunization"
+        }
+      ]
+    },
+    "rate_dtap": {
+      "id": "rate_dtap",
+      "short_name": "DTaP/Tdap coverage",
+      "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
       "time_resolution": "Year",
       "sources": [
         {
@@ -891,6 +741,23 @@
       "short_description": "Proportion of assessed school students with a medical exemption from the DTaP vaccination requirement.",
       "long_description": "Share of assessed school students holding a medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
       "statement": "In {location}, {value} of school students had a medical exemption from DTaP vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "mn_school_immunization"
+        }
+      ]
+    },
+    "rate_polio": {
+      "id": "rate_polio",
+      "short_name": "Polio coverage",
+      "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
       "time_resolution": "Year",
@@ -934,6 +801,23 @@
         }
       ]
     },
+    "rate_mmr": {
+      "id": "rate_mmr",
+      "short_name": "MMR coverage",
+      "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "mn_school_immunization"
+        }
+      ]
+    },
     "rate_mmr_nonmedical": {
       "id": "rate_mmr_nonmedical",
       "short_name": "MMR non-medical exemption rate",
@@ -968,6 +852,23 @@
         }
       ]
     },
+    "rate_hep_b": {
+      "id": "rate_hep_b",
+      "short_name": "Hepatitis B coverage",
+      "long_name": "Proportion of students up to date for hepatitis B vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "mn_school_immunization"
+        }
+      ]
+    },
     "rate_hep_b_nonmedical": {
       "id": "rate_hep_b_nonmedical",
       "short_name": "hepatitis B non-medical exemption rate",
@@ -993,6 +894,23 @@
       "short_description": "Proportion of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
       "long_description": "Share of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
       "statement": "In {location}, {value} of school students had a medical exemption from hepatitis B vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "mn_school_immunization"
+        }
+      ]
+    },
+    "rate_varicella": {
+      "id": "rate_varicella",
+      "short_name": "Varicella coverage",
+      "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
       "time_resolution": "Year",
@@ -1063,6 +981,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level kindergarten coverage plus antigen-specific medical and non-medical exemption data from the MDH per-year county workbooks.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

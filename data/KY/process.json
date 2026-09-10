@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/KY/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/KY_2020-2025.xlsx": "935aa1bb017897af7e286fd90f234df7"
   },
-  "script_hash": "6e1efd05cb98af67906a7475fb0754e6",
+  "script_hash": "da5d0ca213bbccdfc0bf5608510bda9c",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/KY/measure_info.json": "2f32caac570dde6203c70e67ef63bb7e",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/KY/standard/data.csv.gz": "b2dc1ad1a5abd58e7e67750c77ef776f"
+    "./data/KY/measure_info.json": "c9ed78d15e832e7dec2a3f567aee9419",
+    "./data/KY/standard/data.csv.gz": "b2dc1ad1a5abd58e7e67750c77ef776f"
   }
 }

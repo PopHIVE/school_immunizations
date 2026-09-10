@@ -1,12 +1,12 @@
 {
   "N_enrolled": {
     "id": "N_enrolled",
-    "short_name": "Enrolled students",
-    "long_name": "Number of students enrolled and assessed for school immunization requirements",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
     "category": "immunization",
-    "short_description": "Number of students enrolled and assessed in the state's annual school immunization survey (the denominator for the coverage rates).",
-    "long_description": "Count of students (DOE enrollment) at the school level, summed to county by grade, from the Indiana Department of Health open-data hub. This is the denominator used to enrollment-weight the antigen coverage rates up to the county.",
-    "statement": "In {location}, {value} school students were enrolled and assessed for immunization status.",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
     "measure_type": "Count",
     "unit": "Students",
     "time_resolution": "Year",
@@ -160,6 +160,19 @@
       "organization_url": "https://www.in.gov/health/",
       "description": "County-level, multi-grade antigen coverage from the Indiana Department of Health open-data hub (CKAN); per-year workbooks are enumerated via the package_show API so the series self-updates.",
       "restrictions": "Public data. The hub files carry no medical/religious exemption split, so exemption columns are unavailable (NA)."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level, multi-grade antigen coverage from the Indiana Department of Health open-data hub (CKAN); per-year workbooks are enumerated via the package_show API so the series self-updates.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
     }
   }
 }

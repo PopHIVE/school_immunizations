@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/IL/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -28,9 +28,9 @@
     "raw/IL_school_immunization_county_aggregated_2024.xlsx": "fc5cb171693a8374e030204b6747276c",
     "raw/IL_school_immunization_county_aggregated_2025.xlsx": "b7bb8c181af5721d9aa48afc60c47780"
   },
-  "script_hash": "22689e2ddc1baeb0df11a8088d7749ea",
+  "script_hash": "171ed39c714faa2d1ad7fd819e83aea3",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IL/measure_info.json": "9169742e3cb2183493fa0f89c5482d06",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/IL/standard/data.csv.gz": "5dc98968820e4cc4fb9cf8a6fecea5a4"
+    "./data/IL/measure_info.json": "7a59b552d9a386049c03bf9733b9e553",
+    "./data/IL/standard/data.csv.gz": "f1bc83a0256393c3a2cae3df02df75b0"
   }
 }

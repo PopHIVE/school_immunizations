@@ -7,5 +7,1417 @@
     "version": "1.0",
     "id": "odc-pddl"
   },
-  "resources": []
+  "resources": [
+    {
+      "bytes": 4781,
+      "encoding": "ISO-8859-1",
+      "md5": "e151be1ac0c0f23008031c348b2500b7",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {},
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 0,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-09-08 15:21:43.091942",
+      "last_modified": "2026-09-08 15:21:43.091942",
+      "vintage": {},
+      "row_count": 143,
+      "entity_count": 24,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 137,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2018-09-01": 23,
+              "2019-09-01": 24,
+              "2020-09-01": 24,
+              "2021-09-01": 24,
+              "2022-09-01": 24,
+              "2023-09-01": 24
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 119,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 53674.832168,
+            "sd": 11260.478077,
+            "min": 56,
+            "max": 56045
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 119,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Albany": 6,
+              "Big Horn": 6,
+              "Campbell": 6,
+              "Carbon": 6,
+              "Converse": 5,
+              "Crook": 6,
+              "Fremont": 6,
+              "Goshen": 6,
+              "Hot Springs": 6,
+              "Johnson": 6,
+              "Laramie": 6,
+              "Lincoln": 6,
+              "Natrona": 6,
+              "Niobrara": 6,
+              "Park": 6,
+              "Platte": 6,
+              "Sheridan": 6,
+              "Sublette": 6,
+              "Sweetwater": 6,
+              "Teton": 6,
+              "Uinta": 6,
+              "Washakie": 6,
+              "Weston": 6,
+              "Wyoming": 6
+            }
+          },
+          {
+            "name": "type",
+            "duplicates": 141,
+            "info": [],
+            "time_range": [0, 5],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "county": 137,
+              "state": 6
+            }
+          },
+          {
+            "name": "rate_series_19_35m",
+            "duplicates": 103,
+            "info": {
+              "id": "rate_series_19_35m",
+              "short_name": "4:3:1:3:3:1:4 series, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV) in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV).",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV) recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV) in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.626154,
+            "sd": 0.10075,
+            "min": 0.31,
+            "max": 0.85
+          },
+          {
+            "name": "rate_dtap_4dose_19_35m",
+            "duplicates": 107,
+            "info": {
+              "id": "rate_dtap_4dose_19_35m",
+              "short_name": "DTaP 4 doses, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 4 doses of DTaP in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 4 doses of DTaP.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 4 doses of DTaP recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 4 doses of DTaP in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 19,
+            "mean": 0.65629,
+            "sd": 0.09564,
+            "min": 0.42,
+            "max": 0.88
+          },
+          {
+            "name": "rate_polio_3dose_19_35m",
+            "duplicates": 109,
+            "info": {
+              "id": "rate_polio_3dose_19_35m",
+              "short_name": "Polio 3 doses, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 3 doses of polio vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 3 doses of polio vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 3 doses of polio vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 3 doses of polio vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.815734,
+            "sd": 0.079457,
+            "min": 0.57,
+            "max": 0.95
+          },
+          {
+            "name": "rate_mmr_1dose_19_35m",
+            "duplicates": 111,
+            "info": {
+              "id": "rate_mmr_1dose_19_35m",
+              "short_name": "MMR 1 dose, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 1 dose of MMR in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 1 dose of MMR.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 1 dose of MMR recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 1 dose of MMR in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 19,
+            "mean": 0.784597,
+            "sd": 0.079566,
+            "min": 0.54,
+            "max": 0.91
+          },
+          {
+            "name": "rate_hib_3dose_19_35m",
+            "duplicates": 110,
+            "info": {
+              "id": "rate_hib_3dose_19_35m",
+              "short_name": "Hib 3 doses, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 3 doses of Hib in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 3 doses of Hib.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 3 doses of Hib recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 3 doses of Hib in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.810979,
+            "sd": 0.078582,
+            "min": 0.62,
+            "max": 0.95
+          },
+          {
+            "name": "rate_hep_b_3dose_19_35m",
+            "duplicates": 111,
+            "info": {
+              "id": "rate_hep_b_3dose_19_35m",
+              "short_name": "Hepatitis B 3 doses, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 3 doses of hepatitis B vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 3 doses of hepatitis B vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 3 doses of hepatitis B vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 3 doses of hepatitis B vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 19,
+            "mean": 0.808871,
+            "sd": 0.082504,
+            "min": 0.49,
+            "max": 0.92
+          },
+          {
+            "name": "rate_varicella_1dose_19_35m",
+            "duplicates": 110,
+            "info": {
+              "id": "rate_varicella_1dose_19_35m",
+              "short_name": "Varicella 1 dose, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 1 dose of varicella vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 1 dose of varicella vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 1 dose of varicella vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 1 dose of varicella vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.77972,
+            "sd": 0.07915,
+            "min": 0.46,
+            "max": 0.92
+          },
+          {
+            "name": "rate_pcv_4dose_19_35m",
+            "duplicates": 106,
+            "info": {
+              "id": "rate_pcv_4dose_19_35m",
+              "short_name": "PCV 4 doses, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 4 doses of pneumococcal conjugate vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 4 doses of pneumococcal conjugate vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 4 doses of pneumococcal conjugate vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 4 doses of pneumococcal conjugate vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 19,
+            "mean": 0.73871,
+            "sd": 0.093077,
+            "min": 0.46,
+            "max": 0.91
+          },
+          {
+            "name": "rate_hep_a_2dose_19_35m",
+            "duplicates": 91,
+            "info": {
+              "id": "rate_hep_a_2dose_19_35m",
+              "short_name": "Hepatitis A 2 doses, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 2 doses of hepatitis A vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 2 doses of hepatitis A vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 2 doses of hepatitis A vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 2 doses of hepatitis A vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.413776,
+            "sd": 0.138766,
+            "min": 0.11,
+            "max": 0.73
+          },
+          {
+            "name": "rate_rotavirus_2dose_19_35m",
+            "duplicates": 109,
+            "info": {
+              "id": "rate_rotavirus_2dose_19_35m",
+              "short_name": "Rotavirus 2 doses, 19 to 35 months (registry)",
+              "long_name": "Proportion of residents aged 19 to 35 months with 2 doses of rotavirus vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 2 doses of rotavirus vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 2 doses of rotavirus vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 19 to 35 months had 2 doses of rotavirus vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.807762,
+            "sd": 0.072291,
+            "min": 0.61,
+            "max": 0.95
+          },
+          {
+            "name": "rate_series_6y",
+            "duplicates": 108,
+            "info": {
+              "id": "rate_series_6y",
+              "short_name": "5:4:2:3:3:2:4 series, 6 (labelled 7 on the 2019 to 2021 cards) (registry)",
+              "long_name": "Proportion of residents aged 6 (labelled 7 on the 2019 to 2021 cards) with the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV) in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 6 (labelled 7 on the 2019 to 2021 cards) recorded in the state immunization registry as having the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV).",
+              "long_description": "Registry-based coverage: the share of children aged 6 (labelled 7 on the 2019 to 2021 cards) in the county with the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV) recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 6 (labelled 7 on the 2019 to 2021 cards) had the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV) in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 48,
+            "mean": 0.744632,
+            "sd": 0.126212,
+            "min": 0.19,
+            "max": 0.91
+          },
+          {
+            "name": "rate_dtap_5dose_6y",
+            "duplicates": 107,
+            "info": {
+              "id": "rate_dtap_5dose_6y",
+              "short_name": "DTaP 5 doses, 6 (labelled 7 on the 2019 to 2021 cards) (registry)",
+              "long_name": "Proportion of residents aged 6 (labelled 7 on the 2019 to 2021 cards) with 5 doses of DTaP in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 6 (labelled 7 on the 2019 to 2021 cards) recorded in the state immunization registry as having 5 doses of DTaP.",
+              "long_description": "Registry-based coverage: the share of children aged 6 (labelled 7 on the 2019 to 2021 cards) in the county with 5 doses of DTaP recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 6 (labelled 7 on the 2019 to 2021 cards) had 5 doses of DTaP in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 48,
+            "mean": 0.781895,
+            "sd": 0.115991,
+            "min": 0.25,
+            "max": 0.94
+          },
+          {
+            "name": "rate_mmr_2dose_6y",
+            "duplicates": 109,
+            "info": {
+              "id": "rate_mmr_2dose_6y",
+              "short_name": "MMR 2 dose(s), age 6 (registry)",
+              "long_name": "Proportion of residents aged 6 with 2 dose(s) of MMR in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 6 recorded in the state immunization registry as having 2 dose(s) of MMR.",
+              "long_description": "Registry-based coverage: the share of children aged 6 in the county with 2 MMR dose(s) recorded in the state immunization information system, by calendar year. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students, and changes to registry exclusion rules move the series. Wyoming's report cards carry the same measure under an age label that changes between years (6 years of age on the 2018 cards, 7-years-old on the 2019 to 2021 cards); the column keeps one name so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 6 had 2 MMR dose(s) in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 48,
+            "mean": 0.790526,
+            "sd": 0.109441,
+            "min": 0.3,
+            "max": 0.95
+          },
+          {
+            "name": "rate_varicella_2dose_6y",
+            "duplicates": 111,
+            "info": {
+              "id": "rate_varicella_2dose_6y",
+              "short_name": "Varicella 2 doses, 6 (labelled 7 on the 2019 to 2021 cards) (registry)",
+              "long_name": "Proportion of residents aged 6 (labelled 7 on the 2019 to 2021 cards) with 2 doses of varicella vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 6 (labelled 7 on the 2019 to 2021 cards) recorded in the state immunization registry as having 2 doses of varicella vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 6 (labelled 7 on the 2019 to 2021 cards) in the county with 2 doses of varicella vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 6 (labelled 7 on the 2019 to 2021 cards) had 2 doses of varicella vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 3],
+            "type": "float",
+            "missing": 48,
+            "mean": 0.785895,
+            "sd": 0.10825,
+            "min": 0.3,
+            "max": 0.94
+          },
+          {
+            "name": "rate_menacwy_1dose_13_17y",
+            "duplicates": 99,
+            "info": {
+              "id": "rate_menacwy_1dose_13_17y",
+              "short_name": "MenACWY 1 dose, 13 to 17 (registry)",
+              "long_name": "Proportion of residents aged 13 to 17 with 1 dose of MenACWY in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 13 to 17 recorded in the state immunization registry as having 1 dose of MenACWY.",
+              "long_description": "Registry-based coverage: the share of children aged 13 to 17 in the county with 1 dose of MenACWY recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 13 to 17 had 1 dose of MenACWY in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.615105,
+            "sd": 0.119594,
+            "min": 0.26,
+            "max": 0.82
+          },
+          {
+            "name": "rate_menacwy_2dose_16_18y",
+            "duplicates": 100,
+            "info": {
+              "id": "rate_menacwy_2dose_16_18y",
+              "short_name": "MenACWY 2 doses, 16 to 18 (registry)",
+              "long_name": "Proportion of residents aged 16 to 18 with 2 doses of MenACWY in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 16 to 18 recorded in the state immunization registry as having 2 doses of MenACWY.",
+              "long_description": "Registry-based coverage: the share of children aged 16 to 18 in the county with 2 doses of MenACWY recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 16 to 18 had 2 doses of MenACWY in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.236294,
+            "sd": 0.105528,
+            "min": 0.03,
+            "max": 0.56
+          },
+          {
+            "name": "rate_hpv_2dose_13_17y",
+            "duplicates": 99,
+            "info": {
+              "id": "rate_hpv_2dose_13_17y",
+              "short_name": "HPV 2 doses, 13 to 17 (registry)",
+              "long_name": "Proportion of residents aged 13 to 17 with 2 doses of HPV vaccine in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 13 to 17 recorded in the state immunization registry as having 2 doses of HPV vaccine.",
+              "long_description": "Registry-based coverage: the share of children aged 13 to 17 in the county with 2 doses of HPV vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 13 to 17 had 2 doses of HPV vaccine in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.364336,
+            "sd": 0.108657,
+            "min": 0.15,
+            "max": 0.65
+          },
+          {
+            "name": "rate_tdap_13_17y",
+            "duplicates": 113,
+            "info": {
+              "id": "rate_tdap_13_17y",
+              "short_name": "Tdap, 13 to 17 (registry)",
+              "long_name": "Proportion of residents aged 13 to 17 with 1 dose of Tdap in the state immunization registry",
+              "category": "immunization",
+              "short_description": "Share of residents aged 13 to 17 recorded in the state immunization registry as having 1 dose of Tdap.",
+              "long_description": "Registry-based coverage: the share of children aged 13 to 17 in the county with 1 dose of Tdap recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+              "statement": "In {location}, {value} of residents aged 13 to 17 had 1 dose of Tdap in the immunization registry.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.807762,
+            "sd": 0.071369,
+            "min": 0.58,
+            "max": 0.94
+          },
+          {
+            "name": "N_waivers_under_5y",
+            "duplicates": 97,
+            "info": {
+              "id": "N_waivers_under_5y",
+              "short_name": "Immunization waivers, under 5 (count)",
+              "long_name": "Number of immunization waivers on file for children under 5",
+              "category": "immunization",
+              "short_description": "Number of approved immunization waivers for children under 5 years old in the county.",
+              "long_description": "Count of waivers approved and recorded in the state's immunization waiver database for children under 5 (child care age), as printed on Wyoming's county report cards. A standing count, not a school cohort.",
+              "statement": "In {location}, {value} immunization waivers were on file for children under 5.",
+              "measure_type": "Count",
+              "unit": "Waivers",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 26.076923,
+            "sd": 61.355014,
+            "min": 0,
+            "max": 397
+          },
+          {
+            "name": "N_waivers_5y_plus",
+            "duplicates": 80,
+            "info": {
+              "id": "N_waivers_5y_plus",
+              "short_name": "Immunization waivers, 5 and over (count)",
+              "long_name": "Number of immunization waivers on file for children 5 and over",
+              "category": "immunization",
+              "short_description": "Number of approved immunization waivers for children 5 years old and over in the county.",
+              "long_description": "Count of waivers approved and recorded in the state's immunization waiver database for children 5 and over (school age), as printed on Wyoming's county report cards. A standing count, not a school cohort.",
+              "statement": "In {location}, {value} immunization waivers were on file for children 5 and over.",
+              "measure_type": "Count",
+              "unit": "Waivers",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 1,
+            "mean": 52,
+            "sd": 128.579859,
+            "min": 0,
+            "max": 873
+          },
+          {
+            "name": "N_religious_exempt",
+            "duplicates": 64,
+            "info": {
+              "id": "N_religious_exempt",
+              "short_name": "Religious exemptions (count)",
+              "long_name": "Number of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 0,
+            "mean": 76.076923,
+            "sd": 182.651137,
+            "min": 0,
+            "max": 1199
+          },
+          {
+            "name": "N_medical_exempt",
+            "duplicates": 130,
+            "info": {
+              "id": "N_medical_exempt",
+              "short_name": "Medical exemptions (count)",
+              "long_name": "Number of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+              "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 5],
+            "type": "integer",
+            "missing": 1,
+            "mean": 1.71831,
+            "sd": 4.194502,
+            "min": 0,
+            "max": 25
+          }
+        ]
+      },
+      "sha512": "cf5078ce20b5a282a22f5370a50c43d23c6073ea0fe9f63a461eb92706b111b9a0efd4ba3aaccce02bae4957ec45633666a0898998262deaa9811d33b18de755"
+    },
+    {
+      "bytes": 668,
+      "encoding": "ISO-8859-1",
+      "md5": "d480dba8eb82e0760839c76232cade45",
+      "format": "csv",
+      "name": "data_kindergarten.csv",
+      "filename": "data_kindergarten.csv.gz",
+      "versions": {},
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 0,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-09-08 15:21:43.099411",
+      "last_modified": "2026-09-08 15:21:43.099411",
+      "vintage": {},
+      "row_count": 48,
+      "entity_count": 24,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 46,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2022-09-01": 24,
+              "2023-09-01": 24
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 24,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "integer",
+            "missing": 0,
+            "mean": 53691.041667,
+            "sd": 11302.036015,
+            "min": 56,
+            "max": 56045
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 24,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Albany": 2,
+              "Big Horn": 2,
+              "Campbell": 2,
+              "Carbon": 2,
+              "Converse": 2,
+              "Crook": 2,
+              "Fremont": 2,
+              "Goshen": 2,
+              "Hot Springs": 2,
+              "Johnson": 2,
+              "Laramie": 2,
+              "Lincoln": 2,
+              "Natrona": 2,
+              "Niobrara": 2,
+              "Park": 2,
+              "Platte": 2,
+              "Sheridan": 2,
+              "Sublette": 2,
+              "Sweetwater": 2,
+              "Teton": 2,
+              "Uinta": 2,
+              "Washakie": 2,
+              "Weston": 2,
+              "Wyoming": 2
+            }
+          },
+          {
+            "name": "type",
+            "duplicates": 46,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "county": 46,
+              "state": 2
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 47,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Kindergarten": 48
+            }
+          },
+          {
+            "name": "rate_dtap",
+            "duplicates": 27,
+            "info": {
+              "id": "rate_dtap",
+              "short_name": "DTaP/Tdap coverage",
+              "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.880625,
+            "sd": 0.092008,
+            "min": 0.48,
+            "max": 0.97
+          },
+          {
+            "name": "rate_mmr",
+            "duplicates": 33,
+            "info": {
+              "id": "rate_mmr",
+              "short_name": "MMR coverage",
+              "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.903333,
+            "sd": 0.076557,
+            "min": 0.57,
+            "max": 0.97
+          },
+          {
+            "name": "rate_varicella",
+            "duplicates": 30,
+            "info": {
+              "id": "rate_varicella",
+              "short_name": "Varicella coverage",
+              "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.894375,
+            "sd": 0.080949,
+            "min": 0.57,
+            "max": 0.97
+          },
+          {
+            "name": "rate_polio",
+            "duplicates": 28,
+            "info": {
+              "id": "rate_polio",
+              "short_name": "Polio coverage",
+              "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.886667,
+            "sd": 0.086328,
+            "min": 0.52,
+            "max": 0.97
+          }
+        ]
+      },
+      "sha512": "ebb0931edf668ad2bf1c2a886216840c50461565ac4ebe9555fe571caf7e5e8f7414aa43abb07c703fba4254902be949e63f698750d1333a0ac1bc78386a3ba0"
+    }
+  ],
+  "measure_info": {
+    "rate_series_19_35m": {
+      "id": "rate_series_19_35m",
+      "short_name": "4:3:1:3:3:1:4 series, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV) in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV).",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV) recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had the 4:3:1:3:3:1:4 series (4 DTaP, 3 polio, 1 MMR, 3 Hib, 3 hepatitis B, 1 varicella, 4 PCV) in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_dtap_4dose_19_35m": {
+      "id": "rate_dtap_4dose_19_35m",
+      "short_name": "DTaP 4 doses, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 4 doses of DTaP in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 4 doses of DTaP.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 4 doses of DTaP recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 4 doses of DTaP in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_polio_3dose_19_35m": {
+      "id": "rate_polio_3dose_19_35m",
+      "short_name": "Polio 3 doses, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 3 doses of polio vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 3 doses of polio vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 3 doses of polio vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 3 doses of polio vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_mmr_1dose_19_35m": {
+      "id": "rate_mmr_1dose_19_35m",
+      "short_name": "MMR 1 dose, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 1 dose of MMR in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 1 dose of MMR.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 1 dose of MMR recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 1 dose of MMR in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_hib_3dose_19_35m": {
+      "id": "rate_hib_3dose_19_35m",
+      "short_name": "Hib 3 doses, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 3 doses of Hib in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 3 doses of Hib.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 3 doses of Hib recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 3 doses of Hib in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_hep_b_3dose_19_35m": {
+      "id": "rate_hep_b_3dose_19_35m",
+      "short_name": "Hepatitis B 3 doses, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 3 doses of hepatitis B vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 3 doses of hepatitis B vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 3 doses of hepatitis B vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 3 doses of hepatitis B vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_varicella_1dose_19_35m": {
+      "id": "rate_varicella_1dose_19_35m",
+      "short_name": "Varicella 1 dose, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 1 dose of varicella vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 1 dose of varicella vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 1 dose of varicella vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 1 dose of varicella vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_pcv_4dose_19_35m": {
+      "id": "rate_pcv_4dose_19_35m",
+      "short_name": "PCV 4 doses, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 4 doses of pneumococcal conjugate vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 4 doses of pneumococcal conjugate vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 4 doses of pneumococcal conjugate vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 4 doses of pneumococcal conjugate vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_hep_a_2dose_19_35m": {
+      "id": "rate_hep_a_2dose_19_35m",
+      "short_name": "Hepatitis A 2 doses, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 2 doses of hepatitis A vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 2 doses of hepatitis A vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 2 doses of hepatitis A vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 2 doses of hepatitis A vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_rotavirus_2dose_19_35m": {
+      "id": "rate_rotavirus_2dose_19_35m",
+      "short_name": "Rotavirus 2 doses, 19 to 35 months (registry)",
+      "long_name": "Proportion of residents aged 19 to 35 months with 2 doses of rotavirus vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 19 to 35 months recorded in the state immunization registry as having 2 doses of rotavirus vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 19 to 35 months in the county with 2 doses of rotavirus vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 19 to 35 months had 2 doses of rotavirus vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_series_6y": {
+      "id": "rate_series_6y",
+      "short_name": "5:4:2:3:3:2:4 series, 6 (labelled 7 on the 2019 to 2021 cards) (registry)",
+      "long_name": "Proportion of residents aged 6 (labelled 7 on the 2019 to 2021 cards) with the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV) in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 6 (labelled 7 on the 2019 to 2021 cards) recorded in the state immunization registry as having the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV).",
+      "long_description": "Registry-based coverage: the share of children aged 6 (labelled 7 on the 2019 to 2021 cards) in the county with the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV) recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 6 (labelled 7 on the 2019 to 2021 cards) had the 5:4:2:3:3:2:4 series (5 DTaP, 4 polio, 2 MMR, 3 Hib, 3 hepatitis B, 2 varicella, 4 PCV) in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_dtap_5dose_6y": {
+      "id": "rate_dtap_5dose_6y",
+      "short_name": "DTaP 5 doses, 6 (labelled 7 on the 2019 to 2021 cards) (registry)",
+      "long_name": "Proportion of residents aged 6 (labelled 7 on the 2019 to 2021 cards) with 5 doses of DTaP in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 6 (labelled 7 on the 2019 to 2021 cards) recorded in the state immunization registry as having 5 doses of DTaP.",
+      "long_description": "Registry-based coverage: the share of children aged 6 (labelled 7 on the 2019 to 2021 cards) in the county with 5 doses of DTaP recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 6 (labelled 7 on the 2019 to 2021 cards) had 5 doses of DTaP in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_mmr_2dose_6y": {
+      "id": "rate_mmr_2dose_6y",
+      "short_name": "MMR 2 dose(s), age 6 (registry)",
+      "long_name": "Proportion of residents aged 6 with 2 dose(s) of MMR in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 6 recorded in the state immunization registry as having 2 dose(s) of MMR.",
+      "long_description": "Registry-based coverage: the share of children aged 6 in the county with 2 MMR dose(s) recorded in the state immunization information system, by calendar year. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students, and changes to registry exclusion rules move the series. Wyoming's report cards carry the same measure under an age label that changes between years (6 years of age on the 2018 cards, 7-years-old on the 2019 to 2021 cards); the column keeps one name so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 6 had 2 MMR dose(s) in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_varicella_2dose_6y": {
+      "id": "rate_varicella_2dose_6y",
+      "short_name": "Varicella 2 doses, 6 (labelled 7 on the 2019 to 2021 cards) (registry)",
+      "long_name": "Proportion of residents aged 6 (labelled 7 on the 2019 to 2021 cards) with 2 doses of varicella vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 6 (labelled 7 on the 2019 to 2021 cards) recorded in the state immunization registry as having 2 doses of varicella vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 6 (labelled 7 on the 2019 to 2021 cards) in the county with 2 doses of varicella vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 6 (labelled 7 on the 2019 to 2021 cards) had 2 doses of varicella vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_menacwy_1dose_13_17y": {
+      "id": "rate_menacwy_1dose_13_17y",
+      "short_name": "MenACWY 1 dose, 13 to 17 (registry)",
+      "long_name": "Proportion of residents aged 13 to 17 with 1 dose of MenACWY in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 13 to 17 recorded in the state immunization registry as having 1 dose of MenACWY.",
+      "long_description": "Registry-based coverage: the share of children aged 13 to 17 in the county with 1 dose of MenACWY recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 13 to 17 had 1 dose of MenACWY in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_menacwy_2dose_16_18y": {
+      "id": "rate_menacwy_2dose_16_18y",
+      "short_name": "MenACWY 2 doses, 16 to 18 (registry)",
+      "long_name": "Proportion of residents aged 16 to 18 with 2 doses of MenACWY in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 16 to 18 recorded in the state immunization registry as having 2 doses of MenACWY.",
+      "long_description": "Registry-based coverage: the share of children aged 16 to 18 in the county with 2 doses of MenACWY recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 16 to 18 had 2 doses of MenACWY in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_hpv_2dose_13_17y": {
+      "id": "rate_hpv_2dose_13_17y",
+      "short_name": "HPV 2 doses, 13 to 17 (registry)",
+      "long_name": "Proportion of residents aged 13 to 17 with 2 doses of HPV vaccine in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 13 to 17 recorded in the state immunization registry as having 2 doses of HPV vaccine.",
+      "long_description": "Registry-based coverage: the share of children aged 13 to 17 in the county with 2 doses of HPV vaccine recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 13 to 17 had 2 doses of HPV vaccine in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_tdap_13_17y": {
+      "id": "rate_tdap_13_17y",
+      "short_name": "Tdap, 13 to 17 (registry)",
+      "long_name": "Proportion of residents aged 13 to 17 with 1 dose of Tdap in the state immunization registry",
+      "category": "immunization",
+      "short_description": "Share of residents aged 13 to 17 recorded in the state immunization registry as having 1 dose of Tdap.",
+      "long_description": "Registry-based coverage: the share of children aged 13 to 17 in the county with 1 dose of Tdap recorded in the state immunization information system. Not a school-entry survey measure: the denominator is resident children in the registry, not enrolled students. The age label on the source card can change between years (Wyoming's 6-year-old block is labelled 7-years-old on the 2019 to 2021 cards); the column name keeps one age so the series stays in one column.",
+      "statement": "In {location}, {value} of residents aged 13 to 17 had 1 dose of Tdap in the immunization registry.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "N_waivers_under_5y": {
+      "id": "N_waivers_under_5y",
+      "short_name": "Immunization waivers, under 5 (count)",
+      "long_name": "Number of immunization waivers on file for children under 5",
+      "category": "immunization",
+      "short_description": "Number of approved immunization waivers for children under 5 years old in the county.",
+      "long_description": "Count of waivers approved and recorded in the state's immunization waiver database for children under 5 (child care age), as printed on Wyoming's county report cards. A standing count, not a school cohort.",
+      "statement": "In {location}, {value} immunization waivers were on file for children under 5.",
+      "measure_type": "Count",
+      "unit": "Waivers",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "N_waivers_5y_plus": {
+      "id": "N_waivers_5y_plus",
+      "short_name": "Immunization waivers, 5 and over (count)",
+      "long_name": "Number of immunization waivers on file for children 5 and over",
+      "category": "immunization",
+      "short_description": "Number of approved immunization waivers for children 5 years old and over in the county.",
+      "long_description": "Count of waivers approved and recorded in the state's immunization waiver database for children 5 and over (school age), as printed on Wyoming's county report cards. A standing count, not a school cohort.",
+      "statement": "In {location}, {value} immunization waivers were on file for children 5 and over.",
+      "measure_type": "Count",
+      "unit": "Waivers",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "N_religious_exempt": {
+      "id": "N_religious_exempt",
+      "short_name": "Religious exemptions (count)",
+      "long_name": "Number of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "N_medical_exempt": {
+      "id": "N_medical_exempt",
+      "short_name": "Medical exemptions (count)",
+      "long_name": "Number of students with a medical vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+      "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_dtap": {
+      "id": "rate_dtap",
+      "short_name": "DTaP/Tdap coverage",
+      "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_mmr": {
+      "id": "rate_mmr",
+      "short_name": "MMR coverage",
+      "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_varicella": {
+      "id": "rate_varicella",
+      "short_name": "Varicella coverage",
+      "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "rate_polio": {
+      "id": "rate_polio",
+      "short_name": "Polio coverage",
+      "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+      "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+      "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "wy_school_immunization"
+        }
+      ]
+    },
+    "_sources": {
+      "wy_school_immunization": {
+        "name": "Wyoming County Immunization Report Cards",
+        "url": "https://health.wyo.gov/publichealth/immunization/immunization-data/wyoming-county-report-cards/",
+        "organization": "Wyoming Department of Health",
+        "organization_url": "https://health.wyo.gov/",
+        "description": "County report cards built from the Wyoming Immunization Registry (WyIR): registry coverage by age group (19 to 35 months, age 6, adolescents) and approved immunization waiver counts, 2018 to 2023. Registry measures describe resident children, not a school cohort.",
+        "restrictions": "Public data published by the source agency; the workbooks in raw/ were supplied to the project because the agency site blocks automated clients."
+      },
+      "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County report cards built from the Wyoming Immunization Registry (WyIR): registry coverage by age group (19 to 35 months, age 6, adolescents) and approved immunization waiver counts, 2018 to 2023.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "County, state rows (see the type column), by school year",
+        "data_kindergarten.csv.gz": "Kindergarten cohort only"
+      },
+      "id": "_catalog"
+    }
+  }
 }

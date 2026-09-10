@@ -5,27 +5,39 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:47",
+      "last_run": "2026-09-09 09:39:16",
       "frequency": 0,
-      "run_time": 0.07,
+      "run_time": 0.35,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          ""
+        ],
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/OH/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
     }
   },
   "raw_state": {
-    "hash": "f5cf98611014cdbeec41f680d8df5163"
+    "raw/Ohio % of Students with MMR Exemption.xlsx": "f5cf98611014cdbeec41f680d8df5163"
   },
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OH/measure_info.json": "19755b3255005e4a91ca2b08356e0c80",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/OH/standard/data.csv.gz": "2ad18b499e5b20d56962e55e6b8df1af"
+    "./data/OH/measure_info.json": "e8e46adbb58eca82d2b34699b656bace",
+    "./data/OH/standard/data.csv.gz": "2ad18b499e5b20d56962e55e6b8df1af"
   },
-  "script_hash": "bcc0a730dd2e96a358267e18dbeea9d8"
+  "script_hash": "4ded37fcf066c35b5c2c112e59f72cb8"
 }

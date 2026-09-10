@@ -263,5 +263,18 @@
       "description": "County-level per-series EXEMPTION rates from the Missouri DHSS school immunization dashboard, workbook \"Exemption Rates for Kindergarteners in Missouri Schools, by Vaccine Series\", covering kindergarten, 7th grade and K-12. Medical, religious and total are reported for each series. EXEMPTIONS ONLY -- this source publishes no coverage, so the coverage columns are empty. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. Medical and religious do not always sum exactly to the reported total, since each is rounded to three decimals at source.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "County-level per-series EXEMPTION rates from the Missouri DHSS school immunization dashboard, workbook \"Exemption Rates for Kindergarteners in Missouri Schools, by Vaccine Series\", covering kindergarten, 7th grade and K-12.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

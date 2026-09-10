@@ -1,4 +1,21 @@
 {
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ma_school_immunization"
+      }
+    ]
+  },
   "rate_dtap": {
     "id": "rate_dtap",
     "short_name": "DTaP/Tdap coverage",
@@ -135,23 +152,6 @@
       }
     ]
   },
-  "N_enrolled": {
-    "id": "N_enrolled",
-    "short_name": "Students enrolled",
-    "long_name": "Number of students enrolled",
-    "category": "immunization",
-    "short_description": "Number of students enrolled at the reporting level.",
-    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
-    "statement": "In {location}, {value} students were enrolled.",
-    "measure_type": "Count",
-    "unit": "Students",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "ma_school_immunization"
-      }
-    ]
-  },
   "rate_tdap": {
     "id": "rate_tdap",
     "short_name": "Tdap coverage",
@@ -194,6 +194,19 @@
       "organization_url": "https://www.mass.gov/orgs/department-of-public-health",
       "description": "County-level kindergarten and 7th-grade coverage and exemption data from the annual MDPH by-county school immunization workbooks.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level kindergarten and 7th-grade coverage and exemption data from the annual MDPH by-county school immunization workbooks.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
     }
   }
 }

@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/MN/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -25,9 +25,47 @@
     "raw/kcounty2425.xlsx": "7e9a8c1dfdf8ba0af97ac4c1dffa8db7",
     "raw/kcounty2526.xlsx": "97ac9eaaee3731506cf595e1315cbb29"
   },
-  "script_hash": "acd95ef3da9ce3e09aebdc984447a4e7",
+  "script_hash": "7cc6669c7be639e50377693368798545",
   "standard_state": {
-    "./data/MN/measure_info.json": "12d0cbae417964bf12983e49d48a7358",
-    "./data/MN/standard/data.csv.gz": "1df44191f0984ba0ac82ddeb824ae2be"
+    "./data/MN/measure_info.json": "eb55050d3159a913e2611e11f2a5eb29",
+    "./data/MN/standard/data.csv.gz": "a3d4db452234ba6259e914b1a6237a7e"
+  },
+  "fetch_state": {
+    "raw/kcounty2526.xlsx": {
+      "url": "https://www.health.state.mn.us/people/immunize/stats/school/kcounty2526.xlsx",
+      "dest": "raw/kcounty2526.xlsx",
+      "status": "unchanged",
+      "http_status": 304,
+      "bytes": 38342,
+      "sha256": "c20101aa989ecfe3f733512caec69ce08787432245bd57120fb816de5af578fd",
+      "etag": "\"1776170579\"",
+      "last_modified": "Tue, 14 Apr 2026 12:42:59 GMT",
+      "fetched_at": "2026-09-09 14:09:04",
+      "attempts": 1
+    },
+    "raw/kcounty2425.xlsx": {
+      "url": "https://www.health.state.mn.us/people/immunize/stats/school/kcounty2425.xlsx",
+      "dest": "raw/kcounty2425.xlsx",
+      "status": "unchanged",
+      "http_status": 304,
+      "bytes": 37965,
+      "sha256": "7cf00c7d5cd06cc91d55dfb918fdf0ad1ca4fada521573d5082d7b05835969e6",
+      "etag": "\"1746733583\"",
+      "last_modified": "Thu, 08 May 2025 19:46:23 GMT",
+      "fetched_at": "2026-09-09 14:09:04",
+      "attempts": 1
+    },
+    "raw/kcounty2324.xlsx": {
+      "url": "https://www.health.state.mn.us/people/immunize/stats/school/kcounty2324.xlsx",
+      "dest": "raw/kcounty2324.xlsx",
+      "status": "unchanged",
+      "http_status": 304,
+      "bytes": 35877,
+      "sha256": "665b2ab8354471811ea669f8584a4e6045fec385106607d1cb6989c04f436f12",
+      "etag": "\"1710254889\"",
+      "last_modified": "Tue, 12 Mar 2024 14:48:09 GMT",
+      "fetched_at": "2026-09-09 14:09:04",
+      "attempts": 1
+    }
   }
 }

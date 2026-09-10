@@ -9,32 +9,36 @@
   },
   "resources": [
     {
-      "bytes": 30987,
-      "encoding": "windows-1252",
-      "md5": "a01fbf747e0bea4aacd6f9be4dc6b2c9",
+      "bytes": 31258,
+      "encoding": "ISO-8859-1",
+      "md5": "f25f02e9733b5ab8888f61c5be4b986d",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "dc26589b9abf9358696c7245dabb3bd7be4e6f72"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 5 00:17:25 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.450787",
-      "last_modified": "2026-08-24 10:30:35.527227",
+      "created": "2026-09-09 10:09:05.244621",
+      "last_modified": "2026-09-09 10:09:05.244621",
       "vintage": {},
       "row_count": 2067,
       "entity_count": 115,
@@ -79,125 +83,12 @@
             "duplicates": 1952,
             "info": [],
             "time_range": [0, 5],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "29001": 18,
-              "29003": 18,
-              "29005": 18,
-              "29007": 18,
-              "29009": 18,
-              "29011": 18,
-              "29013": 18,
-              "29015": 18,
-              "29017": 18,
-              "29019": 18,
-              "29021": 18,
-              "29023": 18,
-              "29025": 18,
-              "29027": 18,
-              "29029": 18,
-              "29031": 18,
-              "29033": 18,
-              "29035": 18,
-              "29037": 18,
-              "29039": 18,
-              "29041": 18,
-              "29043": 18,
-              "29045": 18,
-              "29047": 18,
-              "29049": 18,
-              "29051": 18,
-              "29053": 18,
-              "29055": 18,
-              "29057": 18,
-              "29059": 18,
-              "29061": 18,
-              "29063": 18,
-              "29065": 18,
-              "29067": 18,
-              "29069": 18,
-              "29071": 18,
-              "29073": 18,
-              "29075": 18,
-              "29077": 18,
-              "29079": 18,
-              "29081": 18,
-              "29083": 18,
-              "29085": 18,
-              "29087": 18,
-              "29089": 18,
-              "29091": 18,
-              "29093": 18,
-              "29095": 18,
-              "29097": 18,
-              "29099": 18,
-              "29101": 18,
-              "29103": 18,
-              "29105": 18,
-              "29107": 18,
-              "29109": 18,
-              "29111": 18,
-              "29113": 18,
-              "29115": 18,
-              "29117": 18,
-              "29119": 18,
-              "29121": 18,
-              "29123": 18,
-              "29125": 18,
-              "29127": 18,
-              "29129": 18,
-              "29131": 18,
-              "29133": 18,
-              "29135": 18,
-              "29137": 18,
-              "29139": 18,
-              "29141": 18,
-              "29143": 18,
-              "29145": 18,
-              "29147": 18,
-              "29149": 18,
-              "29151": 18,
-              "29153": 18,
-              "29155": 18,
-              "29157": 18,
-              "29159": 18,
-              "29161": 18,
-              "29163": 18,
-              "29165": 18,
-              "29167": 18,
-              "29169": 18,
-              "29171": 15,
-              "29173": 18,
-              "29175": 18,
-              "29177": 18,
-              "29179": 18,
-              "29181": 18,
-              "29183": 18,
-              "29185": 18,
-              "29186": 18,
-              "29187": 18,
-              "29189": 18,
-              "29195": 18,
-              "29197": 18,
-              "29199": 18,
-              "29201": 18,
-              "29203": 18,
-              "29205": 18,
-              "29207": 18,
-              "29209": 18,
-              "29211": 18,
-              "29213": 18,
-              "29215": 18,
-              "29217": 18,
-              "29219": 18,
-              "29221": 18,
-              "29223": 18,
-              "29225": 18,
-              "29227": 18,
-              "29229": 18,
-              "29510": 18
-            }
+            "mean": 29117.635704,
+            "sd": 75.531356,
+            "min": 29001,
+            "max": 29510
           },
           {
             "name": "geography_name",
@@ -339,7 +230,7 @@
           },
           {
             "name": "rate_dtap_exempt",
-            "duplicates": 1937,
+            "duplicates": 1933,
             "info": {
               "id": "rate_dtap_exempt",
               "short_name": "DTaP exemption rate",
@@ -395,7 +286,7 @@
           },
           {
             "name": "rate_dtap_religious_exempt",
-            "duplicates": 1939,
+            "duplicates": 1936,
             "info": {
               "id": "rate_dtap_religious_exempt",
               "short_name": "DTaP religious exemption rate",
@@ -423,7 +314,7 @@
           },
           {
             "name": "rate_polio_exempt",
-            "duplicates": 1938,
+            "duplicates": 1934,
             "info": {
               "id": "rate_polio_exempt",
               "short_name": "polio exemption rate",
@@ -479,7 +370,7 @@
           },
           {
             "name": "rate_polio_religious_exempt",
-            "duplicates": 1936,
+            "duplicates": 1932,
             "info": {
               "id": "rate_polio_religious_exempt",
               "short_name": "polio religious exemption rate",
@@ -507,7 +398,7 @@
           },
           {
             "name": "rate_mmr_exempt",
-            "duplicates": 1934,
+            "duplicates": 1931,
             "info": {
               "id": "rate_mmr_exempt",
               "short_name": "MMR exemption rate",
@@ -563,7 +454,7 @@
           },
           {
             "name": "rate_mmr_religious_exempt",
-            "duplicates": 1939,
+            "duplicates": 1935,
             "info": {
               "id": "rate_mmr_religious_exempt",
               "short_name": "MMR religious exemption rate",
@@ -591,7 +482,7 @@
           },
           {
             "name": "rate_hep_b_exempt",
-            "duplicates": 1946,
+            "duplicates": 1941,
             "info": {
               "id": "rate_hep_b_exempt",
               "short_name": "hepatitis B exemption rate",
@@ -619,7 +510,7 @@
           },
           {
             "name": "rate_hep_b_medical_exempt",
-            "duplicates": 2038,
+            "duplicates": 2037,
             "info": {
               "id": "rate_hep_b_medical_exempt",
               "short_name": "hepatitis B medical exemption rate",
@@ -647,7 +538,7 @@
           },
           {
             "name": "rate_hep_b_religious_exempt",
-            "duplicates": 1949,
+            "duplicates": 1944,
             "info": {
               "id": "rate_hep_b_religious_exempt",
               "short_name": "hepatitis B religious exemption rate",
@@ -675,7 +566,7 @@
           },
           {
             "name": "rate_varicella_exempt",
-            "duplicates": 1937,
+            "duplicates": 1933,
             "info": {
               "id": "rate_varicella_exempt",
               "short_name": "varicella exemption rate",
@@ -703,7 +594,7 @@
           },
           {
             "name": "rate_varicella_medical_exempt",
-            "duplicates": 2038,
+            "duplicates": 2037,
             "info": {
               "id": "rate_varicella_medical_exempt",
               "short_name": "varicella medical exemption rate",
@@ -731,7 +622,7 @@
           },
           {
             "name": "rate_varicella_religious_exempt",
-            "duplicates": 1939,
+            "duplicates": 1937,
             "info": {
               "id": "rate_varicella_religious_exempt",
               "short_name": "varicella religious exemption rate",
@@ -759,7 +650,7 @@
           }
         ]
       },
-      "sha512": "111d3ad26ce07d565c64484efcf7f0f841dc1ff80ad6f250c8d33510a48ec4368844583d4332d4513fb34f5ce423ac4e34ada132677d2aeb56c91ce379d3f217"
+      "sha512": "3217920055641c841720d88257ab508f80fd770b751f05fe866cce096dad21316192487e8d9e644a08c93a88cd150fa6d3f7f843ad51f65b9032828bf2762460"
     }
   ],
   "measure_info": {
@@ -1028,6 +919,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level per-series EXEMPTION rates from the Missouri DHSS school immunization dashboard, workbook \"Exemption Rates for Kindergarteners in Missouri Schools, by Vaccine Series\", covering kindergarten, 7th grade and K-12.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

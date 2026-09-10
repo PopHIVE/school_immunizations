@@ -4,8 +4,8 @@
     "short_name": "Religious exemptions (count)",
     "long_name": "Number of students with a religious vaccination exemption",
     "category": "immunization",
-    "short_description": "Number of assessed school students with a religious exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students holding a religious exemption from one or more required vaccines, as reported by MSDH (\"Parent or Patient Refusal: Religious\"). Mississippi has not permitted non-religious personal-belief exemptions.",
+    "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
     "statement": "In {location}, {value} school students had a religious vaccination exemption.",
     "measure_type": "Count",
     "unit": "Students",
@@ -41,6 +41,19 @@
       "organization_url": "https://msdh.ms.gov/",
       "description": "County-level school immunization and exemption data from the annual MSDH reports (religious exemptions permitted after July 2023).",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level school immunization and exemption data from the annual MSDH reports (religious exemptions permitted after July 2023).",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
     }
   }
 }

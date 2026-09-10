@@ -1,0 +1,1006 @@
+"OBJECTID","Year","Survey_Type","Vaccine","Metric","Value_Percent","Enrollment"
+1,"2017/2018","Child Care/Preschool","DTaP","Incomplete Record",1.7,106593
+2,"2017/2018","Child Care/Preschool","PCV","Medical Exemption",0.1,106593
+3,"2017/2018","Kindergarten","HepB","Incomplete Record",2.6,65718
+4,"2017/2018","School","HepB","Medical Exemption",0.1,880843
+5,"2018/2019","Child Care/Preschool","DTaP","Medical Exemption",0.1,92382
+6,"2018/2019","Kindergarten","Polio","Fully Immunized",87.2,64179
+7,"2018/2019","School","Tdap","In Process",0.3,470136
+8,"2020/2021","Child Care/Preschool","DTaP","Fully Immunized",92.9,82985
+9,"2021/2022","Child Care/Preschool","Hib","In Process",0.8,92664
+10,"2021/2022","School",,"Summary Compliant",91.7,866857
+11,"2021/2022","School","MMR","No Record",0.9,866857
+12,"2022/2023","Kindergarten","MMR","Nonmedical Exemption",3.8,63887
+13,"2022/2023","School","HepB","Incomplete Record",1.9,870984
+14,"2022/2023","School","Tdap","In Process",0.3,494743
+15,"2022/2023","School","Varicella","No Record",1.5,870984
+16,"2023/2024","Child Care/Preschool","HepB","In Process",0.9,90894
+17,"2023/2024","Child Care/Preschool","Hib","Medical Exemption",0.3,90894
+18,"2023/2024","Kindergarten","HepB","No Record",2.3,61748
+19,"2023/2024","School","MMR","Medical Exemption",0.2,853939
+20,"2024/2025","School","Polio","Medical Exemption",0.1,851736
+21,"2025/2026","Child Care/Preschool","Hib","Nonmedical Exemption",3.2,97807
+22,"2025/2026","Child Care/Preschool","Varicella","No Record",0.6,97807
+23,"2017/2018","Child Care/Preschool","HepB","No Record",0.7,106593
+24,"2017/2018","Child Care/Preschool","PCV","No Record",1,106593
+25,"2017/2018","Kindergarten","Varicella","Incomplete Record",6,65718
+26,"2017/2018","School","MMR","No Record",0.6,880843
+27,"2018/2019","Child Care/Preschool","DTaP","Fully Immunized",93.5,92382
+28,"2018/2019","Child Care/Preschool","Hib","Incomplete Record",1.3,92382
+29,"2019/2020","Child Care/Preschool","MMR","Nonmedical Exemption",2.5,108348
+30,"2019/2020","Kindergarten","MMR","In Process",0.4,67876
+31,"2020/2021","Child Care/Preschool","DTaP","In Process",1.1,82985
+32,"2020/2021","Child Care/Preschool","Hib","Incomplete Record",1.3,82985
+33,"2020/2021","School","HepB","In Process",0.1,867411
+34,"2020/2021","School","Tdap","Fully Immunized",91.3,487860
+35,"2021/2022","Child Care/Preschool","Polio","Nonmedical Exemption",2,92664
+36,"2022/2023","School","DTaP","No Record",1.5,870984
+37,"2023/2024","Child Care/Preschool","PCV","In Process",1,90894
+38,"2023/2024","Child Care/Preschool","PCV","Incomplete Record",1.5,90894
+39,"2023/2024","Child Care/Preschool","PCV","No Record",0.8,90894
+40,"2023/2024","Child Care/Preschool","Varicella","No Record",0.7,90894
+41,"2024/2025","School","DTaP","In Process",0.3,851736
+42,"2024/2025","School","Tdap","Fully Immunized",89.2,484896
+43,"2025/2026","Child Care/Preschool","PCV","In Process",1.2,97807
+44,"2025/2026","Kindergarten","HepB","No Record",2.2,60049
+45,"2025/2026","School","DTaP","No Record",1.5,849507
+46,"2025/2026","School","HepB","Medical Exemption",0.2,849507
+47,"2017/2018","Child Care/Preschool","DTaP","No Record",0.7,106593
+48,"2017/2018","Child Care/Preschool","Hib","Fully Immunized",93.8,106593
+49,"2017/2018","Child Care/Preschool","Polio","Nonmedical Exemption",2.5,106593
+50,"2017/2018","School","Varicella","Fully Immunized",92.9,880843
+51,"2018/2019","Child Care/Preschool",,"Summary Compliant",94.6,92382
+52,"2019/2020","Child Care/Preschool","HepB","Incomplete Record",1,108348
+53,"2019/2020","Child Care/Preschool","MMR","Medical Exemption",0.2,108348
+54,"2019/2020","Kindergarten","Varicella","Incomplete Record",3.3,67876
+55,"2019/2020","School","Tdap","Fully Immunized",92.5,495607
+56,"2020/2021","Child Care/Preschool","HepB","No Record",2,82985
+57,"2020/2021","Child Care/Preschool","PCV","Fully Immunized",93.6,82985
+58,"2020/2021","Kindergarten","HepB","In Process",0.2,61888
+59,"2020/2021","School","HepB","Incomplete Record",1.4,867411
+60,"2021/2022","School","DTaP","No Record",0.9,866857
+61,"2022/2023","Child Care/Preschool","Varicella","Incomplete Record",1.4,95552
+62,"2022/2023","Kindergarten","Polio","Nonmedical Exemption",3.9,63887
+63,"2022/2023","Kindergarten","Varicella","Incomplete Record",6.6,63887
+64,"2022/2023","School","DTaP","Medical Exemption",0.1,870984
+65,"2023/2024","Child Care/Preschool","HepB","Fully Immunized",93.9,90894
+66,"2024/2025","Kindergarten","HepB","Fully Immunized",91.3,60055
+67,"2025/2026","Child Care/Preschool","HepB","Nonmedical Exemption",3.4,97807
+68,"2025/2026","Kindergarten","HepB","Nonmedical Exemption",3.5,60049
+69,"2025/2026","Kindergarten","MMR","Incomplete Record",5.1,60049
+70,"2017/2018","Child Care/Preschool","MMR","In Process",1.8,106593
+71,"2017/2018","Kindergarten","Polio","In Process",0.8,65718
+72,"2017/2018","School","MMR","In Process",0.2,880843
+73,"2017/2018","School","Varicella","In Process",0.3,880843
+74,"2018/2019","Kindergarten","HepB","Nonmedical Exemption",4.1,64179
+75,"2019/2020","Child Care/Preschool","PCV","Fully Immunized",94.5,108348
+76,"2020/2021","Child Care/Preschool","PCV","No Record",2,82985
+77,"2020/2021","Child Care/Preschool","Varicella","No Record",2,82985
+78,"2020/2021","School","DTaP","Fully Immunized",95.1,867411
+79,"2021/2022","Child Care/Preschool","Polio","Incomplete Record",1.6,92664
+80,"2021/2022","School","DTaP","Medical Exemption",0.2,866857
+81,"2022/2023","Child Care/Preschool","Varicella","Nonmedical Exemption",2.2,95552
+82,"2024/2025","Child Care/Preschool","MMR","Nonmedical Exemption",2.9,94156
+83,"2024/2025","Kindergarten","Varicella","Incomplete Record",5.8,60055
+84,"2024/2025","School","DTaP","Medical Exemption",0.1,851736
+85,"2024/2025","School","DTaP","No Record",1.7,851736
+86,"2025/2026","Child Care/Preschool","Varicella","Fully Immunized",92.2,97807
+87,"2025/2026","Child Care/Preschool","Varicella","Incomplete Record",1.2,97807
+88,"2025/2026","Kindergarten","MMR","No Record",2.2,60049
+89,"2017/2018","Kindergarten","MMR","Incomplete Record",5.4,65718
+90,"2018/2019","School","MMR","Fully Immunized",94.3,864485
+91,"2019/2020","Child Care/Preschool","Hib","Fully Immunized",94.8,108348
+92,"2019/2020","School","Polio","Incomplete Record",1.4,899626
+93,"2021/2022","Child Care/Preschool","DTaP","In Process",1.2,92664
+94,"2021/2022","Child Care/Preschool","HepB","Fully Immunized",94.3,92664
+95,"2021/2022","Kindergarten","Varicella","Nonmedical Exemption",3,65253
+96,"2021/2022","School","Polio","In Process",0.2,866857
+97,"2022/2023","Kindergarten","HepB","In Process",0.3,63887
+98,"2022/2023","Kindergarten","HepB","No Record",2.8,63887
+99,"2022/2023","School","MMR","Medical Exemption",0.1,870984
+100,"2023/2024","Child Care/Preschool","Hib","No Record",0.8,90894
+101,"2023/2024","Kindergarten","Polio","In Process",0.5,61748
+102,"2023/2024","School","Polio","Incomplete Record",2.3,853939
+103,"2024/2025","Kindergarten","Polio","Incomplete Record",5.3,60055
+104,"2017/2018","Child Care/Preschool","Varicella","Nonmedical Exemption",2.8,106593
+105,"2017/2018","School","DTaP","Medical Exemption",0.1,880843
+106,"2017/2018","School","HepB","Incomplete Record",1.6,880843
+107,"2018/2019","Child Care/Preschool","MMR","Fully Immunized",94.3,92382
+108,"2019/2020","Kindergarten","Polio","No Record",1,67876
+109,"2019/2020","School","HepB","In Process",0.2,899626
+110,"2021/2022","School","Tdap","In Process",0.3,484058
+111,"2023/2024","School","Tdap","No Record",1.7,483364
+112,"2024/2025","Child Care/Preschool","Polio","Nonmedical Exemption",2.9,94156
+113,"2025/2026","Kindergarten","DTaP","Nonmedical Exemption",4.4,60049
+114,"2025/2026","School","Tdap","Incomplete Record",5.5,478101
+115,"2017/2018","Kindergarten","MMR","Medical Exemption",0.1,65718
+116,"2017/2018","School","HepB","No Record",0.6,880843
+117,"2017/2018","School","MMR","Nonmedical Exemption",2.8,880843
+118,"2017/2018","School","Tdap","Incomplete Record",4.5,490361
+119,"2018/2019","Child Care/Preschool","MMR","Incomplete Record",0.9,92382
+120,"2019/2020","Child Care/Preschool","DTaP","Fully Immunized",93.8,108348
+121,"2019/2020","Kindergarten","MMR","Nonmedical Exemption",4.4,67876
+122,"2019/2020","School","Varicella","In Process",0.2,899626
+123,"2020/2021","Kindergarten","Polio","In Process",0.4,61888
+124,"2021/2022","Kindergarten","DTaP","In Process",0.6,65253
+125,"2021/2022","School","HepB","Medical Exemption",0.2,866857
+126,"2022/2023","Kindergarten",,"Summary Compliant",88.4,63887
+127,"2023/2024","Kindergarten","Varicella","Incomplete Record",5.4,61748
+128,"2024/2025","Child Care/Preschool","Polio","No Record",1,94156
+129,"2024/2025","School","Varicella","Medical Exemption",0.2,851736
+130,"2025/2026","Child Care/Preschool","Hib","Incomplete Record",1.3,97807
+131,"2025/2026","Kindergarten","Varicella","No Record",2.2,60049
+132,"2017/2018","Child Care/Preschool","Hib","Nonmedical Exemption",2.4,106593
+133,"2017/2018","Kindergarten","HepB","In Process",0.4,65718
+134,"2017/2018","School","DTaP","Nonmedical Exemption",2.6,880843
+135,"2017/2018","School","HepB","Nonmedical Exemption",2.8,880843
+136,"2018/2019","Child Care/Preschool","MMR","No Record",1,92382
+137,"2018/2019","Kindergarten","Polio","No Record",1.8,64179
+138,"2018/2019","School","Polio","No Record",1,864485
+139,"2019/2020","School","DTaP","Medical Exemption",0.1,899626
+140,"2019/2020","School","Varicella","Medical Exemption",0.2,899626
+141,"2020/2021","Child Care/Preschool","PCV","In Process",0.8,82985
+142,"2020/2021","School","Varicella","Medical Exemption",0.2,867411
+143,"2021/2022","School","MMR","Nonmedical Exemption",1.9,866857
+144,"2022/2023","Child Care/Preschool","DTaP","In Process",1.3,95552
+145,"2022/2023","Child Care/Preschool","HepB","No Record",0.9,95552
+146,"2022/2023","Child Care/Preschool","MMR","No Record",0.9,95552
+147,"2022/2023","Child Care/Preschool","PCV","Fully Immunized",94.1,95552
+148,"2022/2023","Kindergarten","MMR","Medical Exemption",0.3,63887
+149,"2022/2023","Kindergarten","Polio","No Record",2.8,63887
+150,"2022/2023","Kindergarten","Varicella","In Process",0.6,63887
+151,"2022/2023","School","DTaP","Incomplete Record",2.2,870984
+152,"2023/2024","Child Care/Preschool","DTaP","Incomplete Record",1.9,90894
+153,"2023/2024","Child Care/Preschool","HepB","Medical Exemption",0.3,90894
+154,"2024/2025","Child Care/Preschool","MMR","In Process",1.9,94156
+155,"2024/2025","Child Care/Preschool","Varicella","Medical Exemption",0.1,94156
+156,"2024/2025","School","HepB","Medical Exemption",0.1,851736
+157,"2025/2026","Child Care/Preschool","HepB","Fully Immunized",93.2,97807
+158,"2025/2026","School","HepB","No Record",1.5,849507
+159,"2017/2018","Child Care/Preschool","HepB","Incomplete Record",1.4,106593
+160,"2017/2018","Child Care/Preschool","MMR","Fully Immunized",93.8,106593
+161,"2018/2019","Kindergarten","MMR","Nonmedical Exemption",4.4,64179
+162,"2019/2020","School","Polio","Medical Exemption",0.1,899626
+163,"2019/2020","School","Varicella","Incomplete Record",1.5,899626
+164,"2020/2021","Kindergarten","DTaP","In Process",0.4,61888
+165,"2020/2021","School","MMR","Nonmedical Exemption",2.5,867411
+166,"2021/2022","Child Care/Preschool","MMR","Fully Immunized",94.5,92664
+167,"2021/2022","Kindergarten","HepB","Fully Immunized",92.3,65253
+168,"2021/2022","Kindergarten","Polio","Nonmedical Exemption",3,65253
+169,"2021/2022","School","Tdap","No Record",0.9,484058
+170,"2022/2023","Child Care/Preschool","DTaP","Nonmedical Exemption",2.1,95552
+171,"2022/2023","Kindergarten","Polio","Fully Immunized",86.8,63887
+172,"2024/2025","Child Care/Preschool","DTaP","Nonmedical Exemption",2.9,94156
+173,"2024/2025","School","Polio","No Record",1.7,851736
+174,"2025/2026","Child Care/Preschool","Polio","Medical Exemption",0.3,97807
+175,"2025/2026","Kindergarten","HepB","Medical Exemption",0.1,60049
+176,"2017/2018","Child Care/Preschool","HepB","Medical Exemption",0.1,106593
+177,"2017/2018","Child Care/Preschool","MMR","No Record",0.8,106593
+178,"2018/2019","Child Care/Preschool","Hib","Medical Exemption",0.1,92382
+179,"2018/2019","School","HepB","Incomplete Record",1.7,864485
+180,"2019/2020","Child Care/Preschool","Polio","Fully Immunized",94.4,108348
+181,"2019/2020","Child Care/Preschool","Varicella","Incomplete Record",0.9,108348
+182,"2019/2020","School","HepB","Fully Immunized",94.9,899626
+183,"2019/2020","School","Tdap","Incomplete Record",3.2,495607
+184,"2020/2021","School","Varicella","In Process",0.2,867411
+185,"2021/2022","School","MMR","In Process",0.1,866857
+186,"2022/2023","Kindergarten","DTaP","Incomplete Record",5.5,63887
+187,"2023/2024","Child Care/Preschool","MMR","Fully Immunized",93.9,90894
+188,"2023/2024","School",,"Summary Compliant",92,853939
+189,"2023/2024","School","Varicella","No Record",1.5,853939
+190,"2024/2025","School","HepB","Fully Immunized",93.5,851736
+191,"2024/2025","School","HepB","No Record",1.7,851736
+192,"2025/2026","Child Care/Preschool","HepB","Incomplete Record",1.4,97807
+193,"2025/2026","Child Care/Preschool","MMR","Incomplete Record",1,97807
+194,"2025/2026","Child Care/Preschool","MMR","Nonmedical Exemption",3.3,97807
+195,"2017/2018","School","Tdap","No Record",1.8,490361
+196,"2018/2019","Kindergarten","DTaP","Fully Immunized",90.3,64179
+197,"2018/2019","Kindergarten","DTaP","Medical Exemption",0.1,64179
+198,"2019/2020","School","HepB","Incomplete Record",1.2,899626
+199,"2020/2021","Kindergarten","HepB","Nonmedical Exemption",3.5,61888
+200,"2020/2021","School","Tdap","Medical Exemption",0.1,487860
+201,"2021/2022","Child Care/Preschool","Hib","Nonmedical Exemption",1.9,92664
+202,"2021/2022","Child Care/Preschool","Polio","Medical Exemption",0.2,92664
+203,"2021/2022","Kindergarten","MMR","No Record",1.5,65253
+204,"2021/2022","Kindergarten","MMR","Nonmedical Exemption",2.9,65253
+205,"2021/2022","School","Varicella","Medical Exemption",0.2,866857
+206,"2022/2023","Child Care/Preschool","HepB","Fully Immunized",94.2,95552
+207,"2022/2023","Child Care/Preschool","MMR","In Process",1.1,95552
+208,"2022/2023","Child Care/Preschool","PCV","Medical Exemption",0.2,95552
+209,"2022/2023","Kindergarten","DTaP","No Record",2.8,63887
+210,"2022/2023","School","Tdap","No Record",1.6,494743
+211,"2023/2024","Child Care/Preschool","Polio","Medical Exemption",0.3,90894
+212,"2023/2024","Kindergarten","MMR","Nonmedical Exemption",3.9,61748
+213,"2024/2025","Child Care/Preschool","HepB","Fully Immunized",93.6,94156
+214,"2024/2025","School","MMR","Fully Immunized",93.3,851736
+215,"2025/2026","Kindergarten","MMR","Nonmedical Exemption",4.3,60049
+216,"2017/2018","Child Care/Preschool","MMR","Incomplete Record",1,106593
+217,"2017/2018","School","Varicella","Nonmedical Exemption",3.2,880843
+218,"2018/2019","Child Care/Preschool","DTaP","No Record",1,92382
+219,"2018/2019","Kindergarten","DTaP","Incomplete Record",3.3,64179
+220,"2018/2019","Kindergarten","Varicella","Medical Exemption",0.2,64179
+221,"2018/2019","School","DTaP","Fully Immunized",95,864485
+222,"2018/2019","School","Tdap","Fully Immunized",91,470136
+223,"2019/2020","Child Care/Preschool","Hib","Incomplete Record",0.9,108348
+224,"2019/2020","Kindergarten","HepB","Incomplete Record",1.5,67876
+225,"2019/2020","Kindergarten","HepB","No Record",1,67876
+226,"2019/2020","Kindergarten","Varicella","Fully Immunized",90.1,67876
+227,"2019/2020","School","Polio","No Record",0.7,899626
+228,"2021/2022","Child Care/Preschool","HepB","Medical Exemption",0.2,92664
+229,"2022/2023","Child Care/Preschool","HepB","Medical Exemption",0.2,95552
+230,"2022/2023","Kindergarten","Varicella","No Record",2.8,63887
+231,"2022/2023","School","DTaP","Fully Immunized",93.7,870984
+232,"2022/2023","School","Polio","No Record",1.5,870984
+233,"2022/2023","School","Tdap","No Record",0,494743
+234,"2023/2024","Child Care/Preschool","HepB","No Record",0.7,90894
+235,"2023/2024","Kindergarten","Varicella","Fully Immunized",87.2,61748
+236,"2023/2024","School","Polio","In Process",0.2,853939
+237,"2024/2025","School",,"Summary Compliant",91.9,851736
+238,"2024/2025","School","HepB","Incomplete Record",2.1,851736
+239,"2025/2026","Child Care/Preschool","MMR","In Process",2.2,97807
+240,"2017/2018","Child Care/Preschool","DTaP","Fully Immunized",93,106593
+241,"2017/2018","Child Care/Preschool","Varicella","Incomplete Record",1.2,106593
+242,"2017/2018","Kindergarten","DTaP","Medical Exemption",0.1,65718
+243,"2018/2019","Child Care/Preschool","Hib","Nonmedical Exemption",2.4,92382
+244,"2019/2020","Child Care/Preschool","HepB","No Record",0.7,108348
+245,"2020/2021","Kindergarten","MMR","Fully Immunized",90.5,61888
+246,"2020/2021","Kindergarten","MMR","Medical Exemption",0.1,61888
+247,"2020/2021","School","Tdap","Incomplete Record",4.8,487860
+248,"2021/2022","Child Care/Preschool","DTaP","No Record",0.8,92664
+249,"2021/2022","Kindergarten","HepB","Incomplete Record",3,65253
+250,"2021/2022","Kindergarten","MMR","Medical Exemption",0.1,65253
+251,"2022/2023","Kindergarten","HepB","Nonmedical Exemption",3.5,63887
+252,"2022/2023","School","Tdap","Fully Immunized",89.5,494743
+253,"2022/2023","School","Tdap","Medical Exemption",0,494743
+254,"2023/2024","School","DTaP","No Record",1.5,853939
+255,"2024/2025","School","MMR","No Record",1.7,851736
+256,"2017/2018","Kindergarten","Varicella","In Process",0.8,65718
+257,"2018/2019","Child Care/Preschool","HepB","In Process",0.9,92382
+258,"2018/2019","School","Polio","Fully Immunized",94.1,864485
+259,"2018/2019","School","Tdap","Nonmedical Exemption",2.8,470136
+260,"2019/2020","Child Care/Preschool","Hib","No Record",0.8,108348
+261,"2020/2021","Child Care/Preschool","HepB","In Process",0.7,82985
+262,"2020/2021","Kindergarten","HepB","Incomplete Record",1.8,61888
+263,"2020/2021","Kindergarten","HepB","Medical Exemption",0.1,61888
+264,"2020/2021","School","MMR","Incomplete Record",1.3,867411
+265,"2021/2022","Child Care/Preschool","PCV","Fully Immunized",94.4,92664
+266,"2021/2022","Child Care/Preschool","Varicella","Incomplete Record",1.5,92664
+267,"2023/2024","Child Care/Preschool","Varicella","Incomplete Record",1.3,90894
+268,"2023/2024","School","Tdap","Nonmedical Exemption",2.7,483364
+269,"2024/2025","Child Care/Preschool","Hib","Incomplete Record",1.3,94156
+270,"2024/2025","Child Care/Preschool","PCV","No Record",1,94156
+271,"2024/2025","Child Care/Preschool","PCV","Nonmedical Exemption",2.8,94156
+272,"2024/2025","School","Polio","Incomplete Record",2.4,851736
+273,"2024/2025","School","Tdap","Nonmedical Exemption",2.7,484896
+274,"2025/2026","Kindergarten","Polio","Fully Immunized",87.3,60049
+275,"2017/2018","Child Care/Preschool","Polio","Incomplete Record",1.2,106593
+276,"2018/2019","Kindergarten","MMR","No Record",1.9,64179
+277,"2018/2019","School","Varicella","Medical Exemption",0.2,864485
+278,"2019/2020","School",,"Summary Compliant",95,899626
+279,"2020/2021","Kindergarten","Varicella","In Process",0.4,61888
+280,"2021/2022","Kindergarten","DTaP","Incomplete Record",5.9,65253
+281,"2021/2022","School","HepB","In Process",0.2,866857
+282,"2021/2022","School","MMR","Medical Exemption",0.2,866857
+283,"2022/2023","School","Tdap","Incomplete Record",0,494743
+284,"2023/2024","Child Care/Preschool","DTaP","No Record",0.7,90894
+285,"2023/2024","Child Care/Preschool","Hib","Nonmedical Exemption",2.5,90894
+286,"2023/2024","School","DTaP","Incomplete Record",2.3,853939
+287,"2023/2024","School","Polio","Nonmedical Exemption",2.6,853939
+288,"2023/2024","School","Tdap","Fully Immunized",89.2,483364
+289,"2024/2025","Kindergarten","Varicella","Nonmedical Exemption",4.1,60055
+290,"2024/2025","School","MMR","Medical Exemption",0.2,851736
+291,"2025/2026","School","Polio","Fully Immunized",93.1,849507
+292,"2017/2018","Kindergarten","MMR","Fully Immunized",88.8,65718
+293,"2017/2018","Kindergarten","Varicella","Medical Exemption",0.2,65718
+294,"2017/2018","School","MMR","Medical Exemption",0.1,880843
+295,"2018/2019","Child Care/Preschool","Hib","Fully Immunized",94.3,92382
+296,"2018/2019","Kindergarten","MMR","In Process",0.5,64179
+297,"2018/2019","School","HepB","No Record",0.9,864485
+298,"2018/2019","School","MMR","Incomplete Record",1.7,864485
+299,"2018/2019","School","Varicella","Fully Immunized",93.1,864485
+300,"2019/2020","Kindergarten","HepB","Fully Immunized",92.9,67876
+301,"2020/2021","Child Care/Preschool","PCV","Incomplete Record",1.4,82985
+302,"2020/2021","School","Tdap","No Record",0.7,487860
+303,"2021/2022","Kindergarten","Polio","Incomplete Record",6.2,65253
+304,"2021/2022","Kindergarten","Varicella","Fully Immunized",87.6,65253
+305,"2021/2022","School","HepB","No Record",0.9,866857
+306,"2021/2022","School","Polio","No Record",0.9,866857
+307,"2021/2022","School","Tdap","Incomplete Record",6.2,484058
+308,"2022/2023","School","MMR","In Process",0.1,870984
+309,"2023/2024","Kindergarten","HepB","Fully Immunized",91,61748
+310,"2023/2024","School","Varicella","Nonmedical Exemption",2.7,853939
+311,"2024/2025","Child Care/Preschool","PCV","In Process",1.2,94156
+312,"2024/2025","Kindergarten","Varicella","Fully Immunized",86.8,60055
+313,"2025/2026","School","Polio","Medical Exemption",0.2,849507
+314,"2017/2018","Child Care/Preschool","Hib","Medical Exemption",0.1,106593
+315,"2017/2018","Child Care/Preschool","Varicella","Medical Exemption",0.1,106593
+316,"2018/2019","Child Care/Preschool","PCV","In Process",1,92382
+317,"2018/2019","Child Care/Preschool","PCV","Medical Exemption",0.1,92382
+318,"2018/2019","Kindergarten","HepB","Medical Exemption",0.1,64179
+319,"2018/2019","School","Varicella","In Process",0.3,864485
+320,"2020/2021","Child Care/Preschool",,"Summary Compliant",95,82985
+321,"2020/2021","Kindergarten","Polio","Nonmedical Exemption",3.9,61888
+322,"2020/2021","Kindergarten","Varicella","Incomplete Record",4.7,61888
+323,"2020/2021","School","HepB","Medical Exemption",0.1,867411
+324,"2021/2022","Child Care/Preschool","PCV","No Record",0.8,92664
+325,"2021/2022","Kindergarten","Varicella","No Record",1.5,65253
+326,"2022/2023","Child Care/Preschool","Polio","Medical Exemption",0.2,95552
+327,"2023/2024","Child Care/Preschool","DTaP","In Process",1.4,90894
+328,"2023/2024","Child Care/Preschool","Polio","Fully Immunized",94,90894
+329,"2024/2025","Kindergarten","Polio","In Process",0.6,60055
+330,"2024/2025","School","MMR","Nonmedical Exemption",2.5,851736
+331,"2025/2026","School","MMR","Nonmedical Exemption",2.6,849507
+332,"2025/2026","School","Polio","Nonmedical Exemption",2.7,849507
+333,"2025/2026","School","Varicella","Fully Immunized",92.4,849507
+334,"2017/2018","Child Care/Preschool","PCV","In Process",1.5,106593
+335,"2017/2018","Child Care/Preschool","Polio","No Record",0.7,106593
+336,"2017/2018","Kindergarten","MMR","Nonmedical Exemption",4.2,65718
+337,"2017/2018","Kindergarten","Polio","Incomplete Record",5.5,65718
+338,"2017/2018","School","Polio","Nonmedical Exemption",2.7,880843
+339,"2019/2020","Child Care/Preschool","MMR","No Record",0.8,108348
+340,"2020/2021","Kindergarten","DTaP","Medical Exemption",0.1,61888
+341,"2020/2021","School","DTaP","No Record",0.7,867411
+342,"2021/2022","Child Care/Preschool","PCV","Incomplete Record",1.9,92664
+343,"2021/2022","Kindergarten","Varicella","In Process",0.6,65253
+344,"2022/2023","School","Polio","Fully Immunized",93.6,870984
+345,"2023/2024","School","HepB","Incomplete Record",2.2,853939
+346,"2024/2025","Child Care/Preschool","DTaP","In Process",1.9,94156
+347,"2024/2025","Kindergarten","DTaP","In Process",0.6,60055
+348,"2025/2026","Child Care/Preschool","PCV","Incomplete Record",1.8,97807
+349,"2025/2026","Kindergarten","MMR","Medical Exemption",0.1,60049
+350,"2025/2026","School","DTaP","Nonmedical Exemption",2.7,849507
+351,"2018/2019","Child Care/Preschool","Polio","No Record",1.1,92382
+352,"2018/2019","Child Care/Preschool","Varicella","In Process",1.2,92382
+353,"2019/2020","Kindergarten","MMR","Fully Immunized",91.1,67876
+354,"2020/2021","Child Care/Preschool","DTaP","Medical Exemption",0.2,82985
+355,"2020/2021","Kindergarten","Polio","Incomplete Record",4.5,61888
+356,"2020/2021","School",,"Summary Compliant",94.1,867411
+357,"2020/2021","School","MMR","Fully Immunized",95.2,867411
+358,"2020/2021","School","Polio","In Process",0.2,867411
+359,"2021/2022","Child Care/Preschool","Polio","No Record",0.8,92664
+360,"2021/2022","Kindergarten","MMR","In Process",0.4,65253
+361,"2021/2022","School","HepB","Nonmedical Exemption",1.9,866857
+362,"2022/2023","Child Care/Preschool","PCV","In Process",1,95552
+363,"2022/2023","Kindergarten","HepB","Incomplete Record",2.4,63887
+364,"2022/2023","School","HepB","In Process",0.2,870984
+365,"2022/2023","School","Tdap","Incomplete Record",5.5,494743
+366,"2022/2023","School","Varicella","Fully Immunized",92.8,870984
+367,"2023/2024","Kindergarten","Varicella","No Record",2.3,61748
+368,"2024/2025","School","HepB","Nonmedical Exemption",2.4,851736
+369,"2025/2026","Child Care/Preschool","Hib","No Record",0.6,97807
+370,"2025/2026","Child Care/Preschool","Polio","Fully Immunized",92.2,97807
+371,"2025/2026","Kindergarten","Varicella","Nonmedical Exemption",4.5,60049
+372,"2025/2026","School","Varicella","Incomplete Record",2.8,849507
+373,"2017/2018","School","Tdap","Medical Exemption",0.1,490361
+374,"2018/2019","Child Care/Preschool","Hib","No Record",1,92382
+375,"2018/2019","Child Care/Preschool","Polio","Nonmedical Exemption",2.5,92382
+376,"2019/2020","Child Care/Preschool","Polio","No Record",0.7,108348
+377,"2019/2020","Kindergarten","DTaP","No Record",1,67876
+378,"2019/2020","School","Varicella","No Record",0.7,899626
+379,"2021/2022","Child Care/Preschool","MMR","Incomplete Record",1.4,92664
+380,"2021/2022","Kindergarten","HepB","In Process",0.3,65253
+381,"2022/2023","Child Care/Preschool","DTaP","Incomplete Record",2.1,95552
+382,"2022/2023","Child Care/Preschool","MMR","Medical Exemption",0.2,95552
+383,"2022/2023","Kindergarten","Varicella","Nonmedical Exemption",4,63887
+384,"2022/2023","School","MMR","Nonmedical Exemption",2.3,870984
+385,"2023/2024","School","Polio","Medical Exemption",0.1,853939
+386,"2024/2025","Child Care/Preschool","HepB","In Process",1.1,94156
+387,"2025/2026","Child Care/Preschool","HepB","Medical Exemption",0.2,97807
+388,"2025/2026","Child Care/Preschool","MMR","No Record",0.6,97807
+389,"2025/2026","Kindergarten","DTaP","Medical Exemption",0.1,60049
+390,"2025/2026","School","Varicella","No Record",1.5,849507
+391,"2017/2018","Kindergarten","Polio","Medical Exemption",0.1,65718
+392,"2017/2018","Kindergarten","Varicella","Fully Immunized",87.7,65718
+393,"2018/2019","Child Care/Preschool","PCV","Nonmedical Exemption",2.4,92382
+394,"2019/2020","Child Care/Preschool","PCV","Nonmedical Exemption",2.4,108348
+395,"2019/2020","Child Care/Preschool","Polio","Incomplete Record",0.9,108348
+396,"2019/2020","Child Care/Preschool","Varicella","Fully Immunized",94,108348
+397,"2019/2020","Kindergarten","DTaP","In Process",0.5,67876
+398,"2019/2020","School","Tdap","Medical Exemption",0.1,495607
+399,"2020/2021","Child Care/Preschool","HepB","Fully Immunized",93.3,82985
+400,"2020/2021","Kindergarten","HepB","No Record",1.3,61888
+401,"2021/2022","Child Care/Preschool","HepB","Incomplete Record",1.6,92664
+402,"2023/2024","Child Care/Preschool","Hib","In Process",1.1,90894
+403,"2023/2024","Kindergarten","Polio","Nonmedical Exemption",3.9,61748
+404,"2023/2024","School","Tdap","In Process",0.3,483364
+405,"2024/2025","School","Varicella","No Record",1.7,851736
+406,"2025/2026","Child Care/Preschool","MMR","Fully Immunized",92.6,97807
+407,"2025/2026","Kindergarten","Varicella","Medical Exemption",0.2,60049
+408,"2017/2018","School","Varicella","Medical Exemption",0.3,880843
+409,"2018/2019","Child Care/Preschool","Polio","Fully Immunized",94.2,92382
+410,"2018/2019","Child Care/Preschool","Polio","Medical Exemption",0.1,92382
+411,"2018/2019","Child Care/Preschool","Varicella","No Record",1.1,92382
+412,"2018/2019","Child Care/Preschool","Varicella","Nonmedical Exemption",2.7,92382
+413,"2019/2020","Child Care/Preschool","Varicella","Medical Exemption",0.2,108348
+414,"2019/2020","Kindergarten",,"Summary Compliant",93.7,67876
+415,"2021/2022","Child Care/Preschool","HepB","Nonmedical Exemption",2.2,92664
+416,"2021/2022","Child Care/Preschool","MMR","In Process",1.1,92664
+417,"2021/2022","Child Care/Preschool","Varicella","Medical Exemption",0.3,92664
+418,"2022/2023","Kindergarten","HepB","Fully Immunized",90.7,63887
+419,"2023/2024","Kindergarten","DTaP","Nonmedical Exemption",3.8,61748
+420,"2024/2025","School","Varicella","Nonmedical Exemption",2.7,851736
+421,"2025/2026","Child Care/Preschool","DTaP","Fully Immunized",91.8,97807
+422,"2025/2026","School","Polio","In Process",0.2,849507
+423,"2017/2018","Child Care/Preschool","Varicella","In Process",2,106593
+424,"2017/2018","School","Polio","Medical Exemption",0.1,880843
+425,"2018/2019","Child Care/Preschool","Polio","In Process",0.9,92382
+426,"2018/2019","Kindergarten","HepB","Incomplete Record",2.8,64179
+427,"2018/2019","Kindergarten","Varicella","Fully Immunized",86.5,64179
+428,"2019/2020","School","MMR","In Process",0.1,899626
+429,"2020/2021","Child Care/Preschool","HepB","Medical Exemption",0.2,82985
+430,"2020/2021","Child Care/Preschool","HepB","Nonmedical Exemption",2.5,82985
+431,"2020/2021","Child Care/Preschool","Polio","Nonmedical Exemption",2.3,82985
+432,"2020/2021","School","DTaP","Incomplete Record",1.5,867411
+433,"2021/2022","School","DTaP","Incomplete Record",2.2,866857
+434,"2022/2023","Kindergarten","MMR","No Record",2.8,63887
+435,"2022/2023","Kindergarten","Polio","In Process",0.5,63887
+436,"2022/2023","School","Tdap","In Process",0,494743
+437,"2023/2024","Child Care/Preschool","DTaP","Fully Immunized",93.1,90894
+438,"2024/2025","School","Tdap","In Process",0.2,484896
+439,"2024/2025","School","Varicella","In Process",0.3,851736
+440,"2025/2026","Kindergarten","MMR","Fully Immunized",87.7,60049
+441,"2025/2026","School","Tdap","No Record",1.6,478101
+442,"2017/2018","Child Care/Preschool","HepB","Fully Immunized",93.1,106593
+443,"2017/2018","Child Care/Preschool","Polio","Medical Exemption",0.1,106593
+444,"2017/2018","School","MMR","Fully Immunized",94.5,880843
+445,"2018/2019","School","Varicella","Incomplete Record",2.2,864485
+446,"2019/2020","Child Care/Preschool","HepB","Nonmedical Exemption",3,108348
+447,"2019/2020","Kindergarten","MMR","Incomplete Record",3,67876
+448,"2020/2021","Kindergarten","HepB","Fully Immunized",93,61888
+449,"2020/2021","Kindergarten","Polio","No Record",1.3,61888
+450,"2020/2021","School","Varicella","Nonmedical Exemption",2.8,867411
+451,"2021/2022","Child Care/Preschool","Polio","Fully Immunized",94.4,92664
+452,"2024/2025","Child Care/Preschool","PCV","Medical Exemption",0.1,94156
+453,"2024/2025","Kindergarten","HepB","Incomplete Record",2.7,60055
+454,"2024/2025","School","DTaP","Fully Immunized",92.8,851736
+455,"2024/2025","School","MMR","Incomplete Record",2.2,851736
+456,"2025/2026","Child Care/Preschool","PCV","Fully Immunized",93,97807
+457,"2025/2026","School","MMR","No Record",1.5,849507
+458,"2017/2018","Kindergarten","Polio","Nonmedical Exemption",4.2,65718
+459,"2018/2019","Child Care/Preschool","MMR","In Process",1.2,92382
+460,"2018/2019","Kindergarten","Polio","In Process",0.6,64179
+461,"2018/2019","School","Polio","Incomplete Record",1.9,864485
+462,"2019/2020","Child Care/Preschool","MMR","Incomplete Record",0.8,108348
+463,"2019/2020","Kindergarten","Polio","Nonmedical Exemption",4.5,67876
+464,"2020/2021","Child Care/Preschool","Polio","Medical Exemption",0.2,82985
+465,"2020/2021","Kindergarten",,"Summary Compliant",92.2,61888
+466,"2020/2021","School","HepB","Fully Immunized",95.1,867411
+467,"2022/2023","Child Care/Preschool","MMR","Incomplete Record",1.4,95552
+468,"2022/2023","Kindergarten","DTaP","Fully Immunized",87,63887
+469,"2023/2024","Child Care/Preschool","Varicella","Fully Immunized",93.7,90894
+470,"2024/2025","Child Care/Preschool","DTaP","No Record",1,94156
+471,"2024/2025","Child Care/Preschool","HepB","Incomplete Record",1.2,94156
+472,"2024/2025","Kindergarten","DTaP","Nonmedical Exemption",3.9,60055
+473,"2024/2025","School","HepB","In Process",0.2,851736
+474,"2025/2026","Kindergarten",,"Summary Compliant",90.3,60049
+475,"2025/2026","Kindergarten","MMR","In Process",0.4,60049
+476,"2025/2026","Kindergarten","Polio","In Process",0.7,60049
+477,"2025/2026","Kindergarten","Polio","Incomplete Record",5.3,60049
+478,"2025/2026","School","HepB","Fully Immunized",93.7,849507
+479,"2017/2018","Child Care/Preschool","DTaP","In Process",2,106593
+480,"2017/2018","Child Care/Preschool","DTaP","Nonmedical Exemption",2.4,106593
+481,"2017/2018","School","Varicella","No Record",0.7,880843
+482,"2018/2019","Child Care/Preschool","HepB","Incomplete Record",1.6,92382
+483,"2018/2019","Kindergarten","HepB","No Record",1.8,64179
+484,"2018/2019","School","DTaP","Medical Exemption",0.1,864485
+485,"2018/2019","School","HepB","Medical Exemption",0.1,864485
+486,"2019/2020","Kindergarten","MMR","No Record",1,67876
+487,"2020/2021","Child Care/Preschool","MMR","In Process",0.9,82985
+488,"2020/2021","Kindergarten","MMR","No Record",1.3,61888
+489,"2020/2021","School","DTaP","Medical Exemption",0.1,867411
+490,"2021/2022","Child Care/Preschool","PCV","Nonmedical Exemption",1.9,92664
+491,"2021/2022","Child Care/Preschool","Varicella","Fully Immunized",94.3,92664
+492,"2022/2023","School","HepB","Fully Immunized",94,870984
+493,"2024/2025","School","Polio","In Process",0.3,851736
+494,"2024/2025","School","Varicella","Incomplete Record",2.9,851736
+495,"2025/2026","Child Care/Preschool","DTaP","Medical Exemption",0.2,97807
+496,"2017/2018","Child Care/Preschool","HepB","Nonmedical Exemption",3.1,106593
+497,"2017/2018","Child Care/Preschool","MMR","Nonmedical Exemption",2.4,106593
+498,"2017/2018","Kindergarten","HepB","Medical Exemption",0.1,65718
+499,"2017/2018","Kindergarten","Polio","Fully Immunized",88.6,65718
+500,"2017/2018","School",,"Summary Compliant",93.1,880843
+501,"2018/2019","Child Care/Preschool","HepB","Nonmedical Exemption",3,92382
+502,"2018/2019","Kindergarten","Varicella","In Process",0.6,64179
+503,"2020/2021","Kindergarten","DTaP","No Record",1.3,61888
+504,"2020/2021","Kindergarten","MMR","Incomplete Record",4,61888
+505,"2021/2022","Child Care/Preschool","Hib","Incomplete Record",1.7,92664
+506,"2021/2022","Kindergarten","Polio","No Record",1.5,65253
+507,"2022/2023","Child Care/Preschool","Polio","Fully Immunized",94.2,95552
+508,"2022/2023","Kindergarten","DTaP","Medical Exemption",0.2,63887
+509,"2022/2023","School","Polio","Nonmedical Exemption",2.4,870984
+510,"2023/2024","Child Care/Preschool","Hib","Fully Immunized",93.9,90894
+511,"2023/2024","Child Care/Preschool","Varicella","In Process",1.3,90894
+512,"2023/2024","School","Tdap","Incomplete Record",5.1,483364
+513,"2024/2025","Child Care/Preschool","Polio","Medical Exemption",0.1,94156
+514,"2024/2025","Kindergarten","MMR","No Record",2.4,60055
+515,"2024/2025","Kindergarten","Varicella","In Process",0.8,60055
+516,"2025/2026","School","MMR","Fully Immunized",93.4,849507
+517,"2025/2026","School","MMR","Medical Exemption",0.2,849507
+518,"2017/2018","School","HepB","Fully Immunized",94.7,880843
+519,"2018/2019","Child Care/Preschool","Varicella","Fully Immunized",93.7,92382
+520,"2018/2019","School","DTaP","Incomplete Record",1.4,864485
+521,"2018/2019","School","MMR","Medical Exemption",0.1,864485
+522,"2019/2020","Child Care/Preschool","Polio","In Process",1.3,108348
+523,"2019/2020","School","MMR","Nonmedical Exemption",2.9,899626
+524,"2020/2021","Child Care/Preschool","Varicella","Fully Immunized",93.4,82985
+525,"2021/2022","Child Care/Preschool","DTaP","Incomplete Record",2,92664
+526,"2021/2022","Kindergarten","Varicella","Medical Exemption",0.1,65253
+527,"2023/2024","Child Care/Preschool","Varicella","Nonmedical Exemption",2.7,90894
+528,"2023/2024","School","MMR","No Record",1.5,853939
+529,"2024/2025","Kindergarten","HepB","In Process",0.3,60055
+530,"2024/2025","Kindergarten","Polio","Fully Immunized",87.6,60055
+531,"2025/2026","Child Care/Preschool","DTaP","No Record",0.6,97807
+532,"2017/2018","School","Tdap","Nonmedical Exemption",2.7,490361
+533,"2018/2019","Kindergarten","Varicella","Incomplete Record",6,64179
+534,"2018/2019","School","Varicella","Nonmedical Exemption",3.1,864485
+535,"2019/2020","Child Care/Preschool","Hib","Medical Exemption",0.1,108348
+536,"2019/2020","Kindergarten","DTaP","Nonmedical Exemption",3.7,67876
+537,"2020/2021","Child Care/Preschool","MMR","Incomplete Record",1,82985
+538,"2021/2022","Kindergarten","DTaP","Medical Exemption",0.1,65253
+539,"2021/2022","Kindergarten","MMR","Incomplete Record",6.7,65253
+540,"2021/2022","School","Varicella","Nonmedical Exemption",2,866857
+541,"2022/2023","Child Care/Preschool","Polio","Incomplete Record",1.5,95552
+542,"2022/2023","School","MMR","Incomplete Record",2.1,870984
+543,"2023/2024","Child Care/Preschool","PCV","Nonmedical Exemption",2.5,90894
+544,"2023/2024","School","HepB","Medical Exemption",0.1,853939
+545,"2024/2025","Child Care/Preschool","Hib","Nonmedical Exemption",2.8,94156
+546,"2025/2026","Child Care/Preschool","Varicella","In Process",2.3,97807
+547,"2025/2026","School","HepB","In Process",0.2,849507
+548,"2017/2018","Child Care/Preschool","Varicella","Fully Immunized",93.1,106593
+549,"2017/2018","Kindergarten","MMR","No Record",0.9,65718
+550,"2018/2019","School","HepB","In Process",0.2,864485
+551,"2019/2020","Child Care/Preschool","HepB","Fully Immunized",94.1,108348
+552,"2020/2021","Kindergarten","Varicella","Nonmedical Exemption",4,61888
+553,"2021/2022","School","MMR","Fully Immunized",94.4,866857
+554,"2022/2023","Child Care/Preschool","DTaP","Fully Immunized",93.4,95552
+555,"2022/2023","Child Care/Preschool","PCV","No Record",1,95552
+556,"2022/2023","Child Care/Preschool","Polio","In Process",1,95552
+557,"2023/2024","Child Care/Preschool","DTaP","Medical Exemption",0.3,90894
+558,"2023/2024","Kindergarten","Varicella","Medical Exemption",0.2,61748
+559,"2024/2025","Child Care/Preschool","PCV","Incomplete Record",1.5,94156
+560,"2024/2025","Kindergarten","Polio","Medical Exemption",0.1,60055
+561,"2025/2026","Child Care/Preschool","Polio","In Process",2.3,97807
+562,"2025/2026","Kindergarten","DTaP","Incomplete Record",5.6,60049
+563,"2025/2026","Kindergarten","DTaP","No Record",2.2,60049
+564,"2025/2026","School","Tdap","Medical Exemption",0.2,478101
+565,"2017/2018","School","DTaP","In Process",0.3,880843
+566,"2018/2019","Child Care/Preschool","Varicella","Incomplete Record",1.1,92382
+567,"2018/2019","Kindergarten","MMR","Medical Exemption",0.1,64179
+568,"2018/2019","Kindergarten","Polio","Nonmedical Exemption",4.5,64179
+569,"2018/2019","School","Polio","In Process",0.2,864485
+570,"2019/2020","School","MMR","Fully Immunized",95,899626
+571,"2020/2021","Child Care/Preschool","Polio","No Record",2,82985
+572,"2020/2021","Child Care/Preschool","Varicella","Nonmedical Exemption",2.3,82985
+573,"2020/2021","School","MMR","No Record",0.7,867411
+574,"2020/2021","School","Polio","Incomplete Record",1.6,867411
+575,"2020/2021","School","Polio","No Record",0.7,867411
+576,"2021/2022","Child Care/Preschool","PCV","Medical Exemption",0.2,92664
+577,"2021/2022","Kindergarten","DTaP","No Record",1.5,65253
+578,"2022/2023","Kindergarten","Varicella","Medical Exemption",0.3,63887
+579,"2023/2024","Kindergarten","Polio","Incomplete Record",5.3,61748
+580,"2024/2025","Child Care/Preschool","MMR","Fully Immunized",93,94156
+581,"2024/2025","Child Care/Preschool","MMR","Medical Exemption",0.1,94156
+582,"2025/2026","Kindergarten","Varicella","Fully Immunized",86.7,60049
+583,"2025/2026","School","DTaP","In Process",0.3,849507
+584,"2025/2026","School","Varicella","Nonmedical Exemption",2.8,849507
+585,"2017/2018","Child Care/Preschool","Varicella","No Record",0.8,106593
+586,"2017/2018","Kindergarten","Varicella","Nonmedical Exemption",4.5,65718
+587,"2017/2018","School","DTaP","Fully Immunized",94.3,880843
+588,"2017/2018","School","Polio","Fully Immunized",94.3,880843
+589,"2018/2019","Child Care/Preschool","Hib","In Process",0.9,92382
+590,"2019/2020","Child Care/Preschool","Hib","In Process",1.1,108348
+591,"2019/2020","Kindergarten","Varicella","No Record",1,67876
+592,"2019/2020","School","DTaP","Incomplete Record",0.9,899626
+593,"2019/2020","School","MMR","Medical Exemption",0.1,899626
+594,"2020/2021","School","Polio","Fully Immunized",94.9,867411
+595,"2021/2022","School","Tdap","Nonmedical Exemption",1.9,484058
+596,"2022/2023","Kindergarten","MMR","Incomplete Record",5.8,63887
+597,"2022/2023","School","MMR","No Record",1.5,870984
+598,"2022/2023","School","Polio","Incomplete Record",2.3,870984
+599,"2023/2024","Child Care/Preschool","PCV","Fully Immunized",93.8,90894
+600,"2023/2024","Child Care/Preschool","Varicella","Medical Exemption",0.4,90894
+601,"2023/2024","Kindergarten","MMR","Incomplete Record",4.8,61748
+602,"2024/2025","Child Care/Preschool","HepB","Nonmedical Exemption",3,94156
+603,"2024/2025","Child Care/Preschool","Hib","No Record",1,94156
+604,"2024/2025","Child Care/Preschool","MMR","No Record",1,94156
+605,"2024/2025","Kindergarten","DTaP","Fully Immunized",87.4,60055
+606,"2025/2026","Child Care/Preschool","Polio","No Record",0.6,97807
+607,"2025/2026","Kindergarten","Polio","Medical Exemption",0.1,60049
+608,"2025/2026","School",,"Summary Compliant",92.1,849507
+609,"2025/2026","School","HepB","Incomplete Record",2.1,849507
+610,"2025/2026","School","Varicella","In Process",0.2,849507
+611,"2017/2018","Kindergarten","HepB","No Record",0.8,65718
+612,"2018/2019","School","Polio","Medical Exemption",0.1,864485
+613,"2019/2020","Child Care/Preschool","HepB","Medical Exemption",0.1,108348
+614,"2019/2020","Child Care/Preschool","MMR","Fully Immunized",94.5,108348
+615,"2019/2020","Child Care/Preschool","Polio","Medical Exemption",0.1,108348
+616,"2019/2020","Child Care/Preschool","Polio","Nonmedical Exemption",2.6,108348
+617,"2019/2020","Kindergarten","DTaP","Fully Immunized",92.8,67876
+618,"2020/2021","School","Tdap","In Process",0.3,487860
+619,"2021/2022","Child Care/Preschool","Varicella","No Record",0.8,92664
+620,"2022/2023","Kindergarten","DTaP","In Process",0.6,63887
+621,"2023/2024","Kindergarten","HepB","Medical Exemption",0.1,61748
+622,"2023/2024","Kindergarten","MMR","In Process",0.5,61748
+623,"2023/2024","School","Polio","Fully Immunized",93.2,853939
+624,"2024/2025","Child Care/Preschool","Varicella","No Record",1,94156
+625,"2017/2018","Child Care/Preschool","PCV","Incomplete Record",1.5,106593
+626,"2017/2018","Kindergarten","DTaP","Fully Immunized",88.7,65718
+627,"2017/2018","School","DTaP","Incomplete Record",2.1,880843
+628,"2017/2018","School","Polio","No Record",0.7,880843
+629,"2018/2019","Child Care/Preschool","MMR","Medical Exemption",0.1,92382
+630,"2019/2020","Kindergarten","HepB","In Process",0.3,67876
+631,"2019/2020","Kindergarten","MMR","Medical Exemption",0.2,67876
+632,"2019/2020","Kindergarten","Polio","In Process",0.6,67876
+633,"2019/2020","Kindergarten","Polio","Incomplete Record",3.2,67876
+634,"2019/2020","Kindergarten","Varicella","Nonmedical Exemption",4.7,67876
+635,"2019/2020","School","HepB","Medical Exemption",0.1,899626
+636,"2019/2020","School","Varicella","Fully Immunized",94.2,899626
+637,"2020/2021","School","Polio","Medical Exemption",0.1,867411
+638,"2020/2021","School","Varicella","No Record",0.7,867411
+639,"2021/2022","Child Care/Preschool","HepB","No Record",0.8,92664
+640,"2021/2022","Kindergarten",,"Summary Compliant",88.9,65253
+641,"2021/2022","Kindergarten","Varicella","Incomplete Record",7.2,65253
+642,"2021/2022","School","Tdap","Fully Immunized",90.5,484058
+643,"2021/2022","School","Tdap","Medical Exemption",0.1,484058
+644,"2023/2024","Child Care/Preschool","MMR","Incomplete Record",1.3,90894
+645,"2023/2024","Kindergarten","HepB","Nonmedical Exemption",3.3,61748
+646,"2023/2024","Kindergarten","Varicella","In Process",0.7,61748
+647,"2024/2025","Child Care/Preschool","DTaP","Medical Exemption",0.1,94156
+648,"2024/2025","Child Care/Preschool","Varicella","In Process",2,94156
+649,"2024/2025","Kindergarten","HepB","Medical Exemption",0.1,60055
+650,"2024/2025","School","Polio","Nonmedical Exemption",2.6,851736
+651,"2025/2026","Child Care/Preschool","DTaP","Nonmedical Exemption",3.4,97807
+652,"2025/2026","Child Care/Preschool","PCV","Medical Exemption",0.2,97807
+653,"2025/2026","School","DTaP","Medical Exemption",0.2,849507
+654,"2017/2018","Child Care/Preschool","Hib","Incomplete Record",1.3,106593
+655,"2018/2019","Child Care/Preschool","MMR","Nonmedical Exemption",2.5,92382
+656,"2018/2019","Child Care/Preschool","PCV","Incomplete Record",1.6,92382
+657,"2018/2019","Kindergarten","DTaP","Nonmedical Exemption",4,64179
+658,"2018/2019","Kindergarten","Polio","Medical Exemption",0.1,64179
+659,"2018/2019","School","DTaP","Nonmedical Exemption",2.5,864485
+660,"2018/2019","School","HepB","Fully Immunized",94.4,864485
+661,"2018/2019","School","HepB","Nonmedical Exemption",2.8,864485
+662,"2019/2020","Child Care/Preschool","PCV","Incomplete Record",1.1,108348
+663,"2019/2020","Kindergarten","DTaP","Incomplete Record",1.8,67876
+664,"2019/2020","Kindergarten","Polio","Fully Immunized",90.6,67876
+665,"2019/2020","School","MMR","No Record",0.7,899626
+666,"2020/2021","Child Care/Preschool","Hib","Medical Exemption",0.2,82985
+667,"2020/2021","Child Care/Preschool","MMR","Fully Immunized",93.9,82985
+668,"2020/2021","Child Care/Preschool","Varicella","Incomplete Record",1.1,82985
+669,"2020/2021","Kindergarten","Varicella","Fully Immunized",89.4,61888
+670,"2020/2021","School","Polio","Nonmedical Exemption",2.6,867411
+671,"2021/2022","School","Varicella","Incomplete Record",3.1,866857
+672,"2022/2023","Child Care/Preschool","Varicella","Fully Immunized",94,95552
+673,"2022/2023","School","HepB","No Record",1.5,870984
+674,"2022/2023","School","Tdap","Medical Exemption",0.1,494743
+675,"2022/2023","School","Tdap","Nonmedical Exemption",2.4,494743
+676,"2023/2024","Child Care/Preschool","MMR","No Record",0.7,90894
+677,"2023/2024","Kindergarten","Polio","Fully Immunized",87.7,61748
+678,"2023/2024","School","Varicella","Incomplete Record",2.7,853939
+679,"2024/2025","Kindergarten","DTaP","Incomplete Record",5.5,60055
+680,"2024/2025","School","DTaP","Nonmedical Exemption",2.5,851736
+681,"2025/2026","Child Care/Preschool","DTaP","In Process",2.4,97807
+682,"2025/2026","Child Care/Preschool","DTaP","Incomplete Record",1.7,97807
+683,"2025/2026","Child Care/Preschool","Varicella","Nonmedical Exemption",3.4,97807
+684,"2025/2026","Kindergarten","Varicella","In Process",0.6,60049
+685,"2017/2018","Kindergarten","DTaP","Incomplete Record",5.5,65718
+686,"2017/2018","Kindergarten","MMR","In Process",0.7,65718
+687,"2018/2019","Kindergarten",,"Summary Compliant",88.4,64179
+688,"2018/2019","Kindergarten","HepB","Fully Immunized",90.8,64179
+689,"2018/2019","School",,"Summary Compliant",92.6,864485
+690,"2018/2019","School","Polio","Nonmedical Exemption",2.8,864485
+691,"2018/2019","School","Tdap","No Record",1.8,470136
+692,"2019/2020","Child Care/Preschool","DTaP","In Process",1.5,108348
+693,"2019/2020","Child Care/Preschool","DTaP","Nonmedical Exemption",2.6,108348
+694,"2019/2020","Child Care/Preschool","Varicella","In Process",1.3,108348
+695,"2019/2020","Kindergarten","HepB","Medical Exemption",0.1,67876
+696,"2020/2021","Child Care/Preschool","DTaP","Nonmedical Exemption",2.2,82985
+697,"2020/2021","School","DTaP","In Process",0.2,867411
+698,"2021/2022","Kindergarten","DTaP","Fully Immunized",89.1,65253
+699,"2022/2023","Child Care/Preschool",,"Summary Compliant",95.7,95552
+700,"2022/2023","Kindergarten","Polio","Incomplete Record",5.7,63887
+701,"2022/2023","School","MMR","Fully Immunized",93.8,870984
+702,"2023/2024","Child Care/Preschool","MMR","Nonmedical Exemption",2.6,90894
+703,"2023/2024","Child Care/Preschool","Polio","In Process",1.1,90894
+704,"2023/2024","Kindergarten",,"Summary Compliant",90,61748
+705,"2023/2024","School","HepB","In Process",0.2,853939
+706,"2023/2024","School","Tdap","Medical Exemption",0.2,483364
+707,"2024/2025","Child Care/Preschool","Varicella","Incomplete Record",1.2,94156
+708,"2025/2026","School","Polio","Incomplete Record",2.4,849507
+709,"2017/2018","Kindergarten","Polio","No Record",0.8,65718
+710,"2017/2018","School","Tdap","Fully Immunized",90.5,490361
+711,"2018/2019","Kindergarten","DTaP","In Process",0.6,64179
+712,"2018/2019","Kindergarten","MMR","Incomplete Record",5.6,64179
+713,"2018/2019","School","MMR","Nonmedical Exemption",2.7,864485
+714,"2019/2020","Child Care/Preschool",,"Summary Compliant",95.5,108348
+715,"2019/2020","School","Tdap","In Process",0.3,495607
+716,"2020/2021","Child Care/Preschool","Hib","Fully Immunized",93.8,82985
+717,"2020/2021","Child Care/Preschool","MMR","No Record",2,82985
+718,"2020/2021","Child Care/Preschool","Varicella","In Process",1.1,82985
+719,"2020/2021","Kindergarten","MMR","Nonmedical Exemption",3.8,61888
+720,"2022/2023","School","HepB","Nonmedical Exemption",2.4,870984
+721,"2023/2024","Child Care/Preschool","MMR","Medical Exemption",0.4,90894
+722,"2023/2024","School","DTaP","In Process",0.2,853939
+723,"2023/2024","School","MMR","In Process",0.2,853939
+724,"2023/2024","School","MMR","Nonmedical Exemption",2.5,853939
+725,"2023/2024","School","Varicella","Medical Exemption",0.2,853939
+726,"2025/2026","Child Care/Preschool","Hib","In Process",1.4,97807
+727,"2025/2026","Child Care/Preschool","PCV","Nonmedical Exemption",3.2,97807
+728,"2025/2026","School","DTaP","Incomplete Record",2.5,849507
+729,"2025/2026","School","Tdap","Nonmedical Exemption",2.8,478101
+730,"2017/2018","Child Care/Preschool",,"Summary Compliant",95.1,106593
+731,"2017/2018","Child Care/Preschool","Hib","No Record",0.7,106593
+732,"2017/2018","Kindergarten","DTaP","In Process",0.9,65718
+733,"2017/2018","Kindergarten","HepB","Fully Immunized",92.1,65718
+734,"2017/2018","Kindergarten","Varicella","No Record",0.9,65718
+735,"2017/2018","School","MMR","Incomplete Record",1.8,880843
+736,"2019/2020","Child Care/Preschool","DTaP","Medical Exemption",0.2,108348
+737,"2019/2020","Child Care/Preschool","MMR","In Process",1.3,108348
+738,"2019/2020","School","HepB","Nonmedical Exemption",3,899626
+739,"2019/2020","School","Varicella","Nonmedical Exemption",3.2,899626
+740,"2020/2021","Child Care/Preschool","Hib","Nonmedical Exemption",2,82985
+741,"2020/2021","Child Care/Preschool","MMR","Nonmedical Exemption",2.1,82985
+742,"2020/2021","Kindergarten","DTaP","Fully Immunized",90.1,61888
+743,"2020/2021","Kindergarten","DTaP","Nonmedical Exemption",3.8,61888
+744,"2020/2021","School","Varicella","Incomplete Record",1.7,867411
+745,"2021/2022","Child Care/Preschool",,"Summary Compliant",95.7,92664
+746,"2021/2022","Child Care/Preschool","HepB","In Process",0.8,92664
+747,"2021/2022","Child Care/Preschool","Varicella","Nonmedical Exemption",2.1,92664
+748,"2021/2022","Kindergarten","HepB","Medical Exemption",0.1,65253
+749,"2021/2022","School","Varicella","Fully Immunized",93.5,866857
+750,"2022/2023","School","DTaP","Nonmedical Exemption",2.3,870984
+751,"2023/2024","Child Care/Preschool","Polio","Nonmedical Exemption",2.6,90894
+752,"2023/2024","Kindergarten","Polio","Medical Exemption",0.1,61748
+753,"2024/2025","Kindergarten",,"Summary Compliant",90.1,60055
+754,"2024/2025","Kindergarten","Varicella","Medical Exemption",0.2,60055
+755,"2025/2026","Child Care/Preschool","MMR","Medical Exemption",0.3,97807
+756,"2025/2026","Child Care/Preschool","Polio","Nonmedical Exemption",3.3,97807
+757,"2017/2018","School","Varicella","Incomplete Record",2.6,880843
+758,"2020/2021","Child Care/Preschool","Hib","No Record",2,82985
+759,"2020/2021","Kindergarten","Varicella","No Record",1.3,61888
+760,"2021/2022","Child Care/Preschool","MMR","No Record",0.8,92664
+761,"2021/2022","School","DTaP","Fully Immunized",94.6,866857
+762,"2022/2023","Child Care/Preschool","HepB","In Process",0.9,95552
+763,"2022/2023","Child Care/Preschool","Varicella","Medical Exemption",0.2,95552
+764,"2022/2023","Kindergarten","Varicella","Fully Immunized",85.7,63887
+765,"2022/2023","School","Varicella","Incomplete Record",2.8,870984
+766,"2022/2023","School","Varicella","Medical Exemption",0.2,870984
+767,"2023/2024","Child Care/Preschool","HepB","Nonmedical Exemption",2.7,90894
+768,"2023/2024","Kindergarten","DTaP","Medical Exemption",0.1,61748
+769,"2025/2026","Child Care/Preschool","HepB","No Record",0.6,97807
+770,"2025/2026","Child Care/Preschool","Hib","Fully Immunized",93.3,97807
+771,"2025/2026","Kindergarten","Varicella","Incomplete Record",5.8,60049
+772,"2017/2018","School","HepB","In Process",0.2,880843
+773,"2018/2019","School","DTaP","No Record",1,864485
+774,"2018/2019","School","Varicella","No Record",1,864485
+775,"2021/2022","Kindergarten","Polio","In Process",0.5,65253
+776,"2021/2022","School","Varicella","In Process",0.2,866857
+777,"2022/2023","Child Care/Preschool","Hib","Nonmedical Exemption",2.3,95552
+778,"2022/2023","Child Care/Preschool","PCV","Incomplete Record",1.6,95552
+779,"2022/2023","School","Tdap","Nonmedical Exemption",0,494743
+780,"2023/2024","Child Care/Preschool","Polio","Incomplete Record",1.4,90894
+781,"2023/2024","Kindergarten","DTaP","In Process",0.6,61748
+782,"2023/2024","School","MMR","Fully Immunized",93.6,853939
+783,"2024/2025","School","Tdap","No Record",1.8,484896
+784,"2017/2018","Child Care/Preschool","HepB","In Process",1.6,106593
+785,"2017/2018","School","Polio","Incomplete Record",1.9,880843
+786,"2019/2020","Child Care/Preschool","Hib","Nonmedical Exemption",2.3,108348
+787,"2020/2021","Child Care/Preschool","MMR","Medical Exemption",0.2,82985
+788,"2020/2021","Child Care/Preschool","PCV","Medical Exemption",0.1,82985
+789,"2020/2021","School","MMR","In Process",0.1,867411
+790,"2021/2022","Child Care/Preschool","Varicella","In Process",1.1,92664
+791,"2021/2022","Kindergarten","Polio","Medical Exemption",0.1,65253
+792,"2022/2023","School","Polio","In Process",0.2,870984
+793,"2022/2023","School","Polio","Medical Exemption",0.1,870984
+794,"2023/2024","School","MMR","Incomplete Record",2,853939
+795,"2023/2024","School","Varicella","In Process",0.3,853939
+796,"2024/2025","School","DTaP","Incomplete Record",2.6,851736
+797,"2017/2018","Child Care/Preschool","DTaP","Medical Exemption",0.1,106593
+798,"2017/2018","Child Care/Preschool","Hib","In Process",1.7,106593
+799,"2019/2020","School","MMR","Incomplete Record",1.2,899626
+800,"2020/2021","Child Care/Preschool","Polio","Incomplete Record",1.2,82985
+801,"2020/2021","Kindergarten","Polio","Fully Immunized",89.8,61888
+802,"2020/2021","School","MMR","Medical Exemption",0.1,867411
+803,"2021/2022","Child Care/Preschool","DTaP","Medical Exemption",0.2,92664
+804,"2021/2022","Child Care/Preschool","MMR","Nonmedical Exemption",1.9,92664
+805,"2021/2022","Child Care/Preschool","PCV","In Process",0.8,92664
+806,"2021/2022","School","MMR","Incomplete Record",2.5,866857
+807,"2021/2022","School","Varicella","No Record",0.9,866857
+808,"2022/2023","Child Care/Preschool","MMR","Fully Immunized",94.2,95552
+809,"2022/2023","School",,"Summary Compliant",91.9,870984
+810,"2023/2024","Child Care/Preschool","Polio","No Record",0.7,90894
+811,"2023/2024","Kindergarten","DTaP","Incomplete Record",5.2,61748
+812,"2023/2024","Kindergarten","DTaP","No Record",2.3,61748
+813,"2023/2024","Kindergarten","MMR","No Record",2.3,61748
+814,"2024/2025","Child Care/Preschool","Hib","Medical Exemption",0.1,94156
+815,"2024/2025","Kindergarten","DTaP","Medical Exemption",0.1,60055
+816,"2024/2025","Kindergarten","Varicella","No Record",2.4,60055
+817,"2025/2026","Child Care/Preschool","Varicella","Medical Exemption",0.4,97807
+818,"2025/2026","School","MMR","Incomplete Record",2.2,849507
+819,"2025/2026","School","Varicella","Medical Exemption",0.3,849507
+820,"2017/2018","Kindergarten","DTaP","Nonmedical Exemption",4,65718
+821,"2017/2018","School","DTaP","No Record",0.6,880843
+822,"2018/2019","Child Care/Preschool","HepB","Fully Immunized",93.4,92382
+823,"2018/2019","Child Care/Preschool","Varicella","Medical Exemption",0.1,92382
+824,"2018/2019","School","Tdap","Medical Exemption",0.1,470136
+825,"2019/2020","School","Polio","Fully Immunized",94.7,899626
+826,"2020/2021","Child Care/Preschool","DTaP","No Record",2,82985
+827,"2020/2021","Kindergarten","MMR","In Process",0.3,61888
+828,"2020/2021","School","HepB","No Record",0.7,867411
+829,"2021/2022","Child Care/Preschool","Hib","Fully Immunized",94.5,92664
+830,"2021/2022","Kindergarten","Polio","Fully Immunized",88.8,65253
+831,"2021/2022","School","HepB","Incomplete Record",2.1,866857
+832,"2022/2023","Child Care/Preschool","Hib","Incomplete Record",1.5,95552
+833,"2022/2023","Child Care/Preschool","MMR","Nonmedical Exemption",2.1,95552
+834,"2022/2023","Kindergarten","HepB","Medical Exemption",0.2,63887
+835,"2023/2024","Child Care/Preschool","Hib","Incomplete Record",1.4,90894
+836,"2023/2024","Kindergarten","Varicella","Nonmedical Exemption",4,61748
+837,"2023/2024","School","DTaP","Nonmedical Exemption",2.5,853939
+838,"2023/2024","School","HepB","Fully Immunized",93.5,853939
+839,"2023/2024","School","Polio","No Record",1.5,853939
+840,"2024/2025","School","Polio","Fully Immunized",92.9,851736
+841,"2025/2026","Child Care/Preschool",,"Summary Compliant",95.9,97807
+842,"2018/2019","Child Care/Preschool","DTaP","Nonmedical Exemption",2.5,92382
+843,"2018/2019","Child Care/Preschool","PCV","No Record",1.1,92382
+844,"2018/2019","Kindergarten","DTaP","No Record",1.7,64179
+845,"2018/2019","Kindergarten","Polio","Incomplete Record",5.8,64179
+846,"2019/2020","School","DTaP","Fully Immunized",95.7,899626
+847,"2019/2020","School","Polio","Nonmedical Exemption",3,899626
+848,"2020/2021","Child Care/Preschool","DTaP","Incomplete Record",1.6,82985
+849,"2020/2021","School","HepB","Nonmedical Exemption",2.6,867411
+850,"2021/2022","Kindergarten","DTaP","Nonmedical Exemption",2.9,65253
+851,"2021/2022","Kindergarten","HepB","Nonmedical Exemption",2.8,65253
+852,"2021/2022","School","DTaP","Nonmedical Exemption",1.9,866857
+853,"2021/2022","School","HepB","Fully Immunized",94.7,866857
+854,"2021/2022","School","Polio","Incomplete Record",2.5,866857
+855,"2022/2023","Child Care/Preschool","Varicella","In Process",1.2,95552
+856,"2022/2023","Kindergarten","MMR","In Process",0.5,63887
+857,"2022/2023","Kindergarten","Polio","Medical Exemption",0.2,63887
+858,"2022/2023","School","HepB","Medical Exemption",0.1,870984
+859,"2023/2024","Kindergarten","MMR","Fully Immunized",88.2,61748
+860,"2023/2024","Kindergarten","Polio","No Record",2.3,61748
+861,"2023/2024","School","HepB","Nonmedical Exemption",2.5,853939
+862,"2024/2025","Child Care/Preschool","PCV","Fully Immunized",93.4,94156
+863,"2024/2025","Kindergarten","Polio","No Record",2.4,60055
+864,"2024/2025","School","MMR","In Process",0.1,851736
+865,"2024/2025","School","Varicella","Fully Immunized",92.2,851736
+866,"2025/2026","Kindergarten","HepB","Incomplete Record",2.8,60049
+867,"2025/2026","School","Polio","No Record",1.5,849507
+868,"2017/2018","Child Care/Preschool","PCV","Fully Immunized",93.5,106593
+869,"2017/2018","Child Care/Preschool","PCV","Nonmedical Exemption",2.4,106593
+870,"2017/2018","Kindergarten",,"Summary Compliant",91.1,65718
+871,"2017/2018","Kindergarten","HepB","Nonmedical Exemption",4,65718
+872,"2019/2020","Kindergarten","DTaP","Medical Exemption",0.1,67876
+873,"2020/2021","Child Care/Preschool","HepB","Incomplete Record",1.3,82985
+874,"2020/2021","Child Care/Preschool","Hib","In Process",0.7,82985
+875,"2020/2021","Child Care/Preschool","Polio","In Process",0.8,82985
+876,"2020/2021","School","DTaP","Nonmedical Exemption",2.4,867411
+877,"2020/2021","School","Varicella","Fully Immunized",94.4,867411
+878,"2021/2022","Child Care/Preschool","DTaP","Nonmedical Exemption",2,92664
+879,"2021/2022","Child Care/Preschool","MMR","Medical Exemption",0.2,92664
+880,"2022/2023","Child Care/Preschool","HepB","Nonmedical Exemption",2.3,95552
+881,"2022/2023","Child Care/Preschool","Hib","In Process",1.3,95552
+882,"2022/2023","Child Care/Preschool","Hib","Medical Exemption",0.2,95552
+883,"2022/2023","Child Care/Preschool","Polio","Nonmedical Exemption",2.1,95552
+884,"2022/2023","School","Tdap","Fully Immunized",0,494743
+885,"2022/2023","School","Varicella","In Process",0.2,870984
+886,"2023/2024","Kindergarten","DTaP","Fully Immunized",87.8,61748
+887,"2023/2024","Kindergarten","MMR","Medical Exemption",0.2,61748
+888,"2023/2024","School","Varicella","Fully Immunized",92.5,853939
+889,"2024/2025","Child Care/Preschool","Varicella","Nonmedical Exemption",3,94156
+890,"2024/2025","Kindergarten","HepB","No Record",2.4,60055
+891,"2024/2025","Kindergarten","MMR","Medical Exemption",0.2,60055
+892,"2024/2025","School","Tdap","Incomplete Record",5.2,484896
+893,"2025/2026","School","DTaP","Fully Immunized",92.9,849507
+894,"2025/2026","School","Tdap","Fully Immunized",89.1,478101
+895,"2017/2018","Kindergarten","DTaP","No Record",0.8,65718
+896,"2018/2019","Child Care/Preschool","DTaP","Incomplete Record",1.7,92382
+897,"2018/2019","Kindergarten","Varicella","No Record",2,64179
+898,"2018/2019","Kindergarten","Varicella","Nonmedical Exemption",4.7,64179
+899,"2018/2019","School","DTaP","In Process",0.2,864485
+900,"2019/2020","Child Care/Preschool","DTaP","Incomplete Record",1.2,108348
+901,"2019/2020","Kindergarten","HepB","Nonmedical Exemption",4.2,67876
+902,"2019/2020","Kindergarten","Varicella","In Process",0.7,67876
+903,"2019/2020","School","DTaP","In Process",0.2,899626
+904,"2019/2020","School","DTaP","No Record",0.7,899626
+905,"2020/2021","Child Care/Preschool","Varicella","Medical Exemption",0.2,82985
+906,"2020/2021","Kindergarten","Polio","Medical Exemption",0.1,61888
+907,"2021/2022","Child Care/Preschool","DTaP","Fully Immunized",93.8,92664
+908,"2021/2022","School","Polio","Fully Immunized",94.3,866857
+909,"2021/2022","School","Polio","Nonmedical Exemption",2,866857
+910,"2022/2023","Child Care/Preschool","Hib","No Record",0.9,95552
+911,"2022/2023","Child Care/Preschool","Polio","No Record",0.9,95552
+912,"2022/2023","Kindergarten","DTaP","Nonmedical Exemption",3.8,63887
+913,"2023/2024","School","DTaP","Fully Immunized",93.2,853939
+914,"2024/2025","Child Care/Preschool","Hib","Fully Immunized",93.5,94156
+915,"2024/2025","Kindergarten","MMR","In Process",0.4,60055
+916,"2024/2025","Kindergarten","MMR","Nonmedical Exemption",4,60055
+917,"2025/2026","Child Care/Preschool","Polio","Incomplete Record",1.2,97807
+918,"2025/2026","Kindergarten","HepB","In Process",0.3,60049
+919,"2017/2018","Child Care/Preschool","Polio","Fully Immunized",93.8,106593
+920,"2017/2018","School","Polio","In Process",0.3,880843
+921,"2017/2018","School","Tdap","In Process",0.4,490361
+922,"2018/2019","Child Care/Preschool","DTaP","In Process",1.3,92382
+923,"2018/2019","School","MMR","No Record",1,864485
+924,"2019/2020","Child Care/Preschool","HepB","In Process",1.1,108348
+925,"2019/2020","Child Care/Preschool","PCV","In Process",1.1,108348
+926,"2019/2020","Child Care/Preschool","Varicella","No Record",0.8,108348
+927,"2020/2021","Kindergarten","Varicella","Medical Exemption",0.2,61888
+928,"2021/2022","Kindergarten","MMR","Fully Immunized",88.4,65253
+929,"2021/2022","School","DTaP","In Process",0.2,866857
+930,"2021/2022","School","Polio","Medical Exemption",0.2,866857
+931,"2022/2023","Child Care/Preschool","DTaP","Medical Exemption",0.2,95552
+932,"2022/2023","School","Varicella","Nonmedical Exemption",2.5,870984
+933,"2023/2024","Kindergarten","HepB","In Process",0.3,61748
+934,"2023/2024","School","DTaP","Medical Exemption",0.1,853939
+935,"2023/2024","School","HepB","No Record",1.5,853939
+936,"2024/2025","Child Care/Preschool",,"Summary Compliant",95.9,94156
+937,"2024/2025","Child Care/Preschool","HepB","Medical Exemption",0.1,94156
+938,"2024/2025","Child Care/Preschool","Polio","Fully Immunized",93.1,94156
+939,"2024/2025","Child Care/Preschool","Polio","Incomplete Record",1.1,94156
+940,"2024/2025","Kindergarten","MMR","Fully Immunized",88,60055
+941,"2024/2025","Kindergarten","Polio","Nonmedical Exemption",3.9,60055
+942,"2025/2026","Child Care/Preschool","HepB","In Process",1.2,97807
+943,"2025/2026","Kindergarten","Polio","No Record",2.2,60049
+944,"2018/2019","School","Tdap","Incomplete Record",4,470136
+945,"2019/2020","Kindergarten","Polio","Medical Exemption",0.1,67876
+946,"2019/2020","School","DTaP","Nonmedical Exemption",2.5,899626
+947,"2019/2020","School","HepB","No Record",0.6,899626
+948,"2019/2020","School","Tdap","Nonmedical Exemption",2.8,495607
+949,"2020/2021","School","Tdap","Nonmedical Exemption",2.6,487860
+950,"2021/2022","Child Care/Preschool","Polio","In Process",1,92664
+951,"2022/2023","Child Care/Preschool","PCV","Nonmedical Exemption",2.1,95552
+952,"2022/2023","Child Care/Preschool","Varicella","No Record",0.9,95552
+953,"2023/2024","Child Care/Preschool","MMR","In Process",1.1,90894
+954,"2023/2024","Child Care/Preschool","PCV","Medical Exemption",0.3,90894
+955,"2024/2025","Child Care/Preschool","HepB","No Record",1,94156
+956,"2024/2025","Child Care/Preschool","Polio","In Process",1.8,94156
+957,"2024/2025","Kindergarten","MMR","Incomplete Record",5,60055
+958,"2025/2026","Child Care/Preschool","PCV","No Record",0.6,97807
+959,"2025/2026","Kindergarten","DTaP","Fully Immunized",86.9,60049
+960,"2025/2026","School","HepB","Nonmedical Exemption",2.5,849507
+961,"2017/2018","Child Care/Preschool","MMR","Medical Exemption",0.1,106593
+962,"2017/2018","Child Care/Preschool","Polio","In Process",1.7,106593
+963,"2018/2019","Child Care/Preschool","HepB","Medical Exemption",0.1,92382
+964,"2018/2019","Child Care/Preschool","HepB","No Record",1,92382
+965,"2018/2019","Kindergarten","HepB","In Process",0.4,64179
+966,"2019/2020","Child Care/Preschool","PCV","Medical Exemption",0.1,108348
+967,"2019/2020","Kindergarten","Varicella","Medical Exemption",0.2,67876
+968,"2019/2020","School","Tdap","No Record",0.9,495607
+969,"2020/2021","Child Care/Preschool","PCV","Nonmedical Exemption",2,82985
+970,"2020/2021","Child Care/Preschool","Polio","Fully Immunized",93.5,82985
+971,"2021/2022","Child Care/Preschool","Hib","Medical Exemption",0.2,92664
+972,"2022/2023","School","DTaP","In Process",0.2,870984
+973,"2023/2024","Child Care/Preschool","HepB","Incomplete Record",1.5,90894
+974,"2024/2025","Child Care/Preschool","DTaP","Incomplete Record",1.6,94156
+975,"2024/2025","Child Care/Preschool","Hib","In Process",1.2,94156
+976,"2024/2025","Child Care/Preschool","MMR","Incomplete Record",1,94156
+977,"2024/2025","Kindergarten","HepB","Nonmedical Exemption",3.2,60055
+978,"2025/2026","Kindergarten","DTaP","In Process",0.8,60049
+979,"2025/2026","Kindergarten","Polio","Nonmedical Exemption",4.4,60049
+980,"2025/2026","School","MMR","In Process",0.1,849507
+981,"2025/2026","School","Tdap","In Process",0.3,478101
+982,"2018/2019","Child Care/Preschool","PCV","Fully Immunized",93.9,92382
+983,"2018/2019","Child Care/Preschool","Polio","Incomplete Record",1.1,92382
+984,"2018/2019","Kindergarten","MMR","Fully Immunized",87.4,64179
+985,"2018/2019","School","MMR","In Process",0.1,864485
+986,"2019/2020","Child Care/Preschool","DTaP","No Record",0.7,108348
+987,"2019/2020","Child Care/Preschool","PCV","No Record",0.8,108348
+988,"2019/2020","Child Care/Preschool","Varicella","Nonmedical Exemption",2.8,108348
+989,"2019/2020","School","Polio","In Process",0.2,899626
+990,"2020/2021","Kindergarten","DTaP","Incomplete Record",4.2,61888
+991,"2021/2022","Child Care/Preschool","Hib","No Record",0.8,92664
+992,"2021/2022","Kindergarten","HepB","No Record",1.5,65253
+993,"2022/2023","Child Care/Preschool","DTaP","No Record",0.9,95552
+994,"2022/2023","Child Care/Preschool","HepB","Incomplete Record",1.5,95552
+995,"2022/2023","Child Care/Preschool","Hib","Fully Immunized",93.8,95552
+996,"2022/2023","Kindergarten","MMR","Fully Immunized",86.8,63887
+997,"2023/2024","Child Care/Preschool",,"Summary Compliant",96.1,90894
+998,"2023/2024","Child Care/Preschool","DTaP","Nonmedical Exemption",2.6,90894
+999,"2023/2024","Kindergarten","HepB","Incomplete Record",2.8,61748
+1000,"2024/2025","Child Care/Preschool","DTaP","Fully Immunized",92.5,94156
+1001,"2024/2025","Child Care/Preschool","Varicella","Fully Immunized",92.7,94156
+1002,"2024/2025","Kindergarten","DTaP","No Record",2.4,60055
+1003,"2024/2025","School","Tdap","Medical Exemption",0.1,484896
+1004,"2025/2026","Child Care/Preschool","Hib","Medical Exemption",0.2,97807
+1005,"2025/2026","Kindergarten","HepB","Fully Immunized",91.1,60049

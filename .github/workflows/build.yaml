@@ -10,7 +10,7 @@ jobs:
       contents: write
     steps:
       - run: sudo apt-get update
-      - run: sudo apt-get install -y libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libudunits2-dev libproj-dev libgdal-dev libgeos-dev cmake libnode-dev
+      - run: sudo apt-get install -y libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libudunits2-dev libproj-dev libgdal-dev libgeos-dev cmake libnode-dev libpoppler-cpp-dev
       - uses: actions/checkout@v4
         with:
           ssh-key: ${{ secrets.DEPLOY_KEY }}
@@ -22,6 +22,20 @@ jobs:
       - uses: r-lib/actions/setup-renv@v2
       - run: Rscript -e "renv::install('dissc-yale/dcf')"
       - run: Rscript scripts/build.R
+      # dcf_build() records a failed ingest in that state's process.json and
+      # carries on, so the build step itself never fails. build_status.R
+      # reads every process.json, writes data/BUILD_STATUS.md, and exits
+      # non-zero when an ingest failed or a download failed with no
+      # committed file to fall back on. The commit still happens first so
+      # the status table and any partial data land in the repo. This step and
+      # the libpoppler-cpp-dev install above (for pdftools) were added on
+      # 2026-09-08 and have not yet run on GitHub Actions; the first nightly
+      # build after they land is the verification.
+      - id: status
+        run: |
+          set +e
+          Rscript scripts/build_status.R
+          echo "exit=$?" >> $GITHUB_OUTPUT
       - id: diff
         run: |
           if git diff --exit-code; then
@@ -36,3 +50,7 @@ jobs:
           git add -A
           git commit -m "scheduled data build"
           git push
+      - if: ${{ steps.status.outputs.exit != '0' }}
+        run: |
+          echo "One or more ingests or downloads failed; see data/BUILD_STATUS.md"
+          exit 1

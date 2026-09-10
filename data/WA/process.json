@@ -5,27 +5,281 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:55",
+      "last_run": "2026-09-09 09:45:23",
       "frequency": 0,
-      "run_time": 0.02,
+      "run_time": 33.896,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "",
+          "Attaching package: 'vroom'",
+          "",
+          "The following objects are masked from 'package:readr':",
+          "",
+          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
+          "    col_factor, col_guess, col_integer, col_logical, col_number,",
+          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
+          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
+          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
+          "    problems, spec",
+          "",
+          "fetch: fetched https://doh.wa.gov/data-and-statistical-reports/washington-tracking-network-wtn/school-immunization/dashboard (110,447 bytes)",
+          "fetch: fetched wa_socrata_2014_k.csv (813,679 bytes)",
+          "fetch: fetched wa_socrata_2014_k12.csv (767,726 bytes)",
+          "fetch: fetched wa_socrata_2015_k.csv (858,492 bytes)",
+          "fetch: fetched wa_socrata_2015_6th.csv (854,844 bytes)",
+          "fetch: fetched wa_socrata_2015_k12.csv (772,613 bytes)",
+          "fetch: fetched wa_socrata_2016_k.csv (907,661 bytes)",
+          "fetch: fetched wa_socrata_2016_6th.csv (904,098 bytes)",
+          "fetch: fetched wa_socrata_2016_k12.csv (823,236 bytes)",
+          "WA: 1 negative count(s) set to NA: Asotin-Anatone School District 2023-24 K-12 Varicella Conditional",
+          "WA: 1194 county/state rows (1164 county, 30 state), 7628 district rows; grades: 6th grade, 7th grade, K-12, Kindergarten; time 2016-09-01 to 2025-09-01",
+          "Washington districts: dropping 12 column(s) with no data: N_dt_incomplete, rate_dt_incomplete, N_pertussis_incomplete, rate_pertussis_incomplete, N_polio_incomplete, rate_polio_incomplete, N_mmr_incomplete, rate_mmr_incomplete, N_hep_b_incomplete, rate_hep_b_incomplete, N_varicella_incomplete, rate_varicella_incomplete",
+          "WA: wa_socrata_2014_k12.csv: 1 count(s) outside 0..enrollment set to NA: EASTON SCHOOL religious_membership_exempt 324 of 108",
+          "WA: wa_socrata_2015_k12.csv: 1 count(s) outside 0..enrollment set to NA: CORNERSTONE CHRISTIAN SCHOOL varicella_exempt 718 of 106",
+          "WA schools: 14784 rows (890 not reporting); 2014 K-12 2636; 2014 Kindergarten 1579; 2015 6th grade 1135; 2015 K-12 2625; 2015 Kindergarten 1566; 2016 6th grade 1104; 2016 K-12 2589; 2016 Kindergarten 1550"
+        ],
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:29:07",
+  "checked": "2026-09-09 10:11:04",
   "check_results": {
+    "data/WA/raw/wa_socrata_2014_k.csv": {
+      "data": "not_compressed"
+    },
+    "data/WA/raw/wa_socrata_2014_k12.csv": {
+      "data": "not_compressed"
+    },
+    "data/WA/raw/wa_socrata_2015_6th.csv": {
+      "data": "not_compressed"
+    },
+    "data/WA/raw/wa_socrata_2015_k.csv": {
+      "data": "not_compressed"
+    },
+    "data/WA/raw/wa_socrata_2015_k12.csv": {
+      "data": "not_compressed"
+    },
+    "data/WA/raw/wa_socrata_2016_6th.csv": {
+      "data": "not_compressed"
+    },
+    "data/WA/raw/wa_socrata_2016_k.csv": {
+      "data": "not_compressed"
+    },
+    "data/WA/raw/wa_socrata_2016_k12.csv": {
+      "data": "not_compressed"
+    },
     "data/WA/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: grade"]
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
+    },
+    "data/WA/standard/data_districts.csv.gz": {
+      "data": "geography_nas",
+      "measures": ["missing_info: geography_name", "missing_info: district", "missing_info: grade"]
+    },
+    "data/WA/standard/data_schools_2014_2016.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: district", "missing_info: school_type", "missing_info: grade"]
     }
   },
   "raw_state": {
-    "raw/Washington Vaccine Exemption.xlsx": "4febabeb4f517b6dfbe3896219758f8f"
+    "raw/2016-2017SchoolYear.xlsx": "660a97221d2c5e2c42ad9c944aa24550",
+    "raw/2017-2018SchoolYear.xlsx": "9f32efb79da8c97c9c247ff7f7b2e7e4",
+    "raw/2018-2019SchoolYear.xlsx": "08e5958f9f24587236286b8808f2e6b2",
+    "raw/2019-2020SchoolYear.xlsx": "3a5f1c17d32f52570e2492f117337e27",
+    "raw/2020-2021SchoolYear.xlsx": "28d7ded543c0a6492a8912fb589c29c4",
+    "raw/2021-2022SchoolYear.xlsx": "d27effdfa697db5362b2b6a4c039446f",
+    "raw/2022-2023SchoolYear.xlsx": "81e135cade559ec01099ff968edb0c68",
+    "raw/2023-2024SchoolYear.xlsx": "ac91830595e4f8d66f6c2c59efa33d23",
+    "raw/2024-2025SchoolYear.xlsx": "32cd355ebc3c75aee5dfbda71306295e",
+    "raw/2025-2026SchoolYear.xlsx": "3bf5cc237597467c96cc3ed6f31725c6",
+    "raw/Washington Vaccine Exemption.xlsx": "4febabeb4f517b6dfbe3896219758f8f",
+    "raw/wa_socrata_2014_k.csv": "ba8a292540d1ff11533d34f9b7194a84",
+    "raw/wa_socrata_2014_k12.csv": "9e28ee2f7dccfdf140c21c62bc2d9e6b",
+    "raw/wa_socrata_2015_6th.csv": "4c99e2d33f00feae6fa7a89641d6ecb3",
+    "raw/wa_socrata_2015_k.csv": "dd859f7cc99725b1c04e4dddb428a9cd",
+    "raw/wa_socrata_2015_k12.csv": "10bdbf4d8956455c65063805ba4bdf9a",
+    "raw/wa_socrata_2016_6th.csv": "2447f066881f445c8de8fd8ac7f1fcc8",
+    "raw/wa_socrata_2016_k.csv": "6e805c0880b11795c736254202bad6bd",
+    "raw/wa_socrata_2016_k12.csv": "99e8aea97c8978dfa318d385a441aaf6"
   },
-  "script_hash": "4429789caf98795c263b21ed55396630",
+  "script_hash": "a586cd2109462a2fd8ced46e815864e5",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WA/measure_info.json": "32aaf4ded4f12918525f9d0b7f750598",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/WA/standard/data.csv.gz": "f3eda70bd7b70fd37da730fa9052936d"
+    "./data/WA/measure_info.json": "c523cd39cbd0dc1e3f9fe39e0d768d91",
+    "./data/WA/standard/data.csv.gz": "dddc9e3a47aca043b708e98de0d54aab",
+    "./data/WA/standard/data_districts.csv.gz": "8f50c2b4b0dab004444e6fc44ad9c1d4",
+    "./data/WA/standard/data_schools_2014_2016.csv.gz": "c6f76eecccae55e4944cdbf324744991"
+  },
+  "fetch_state": {
+    "raw/2016-2017SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2016-2017SchoolYear.xlsx",
+      "dest": "raw/2016-2017SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 602935,
+      "sha256": "fc7f8c431708178c963a6aebcd25cf75977afb7483d1facc7c9a9180801043fc",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2017-2018SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2017-2018SchoolYear.xlsx",
+      "dest": "raw/2017-2018SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 586699,
+      "sha256": "76b2b6f54aaf8ffb6a218336f8fa4ab8b16197bd823b2875afee9023d9450187",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2018-2019SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2018-2019SchoolYear.xlsx",
+      "dest": "raw/2018-2019SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 576583,
+      "sha256": "29b0dfd7274a18475cd9740862e4e62bdecb0f1f3b989c8c9ca7f03bd7ece1a3",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2019-2020SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2019-2020SchoolYear.xlsx",
+      "dest": "raw/2019-2020SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 2654611,
+      "sha256": "eceeb741571396ab4a7fdbbf728f30536a292b2c068acac8ce82d04f0f829fcb",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2020-2021SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2020-2021SchoolYear.xlsx",
+      "dest": "raw/2020-2021SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 2783946,
+      "sha256": "607f6bae9ed0ffd06a6ecccdd17fb2447a3e98994b37bbe25872587f50559e0e",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2021-2022SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2021-2022SchoolYear.xlsx",
+      "dest": "raw/2021-2022SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 2854738,
+      "sha256": "4f4a57b49e72f5b8b01afc9c5924f9e3ee7ae739c3e9c6a541447aec829c5dd5",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2022-2023SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2022-2023SchoolYear.xlsx",
+      "dest": "raw/2022-2023SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 2924291,
+      "sha256": "6a8637486196568c3f811ef9177f6b9fb8e99ccb32e9a1e8d1dd1018f00ad7c6",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2023-2024SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2023-2024SchoolYear.xlsx",
+      "dest": "raw/2023-2024SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 2954578,
+      "sha256": "49f7add16946bc12995c667a1256812a3925d8d8252c64e7387215c18e82649f",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2024-2025SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2025-06/2024-2025SchoolYear.xlsx",
+      "dest": "raw/2024-2025SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 2880943,
+      "sha256": "82dd00ac227d5a5811dda16b7e80d399115792629e9e8e75fef07dda41beafaa",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/2025-2026SchoolYear.xlsx": {
+      "url": "https://doh.wa.gov/sites/default/files/2026-06/3481176-2025-2026SchoolYear.xlsx",
+      "dest": "raw/2025-2026SchoolYear.xlsx",
+      "status": "skipped",
+      "bytes": 2884957,
+      "sha256": "c1fdc78cdc33d41c4b0384191c5389984de96cba214e9231afb3496985a0038e",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2014_k.csv": {
+      "url": "https://data.wa.gov/resource/3nrj-de9w.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2014_k.csv",
+      "status": "skipped",
+      "bytes": 813679,
+      "sha256": "5caacf94492d31cc045526ca90d1bc0931f54da06adb52d03449d1fdcb0de8c9",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2014_k12.csv": {
+      "url": "https://data.wa.gov/resource/i89p-imif.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2014_k12.csv",
+      "status": "skipped",
+      "bytes": 767726,
+      "sha256": "e9b9f3c1d8399921c47155f6b64cb02e91d3cab55427b2461c7df184540f95ad",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2015_k.csv": {
+      "url": "https://data.wa.gov/resource/raxi-vijr.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2015_k.csv",
+      "status": "skipped",
+      "bytes": 858492,
+      "sha256": "c2e7a17c15f643e8e87215fd5b76d21acbdfb59291a39451c61c18c61fcc1943",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2015_6th.csv": {
+      "url": "https://data.wa.gov/resource/9vf7-7een.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2015_6th.csv",
+      "status": "skipped",
+      "bytes": 854844,
+      "sha256": "c8e78de82b54dbf45550450098fdfec9157861fbbd5c44a602275c8e7cda1217",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2015_k12.csv": {
+      "url": "https://data.wa.gov/resource/ie96-cgrn.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2015_k12.csv",
+      "status": "skipped",
+      "bytes": 772613,
+      "sha256": "800f49ff2b6bc31cebd3e58bc56771bcbca5c77c19de6dc32804c729025e994c",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2016_k.csv": {
+      "url": "https://data.wa.gov/resource/kck7-yb2v.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2016_k.csv",
+      "status": "skipped",
+      "bytes": 907661,
+      "sha256": "d0e1bcced299c15774cd88cdd7bc3788c18b89a555da8cb5ebe701f93c48f4b0",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2016_6th.csv": {
+      "url": "https://data.wa.gov/resource/emhz-m99x.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2016_6th.csv",
+      "status": "skipped",
+      "bytes": 904098,
+      "sha256": "11a92b47e67fa98c966f135c35a9623b79b0fff5f6d55a2a8b309e94b838bdb7",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    },
+    "raw/wa_socrata_2016_k12.csv": {
+      "url": "https://data.wa.gov/resource/9zru-c2kz.csv?$limit=50000",
+      "dest": "raw/wa_socrata_2016_k12.csv",
+      "status": "skipped",
+      "bytes": 823236,
+      "sha256": "dbf1b9f7cbb3297d17c1dbb3c9147dc5a5eb880d3751b0195a632213d8786e8b",
+      "fetched_at": "2026-09-09 13:48:45",
+      "attempts": 0
+    }
   }
 }

@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 968,
-      "encoding": "windows-1252",
+      "encoding": "ISO-8859-1",
       "md5": "2ad18b499e5b20d56962e55e6b8df1af",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 07:17:55 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.946812",
-      "last_modified": "2026-08-25 14:47:47.576075",
+      "created": "2026-09-09 09:43:32.612397",
+      "last_modified": "2026-09-09 09:43:32.612663",
       "vintage": {},
       "row_count": 88,
       "entity_count": 88,
@@ -74,98 +78,12 @@
             "duplicates": 0,
             "info": [],
             "time_range": [0, 0],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "39001": 1,
-              "39003": 1,
-              "39005": 1,
-              "39007": 1,
-              "39009": 1,
-              "39011": 1,
-              "39013": 1,
-              "39015": 1,
-              "39017": 1,
-              "39019": 1,
-              "39021": 1,
-              "39023": 1,
-              "39025": 1,
-              "39027": 1,
-              "39029": 1,
-              "39031": 1,
-              "39033": 1,
-              "39035": 1,
-              "39037": 1,
-              "39039": 1,
-              "39041": 1,
-              "39043": 1,
-              "39045": 1,
-              "39047": 1,
-              "39049": 1,
-              "39051": 1,
-              "39053": 1,
-              "39055": 1,
-              "39057": 1,
-              "39059": 1,
-              "39061": 1,
-              "39063": 1,
-              "39065": 1,
-              "39067": 1,
-              "39069": 1,
-              "39071": 1,
-              "39073": 1,
-              "39075": 1,
-              "39077": 1,
-              "39079": 1,
-              "39081": 1,
-              "39083": 1,
-              "39085": 1,
-              "39087": 1,
-              "39089": 1,
-              "39091": 1,
-              "39093": 1,
-              "39095": 1,
-              "39097": 1,
-              "39099": 1,
-              "39101": 1,
-              "39103": 1,
-              "39105": 1,
-              "39107": 1,
-              "39109": 1,
-              "39111": 1,
-              "39113": 1,
-              "39115": 1,
-              "39117": 1,
-              "39119": 1,
-              "39121": 1,
-              "39123": 1,
-              "39125": 1,
-              "39127": 1,
-              "39129": 1,
-              "39131": 1,
-              "39133": 1,
-              "39135": 1,
-              "39137": 1,
-              "39139": 1,
-              "39141": 1,
-              "39143": 1,
-              "39145": 1,
-              "39147": 1,
-              "39149": 1,
-              "39151": 1,
-              "39153": 1,
-              "39155": 1,
-              "39157": 1,
-              "39159": 1,
-              "39161": 1,
-              "39163": 1,
-              "39165": 1,
-              "39167": 1,
-              "39169": 1,
-              "39171": 1,
-              "39173": 1,
-              "39175": 1
-            }
+            "mean": 39088,
+            "sd": 51.094683,
+            "min": 39001,
+            "max": 39175
           },
           {
             "name": "geography_name",
@@ -327,40 +245,6 @@
         }
       ]
     },
-    "suppressed_flag": {
-      "id": "suppressed_flag",
-      "short_name": "Suppressed value flag",
-      "long_name": "Indicator that at least one rate on this row was censored at source",
-      "category": "immunization",
-      "short_description": "1 if at least one rate on this row was suppressed or top-coded by the source.",
-      "long_description": "Set to 1 where the source published a censoring marker instead of a number for at least one measure on the row. Undirected markers leave the value missing. Where a bound is given, see censor_direction for which way it runs.",
-      "statement": "In {location}, at least one reported rate was censored at source.",
-      "measure_type": "Count",
-      "unit": "Flag",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "oh_school_immunization"
-        }
-      ]
-    },
-    "censor_direction": {
-      "id": "censor_direction",
-      "short_name": "Censoring direction",
-      "long_name": "Direction in which a censored value on this row is bounded",
-      "category": "immunization",
-      "short_description": "Which way a censored value is bounded: left, right, undirected, or a combination.",
-      "long_description": "\"left\" means the source printed a less-than marker, so the true value lies BELOW the stated threshold (a suppressed small cell such as \"<5\"). \"right\" means a greater-than marker, so the true value lies ABOVE it (a top code such as \">95%\"). \"undirected\" means the value was withheld with no bound stated. Combinations are joined with \"+\" where a row carries more than one kind. Empty where nothing was censored. Left- and right-censoring pull an estimate in opposite directions, so they are recorded separately rather than under a single suppression flag.",
-      "statement": "In {location}, censored values on this row were bounded {value}.",
-      "measure_type": "Category",
-      "unit": "Category",
-      "time_resolution": "Year",
-      "sources": [
-        {
-          "id": "oh_school_immunization"
-        }
-      ]
-    },
     "_sources": {
       "oh_school_immunization": {
         "name": "Ohio Kindergarten Immunization Assessment",
@@ -371,6 +255,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level kindergarten MMR exemption rates from the annual Ohio Kindergarten Immunization Level Assessment.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

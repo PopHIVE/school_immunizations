@@ -1,15 +1,15 @@
 # GA
 
-This is a dcf data source project, initialized with `dcf::dcf_add_source`.
+Georgia. No data yet.
 
-You can us the `dcf` package to check the project:
+The Georgia Department of Public Health publishes statewide child
+immunization study reports only (`https://dph.georgia.gov/immunizations/immunization-study-reports`);
+no county table or dashboard was found. The Washington Post obtained county
+kindergarten coverage and exemption rates from GDPH by records request, and
+PopHIVE/Ingest carries those rows in `schoolvax_washpost`. `sources.json`
+records the source as request-only; `ingest.R` is a documented stub that
+succeeds with no output while `raw/` is empty and stops if a file appears
+without a parser.
 
-```R
-dcf_check_source("GA", "..")
-```
-
-And process it:
-
-```R
-dcf_process("GA", "..")
-```
+Options: request the county table from the GDPH Immunization Program, or
+rely on the Washington Post rows. See `data/DATA_SOURCES.md`.

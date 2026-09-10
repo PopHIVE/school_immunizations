@@ -1,0 +1,20 @@
+[
+  {
+    "id": "wdh_county_report_cards",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://health.wyo.gov/publichealth/immunization/immunization-data/wyoming-county-report-cards/",
+    "pattern": "\\d{4}-.*-County-Report-Card\\.pdf",
+    "type": "pdf",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 5,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2023,
+    "ci_reachable": true,
+    "notes": "Per-county, per-year report card PDFs (JPG for 2018), linked from page_url and matched by pattern. Not downloaded: health.wyo.gov sits behind Cloudflare bot management and answers HTTP 403 to some requests from the same client minutes apart, so access stays manual and the weekly check does not list every PDF as new. raw/ holds one workbook per card (PDF-to-Excel conversions and hand-typed copies, 2018-2023, 137 files) plus one image-only PDF (2018 Converse, not parsed); ingest.R reads the workbooks. A new year is added by converting its cards into raw/ under the same naming.",
+    "last_check_time": "2026-09-09 14:17:00",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

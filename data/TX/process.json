@@ -5,38 +5,219 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:53",
+      "last_run": "2026-09-04 17:36:23",
       "frequency": 0,
-      "run_time": 0.02,
+      "run_time": 3.937,
       "last_status": {
-        "log": [],
+        "log": [
+          "",
+          "Attaching package: 'dplyr'",
+          "",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "fetch: fetched https://www.dshs.texas.gov/immunizations/data/school/coverage (216,824 bytes)",
+          "TX coverage: 14 file(s): 0 updated, 0 unchanged, 14 skipped, 0 failed",
+          "fetch: fetched https://www.dshs.texas.gov/immunizations/data/school/conscientious-exemptions (208,753 bytes)",
+          "TX exemptions: 3 file(s): 0 updated, 0 unchanged, 3 skipped, 0 failed",
+          "TX: 9945 county/state rows and 23129 district rows, school years 2013-09-01 to 2025-09-01"
+        ],
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
-    "data/TX/raw/TX_7th_2014-24.csv": {
-      "data": "not_compressed"
-    },
-    "data/TX/raw/TX_K-12_2014-24.csv": {
-      "data": "not_compressed"
-    },
-    "data/TX/raw/TX_kg_2014-24.csv": {
-      "data": "not_compressed"
-    },
     "data/TX/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: grade"]
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
+    },
+    "data/TX/standard/data_districts.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: district", "missing_info: school_type", "missing_info: grade"]
     }
   },
   "raw_state": {
-    "raw/TX_7th_2014-24.csv": "2f060ed34f28b65aae1ede51a39c8c28",
-    "raw/TX_K-12_2014-24.csv": "ce2cee3b52ecbc2454208a2835bc345a",
-    "raw/TX_kg_2014-24.csv": "ad6ca68de7ecf1159a458cd1e12eec79"
+    "raw/coverage/2019-2020-School-Vaccination-Coverage-Levels---Kindergarten.xlsx": "fa36d79d026ba26ef3570b04be7ed9bd",
+    "raw/coverage/2019-2020-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xls": "8d900d7c13976f956df3706467d9e3c9",
+    "raw/coverage/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Kindergarten.xlsx": "9f1781010135e301141780fe15ebe0e7",
+    "raw/coverage/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xlsx": "85466a5fab1cda5233c57dbfaa415460",
+    "raw/coverage/2021-2022-School-Vaccination-Coverage-by-District-and-County-Kindergarten.xls": "a5a484404c07b297ff0c6d4e4e7fc386",
+    "raw/coverage/2021-2022-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xls": "21386df8f5bdeabd31b8c7c7884327df",
+    "raw/coverage/2023-2024_School_Vaccination_Coverage_Levels_Kindergarten.xlsx": "c39847a380ed54564f18bc02b6b1b8cf",
+    "raw/coverage/2023-2024_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx": "6651f39a9755727e17a2ff0db8663514",
+    "raw/coverage/2024-2025_School_Vaccination_Coverage_Levels_Kindergarten.xlsx": "d86c00cbd92305f3d5314866f7bd17ae",
+    "raw/coverage/2024-2025_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx": "3ca8e4347b62709d65dd8a4794956865",
+    "raw/coverage/2025-2026-school-vaccination-coverage-by-district-and-county-kg.xlsx": "d89f89d5d88c2622633b66a7360b88f7",
+    "raw/coverage/2025-2026-school-vaccination-coverage-by-district-and-county-seventh-grade.xlsx": "84dd348d54f5355ee4d55d35ca1ffa25",
+    "raw/coverage/22-23-School-Vaccination-Coverage-by-District-and-County-K.xlsx": "fe1b4dd87fc0620cededd2641d7f8a27",
+    "raw/coverage/22-23-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xlsx": "71ece99bfc03843d8e843d81d1ff6742",
+    "raw/exemptions/2013-2024_Conscientious_Exemptions_by_County.xlsx": "94a820eaf938217d6f6ddf0de49587a6",
+    "raw/exemptions/2015-2025_Conscientious_Exemptions_by_County.xlsx": "2de7da5a3954557572c9f1651de38742",
+    "raw/exemptions/2016-2026-conscientious-exemptions-by-county.xlsx": "62e1bbc8c085ab7f4192e7bb7f94cd4e"
   },
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/TX/measure_info.json": "9d88e33261cdfd6514a0553c1689f6b5",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/TX/standard/data.csv.gz": "4abb9eb624efcf0a440503d1f160c97d"
+    "./data/TX/measure_info.json": "daccf3022540ea356ae958262423b8b2",
+    "./data/TX/standard/data.csv.gz": "1432f693cd58fd9d02c577720e7208e4",
+    "./data/TX/standard/data_districts.csv.gz": "a188b6596454762b187f1d15d0ac2db9"
   },
-  "script_hash": "0819e2a2fb2477450104e4e5943345f0"
+  "script_hash": "6f5815bbbf5de34313fd0bb78f278868",
+  "fetch_state": {
+    "raw/coverage/2025-2026-school-vaccination-coverage-by-district-and-county-kg.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2025-2026-school-vaccination-coverage-by-district-and-county-kg.xlsx",
+      "dest": "raw/coverage/2025-2026-school-vaccination-coverage-by-district-and-county-kg.xlsx",
+      "status": "skipped",
+      "bytes": 221389,
+      "sha256": "63a859cb07c786370f5668f81408afba9305c7ca8fe5c213145c1c7fde540791",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2025-2026-school-vaccination-coverage-by-district-and-county-seventh-grade.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2025-2026-school-vaccination-coverage-by-district-and-county-seventh-grade.xlsx",
+      "dest": "raw/coverage/2025-2026-school-vaccination-coverage-by-district-and-county-seventh-grade.xlsx",
+      "status": "skipped",
+      "bytes": 207836,
+      "sha256": "d6a96ca57b10a0472632fed06d6f4a8924f2ec094f7b04ff27fd6fbbab486f83",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2024-2025_School_Vaccination_Coverage_Levels_Kindergarten.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2024-2025_School_Vaccination_Coverage_Levels_Kindergarten.xlsx",
+      "dest": "raw/coverage/2024-2025_School_Vaccination_Coverage_Levels_Kindergarten.xlsx",
+      "status": "skipped",
+      "bytes": 219087,
+      "sha256": "3568feaf4bb383351b9bf5117e21b4275f08ccae6feff45bf2140c80756b10d2",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2024-2025_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2024-2025_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx",
+      "dest": "raw/coverage/2024-2025_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx",
+      "status": "skipped",
+      "bytes": 204173,
+      "sha256": "ab287821d3505f5ac347dd3c7d9f40bf382b04eb2d7a5fbf0d1d703419611fd2",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2023-2024_School_Vaccination_Coverage_Levels_Kindergarten.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2023-2024_School_Vaccination_Coverage_Levels_Kindergarten.xlsx",
+      "dest": "raw/coverage/2023-2024_School_Vaccination_Coverage_Levels_Kindergarten.xlsx",
+      "status": "skipped",
+      "bytes": 212542,
+      "sha256": "79d242139bfb4ca0247e90a588541bf14435db52f0a87fb1182535878232bbba",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2023-2024_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2023-2024_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx",
+      "dest": "raw/coverage/2023-2024_School_Vaccination_Coverage_Levels_Seventh_Grade.xlsx",
+      "status": "skipped",
+      "bytes": 196732,
+      "sha256": "0e7e2454c412a5e202c990ecf82f2dd12c1816163e61906514baeddfb96aecc8",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/22-23-School-Vaccination-Coverage-by-District-and-County-K.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/22-23-School-Vaccination-Coverage-by-District-and-County-K.xlsx",
+      "dest": "raw/coverage/22-23-School-Vaccination-Coverage-by-District-and-County-K.xlsx",
+      "status": "skipped",
+      "bytes": 226485,
+      "sha256": "97bd649325720bccc850a567f13394dd73d5825998bbe776a7ea2cbd5c29a192",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/22-23-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/22-23-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xlsx",
+      "dest": "raw/coverage/22-23-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xlsx",
+      "status": "skipped",
+      "bytes": 197065,
+      "sha256": "318abdd189fe275c7fa9e00c8922ea4b218ead9fc2626ff463ac4438ebfaa31c",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2021-2022-School-Vaccination-Coverage-by-District-and-County-Kindergarten.xls": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2021-2022-School-Vaccination-Coverage-by-District-and-County-Kindergarten.xls",
+      "dest": "raw/coverage/2021-2022-School-Vaccination-Coverage-by-District-and-County-Kindergarten.xls",
+      "status": "skipped",
+      "bytes": 213830,
+      "sha256": "88df1ee11772a734048f0ed99ee560b4135030c0a5d4e30616820d2fcef4fbc3",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2021-2022-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xls": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2021-2022-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xls",
+      "dest": "raw/coverage/2021-2022-School-Vaccination-Coverage-by-District-and-County-Seventh-Grade.xls",
+      "status": "skipped",
+      "bytes": 204390,
+      "sha256": "f9889bbe58e7bc5b3e67007da270d50b960ccc1093b069c18eea237927321a41",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Kindergarten.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Kindergarten.xlsx",
+      "dest": "raw/coverage/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Kindergarten.xlsx",
+      "status": "skipped",
+      "bytes": 204647,
+      "sha256": "e19356de847e43b4d8791055fdb63b6c1dc0f38de81887e71cb75b3d154190a2",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xlsx",
+      "dest": "raw/coverage/2020-2021-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xlsx",
+      "status": "skipped",
+      "bytes": 192356,
+      "sha256": "a9f3638489e3935df4d8b950c0914623e28c42674f101f5dccbb744af1ebef29",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2019-2020-School-Vaccination-Coverage-Levels---Kindergarten.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2019-2020-School-Vaccination-Coverage-Levels---Kindergarten.xlsx",
+      "dest": "raw/coverage/2019-2020-School-Vaccination-Coverage-Levels---Kindergarten.xlsx",
+      "status": "skipped",
+      "bytes": 206345,
+      "sha256": "e00b3cbfcfae0b9de3754a859f2d3e7a7c829956772bc4f771ee334c1cbe0c15",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/coverage/2019-2020-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xls": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2019-2020-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xls",
+      "dest": "raw/coverage/2019-2020-School-Vaccination-Coverage-Levels-by-District-Private-School-and-County---Seventh-Grade.xls",
+      "status": "skipped",
+      "bytes": 196117,
+      "sha256": "b357d9b2c4df4130cf6b265f8437d538bde290626bb62433d5538e24a2023566",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/exemptions/2016-2026-conscientious-exemptions-by-county.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2016-2026-conscientious-exemptions-by-county.xlsx",
+      "dest": "raw/exemptions/2016-2026-conscientious-exemptions-by-county.xlsx",
+      "status": "skipped",
+      "bytes": 133236,
+      "sha256": "bf6dcacfba107ff350fcce1cfdb1dded2739655b7d0825d0fa6e27179340eef5",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/exemptions/2015-2025_Conscientious_Exemptions_by_County.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2015-2025_Conscientious_Exemptions_by_County.xlsx",
+      "dest": "raw/exemptions/2015-2025_Conscientious_Exemptions_by_County.xlsx",
+      "status": "skipped",
+      "bytes": 138962,
+      "sha256": "09a3abac2321f5cbb44dce5e7c36248cddfdcb15ebc3421ff99a34486f538ea7",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    },
+    "raw/exemptions/2013-2024_Conscientious_Exemptions_by_County.xlsx": {
+      "url": "https://www.dshs.texas.gov/sites/default/files/LIDS-Immunizations/xls/2013-2024_Conscientious_Exemptions_by_County.xlsx",
+      "dest": "raw/exemptions/2013-2024_Conscientious_Exemptions_by_County.xlsx",
+      "status": "skipped",
+      "bytes": 144928,
+      "sha256": "9cb332442ab01423492669fb557538fd6fe7dd793abfde7e650e9ae3e2b6c4c1",
+      "fetched_at": "2026-09-04 21:38:28",
+      "attempts": 0
+    }
+  }
 }

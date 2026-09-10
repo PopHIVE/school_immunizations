@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dph_dashboard",
+    "access": "dashboard",
+    "url": null,
+    "page_url": "https://www.dph.ncdhhs.gov/programs/epidemiology/immunization/data/kindergarten-dashboard",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 5,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "JS dashboard with no export; county workbook obtained by request.",
+    "last_check_time": "2026-09-09 14:14:54",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

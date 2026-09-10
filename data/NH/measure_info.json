@@ -110,5 +110,18 @@
       "description": "County-level immunization status (up to date, conditional, exempt) from the annual NH DHHS school immunization reports.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "County-level immunization status (up to date, conditional, exempt) from the annual NH DHHS school immunization reports.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

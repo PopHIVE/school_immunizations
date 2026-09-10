@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/KS/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/ks_20-24.xlsx": "6de999f6857e3cc7a596a4144c16c0f7"
   },
-  "script_hash": "a38cc25ab7a3fafaba3b2fb5476c9a0c",
+  "script_hash": "54f7794330e52ecbb2eef374f938efa7",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/KS/measure_info.json": "ad3377f5c51204bf909db904f4679c8b",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/KS/standard/data.csv.gz": "3689a3d37ebe7312efc217db5c5e6993"
+    "./data/KS/measure_info.json": "f792e189f9cc0d88c34e296ec3448ee7",
+    "./data/KS/standard/data.csv.gz": "3689a3d37ebe7312efc217db5c5e6993"
   }
 }

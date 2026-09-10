@@ -10,31 +10,35 @@
   "resources": [
     {
       "bytes": 3640,
-      "encoding": "windows-1252",
+      "encoding": "ISO-8859-1",
       "md5": "ceadb860e4e606023799fecd57e34bf0",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 08:06:45 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -51,8 +55,8 @@
       "id_length": 2,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:13.697361",
-      "last_modified": "2026-08-24 10:32:01.444212",
+      "created": "2026-09-09 09:43:32.181218",
+      "last_modified": "2026-09-09 09:43:32.181319",
       "vintage": {},
       "row_count": 615,
       "entity_count": 1,
@@ -78,11 +82,12 @@
             "duplicates": 614,
             "info": [],
             "time_range": [0, 4],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "49": 615
-            }
+            "mean": 49,
+            "sd": 0,
+            "min": 49,
+            "max": 49
           },
           {
             "name": "geography_name",
@@ -243,6 +248,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County- and health-district-level school immunization and exemption data from the Utah DHHS coverage reports.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per school district, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

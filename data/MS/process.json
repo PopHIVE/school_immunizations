@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/MS/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -24,9 +24,9 @@
     "raw/Medical Exemptions 2023-2024.xlsx": "332dd683974108fe9be097b268f24f19",
     "raw/Religious Exemptions 2023-2024.xlsx": "be9eec03e52004429960864d02e87016"
   },
-  "script_hash": "f132634b97458aad1f9093d3d9b417b9",
+  "script_hash": "839b9316f779b938901af27aaff4accb",
   "standard_state": {
-    "./data/MS/measure_info.json": "d148981220ad5a70d6482d1650cc34b2",
+    "./data/MS/measure_info.json": "93cc38385f2a854fc0e38baf11d36552",
     "./data/MS/standard/data.csv.gz": "b2904bb7d051317a03ad28cdc2844ccd"
   }
 }

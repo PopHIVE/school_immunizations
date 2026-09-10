@@ -1,0 +1,20 @@
+[
+  {
+    "id": "vactrak_quarterly",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://health.alaska.gov/en/data-and-statistics/data-and-statistics-communicable-diseases/",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 3,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Quarterly 'Alaska Vaccination Coverage Report' workbooks from VacTrAK, supplied to the project directly. No fixed download URL found; new quarters are added to raw/ by hand.",
+    "last_check_time": "2026-09-09 14:13:41",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

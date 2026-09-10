@@ -1,4 +1,21 @@
 {
+  "rate_fully_immunized": {
+    "id": "rate_fully_immunized",
+    "short_name": "Fully immunized rate",
+    "long_name": "Proportion of students fully immunized for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students recorded as fully immunized for every required vaccine.",
+    "long_description": "Share of assessed school students the state reports as fully immunized across the required schedule, as opposed to provisionally admitted or exempt.",
+    "statement": "In {location}, {value} of school students were fully immunized.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
   "rate_mmr": {
     "id": "rate_mmr",
     "short_name": "MMR coverage",
@@ -16,6 +33,312 @@
       }
     ]
   },
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
+    "category": "immunization",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_fully_immunized": {
+    "id": "N_fully_immunized",
+    "short_name": "Fully immunized (count)",
+    "long_name": "Number of students fully immunized",
+    "category": "immunization",
+    "short_description": "Number of enrolled students fully immunized.",
+    "long_description": "Students the state reports as fully immunized across the required schedule.",
+    "statement": "In {location}, {value} school students fully immunized.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_schools": {
+    "id": "N_schools",
+    "short_name": "Schools in county",
+    "long_name": "Number of schools reporting in the county",
+    "category": "immunization",
+    "short_description": "Number of schools in the county that submitted a report.",
+    "long_description": "Count of schools in the county that submitted a report, whether or not their figures were suppressed.",
+    "statement": "In {location}, {value} schools submitted a report.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_schools_95plus": {
+    "id": "N_schools_95plus",
+    "short_name": "Schools with 95-100% coverage (count)",
+    "long_name": "Number of schools with 95-100% of students fully immunized",
+    "category": "immunization",
+    "short_description": "Number of schools in the county where 95% or more of kindergarten students were fully immunized.",
+    "long_description": "Count of surveyed schools in the county whose fully-immunized share falls in the 95-100% band, as published in Tennessee's kindergarten compliance assessment.",
+    "statement": "In {location}, {value} schools had 95-100% of students fully immunized.",
+    "measure_type": "Count",
+    "unit": "Schools",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_schools_90_94": {
+    "id": "N_schools_90_94",
+    "short_name": "Schools with 90-94.9% coverage (count)",
+    "long_name": "Number of schools with 90-94.9% of students fully immunized",
+    "category": "immunization",
+    "short_description": "Number of schools in the county where 90% to 94.9% of kindergarten students were fully immunized.",
+    "long_description": "Count of surveyed schools in the county whose fully-immunized share falls in the 90-94.9% band, as published in Tennessee's kindergarten compliance assessment.",
+    "statement": "In {location}, {value} schools had 90-94.9% of students fully immunized.",
+    "measure_type": "Count",
+    "unit": "Schools",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_schools_under_90": {
+    "id": "N_schools_under_90",
+    "short_name": "Schools with under 90% coverage (count)",
+    "long_name": "Number of schools with under 90% of students fully immunized",
+    "category": "immunization",
+    "short_description": "Number of schools in the county where fewer than 90% of kindergarten students were fully immunized.",
+    "long_description": "Count of surveyed schools in the county whose fully-immunized share falls in the under 90% band, as published in Tennessee's kindergarten compliance assessment.",
+    "statement": "In {location}, {value} schools had under 90% of students fully immunized.",
+    "measure_type": "Count",
+    "unit": "Schools",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "rate_religious_exempt": {
+    "id": "rate_religious_exempt",
+    "short_name": "Religious exemption rate",
+    "long_name": "Proportion of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+    "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_religious_exempt": {
+    "id": "N_religious_exempt",
+    "short_name": "Religious exemptions (count)",
+    "long_name": "Number of students with a religious vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+    "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+    "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "rate_incomplete": {
+    "id": "rate_incomplete",
+    "short_name": "Incomplete immunization rate",
+    "long_name": "Proportion of students with incomplete immunizations",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students not up to date and not exempt.",
+    "long_description": "Share of assessed school students who have not completed the required immunizations and do not hold an exemption.",
+    "statement": "In {location}, {value} of school students had incomplete immunizations.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_incomplete": {
+    "id": "N_incomplete",
+    "short_name": "Incomplete students (count)",
+    "long_name": "Number of students with incomplete immunizations",
+    "category": "immunization",
+    "short_description": "Number of assessed school students not up to date and not exempt.",
+    "long_description": "Count of assessed school students who have not completed the required immunizations and do not hold an exemption.",
+    "statement": "In {location}, {value} school students had incomplete immunizations.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "rate_missing": {
+    "id": "rate_missing",
+    "short_name": "Missing documentation rate",
+    "long_name": "Proportion of students with no immunization record on file",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with no immunization documentation on file.",
+    "long_description": "Share of assessed school students for whom no immunization record was on file at the time of the survey.",
+    "statement": "In {location}, {value} of school students had no immunization record on file.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_missing": {
+    "id": "N_missing",
+    "short_name": "Missing documentation (count)",
+    "long_name": "Number of students with no immunization record on file",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with no immunization documentation on file.",
+    "long_description": "Count of assessed school students for whom no immunization record was on file at the time of the survey; the count behind rate_missing.",
+    "statement": "In {location}, {value} school students had no immunization record on file.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "rate_temporary_certificate": {
+    "id": "rate_temporary_certificate",
+    "short_name": "Temporary certificate",
+    "long_name": "Proportion of students with a temporary immunization certificate",
+    "category": "immunization",
+    "short_description": "Proportion of enrolled students with a temporary immunization certificate.",
+    "long_description": "Students admitted on a temporary certificate while catching up on the required series (Tennessee).",
+    "statement": "In {location}, {value} of school students with a temporary immunization certificate.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_temporary_certificate": {
+    "id": "N_temporary_certificate",
+    "short_name": "Temporary certificate (count)",
+    "long_name": "Number of students with a temporary immunization certificate",
+    "category": "immunization",
+    "short_description": "Number of enrolled students with a temporary immunization certificate.",
+    "long_description": "Students admitted on a temporary certificate while catching up on the required series (Tennessee).",
+    "statement": "In {location}, {value} school students with a temporary immunization certificate.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "rate_transfer": {
+    "id": "rate_transfer",
+    "short_name": "Recent transfer",
+    "long_name": "Proportion of students who transferred in within 30 days",
+    "category": "immunization",
+    "short_description": "Proportion of enrolled students who transferred in within 30 days.",
+    "long_description": "Students who transferred into the school within the 30 days before the assessment and were not yet required to have a complete record (Tennessee, public schools only).",
+    "statement": "In {location}, {value} of school students who transferred in within 30 days.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_transfer": {
+    "id": "N_transfer",
+    "short_name": "Recent transfer (count)",
+    "long_name": "Number of students who transferred in within 30 days",
+    "category": "immunization",
+    "short_description": "Number of enrolled students who transferred in within 30 days.",
+    "long_description": "Students who transferred into the school within the 30 days before the assessment and were not yet required to have a complete record (Tennessee, public schools only).",
+    "statement": "In {location}, {value} school students who transferred in within 30 days.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "rate_medical_exempt": {
+    "id": "rate_medical_exempt",
+    "short_name": "Medical exemption rate",
+    "long_name": "Proportion of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+    "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+    "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
+  "N_medical_exempt": {
+    "id": "N_medical_exempt",
+    "short_name": "Medical exemptions (count)",
+    "long_name": "Number of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "tn_school_immunization"
+      }
+    ]
+  },
   "_sources": {
     "tn_school_immunization": {
       "name": "Tennessee Kindergarten MMR Coverage",
@@ -24,6 +347,21 @@
       "organization_url": "https://www.tn.gov/health.html",
       "description": "County-level kindergarten MMR coverage supplied directly to PopHIVE by the Tennessee Department of Health (percent of kindergartners fully immunized for MMR).",
       "restrictions": "Public data provided by the Tennessee Department of Health. Single-cohort snapshot; kindergarten MMR only. Do not substitute the Washington Post Tableau/PDF source."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level kindergarten MMR coverage supplied directly to PopHIVE by the Tennessee Department of Health (percent of kindergartners fully immunized for MMR).",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, state rows (see the type column), by grade, by school year",
+      "data_schools.csv.gz": "One row per school",
+      "data_survey_counties.csv.gz": "County totals from the school-level survey export (see README)"
     }
   }
 }

@@ -9,29 +9,33 @@
   },
   "resources": [
     {
-      "bytes": 577,
-      "encoding": "windows-1250",
-      "md5": "e19cc31b63275824b11445c6220b722e",
+      "bytes": 582,
+      "encoding": "ISO-8859-1",
+      "md5": "e1a43500ad732196743f16a8cf327b0b",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "08f01de9d938477d2cc751299507ab78ed156e13"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Fri Feb 27 14:28:02 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardization for FL, NV, RI, VA"
@@ -47,8 +51,8 @@
       "id_length": 2,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:13.390539",
-      "last_modified": "2026-08-25 14:39:43.570145",
+      "created": "2026-09-09 10:09:19.422674",
+      "last_modified": "2026-09-09 10:09:19.422674",
       "vintage": {},
       "row_count": 21,
       "entity_count": 1,
@@ -76,11 +80,12 @@
             "duplicates": 20,
             "info": [],
             "time_range": [0, 6],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "44": 21
-            }
+            "mean": 44,
+            "sd": 0,
+            "min": 44,
+            "max": 44
           },
           {
             "name": "geography_name",
@@ -276,7 +281,7 @@
           }
         ]
       },
-      "sha512": "e331690d8005b8d64bb74eef84a921efd77e800e006e7cc7e31d6ded8d8966e27cf0f55bdf5384bd261246540b7cede16665f6a529471d5704305ff602beb078"
+      "sha512": "f19944a89abca8f30a5204a0ec322eac356da345953666776ddd9c7b3f83cee2ed785dc2130d63c979ddc6affbc06bc3496a26221313522ebab463e9457fd535"
     }
   ],
   "measure_info": {
@@ -388,10 +393,24 @@
         "url": "https://ricair-data-rihealth.hub.arcgis.com/",
         "organization": "Rhode Island Department of Health",
         "organization_url": "https://health.ri.gov/",
-        "description": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. STATE LEVEL ONLY -- Rhode Island supplies no county breakdown here, so geography is the 2-digit state FIPS (44) on every row and this source contributes nothing to county analyses. Small cells are suppressed with a less-than marker; those are left missing.",
+        "description": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure. Do not compute coverage as 1 minus these values: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine. STATE LEVEL ONLY -- Rhode Island supplies no county breakdown here, so geography is the 2-digit state FIPS (44) on every row and this source contributes nothing to county analyses. Small cells are suppressed with a less-than marker; those are left missing with suppressed_flag = 1 and censor_direction = \"left\".",
         "restrictions": "Public data supplied by RIDOH."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "Per-series RELIGIOUS EXEMPTION rates supplied to PopHIVE by RIDOH, for kindergarten and 7th grade. RELIGIOUS EXEMPTIONS ONLY -- row 1 of the workbook reads \"Religious exemption rates\", so the coverage columns are empty, and there is no medical or any-reason figure.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

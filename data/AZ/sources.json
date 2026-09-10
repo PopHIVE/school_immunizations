@@ -1,0 +1,20 @@
+[
+  {
+    "id": "idr_report_stats",
+    "access": "dashboard",
+    "url": null,
+    "page_url": "https://apps.azdhs.gov/IDRReportStats",
+    "pattern": null,
+    "type": "csv",
+    "dest_glob": "raw/az_immunization_kg_*.csv",
+    "publish_month": 3,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "ADHS Immunization Data Report query tool; no export endpoint, county CSVs were scraped by hand. ADHS also posts a per-year county kindergarten MMR PDF under azdhs.gov/documents/.../statistics-reports/<year>/; the 2024-25 table is the share of schools at or above 95% MMR coverage per county, not a coverage rate, so the query tool remains the source.",
+    "last_check_time": "2026-09-09 14:13:42",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

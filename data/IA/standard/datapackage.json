@@ -9,32 +9,36 @@
   },
   "resources": [
     {
-      "bytes": 53219,
-      "encoding": "windows-1252",
-      "md5": "67774938e0376db0aa19ebc355913b36",
+      "bytes": 90962,
+      "encoding": "ISO-8859-1",
+      "md5": "c5c2218a184e864b1bdf7eda43efecf9",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
           "9986ebe3ff2a3ad4d5d5372dd8b5b276b4dc66c5"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Thu Feb 26 07:14:11 2026 -0500",
           "Thu Feb 12 08:06:45 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardize HI and round data to 2 decimal points",
@@ -48,272 +52,301 @@
           "variable": "geography"
         }
       ],
-      "id_length": 5,
+      "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:11.126703",
-      "last_modified": "2026-08-24 10:30:03.138824",
+      "created": "2026-09-08 14:57:27.394859",
+      "last_modified": "2026-09-08 14:57:27.394859",
       "vintage": {},
-      "row_count": 1386,
-      "entity_count": 99,
+      "row_count": 2086,
+      "entity_count": 100,
       "schema": {
         "fields": [
           {
             "name": "time",
-            "duplicates": 1372,
+            "duplicates": 2071,
             "info": [],
-            "time_range": [0, 13],
+            "time_range": [0, 14],
             "type": "string",
             "missing": 0,
             "table": {
               "2011-09-01": 99,
-              "2012-09-01": 99,
+              "2012-09-01": 199,
               "2013-09-01": 99,
               "2014-09-01": 99,
               "2015-09-01": 99,
               "2016-09-01": 99,
               "2017-09-01": 99,
-              "2018-09-01": 99,
+              "2018-09-01": 199,
               "2019-09-01": 99,
-              "2020-09-01": 99,
-              "2021-09-01": 99,
+              "2020-09-01": 199,
+              "2021-09-01": 199,
               "2022-09-01": 99,
-              "2023-09-01": 99,
-              "2024-09-01": 99
+              "2023-09-01": 199,
+              "2024-09-01": 199,
+              "2025-09-01": 100
             }
           },
           {
             "name": "geography",
-            "duplicates": 1287,
+            "duplicates": 1986,
             "info": [],
-            "time_range": [0, 13],
-            "type": "string",
+            "time_range": [0, 14],
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "19001": 14,
-              "19003": 14,
-              "19005": 14,
-              "19007": 14,
-              "19009": 14,
-              "19011": 14,
-              "19013": 14,
-              "19015": 14,
-              "19017": 14,
-              "19019": 14,
-              "19021": 14,
-              "19023": 14,
-              "19025": 14,
-              "19027": 14,
-              "19029": 14,
-              "19031": 14,
-              "19033": 14,
-              "19035": 14,
-              "19037": 14,
-              "19039": 14,
-              "19041": 14,
-              "19043": 14,
-              "19045": 14,
-              "19047": 14,
-              "19049": 14,
-              "19051": 14,
-              "19053": 14,
-              "19055": 14,
-              "19057": 14,
-              "19059": 14,
-              "19061": 14,
-              "19063": 14,
-              "19065": 14,
-              "19067": 14,
-              "19069": 14,
-              "19071": 14,
-              "19073": 14,
-              "19075": 14,
-              "19077": 14,
-              "19079": 14,
-              "19081": 14,
-              "19083": 14,
-              "19085": 14,
-              "19087": 14,
-              "19089": 14,
-              "19091": 14,
-              "19093": 14,
-              "19095": 14,
-              "19097": 14,
-              "19099": 14,
-              "19101": 14,
-              "19103": 14,
-              "19105": 14,
-              "19107": 14,
-              "19109": 14,
-              "19111": 14,
-              "19113": 14,
-              "19115": 14,
-              "19117": 14,
-              "19119": 14,
-              "19121": 14,
-              "19123": 14,
-              "19125": 14,
-              "19127": 14,
-              "19129": 14,
-              "19131": 14,
-              "19133": 14,
-              "19135": 14,
-              "19137": 14,
-              "19139": 14,
-              "19141": 14,
-              "19143": 14,
-              "19145": 14,
-              "19147": 14,
-              "19149": 14,
-              "19151": 14,
-              "19153": 14,
-              "19155": 14,
-              "19157": 14,
-              "19159": 14,
-              "19161": 14,
-              "19163": 14,
-              "19165": 14,
-              "19167": 14,
-              "19169": 14,
-              "19171": 14,
-              "19173": 14,
-              "19175": 14,
-              "19177": 14,
-              "19179": 14,
-              "19181": 14,
-              "19183": 14,
-              "19185": 14,
-              "19187": 14,
-              "19189": 14,
-              "19191": 14,
-              "19193": 14,
-              "19195": 14,
-              "19197": 14
-            }
+            "mean": 19034.973154,
+            "sd": 1105.157904,
+            "min": 19,
+            "max": 19197
           },
           {
             "name": "geography_name",
-            "duplicates": 1287,
+            "duplicates": 1987,
             "info": [],
-            "time_range": [0, 13],
+            "time_range": [0, 14],
             "type": "string",
             "missing": 0,
             "table": {
-              "Adair": 14,
-              "Adams": 14,
-              "Allamakee": 14,
-              "Appanoose": 14,
-              "Audubon": 14,
-              "Benton": 14,
-              "Black Hawk": 14,
-              "Boone": 14,
-              "Bremer": 14,
-              "Buchanan": 14,
-              "Buena Vista": 14,
-              "Butler": 14,
-              "Calhoun": 14,
-              "Carroll": 14,
-              "Cass": 14,
-              "Cedar": 14,
-              "Cerro Gordo": 14,
-              "Cherokee": 14,
-              "Chickasaw": 14,
-              "Clarke": 14,
-              "Clay": 14,
-              "Clayton": 14,
-              "Clinton": 14,
-              "Crawford": 14,
-              "Dallas": 14,
-              "Davis": 14,
-              "Decatur": 14,
-              "Delaware": 14,
-              "Des Moines": 14,
-              "Dickinson": 14,
-              "Dubuque": 14,
-              "Emmet": 14,
-              "Fayette": 14,
-              "Floyd": 14,
-              "Franklin": 14,
-              "Fremont": 14,
-              "Greene": 14,
-              "Grundy": 14,
-              "Guthrie": 14,
-              "Hamilton": 14,
-              "Hancock": 14,
-              "Hardin": 14,
-              "Harrison": 14,
-              "Henry": 14,
-              "Howard": 14,
-              "Humboldt": 14,
-              "Ida": 14,
-              "Iowa": 14,
-              "Jackson": 14,
-              "Jasper": 14,
-              "Jefferson": 14,
-              "Johnson": 14,
-              "Jones": 14,
-              "Keokuk": 14,
-              "Kossuth": 14,
-              "Lee": 14,
-              "Linn": 14,
-              "Louisa": 14,
-              "Lucas": 14,
-              "Lyon": 14,
-              "Madison": 14,
-              "Mahaska": 14,
-              "Marion": 14,
-              "Marshall": 14,
-              "Mills": 14,
-              "Mitchell": 14,
-              "Monona": 14,
-              "Monroe": 14,
-              "Montgomery": 14,
-              "Muscatine": 14,
-              "O'Brien": 14,
-              "Osceola": 14,
-              "Page": 14,
-              "Palo Alto": 14,
-              "Plymouth": 14,
-              "Pocahontas": 14,
-              "Polk": 14,
-              "Pottawattamie": 14,
-              "Poweshiek": 14,
-              "Ringgold": 14,
-              "Sac": 14,
-              "Scott": 14,
-              "Shelby": 14,
-              "Sioux": 14,
-              "Story": 14,
-              "Tama": 14,
-              "Taylor": 14,
-              "Union": 14,
-              "Van Buren": 14,
-              "Wapello": 14,
-              "Warren": 14,
-              "Washington": 14,
-              "Wayne": 14,
-              "Webster": 14,
-              "Winnebago": 14,
-              "Winneshiek": 14,
-              "Woodbury": 14,
-              "Worth": 14,
-              "Wright": 14
+              "Adair": 21,
+              "Adams": 21,
+              "Allamakee": 21,
+              "Appanoose": 21,
+              "Audubon": 21,
+              "Benton": 21,
+              "Black Hawk": 21,
+              "Boone": 21,
+              "Bremer": 21,
+              "Buchanan": 21,
+              "Buena Vista": 21,
+              "Butler": 21,
+              "Calhoun": 21,
+              "Carroll": 21,
+              "Cass": 21,
+              "Cedar": 21,
+              "Cerro Gordo": 21,
+              "Cherokee": 21,
+              "Chickasaw": 21,
+              "Clarke": 21,
+              "Clay": 21,
+              "Clayton": 21,
+              "Clinton": 21,
+              "Crawford": 21,
+              "Dallas": 21,
+              "Davis": 21,
+              "Decatur": 21,
+              "Delaware": 21,
+              "Des Moines": 21,
+              "Dickinson": 21,
+              "Dubuque": 21,
+              "Emmet": 21,
+              "Fayette": 21,
+              "Floyd": 21,
+              "Franklin": 21,
+              "Fremont": 21,
+              "Greene": 21,
+              "Grundy": 21,
+              "Guthrie": 21,
+              "Hamilton": 21,
+              "Hancock": 21,
+              "Hardin": 21,
+              "Harrison": 21,
+              "Henry": 21,
+              "Howard": 21,
+              "Humboldt": 21,
+              "Ida": 21,
+              "Iowa": 28,
+              "Jackson": 21,
+              "Jasper": 21,
+              "Jefferson": 21,
+              "Johnson": 21,
+              "Jones": 21,
+              "Keokuk": 21,
+              "Kossuth": 21,
+              "Lee": 21,
+              "Linn": 21,
+              "Louisa": 21,
+              "Lucas": 21,
+              "Lyon": 21,
+              "Madison": 21,
+              "Mahaska": 21,
+              "Marion": 21,
+              "Marshall": 21,
+              "Mills": 21,
+              "Mitchell": 21,
+              "Monona": 21,
+              "Monroe": 21,
+              "Montgomery": 21,
+              "Muscatine": 21,
+              "O'Brien": 21,
+              "Osceola": 21,
+              "Page": 21,
+              "Palo Alto": 21,
+              "Plymouth": 21,
+              "Pocahontas": 21,
+              "Polk": 21,
+              "Pottawattamie": 21,
+              "Poweshiek": 21,
+              "Ringgold": 21,
+              "Sac": 21,
+              "Scott": 21,
+              "Shelby": 21,
+              "Sioux": 21,
+              "Story": 21,
+              "Tama": 21,
+              "Taylor": 21,
+              "Union": 21,
+              "Van Buren": 21,
+              "Wapello": 21,
+              "Warren": 21,
+              "Washington": 21,
+              "Wayne": 21,
+              "Webster": 21,
+              "Winnebago": 21,
+              "Winneshiek": 21,
+              "Woodbury": 21,
+              "Worth": 21,
+              "Wright": 21
+            }
+          },
+          {
+            "name": "type",
+            "duplicates": 2084,
+            "info": [],
+            "time_range": [0, 14],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "county": 2079,
+              "state": 7
             }
           },
           {
             "name": "grade",
-            "duplicates": 1385,
+            "duplicates": 2084,
             "info": [],
-            "time_range": [0, 13],
+            "time_range": [0, 14],
             "type": "string",
             "missing": 0,
             "table": {
-              "K-12": 1386
+              "K-12": 1386,
+              "Kindergarten": 700
             }
           },
           {
+            "name": "N_immunization_certificate",
+            "duplicates": 1715,
+            "info": {
+              "id": "N_immunization_certificate",
+              "short_name": "Certificate of immunization (count)",
+              "long_name": "Number of students with a certificate of immunization",
+              "category": "immunization",
+              "short_description": "Number of enrolled students with a certificate of immunization.",
+              "long_description": "Students holding a full certificate of immunization: vaccinated as the state's school law requires, with no provisional status and no exemption. Iowa's \"Fully Vaccinated by Law\" category.",
+              "statement": "In {location}, {value} school students with a certificate of immunization.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "integer",
+            "missing": 1386,
+            "mean": 714.837143,
+            "sd": 3593.689417,
+            "min": 20,
+            "max": 37884
+          },
+          {
+            "name": "N_provisional",
+            "duplicates": 1981,
+            "info": {
+              "id": "N_provisional",
+              "short_name": "Provisional students (count)",
+              "long_name": "Number of students provisionally enrolled",
+              "category": "immunization",
+              "short_description": "Number of assessed school students provisionally enrolled while completing required immunizations.",
+              "long_description": "Count of assessed school students permitted to attend on a provisional basis while completing required immunizations.",
+              "statement": "In {location}, {value} school students were provisionally enrolled.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "integer",
+            "missing": 1386,
+            "mean": 38.125714,
+            "sd": 196.645709,
+            "min": 0,
+            "max": 2438
+          },
+          {
+            "name": "N_medical_exempt",
+            "duplicates": 1975,
+            "info": {
+              "id": "N_medical_exempt",
+              "short_name": "Medical exemptions (count)",
+              "long_name": "Number of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+              "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 14],
+            "type": "integer",
+            "missing": 0,
+            "mean": 12.232023,
+            "sd": 37.125542,
+            "min": 0,
+            "max": 435
+          },
+          {
+            "name": "N_religious_exempt",
+            "duplicates": 2013,
+            "info": {
+              "id": "N_religious_exempt",
+              "short_name": "Religious exemptions (count)",
+              "long_name": "Number of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+              "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "integer",
+            "missing": 1386,
+            "mean": 21.6,
+            "sd": 116.292254,
+            "min": 0,
+            "max": 1792
+          },
+          {
             "name": "N_personal_exempt",
-            "duplicates": 1074,
+            "duplicates": 1773,
             "info": {
               "id": "N_personal_exempt",
               "short_name": "Non-medical exemptions (count)",
@@ -333,43 +366,15 @@
             },
             "time_range": [0, 13],
             "type": "integer",
-            "missing": 0,
+            "missing": 700,
             "mean": 98.566378,
             "sd": 208.689416,
             "min": 0,
             "max": 2781
           },
           {
-            "name": "N_medical_exempt",
-            "duplicates": 1277,
-            "info": {
-              "id": "N_medical_exempt",
-              "short_name": "Medical exemptions (count)",
-              "long_name": "Number of students with a medical vaccination exemption",
-              "category": "immunization",
-              "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
-              "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-              "statement": "In {location}, {value} school students had a medical vaccination exemption.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "ia_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 13],
-            "type": "integer",
-            "missing": 0,
-            "mean": 17.601732,
-            "sd": 44.080499,
-            "min": 0,
-            "max": 435
-          },
-          {
             "name": "N_full_exempt",
-            "duplicates": 1055,
+            "duplicates": 1754,
             "info": {
               "id": "N_full_exempt",
               "short_name": "Total exemptions (count)",
@@ -389,15 +394,211 @@
             },
             "time_range": [0, 13],
             "type": "integer",
-            "missing": 0,
+            "missing": 700,
             "mean": 116.16811,
             "sd": 240.850445,
             "min": 0,
             "max": 2980
           },
           {
+            "name": "N_no_certificate",
+            "duplicates": 2026,
+            "info": {
+              "id": "N_no_certificate",
+              "short_name": "No certificate (count)",
+              "long_name": "Number of students with no valid immunization certificate",
+              "category": "immunization",
+              "short_description": "Number of enrolled students with no valid immunization certificate.",
+              "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+              "statement": "In {location}, {value} school students with no valid immunization certificate.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "integer",
+            "missing": 1386,
+            "mean": 12.145714,
+            "sd": 62.975358,
+            "min": 0,
+            "max": 825
+          },
+          {
+            "name": "N_valid_certificate",
+            "duplicates": 1701,
+            "info": {
+              "id": "N_valid_certificate",
+              "short_name": "Valid certificate (count)",
+              "long_name": "Number of students with a valid immunization certificate",
+              "category": "immunization",
+              "short_description": "Number of enrolled students with a valid immunization certificate.",
+              "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+              "statement": "In {location}, {value} school students with a valid immunization certificate.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "integer",
+            "missing": 1386,
+            "mean": 776.162857,
+            "sd": 3898.57232,
+            "min": 20,
+            "max": 40838
+          },
+          {
+            "name": "N_enrolled",
+            "duplicates": 491,
+            "info": {
+              "id": "N_enrolled",
+              "short_name": "Students enrolled",
+              "long_name": "Number of students enrolled",
+              "category": "immunization",
+              "short_description": "Number of students enrolled at the reporting level.",
+              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+              "statement": "In {location}, {value} students were enrolled.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 14],
+            "type": "integer",
+            "missing": 0,
+            "mean": 3755.557047,
+            "sd": 8562.403329,
+            "min": 24,
+            "max": 85081
+          },
+          {
+            "name": "rate_immunization_certificate",
+            "duplicates": 1485,
+            "info": {
+              "id": "rate_immunization_certificate",
+              "short_name": "Certificate of immunization",
+              "long_name": "Proportion of students with a certificate of immunization",
+              "category": "immunization",
+              "short_description": "Proportion of enrolled students with a certificate of immunization.",
+              "long_description": "Students holding a full certificate of immunization: vaccinated as the state's school law requires, with no provisional status and no exemption. Iowa's \"Fully Vaccinated by Law\" category.",
+              "statement": "In {location}, {value} of school students with a certificate of immunization.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "float",
+            "missing": 1386,
+            "mean": 0.90395,
+            "sd": 0.050607,
+            "min": 0.689922,
+            "max": 1
+          },
+          {
+            "name": "rate_provisional",
+            "duplicates": 1521,
+            "info": {
+              "id": "rate_provisional",
+              "short_name": "Provisional certificate",
+              "long_name": "Proportion of students with a provisional certificate",
+              "category": "immunization",
+              "short_description": "Proportion of enrolled students with a provisional certificate.",
+              "long_description": "Students admitted on a provisional certificate while completing the required series.",
+              "statement": "In {location}, {value} of school students with a provisional certificate.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "float",
+            "missing": 1386,
+            "mean": 0.051515,
+            "sd": 0.04103,
+            "min": 0,
+            "max": 0.294574
+          },
+          {
+            "name": "rate_medical_exempt",
+            "duplicates": 647,
+            "info": {
+              "id": "rate_medical_exempt",
+              "short_name": "Medical exemption rate",
+              "long_name": "Proportion of students with a medical vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
+              "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 14],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.002695,
+            "sd": 0.003299,
+            "min": 0,
+            "max": 0.055556
+          },
+          {
+            "name": "rate_religious_exempt",
+            "duplicates": 1573,
+            "info": {
+              "id": "rate_religious_exempt",
+              "short_name": "Religious exemption rate",
+              "long_name": "Proportion of students with a religious vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+              "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+              "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "float",
+            "missing": 1386,
+            "mean": 0.027151,
+            "sd": 0.023575,
+            "min": 0,
+            "max": 0.1875
+          },
+          {
             "name": "rate_personal_exempt",
-            "duplicates": 29,
+            "duplicates": 728,
             "info": {
               "id": "rate_personal_exempt",
               "short_name": "Non-medical exemption rate",
@@ -417,43 +618,15 @@
             },
             "time_range": [0, 13],
             "type": "float",
-            "missing": 0,
+            "missing": 700,
             "mean": 0.019199,
             "sd": 0.017159,
             "min": 0,
             "max": 0.120268
           },
           {
-            "name": "rate_medical_exempt",
-            "duplicates": 121,
-            "info": {
-              "id": "rate_medical_exempt",
-              "short_name": "Medical exemption rate",
-              "long_name": "Proportion of students with a medical vaccination exemption",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
-              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
-              "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "ia_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 13],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.00313,
-            "sd": 0.002666,
-            "min": 0,
-            "max": 0.028402
-          },
-          {
             "name": "rate_full_exempt",
-            "duplicates": 25,
+            "duplicates": 724,
             "info": {
               "id": "rate_full_exempt",
               "short_name": "Total exemption rate",
@@ -473,25 +646,25 @@
             },
             "time_range": [0, 13],
             "type": "float",
-            "missing": 0,
+            "missing": 700,
             "mean": 0.022329,
             "sd": 0.017169,
             "min": 0,
             "max": 0.122015
           },
           {
-            "name": "N_enrolled",
-            "duplicates": 150,
+            "name": "rate_no_certificate",
+            "duplicates": 1709,
             "info": {
-              "id": "N_enrolled",
-              "short_name": "Students enrolled",
-              "long_name": "Number of students enrolled",
+              "id": "rate_no_certificate",
+              "short_name": "No certificate",
+              "long_name": "Proportion of students with no valid immunization certificate",
               "category": "immunization",
-              "short_description": "Number of students enrolled at the reporting level.",
-              "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
-              "statement": "In {location}, {value} students were enrolled.",
-              "measure_type": "Count",
-              "unit": "Students",
+              "short_description": "Proportion of enrolled students with no valid immunization certificate.",
+              "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+              "statement": "In {location}, {value} of school students with no valid immunization certificate.",
+              "measure_type": "Rate",
+              "unit": "Rate",
               "time_resolution": "Year",
               "sources": [
                 {
@@ -499,28 +672,73 @@
                 }
               ]
             },
-            "time_range": [0, 13],
-            "type": "integer",
-            "missing": 0,
-            "mean": 5254.167388,
-            "sd": 9785.609157,
-            "min": 367,
-            "max": 85081
+            "time_range": [1, 14],
+            "type": "float",
+            "missing": 1386,
+            "mean": 0.01555,
+            "sd": 0.025669,
+            "min": 0,
+            "max": 0.216981
+          },
+          {
+            "name": "rate_valid_certificate",
+            "duplicates": 1709,
+            "info": {
+              "id": "rate_valid_certificate",
+              "short_name": "Valid certificate",
+              "long_name": "Proportion of students with a valid immunization certificate",
+              "category": "immunization",
+              "short_description": "Proportion of enrolled students with a valid immunization certificate.",
+              "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+              "statement": "In {location}, {value} of school students with a valid immunization certificate.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "ia_school_immunization"
+                }
+              ]
+            },
+            "time_range": [1, 14],
+            "type": "float",
+            "missing": 1386,
+            "mean": 0.98445,
+            "sd": 0.025669,
+            "min": 0.783019,
+            "max": 1
           }
         ]
       },
-      "sha512": "ac49b6bd66b7dbd437cbed26820e933fd9cc3b26a147f5c3506a17e203cad49309ce0477afd1e92de31b2f06f23dcbfa820fbad042f606c5a0e05fee16b56ddd"
+      "sha512": "b837158b17eda1a51cd5deb8adfac1e6aaf46ec1e6f54a704452cf840d95ad16d0f9072537cbcd4d3c63f80139bb9c5b48b26c8437fee441fe91851d9354648e"
     }
   ],
   "measure_info": {
-    "N_personal_exempt": {
-      "id": "N_personal_exempt",
-      "short_name": "Non-medical exemptions (count)",
-      "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+    "N_immunization_certificate": {
+      "id": "N_immunization_certificate",
+      "short_name": "Certificate of immunization (count)",
+      "long_name": "Number of students with a certificate of immunization",
       "category": "immunization",
-      "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
-      "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-      "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+      "short_description": "Number of enrolled students with a certificate of immunization.",
+      "long_description": "Students holding a full certificate of immunization: vaccinated as the state's school law requires, with no provisional status and no exemption. Iowa's \"Fully Vaccinated by Law\" category.",
+      "statement": "In {location}, {value} school students with a certificate of immunization.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "N_provisional": {
+      "id": "N_provisional",
+      "short_name": "Provisional students (count)",
+      "long_name": "Number of students provisionally enrolled",
+      "category": "immunization",
+      "short_description": "Number of assessed school students provisionally enrolled while completing required immunizations.",
+      "long_description": "Count of assessed school students permitted to attend on a provisional basis while completing required immunizations.",
+      "statement": "In {location}, {value} school students were provisionally enrolled.",
       "measure_type": "Count",
       "unit": "Students",
       "time_resolution": "Year",
@@ -547,6 +765,40 @@
         }
       ]
     },
+    "N_religious_exempt": {
+      "id": "N_religious_exempt",
+      "short_name": "Religious exemptions (count)",
+      "long_name": "Number of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Count of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical exemptions.",
+      "statement": "In {location}, {value} school students had a religious vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "N_personal_exempt": {
+      "id": "N_personal_exempt",
+      "short_name": "Non-medical exemptions (count)",
+      "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+      "category": "immunization",
+      "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
+      "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+      "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
     "N_full_exempt": {
       "id": "N_full_exempt",
       "short_name": "Total exemptions (count)",
@@ -564,14 +816,82 @@
         }
       ]
     },
-    "rate_personal_exempt": {
-      "id": "rate_personal_exempt",
-      "short_name": "Non-medical exemption rate",
-      "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+    "N_no_certificate": {
+      "id": "N_no_certificate",
+      "short_name": "No certificate (count)",
+      "long_name": "Number of students with no valid immunization certificate",
       "category": "immunization",
-      "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
-      "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
-      "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+      "short_description": "Number of enrolled students with no valid immunization certificate.",
+      "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+      "statement": "In {location}, {value} school students with no valid immunization certificate.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "N_valid_certificate": {
+      "id": "N_valid_certificate",
+      "short_name": "Valid certificate (count)",
+      "long_name": "Number of students with a valid immunization certificate",
+      "category": "immunization",
+      "short_description": "Number of enrolled students with a valid immunization certificate.",
+      "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+      "statement": "In {location}, {value} school students with a valid immunization certificate.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "N_enrolled": {
+      "id": "N_enrolled",
+      "short_name": "Students enrolled",
+      "long_name": "Number of students enrolled",
+      "category": "immunization",
+      "short_description": "Number of students enrolled at the reporting level.",
+      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+      "statement": "In {location}, {value} students were enrolled.",
+      "measure_type": "Count",
+      "unit": "Students",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "rate_immunization_certificate": {
+      "id": "rate_immunization_certificate",
+      "short_name": "Certificate of immunization",
+      "long_name": "Proportion of students with a certificate of immunization",
+      "category": "immunization",
+      "short_description": "Proportion of enrolled students with a certificate of immunization.",
+      "long_description": "Students holding a full certificate of immunization: vaccinated as the state's school law requires, with no provisional status and no exemption. Iowa's \"Fully Vaccinated by Law\" category.",
+      "statement": "In {location}, {value} of school students with a certificate of immunization.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "rate_provisional": {
+      "id": "rate_provisional",
+      "short_name": "Provisional certificate",
+      "long_name": "Proportion of students with a provisional certificate",
+      "category": "immunization",
+      "short_description": "Proportion of enrolled students with a provisional certificate.",
+      "long_description": "Students admitted on a provisional certificate while completing the required series.",
+      "statement": "In {location}, {value} of school students with a provisional certificate.",
       "measure_type": "Rate",
       "unit": "Rate",
       "time_resolution": "Year",
@@ -598,6 +918,40 @@
         }
       ]
     },
+    "rate_religious_exempt": {
+      "id": "rate_religious_exempt",
+      "short_name": "Religious exemption rate",
+      "long_name": "Proportion of students with a religious vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a religious exemption from one or more required vaccines.",
+      "long_description": "Share of assessed school students holding a religious exemption. Reported by states that separate religious exemptions from other non-medical (philosophical or personal-belief) exemptions.",
+      "statement": "In {location}, {value} of school students had a religious vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "rate_personal_exempt": {
+      "id": "rate_personal_exempt",
+      "short_name": "Non-medical exemption rate",
+      "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
+      "category": "immunization",
+      "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
+      "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
+      "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
     "rate_full_exempt": {
       "id": "rate_full_exempt",
       "short_name": "Total exemption rate",
@@ -615,16 +969,33 @@
         }
       ]
     },
-    "N_enrolled": {
-      "id": "N_enrolled",
-      "short_name": "Students enrolled",
-      "long_name": "Number of students enrolled",
+    "rate_no_certificate": {
+      "id": "rate_no_certificate",
+      "short_name": "No certificate",
+      "long_name": "Proportion of students with no valid immunization certificate",
       "category": "immunization",
-      "short_description": "Number of students enrolled at the reporting level.",
-      "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
-      "statement": "In {location}, {value} students were enrolled.",
-      "measure_type": "Count",
-      "unit": "Students",
+      "short_description": "Proportion of enrolled students with no valid immunization certificate.",
+      "long_description": "Students with no certificate on file or an invalid one. Iowa's \"invalid or no certificate\"; Alabama's \"no COI\".",
+      "statement": "In {location}, {value} of school students with no valid immunization certificate.",
+      "measure_type": "Rate",
+      "unit": "Rate",
+      "time_resolution": "Year",
+      "sources": [
+        {
+          "id": "ia_school_immunization"
+        }
+      ]
+    },
+    "rate_valid_certificate": {
+      "id": "rate_valid_certificate",
+      "short_name": "Valid certificate",
+      "long_name": "Proportion of students with a valid immunization certificate",
+      "category": "immunization",
+      "short_description": "Proportion of enrolled students with a valid immunization certificate.",
+      "long_description": "Students with any valid certificate on file: a certificate of immunization, a provisional certificate, or a medical or religious exemption certificate. This is a compliance measure, not a coverage measure: exempt and provisional students count as valid. Alabama's \"not expired certificate\" and Iowa's \"total valid certificates\".",
+      "statement": "In {location}, {value} of school students with a valid immunization certificate.",
+      "measure_type": "Rate",
+      "unit": "Rate",
       "time_resolution": "Year",
       "sources": [
         {
@@ -642,6 +1013,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level K-12 EXEMPTION data from the annual Iowa HHS school and child-care audit reports. Medical and religious certificates are published in separate files, each with a certificate count and the audited enrolment.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "County, state rows (see the type column), by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

@@ -1,12 +1,12 @@
 {
-  "N_personal_exempt": {
-    "id": "N_personal_exempt",
-    "short_name": "Non-medical exemptions (count)",
-    "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+  "N_enrolled": {
+    "id": "N_enrolled",
+    "short_name": "Students enrolled",
+    "long_name": "Number of students enrolled",
     "category": "immunization",
-    "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
+    "short_description": "Number of students enrolled at the reporting level.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
+    "statement": "In {location}, {value} students were enrolled.",
     "measure_type": "Count",
     "unit": "Students",
     "time_resolution": "Year",
@@ -16,16 +16,101 @@
       }
     ]
   },
-  "N_medical_exempt": {
-    "id": "N_medical_exempt",
-    "short_name": "Medical exemptions (count)",
-    "long_name": "Number of students with a medical vaccination exemption",
+  "N_complete": {
+    "id": "N_complete",
+    "short_name": "Up-to-date students (count)",
+    "long_name": "Number of students up to date for all required vaccines",
     "category": "immunization",
-    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
-    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
-    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+    "short_description": "Number of assessed school students up to date for all required vaccines.",
+    "long_description": "Count of assessed school students who have completed all age-appropriate required immunizations.",
+    "statement": "In {location}, {value} school students were up to date for all required vaccines.",
     "measure_type": "Count",
     "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_complete": {
+    "id": "rate_complete",
+    "short_name": "Up-to-date rate",
+    "long_name": "Proportion of students up to date for all required vaccines",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students up to date for all required vaccines.",
+    "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
+    "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_conditional": {
+    "id": "N_conditional",
+    "short_name": "Conditional students (count)",
+    "long_name": "Number of students conditionally enrolled",
+    "category": "immunization",
+    "short_description": "Number of assessed school students admitted conditionally while completing required immunizations.",
+    "long_description": "Count of assessed school students who are conditionally enrolled: permitted to attend while in the process of completing required immunizations and not yet overdue.",
+    "statement": "In {location}, {value} school students were conditionally enrolled.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_conditional": {
+    "id": "rate_conditional",
+    "short_name": "Conditional enrollment rate",
+    "long_name": "Proportion of students conditionally enrolled",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students admitted conditionally while completing required immunizations.",
+    "long_description": "Share of assessed school students who are conditionally (or provisionally) enrolled - permitted to attend while in the process of completing required immunizations and not yet overdue.",
+    "statement": "In {location}, {value} of school students were conditionally enrolled.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_out_of_compliance": {
+    "id": "N_out_of_compliance",
+    "short_name": "Out-of-compliance students (count)",
+    "long_name": "Number of students out of compliance with immunization requirements",
+    "category": "immunization",
+    "short_description": "Number of assessed school students who are not complete, not conditionally enrolled, and not exempt.",
+    "long_description": "Count of assessed school students the state classifies as out of compliance: no complete record, no conditional status, and no exemption on file.",
+    "statement": "In {location}, {value} school students were out of compliance with immunization requirements.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_out_of_compliance": {
+    "id": "rate_out_of_compliance",
+    "short_name": "Out-of-compliance rate",
+    "long_name": "Proportion of students out of compliance with immunization requirements",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are not complete, not conditionally enrolled, and not exempt.",
+    "long_description": "Share of assessed school students the state classifies as out of compliance: no complete record, no conditional status, and no exemption on file. Washington reports this as the residual after complete, conditional and exempt students.",
+    "statement": "In {location}, {value} of school students were out of compliance with immunization requirements.",
+    "measure_type": "Rate",
+    "unit": "Rate",
     "time_resolution": "Year",
     "sources": [
       {
@@ -41,6 +126,40 @@
     "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
     "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
     "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_full_exempt": {
+    "id": "rate_full_exempt",
+    "short_name": "Total exemption rate",
+    "long_name": "Proportion of students with any vaccination exemption",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_personal_exempt": {
+    "id": "N_personal_exempt",
+    "short_name": "Non-medical exemptions (count)",
+    "long_name": "Number of students with a non-medical (personal-belief) vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a non-medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students holding a non-medical (religious, philosophical, or personal-belief) exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a non-medical vaccination exemption.",
     "measure_type": "Count",
     "unit": "Students",
     "time_resolution": "Year",
@@ -67,6 +186,23 @@
       }
     ]
   },
+  "N_medical_exempt": {
+    "id": "N_medical_exempt",
+    "short_name": "Medical exemptions (count)",
+    "long_name": "Number of students with a medical vaccination exemption",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with a medical exemption from vaccination requirements.",
+    "long_description": "Count of assessed school students with a physician-certified medical exemption from one or more required vaccines. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students had a medical vaccination exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
   "rate_medical_exempt": {
     "id": "rate_medical_exempt",
     "short_name": "Medical exemption rate",
@@ -77,40 +213,6 @@
     "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
     "measure_type": "Rate",
     "unit": "Rate",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "wa_school_immunization"
-      }
-    ]
-  },
-  "rate_full_exempt": {
-    "id": "rate_full_exempt",
-    "short_name": "Total exemption rate",
-    "long_name": "Proportion of students with any vaccination exemption",
-    "category": "immunization",
-    "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
-    "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
-    "measure_type": "Rate",
-    "unit": "Rate",
-    "time_resolution": "Year",
-    "sources": [
-      {
-        "id": "wa_school_immunization"
-      }
-    ]
-  },
-  "N_enrolled": {
-    "id": "N_enrolled",
-    "short_name": "Students enrolled",
-    "long_name": "Number of students enrolled",
-    "category": "immunization",
-    "short_description": "Number of students enrolled at the reporting level.",
-    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
-    "statement": "In {location}, {value} students were enrolled.",
-    "measure_type": "Count",
-    "unit": "Students",
     "time_resolution": "Year",
     "sources": [
       {
@@ -186,6 +288,975 @@
       }
     ]
   },
+  "N_pertussis": {
+    "id": "N_pertussis",
+    "short_name": "Pertussis students vaccinated",
+    "long_name": "Number of students up to date for pertussis vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for pertussis vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for pertussis vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for pertussis vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_pertussis": {
+    "id": "rate_pertussis",
+    "short_name": "Pertussis coverage",
+    "long_name": "Proportion of students up to date for pertussis vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for pertussis vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for pertussis vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Pertussis vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_polio": {
+    "id": "N_polio",
+    "short_name": "Polio students vaccinated",
+    "long_name": "Number of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for polio (IPV/OPV) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for polio (IPV/OPV) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_polio": {
+    "id": "rate_polio",
+    "short_name": "Polio coverage",
+    "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b": {
+    "id": "N_hep_b",
+    "short_name": "Hepatitis B students vaccinated",
+    "long_name": "Number of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for hepatitis B vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for hepatitis B vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b": {
+    "id": "rate_hep_b",
+    "short_name": "Hepatitis B coverage",
+    "long_name": "Proportion of students up to date for hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_varicella": {
+    "id": "N_varicella",
+    "short_name": "Varicella students vaccinated",
+    "long_name": "Number of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for varicella (chickenpox) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for varicella (chickenpox) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella": {
+    "id": "rate_varicella",
+    "short_name": "Varicella coverage",
+    "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_diphtheria": {
+    "id": "N_diphtheria",
+    "short_name": "Diphtheria students vaccinated",
+    "long_name": "Number of students up to date for diphtheria vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for diphtheria vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for diphtheria vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for diphtheria vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_diphtheria": {
+    "id": "rate_diphtheria",
+    "short_name": "Diphtheria coverage",
+    "long_name": "Proportion of students up to date for diphtheria vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Diphtheria vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_tetanus": {
+    "id": "N_tetanus",
+    "short_name": "Tetanus students vaccinated",
+    "long_name": "Number of students up to date for tetanus vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for tetanus vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for tetanus vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for tetanus vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_tetanus": {
+    "id": "rate_tetanus",
+    "short_name": "Tetanus coverage",
+    "long_name": "Proportion of students up to date for tetanus vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for tetanus vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for tetanus vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Tetanus vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_measles": {
+    "id": "N_measles",
+    "short_name": "Measles students vaccinated",
+    "long_name": "Number of students up to date for measles vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for measles vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for measles vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for measles vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_measles": {
+    "id": "rate_measles",
+    "short_name": "Measles coverage",
+    "long_name": "Proportion of students up to date for measles vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for measles vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for measles vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Measles vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_mumps": {
+    "id": "N_mumps",
+    "short_name": "Mumps students vaccinated",
+    "long_name": "Number of students up to date for mumps vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for mumps vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for mumps vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for mumps vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_mumps": {
+    "id": "rate_mumps",
+    "short_name": "Mumps coverage",
+    "long_name": "Proportion of students up to date for mumps vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for mumps vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for mumps vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Mumps vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_rubella": {
+    "id": "N_rubella",
+    "short_name": "Rubella students vaccinated",
+    "long_name": "Number of students up to date for rubella vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for rubella vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for rubella vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for rubella vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_rubella": {
+    "id": "rate_rubella",
+    "short_name": "Rubella coverage",
+    "long_name": "Proportion of students up to date for rubella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for rubella vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for rubella vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for Rubella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_dt_exempt": {
+    "id": "N_dt_exempt",
+    "short_name": "DT exemptions (count)",
+    "long_name": "Number of students exempt from diphtheria-tetanus (DT/DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the diphtheria-tetanus (DT/DTaP) vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the diphtheria-tetanus (DT/DTaP) series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from diphtheria-tetanus (DT/DTaP) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_dt_exempt": {
+    "id": "rate_dt_exempt",
+    "short_name": "diphtheria-tetanus (DT/DTaP) exemption rate",
+    "long_name": "Proportion of students exempt from diphtheria-tetanus (DT/DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the diphtheria-tetanus (DT/DTaP) vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the diphtheria-tetanus (DT/DTaP) series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from diphtheria-tetanus (DT/DTaP) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_pertussis_exempt": {
+    "id": "N_pertussis_exempt",
+    "short_name": "Pertussis exemptions (count)",
+    "long_name": "Number of students exempt from pertussis vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the pertussis vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the pertussis series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from pertussis vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_pertussis_exempt": {
+    "id": "rate_pertussis_exempt",
+    "short_name": "pertussis exemption rate",
+    "long_name": "Proportion of students exempt from pertussis vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the pertussis vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the pertussis series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from pertussis vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_polio_exempt": {
+    "id": "N_polio_exempt",
+    "short_name": "Polio exemptions (count)",
+    "long_name": "Number of students exempt from polio vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the polio vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the polio series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from polio vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_exempt": {
+    "id": "rate_polio_exempt",
+    "short_name": "polio exemption rate",
+    "long_name": "Proportion of students exempt from polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the polio vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the polio series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_mmr_exempt": {
+    "id": "N_mmr_exempt",
+    "short_name": "MMR exemptions",
+    "long_name": "Number of students with a measles-mumps-rubella (MMR) exemption",
+    "category": "immunization",
+    "short_description": "Students exempted from the measles-mumps-rubella (MMR) requirement.",
+    "long_description": "Count of students with an exemption from the measles-mumps-rubella (MMR) requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+    "statement": "In {location}, {value} students had a measles-mumps-rubella (MMR) exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_exempt": {
+    "id": "rate_mmr_exempt",
+    "short_name": "MMR exemption rate",
+    "long_name": "Proportion of students exempt from MMR vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the MMR vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the MMR series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b_exempt": {
+    "id": "N_hep_b_exempt",
+    "short_name": "Hepatitis B exemptions (count)",
+    "long_name": "Number of students exempt from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the hepatitis B vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the hepatitis B series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from hepatitis B vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_exempt": {
+    "id": "rate_hep_b_exempt",
+    "short_name": "hepatitis B exemption rate",
+    "long_name": "Proportion of students exempt from hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the hepatitis B vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the hepatitis B series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_varicella_exempt": {
+    "id": "N_varicella_exempt",
+    "short_name": "Varicella exemptions",
+    "long_name": "Number of students with a varicella exemption",
+    "category": "immunization",
+    "short_description": "Students exempted from the varicella requirement.",
+    "long_description": "Count of students with an exemption from the varicella requirement. Published without an enrollment denominator, so no rate is derived. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students. West Virginia additionally reports a grade stratum \"all, permanent\": the number of permanent medical exemptions in force in that year across all grades. Those rows are a standing count rather than a per-year addition, and must not be added to the kindergarten, 7th- and 12th-grade rows, which they partly duplicate.",
+    "statement": "In {location}, {value} students had a varicella exemption.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_exempt": {
+    "id": "rate_varicella_exempt",
+    "short_name": "varicella exemption rate",
+    "long_name": "Proportion of students exempt from varicella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the varicella vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the varicella series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from varicella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_diphtheria_exempt": {
+    "id": "N_diphtheria_exempt",
+    "short_name": "Diphtheria exemptions (count)",
+    "long_name": "Number of students exempt from diphtheria vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the diphtheria vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the diphtheria series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from diphtheria vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_diphtheria_exempt": {
+    "id": "rate_diphtheria_exempt",
+    "short_name": "diphtheria exemption rate",
+    "long_name": "Proportion of students exempt from diphtheria vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the diphtheria vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the diphtheria series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from diphtheria vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_tetanus_exempt": {
+    "id": "N_tetanus_exempt",
+    "short_name": "Tetanus exemptions (count)",
+    "long_name": "Number of students exempt from tetanus vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the tetanus vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the tetanus series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from tetanus vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_tetanus_exempt": {
+    "id": "rate_tetanus_exempt",
+    "short_name": "tetanus exemption rate",
+    "long_name": "Proportion of students exempt from tetanus vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the tetanus vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the tetanus series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from tetanus vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_measles_exempt": {
+    "id": "N_measles_exempt",
+    "short_name": "Measles exemptions (count)",
+    "long_name": "Number of students exempt from measles vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the measles vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the measles series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from measles vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_measles_exempt": {
+    "id": "rate_measles_exempt",
+    "short_name": "measles exemption rate",
+    "long_name": "Proportion of students exempt from measles vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the measles vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the measles series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from measles vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_mumps_exempt": {
+    "id": "N_mumps_exempt",
+    "short_name": "Mumps exemptions (count)",
+    "long_name": "Number of students exempt from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the mumps vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the mumps series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from mumps vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_mumps_exempt": {
+    "id": "rate_mumps_exempt",
+    "short_name": "mumps exemption rate",
+    "long_name": "Proportion of students exempt from mumps vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the mumps vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the mumps series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from mumps vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_rubella_exempt": {
+    "id": "N_rubella_exempt",
+    "short_name": "Rubella exemptions (count)",
+    "long_name": "Number of students exempt from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students with an exemption of any kind from the rubella vaccination requirement.",
+    "long_description": "Count of assessed school students holding an exemption of any kind from the rubella series. A student exempt from more than one vaccine is counted once per vaccine, so these counts do not sum to a number of exempt students.",
+    "statement": "In {location}, {value} school students were exempt from rubella vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_rubella_exempt": {
+    "id": "rate_rubella_exempt",
+    "short_name": "rubella exemption rate",
+    "long_name": "Proportion of students exempt from rubella vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students with any exemption from the rubella vaccination requirement.",
+    "long_description": "Share of assessed school students holding an exemption of any kind from the rubella series. This is an exemption rate, not a coverage rate: a student without an exemption is not necessarily vaccinated, and an exempt student may still have received the vaccine, so it cannot be subtracted from one to obtain coverage.",
+    "statement": "In {location}, {value} of school students were exempt from rubella vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_dt_incomplete": {
+    "id": "N_dt_incomplete",
+    "short_name": "DT incomplete (count)",
+    "long_name": "Number of students with incomplete diphtheria-tetanus (DT/DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students neither up to date for diphtheria-tetanus (DT/DTaP) vaccination nor exempt from it.",
+    "long_description": "Count of assessed school students out of compliance with the diphtheria-tetanus (DT/DTaP) requirement: not up to date and holding no exemption.",
+    "statement": "In {location}, {value} school students had incomplete diphtheria-tetanus (DT/DTaP) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_dt_incomplete": {
+    "id": "rate_dt_incomplete",
+    "short_name": "DT incomplete rate",
+    "long_name": "Proportion of students with incomplete diphtheria-tetanus (DT/DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students neither up to date for diphtheria-tetanus (DT/DTaP) vaccination nor exempt from it.",
+    "long_description": "Share of assessed school students out of compliance with the diphtheria-tetanus (DT/DTaP) requirement: not up to date and holding no exemption. It is not one minus coverage, because an exempt student counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students had incomplete diphtheria-tetanus (DT/DTaP) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_pertussis_incomplete": {
+    "id": "N_pertussis_incomplete",
+    "short_name": "Pertussis incomplete (count)",
+    "long_name": "Number of students with incomplete pertussis vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students neither up to date for pertussis vaccination nor exempt from it.",
+    "long_description": "Count of assessed school students out of compliance with the pertussis requirement: not up to date and holding no exemption.",
+    "statement": "In {location}, {value} school students had incomplete pertussis vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_pertussis_incomplete": {
+    "id": "rate_pertussis_incomplete",
+    "short_name": "Pertussis incomplete rate",
+    "long_name": "Proportion of students with incomplete pertussis vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students neither up to date for pertussis vaccination nor exempt from it.",
+    "long_description": "Share of assessed school students out of compliance with the pertussis requirement: not up to date and holding no exemption. It is not one minus coverage, because an exempt student counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students had incomplete pertussis vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_polio_incomplete": {
+    "id": "N_polio_incomplete",
+    "short_name": "Polio incomplete (count)",
+    "long_name": "Number of students with incomplete polio vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students neither up to date for polio vaccination nor exempt from it.",
+    "long_description": "Count of assessed school students out of compliance with the polio requirement: not up to date and holding no exemption.",
+    "statement": "In {location}, {value} school students had incomplete polio vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_polio_incomplete": {
+    "id": "rate_polio_incomplete",
+    "short_name": "Polio incomplete rate",
+    "long_name": "Proportion of students with incomplete polio vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students neither up to date for polio vaccination nor exempt from it.",
+    "long_description": "Share of assessed school students out of compliance with the polio requirement: not up to date and holding no exemption. It is not one minus coverage, because an exempt student counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students had incomplete polio vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_mmr_incomplete": {
+    "id": "N_mmr_incomplete",
+    "short_name": "MMR incomplete (count)",
+    "long_name": "Number of students with incomplete measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students neither up to date for measles-mumps-rubella (MMR) vaccination nor exempt from it.",
+    "long_description": "Count of assessed school students out of compliance with the measles-mumps-rubella (MMR) requirement: not up to date and holding no exemption.",
+    "statement": "In {location}, {value} school students had incomplete measles-mumps-rubella (MMR) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr_incomplete": {
+    "id": "rate_mmr_incomplete",
+    "short_name": "MMR incomplete rate",
+    "long_name": "Proportion of students with incomplete measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students neither up to date for measles-mumps-rubella (MMR) vaccination nor exempt from it.",
+    "long_description": "Share of assessed school students out of compliance with the measles-mumps-rubella (MMR) requirement: not up to date and holding no exemption. It is not one minus coverage, because an exempt student counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students had incomplete measles-mumps-rubella (MMR) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_hep_b_incomplete": {
+    "id": "N_hep_b_incomplete",
+    "short_name": "Hepatitis B incomplete (count)",
+    "long_name": "Number of students with incomplete hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students neither up to date for hepatitis B vaccination nor exempt from it.",
+    "long_description": "Count of assessed school students out of compliance with the hepatitis B requirement: not up to date and holding no exemption.",
+    "statement": "In {location}, {value} school students had incomplete hepatitis B vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_hep_b_incomplete": {
+    "id": "rate_hep_b_incomplete",
+    "short_name": "Hepatitis B incomplete rate",
+    "long_name": "Proportion of students with incomplete hepatitis B vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students neither up to date for hepatitis B vaccination nor exempt from it.",
+    "long_description": "Share of assessed school students out of compliance with the hepatitis B requirement: not up to date and holding no exemption. It is not one minus coverage, because an exempt student counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students had incomplete hepatitis B vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_varicella_incomplete": {
+    "id": "N_varicella_incomplete",
+    "short_name": "Varicella incomplete (count)",
+    "long_name": "Number of students with incomplete varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students neither up to date for varicella (chickenpox) vaccination nor exempt from it.",
+    "long_description": "Count of assessed school students out of compliance with the varicella (chickenpox) requirement: not up to date and holding no exemption.",
+    "statement": "In {location}, {value} school students had incomplete varicella (chickenpox) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_varicella_incomplete": {
+    "id": "rate_varicella_incomplete",
+    "short_name": "Varicella incomplete rate",
+    "long_name": "Proportion of students with incomplete varicella (chickenpox) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students neither up to date for varicella (chickenpox) vaccination nor exempt from it.",
+    "long_description": "Share of assessed school students out of compliance with the varicella (chickenpox) requirement: not up to date and holding no exemption. It is not one minus coverage, because an exempt student counts as compliant while unvaccinated.",
+    "statement": "In {location}, {value} of school students had incomplete varicella (chickenpox) vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_dt": {
+    "id": "N_dt",
+    "short_name": "DT students vaccinated",
+    "long_name": "Number of students up to date for diphtheria-tetanus (DT/DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for diphtheria-tetanus (DT/DTaP) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for diphtheria-tetanus (DT/DTaP) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for diphtheria-tetanus (DT/DTaP) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_dt": {
+    "id": "rate_dt",
+    "short_name": "DT coverage",
+    "long_name": "Proportion of students up to date for diphtheria-tetanus (DT/DTaP) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus (DT/DTaP) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus (DT/DTaP) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for DT vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "N_mmr": {
+    "id": "N_mmr",
+    "short_name": "MMR students vaccinated",
+    "long_name": "Number of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Number of assessed school students up to date for measles-mumps-rubella (MMR) vaccination.",
+    "long_description": "Count of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination. Reported by some states and left missing where the source publishes only percentages.",
+    "statement": "In {location}, {value} school students were up to date for measles-mumps-rubella (MMR) vaccination.",
+    "measure_type": "Count",
+    "unit": "Students",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "rate_mmr": {
+    "id": "rate_mmr",
+    "short_name": "MMR coverage",
+    "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+    "category": "immunization",
+    "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+    "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+    "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+    "measure_type": "Rate",
+    "unit": "Rate",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
+  "flag_complete": {
+    "id": "flag_complete",
+    "short_name": "Up-to-date rate - censoring flag",
+    "long_name": "Why rate_complete carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_complete was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_complete. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_complete was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "wa_school_immunization"
+      }
+    ]
+  },
   "_sources": {
     "wa_school_immunization": {
       "name": "Washington School Immunization Data",
@@ -194,6 +1265,21 @@
       "organization_url": "https://doh.wa.gov/",
       "description": "County-level school immunization coverage and exemption data, including religious membership exemptions, from the WA DOH school immunization reports.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level school immunization coverage and exemption data, including religious membership exemptions, from the WA DOH school immunization reports.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "County, state rows (see the type column), by grade, by school year",
+      "data_districts.csv.gz": "One row per school district",
+      "data_schools_2014_2016.csv.gz": "One row per school, 2014-15 to 2016-17 (data.wa.gov datasets)"
     }
   }
 }

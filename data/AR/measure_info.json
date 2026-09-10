@@ -5,7 +5,7 @@
     "long_name": "Number of students with any vaccination exemption",
     "category": "immunization",
     "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Arkansas publishes only this combined total, per school district; medical, religious and philosophical exemptions are not reported separately.",
+    "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
     "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
     "measure_type": "Count",
     "unit": "Students",
@@ -22,7 +22,7 @@
     "long_name": "Proportion of students with any vaccination exemption",
     "category": "immunization",
     "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-    "long_description": "Share of assessed school students with at least one vaccination exemption of any type. Computed as the district's exemption count over its total student count, both taken from the same workbook row, and equal to the percentage Arkansas publishes in that row.",
+    "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
     "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
     "measure_type": "Rate",
     "unit": "Rate",
@@ -39,7 +39,7 @@
     "long_name": "Number of students enrolled",
     "category": "immunization",
     "short_description": "Number of students enrolled at the reporting level.",
-    "long_description": "Total student count reported by the source for the school district. Used as the denominator for the exemption rate in the same record.",
+    "long_description": "Enrollment count reported by the source. Used as the denominator for the coverage and exemption percentages in the same record.",
     "statement": "In {location}, {value} students were enrolled.",
     "measure_type": "Count",
     "unit": "Students",
@@ -52,12 +52,25 @@
   },
   "_sources": {
     "ar_school_immunization": {
-      "name": "Arkansas School Immunization Exemptions by School District",
+      "name": "Arkansas School Immunization Data",
       "url": "https://healthy.arkansas.gov/programs-services/community-family-child-health/immunizations/",
       "organization": "Arkansas Department of Health",
       "organization_url": "https://healthy.arkansas.gov/",
-      "description": "School vaccination exemptions from the Arkansas Department of Health's Act 676 of 2019 report, a single workbook covering school years 2013-14 through 2024-25. Rows are the 263 public school districts and open-enrollment charters; columns are school years, each giving the district's exemption count, total student count, and exemption percentage. Records here are one per school district per school year, as published - 3,055 in total. All grades are combined; the source reports no per-grade, per-antigen, or per-exemption-type breakdown, and does not cover private or home-schooled students. Cells reading 'N/A' (a district or charter not operating that year) carry neither a count nor an enrollment and are omitted rather than written as zero, which accounts for 101 of the 3,156 district-years. Each record carries the county FIPS taken from the LEA code, whose first two digits are Arkansas's county number in alphabetical order and therefore in county FIPS order; this attributes a district wholly to the county of its administrative office, so a county aggregate covers the districts administered from that county rather than every pupil resident in it, and the few districts that straddle a county line are counted on one side only. The two earliest years are not comparable to the rest: the statewide exemption rate is 0.13% for 2013-14 and 0.16% for 2014-15, then jumps to 1.29% for 2015-16 and rises steadily thereafter, which reflects a change in what the state collected rather than a tenfold change in exemptions.",
+      "description": "County-level school immunization and exemption data from the Arkansas Department of Health.",
       "restrictions": "Public data published by the source agency; no access restrictions."
+    }
+  },
+  "_catalog": {
+    "summary": "County-level school immunization and exemption data from the Arkansas Department of Health.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per school district, by grade, by school year"
     }
   }
 }

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "vdh_sis_workbook",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://www.vdh.virginia.gov/immunization/datamanagement/sisreports/",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/VA_*.xlsx",
+    "publish_month": 3,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Student Immunization Survey exemption counts by school, tabulated from VDH reports. The SIS reports page has only a step-by-step guide PDF and an embedded exemption dashboard; no file.",
+    "last_check_time": "2026-09-09 14:16:56",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

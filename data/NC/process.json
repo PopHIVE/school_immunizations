@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/NC/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/North Carolina Vaccine Exemption.xlsx": "e1d896afbf727145c294fbdda7f0dba4"
   },
-  "script_hash": "08c9a529b181001ef5bb58f3097068e7",
+  "script_hash": "0b0f01d03ffd8ddc570869b3f97c293c",
   "standard_state": {
-    "./data/NC/measure_info.json": "542680a7c581776c9639791ef6db2f7d",
-    "./data/NC/standard/data.csv.gz": "4e1bc0c98f3ed212f32c1a5b62c37d08"
+    "./data/NC/measure_info.json": "6cabec2cf71470ab97ff71ac3861febf",
+    "./data/NC/standard/data.csv.gz": "595fa37fa8bad5adb0cebc3fcddaef32"
   }
 }

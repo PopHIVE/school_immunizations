@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/NJ/raw/NJ_13-14.csv": {
       "data": "not_compressed"
@@ -70,9 +70,9 @@
     "raw/NJ_23-24.csv": "3c242bdfee2f60a31433685dc9c9b767",
     "raw/NJ_24-25.csv": "6ae0b2bc63f1ee3451d3693b2c45d688"
   },
-  "script_hash": "00dbb9059fc9305e578c7621da160b16",
+  "script_hash": "d6f8e9c4e551446c24aaf278f10103cd",
   "standard_state": {
-    "./data/NJ/measure_info.json": "d26d11cb93760a3db1a05103b035ccba",
+    "./data/NJ/measure_info.json": "b07dd11568611acbca37164ca440ac7e",
     "./data/NJ/standard/data.csv.gz": "c10bae3762fe65730af1a752d65c44dd"
   }
 }

@@ -6,34 +6,34 @@ library(vroom)
 library(readr)
 library(purrr)
 source("../../resources/rate_scale.R")
+source("../../resources/fetch.R")
+
+sources <- read_sources()
+src <- source_entry(sources, "padoh_county_surveys")
+process <- dcf::dcf_process_record()
+prev <- process$fetch_state
 
 # ---- Download county survey files from PA DOH ----
-# The immunization "rates" page links per-year workbooks; the county files
-# contain "County" in the name (statewide "...for Pa..." / "...State..." files
-# do not). Scrape and download them so the series self-updates.
-options(HTTPUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120 Safari/537.36")
+# The immunization "rates" page links per-year workbooks. Only the by-county
+# ones are wanted; the statewide "Summary for Pa" / "SurveySummaryState"
+# workbooks on the same page are excluded (matched against the %20-encoded
+# URL, case-insensitively, so "for PA" and "for Pa" both go). Files are .xls
+# (2023-24 on) and .xlsx (earlier); fetch_file() validates either by opening
+# it. A year's workbook does not change once posted, so files already in raw/
+# are skipped, and a listing that cannot be fetched is a warning: raw/ is
+# committed and the run continues on it. pa.gov keeps this file list inside a
+# JSON attribute rather than plain anchors; discover_links() scans for that.
 dir.create("raw", showWarnings = FALSE)
-local({
-  pa_page <- "https://www.pa.gov/agencies/health/programs/immunizations/rates"
-  pa_host <- "https://www.pa.gov"
-  tmp <- tempfile(fileext = ".html")
-  if (tryCatch({ download.file(pa_page, tmp, quiet = TRUE); TRUE }, error = function(e) FALSE)) {
-    html <- paste(readLines(tmp, warn = FALSE), collapse = "\n")
-    hrefs <- unlist(str_extract_all(html, 'href="[^"]*\\.(?:xlsx|xls)"'))
-    hrefs <- str_replace_all(hrefs, 'href="|"$', "")
-    hrefs <- unique(hrefs[str_detect(hrefs, regex("county", ignore_case = TRUE))])
-    for (h in hrefs) {
-      url <- if (grepl("^http", h)) h else paste0(pa_host, h)
-      dest <- file.path("raw", utils::URLdecode(basename(h)))
-      try(download.file(url, dest, mode = "wb", quiet = TRUE), silent = TRUE)
-    }
-  }
-})
+links <- discover_links(src$page_url, src$pattern,
+                        exclude = "for%20Pa|SurveySummaryState",
+                        must_find = FALSE)
+recs <- fetch_many(links$url,
+  dest_fn = function(u) file.path("raw", utils::URLdecode(basename(u))),
+  if_exists = "skip", previous = prev
+)
+process <- record_fetch(process, recs)
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", recursive = TRUE, full.names = TRUE
-)))
-process <- dcf::dcf_process_record()
+raw_state <- raw_state_md5()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 
 if (!identical(process$raw_state, raw_state) ||
@@ -358,9 +358,11 @@ if (!identical(process$raw_state, raw_state) ||
       total_enrolled
     )
 
-  write_standard(data_out, "Pennsylvania", "./standard/data.csv.gz", from = "percent")
+  out <- write_standard(data_out, "Pennsylvania", "./standard/data.csv.gz", from = "percent")
+  update_latest_year(latest_school_year(out))
 
   process$raw_state <- raw_state
   process$script_hash <- script_hash
   dcf::dcf_process_record(updated = process)
 }
+commit_fetch_state(process)

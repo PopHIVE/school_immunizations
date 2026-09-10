@@ -713,6 +713,210 @@
       }
     ]
   },
+  "flag_polio": {
+    "id": "flag_polio",
+    "short_name": "Polio coverage - censoring flag",
+    "long_name": "Why rate_polio carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_polio was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_polio. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_polio was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_dtap": {
+    "id": "flag_dtap",
+    "short_name": "DTaP/Tdap coverage - censoring flag",
+    "long_name": "Why rate_dtap carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_dtap was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_dtap. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_dtap was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_mmr": {
+    "id": "flag_mmr",
+    "short_name": "MMR coverage - censoring flag",
+    "long_name": "Why rate_mmr carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_mmr was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_mmr. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_mmr was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_hep_b": {
+    "id": "flag_hep_b",
+    "short_name": "Hepatitis B coverage - censoring flag",
+    "long_name": "Why rate_hep_b carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_hep_b was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_hep_b. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_hep_b was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_varicella": {
+    "id": "flag_varicella",
+    "short_name": "Varicella coverage - censoring flag",
+    "long_name": "Why rate_varicella carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_varicella was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_varicella. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_varicella was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_hep_a": {
+    "id": "flag_hep_a",
+    "short_name": "Hepatitis A coverage - censoring flag",
+    "long_name": "Why rate_hep_a carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_hep_a was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_hep_a. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_hep_a was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_menacwy": {
+    "id": "flag_menacwy",
+    "short_name": "Meningococcal (MenACWY) coverage - censoring flag",
+    "long_name": "Why rate_menacwy carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_menacwy was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_menacwy. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_menacwy was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_tdap": {
+    "id": "flag_tdap",
+    "short_name": "Tdap coverage - censoring flag",
+    "long_name": "Why rate_tdap carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_tdap was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_tdap. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_tdap was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_all_required": {
+    "id": "flag_all_required",
+    "short_name": "All-required coverage - censoring flag",
+    "long_name": "Why rate_all_required carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_all_required was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_all_required. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_all_required was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_all_required_religious_exempt": {
+    "id": "flag_all_required_religious_exempt",
+    "short_name": "All-required religious exemption rate - censoring flag",
+    "long_name": "Why rate_all_required_religious_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_all_required_religious_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_all_required_religious_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_all_required_religious_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_all_required_medical_exempt": {
+    "id": "flag_all_required_medical_exempt",
+    "short_name": "All-required medical exemption rate - censoring flag",
+    "long_name": "Why rate_all_required_medical_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_all_required_medical_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_all_required_medical_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_all_required_medical_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
+  "flag_all_required_full_exempt": {
+    "id": "flag_all_required_full_exempt",
+    "short_name": "All-required total exemption rate - censoring flag",
+    "long_name": "Why rate_all_required_full_exempt carries no value on this row",
+    "category": "immunization",
+    "short_description": "Whether rate_all_required_full_exempt was published as a number, suppressed, not reported, or censored at a bound.",
+    "long_description": "Per-measure companion to rate_all_required_full_exempt. BLANK means the source printed a figure and nothing is censored -- only the exceptions carry text. \"suppressed\" means the source withheld the cell to protect a small count (an asterisk run: \"*\", \"**\", \"***\"). \"missing\" means it was not reported at all (\"N/A\", \"--\", \"NR\"). \"top_coded\" means the source printed an upper bound such as \">95%\" instead of a figure, so the true value lies ABOVE the bound; the rate column holds the bound the source printed, not a substitute invented for it, so it must be read as interval-censored rather than as a measurement. \"bottom_coded\" is the same the other way (\"<5\"). \"suppressed\" and \"missing\" both leave the rate empty but are not the same thing: a suppressed cell has a real measurement behind it that the state chose not to print, whereas a missing one was never collected.",
+    "statement": "In {location}, rate_all_required_full_exempt was {value}.",
+    "measure_type": "Category",
+    "unit": "Category",
+    "time_resolution": "Year",
+    "sources": [
+      {
+        "id": "ct_school_immunization"
+      }
+    ]
+  },
   "_sources": {
     "ct_school_immunization": {
       "name": "Connecticut School Immunization and Exemption Rates",
@@ -721,6 +925,24 @@
       "organization_url": "https://portal.ct.gov/dph",
       "description": "Two DPH sources on one (school year x county x grade) key. CT Open Data (Socrata) dataset 8kid-pp5k gives, for grades Pre-K / K / 7th and ten vaccine series, enrolment plus that series' coverage, religious and medical exemption and non-compliance rates; a crosswalk handles the 2022+ county-to-planning-region transition. DPH's all-grades exemption workbook (CT Vaccine Exemptions 2017-2025) adds religious, medical and total exemption rates across every grade, by traditional county, for 2017-18 .. 2024-25; those rows carry no enrolment and no coverage, and are the only all-grades figures CT publishes.",
       "restrictions": "Public data published by the source agency; no access restrictions. The all-grades workbook is a manual download with no API. Two impossible source values are dropped to NA by the ingest, which names them: a misplaced decimal in 2025-26 Northwest Hills 7th-grade HepA compliance, and 2012-13 Windham Pre-K enrolment, filed with the statewide figure. The 2024-25 7th-grade statewide row is short of the sum of its planning regions, as DPH published it."
+    }
+  },
+  "_catalog": {
+    "summary": "Two DPH sources on one (school year x county x grade) key. CT Open Data (Socrata) dataset 8kid-pp5k gives, for grades Pre-K / K / 7th and ten vaccine series, enrolment plus that series' coverage, religious and medical exemption and non-compliance rates; a crosswalk handles.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year",
+      "data_7th.csv.gz": "7th grade cohort only",
+      "data_all_grades.csv.gz": "All grades combined",
+      "data_k.csv.gz": "Kindergarten cohort only",
+      "data_pre_k.csv.gz": "Pre-kindergarten cohort only",
+      "data_schools.csv.gz": "One row per school"
     }
   }
 }

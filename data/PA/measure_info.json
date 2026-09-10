@@ -297,5 +297,18 @@
       "description": "County-level immunization and exemption data from the annual PA DOH 'by County' school immunization survey workbooks (kindergarten, 7th, and 12th grade).",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "County-level immunization and exemption data from the annual PA DOH 'by County' school immunization survey workbooks (kindergarten, 7th, and 12th grade).",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per county, by grade, by school year"
+    }
   }
 }

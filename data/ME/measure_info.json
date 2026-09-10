@@ -229,5 +229,18 @@
       "description": "School-level kindergarten, 7th- and 12th-grade coverage and exemption data from the Maine CDC 'School Vaccination Rates' workbooks.",
       "restrictions": "Public data published by the source agency; no access restrictions."
     }
+  },
+  "_catalog": {
+    "summary": "School-level kindergarten, 7th- and 12th-grade coverage and exemption data from the Maine CDC 'School Vaccination Rates' workbooks.",
+    "search_terms": [
+      "Childhood immunizations",
+      "Measles",
+      "School vaccination",
+      "Vaccine exemptions"
+    ],
+    "bucket": [],
+    "files": {
+      "data.csv.gz": "One row per school, by grade, by school year"
+    }
   }
 }

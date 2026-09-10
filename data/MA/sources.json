@@ -1,0 +1,38 @@
+[
+  {
+    "id": "mass_gov_current",
+    "access": "index_page",
+    "url": null,
+    "page_url": "https://www.mass.gov/info-details/school-immunizations",
+    "pattern": "/doc/.*(kindergarten|grade-7).*by-county.*/download",
+    "type": "xlsx",
+    "dest_glob": "raw/MA_*_by_county_*.xlsx",
+    "publish_month": 4,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": false,
+    "notes": "By-county kindergarten and grade 7 workbooks. mass.gov sits behind a WAF that blocks datacenter IPs; new years are fetched from a workstation.",
+    "last_check_time": "2026-09-09 14:14:28",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "mass_gov_archive",
+    "access": "index_page",
+    "url": null,
+    "page_url": "https://www.mass.gov/info-details/archive-of-school-immunization-data-and-exemption-rates",
+    "pattern": "/doc/.*(kindergarten|grade-7).*by-county.*/download",
+    "type": "xlsx",
+    "dest_glob": "raw/MA_*_by_county_*.xlsx",
+    "publish_month": 4,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": false,
+    "notes": "Archive of prior years.",
+    "last_check_time": "2026-09-09 14:14:49",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

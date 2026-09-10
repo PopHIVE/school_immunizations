@@ -9,29 +9,33 @@
   },
   "resources": [
     {
-      "bytes": 4496,
-      "encoding": "windows-1252",
-      "md5": "622f203da9a17602076a833488621923",
+      "bytes": 4518,
+      "encoding": "ISO-8859-1",
+      "md5": "2b8b9e273e785de7f670918d9b6a2dec",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
           "08f01de9d938477d2cc751299507ab78ed156e13"
         ],
         "author": [
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
           "Fri Feb 27 14:28:02 2026 -0500"
         ],
         "message": [
+          "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
           "standardization for FL, NV, RI, VA"
@@ -47,8 +51,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-08-05 09:48:12.876852",
-      "last_modified": "2026-08-25 14:47:37.608839",
+      "created": "2026-09-09 10:09:07.259988",
+      "last_modified": "2026-09-09 10:09:07.259988",
       "vintage": {},
       "row_count": 272,
       "entity_count": 17,
@@ -85,27 +89,12 @@
             "duplicates": 255,
             "info": [],
             "time_range": [0, 15],
-            "type": "string",
+            "type": "integer",
             "missing": 0,
-            "table": {
-              "32001": 16,
-              "32003": 16,
-              "32005": 16,
-              "32007": 16,
-              "32009": 16,
-              "32011": 16,
-              "32013": 16,
-              "32015": 16,
-              "32017": 16,
-              "32019": 16,
-              "32021": 16,
-              "32023": 16,
-              "32027": 16,
-              "32029": 16,
-              "32031": 16,
-              "32033": 16,
-              "32510": 16
-            }
+            "mean": 32045.529412,
+            "sd": 116.727894,
+            "min": 32001,
+            "max": 32510
           },
           {
             "name": "geography_name",
@@ -182,7 +171,7 @@
               "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
               "category": "immunization",
               "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports. A value of 0 is a reported zero (no exemptions of this kind that year), not a placeholder for missing data. The source stopped breaking exemptions out by category starting with the 2023-24 school year, so this field is NA for 2023-24 and 2024-25; see rate_mmr_religious_exempt for the MMR-specific series, which the source still publishes for those years.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
               "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -210,7 +199,7 @@
               "long_name": "Proportion of students with a medical vaccination exemption",
               "category": "immunization",
               "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
-              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey. The source stopped breaking exemptions out by category starting with the 2023-24 school year, so this field is NA for 2023-24 and 2024-25; see rate_mmr_medical_exempt for the MMR-specific series, which the source still publishes for those years.",
+              "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
               "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -238,7 +227,8 @@
               "long_name": "Proportion of students with a medical exemption from MMR vaccination",
               "category": "immunization",
               "short_description": "Proportion of assessed school students with a medical exemption from the MMR vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the MMR series specifically, as reported in the state's annual school immunization survey. A value of 0 is a reported zero (no MMR medical exemptions that year), not a placeholder for missing data. The source began collecting MMR-specific exemption data at the start of the 2016-17 school year, so this field is NA for 2009-10 through 2015-16.",
+              "long_description": "Share of assessed school students holding a medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from MMR vaccination.",
               "measure_type": "Rate",
               "unit": "Rate",
               "time_resolution": "Year",
@@ -265,7 +255,7 @@
               "long_name": "Proportion of students with a religious exemption from MMR vaccination",
               "category": "immunization",
               "short_description": "Proportion of assessed school students with a religious exemption from the MMR vaccination requirement.",
-              "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically, as reported in the state's annual school immunization survey. A value of 0 is a reported zero (no MMR religious exemptions that year), not a placeholder for missing data. The source began collecting MMR-specific exemption data at the start of the 2016-17 school year, so this field is NA for 2009-10 through 2015-16.",
+              "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically. An exemption rate, not a coverage rate.",
               "statement": "In {location}, {value} of school students had a religious exemption from MMR vaccination.",
               "measure_type": "Rate",
               "unit": "Rate",
@@ -286,7 +276,7 @@
           }
         ]
       },
-      "sha512": "a2a6d11f9eca40f68ee44b0958694f98d3c65bb4a8be415c094148732bb32d9479d34f8899f6b559ae9ecafd98e5b17ade57d0b3cb18af569ff666c8a4efaff0"
+      "sha512": "b8a55bf3fd765c096f963018a7c8df8f55431e45ae0e10063bd6a95e8e8ffee11fdb770f557f0f19653844542356eb2348179cd172f3ec5ab9cf270fcb163649"
     }
   ],
   "measure_info": {
@@ -313,7 +303,7 @@
       "long_name": "Proportion of students with a non-medical (personal-belief) vaccination exemption",
       "category": "immunization",
       "short_description": "Proportion of assessed school students with a non-medical exemption (religious, philosophical, or personal-belief) from vaccination requirements.",
-      "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports. A value of 0 is a reported zero (no exemptions of this kind that year), not a placeholder for missing data. The source stopped breaking exemptions out by category starting with the 2023-24 school year, so this field is NA for 2023-24 and 2024-25; see rate_mmr_religious_exempt for the MMR-specific series, which the source still publishes for those years.",
+      "long_description": "Share of assessed school students holding a non-medical exemption from one or more required vaccines. The exemption categories permitted differ by state law - some allow religious exemptions only, others also allow philosophical or personal-belief exemptions - and this harmonized field aggregates whichever non-medical categories the state reports.",
       "statement": "In {location}, {value} of school students had a non-medical vaccination exemption.",
       "measure_type": "Rate",
       "unit": "Rate",
@@ -330,7 +320,7 @@
       "long_name": "Proportion of students with a medical vaccination exemption",
       "category": "immunization",
       "short_description": "Proportion of assessed school students with a medical exemption from one or more required vaccines.",
-      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey. The source stopped breaking exemptions out by category starting with the 2023-24 school year, so this field is NA for 2023-24 and 2024-25; see rate_mmr_medical_exempt for the MMR-specific series, which the source still publishes for those years.",
+      "long_description": "Share of assessed school students with a physician-certified medical exemption from one or more required vaccines, as reported in the state's annual school immunization survey.",
       "statement": "In {location}, {value} of school students had a medical vaccination exemption.",
       "measure_type": "Rate",
       "unit": "Rate",
@@ -347,7 +337,8 @@
       "long_name": "Proportion of students with a medical exemption from MMR vaccination",
       "category": "immunization",
       "short_description": "Proportion of assessed school students with a medical exemption from the MMR vaccination requirement.",
-      "long_description": "Share of assessed school students holding a medical exemption from the MMR series specifically, as reported in the state's annual school immunization survey. A value of 0 is a reported zero (no MMR medical exemptions that year), not a placeholder for missing data. The source began collecting MMR-specific exemption data at the start of the 2016-17 school year, so this field is NA for 2009-10 through 2015-16.",
+      "long_description": "Share of assessed school students holding a medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
+      "statement": "In {location}, {value} of school students had a medical exemption from MMR vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
       "time_resolution": "Year",
@@ -363,7 +354,7 @@
       "long_name": "Proportion of students with a religious exemption from MMR vaccination",
       "category": "immunization",
       "short_description": "Proportion of assessed school students with a religious exemption from the MMR vaccination requirement.",
-      "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically, as reported in the state's annual school immunization survey. A value of 0 is a reported zero (no MMR religious exemptions that year), not a placeholder for missing data. The source began collecting MMR-specific exemption data at the start of the 2016-17 school year, so this field is NA for 2009-10 through 2015-16.",
+      "long_description": "Share of assessed school students holding a religious exemption from the MMR series specifically. An exemption rate, not a coverage rate.",
       "statement": "In {location}, {value} of school students had a religious exemption from MMR vaccination.",
       "measure_type": "Rate",
       "unit": "Rate",
@@ -384,6 +375,20 @@
         "restrictions": "Public data published by the source agency; no access restrictions."
       },
       "id": "_sources"
+    },
+    "_catalog": {
+      "summary": "County-level school immunization coverage from the Nevada DPBH; the MMR series is consistent with CDC SchoolVaxView.",
+      "search_terms": [
+        "Childhood immunizations",
+        "Measles",
+        "School vaccination",
+        "Vaccine exemptions"
+      ],
+      "bucket": [],
+      "files": {
+        "data.csv.gz": "One row per county, by grade, by school year"
+      },
+      "id": "_catalog"
     }
   },
   "change_report": {

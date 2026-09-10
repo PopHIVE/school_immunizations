@@ -1,0 +1,38 @@
+[
+  {
+    "id": "flhealthcharts_kindergarten",
+    "access": "report_viewer",
+    "url": "https://www.flhealthcharts.gov/ChartsDashboards/rdPage.aspx?rdReport=NonVitalIndNoGrp.TenYrsRpt&cid=75",
+    "page_url": "https://www.flhealthcharts.gov/ChartsDashboards/rdPage.aspx?rdReport=NonVitalIndNoGrp.Dataviewer&cid=75",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/FL_kindergarten_*.xlsx",
+    "publish_month": 4,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2025,
+    "ci_reachable": true,
+    "notes": "Kindergarten immunization levels by county, exported as NativeExcel from the FLHealthCHARTS report viewer, ten years per request.",
+    "last_check_time": "2026-09-09 14:14:02",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  },
+  {
+    "id": "scraped_exemptions",
+    "access": "manual",
+    "url": null,
+    "page_url": null,
+    "pattern": null,
+    "type": "csv",
+    "dest_glob": "raw/Florida Vaccine Exemption Data (Scraped)/*.csv",
+    "publish_month": null,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Religious exemption counts by county scraped from a tract-level map; single year (2024-25), no public file.",
+    "last_check_time": "2026-09-09 14:14:02",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

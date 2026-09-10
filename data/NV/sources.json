@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dpbh_mmr_workbook",
+    "access": "request",
+    "url": null,
+    "page_url": "https://www.dpbh.nv.gov/programs/immunizations/school-and-child-care-immunizations/",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": 6,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Kindergarten MMR and exemption series obtained by request; the DPBH Power BI dashboard has no export.",
+    "last_check_time": "2026-09-09 14:14:54",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

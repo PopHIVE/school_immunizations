@@ -5,25 +5,36 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:01",
+      "last_run": "2026-09-08 15:09:35",
       "frequency": 0,
-      "run_time": 0.75,
+      "run_time": 3.035,
       "last_status": {
         "log": [
-          "── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──",
-          "✔ dplyr     1.2.1     ✔ readr     2.2.0",
-          "✔ forcats   1.0.1     ✔ stringr   1.6.0",
-          "✔ ggplot2   4.0.3     ✔ tibble    3.3.1",
-          "✔ lubridate 1.9.5     ✔ tidyr     1.3.2",
-          "✔ purrr     1.2.2     ",
-          "── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──",
-          "✖ dplyr::filter() masks stats::filter()",
-          "✖ dplyr::lag()    masks stats::lag()",
-          "ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors",
           "",
-          "Attaching package: 'vroom'",
+          "Attaching package: 'dplyr'",
           "",
-          "The following objects are masked from 'package:readr':",
+          "The following objects are masked from 'package:stats':",
+          "",
+          "    filter, lag",
+          "",
+          "The following objects are masked from 'package:base':",
+          "",
+          "    intersect, setdiff, setequal, union",
+          "",
+          "Registered S3 methods overwritten by 'readr':",
+          "  method                    from ",
+          "  as.data.frame.spec_tbl_df vroom",
+          "  as_tibble.spec_tbl_df     vroom",
+          "  format.col_spec           vroom",
+          "  print.col_spec            vroom",
+          "  print.collector           vroom",
+          "  print.date_names          vroom",
+          "  print.locale              vroom",
+          "  str.col_spec              vroom",
+          "",
+          "Attaching package: 'readr'",
+          "",
+          "The following objects are masked from 'package:vroom':",
           "",
           "    as.col_spec, col_character, col_date, col_datetime, col_double,",
           "    col_factor, col_guess, col_integer, col_logical, col_number,",
@@ -31,26 +42,112 @@
           "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
           "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
           "    problems, spec",
-          ""
+          "",
+          "fetch: fetched https://www.alabamapublichealth.gov/immunization/school-entry-survey.html (46,307 bytes)",
+          "AL survey PDFs: 8 file(s): 0 updated, 0 unchanged, 8 skipped, 0 failed",
+          "AL 2020schoolsurvey_county.pdf: BALDWIN printed on 2 lines; counts summed",
+          "AL: 548 survey PDF rows (536 county, 12 state) for 7 school years; 1020 workbook rows for 5 school years"
         ],
         "success": true
       }
     }
   ],
-  "checked": "2026-08-25 15:29:05",
+  "checked": "2026-09-09 10:11:02",
   "check_results": {
     "data/AL/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: grade"]
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade", "missing_info: school_type", "missing_info: source"]
     }
   },
   "raw_state": {
+    "raw/2014-2015schoolentrysurvey_web1.pdf": "028579ec49552e0a230305739c9d9983",
+    "raw/2015-2016schoolsurvey_web.pdf": "c18e51e3d7a2144bf044638dd5439ad3",
+    "raw/2016_2017_schoolsurvey.pdf": "22298767bd2c5dfd7fd3e889898333e2",
+    "raw/2017-2018schoolsurvey.pdf": "a3f2c5071fe887ac5c43e91d9dee273e",
+    "raw/2018-2019schoolsurvey.pdf": "edc39158ab1759383f73760e935f537c",
+    "raw/2019-2020schoolsurvey_county.pdf": "3f0627f6588a77c0329d984b2739ee63",
+    "raw/2020schoolsurvey_county.pdf": "9c6dd40f525c268e59c19b6aa13e2016",
+    "raw/2020schoolsurvey_kindergartenandcounty.pdf": "778f6bc061bda577e62972fd0c294f23",
     "raw/Kindergarten school exemptions 2021-2025 (2).xlsx": "55cd6ba3880ffc410a84f90f78540145",
     "raw/Ninth grade school exemptions 2021-2025.xlsx": "27f3bc40a9a2a767ee95e86b2ddc32a4",
     "raw/Seventh grade school exemptions 2021-2025 (2).xlsx": "b8b7a3e51dcb3b6bdc0a191bf85e0607"
   },
-  "script_hash": "a5604b1827c659ffac349cea32324125",
+  "script_hash": "115f0ac37c30379b676ff4aa298c8d6a",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AL/measure_info.json": "ad764a87c54216ede15d7c7308873816",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/AL/standard/data.csv.gz": "e7683d9dd2d0ee0092f0a78f1d60f4f7"
+    "./data/AL/measure_info.json": "c9682843d0cd5ab6c379c2e711ea38ea",
+    "./data/AL/standard/data.csv.gz": "2582681bb6c3a0f66d7e8e96eecf77b2"
+  },
+  "fetch_state": {
+    "raw/2020schoolsurvey_county.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2020schoolsurvey_county.pdf",
+      "dest": "raw/2020schoolsurvey_county.pdf",
+      "status": "skipped",
+      "bytes": 429117,
+      "sha256": "39ea20beb66ff2103301c26476f849ad0d95a3f33c81c0315d851a36db40f982",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    },
+    "raw/2020schoolsurvey_kindergartenandcounty.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2020schoolsurvey_kindergartenandcounty.pdf",
+      "dest": "raw/2020schoolsurvey_kindergartenandcounty.pdf",
+      "status": "skipped",
+      "bytes": 376166,
+      "sha256": "913f7cff622220c66c940ec849414646e18c9a20317c1435a3f0ad6723ba6320",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    },
+    "raw/2019-2020schoolsurvey_county.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2019-2020schoolsurvey_county.pdf",
+      "dest": "raw/2019-2020schoolsurvey_county.pdf",
+      "status": "skipped",
+      "bytes": 76128,
+      "sha256": "7240ae606aeb185df0189aa66a621f9717cb6a88477b2bad08f847f53a3f5034",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    },
+    "raw/2018-2019schoolsurvey.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2018-2019schoolsurvey.pdf",
+      "dest": "raw/2018-2019schoolsurvey.pdf",
+      "status": "skipped",
+      "bytes": 640754,
+      "sha256": "62629a8b1638e6a547e40b2bdbe24a6227ac48bbba4df4d6bc6a30c91c1e0822",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    },
+    "raw/2017-2018schoolsurvey.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2017-2018schoolsurvey.pdf",
+      "dest": "raw/2017-2018schoolsurvey.pdf",
+      "status": "skipped",
+      "bytes": 375394,
+      "sha256": "e9b08a1cb8303971391fe74c1d0daaf61e3867069653c7d982d7387b96343921",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    },
+    "raw/2016_2017_schoolsurvey.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2016_2017_schoolsurvey.pdf",
+      "dest": "raw/2016_2017_schoolsurvey.pdf",
+      "status": "skipped",
+      "bytes": 110592,
+      "sha256": "0a75c73ff74f3e791e6b4f0dcef9d9e2ad346aa9607c9a5d1e3b18b3a8465fe3",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    },
+    "raw/2015-2016schoolsurvey_web.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2015-2016schoolsurvey_web.pdf",
+      "dest": "raw/2015-2016schoolsurvey_web.pdf",
+      "status": "skipped",
+      "bytes": 338967,
+      "sha256": "c48c5498524b01c0ca4ed46c8ba89297b81db742e00b7f4a8100df0d1ceb2e8e",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    },
+    "raw/2014-2015schoolentrysurvey_web1.pdf": {
+      "url": "https://www.alabamapublichealth.gov/immunization/assets/2014-2015schoolentrysurvey_web1.pdf",
+      "dest": "raw/2014-2015schoolentrysurvey_web1.pdf",
+      "status": "skipped",
+      "bytes": 265785,
+      "sha256": "b2493d2e6ea6165dbf54838a041499e5b2166c9b6d3478fce36dcf4694826a22",
+      "fetched_at": "2026-09-08 19:14:54",
+      "attempts": 0
+    }
   }
 }

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dphhs_reports",
+    "access": "manual",
+    "url": null,
+    "page_url": "https://dphhs.mt.gov/publichealth/immunization/childcareandschoolresources",
+    "pattern": null,
+    "type": "xlsx",
+    "dest_glob": "raw/*.xlsx",
+    "publish_month": null,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Collection ended after 2018-19 under HB 334 (2021). Last report 2020.",
+    "last_check_time": "2026-09-09 14:14:54",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

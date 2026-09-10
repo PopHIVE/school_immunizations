@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/MO/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/Missouri Vaccine Exemption.xlsx": "9565b3436b2ed9eb15225c4fefcf94b4"
   },
-  "script_hash": "2ea7ac82aa11e1e8940a5497b3cf07ca",
+  "script_hash": "80f7842d17fdb5693fc61ae44d9d1e8d",
   "standard_state": {
-    "./data/MO/measure_info.json": "6a89250155f0ce10223934dcd668e4aa",
-    "./data/MO/standard/data.csv.gz": "a01fbf747e0bea4aacd6f9be4dc6b2c9"
+    "./data/MO/measure_info.json": "e531955fb083f571fb04af798383fe2c",
+    "./data/MO/standard/data.csv.gz": "f25f02e9733b5ab8888f61c5be4b986d"
   }
 }

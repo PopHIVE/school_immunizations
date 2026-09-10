@@ -1,0 +1,20 @@
+[
+  {
+    "id": "padoh_county_surveys",
+    "access": "index_page",
+    "url": null,
+    "page_url": "https://www.pa.gov/agencies/health/programs/immunizations/rates",
+    "pattern": "Summary.*by.*County.*\\.xlsx?",
+    "type": "xlsx",
+    "dest_glob": "raw/*County*.xls*",
+    "publish_month": 7,
+    "publish_lag_years": 1,
+    "latest_year_ingested": 2025,
+    "ci_reachable": true,
+    "notes": "School Immunization Survey Summary by County workbooks per school year (.xls from 2023-24, .xlsx before). The page also links statewide 'Summary for Pa' / 'SurveySummaryState' workbooks and PDFs of everything; the pattern selects the by-county workbooks only. The file list sits inside a JSON attribute on the page, not plain anchors, and the page loads recaptcha/api.js; discover_links() handles both.",
+    "last_check_time": "2026-09-09 14:15:15",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]

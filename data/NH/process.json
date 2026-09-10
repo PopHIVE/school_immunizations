@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/NH/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -28,9 +28,9 @@
     "raw/2023-2024 New Hampshire Vaccine Exemption (1).xlsx": "7818b0302ee5f8f79de2a4efaabbc683",
     "raw/2024-2025 New Hampshire Exemption (1).xlsx": "d1286426efcad10108a75b7bb11f06d0"
   },
-  "script_hash": "a281656774c55124a4de24eb103fe69c",
+  "script_hash": "2df22e0805e36f856cfedd9cb7637cb5",
   "standard_state": {
-    "./data/NH/measure_info.json": "24c06f799e255783e803f649ae39bea2",
-    "./data/NH/standard/data.csv.gz": "b6b5a06957dbc1959d4de79accdf99ce"
+    "./data/NH/measure_info.json": "0390edea37ea51cd3039457cddb3c3b5",
+    "./data/NH/standard/data.csv.gz": "4463b558fd4c34d9f53731925df90010"
   }
 }

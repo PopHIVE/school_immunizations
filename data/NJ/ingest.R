@@ -7,10 +7,21 @@ library(vroom)
 source("../../resources/rate_scale.R")
 source("../../resources/school_year.R")
 source("../../resources/county_fips.R")
+source("../../resources/fetch.R")
 
-raw_state <- as.list(tools::md5sum(list.files(
-  "raw", "csv", recursive = TRUE, full.names = TRUE
-)))
+# =============================================================================
+# NJ - Medical exemptions by county and grade, 2013-14 to 2024-25
+#
+# Parsed: raw/NJ_13-14.csv to raw/NJ_24-25.csv, medical exemption tables by
+# county and grade converted by hand from the NJDOH annual immunization
+# status reports (nj.gov/health/cd/statistics/imm-status-reports/).
+#
+# Not parsed: the status-report dashboard that replaced the reports in 2025.
+# Its page links only a methodology PDF, and the per-year document
+# directories are not listable, so the yearly PDFs cannot be discovered.
+# =============================================================================
+
+raw_state <- raw_state_md5(pattern = "csv")
 process <- dcf::dcf_process_record()
 script_hash <- as.character(tools::md5sum("ingest.R"))
 

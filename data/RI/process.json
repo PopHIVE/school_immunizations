@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-08-25 15:29:06",
+  "checked": "2026-09-09 10:11:03",
   "check_results": {
     "data/RI/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -23,9 +23,9 @@
   "raw_state": {
     "raw/RI_RE rates_Yale_Aug 2025 (1).xlsx": "6ecfd014943cedbc3c5c4b90e83dbaeb"
   },
-  "script_hash": "0a188b7d57c5470cb3d5f9c6d8062638",
+  "script_hash": "bfb5b93d074c7e99eafe68353847d536",
   "standard_state": {
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/RI/measure_info.json": "7ba157b45a9f0be5e22fc453bd06e199",
-    "C:/Users/as5325/Desktop/repos/school_immunizations/data/RI/standard/data.csv.gz": "e19cc31b63275824b11445c6220b722e"
+    "./data/RI/measure_info.json": "26b9055846f7f5a3c985676d4982e1d2",
+    "./data/RI/standard/data.csv.gz": "e1a43500ad732196743f16a8cf327b0b"
   }
 }

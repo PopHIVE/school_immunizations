@@ -1,0 +1,20 @@
+[
+  {
+    "id": "oeps_foia_workbook",
+    "access": "request",
+    "url": null,
+    "page_url": "https://oeps.wv.gov/immunizations/Pages/school_coverage_rates.aspx",
+    "pattern": null,
+    "type": "xls",
+    "dest_glob": "raw/*.xls",
+    "publish_month": 9,
+    "publish_lag_years": 1,
+    "latest_year_ingested": null,
+    "ci_reachable": true,
+    "notes": "Exemption counts by vaccine and county obtained by public records request.",
+    "last_check_time": "2026-09-09 14:17:00",
+    "last_check_ok": true,
+    "last_fetch_time": null,
+    "last_fetch_ok": null
+  }
+]
