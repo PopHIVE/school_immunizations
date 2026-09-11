@@ -9,45 +9,17 @@
   },
   "resources": [
     {
-      "bytes": 70136,
-      "encoding": "ISO-8859-1",
-      "md5": "266974a3a7b750cca29d0e685658193e",
+      "bytes": 140306,
+      "encoding": "windows-1252",
+      "md5": "009fd201802f3888730c850045700d8f",
       "format": "csv",
-      "name": "data.csv",
-      "filename": "data.csv.gz",
+      "name": "data_districts.csv",
+      "filename": "data_districts.csv.gz",
       "versions": {
-        "hash": [
-          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
-          "55abea59c2ccfafe4782b83208e9af4f499a3482",
-          "219bd702153d8be0ba951c5d08031bd30aeb1942",
-          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
-          "dc26589b9abf9358696c7245dabb3bd7be4e6f72",
-          "5ece9a0635db3e3c5de2493036d3e1bc0fe811b1"
-        ],
-        "author": [
-          "anshap32 <73296024+anshap32@users.noreply.github.com>",
-          "cawerin <aiwenc@andrew.cmu.edu>",
-          "cawerin <aiwenc@andrew.cmu.edu>",
-          "cawerin <aiwenc@andrew.cmu.edu>",
-          "cawerin <aiwenc@andrew.cmu.edu>",
-          "weinbergerlab <dweinber@gmail.com>"
-        ],
-        "date": [
-          "Wed Aug 26 09:31:25 2026 -0400",
-          "Thu Jun 25 18:12:59 2026 -0400",
-          "Sun May 3 01:46:59 2026 -0400",
-          "Thu Feb 26 07:14:11 2026 -0500",
-          "Thu Feb 5 00:17:25 2026 -0500",
-          "Fri Jul 24 14:54:29 2026 -0400"
-        ],
-        "message": [
-          "Update ingests to use APIs",
-          "standardize variable names & created mega sheet for all counties",
-          "aggregation first attempt",
-          "standardize HI and round data to 2 decimal points",
-          "mass standardization",
-          "Rewire NY, CO, CA ingest to pull from official APIs"
-        ]
+        "hash": ["5207764b5c9d0f60fddd369d25ad0edf2ba494de"],
+        "author": ["Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>"],
+        "date": ["Thu Sep 10 16:16:56 2026 -0400"],
+        "message": ["Rework source fetching, add PDF parsing and new state sources (#11)"]
       },
       "source": [],
       "data_format": "wide",
@@ -59,1176 +31,8 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-09-09 09:59:58.899305",
-      "last_modified": "2026-09-09 09:59:58.899305",
-      "vintage": {},
-      "row_count": 1743,
-      "entity_count": 65,
-      "schema": {
-        "fields": [
-          {
-            "name": "time",
-            "duplicates": 1734,
-            "info": [],
-            "time_range": [6, 7],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2017-09-01": 194,
-              "2018-09-01": 187,
-              "2019-09-01": 195,
-              "2020-09-01": 195,
-              "2021-09-01": 194,
-              "2022-09-01": 195,
-              "2023-09-01": 195,
-              "2024-09-01": 193,
-              "2025-09-01": 195
-            }
-          },
-          {
-            "name": "grade",
-            "duplicates": 1740,
-            "info": [],
-            "time_range": [6, 7],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Child Care/Preschool": 580,
-              "Kindergarten": 582,
-              "School": 581
-            }
-          },
-          {
-            "name": "geography",
-            "duplicates": 1678,
-            "info": [],
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 0,
-            "mean": 7937.438325,
-            "sd": 995.588704,
-            "min": 8,
-            "max": 8125
-          },
-          {
-            "name": "geography_name",
-            "duplicates": 1678,
-            "info": [],
-            "time_range": [6, 7],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Adams": 27,
-              "Alamosa": 27,
-              "Arapahoe": 27,
-              "Archuleta": 27,
-              "Baca": 27,
-              "Bent": 27,
-              "Boulder": 27,
-              "Broomfield": 27,
-              "Chaffee": 27,
-              "Cheyenne": 27,
-              "Clear Creek": 27,
-              "Colorado": 27,
-              "Conejos": 27,
-              "Costilla": 27,
-              "Crowley": 26,
-              "Custer": 25,
-              "Delta": 27,
-              "Denver": 27,
-              "Dolores": 27,
-              "Douglas": 27,
-              "Eagle": 27,
-              "El Paso": 27,
-              "Elbert": 27,
-              "Fremont": 27,
-              "Garfield": 27,
-              "Gilpin": 27,
-              "Grand": 27,
-              "Gunnison": 27,
-              "Hinsdale": 27,
-              "Huerfano": 27,
-              "Jackson": 23,
-              "Jefferson": 27,
-              "Kiowa": 27,
-              "Kit Carson": 27,
-              "La Plata": 27,
-              "Lake": 27,
-              "Larimer": 27,
-              "Las Animas": 27,
-              "Lincoln": 27,
-              "Logan": 27,
-              "Mesa": 27,
-              "Mineral": 27,
-              "Moffat": 25,
-              "Montezuma": 27,
-              "Montrose": 27,
-              "Morgan": 27,
-              "Otero": 27,
-              "Ouray": 27,
-              "Park": 27,
-              "Phillips": 27,
-              "Pitkin": 27,
-              "Prowers": 27,
-              "Pueblo": 27,
-              "Rio Blanco": 27,
-              "Rio Grande": 27,
-              "Routt": 27,
-              "Saguache": 27,
-              "San Juan": 24,
-              "San Miguel": 27,
-              "Sedgwick": 27,
-              "Summit": 27,
-              "Teller": 27,
-              "Washington": 27,
-              "Weld": 27,
-              "Yuma": 27
-            }
-          },
-          {
-            "name": "type",
-            "duplicates": 1741,
-            "info": [],
-            "time_range": [6, 7],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "county": 1716,
-              "state": 27
-            }
-          },
-          {
-            "name": "rate_mmr",
-            "duplicates": 1478,
-            "info": {
-              "id": "rate_mmr",
-              "short_name": "MMR coverage",
-              "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.907271,
-            "sd": 0.07134,
-            "min": 0.2,
-            "max": 1
-          },
-          {
-            "name": "rate_mmr_medical_exempt",
-            "duplicates": 1708,
-            "info": {
-              "id": "rate_mmr_medical_exempt",
-              "short_name": "MMR medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from MMR vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the MMR vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from MMR vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.001885,
-            "sd": 0.011187,
-            "min": 0,
-            "max": 0.343
-          },
-          {
-            "name": "rate_mmr_nonmedical_exempt",
-            "duplicates": 1552,
-            "info": {
-              "id": "rate_mmr_nonmedical_exempt",
-              "short_name": "MMR non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from MMR vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the MMR vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from MMR vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.049745,
-            "sd": 0.050444,
-            "min": 0,
-            "max": 0.429
-          },
-          {
-            "name": "rate_dtap",
-            "duplicates": 1477,
-            "info": {
-              "id": "rate_dtap",
-              "short_name": "DTaP/Tdap coverage",
-              "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.905628,
-            "sd": 0.069589,
-            "min": 0.4,
-            "max": 1
-          },
-          {
-            "name": "rate_dtap_medical_exempt",
-            "duplicates": 1709,
-            "info": {
-              "id": "rate_dtap_medical_exempt",
-              "short_name": "DTaP medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from DTaP vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the DTaP vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from DTaP vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.00169,
-            "sd": 0.0112,
-            "min": 0,
-            "max": 0.343
-          },
-          {
-            "name": "rate_dtap_nonmedical_exempt",
-            "duplicates": 1552,
-            "info": {
-              "id": "rate_dtap_nonmedical_exempt",
-              "short_name": "DTaP non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from DTaP vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the DTaP vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from DTaP vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.04874,
-            "sd": 0.049404,
-            "min": 0,
-            "max": 0.429
-          },
-          {
-            "name": "rate_tdap",
-            "duplicates": 1526,
-            "info": {
-              "id": "rate_tdap",
-              "short_name": "Tdap coverage",
-              "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1162,
-            "mean": 0.886762,
-            "sd": 0.082471,
-            "min": 0.356,
-            "max": 1
-          },
-          {
-            "name": "rate_tdap_medical_exempt",
-            "duplicates": 1728,
-            "info": {
-              "id": "rate_tdap_medical_exempt",
-              "short_name": "Tdap medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from Tdap vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the Tdap vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from Tdap vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1162,
-            "mean": 0.001401,
-            "sd": 0.004587,
-            "min": 0,
-            "max": 0.095
-          },
-          {
-            "name": "rate_tdap_nonmedical_exempt",
-            "duplicates": 1608,
-            "info": {
-              "id": "rate_tdap_nonmedical_exempt",
-              "short_name": "Tdap non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from Tdap vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the Tdap vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from Tdap vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1162,
-            "mean": 0.047759,
-            "sd": 0.055284,
-            "min": 0,
-            "max": 0.511
-          },
-          {
-            "name": "rate_polio",
-            "duplicates": 1471,
-            "info": {
-              "id": "rate_polio",
-              "short_name": "Polio coverage",
-              "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.906287,
-            "sd": 0.070205,
-            "min": 0.4,
-            "max": 1
-          },
-          {
-            "name": "rate_polio_medical_exempt",
-            "duplicates": 1710,
-            "info": {
-              "id": "rate_polio_medical_exempt",
-              "short_name": "polio medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from polio vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the polio vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from polio vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.00161,
-            "sd": 0.011029,
-            "min": 0,
-            "max": 0.343
-          },
-          {
-            "name": "rate_polio_nonmedical_exempt",
-            "duplicates": 1551,
-            "info": {
-              "id": "rate_polio_nonmedical_exempt",
-              "short_name": "polio non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from polio vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the polio vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from polio vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.050366,
-            "sd": 0.050774,
-            "min": 0,
-            "max": 0.429
-          },
-          {
-            "name": "rate_hep_b",
-            "duplicates": 1502,
-            "info": {
-              "id": "rate_hep_b",
-              "short_name": "Hepatitis B coverage",
-              "long_name": "Proportion of students up to date for hepatitis B vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.918904,
-            "sd": 0.062337,
-            "min": 0.333,
-            "max": 1
-          },
-          {
-            "name": "rate_hep_b_medical_exempt",
-            "duplicates": 1710,
-            "info": {
-              "id": "rate_hep_b_medical_exempt",
-              "short_name": "hepatitis B medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from hepatitis B vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from hepatitis B vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.001628,
-            "sd": 0.01101,
-            "min": 0,
-            "max": 0.343
-          },
-          {
-            "name": "rate_hep_b_nonmedical_exempt",
-            "duplicates": 1554,
-            "info": {
-              "id": "rate_hep_b_nonmedical_exempt",
-              "short_name": "hepatitis B non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from hepatitis B vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the hepatitis B vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from hepatitis B vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.049482,
-            "sd": 0.051804,
-            "min": 0,
-            "max": 0.667
-          },
-          {
-            "name": "rate_varicella",
-            "duplicates": 1458,
-            "info": {
-              "id": "rate_varicella",
-              "short_name": "Varicella coverage",
-              "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.898843,
-            "sd": 0.074781,
-            "min": 0.2,
-            "max": 1
-          },
-          {
-            "name": "rate_varicella_medical_exempt",
-            "duplicates": 1703,
-            "info": {
-              "id": "rate_varicella_medical_exempt",
-              "short_name": "varicella medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from varicella vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the varicella vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from varicella vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.002358,
-            "sd": 0.011503,
-            "min": 0,
-            "max": 0.343
-          },
-          {
-            "name": "rate_varicella_nonmedical_exempt",
-            "duplicates": 1540,
-            "info": {
-              "id": "rate_varicella_nonmedical_exempt",
-              "short_name": "varicella non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from varicella vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the varicella vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from varicella vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.053377,
-            "sd": 0.054557,
-            "min": 0,
-            "max": 0.667
-          },
-          {
-            "name": "rate_hib",
-            "duplicates": 1574,
-            "info": {
-              "id": "rate_hib",
-              "short_name": "Hib coverage",
-              "long_name": "Proportion of students up to date for Haemophilus influenzae type b (Hib) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for Haemophilus influenzae type b (Hib) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for Haemophilus influenzae type b (Hib) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for Hib vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1163,
-            "mean": 0.924731,
-            "sd": 0.054503,
-            "min": 0.579,
-            "max": 1
-          },
-          {
-            "name": "rate_hib_medical_exempt",
-            "duplicates": 1714,
-            "info": {
-              "id": "rate_hib_medical_exempt",
-              "short_name": "Hib medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from Hib vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the Hib vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from Hib vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1163,
-            "mean": 0.002245,
-            "sd": 0.015463,
-            "min": 0,
-            "max": 0.343
-          },
-          {
-            "name": "rate_hib_nonmedical_exempt",
-            "duplicates": 1620,
-            "info": {
-              "id": "rate_hib_nonmedical_exempt",
-              "short_name": "Hib non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from Hib vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the Hib vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from Hib vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1163,
-            "mean": 0.041212,
-            "sd": 0.039872,
-            "min": 0,
-            "max": 0.375
-          },
-          {
-            "name": "rate_pcv",
-            "duplicates": 1571,
-            "info": {
-              "id": "rate_pcv",
-              "short_name": "Pneumococcal (PCV) coverage",
-              "long_name": "Proportion of students up to date for pneumococcal conjugate (PCV) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for pneumococcal conjugate (PCV) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for pneumococcal conjugate (PCV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for pneumococcal (PCV) vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1163,
-            "mean": 0.923378,
-            "sd": 0.057674,
-            "min": 0.579,
-            "max": 1
-          },
-          {
-            "name": "rate_pcv_medical_exempt",
-            "duplicates": 1715,
-            "info": {
-              "id": "rate_pcv_medical_exempt",
-              "short_name": "pneumococcal (PCV) medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from pneumococcal (PCV) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the pneumococcal (PCV) vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from pneumococcal (PCV) vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1163,
-            "mean": 0.002174,
-            "sd": 0.015318,
-            "min": 0,
-            "max": 0.343
-          },
-          {
-            "name": "rate_pcv_nonmedical_exempt",
-            "duplicates": 1621,
-            "info": {
-              "id": "rate_pcv_nonmedical_exempt",
-              "short_name": "pneumococcal (PCV) non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from pneumococcal (PCV) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the pneumococcal (PCV) vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from pneumococcal (PCV) vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "float",
-            "missing": 1163,
-            "mean": 0.041645,
-            "sd": 0.042408,
-            "min": 0,
-            "max": 0.375
-          },
-          {
-            "name": "rate_covid",
-            "duplicates": 1721,
-            "info": {
-              "id": "rate_covid",
-              "short_name": "COVID-19 coverage",
-              "long_name": "Proportion of students up to date for COVID-19 vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for COVID-19 vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for COVID-19 vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for COVID-19 vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [3, 5],
-            "type": "float",
-            "missing": 1704,
-            "mean": 0.058179,
-            "sd": 0.158718,
-            "min": 0,
-            "max": 0.824
-          },
-          {
-            "name": "rate_covid_medical_exempt",
-            "duplicates": 1741,
-            "info": {
-              "id": "rate_covid_medical_exempt",
-              "short_name": "COVID-19 medical exemption rate",
-              "long_name": "Proportion of students with a medical exemption from COVID-19 vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a medical exemption from the COVID-19 vaccination requirement.",
-              "long_description": "Share of assessed school students holding a medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a medical exemption from COVID-19 vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [3, 5],
-            "type": "integer",
-            "missing": 1704,
-            "mean": 0,
-            "sd": 0,
-            "min": 0,
-            "max": 0
-          },
-          {
-            "name": "rate_covid_nonmedical_exempt",
-            "duplicates": 1741,
-            "info": {
-              "id": "rate_covid_nonmedical_exempt",
-              "short_name": "COVID-19 non-medical exemption rate",
-              "long_name": "Proportion of students with a non-medical exemption from COVID-19 vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with a non-medical exemption from the COVID-19 vaccination requirement.",
-              "long_description": "Share of assessed school students holding a non-medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
-              "statement": "In {location}, {value} of school students had a non-medical exemption from COVID-19 vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [3, 5],
-            "type": "integer",
-            "missing": 1704,
-            "mean": 0,
-            "sd": 0,
-            "min": 0,
-            "max": 0
-          },
-          {
-            "name": "N_mmr_enrolled",
-            "duplicates": 658,
-            "info": {
-              "id": "N_mmr_enrolled",
-              "short_name": "MMR enrollment",
-              "long_name": "Number of students enrolled in the grades where measles-mumps-rubella (MMR) is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the measles-mumps-rubella (MMR) percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the measles-mumps-rubella (MMR) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where measles-mumps-rubella (MMR) is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 0,
-            "mean": 10588.304647,
-            "sd": 64625.828393,
-            "min": 2,
-            "max": 899626
-          },
-          {
-            "name": "N_dtap_enrolled",
-            "duplicates": 658,
-            "info": {
-              "id": "N_dtap_enrolled",
-              "short_name": "DTaP enrollment",
-              "long_name": "Number of students enrolled in the grades where diphtheria-tetanus-pertussis (DTaP) is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the diphtheria-tetanus-pertussis (DTaP) percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the diphtheria-tetanus-pertussis (DTaP) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where diphtheria-tetanus-pertussis (DTaP) is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 0,
-            "mean": 10588.304647,
-            "sd": 64625.828393,
-            "min": 2,
-            "max": 899626
-          },
-          {
-            "name": "N_tdap_enrolled",
-            "duplicates": 1219,
-            "info": {
-              "id": "N_tdap_enrolled",
-              "short_name": "Tdap enrollment",
-              "long_name": "Number of students enrolled in the grades where tetanus-diphtheria-pertussis (Tdap) is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the tetanus-diphtheria-pertussis (Tdap) percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the tetanus-diphtheria-pertussis (Tdap) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where tetanus-diphtheria-pertussis (Tdap) is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 1162,
-            "mean": 15017.621343,
-            "sd": 61167.503345,
-            "min": 29,
-            "max": 495607
-          },
-          {
-            "name": "N_polio_enrolled",
-            "duplicates": 658,
-            "info": {
-              "id": "N_polio_enrolled",
-              "short_name": "Polio enrollment",
-              "long_name": "Number of students enrolled in the grades where poliovirus is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the poliovirus percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the poliovirus requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where poliovirus is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 0,
-            "mean": 10588.304647,
-            "sd": 64625.828393,
-            "min": 2,
-            "max": 899626
-          },
-          {
-            "name": "N_hep_b_enrolled",
-            "duplicates": 658,
-            "info": {
-              "id": "N_hep_b_enrolled",
-              "short_name": "Hepatitis B enrollment",
-              "long_name": "Number of students enrolled in the grades where hepatitis B is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the hepatitis B percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the hepatitis B requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where hepatitis B is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 0,
-            "mean": 10588.304647,
-            "sd": 64625.828393,
-            "min": 2,
-            "max": 899626
-          },
-          {
-            "name": "N_varicella_enrolled",
-            "duplicates": 658,
-            "info": {
-              "id": "N_varicella_enrolled",
-              "short_name": "Varicella enrollment",
-              "long_name": "Number of students enrolled in the grades where varicella is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the varicella percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the varicella requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where varicella is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 0,
-            "mean": 10588.304647,
-            "sd": 64625.828393,
-            "min": 2,
-            "max": 899626
-          },
-          {
-            "name": "N_hib_enrolled",
-            "duplicates": 1327,
-            "info": {
-              "id": "N_hib_enrolled",
-              "short_name": "Hib enrollment",
-              "long_name": "Number of students enrolled in the grades where Haemophilus influenzae type b (Hib) is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the Haemophilus influenzae type b (Hib) percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the Haemophilus influenzae type b (Hib) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where Haemophilus influenzae type b (Hib) is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 1163,
-            "mean": 2970.27931,
-            "sd": 12094.799529,
-            "min": 11,
-            "max": 108348
-          },
-          {
-            "name": "N_pcv_enrolled",
-            "duplicates": 1327,
-            "info": {
-              "id": "N_pcv_enrolled",
-              "short_name": "Pneumococcal (PCV) enrollment",
-              "long_name": "Number of students enrolled in the grades where pneumococcal conjugate (PCV) is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the pneumococcal conjugate (PCV) percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the pneumococcal conjugate (PCV) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where pneumococcal conjugate (PCV) is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [6, 7],
-            "type": "integer",
-            "missing": 1163,
-            "mean": 2970.27931,
-            "sd": 12094.799529,
-            "min": 11,
-            "max": 108348
-          },
-          {
-            "name": "N_covid_enrolled",
-            "duplicates": 1703,
-            "info": {
-              "id": "N_covid_enrolled",
-              "short_name": "COVID-19 enrollment",
-              "long_name": "Number of students enrolled in the grades where COVID-19 vaccination is required",
-              "category": "immunization",
-              "short_description": "Enrollment used as the denominator for the COVID-19 vaccination percentages.",
-              "long_description": "Count of students enrolled in the grades subject to the COVID-19 vaccination requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
-              "statement": "In {location}, {value} students were enrolled in grades where COVID-19 vaccination is required.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "co_school_immunization"
-                }
-              ]
-            },
-            "time_range": [3, 5],
-            "type": "integer",
-            "missing": 1704,
-            "mean": 31572.589744,
-            "sd": 39873.9807,
-            "min": 74,
-            "max": 119212
-          }
-        ]
-      },
-      "sha512": "e89ee7e2d57dc756472bce8904f4e4902e399178c6ddb550a0c59f86b8d25450607eaed34a2faa1ddc729424f8f1ba6d0398e83cb92807904cdec8d3249ad00f"
-    },
-    {
-      "bytes": 140306,
-      "encoding": "ISO-8859-1",
-      "md5": "009fd201802f3888730c850045700d8f",
-      "format": "csv",
-      "name": "data_districts.csv",
-      "filename": "data_districts.csv.gz",
-      "versions": {},
-      "source": [],
-      "data_format": "wide",
-      "ids": [
-        {
-          "variable": "geography"
-        }
-      ],
-      "id_length": 4,
-      "time": "time",
-      "profile": "data-resource",
-      "created": "2026-09-09 10:00:08.769911",
-      "last_modified": "2026-09-09 10:00:08.769911",
+      "created": "2026-09-11 15:14:18.912957",
+      "last_modified": "2026-09-11 15:14:18.912957",
       "vintage": {},
       "row_count": 3145,
       "entity_count": 62,
@@ -1258,12 +62,71 @@
             "duplicates": 3083,
             "info": [],
             "time_range": [0, 8],
-            "type": "integer",
+            "type": "string",
             "missing": 229,
-            "mean": 8067.609739,
-            "sd": 37.878563,
-            "min": 8001,
-            "max": 8125
+            "table": {
+              "08001": 90,
+              "08003": 34,
+              "08005": 65,
+              "08007": 18,
+              "08009": 86,
+              "08011": 30,
+              "08015": 32,
+              "08017": 36,
+              "08019": 18,
+              "08021": 47,
+              "08023": 34,
+              "08025": 18,
+              "08027": 16,
+              "08029": 18,
+              "08031": 18,
+              "08033": 18,
+              "08035": 18,
+              "08037": 18,
+              "08039": 88,
+              "08041": 269,
+              "08043": 52,
+              "08045": 39,
+              "08047": 18,
+              "08049": 36,
+              "08051": 18,
+              "08053": 18,
+              "08055": 36,
+              "08057": 16,
+              "08061": 36,
+              "08063": 86,
+              "08065": 18,
+              "08067": 47,
+              "08069": 52,
+              "08071": 103,
+              "08073": 50,
+              "08075": 66,
+              "08077": 50,
+              "08079": 18,
+              "08081": 16,
+              "08083": 50,
+              "08085": 36,
+              "08087": 59,
+              "08089": 104,
+              "08091": 34,
+              "08093": 36,
+              "08095": 33,
+              "08097": 16,
+              "08099": 72,
+              "08101": 36,
+              "08103": 36,
+              "08105": 51,
+              "08107": 54,
+              "08109": 54,
+              "08111": 16,
+              "08113": 33,
+              "08115": 36,
+              "08117": 18,
+              "08119": 36,
+              "08121": 75,
+              "08123": 217,
+              "08125": 68
+            }
           },
           {
             "name": "geography_name",
@@ -1271,7 +134,7 @@
             "info": [],
             "time_range": [0, 8],
             "type": "string",
-            "missing": 0,
+            "missing": 229,
             "table": {
               "Adams": 90,
               "Alamosa": 34,
@@ -1315,7 +178,6 @@
               "Montezuma": 50,
               "Montrose": 36,
               "Morgan": 59,
-              "NA": 229,
               "Otero": 104,
               "Ouray": 34,
               "Park": 36,
@@ -2356,12 +1218,17 @@
     },
     {
       "bytes": 1782074,
-      "encoding": "ISO-8859-1",
+      "encoding": "windows-1252",
       "md5": "45c091c95c6263aaf68549d97b7edb70",
       "format": "csv",
       "name": "data_schools.csv",
       "filename": "data_schools.csv.gz",
-      "versions": {},
+      "versions": {
+        "hash": ["5207764b5c9d0f60fddd369d25ad0edf2ba494de"],
+        "author": ["Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>"],
+        "date": ["Thu Sep 10 16:16:56 2026 -0400"],
+        "message": ["Rework source fetching, add PDF parsing and new state sources (#11)"]
+      },
       "source": [],
       "data_format": "wide",
       "ids": [
@@ -2369,11 +1236,11 @@
           "variable": "geography"
         }
       ],
-      "id_length": 4,
+      "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-09-09 10:00:07.82306",
-      "last_modified": "2026-09-09 10:00:07.82306",
+      "created": "2026-09-11 15:14:18.919957",
+      "last_modified": "2026-09-11 15:14:18.919957",
       "vintage": {},
       "row_count": 43756,
       "entity_count": 65,
@@ -2403,12 +1270,74 @@
             "duplicates": 43691,
             "info": [],
             "time_range": [0, 8],
-            "type": "integer",
+            "type": "string",
             "missing": 33,
-            "mean": 8045.35885,
-            "sd": 34.445874,
-            "min": 8001,
-            "max": 8125
+            "table": {
+              "08001": 3566,
+              "08003": 123,
+              "08005": 4331,
+              "08007": 109,
+              "08009": 146,
+              "08011": 67,
+              "08013": 3036,
+              "08014": 320,
+              "08015": 174,
+              "08017": 51,
+              "08019": 98,
+              "08021": 137,
+              "08023": 56,
+              "08025": 41,
+              "08027": 45,
+              "08029": 309,
+              "08031": 5170,
+              "08033": 47,
+              "08035": 2664,
+              "08037": 521,
+              "08039": 250,
+              "08041": 5048,
+              "08043": 277,
+              "08045": 606,
+              "08047": 33,
+              "08049": 157,
+              "08051": 134,
+              "08053": 34,
+              "08055": 92,
+              "08057": 23,
+              "08059": 4206,
+              "08061": 84,
+              "08063": 173,
+              "08065": 53,
+              "08067": 448,
+              "08069": 2540,
+              "08071": 199,
+              "08073": 93,
+              "08075": 188,
+              "08077": 1314,
+              "08079": 27,
+              "08081": 97,
+              "08083": 270,
+              "08085": 340,
+              "08087": 229,
+              "08089": 227,
+              "08091": 71,
+              "08093": 122,
+              "08095": 73,
+              "08097": 154,
+              "08099": 191,
+              "08101": 1268,
+              "08103": 96,
+              "08105": 131,
+              "08107": 280,
+              "08109": 136,
+              "08111": 24,
+              "08113": 158,
+              "08115": 79,
+              "08117": 270,
+              "08119": 185,
+              "08121": 137,
+              "08123": 2042,
+              "08125": 153
+            }
           },
           {
             "name": "geography_name",
@@ -2520,12 +1449,12 @@
               "11th Avenue Head Start": 5,
               "11th Avenue Preschool": 4,
               "27J Online School": 5,
-              "27J PRESCHOOL @ REUNION": 1,
               "27J Preschool - Brighton Learning And Resource Cen": 2,
               "27J Preschool - Brighton Learning And Resource Center": 3,
               "27J Preschool - Southeast Elementary": 5,
-              "27J Preschool @ Southeast": 3,
               "27j Preschool @ Brantner": 2,
+              "27J PRESCHOOL @ REUNION": 1,
+              "27J Preschool @ Southeast": 3,
               "27j Preschool@ Thimmig": 1,
               "4 Seasons Early Learning Center": 9,
               "5280 Early Childhood Education Center": 4,
@@ -2550,12 +1479,8 @@
               "ABC Billie Martinez": 5,
               "ABC Central Child Development Center": 8,
               "ABC Daycare Windsor": 4,
-              "ABC West Child Development Center": 6,
-              "ALLIES": 8,
-              "ASD20 - Bridges": 1,
-              "AXIS International Academy": 14,
-              "AXL Academy Preschool - Jewell Ave": 2,
               "Abc Learning Center And Preschool": 2,
+              "ABC West Child Development Center": 6,
               "Abcs Aims Cpp": 1,
               "Abcs East Cpp": 9,
               "Abcs Scott Cpp": 6,
@@ -2576,10 +1501,10 @@
               "Academy High School": 9,
               "Academy International Elementary School": 18,
               "Academy International Preschool": 3,
+              "Academy of Advanced Learning": 14,
               "Academy Of Charter Schools": 16,
               "Academy Of Urban Learning": 9,
               "Academy Online High School": 7,
-              "Academy of Advanced Learning": 14,
               "Accelerated Schools Found #1": 7,
               "Ace Community Challenge School": 1,
               "Acheive": 7,
@@ -2648,6 +1573,7 @@
               "All Souls Elc": 4,
               "Allendale Elementary School": 8,
               "Allendale Preschool": 4,
+              "ALLIES": 8,
               "Alpine Elementary Preschool": 8,
               "Alpine Elementary Preschool Academy": 1,
               "Alpine Elementary School": 18,
@@ -2662,8 +1588,8 @@
               "Altura Elementary Preschool": 8,
               "Altura Elementary School": 18,
               "Alvarium Learning Center": 1,
-              "Ambleside School": 16,
               "Ambleside at Skylark School": 2,
+              "Ambleside School": 16,
               "American Academy": 2,
               "American Academy - All Campuses": 16,
               "American Academy Kindie Prep": 1,
@@ -2733,6 +1659,7 @@
               "Ascent Classical Academy Northern Colorado": 12,
               "Ascent Classical Academy of 27J": 6,
               "Ascent Classical Academy of Grand Junction": 6,
+              "ASD20 - Bridges": 1,
               "Ashley Elementary School": 18,
               "Aspen Academy": 12,
               "Aspen Academy Preschool": 7,
@@ -2800,17 +1727,14 @@
               "Avondale Elementary": 3,
               "Avondale Elementary Preschool": 5,
               "Avondale Elementary School": 16,
+              "AXIS International Academy": 14,
               "Axis International Academy Preschool": 3,
               "Axis International Preschool": 3,
               "Axl Academy": 19,
               "Axl Academy Preschool": 5,
+              "AXL Academy Preschool - Jewell Ave": 2,
               "Ayres Elementary School": 18,
               "B F Kitchen Elementary School": 18,
-              "BOCES East": 8,
-              "BRAVE Academy": 2,
-              "BVSD - Eisenhower Preschool Enrichment": 3,
-              "BVSD Alicia Sanchez International Preschool": 5,
-              "BVSD Mesa Elementary Preschool": 1,
               "Baby Station": 3,
               "Baby Turtles Childcare": 3,
               "Back To Basics Child Care Center": 6,
@@ -2961,6 +1885,7 @@
               "Blue Sky Kids, Inc. Dba The Goddard School": 4,
               "Blue Sky Kindergarten": 2,
               "Bmh-bj Preschool": 5,
+              "BOCES East": 8,
               "Bolt Academy": 1,
               "Boltz Middle School": 9,
               "Bookcliff Christian Preschool": 1,
@@ -3005,6 +1930,7 @@
               "Branson School Online": 16,
               "Brantner Elementary Preschool": 7,
               "Brantner Elementary School": 18,
+              "BRAVE Academy": 2,
               "Breckenridge Elementary School": 18,
               "Breckenridge Montessori": 9,
               "Breckenridge Resort Childcare Centers": 2,
@@ -3019,9 +1945,10 @@
               "Briggsdale Undivided High School": 9,
               "Bright Academy": 7,
               "Bright Beginnings": 4,
-              "Bright Beginnings Learning Center": 10,
               "Bright Beginnings at Colorado Outdoors": 2,
+              "Bright Beginnings Learning Center": 10,
               "Bright Horizons At East Longmont": 7,
+              "Bright Horizons at Louisville": 1,
               "Bright Horizons At The Ranch Reserve\t Llc": 1,
               "Bright Horizons At The Ranch Reserve Llc": 1,
               "Bright Horizons At The Ranch Reserve, Llc": 6,
@@ -3043,7 +1970,6 @@
               "Bright Horizons Early Childhood Education": 4,
               "Bright Horizons Montessori @ Fiddlers Green": 5,
               "Bright Horizons Montessori At Greenwood Plaza": 5,
-              "Bright Horizons at Louisville": 1,
               "Bright Horizons/montessori @ Denver Place": 1,
               "Bright Horizons/montessori @ Fiddlers Green": 4,
               "Bright Horizons/montessori @ Greenwood Plaza": 3,
@@ -3107,12 +2033,15 @@
               "Busy Bees Preschool": 8,
               "Busy Little Hands Early Learning Center": 7,
               "Butler Early Learning Center": 1,
+              "BVSD - Eisenhower Preschool Enrichment": 3,
+              "BVSD Alicia Sanchez International Preschool": 5,
               "Bvsd Birch Preschool": 9,
               "Bvsd Caribou Mountain Preschool": 4,
               "Bvsd Columbine Preschool": 1,
               "Bvsd Ece Prrogram": 1,
               "Bvsd Emerald Preschool": 9,
               "Bvsd Heatherwood Preshool": 9,
+              "BVSD Mesa Elementary Preschool": 1,
               "Bvsd Preschool @ Douglass": 9,
               "Bvsd Preschool @ Monarch K-8": 9,
               "Bvsd Preschool At Aurora 7 High Peaks Bcsis": 1,
@@ -3122,14 +2051,9 @@
               "Byers Junior-Senior High School": 9,
               "Byers Sch Dst 32 J Early Childhood": 9,
               "Byron Syring Delta Center": 9,
-              "CEEN - John Evans": 1,
-              "CEEN - John Evans EHS": 4,
-              "CEEN - John Evans Head Start": 5,
-              "CENTENNIAL ACADEMY SCHOOL AGE CHILD CARE": 2,
-              "CIVICA Colorado": 5,
+              "Cache de la Poudre Elementary Preschool": 5,
               "Cache La Poudre Elementary School": 18,
               "Cache La Poudre Middle School": 9,
-              "Cache de la Poudre Elementary Preschool": 5,
               "Cactus Bloom Community School": 3,
               "Cactus Valley Elementary": 1,
               "Cactus Valley Elementary Preschool": 9,
@@ -3227,6 +2151,9 @@
               "Cedaredge Middle School": 9,
               "Cedaredge Preschool": 12,
               "Cedarwood Christian Academy": 12,
+              "CEEN - John Evans": 1,
+              "CEEN - John Evans EHS": 4,
+              "CEEN - John Evans Head Start": 5,
               "Ceen 23rd Ave": 7,
               "Ceen Billie Martinez": 7,
               "Ceen Centennial": 7,
@@ -3243,6 +2170,7 @@
               "Centaurus High School": 9,
               "Centennial A School For Expeditionary Learning": 18,
               "Centennial Academy Of Fine Arts Education": 18,
+              "CENTENNIAL ACADEMY SCHOOL AGE CHILD CARE": 2,
               "Centennial Boces High School": 1,
               "Centennial Christian Learning Center": 11,
               "Centennial Early Childhood": 6,
@@ -3258,22 +2186,22 @@
               "Centennial Preschool - 14644 Highway 159": 8,
               "Centennial Preschool - 3306 W Berry Ave": 2,
               "Centennial School": 4,
+              "Center for Talent Development at Greenlee": 14,
+              "Center for Talent Development at Greenlee Preschoo": 2,
+              "Center for Talent Development at Greenlee Preschool": 5,
               "Center Head Start - 246 Warden ST": 4,
               "Center Head Start - 246 Warden Street": 4,
               "Center Head Start - 295 E 3rd ST": 3,
               "Center Head Start - 301 E 3rd ST": 1,
               "Center Head Start - 301 East 3rd Street": 4,
               "Center High School": 8,
-              "Center for Talent Development at Greenlee": 14,
-              "Center for Talent Development at Greenlee Preschoo": 2,
-              "Center for Talent Development at Greenlee Preschool": 5,
               "Central Christian Preschool": 1,
               "Central Elementary Preschool": 10,
               "Central Elementary School": 36,
               "Central High School": 18,
               "Central Wraparound And Preschool Programs": 1,
-              "Centro Migrant Head Start - 6101 W 10th": 2,
               "Centro de Ninos Head Start": 1,
+              "Centro Migrant Head Start - 6101 W 10th": 2,
               "Century Elementary Preschool": 4,
               "Century Elementary School": 8,
               "Century Middle School": 9,
@@ -3401,13 +2329,14 @@
               "Cimarron Elementary School": 18,
               "Cimarron Middle": 9,
               "Cimarron Preschool": 3,
-              "City Of Northglenn Tiny Tots Teeny Tots": 6,
-              "City Of Westminster-westview Rec": 4,
               "City of Grand Junction Child Care Center": 3,
+              "City Of Northglenn Tiny Tots Teeny Tots": 6,
               "City of Thornton Trail Winds Rec. Center": 1,
               "City of Thornton Trail Winds Recreation Center Pre": 2,
               "City of Thornton Trail Winds Recreation Center Preschool": 3,
+              "City Of Westminster-westview Rec": 4,
               "Civa Charter Academy": 8,
+              "CIVICA Colorado": 5,
               "Clara Brown Entrepreneurial Academy": 4,
               "Clara E Metz Elementary - Preschool": 3,
               "Clara E. Metz Elementary School": 6,
@@ -3474,10 +2403,10 @@
               "Colorado Preparatory Academy High School": 6,
               "Colorado Preparatory Academy Middle School": 6,
               "Colorado Rocky Mountain School": 8,
-              "Colorado SKIES Academy": 5,
               "Colorado School For The Deaf And Blind": 18,
               "Colorado School For The Deaf And The Blind": 8,
               "Colorado School For The Deaf And The Blind - Prek": 1,
+              "Colorado SKIES Academy": 5,
               "Colorado Sports Leadership Academy": 12,
               "Colorado Sports Leadership Academy Preschool": 4,
               "Colorado Springs Charter Academy": 8,
@@ -3632,10 +2561,10 @@
               "Creekside Kids, Inc.": 4,
               "Creekside Preschool": 9,
               "Creighton Middle School": 9,
-              "Creme De La Creme - Lone Tree": 8,
-              "Creme De La Creme Colorado Inc": 2,
               "Creme de la Creme - Centennial": 6,
+              "Creme De La Creme - Lone Tree": 8,
               "Creme de la Creme - Thornton": 4,
+              "Creme De La Creme Colorado Inc": 2,
               "Crescent View Academy": 18,
               "Crescent View Academy - Preschool": 3,
               "Crescent View Academy Preschool": 5,
@@ -3671,32 +2600,6 @@
               "D51 Early Childhood Center": 1,
               "D6 Online Academy": 10,
               "D60 Online School": 5,
-              "DCIS At Ford": 18,
-              "DCIS At Montbello": 5,
-              "DCSD Legacy Campus": 2,
-              "DHS Early Learning Center": 5,
-              "DPSECE Inspire Elementary Preschool": 7,
-              "DSST Conservatory Green High School": 1,
-              "DSST: Byers High School": 6,
-              "DSST: Byers Middle School": 6,
-              "DSST: Cedar High School": 3,
-              "DSST: Cedar Middle School": 3,
-              "DSST: Cole High School": 9,
-              "DSST: Cole Middle School": 9,
-              "DSST: College View High School": 9,
-              "DSST: College View Middle School": 9,
-              "DSST: Conservatory Green High School": 7,
-              "DSST: Conservatory Green Middle School": 9,
-              "DSST: Elevate Northeast High School": 5,
-              "DSST: Elevate Northeast Middle School": 2,
-              "DSST: Green Valley Ranch High School": 9,
-              "DSST: Green Valley Ranch Middle School": 9,
-              "DSST: Henry Middle School": 4,
-              "DSST: Middle School At Noel Campus": 5,
-              "DSST: Montview High School": 3,
-              "DSST: Montview Middle School": 3,
-              "DSST: Stapleton High School": 6,
-              "DSST: Stapleton Middle School": 6,
               "Daddy Mom Daycare": 4,
               "Dakota Ridge Senior High School": 9,
               "Dakota Valley Elementary School": 18,
@@ -3714,7 +2617,10 @@
               "Dayspring Christian Academy": 9,
               "Dayspring Christian School": 18,
               "Dc Montessori Charter School": 18,
+              "DCIS At Ford": 18,
+              "DCIS At Montbello": 5,
               "Dcs Montessori Charter School": 9,
+              "DCSD Legacy Campus": 2,
               "De Beque K-12 Schools": 14,
               "Deane Elementary School": 18,
               "Deane Preschool": 2,
@@ -3776,6 +2682,7 @@
               "Desiderata School": 2,
               "Develyn Junior/Senior High School": 9,
               "Devinny Elementary School": 18,
+              "DHS Early Learning Center": 5,
               "Dia Preschool": 9,
               "Digital High School": 6,
               "Dillon Valley Elementary": 2,
@@ -3938,11 +2845,33 @@
               "Dps/ece Joe Shoemaker School": 9,
               "Dps/ece Sandra Todd-williams Academy": 8,
               "Dps/ece Valdez Montessori": 9,
+              "DPSECE Inspire Elementary Preschool": 7,
               "Dr. Justina Ford Elementary": 10,
               "Drake Junior High School": 9,
               "Dream Makers": 5,
               "Dry Creek Early Learning Center": 9,
               "Dry Creek Elementary School": 18,
+              "DSST Conservatory Green High School": 1,
+              "DSST: Byers High School": 6,
+              "DSST: Byers Middle School": 6,
+              "DSST: Cedar High School": 3,
+              "DSST: Cedar Middle School": 3,
+              "DSST: Cole High School": 9,
+              "DSST: Cole Middle School": 9,
+              "DSST: College View High School": 9,
+              "DSST: College View Middle School": 9,
+              "DSST: Conservatory Green High School": 7,
+              "DSST: Conservatory Green Middle School": 9,
+              "DSST: Elevate Northeast High School": 5,
+              "DSST: Elevate Northeast Middle School": 2,
+              "DSST: Green Valley Ranch High School": 9,
+              "DSST: Green Valley Ranch Middle School": 9,
+              "DSST: Henry Middle School": 4,
+              "DSST: Middle School At Noel Campus": 5,
+              "DSST: Montview High School": 3,
+              "DSST: Montview Middle School": 3,
+              "DSST: Stapleton High School": 6,
+              "DSST: Stapleton Middle School": 6,
               "Dual Immersion Academy School": 18,
               "Dunn Elementary School": 18,
               "Dunstan Middle School": 9,
@@ -3958,8 +2887,6 @@
               "Dutch Creek Elementary School": 18,
               "Dutch Creek Preschool": 7,
               "EA dba The Childrens Courtyard": 1,
-              "ECC South Preschool": 7,
-              "EUREKA! Preschool Programs": 4,
               "Eads Elementary School": 18,
               "Eads High School": 10,
               "Eads Middle School": 10,
@@ -3992,6 +2919,7 @@
               "Eagleview Elementary School": 18,
               "Eagleview Middle School": 9,
               "Early Birds Playhouse": 1,
+              "Early Childhood at Monroe Elementary": 2,
               "Early Childhood Center": 1,
               "Early Childhood Center At Gregory Hill": 5,
               "Early Childhood Center At Gregory Hills": 4,
@@ -4005,7 +2933,6 @@
               "Early Childhood Education Trailblazer Elem.": 1,
               "Early Childhood Education/Queen Palmer": 1,
               "Early Childhood University": 9,
-              "Early Childhood at Monroe Elementary": 2,
               "Early College Academy": 9,
               "Early College High School": 2,
               "Early College Of Arvada": 7,
@@ -4021,8 +2948,8 @@
               "Early Education Center": 8,
               "Early Excellence Program Of Denver Inc": 1,
               "Early Learning Center": 9,
-              "Early Learning Center Of Ouray": 8,
               "Early Learning Center at F.M. Day": 6,
+              "Early Learning Center Of Ouray": 8,
               "Early Learning Program @ Broomfield Rec": 7,
               "Earthkeeper Nature Preschool - Beulah": 11,
               "Earthkeeper Nature Preschool - Pueblo": 8,
@@ -4046,12 +2973,14 @@
               "Eaton Elementary School": 18,
               "Eaton High School": 9,
               "Eaton Middle School": 9,
+              "ECC South Preschool": 7,
               "Ecems @ Csu - Pueblo Child Care Center": 8,
               "Echinacea Montessori": 5,
               "Echo Canyon Academy": 3,
               "Eckhart Elementary School": 6,
               "Ecsd - Home Stake Peak": 4,
               "Ecsd Edwards Elementary": 3,
+              "eDCSD: Colorado Cyber School": 18,
               "Edgewater Elementary School": 18,
               "Edgewater Preschool": 9,
               "Edison Eagles Nest Preschool": 7,
@@ -4079,6 +3008,9 @@
               "Eldorado Elementary School": 18,
               "Eldorado K-8 School": 18,
               "Eldorado Preschool": 15,
+              "eLearning Elementary School": 4,
+              "eLearning High School": 1,
+              "eLearning Middle School": 2,
               "Elements Academy Llc": 2,
               "Elizabeth High School": 9,
               "Elizabeth Middle School": 9,
@@ -4137,6 +3069,7 @@
               "Estes Park Options School": 12,
               "Eternal Hills Christian Preschool": 8,
               "Euclid Middle School": 9,
+              "EUREKA! Preschool Programs": 4,
               "Eva Baca": 3,
               "Eva Baca Preschool": 6,
               "Eva R Baca Elementary School": 18,
@@ -4572,8 +3505,8 @@
               "Gypsum Creek Middle School": 8,
               "Gypsum Elementary Preschool": 9,
               "Gypsum Elementary School": 18,
-              "H&h Childhood Education Dba The Goddard Sch": 4,
               "H.M.S. Richards Adventist": 12,
+              "H&h Childhood Education Dba The Goddard Sch": 4,
               "Haaff Elementary School": 18,
               "Haaff Preschool": 9,
               "Hackberry Hill Elementary School": 18,
@@ -4765,8 +3698,8 @@
               "Hope Montessori Academy - 12290 Pennsylvania Street": 3,
               "Hope Montessori Academy - 13785 Huron ST": 4,
               "Hope Montessori Academy - 13785 Huron Street": 5,
-              "Hope Montessori Academy - 18075 Minglewood TRL": 1,
               "Hope Montessori Academy - 18075 Minglewood Trail": 6,
+              "Hope Montessori Academy - 18075 Minglewood TRL": 1,
               "Hope Montessori Academy - 2041 Chuckwagon RD": 4,
               "Hope Montessori Academy - 2041 Chuckwagon Road": 10,
               "Hope Montessori Academy - 4401 Main ST": 8,
@@ -4812,6 +3745,7 @@
               "Ignacio K-12 Schools": 10,
               "Ignacio Middle School": 3,
               "Ikid Academy - Aurora": 6,
+              "iKid Academy - Centennial": 2,
               "Ikid Academy Llc": 3,
               "Iliff Community Center Inc": 8,
               "Iliff Preschool": 18,
@@ -4866,7 +3800,6 @@
               "Ivybrook Academy - Colorado Springs": 1,
               "Ivybrook Academy - Highlands Ranch": 2,
               "Ivybrook Academy - Parker": 3,
-              "JCC Early Learning School": 4,
               "Jack Swigert Aerospace Academy": 9,
               "Jackson Elementary Preschool": 8,
               "Jackson Elementary School": 36,
@@ -4895,6 +3828,7 @@
               "Jarrow Montessori Preschool": 8,
               "Jarrow Montessori School": 19,
               "Jay & Rose Phillips Ecc @ The Boulder Jcc": 15,
+              "JCC Early Learning School": 4,
               "JeffCo Remote Learning Program": 8,
               "Jeffcos 21st Century Virtual Academy": 10,
               "Jefferson Academy": 16,
@@ -4963,8 +3897,6 @@
               "Just For Kids Childcare": 4,
               "Justice High Charter School": 9,
               "Justice High School Denver": 9,
-              "KCE Champions LLC @ Leman": 1,
-              "KIPP Sunshine Peak Elementary": 14,
               "Kaiser Elementary School": 18,
               "Kaleidoscope Kids Preschool": 1,
               "Karval Elementary School": 14,
@@ -4974,6 +3906,7 @@
               "Kathryn Senor Elementary": 1,
               "Kathryn Senor Elementary School": 18,
               "Kathryn Senor Preschool": 7,
+              "KCE Champions LLC @ Leman": 1,
               "Kearney Middle School": 9,
               "Keegan Head Start": 1,
               "Keller Elementary School": 18,
@@ -5013,12 +3946,12 @@
               "Kid City USA Grand Junction 3": 1,
               "Kid City USA Highlands Ranch": 3,
               "Kid Zone @ West Ridge Elementary School": 1,
-              "Kiddie Academy Of Erie": 9,
-              "Kiddie Academy Of Parker": 3,
               "Kiddie Academy of Aurora": 3,
               "Kiddie Academy of Columbine": 4,
               "Kiddie Academy of Denver - Boulevard One": 3,
+              "Kiddie Academy Of Erie": 9,
               "Kiddie Academy of Lone Tree": 6,
+              "Kiddie Academy Of Parker": 3,
               "Kidoodles Child Care": 5,
               "Kids 4 Real\t Inc.": 1,
               "Kids 4 Real Inc.": 1,
@@ -5048,10 +3981,8 @@
               "Kinder Haus - 2880 Elm AVE": 1,
               "Kinder Haus - 810 E 3rd": 2,
               "Kinder Haus/ Penrose": 1,
-              "KinderCare Learning Center at UCAR": 6,
               "Kindercare Learning Center": 2,
-              "Kindercare Learning Centers Llc #1650": 2,
-              "Kindercare Learning Centers Llc #896": 8,
+              "KinderCare Learning Center at UCAR": 6,
               "Kindercare Learning Centers Llc - 1004 Middle Creek PKWY": 3,
               "Kindercare Learning Centers Llc - 10325 E 31st AVE": 1,
               "Kindercare Learning Centers Llc - 1045 Opal ST": 3,
@@ -5077,6 +4008,8 @@
               "Kindercare Learning Centers Llc - 975 S Kipling PKWY": 4,
               "Kindercare Learning Centers Llc - Park Meadows": 1,
               "Kindercare Learning Centers Llc - Stonegate": 3,
+              "Kindercare Learning Centers Llc #1650": 2,
+              "Kindercare Learning Centers Llc #896": 8,
               "Kinderkirk Preschool": 7,
               "King Baptist Church Child Care & Preschool": 5,
               "King Elementary Preschool": 7,
@@ -5097,6 +4030,7 @@
               "Kipp Northeast Elementary Preschool": 5,
               "Kipp Sunshine Peak Academy": 9,
               "Kipp Sunshine Peak Elementary": 8,
+              "KIPP Sunshine Peak Elementary": 14,
               "Kit Carson K-12 Schools": 18,
               "Kit Carson School R1 - Preschool": 5,
               "Knapp Elementary School": 18,
@@ -5287,8 +4221,8 @@
               "Linton Elementary School": 18,
               "Lionheart Childrens Academy at Academy Christian": 4,
               "Little Adventures Child Care Center": 1,
-              "Little Adventures Child Care Center - GJ": 1,
               "Little Adventures Child Care Center - Garfield": 1,
+              "Little Adventures Child Care Center - GJ": 1,
               "Little Angels Christian Pre-school": 9,
               "Little Angels Daycare": 9,
               "Little Bears Child Care": 2,
@@ -5520,20 +4454,20 @@
               "Mc Lain Community High School": 1,
               "Mc Lain High School": 1,
               "Mc Meen Elementary School": 18,
-              "McAuliffe Elementary Preschool": 7,
-              "McAuliffe Preschool": 4,
-              "McGregors Garden Preschool": 4,
-              "McKinley Elementary Preschool": 6,
-              "McLain Community High School": 8,
               "Mcauliffe Elementary": 16,
+              "McAuliffe Elementary Preschool": 7,
               "Mcauliffe International School": 9,
               "Mcauliffe Manual Middle School": 7,
+              "McAuliffe Preschool": 4,
               "Mcclave Preschool And Day Care Center": 8,
               "Mccoy & Little John Center": 4,
               "Mcglone Academy": 18,
               "Mcgraw Elementary School": 18,
+              "McGregors Garden Preschool": 4,
               "Mchs Childcare Center": 8,
+              "McKinley Elementary Preschool": 6,
               "Mckinley Elementary School": 18,
+              "McLain Community High School": 8,
               "Mead Elementary Preschool": 9,
               "Mead Elementary School": 18,
               "Mead High School": 9,
@@ -5571,8 +4505,8 @@
               "Merrill Middle School": 9,
               "Merryhill Preschool - 5678 S Himalaya ST": 2,
               "Merryhill School - 12201 S Parker RD": 2,
-              "Merryhill School - 4250 Trail Boss LN": 4,
               "Merryhill School - 4250 Trail Boss Lane": 1,
+              "Merryhill School - 4250 Trail Boss LN": 4,
               "Merryhill School - 5678 S Himalaya ST": 3,
               "Merryhill School - 8502 Park Meadows DR": 2,
               "Merryhill School - 8502 Park Meadows Drive": 3,
@@ -5684,6 +4618,7 @@
               "Montessori Academy, Llc": 7,
               "Montessori At Mountain School": 17,
               "Montessori Casa International": 13,
+              "Montessori Childrens House of Denver": 6,
               "Montessori Childrens House Of Denver": 7,
               "Montessori Childrens House Of Denver - Central Pa": 6,
               "Montessori Childrens House Of Denver - Central Park": 5,
@@ -5692,7 +4627,6 @@
               "Montessori Childrens House Of Denver Park Hil": 8,
               "Montessori Childrens House Of Denver Park Hill": 9,
               "Montessori Childrens House Of Denver, Inc.": 8,
-              "Montessori Childrens House of Denver": 6,
               "Montessori Del Mundo": 4,
               "Montessori Del Mundo Charter School": 16,
               "Montessori Del Mundo Preschool": 5,
@@ -5814,14 +4748,11 @@
               "My Second Home - 1321 Baseline": 7,
               "My Second Home - 300 Baseline": 2,
               "My Second Home - 300 West Baseline Road": 5,
-              "NEXT - District 6": 7,
-              "NJS Kinder Cottage": 7,
-              "NOCO Kids Academy": 2,
               "Namaqua Elementary School": 18,
               "Nativity Faith and Reason Catholic Preschool": 7,
               "Nativity Faith and Reason Catholic School": 12,
-              "Nativity Of Our Lord Catholic School": 2,
               "Nativity of Our Lord Catholic Church & School": 2,
+              "Nativity Of Our Lord Catholic School": 2,
               "Naturita Early Learning Center": 2,
               "Naturita Elementary": 10,
               "Naturita Elementary & Middle School": 6,
@@ -5871,6 +4802,7 @@
               "New Vista High School": 9,
               "Newlon Elementary School": 18,
               "Newton Middle School": 9,
+              "NEXT - District 6": 7,
               "Nina Bees Nature Explorers Elc": 6,
               "Nisley Elementary Preschool": 3,
               "Nisley Elementary School": 16,
@@ -5879,16 +4811,18 @@
               "Niwot Elementary School": 18,
               "Niwot High School": 9,
               "Njs Hobby Farm, Llc": 3,
+              "NJS Kinder Cottage": 7,
               "Noahs Ark Christian Preschool": 6,
               "Noahs Ark Learning Center": 2,
               "Noahs Ark Preschool And Child Care": 6,
+              "NOCO Kids Academy": 2,
               "Noel Community Arts School": 5,
               "Norma Anderson Preschool": 7,
               "Normandy Elementary School": 18,
               "Normandy Preschool": 6,
               "North Arvada Middle School": 9,
-              "North CPCD Child Care Center": 1,
               "North Conejos Alternative Program": 7,
+              "North CPCD Child Care Center": 1,
               "North Cpcd Preschool": 4,
               "North Elementary Preschool": 2,
               "North Elementary School": 8,
@@ -5947,20 +4881,6 @@
               "Nucla Elementary School": 2,
               "Nucla High School": 9,
               "Nucla Middle School": 6,
-              "OJC-CDS HS\t RF": 1,
-              "OJC-CDS HS RF": 1,
-              "OJC-CDS HS, LA": 3,
-              "OJC-CDS HS, LJ": 3,
-              "OJC-CDS HS, Lam": 5,
-              "OJC-CDS HS, RF": 6,
-              "OJC-CDS MSHS\t Manzy": 1,
-              "OJC-CDS MSHS Manzy": 1,
-              "OJC-CDS MSHS, Boone": 1,
-              "OJC-CDS MSHS, Manzy": 7,
-              "OJC-CDS RF Annex": 7,
-              "OPENair Academy": 9,
-              "OUAC Hampshire LLC": 3,
-              "OUAC Riverside LLC": 2,
               "Oak Creek Cpcd Preschool": 4,
               "Oak Creek Elementary Preschool": 1,
               "Oak Creek Elementary Preschool (CPCD)": 4,
@@ -5979,6 +4899,17 @@
               "Odyssey School Of Denver": 18,
               "Off Broadway Preschool Of Fine Arts": 7,
               "Ohana Montessori": 5,
+              "OJC-CDS HS\t RF": 1,
+              "OJC-CDS HS RF": 1,
+              "OJC-CDS HS, LA": 3,
+              "OJC-CDS HS, Lam": 5,
+              "OJC-CDS HS, LJ": 3,
+              "OJC-CDS HS, RF": 6,
+              "OJC-CDS MSHS\t Manzy": 1,
+              "OJC-CDS MSHS Manzy": 1,
+              "OJC-CDS MSHS, Boone": 1,
+              "OJC-CDS MSHS, Manzy": 7,
+              "OJC-CDS RF Annex": 7,
               "Olander Elementary School": 18,
               "Olathe Early Childhood Center": 6,
               "Olathe Elementary School": 18,
@@ -5988,13 +4919,14 @@
               "Olathe Migrant Head Start": 2,
               "Olde Columbine High School": 4,
               "Omar D Blair Charter School": 18,
-              "Once Upon A Childcare - Vickers": 6,
               "Once Upon a Childcare": 1,
               "Once Upon a Childcare - Garden of The Gods": 7,
+              "Once Upon A Childcare - Vickers": 6,
               "One Step Academy": 1,
               "Open Air Academy": 5,
               "Open Arms Christian Preschool": 9,
               "Open Door Childcare Center": 10,
+              "OPENair Academy": 9,
               "Options Infant Center": 2,
               "Options School": 19,
               "Orchard Ave Preschool": 8,
@@ -6020,6 +4952,8 @@
               "Otis K-12 School": 2,
               "Otis K-12 Schools": 12,
               "Otis School District R3 Preschool": 6,
+              "OUAC Hampshire LLC": 3,
+              "OUAC Riverside LLC": 2,
               "Our Angels Child Care": 2,
               "Our Father Childrens Learning Center": 3,
               "Our Father Lutheran Preschool": 5,
@@ -6027,6 +4961,7 @@
               "Our Lady Of Fatima Catholic": 18,
               "Our Lady Of Fatima Early Learning Center": 11,
               "Our Lady Of Loreto Catholic School": 18,
+              "Our Lady of Loreto Preschool": 7,
               "Our Lady Of Lourdes": 1,
               "Our Lady Of Lourdes Catholic Classical": 2,
               "Our Lady Of Lourdes Catholic Classical - North Cam": 4,
@@ -6034,7 +4969,6 @@
               "Our Lady Of Lourdes Catholic Classical - South Cam": 4,
               "Our Lady Of Lourdes Catholic Classical - South Campus": 12,
               "Our Lady Of Lourdes Catholic Classical Preschool": 9,
-              "Our Lady of Loreto Preschool": 7,
               "Our Lady of Lourdes South Montessori Preschool": 2,
               "Our Savior Lutheran Preschool": 4,
               "Our Savior Lutheran School": 18,
@@ -6050,14 +4984,6 @@
               "Overland High School": 9,
               "Overland Trail Middle School": 9,
               "P.R.E.P. (Positive Refocus Education Program)": 9,
-              "PEPC Early Learning Center": 5,
-              "PSAS Fulton": 14,
-              "PSAS Jones": 18,
-              "PSD ECE at Werner": 2,
-              "PSD Early Childhood @ Bennett": 6,
-              "PSD Global Academy": 18,
-              "PSD Mountain Schools": 14,
-              "PSD Options School": 18,
               "Paddington Station\t Inc": 1,
               "Paddington Station Inc": 1,
               "Paddington Station, Inc": 13,
@@ -6173,6 +5099,7 @@
               "Penrose Kits Preschool": 7,
               "Peoria Elementary": 10,
               "Peoria Elementary Preschool": 5,
+              "PEPC Early Learning Center": 5,
               "Pepc Elc Ctr": 4,
               "Performing Arts School on Broadway": 4,
               "Persimmon Early Learning of the YWCA": 4,
@@ -6306,12 +5233,12 @@
               "Precious Angels Preschool": 1,
               "Presbyterian Preschool": 8,
               "Preschool In The Pines": 6,
+              "Preschool of the Arts": 3,
+              "Preschool on Poze": 6,
               "Preschool Partners": 8,
               "Preschool Partners Pccc Youth": 1,
               "Preschool Partners, Pccc Youth": 7,
               "Preschool Pathways\t LLC": 1,
-              "Preschool of the Arts": 3,
-              "Preschool on Poze": 6,
               "Prestige Preschool Academy - 15000 E 104th AVE": 1,
               "Prestige Preschool Academy - 25850 E Arapahoe RD": 3,
               "Prestige Preschool Academy - Arvada": 1,
@@ -6327,38 +5254,38 @@
               "Primero School": 4,
               "Primrose School @ Dtc": 4,
               "Primrose School @ Lowry": 12,
+              "Primrose School at Candelas": 6,
               "Primrose School At Centennial": 18,
               "Primrose School At Colorado Station": 9,
               "Primrose School At Reunion": 13,
               "Primrose School At Shadow Canyon": 8,
               "Primrose School At Standley Lake": 15,
               "Primrose School At Stapleton": 12,
+              "Primrose School at Sterling Ranch": 3,
               "Primrose School At The Denver Tech Center": 5,
               "Primrose School At The Flatirons": 14,
+              "Primrose School of Bear Creek": 3,
               "Primrose School Of Briargate": 2,
               "Primrose School Of Castle Rock": 9,
               "Primrose School Of Cottonwood Creek": 5,
+              "Primrose School of Denver North": 4,
               "Primrose School Of Erie At Vista Ridge": 16,
+              "Primrose School of Firestone at Longmont": 1,
               "Primrose School Of Fort Collins": 7,
               "Primrose School Of Highlands Ranch": 11,
               "Primrose School Of Ken Caryl": 8,
               "Primrose School Of Littleton": 9,
               "Primrose School Of Lone Tree": 11,
               "Primrose School Of Longmont": 16,
+              "Primrose School of North Colorado Springs": 1,
               "Primrose School Of Parker": 18,
               "Primrose School Of Saddle Rock": 9,
               "Primrose School Of Springs Ranch": 7,
+              "Primrose School of Stetson Hills": 1,
               "Primrose School Of Tallgrass": 11,
               "Primrose School Of Thornton": 9,
               "Primrose School Of Torrey Peaks": 12,
               "Primrose School Of West Woods": 10,
-              "Primrose School at Candelas": 6,
-              "Primrose School at Sterling Ranch": 3,
-              "Primrose School of Bear Creek": 3,
-              "Primrose School of Denver North": 4,
-              "Primrose School of Firestone at Longmont": 1,
-              "Primrose School of North Colorado Springs": 1,
-              "Primrose School of Stetson Hills": 1,
               "Pritchett  Schools": 4,
               "Pritchett K-12 Schools": 14,
               "Pritchett School District Preschool": 7,
@@ -6369,6 +5296,8 @@
               "Prospect Ridge Academy": 18,
               "Prospect Valley Elementary School": 18,
               "Protestant Reformed Christian": 14,
+              "PSAS Fulton": 14,
+              "PSAS Jones": 18,
               "Psd Early Childhood - 1400 Maple": 4,
               "Psd Early Childhood - 3000 Meadowlark": 4,
               "Psd Early Childhood - 4101 Seneca ST": 4,
@@ -6389,6 +5318,7 @@
               "Psd Early Childhood - Putnam School of Science": 5,
               "Psd Early Childhood - Shepardson Elementary": 2,
               "Psd Early Childhood - Traut Elementary": 5,
+              "PSD Early Childhood @ Bennett": 6,
               "Psd Early Childhood @ Lopez": 4,
               "Psd Early Childhood @ Lopez Elementary": 5,
               "Psd Early Childhood Ed @ Kruse": 4,
@@ -6400,6 +5330,10 @@
               "Psd Early Childhood Ed @ Timnath": 9,
               "Psd Early Childhood Program @ Linton": 4,
               "Psd Early Childhood Program @ Linton Elementary": 5,
+              "PSD ECE at Werner": 2,
+              "PSD Global Academy": 18,
+              "PSD Mountain Schools": 14,
+              "PSD Options School": 18,
               "Ptec-power Technical Early College": 2,
               "Pueblo Academy Of Arts": 9,
               "Pueblo Classical Academy": 9,
@@ -6415,26 +5349,6 @@
               "Queen Palmer Elementary School": 16,
               "Quest Academy At Dacono": 2,
               "R-5 High School": 9,
-              "RCS Preschool": 3,
-              "RMSER - Alta": 2,
-              "RMSER - Bookcliff": 2,
-              "RMSER - Boyd": 2,
-              "RMSER - Centro de Ninos": 2,
-              "RMSER - Conejos": 2,
-              "RMSER - Elaine Jackson": 1,
-              "RMSER - Fruita": 2,
-              "RMSER - Glendam": 1,
-              "RMSER - Grand Mesa": 2,
-              "RMSER - Parachute": 1,
-              "RMSER - Pecos": 2,
-              "RMSER - Pueblo West": 2,
-              "RMSER - Quigg Newton": 3,
-              "RMSER - Raleigh": 1,
-              "RMSER - Rifle": 1,
-              "RMSER - Riverside": 1,
-              "RMSER - Sanford": 2,
-              "RMSER - Seton": 2,
-              "RMSER - Walsenburg": 2,
               "Rabbi Steven Foster Elc @ Temple Emanuel": 14,
               "Radiance Montessori": 1,
               "Rainbow Childrens Center": 10,
@@ -6461,6 +5375,7 @@
               "Rascals Toddler Program": 4,
               "Ray E Kilmer Elementary School": 18,
               "Razz Ma Tazz Early Learning": 2,
+              "RCS Preschool": 3,
               "Reach Charter School": 15,
               "Red Canyon Academy": 3,
               "Red Canyon High School": 9,
@@ -6545,12 +5460,31 @@
               "Riverside Head Start": 1,
               "Riverside School": 9,
               "Riverstone Education": 7,
-              "Riverview ECE": 9,
               "Riverview Early Childhood Center": 3,
+              "Riverview ECE": 9,
               "Riverview Elementary School": 13,
               "Riverview PK-8 School": 10,
               "Riverview Preschool": 6,
               "Riverview School": 18,
+              "RMSER - Alta": 2,
+              "RMSER - Bookcliff": 2,
+              "RMSER - Boyd": 2,
+              "RMSER - Centro de Ninos": 2,
+              "RMSER - Conejos": 2,
+              "RMSER - Elaine Jackson": 1,
+              "RMSER - Fruita": 2,
+              "RMSER - Glendam": 1,
+              "RMSER - Grand Mesa": 2,
+              "RMSER - Parachute": 1,
+              "RMSER - Pecos": 2,
+              "RMSER - Pueblo West": 2,
+              "RMSER - Quigg Newton": 3,
+              "RMSER - Raleigh": 1,
+              "RMSER - Rifle": 1,
+              "RMSER - Riverside": 1,
+              "RMSER - Sanford": 2,
+              "RMSER - Seton": 2,
+              "RMSER - Walsenburg": 2,
               "Rmser Early Learning Center - 3555 Pecos ST": 1,
               "Rmser Early Learning Center - 390 Green Leaf ST": 1,
               "Rmser Early Learning Center - 4440 Navajo ST": 1,
@@ -6558,11 +5492,11 @@
               "Rmser Early Learning Center - 6535 County Road 12.9": 1,
               "Rmser Early Learning Center-parachute": 1,
               "Rmser Southern Colorado Head Start": 1,
-              "RoC Child Development Center": 1,
               "Roaring Fork High School": 9,
               "Roaring Fork School District - Gses": 2,
               "Robert F. Smith STEAM Academy": 5,
               "Roberta Shirley Head Start Center": 3,
+              "RoC Child Development Center": 1,
               "Rock Canyon High School": 9,
               "Rock Of Ages Lutheran Child Care Ctr": 10,
               "Rock Ridge Elementary Preschool": 7,
@@ -6646,12 +5580,6 @@
               "Rye Elementary School": 18,
               "Rye High School": 9,
               "S.o.t.h. Christian Preschool": 4,
-              "SCCOG Early Learning Center": 4,
-              "STEM Child Care\t Inc.": 1,
-              "STEM Child Care Inc.": 1,
-              "STEM Child Care, Inc.": 6,
-              "STEM Lab Preschool": 7,
-              "STREAM Preschool: Powered by EUREKA!": 1,
               "Sabin Middle School": 9,
               "Sabin World School": 18,
               "Sable Elementary Preschool": 7,
@@ -6710,6 +5638,7 @@
               "Sargent Early Learning Center": 9,
               "Sargent K-12 Schools": 18,
               "Savannah Smiles Learning Center": 3,
+              "SCCOG Early Learning Center": 4,
               "Scenic Elementary School": 16,
               "Schlessman Family Ymca Child Center": 4,
               "Schmitt Elementary School": 16,
@@ -6761,12 +5690,12 @@
               "Shelton Elementary School": 18,
               "Shelton Preschool": 8,
               "Shepardson Elementary School": 18,
+              "Shepherd of the Hills Christian Preschool": 5,
               "Shepherd Of The Hills Lutheran": 2,
               "Shepherd Of The Hills Lutheran Preschool": 3,
               "Shepherd Of The Valley Lutheran": 4,
               "Shepherd Of The Valley Lutheran Preschool": 7,
               "Shepherd Of The Valley Lutheran School": 14,
-              "Shepherd of the Hills Christian Preschool": 5,
               "Sheridan Early Childhood Center Preschool": 9,
               "Sheridan Green Elementary": 12,
               "Sheridan Green Preschool": 6,
@@ -7028,7 +5957,11 @@
               "Steele Street Preschool": 3,
               "Stein Elementary School": 18,
               "Stellar Elementary School": 18,
+              "STEM Child Care\t Inc.": 1,
+              "STEM Child Care Inc.": 1,
+              "STEM Child Care, Inc.": 6,
               "Stem Lab": 18,
+              "STEM Lab Preschool": 7,
               "Stem Launch": 18,
               "Stem School": 18,
               "Step By Step Child Development Center": 9,
@@ -7083,6 +6016,7 @@
               "Stratton Senior High School": 10,
               "Strawberry Park Elementary Preschool": 4,
               "Strawberry Park Elementary School": 18,
+              "STREAM Preschool: Powered by EUREKA!": 1,
               "Strive Prep - Excel": 3,
               "Strive Prep - Federal": 9,
               "Strive Prep - Green Valley Ranch": 7,
@@ -7102,6 +6036,7 @@
               "Summer Valley City Of Aurora Preschool": 9,
               "Summit Academy": 8,
               "Summit Academy JeffCo": 2,
+              "Summit at Castro": 1,
               "Summit County Preschool": 9,
               "Summit Cove Elementary Preschool": 9,
               "Summit Cove Elementary School": 18,
@@ -7117,7 +6052,6 @@
               "Summit View Elementary Preschool": 5,
               "Summit View Elementary School": 18,
               "Summit View Preschool": 2,
-              "Summit at Castro": 1,
               "Sunflower Hill Child Care": 2,
               "Sunflower Hill Child Care - Lakewood": 7,
               "Sunflower Hill Child Care - Virginia Village": 7,
@@ -7167,17 +6101,10 @@
               "Swigert International School": 17,
               "Swink Elementary School": 18,
               "Swink Junior-Senior High School": 9,
-              "T.R Paul Academy Of Arts & Knowledge": 12,
               "T.o.r. Cdc": 1,
               "T.o.r. Child Development Center": 4,
+              "T.R Paul Academy Of Arts & Knowledge": 12,
               "T.r. Paul Academy Of Arts & Knowledge": 2,
-              "TCA College Pathways": 8,
-              "TCA Cottage School Elem": 2,
-              "TCA Cottage School JH": 1,
-              "TCA Elementary Central": 2,
-              "TCA Elementary East": 2,
-              "TCA Elementary North": 4,
-              "TLC Learning Center": 8,
               "Take A Break": 12,
               "Talbott Steam Innovation School": 18,
               "Tangerine Early Learning\t Inc.": 1,
@@ -7190,6 +6117,12 @@
               "Taylor Elementary Preschool": 13,
               "Taylor Elementary School": 36,
               "Taylor Preschool": 4,
+              "TCA College Pathways": 8,
+              "TCA Cottage School Elem": 2,
+              "TCA Cottage School JH": 1,
+              "TCA Elementary Central": 2,
+              "TCA Elementary East": 2,
+              "TCA Elementary North": 4,
               "Teaching Tree": 2,
               "Teaching Tree Early Childhood Learning Center": 2,
               "Teaching Tree Early Childhood Learning Center - Fo": 2,
@@ -7256,12 +6189,12 @@
               "The Colorado Springs School Preschool": 6,
               "The Complete Child Dba Young Scholars Academy": 4,
               "The Connect Charter School": 9,
+              "The Cottage at Holly Ridge": 1,
               "The Cottage Preschool": 9,
               "The Cottage School - 1941 N Terry ST": 4,
               "The Cottage School - 1941 North Terry Street": 2,
               "The Cottage School - 805/797 30th ST": 1,
               "The Cottage School North": 8,
-              "The Cottage at Holly Ridge": 1,
               "The Cube": 2,
               "The Cubs Den": 9,
               "The Da Vinci Academy": 3,
@@ -7277,12 +6210,12 @@
               "The Enrichment Center Of Gracepointe": 2,
               "The Estate Preschool": 6,
               "The Family Learning Center": 9,
-              "The GEM Center": 1,
-              "The Garden Preschool & ELC": 3,
               "The Garden Preschool & Early Learning Center": 4,
+              "The Garden Preschool & ELC": 3,
               "The Garden Preschool of Lone Tree": 4,
               "The Gardner School of 9+CO": 1,
               "The Gardner School of DTC": 3,
+              "The GEM Center": 1,
               "The Giving Tree": 4,
               "The Giving Tree Child Care Center & Preschool": 5,
               "The Goddard School - 1101 Sgt John Stiles DR": 8,
@@ -7297,8 +6230,8 @@
               "The Goddard School - 23905 East Arapahoe Road": 5,
               "The Goddard School - 3301 W 144th AVE STE 100": 5,
               "The Goddard School - 3301 West 144th Avenue": 1,
-              "The Goddard School - 380 Centennial PKWY": 5,
               "The Goddard School - 380 Centennial Parkway": 5,
+              "The Goddard School - 380 Centennial PKWY": 5,
               "The Goddard School - 4147 W Main ST": 5,
               "The Goddard School - 6427 Carmichael ST": 5,
               "The Goddard School - 6427 Carmichael Street": 5,
@@ -7315,7 +6248,6 @@
               "The Goddard School Littleton 2": 2,
               "The Goddard School Of Arvada": 4,
               "The Goddard School Of Castle Rock": 9,
-              "The Goddard School Stapleton": 1,
               "The Goddard School of Centennial": 6,
               "The Goddard School of Highlands Ranch": 6,
               "The Goddard School of Lakewood - 12850 West Alamed": 2,
@@ -7324,6 +6256,7 @@
               "The Goddard School of Meridian": 5,
               "The Goddard School of Thornton": 3,
               "The Goddard School of Westminster": 3,
+              "The Goddard School Stapleton": 1,
               "The Goddard School-COS.": 3,
               "The Golden Triangle Learning Center St. Johns": 1,
               "The Great Escape": 9,
@@ -7358,9 +6291,9 @@
               "The Learning Experience - Timnath - 6600 River Pas": 2,
               "The Learning Experience - Timnath - 6600 River Pass Road": 2,
               "The Learning Experience - Westminster": 9,
+              "The Learning Experience at Crossroads St Cloud Dr": 1,
               "The Learning Experience Brighton": 5,
               "The Learning Experience Loveland West": 3,
-              "The Learning Experience at Crossroads St Cloud Dr": 1,
               "The Learning House Foundation For Early Lrng": 2,
               "The Learning Nest": 4,
               "The Learning Tree": 9,
@@ -7390,15 +6323,15 @@
               "The Preschool Program At St Paul Catholic School": 5,
               "The Ridge Recreation Center Preschool": 6,
               "The Rise School Of Denver": 9,
-              "The STEAD School": 5,
               "The Springs Comm. Church Preschool": 9,
+              "The STEAD School": 5,
               "The Studio School": 18,
               "The Summit Academy": 2,
               "The Summit Early Learning Academy": 2,
               "The Sunflower School PK": 1,
-              "The Sunshine House #27 - Ncmc": 7,
               "The Sunshine House - 6910 Wills DR": 3,
               "The Sunshine House - 6910 Wills Drive": 3,
+              "The Sunshine House #27 - Ncmc": 7,
               "The Sunshine House Of Colorado State Univ": 9,
               "The Tiny Tim Center, Inc": 1,
               "The Vail Child Development Center": 9,
@@ -7407,12 +6340,12 @@
               "The Vanguard School (Middle)": 1,
               "The Vanguard School K-12": 16,
               "The Village @ Ames": 2,
+              "The Village at North - ECE": 2,
               "The Village Child Development Center": 8,
               "The Village Child Development Ctr": 8,
               "The Village ECE at Highland": 2,
-              "The Village For Early Childhood Education": 4,
-              "The Village at North - ECE": 2,
               "The Village for Early Childhood Ed at Highland": 5,
+              "The Village For Early Childhood Education": 4,
               "The Villaggio": 5,
               "Thimmig Elementary Preschool": 7,
               "Thomas A. Edison Elementary Preschool": 2,
@@ -7420,8 +6353,8 @@
               "Thomas Learning Centers - Lakewood": 2,
               "Thomas Learning Centers - Westminster Learning Cen": 2,
               "Thomas Learning Centers - Westminster Learning Center": 2,
-              "Thomas MacLaren State Charter School": 4,
               "Thomas Maclaren School": 13,
+              "Thomas MacLaren State Charter School": 4,
               "Thompson Integrated Early Childhood at Stansberry": 4,
               "Thompson Integrated Ec Edmondson Prm": 1,
               "Thompson Integrated Ec Edmonson Prm": 4,
@@ -7490,10 +6423,11 @@
               "Tiny Tots And Tumblers Preschool": 5,
               "Tiny Tots Meadowood Of Aurora": 8,
               "Tiny Violets Childcare": 4,
+              "TLC Learning Center": 8,
               "Todays Life LLC dba Kiddie Academy Windsor": 1,
               "Toddlers Inc/princeton Academy": 1,
-              "Tointon Academy Preschool": 3,
               "Tointon Academy of Pre-Engineering": 8,
+              "Tointon Academy Preschool": 3,
               "Tollgate Elementary School Of Expeditionary Learni": 4,
               "Tollgate Elementary School Of Expeditionary Learning": 14,
               "Tope Elementary School": 18,
@@ -7558,7 +6492,6 @@
               "Two Roads Charter School Preschool": 3,
               "Twombly Early Learning Center": 1,
               "Twombly Elementary School": 16,
-              "USAA Child Development Center": 9,
               "Ucc Preschool And Head Start": 4,
               "Uccs Family Development Center": 1,
               "Underwood Elementary School": 6,
@@ -7571,24 +6504,23 @@
               "Univ Co Fmly Hsng Childrens Ctr": 2,
               "University Childrens Center": 6,
               "University Hill Elementary School": 18,
+              "University of Colorado Family Housing Childrens C": 2,
+              "University of Colorado Family Housing Childrens Center": 5,
               "University Park Elementary School": 18,
               "University Prep - Arapaho": 18,
               "University Prep - Steele": 18,
               "University School Of Colorado Springs": 2,
               "University Schools": 18,
-              "University of Colorado Family Housing Childrens C": 2,
-              "University of Colorado Family Housing Childrens Center": 5,
               "Upper Arkansa Area Council Of Governments Hea": 3,
               "Upper Blue Elementary Preschool": 11,
               "Upper Blue Elementary School": 18,
               "Upper Rio Grande K-12 Schools": 12,
+              "USAA Child Development Center": 9,
               "Ute Canyon Academy": 2,
               "Ute Meadows Elementary School": 18,
               "Ute Meadows Preschool": 6,
               "Ute Pass Community Preschool": 9,
               "Ute Pass Elementary School": 18,
-              "VALE - Venture Academy of Leadership & Entrepreneu": 2,
-              "VALE - Venture Academy of Leadership & Entrepreneurship": 1,
               "Vail Child Care/Eagle Valley Child Care Assoc": 8,
               "Vail Christian Academy": 10,
               "Vail Christian High School": 3,
@@ -7596,6 +6528,8 @@
               "Vail Ski And Snowboard Academy": 7,
               "Vail Ski And Snowboard Academy (vssa)": 2,
               "Valdez Elementary School": 18,
+              "VALE - Venture Academy of Leadership & Entrepreneu": 2,
+              "VALE - Venture Academy of Leadership & Entrepreneurship": 1,
               "Valley Christian Academy - Manitou Boulevard": 1,
               "Valley Christian Academy - New Center Point": 2,
               "Valley Christian School": 10,
@@ -7672,8 +6606,6 @@
               "Volunteers Of America - Hr": 1,
               "Volunteers of America Child Care Center": 2,
               "W H Heaton Middle School": 9,
-              "WPSD Early Childhood Center": 3,
-              "WPSD Early Childhood Center- SES": 3,
               "Waldorf At The Roaring Fork": 2,
               "Waldorf School On Roaring Fork": 2,
               "Waldorf School On the Roaring Fork": 2,
@@ -7693,8 +6625,8 @@
               "Warren Tech Central": 9,
               "Warren Tech North": 5,
               "Warren Tech South": 1,
-              "Warren Village Learning Center I": 5,
               "Warren Village at Alameda": 1,
+              "Warren Village Learning Center I": 5,
               "Washington Childrens Center": 3,
               "Washington Elementary School": 36,
               "Washington Park Early Learning Center": 9,
@@ -7739,8 +6671,8 @@
               "Wellington Middle School": 7,
               "Wellington Middle-High School": 2,
               "Wellshire Parents Day Out": 7,
-              "Wellspring Catholic Academy Preschool": 6,
               "Wellspring Catholic Academy of St. Bernadette": 8,
+              "Wellspring Catholic Academy Preschool": 6,
               "Welte Education Center": 9,
               "Werner Elementary School": 18,
               "West Cpcd Preschool": 2,
@@ -7801,8 +6733,8 @@
               "Widefield Elementary School": 4,
               "Widefield Elementary School of The Arts": 14,
               "Widefield High School": 9,
-              "Widefield Parks And Recreation ECE": 4,
               "Widefield Parks And Recreation Early Childhoo": 4,
+              "Widefield Parks And Recreation ECE": 4,
               "Widefield School District 3 Preschool (Cpcd)": 3,
               "Wiggins K-12 Schools": 16,
               "Wiggins Preschool": 8,
@@ -7830,10 +6762,10 @@
               "Willow Creek Preschool": 3,
               "Willow Elementary": 8,
               "Willows Arapaho Hills Child Learning": 5,
+              "Willows Child Learning at Arapaho Hills": 4,
               "Willows Child Learning Center": 9,
               "Willows Child Learning Center at Homestead": 3,
               "Willows Child Learning Center at Quebec": 4,
-              "Willows Child Learning at Arapaho Hills": 4,
               "Willows Olde Mill Child Learning Center": 2,
               "Willows Olde Mill Child Learning Ctr": 6,
               "Wilmore Davis Elementary School": 12,
@@ -7894,15 +6826,14 @@
               "Worldmind Nature Immersion Preschool - City Park": 10,
               "Worldmind Nature Immersion Preschool - Matthews-Winters Park": 2,
               "Worldmind Prep School": 2,
+              "WPSD Early Childhood Center": 3,
+              "WPSD Early Childhood Center- SES": 3,
               "Wray Community Learning Center": 9,
               "Wray Elementary Preschool": 10,
               "Wray K-12 Schools": 12,
               "Wray School District": 4,
               "Wuddleitbee Child Care": 6,
               "Wyatt Academy": 18,
-              "YMCA Inspire Preschool - Boulder": 2,
-              "YMCA Inspire Preschool -Johnstown": 4,
-              "YMCA Inspire Preschool Loveland": 1,
               "Yale Elementary Preschool": 8,
               "Yale Elementary School": 18,
               "Yampa Valley High School": 8,
@@ -7910,6 +6841,9 @@
               "Yampah Mountain High School Nursery": 5,
               "Yampah Mountain School": 3,
               "Ymca": 2,
+              "YMCA Inspire Preschool - Boulder": 2,
+              "YMCA Inspire Preschool -Johnstown": 4,
+              "YMCA Inspire Preschool Loveland": 1,
               "Ymca Of Pueblo": 4,
               "York International": 18,
               "Young Montessori School": 1,
@@ -7930,12 +6864,7 @@
               "Zachs Place": 8,
               "Ziji Early Elementary School": 12,
               "Zion Lutheran Preschool": 4,
-              "Zion Lutheran School": 27,
-              "eDCSD: Colorado Cyber School": 18,
-              "eLearning Elementary School": 4,
-              "eLearning High School": 1,
-              "eLearning Middle School": 2,
-              "iKid Academy - Centennial": 2
+              "Zion Lutheran School": 27
             }
           },
           {
@@ -9233,6 +8162,1274 @@
         ]
       },
       "sha512": "05c063e5fbf5c47980b1d3222aec57d59685d1a34d563425c1dcb238036aed7f7ca3ed6d933b720e14d07a048d21b42802f1ba28c998506aa582b7c71ba3d286"
+    },
+    {
+      "bytes": 70136,
+      "encoding": "windows-1252",
+      "md5": "266974a3a7b750cca29d0e685658193e",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": [
+          "5207764b5c9d0f60fddd369d25ad0edf2ba494de",
+          "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
+          "5ece9a0635db3e3c5de2493036d3e1bc0fe811b1",
+          "55abea59c2ccfafe4782b83208e9af4f499a3482",
+          "219bd702153d8be0ba951c5d08031bd30aeb1942",
+          "46e593022c2efc95db1362994f6b80b1fa0a7e8c",
+          "dc26589b9abf9358696c7245dabb3bd7be4e6f72"
+        ],
+        "author": [
+          "Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>",
+          "anshap32 <73296024+anshap32@users.noreply.github.com>",
+          "weinbergerlab <dweinber@gmail.com>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>",
+          "cawerin <aiwenc@andrew.cmu.edu>"
+        ],
+        "date": [
+          "Thu Sep 10 16:16:56 2026 -0400",
+          "Wed Aug 26 09:31:25 2026 -0400",
+          "Fri Jul 24 14:54:29 2026 -0400",
+          "Thu Jun 25 18:12:59 2026 -0400",
+          "Sun May 3 01:46:59 2026 -0400",
+          "Thu Feb 26 07:14:11 2026 -0500",
+          "Thu Feb 5 00:17:25 2026 -0500"
+        ],
+        "message": [
+          "Rework source fetching, add PDF parsing and new state sources (#11)",
+          "Update ingests to use APIs",
+          "Rewire NY, CO, CA ingest to pull from official APIs",
+          "standardize variable names & created mega sheet for all counties",
+          "aggregation first attempt",
+          "standardize HI and round data to 2 decimal points",
+          "mass standardization"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 0,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-09-11 15:14:18.912957",
+      "last_modified": "2026-09-11 15:14:18.912957",
+      "vintage": {},
+      "row_count": 1743,
+      "entity_count": 65,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 1734,
+            "info": [],
+            "time_range": [6, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2017-09-01": 194,
+              "2018-09-01": 187,
+              "2019-09-01": 195,
+              "2020-09-01": 195,
+              "2021-09-01": 194,
+              "2022-09-01": 195,
+              "2023-09-01": 195,
+              "2024-09-01": 193,
+              "2025-09-01": 195
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 1740,
+            "info": [],
+            "time_range": [6, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Child Care/Preschool": 580,
+              "Kindergarten": 582,
+              "School": 581
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 1678,
+            "info": [],
+            "time_range": [6, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "08": 27,
+              "08001": 27,
+              "08003": 27,
+              "08005": 27,
+              "08007": 27,
+              "08009": 27,
+              "08011": 27,
+              "08013": 27,
+              "08014": 27,
+              "08015": 27,
+              "08017": 27,
+              "08019": 27,
+              "08021": 27,
+              "08023": 27,
+              "08025": 26,
+              "08027": 25,
+              "08029": 27,
+              "08031": 27,
+              "08033": 27,
+              "08035": 27,
+              "08037": 27,
+              "08039": 27,
+              "08041": 27,
+              "08043": 27,
+              "08045": 27,
+              "08047": 27,
+              "08049": 27,
+              "08051": 27,
+              "08053": 27,
+              "08055": 27,
+              "08057": 23,
+              "08059": 27,
+              "08061": 27,
+              "08063": 27,
+              "08065": 27,
+              "08067": 27,
+              "08069": 27,
+              "08071": 27,
+              "08073": 27,
+              "08075": 27,
+              "08077": 27,
+              "08079": 27,
+              "08081": 25,
+              "08083": 27,
+              "08085": 27,
+              "08087": 27,
+              "08089": 27,
+              "08091": 27,
+              "08093": 27,
+              "08095": 27,
+              "08097": 27,
+              "08099": 27,
+              "08101": 27,
+              "08103": 27,
+              "08105": 27,
+              "08107": 27,
+              "08109": 27,
+              "08111": 24,
+              "08113": 27,
+              "08115": 27,
+              "08117": 27,
+              "08119": 27,
+              "08121": 27,
+              "08123": 27,
+              "08125": 27
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 1678,
+            "info": [],
+            "time_range": [6, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Adams": 27,
+              "Alamosa": 27,
+              "Arapahoe": 27,
+              "Archuleta": 27,
+              "Baca": 27,
+              "Bent": 27,
+              "Boulder": 27,
+              "Broomfield": 27,
+              "Chaffee": 27,
+              "Cheyenne": 27,
+              "Clear Creek": 27,
+              "Colorado": 27,
+              "Conejos": 27,
+              "Costilla": 27,
+              "Crowley": 26,
+              "Custer": 25,
+              "Delta": 27,
+              "Denver": 27,
+              "Dolores": 27,
+              "Douglas": 27,
+              "Eagle": 27,
+              "El Paso": 27,
+              "Elbert": 27,
+              "Fremont": 27,
+              "Garfield": 27,
+              "Gilpin": 27,
+              "Grand": 27,
+              "Gunnison": 27,
+              "Hinsdale": 27,
+              "Huerfano": 27,
+              "Jackson": 23,
+              "Jefferson": 27,
+              "Kiowa": 27,
+              "Kit Carson": 27,
+              "La Plata": 27,
+              "Lake": 27,
+              "Larimer": 27,
+              "Las Animas": 27,
+              "Lincoln": 27,
+              "Logan": 27,
+              "Mesa": 27,
+              "Mineral": 27,
+              "Moffat": 25,
+              "Montezuma": 27,
+              "Montrose": 27,
+              "Morgan": 27,
+              "Otero": 27,
+              "Ouray": 27,
+              "Park": 27,
+              "Phillips": 27,
+              "Pitkin": 27,
+              "Prowers": 27,
+              "Pueblo": 27,
+              "Rio Blanco": 27,
+              "Rio Grande": 27,
+              "Routt": 27,
+              "Saguache": 27,
+              "San Juan": 24,
+              "San Miguel": 27,
+              "Sedgwick": 27,
+              "Summit": 27,
+              "Teller": 27,
+              "Washington": 27,
+              "Weld": 27,
+              "Yuma": 27
+            }
+          },
+          {
+            "name": "type",
+            "duplicates": 1741,
+            "info": [],
+            "time_range": [6, 7],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "county": 1716,
+              "state": 27
+            }
+          },
+          {
+            "name": "rate_mmr",
+            "duplicates": 1478,
+            "info": {
+              "id": "rate_mmr",
+              "short_name": "MMR coverage",
+              "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.907271,
+            "sd": 0.07134,
+            "min": 0.2,
+            "max": 1
+          },
+          {
+            "name": "rate_mmr_medical_exempt",
+            "duplicates": 1708,
+            "info": {
+              "id": "rate_mmr_medical_exempt",
+              "short_name": "MMR medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from MMR vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the MMR vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.001885,
+            "sd": 0.011187,
+            "min": 0,
+            "max": 0.343
+          },
+          {
+            "name": "rate_mmr_nonmedical_exempt",
+            "duplicates": 1552,
+            "info": {
+              "id": "rate_mmr_nonmedical_exempt",
+              "short_name": "MMR non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from MMR vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the MMR vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the MMR vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.049745,
+            "sd": 0.050444,
+            "min": 0,
+            "max": 0.429
+          },
+          {
+            "name": "rate_dtap",
+            "duplicates": 1477,
+            "info": {
+              "id": "rate_dtap",
+              "short_name": "DTaP/Tdap coverage",
+              "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.905628,
+            "sd": 0.069589,
+            "min": 0.4,
+            "max": 1
+          },
+          {
+            "name": "rate_dtap_medical_exempt",
+            "duplicates": 1709,
+            "info": {
+              "id": "rate_dtap_medical_exempt",
+              "short_name": "DTaP medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from DTaP vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the DTaP vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from DTaP vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.00169,
+            "sd": 0.0112,
+            "min": 0,
+            "max": 0.343
+          },
+          {
+            "name": "rate_dtap_nonmedical_exempt",
+            "duplicates": 1552,
+            "info": {
+              "id": "rate_dtap_nonmedical_exempt",
+              "short_name": "DTaP non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from DTaP vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the DTaP vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the DTaP vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from DTaP vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.04874,
+            "sd": 0.049404,
+            "min": 0,
+            "max": 0.429
+          },
+          {
+            "name": "rate_tdap",
+            "duplicates": 1526,
+            "info": {
+              "id": "rate_tdap",
+              "short_name": "Tdap coverage",
+              "long_name": "Proportion of students up to date for tetanus-diphtheria-pertussis (Tdap) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for tetanus-diphtheria-pertussis (Tdap) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for tetanus-diphtheria-pertussis (Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for Tdap vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1162,
+            "mean": 0.886762,
+            "sd": 0.082471,
+            "min": 0.356,
+            "max": 1
+          },
+          {
+            "name": "rate_tdap_medical_exempt",
+            "duplicates": 1728,
+            "info": {
+              "id": "rate_tdap_medical_exempt",
+              "short_name": "Tdap medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from Tdap vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the Tdap vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from Tdap vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1162,
+            "mean": 0.001401,
+            "sd": 0.004587,
+            "min": 0,
+            "max": 0.095
+          },
+          {
+            "name": "rate_tdap_nonmedical_exempt",
+            "duplicates": 1608,
+            "info": {
+              "id": "rate_tdap_nonmedical_exempt",
+              "short_name": "Tdap non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from Tdap vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the Tdap vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the Tdap vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from Tdap vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1162,
+            "mean": 0.047759,
+            "sd": 0.055284,
+            "min": 0,
+            "max": 0.511
+          },
+          {
+            "name": "rate_polio",
+            "duplicates": 1471,
+            "info": {
+              "id": "rate_polio",
+              "short_name": "Polio coverage",
+              "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.906287,
+            "sd": 0.070205,
+            "min": 0.4,
+            "max": 1
+          },
+          {
+            "name": "rate_polio_medical_exempt",
+            "duplicates": 1710,
+            "info": {
+              "id": "rate_polio_medical_exempt",
+              "short_name": "polio medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from polio vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the polio vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from polio vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.00161,
+            "sd": 0.011029,
+            "min": 0,
+            "max": 0.343
+          },
+          {
+            "name": "rate_polio_nonmedical_exempt",
+            "duplicates": 1551,
+            "info": {
+              "id": "rate_polio_nonmedical_exempt",
+              "short_name": "polio non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from polio vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the polio vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the polio vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from polio vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.050366,
+            "sd": 0.050774,
+            "min": 0,
+            "max": 0.429
+          },
+          {
+            "name": "rate_hep_b",
+            "duplicates": 1502,
+            "info": {
+              "id": "rate_hep_b",
+              "short_name": "Hepatitis B coverage",
+              "long_name": "Proportion of students up to date for hepatitis B vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for hepatitis B vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for hepatitis B vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for hepatitis B vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.918904,
+            "sd": 0.062337,
+            "min": 0.333,
+            "max": 1
+          },
+          {
+            "name": "rate_hep_b_medical_exempt",
+            "duplicates": 1710,
+            "info": {
+              "id": "rate_hep_b_medical_exempt",
+              "short_name": "hepatitis B medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from hepatitis B vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the hepatitis B vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from hepatitis B vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.001628,
+            "sd": 0.01101,
+            "min": 0,
+            "max": 0.343
+          },
+          {
+            "name": "rate_hep_b_nonmedical_exempt",
+            "duplicates": 1554,
+            "info": {
+              "id": "rate_hep_b_nonmedical_exempt",
+              "short_name": "hepatitis B non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from hepatitis B vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the hepatitis B vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the hepatitis B vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from hepatitis B vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.049482,
+            "sd": 0.051804,
+            "min": 0,
+            "max": 0.667
+          },
+          {
+            "name": "rate_varicella",
+            "duplicates": 1458,
+            "info": {
+              "id": "rate_varicella",
+              "short_name": "Varicella coverage",
+              "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.898843,
+            "sd": 0.074781,
+            "min": 0.2,
+            "max": 1
+          },
+          {
+            "name": "rate_varicella_medical_exempt",
+            "duplicates": 1703,
+            "info": {
+              "id": "rate_varicella_medical_exempt",
+              "short_name": "varicella medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from varicella vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the varicella vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.002358,
+            "sd": 0.011503,
+            "min": 0,
+            "max": 0.343
+          },
+          {
+            "name": "rate_varicella_nonmedical_exempt",
+            "duplicates": 1540,
+            "info": {
+              "id": "rate_varicella_nonmedical_exempt",
+              "short_name": "varicella non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from varicella vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the varicella vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the varicella vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.053377,
+            "sd": 0.054557,
+            "min": 0,
+            "max": 0.667
+          },
+          {
+            "name": "rate_hib",
+            "duplicates": 1574,
+            "info": {
+              "id": "rate_hib",
+              "short_name": "Hib coverage",
+              "long_name": "Proportion of students up to date for Haemophilus influenzae type b (Hib) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for Haemophilus influenzae type b (Hib) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for Haemophilus influenzae type b (Hib) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for Hib vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1163,
+            "mean": 0.924731,
+            "sd": 0.054503,
+            "min": 0.579,
+            "max": 1
+          },
+          {
+            "name": "rate_hib_medical_exempt",
+            "duplicates": 1714,
+            "info": {
+              "id": "rate_hib_medical_exempt",
+              "short_name": "Hib medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from Hib vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the Hib vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from Hib vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1163,
+            "mean": 0.002245,
+            "sd": 0.015463,
+            "min": 0,
+            "max": 0.343
+          },
+          {
+            "name": "rate_hib_nonmedical_exempt",
+            "duplicates": 1620,
+            "info": {
+              "id": "rate_hib_nonmedical_exempt",
+              "short_name": "Hib non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from Hib vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the Hib vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the Hib vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from Hib vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1163,
+            "mean": 0.041212,
+            "sd": 0.039872,
+            "min": 0,
+            "max": 0.375
+          },
+          {
+            "name": "rate_pcv",
+            "duplicates": 1571,
+            "info": {
+              "id": "rate_pcv",
+              "short_name": "Pneumococcal (PCV) coverage",
+              "long_name": "Proportion of students up to date for pneumococcal conjugate (PCV) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for pneumococcal conjugate (PCV) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for pneumococcal conjugate (PCV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for pneumococcal (PCV) vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1163,
+            "mean": 0.923378,
+            "sd": 0.057674,
+            "min": 0.579,
+            "max": 1
+          },
+          {
+            "name": "rate_pcv_medical_exempt",
+            "duplicates": 1715,
+            "info": {
+              "id": "rate_pcv_medical_exempt",
+              "short_name": "pneumococcal (PCV) medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from pneumococcal (PCV) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the pneumococcal (PCV) vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from pneumococcal (PCV) vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1163,
+            "mean": 0.002174,
+            "sd": 0.015318,
+            "min": 0,
+            "max": 0.343
+          },
+          {
+            "name": "rate_pcv_nonmedical_exempt",
+            "duplicates": 1621,
+            "info": {
+              "id": "rate_pcv_nonmedical_exempt",
+              "short_name": "pneumococcal (PCV) non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from pneumococcal (PCV) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the pneumococcal (PCV) vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the pneumococcal (PCV) vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from pneumococcal (PCV) vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "float",
+            "missing": 1163,
+            "mean": 0.041645,
+            "sd": 0.042408,
+            "min": 0,
+            "max": 0.375
+          },
+          {
+            "name": "rate_covid",
+            "duplicates": 1721,
+            "info": {
+              "id": "rate_covid",
+              "short_name": "COVID-19 coverage",
+              "long_name": "Proportion of students up to date for COVID-19 vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for COVID-19 vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for COVID-19 vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for COVID-19 vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [3, 5],
+            "type": "float",
+            "missing": 1704,
+            "mean": 0.058179,
+            "sd": 0.158718,
+            "min": 0,
+            "max": 0.824
+          },
+          {
+            "name": "rate_covid_medical_exempt",
+            "duplicates": 1741,
+            "info": {
+              "id": "rate_covid_medical_exempt",
+              "short_name": "COVID-19 medical exemption rate",
+              "long_name": "Proportion of students with a medical exemption from COVID-19 vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a medical exemption from the COVID-19 vaccination requirement.",
+              "long_description": "Share of assessed school students holding a medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a medical exemption from COVID-19 vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [3, 5],
+            "type": "integer",
+            "missing": 1704,
+            "mean": 0,
+            "sd": 0,
+            "min": 0,
+            "max": 0
+          },
+          {
+            "name": "rate_covid_nonmedical_exempt",
+            "duplicates": 1741,
+            "info": {
+              "id": "rate_covid_nonmedical_exempt",
+              "short_name": "COVID-19 non-medical exemption rate",
+              "long_name": "Proportion of students with a non-medical exemption from COVID-19 vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with a non-medical exemption from the COVID-19 vaccination requirement.",
+              "long_description": "Share of assessed school students holding a non-medical exemption from the COVID-19 vaccine specifically. Reported by states that break exemptions out by antigen.",
+              "statement": "In {location}, {value} of school students had a non-medical exemption from COVID-19 vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [3, 5],
+            "type": "integer",
+            "missing": 1704,
+            "mean": 0,
+            "sd": 0,
+            "min": 0,
+            "max": 0
+          },
+          {
+            "name": "N_mmr_enrolled",
+            "duplicates": 658,
+            "info": {
+              "id": "N_mmr_enrolled",
+              "short_name": "MMR enrollment",
+              "long_name": "Number of students enrolled in the grades where measles-mumps-rubella (MMR) is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the measles-mumps-rubella (MMR) percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the measles-mumps-rubella (MMR) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where measles-mumps-rubella (MMR) is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 0,
+            "mean": 10588.304647,
+            "sd": 64625.828393,
+            "min": 2,
+            "max": 899626
+          },
+          {
+            "name": "N_dtap_enrolled",
+            "duplicates": 658,
+            "info": {
+              "id": "N_dtap_enrolled",
+              "short_name": "DTaP enrollment",
+              "long_name": "Number of students enrolled in the grades where diphtheria-tetanus-pertussis (DTaP) is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the diphtheria-tetanus-pertussis (DTaP) percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the diphtheria-tetanus-pertussis (DTaP) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where diphtheria-tetanus-pertussis (DTaP) is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 0,
+            "mean": 10588.304647,
+            "sd": 64625.828393,
+            "min": 2,
+            "max": 899626
+          },
+          {
+            "name": "N_tdap_enrolled",
+            "duplicates": 1219,
+            "info": {
+              "id": "N_tdap_enrolled",
+              "short_name": "Tdap enrollment",
+              "long_name": "Number of students enrolled in the grades where tetanus-diphtheria-pertussis (Tdap) is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the tetanus-diphtheria-pertussis (Tdap) percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the tetanus-diphtheria-pertussis (Tdap) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where tetanus-diphtheria-pertussis (Tdap) is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 1162,
+            "mean": 15017.621343,
+            "sd": 61167.503345,
+            "min": 29,
+            "max": 495607
+          },
+          {
+            "name": "N_polio_enrolled",
+            "duplicates": 658,
+            "info": {
+              "id": "N_polio_enrolled",
+              "short_name": "Polio enrollment",
+              "long_name": "Number of students enrolled in the grades where poliovirus is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the poliovirus percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the poliovirus requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where poliovirus is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 0,
+            "mean": 10588.304647,
+            "sd": 64625.828393,
+            "min": 2,
+            "max": 899626
+          },
+          {
+            "name": "N_hep_b_enrolled",
+            "duplicates": 658,
+            "info": {
+              "id": "N_hep_b_enrolled",
+              "short_name": "Hepatitis B enrollment",
+              "long_name": "Number of students enrolled in the grades where hepatitis B is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the hepatitis B percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the hepatitis B requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where hepatitis B is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 0,
+            "mean": 10588.304647,
+            "sd": 64625.828393,
+            "min": 2,
+            "max": 899626
+          },
+          {
+            "name": "N_varicella_enrolled",
+            "duplicates": 658,
+            "info": {
+              "id": "N_varicella_enrolled",
+              "short_name": "Varicella enrollment",
+              "long_name": "Number of students enrolled in the grades where varicella is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the varicella percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the varicella requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where varicella is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 0,
+            "mean": 10588.304647,
+            "sd": 64625.828393,
+            "min": 2,
+            "max": 899626
+          },
+          {
+            "name": "N_hib_enrolled",
+            "duplicates": 1327,
+            "info": {
+              "id": "N_hib_enrolled",
+              "short_name": "Hib enrollment",
+              "long_name": "Number of students enrolled in the grades where Haemophilus influenzae type b (Hib) is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the Haemophilus influenzae type b (Hib) percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the Haemophilus influenzae type b (Hib) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where Haemophilus influenzae type b (Hib) is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 1163,
+            "mean": 2970.27931,
+            "sd": 12094.799529,
+            "min": 11,
+            "max": 108348
+          },
+          {
+            "name": "N_pcv_enrolled",
+            "duplicates": 1327,
+            "info": {
+              "id": "N_pcv_enrolled",
+              "short_name": "Pneumococcal (PCV) enrollment",
+              "long_name": "Number of students enrolled in the grades where pneumococcal conjugate (PCV) is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the pneumococcal conjugate (PCV) percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the pneumococcal conjugate (PCV) requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where pneumococcal conjugate (PCV) is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [6, 7],
+            "type": "integer",
+            "missing": 1163,
+            "mean": 2970.27931,
+            "sd": 12094.799529,
+            "min": 11,
+            "max": 108348
+          },
+          {
+            "name": "N_covid_enrolled",
+            "duplicates": 1703,
+            "info": {
+              "id": "N_covid_enrolled",
+              "short_name": "COVID-19 enrollment",
+              "long_name": "Number of students enrolled in the grades where COVID-19 vaccination is required",
+              "category": "immunization",
+              "short_description": "Enrollment used as the denominator for the COVID-19 vaccination percentages.",
+              "long_description": "Count of students enrolled in the grades subject to the COVID-19 vaccination requirement. It is the denominator of that vaccine's percentages in the same record, and differs between vaccines because they are required at different grades.",
+              "statement": "In {location}, {value} students were enrolled in grades where COVID-19 vaccination is required.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "co_school_immunization"
+                }
+              ]
+            },
+            "time_range": [3, 5],
+            "type": "integer",
+            "missing": 1704,
+            "mean": 31572.589744,
+            "sd": 39873.9807,
+            "min": 74,
+            "max": 119212
+          }
+        ]
+      },
+      "sha512": "e89ee7e2d57dc756472bce8904f4e4902e399178c6ddb550a0c59f86b8d25450607eaed34a2faa1ddc729424f8f1ba6d0398e83cb92807904cdec8d3249ad00f"
     }
   ],
   "measure_info": {
@@ -9877,6 +10074,12 @@
     }
   },
   "change_report": {
+    "data_districts.csv.gz": {
+      "state": "unchanged"
+    },
+    "data_schools.csv.gz": {
+      "state": "unchanged"
+    },
     "data.csv.gz": {
       "state": "unchanged"
     }

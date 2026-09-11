@@ -9,14 +9,618 @@
   },
   "resources": [
     {
+      "bytes": 1840,
+      "encoding": "windows-1252",
+      "md5": "e40ccddf5d49e04bbe0926e465416851",
+      "format": "csv",
+      "name": "data_exemptions.csv",
+      "filename": "data_exemptions.csv.gz",
+      "versions": {
+        "hash": [
+          "5207764b5c9d0f60fddd369d25ad0edf2ba494de",
+          "fb0767f1419800437f8496dc580b45114e00bef9"
+        ],
+        "author": [
+          "Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>",
+          "anshap32 <73296024+anshap32@users.noreply.github.com>"
+        ],
+        "date": [
+          "Thu Sep 10 16:16:56 2026 -0400",
+          "Wed Aug 26 11:53:28 2026 -0400"
+        ],
+        "message": [
+          "Rework source fetching, add PDF parsing and new state sources (#11)",
+          "update FL"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 5,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-09-11 15:14:18.932255",
+      "last_modified": "2026-09-11 15:14:18.932255",
+      "vintage": {},
+      "row_count": 67,
+      "entity_count": 67,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 66,
+            "info": [],
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2024-09-01": 67
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 0,
+            "info": [],
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "12001": 1,
+              "12003": 1,
+              "12005": 1,
+              "12007": 1,
+              "12009": 1,
+              "12011": 1,
+              "12013": 1,
+              "12015": 1,
+              "12017": 1,
+              "12019": 1,
+              "12021": 1,
+              "12023": 1,
+              "12027": 1,
+              "12029": 1,
+              "12031": 1,
+              "12033": 1,
+              "12035": 1,
+              "12037": 1,
+              "12039": 1,
+              "12041": 1,
+              "12043": 1,
+              "12045": 1,
+              "12047": 1,
+              "12049": 1,
+              "12051": 1,
+              "12053": 1,
+              "12055": 1,
+              "12057": 1,
+              "12059": 1,
+              "12061": 1,
+              "12063": 1,
+              "12065": 1,
+              "12067": 1,
+              "12069": 1,
+              "12071": 1,
+              "12073": 1,
+              "12075": 1,
+              "12077": 1,
+              "12079": 1,
+              "12081": 1,
+              "12083": 1,
+              "12085": 1,
+              "12086": 1,
+              "12087": 1,
+              "12089": 1,
+              "12091": 1,
+              "12093": 1,
+              "12095": 1,
+              "12097": 1,
+              "12099": 1,
+              "12101": 1,
+              "12103": 1,
+              "12105": 1,
+              "12107": 1,
+              "12109": 1,
+              "12111": 1,
+              "12113": 1,
+              "12115": 1,
+              "12117": 1,
+              "12119": 1,
+              "12121": 1,
+              "12123": 1,
+              "12125": 1,
+              "12127": 1,
+              "12129": 1,
+              "12131": 1,
+              "12133": 1
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 0,
+            "info": [],
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Alachua": 1,
+              "Baker": 1,
+              "Bay": 1,
+              "Bradford": 1,
+              "Brevard": 1,
+              "Broward": 1,
+              "Calhoun": 1,
+              "Charlotte": 1,
+              "Citrus": 1,
+              "Clay": 1,
+              "Collier": 1,
+              "Columbia": 1,
+              "DeSoto": 1,
+              "Dixie": 1,
+              "Duval": 1,
+              "Escambia": 1,
+              "Flagler": 1,
+              "Franklin": 1,
+              "Gadsden": 1,
+              "Gilchrist": 1,
+              "Glades": 1,
+              "Gulf": 1,
+              "Hamilton": 1,
+              "Hardee": 1,
+              "Hendry": 1,
+              "Hernando": 1,
+              "Highlands": 1,
+              "Hillsborough": 1,
+              "Holmes": 1,
+              "Indian River": 1,
+              "Jackson": 1,
+              "Jefferson": 1,
+              "Lafayette": 1,
+              "Lake": 1,
+              "Lee": 1,
+              "Leon": 1,
+              "Levy": 1,
+              "Liberty": 1,
+              "Madison": 1,
+              "Manatee": 1,
+              "Marion": 1,
+              "Martin": 1,
+              "Miami-Dade": 1,
+              "Monroe": 1,
+              "Nassau": 1,
+              "Okaloosa": 1,
+              "Okeechobee": 1,
+              "Orange": 1,
+              "Osceola": 1,
+              "Palm Beach": 1,
+              "Pasco": 1,
+              "Pinellas": 1,
+              "Polk": 1,
+              "Putnam": 1,
+              "Santa Rosa": 1,
+              "Sarasota": 1,
+              "Seminole": 1,
+              "St. Johns": 1,
+              "St. Lucie": 1,
+              "Sumter": 1,
+              "Suwannee": 1,
+              "Taylor": 1,
+              "Union": 1,
+              "Volusia": 1,
+              "Wakulla": 1,
+              "Walton": 1,
+              "Washington": 1
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 66,
+            "info": [],
+            "time_range": [0, 0],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Overall": 67
+            }
+          },
+          {
+            "name": "N_full_exempt",
+            "duplicates": 5,
+            "info": {
+              "id": "N_full_exempt",
+              "short_name": "Total exemptions (count)",
+              "long_name": "Number of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
+              "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "fl_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 0],
+            "type": "integer",
+            "missing": 0,
+            "mean": 2667.253731,
+            "sd": 3846.59571,
+            "min": 20,
+            "max": 19390
+          },
+          {
+            "name": "rate_full_exempt",
+            "duplicates": 0,
+            "info": {
+              "id": "rate_full_exempt",
+              "short_name": "Total exemption rate",
+              "long_name": "Proportion of students with any vaccination exemption",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
+              "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
+              "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "fl_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 0],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.048854,
+            "sd": 0.024168,
+            "min": 0.009789,
+            "max": 0.124559
+          },
+          {
+            "name": "total_pop_4_18",
+            "duplicates": 0,
+            "info": {
+              "id": "total_pop_4_18",
+              "short_name": "Population aged 4-18",
+              "long_name": "Census population aged 4 to 18",
+              "category": "immunization",
+              "short_description": "Census population aged 4 to 18 in the county.",
+              "long_description": "Population aged 4 to 18 from census estimates, used as an approximate denominator where the state publishes exemption counts without an enrolment figure. It is a resident population, not an enrolment count, so rates derived from it are approximate.",
+              "statement": "In {location}, the population aged 4 to 18 was {value}.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "fl_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 0],
+            "type": "integer",
+            "missing": 0,
+            "mean": 48182.701493,
+            "sd": 74253.271188,
+            "min": 1515,
+            "max": 353970
+          }
+        ]
+      },
+      "sha512": "d3bd9712df496b55400a40cc3b4f5c5bd2d07386c6caa1b8a2ec7bd4421bd844999b98b49a9435020e6d4984f38c3f9a56762611c619ff6499b7f1757fe58884"
+    },
+    {
+      "bytes": 10552,
+      "encoding": "windows-1252",
+      "md5": "bf8a7ea315db0eee091b22c3c4d3cee1",
+      "format": "csv",
+      "name": "data_kindergarten.csv",
+      "filename": "data_kindergarten.csv.gz",
+      "versions": {
+        "hash": [
+          "5207764b5c9d0f60fddd369d25ad0edf2ba494de",
+          "fb0767f1419800437f8496dc580b45114e00bef9"
+        ],
+        "author": [
+          "Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>",
+          "anshap32 <73296024+anshap32@users.noreply.github.com>"
+        ],
+        "date": [
+          "Thu Sep 10 16:16:56 2026 -0400",
+          "Wed Aug 26 11:53:28 2026 -0400"
+        ],
+        "message": [
+          "Rework source fetching, add PDF parsing and new state sources (#11)",
+          "update FL"
+        ]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 5,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-09-11 15:14:18.932255",
+      "last_modified": "2026-09-11 15:14:18.932255",
+      "vintage": {},
+      "row_count": 1340,
+      "entity_count": 67,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 1320,
+            "info": [],
+            "time_range": [0, 19],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2006-09-01": 67,
+              "2007-09-01": 67,
+              "2008-09-01": 67,
+              "2009-09-01": 67,
+              "2010-09-01": 67,
+              "2011-09-01": 67,
+              "2012-09-01": 67,
+              "2013-09-01": 67,
+              "2014-09-01": 67,
+              "2015-09-01": 67,
+              "2016-09-01": 67,
+              "2017-09-01": 67,
+              "2018-09-01": 67,
+              "2019-09-01": 67,
+              "2020-09-01": 67,
+              "2021-09-01": 67,
+              "2022-09-01": 67,
+              "2023-09-01": 67,
+              "2024-09-01": 67,
+              "2025-09-01": 67
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 1273,
+            "info": [],
+            "time_range": [0, 19],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "12001": 20,
+              "12003": 20,
+              "12005": 20,
+              "12007": 20,
+              "12009": 20,
+              "12011": 20,
+              "12013": 20,
+              "12015": 20,
+              "12017": 20,
+              "12019": 20,
+              "12021": 20,
+              "12023": 20,
+              "12027": 20,
+              "12029": 20,
+              "12031": 20,
+              "12033": 20,
+              "12035": 20,
+              "12037": 20,
+              "12039": 20,
+              "12041": 20,
+              "12043": 20,
+              "12045": 20,
+              "12047": 20,
+              "12049": 20,
+              "12051": 20,
+              "12053": 20,
+              "12055": 20,
+              "12057": 20,
+              "12059": 20,
+              "12061": 20,
+              "12063": 20,
+              "12065": 20,
+              "12067": 20,
+              "12069": 20,
+              "12071": 20,
+              "12073": 20,
+              "12075": 20,
+              "12077": 20,
+              "12079": 20,
+              "12081": 20,
+              "12083": 20,
+              "12085": 20,
+              "12086": 20,
+              "12087": 20,
+              "12089": 20,
+              "12091": 20,
+              "12093": 20,
+              "12095": 20,
+              "12097": 20,
+              "12099": 20,
+              "12101": 20,
+              "12103": 20,
+              "12105": 20,
+              "12107": 20,
+              "12109": 20,
+              "12111": 20,
+              "12113": 20,
+              "12115": 20,
+              "12117": 20,
+              "12119": 20,
+              "12121": 20,
+              "12123": 20,
+              "12125": 20,
+              "12127": 20,
+              "12129": 20,
+              "12131": 20,
+              "12133": 20
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 1273,
+            "info": [],
+            "time_range": [0, 19],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Alachua": 20,
+              "Baker": 20,
+              "Bay": 20,
+              "Bradford": 20,
+              "Brevard": 20,
+              "Broward": 20,
+              "Calhoun": 20,
+              "Charlotte": 20,
+              "Citrus": 20,
+              "Clay": 20,
+              "Collier": 20,
+              "Columbia": 20,
+              "DeSoto": 20,
+              "Dixie": 20,
+              "Duval": 20,
+              "Escambia": 20,
+              "Flagler": 20,
+              "Franklin": 20,
+              "Gadsden": 20,
+              "Gilchrist": 20,
+              "Glades": 20,
+              "Gulf": 20,
+              "Hamilton": 20,
+              "Hardee": 20,
+              "Hendry": 20,
+              "Hernando": 20,
+              "Highlands": 20,
+              "Hillsborough": 20,
+              "Holmes": 20,
+              "Indian River": 20,
+              "Jackson": 20,
+              "Jefferson": 20,
+              "Lafayette": 20,
+              "Lake": 20,
+              "Lee": 20,
+              "Leon": 20,
+              "Levy": 20,
+              "Liberty": 20,
+              "Madison": 20,
+              "Manatee": 20,
+              "Marion": 20,
+              "Martin": 20,
+              "Miami-Dade": 20,
+              "Monroe": 20,
+              "Nassau": 20,
+              "Okaloosa": 20,
+              "Okeechobee": 20,
+              "Orange": 20,
+              "Osceola": 20,
+              "Palm Beach": 20,
+              "Pasco": 20,
+              "Pinellas": 20,
+              "Polk": 20,
+              "Putnam": 20,
+              "Santa Rosa": 20,
+              "Sarasota": 20,
+              "Seminole": 20,
+              "St. Johns": 20,
+              "St. Lucie": 20,
+              "Sumter": 20,
+              "Suwannee": 20,
+              "Taylor": 20,
+              "Union": 20,
+              "Volusia": 20,
+              "Wakulla": 20,
+              "Walton": 20,
+              "Washington": 20
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 1339,
+            "info": [],
+            "time_range": [0, 19],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Kindergarten": 1340
+            }
+          },
+          {
+            "name": "N_complete",
+            "duplicates": 261,
+            "info": {
+              "id": "N_complete",
+              "short_name": "Up-to-date students (count)",
+              "long_name": "Number of students up to date for all required vaccines",
+              "category": "immunization",
+              "short_description": "Number of assessed school students up to date for all required vaccines.",
+              "long_description": "Count of assessed school students who have completed all age-appropriate required immunizations.",
+              "statement": "In {location}, {value} school students were up to date for all required vaccines.",
+              "measure_type": "Count",
+              "unit": "Students",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "fl_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 19],
+            "type": "integer",
+            "missing": 0,
+            "mean": 3067.541045,
+            "sd": 4836.309743,
+            "min": 67,
+            "max": 29367
+          },
+          {
+            "name": "rate_complete",
+            "duplicates": 1169,
+            "info": {
+              "id": "rate_complete",
+              "short_name": "Up-to-date rate",
+              "long_name": "Proportion of students up to date for all required vaccines",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students up to date for all required vaccines.",
+              "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
+              "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "fl_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 19],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.937712,
+            "sd": 0.039421,
+            "min": 0.561,
+            "max": 1
+          }
+        ]
+      },
+      "sha512": "d28807cd2edd73633cc855059be1687911fac8bc81713e1187ac9ef790403ab27139731a1539aaf540e9d9ee20d7115a1ae3c7099a71eaa9814f558bb502b1da"
+    },
+    {
       "bytes": 12628,
-      "encoding": "ISO-8859-1",
+      "encoding": "windows-1252",
       "md5": "875a3937680c9d91795e2cb16be7fc31",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "5207764b5c9d0f60fddd369d25ad0edf2ba494de",
           "fb0767f1419800437f8496dc580b45114e00bef9",
           "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
@@ -24,6 +628,7 @@
           "08f01de9d938477d2cc751299507ab78ed156e13"
         ],
         "author": [
+          "Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>",
           "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
@@ -31,6 +636,7 @@
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Thu Sep 10 16:16:56 2026 -0400",
           "Wed Aug 26 11:53:28 2026 -0400",
           "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
@@ -38,6 +644,7 @@
           "Fri Feb 27 14:28:02 2026 -0500"
         ],
         "message": [
+          "Rework source fetching, add PDF parsing and new state sources (#11)",
           "update FL",
           "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
@@ -55,8 +662,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-09-09 09:37:23.429483",
-      "last_modified": "2026-09-09 09:37:23.429483",
+      "created": "2026-09-11 15:14:18.931957",
+      "last_modified": "2026-09-11 15:14:18.931957",
       "vintage": {},
       "row_count": 1407,
       "entity_count": 67,
@@ -97,12 +704,77 @@
             "duplicates": 1340,
             "info": [],
             "time_range": [0, 19],
-            "type": "integer",
+            "type": "string",
             "missing": 0,
-            "mean": 12067.910448,
-            "sd": 38.409365,
-            "min": 12001,
-            "max": 12133
+            "table": {
+              "12001": 21,
+              "12003": 21,
+              "12005": 21,
+              "12007": 21,
+              "12009": 21,
+              "12011": 21,
+              "12013": 21,
+              "12015": 21,
+              "12017": 21,
+              "12019": 21,
+              "12021": 21,
+              "12023": 21,
+              "12027": 21,
+              "12029": 21,
+              "12031": 21,
+              "12033": 21,
+              "12035": 21,
+              "12037": 21,
+              "12039": 21,
+              "12041": 21,
+              "12043": 21,
+              "12045": 21,
+              "12047": 21,
+              "12049": 21,
+              "12051": 21,
+              "12053": 21,
+              "12055": 21,
+              "12057": 21,
+              "12059": 21,
+              "12061": 21,
+              "12063": 21,
+              "12065": 21,
+              "12067": 21,
+              "12069": 21,
+              "12071": 21,
+              "12073": 21,
+              "12075": 21,
+              "12077": 21,
+              "12079": 21,
+              "12081": 21,
+              "12083": 21,
+              "12085": 21,
+              "12086": 21,
+              "12087": 21,
+              "12089": 21,
+              "12091": 21,
+              "12093": 21,
+              "12095": 21,
+              "12097": 21,
+              "12099": 21,
+              "12101": 21,
+              "12103": 21,
+              "12105": 21,
+              "12107": 21,
+              "12109": 21,
+              "12111": 21,
+              "12113": 21,
+              "12115": 21,
+              "12117": 21,
+              "12119": 21,
+              "12121": 21,
+              "12123": 21,
+              "12125": 21,
+              "12127": 21,
+              "12129": 21,
+              "12131": 21,
+              "12133": 21
+            }
           },
           {
             "name": "geography_name",
@@ -336,471 +1008,6 @@
         ]
       },
       "sha512": "e69baca600927728779fff28de9a5319f154fb652aa1c93355cc91be3b8156df90d8a617c8ef14fe7f8ebe10de51c1dd1fbd2e02eddcd6db77a942017a502de0"
-    },
-    {
-      "bytes": 1840,
-      "encoding": "ISO-8859-1",
-      "md5": "e40ccddf5d49e04bbe0926e465416851",
-      "format": "csv",
-      "name": "data_exemptions.csv",
-      "filename": "data_exemptions.csv.gz",
-      "versions": {
-        "hash": [
-          "fb0767f1419800437f8496dc580b45114e00bef9"
-        ],
-        "author": [
-          "anshap32 <73296024+anshap32@users.noreply.github.com>"
-        ],
-        "date": [
-          "Wed Aug 26 11:53:28 2026 -0400"
-        ],
-        "message": [
-          "update FL"
-        ]
-      },
-      "source": [],
-      "data_format": "wide",
-      "ids": [
-        {
-          "variable": "geography"
-        }
-      ],
-      "id_length": 5,
-      "time": "time",
-      "profile": "data-resource",
-      "created": "2026-09-09 09:37:23.447953",
-      "last_modified": "2026-09-09 09:37:23.447953",
-      "vintage": {},
-      "row_count": 67,
-      "entity_count": 67,
-      "schema": {
-        "fields": [
-          {
-            "name": "time",
-            "duplicates": 66,
-            "info": [],
-            "time_range": [0, 0],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2024-09-01": 67
-            }
-          },
-          {
-            "name": "geography",
-            "duplicates": 0,
-            "info": [],
-            "time_range": [0, 0],
-            "type": "integer",
-            "missing": 0,
-            "mean": 12067.910448,
-            "sd": 38.685496,
-            "min": 12001,
-            "max": 12133
-          },
-          {
-            "name": "geography_name",
-            "duplicates": 0,
-            "info": [],
-            "time_range": [0, 0],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Alachua": 1,
-              "Baker": 1,
-              "Bay": 1,
-              "Bradford": 1,
-              "Brevard": 1,
-              "Broward": 1,
-              "Calhoun": 1,
-              "Charlotte": 1,
-              "Citrus": 1,
-              "Clay": 1,
-              "Collier": 1,
-              "Columbia": 1,
-              "DeSoto": 1,
-              "Dixie": 1,
-              "Duval": 1,
-              "Escambia": 1,
-              "Flagler": 1,
-              "Franklin": 1,
-              "Gadsden": 1,
-              "Gilchrist": 1,
-              "Glades": 1,
-              "Gulf": 1,
-              "Hamilton": 1,
-              "Hardee": 1,
-              "Hendry": 1,
-              "Hernando": 1,
-              "Highlands": 1,
-              "Hillsborough": 1,
-              "Holmes": 1,
-              "Indian River": 1,
-              "Jackson": 1,
-              "Jefferson": 1,
-              "Lafayette": 1,
-              "Lake": 1,
-              "Lee": 1,
-              "Leon": 1,
-              "Levy": 1,
-              "Liberty": 1,
-              "Madison": 1,
-              "Manatee": 1,
-              "Marion": 1,
-              "Martin": 1,
-              "Miami-Dade": 1,
-              "Monroe": 1,
-              "Nassau": 1,
-              "Okaloosa": 1,
-              "Okeechobee": 1,
-              "Orange": 1,
-              "Osceola": 1,
-              "Palm Beach": 1,
-              "Pasco": 1,
-              "Pinellas": 1,
-              "Polk": 1,
-              "Putnam": 1,
-              "Santa Rosa": 1,
-              "Sarasota": 1,
-              "Seminole": 1,
-              "St. Johns": 1,
-              "St. Lucie": 1,
-              "Sumter": 1,
-              "Suwannee": 1,
-              "Taylor": 1,
-              "Union": 1,
-              "Volusia": 1,
-              "Wakulla": 1,
-              "Walton": 1,
-              "Washington": 1
-            }
-          },
-          {
-            "name": "grade",
-            "duplicates": 66,
-            "info": [],
-            "time_range": [0, 0],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Overall": 67
-            }
-          },
-          {
-            "name": "N_full_exempt",
-            "duplicates": 5,
-            "info": {
-              "id": "N_full_exempt",
-              "short_name": "Total exemptions (count)",
-              "long_name": "Number of students with any vaccination exemption",
-              "category": "immunization",
-              "short_description": "Number of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-              "long_description": "Count of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Reported by some states and left missing where the source publishes only percentages.",
-              "statement": "In {location}, {value} school students had a vaccination exemption of any kind.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "fl_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 0],
-            "type": "integer",
-            "missing": 0,
-            "mean": 2667.253731,
-            "sd": 3846.59571,
-            "min": 20,
-            "max": 19390
-          },
-          {
-            "name": "rate_full_exempt",
-            "duplicates": 0,
-            "info": {
-              "id": "rate_full_exempt",
-              "short_name": "Total exemption rate",
-              "long_name": "Proportion of students with any vaccination exemption",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students with any exemption (medical or non-medical) from vaccination requirements.",
-              "long_description": "Share of assessed school students with at least one vaccination exemption of any type, combining medical and non-medical exemptions. Where a state reports the categories separately this is their sum; overlap handling depends on what the source publishes.",
-              "statement": "In {location}, {value} of school students had a vaccination exemption of any kind.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "fl_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 0],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.048854,
-            "sd": 0.024168,
-            "min": 0.009789,
-            "max": 0.124559
-          },
-          {
-            "name": "total_pop_4_18",
-            "duplicates": 0,
-            "info": {
-              "id": "total_pop_4_18",
-              "short_name": "Population aged 4-18",
-              "long_name": "Census population aged 4 to 18",
-              "category": "immunization",
-              "short_description": "Census population aged 4 to 18 in the county.",
-              "long_description": "Population aged 4 to 18 from census estimates, used as an approximate denominator where the state publishes exemption counts without an enrolment figure. It is a resident population, not an enrolment count, so rates derived from it are approximate.",
-              "statement": "In {location}, the population aged 4 to 18 was {value}.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "fl_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 0],
-            "type": "integer",
-            "missing": 0,
-            "mean": 48182.701493,
-            "sd": 74253.271188,
-            "min": 1515,
-            "max": 353970
-          }
-        ]
-      },
-      "sha512": "d3bd9712df496b55400a40cc3b4f5c5bd2d07386c6caa1b8a2ec7bd4421bd844999b98b49a9435020e6d4984f38c3f9a56762611c619ff6499b7f1757fe58884"
-    },
-    {
-      "bytes": 10552,
-      "encoding": "ISO-8859-1",
-      "md5": "bf8a7ea315db0eee091b22c3c4d3cee1",
-      "format": "csv",
-      "name": "data_kindergarten.csv",
-      "filename": "data_kindergarten.csv.gz",
-      "versions": {
-        "hash": [
-          "fb0767f1419800437f8496dc580b45114e00bef9"
-        ],
-        "author": [
-          "anshap32 <73296024+anshap32@users.noreply.github.com>"
-        ],
-        "date": [
-          "Wed Aug 26 11:53:28 2026 -0400"
-        ],
-        "message": [
-          "update FL"
-        ]
-      },
-      "source": [],
-      "data_format": "wide",
-      "ids": [
-        {
-          "variable": "geography"
-        }
-      ],
-      "id_length": 5,
-      "time": "time",
-      "profile": "data-resource",
-      "created": "2026-09-09 09:37:23.480973",
-      "last_modified": "2026-09-09 09:37:23.480973",
-      "vintage": {},
-      "row_count": 1340,
-      "entity_count": 67,
-      "schema": {
-        "fields": [
-          {
-            "name": "time",
-            "duplicates": 1320,
-            "info": [],
-            "time_range": [0, 19],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2006-09-01": 67,
-              "2007-09-01": 67,
-              "2008-09-01": 67,
-              "2009-09-01": 67,
-              "2010-09-01": 67,
-              "2011-09-01": 67,
-              "2012-09-01": 67,
-              "2013-09-01": 67,
-              "2014-09-01": 67,
-              "2015-09-01": 67,
-              "2016-09-01": 67,
-              "2017-09-01": 67,
-              "2018-09-01": 67,
-              "2019-09-01": 67,
-              "2020-09-01": 67,
-              "2021-09-01": 67,
-              "2022-09-01": 67,
-              "2023-09-01": 67,
-              "2024-09-01": 67,
-              "2025-09-01": 67
-            }
-          },
-          {
-            "name": "geography",
-            "duplicates": 1273,
-            "info": [],
-            "time_range": [0, 19],
-            "type": "integer",
-            "missing": 0,
-            "mean": 12067.910448,
-            "sd": 38.410048,
-            "min": 12001,
-            "max": 12133
-          },
-          {
-            "name": "geography_name",
-            "duplicates": 1273,
-            "info": [],
-            "time_range": [0, 19],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Alachua": 20,
-              "Baker": 20,
-              "Bay": 20,
-              "Bradford": 20,
-              "Brevard": 20,
-              "Broward": 20,
-              "Calhoun": 20,
-              "Charlotte": 20,
-              "Citrus": 20,
-              "Clay": 20,
-              "Collier": 20,
-              "Columbia": 20,
-              "DeSoto": 20,
-              "Dixie": 20,
-              "Duval": 20,
-              "Escambia": 20,
-              "Flagler": 20,
-              "Franklin": 20,
-              "Gadsden": 20,
-              "Gilchrist": 20,
-              "Glades": 20,
-              "Gulf": 20,
-              "Hamilton": 20,
-              "Hardee": 20,
-              "Hendry": 20,
-              "Hernando": 20,
-              "Highlands": 20,
-              "Hillsborough": 20,
-              "Holmes": 20,
-              "Indian River": 20,
-              "Jackson": 20,
-              "Jefferson": 20,
-              "Lafayette": 20,
-              "Lake": 20,
-              "Lee": 20,
-              "Leon": 20,
-              "Levy": 20,
-              "Liberty": 20,
-              "Madison": 20,
-              "Manatee": 20,
-              "Marion": 20,
-              "Martin": 20,
-              "Miami-Dade": 20,
-              "Monroe": 20,
-              "Nassau": 20,
-              "Okaloosa": 20,
-              "Okeechobee": 20,
-              "Orange": 20,
-              "Osceola": 20,
-              "Palm Beach": 20,
-              "Pasco": 20,
-              "Pinellas": 20,
-              "Polk": 20,
-              "Putnam": 20,
-              "Santa Rosa": 20,
-              "Sarasota": 20,
-              "Seminole": 20,
-              "St. Johns": 20,
-              "St. Lucie": 20,
-              "Sumter": 20,
-              "Suwannee": 20,
-              "Taylor": 20,
-              "Union": 20,
-              "Volusia": 20,
-              "Wakulla": 20,
-              "Walton": 20,
-              "Washington": 20
-            }
-          },
-          {
-            "name": "grade",
-            "duplicates": 1339,
-            "info": [],
-            "time_range": [0, 19],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Kindergarten": 1340
-            }
-          },
-          {
-            "name": "N_complete",
-            "duplicates": 261,
-            "info": {
-              "id": "N_complete",
-              "short_name": "Up-to-date students (count)",
-              "long_name": "Number of students up to date for all required vaccines",
-              "category": "immunization",
-              "short_description": "Number of assessed school students up to date for all required vaccines.",
-              "long_description": "Count of assessed school students who have completed all age-appropriate required immunizations.",
-              "statement": "In {location}, {value} school students were up to date for all required vaccines.",
-              "measure_type": "Count",
-              "unit": "Students",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "fl_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 19],
-            "type": "integer",
-            "missing": 0,
-            "mean": 3067.541045,
-            "sd": 4836.309743,
-            "min": 67,
-            "max": 29367
-          },
-          {
-            "name": "rate_complete",
-            "duplicates": 1169,
-            "info": {
-              "id": "rate_complete",
-              "short_name": "Up-to-date rate",
-              "long_name": "Proportion of students up to date for all required vaccines",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students up to date for all required vaccines.",
-              "long_description": "Share of assessed school students who have completed all age-appropriate required immunizations (fully immunized / up to date at the time of the survey).",
-              "statement": "In {location}, {value} of school students were up to date for all required vaccines.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "fl_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 19],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.937712,
-            "sd": 0.039421,
-            "min": 0.561,
-            "max": 1
-          }
-        ]
-      },
-      "sha512": "d28807cd2edd73633cc855059be1687911fac8bc81713e1187ac9ef790403ab27139731a1539aaf540e9d9ee20d7115a1ae3c7099a71eaa9814f558bb502b1da"
     }
   ],
   "measure_info": {
@@ -918,6 +1125,12 @@
     }
   },
   "change_report": {
+    "data_exemptions.csv.gz": {
+      "state": "unchanged"
+    },
+    "data_kindergarten.csv.gz": {
+      "state": "unchanged"
+    },
     "data.csv.gz": {
       "state": "unchanged"
     }

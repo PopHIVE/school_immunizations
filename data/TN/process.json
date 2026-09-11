@@ -5,56 +5,35 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-09 09:55:58",
+      "last_run": "2026-09-11 15:20:23",
       "frequency": 0,
-      "run_time": 82.534,
+      "run_time": 38.871,
       "last_status": {
         "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
           "fetch: fetched https://www.tn.gov/health/immunization.html (197,190 bytes)",
-          "fetch: fetched kindergarten_schools_2018_public.pdf (628,605 bytes)",
-          "fetch: kept 38 of 49 pages of kindergarten_schools_2018_public.pdf (422,659 bytes)",
-          "fetch: fetched kindergarten_schools_2018_private.pdf (241,384 bytes)",
-          "fetch: kept 6 of 6 pages of kindergarten_schools_2018_private.pdf (236,762 bytes)",
-          "fetch: fetched kindergarten_schools_2017_public.pdf (491,607 bytes)",
-          "fetch: kept 38 of 48 pages of kindergarten_schools_2017_public.pdf (410,425 bytes)",
-          "fetch: fetched kindergarten_schools_2017_private.pdf (240,101 bytes)",
-          "fetch: kept 6 of 7 pages of kindergarten_schools_2017_private.pdf (222,130 bytes)",
-          "TN reports: 10 file(s): 4 updated, 0 unchanged, 6 skipped, 0 failed",
+          "TN reports: 10 file(s): 0 updated, 0 unchanged, 10 skipped, 0 failed",
           "TN: 835 county rows and 24 state rows from the reports, 663 county rows and 3545 school rows from the survey file; school years 2017-09-01 to 2024-09-01"
         ],
         "success": true
       }
     }
   ],
-  "checked": "2026-09-09 10:11:03",
+  "checked": "2026-09-11 15:20:48",
   "check_results": {
     "data/TN/raw/KINDERGARTEN_SURVEY.csv": {
       "data": "not_compressed"
-    },
-    "data/TN/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_type", "missing_info: grade"]
     },
     "data/TN/standard/data_schools.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_type", "missing_info: school_name", "missing_info: grade"]
     },
     "data/TN/standard/data_survey_counties.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_type", "missing_info: grade"]
+    },
+    "data/TN/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_type", "missing_info: grade"]
     }
   },
   "raw_state": {
-    "raw/KINDERGARTEN_SURVEY.csv": "326af50a6b71a910d124fba104c3102d",
-    "raw/KMMRCoverage_County.xlsx": "94a053c0d85adfe0a9ac3ed4cacf8349",
     "raw/kindergarten_compliance_2019.pdf": "ccd967681ad8c6e18f45d675e9a68964",
     "raw/kindergarten_compliance_2020.pdf": "d508c5ba6e93ccc0c290804c848cf546",
     "raw/kindergarten_compliance_2021.pdf": "167681c6945f6fcb7b53a663d4709461",
@@ -64,14 +43,16 @@
     "raw/kindergarten_schools_2017_private.pdf": "06c55a0221c44494655e4f0bfcd28b70",
     "raw/kindergarten_schools_2017_public.pdf": "984eac5fce6924fd885cdb1de08c219a",
     "raw/kindergarten_schools_2018_private.pdf": "1aff54ed764e84d2ed5e6f9fdac1e38b",
-    "raw/kindergarten_schools_2018_public.pdf": "af352b815ce4b15740e82eb50a34c61a"
+    "raw/kindergarten_schools_2018_public.pdf": "af352b815ce4b15740e82eb50a34c61a",
+    "raw/KINDERGARTEN_SURVEY.csv": "326af50a6b71a910d124fba104c3102d",
+    "raw/KMMRCoverage_County.xlsx": "94a053c0d85adfe0a9ac3ed4cacf8349"
   },
   "script_hash": "4efbc004762411b831de825640221ae5",
   "standard_state": {
     "./data/TN/measure_info.json": "d1473b18af277892484a7ff43d563727",
-    "./data/TN/standard/data.csv.gz": "23a9ac026511d9e228c6d1d9de33008e",
     "./data/TN/standard/data_schools.csv.gz": "0518ca8b8ab9c68778558ce468b61a48",
-    "./data/TN/standard/data_survey_counties.csv.gz": "5926813ccf971c8276ee86d44e711bf2"
+    "./data/TN/standard/data_survey_counties.csv.gz": "5926813ccf971c8276ee86d44e711bf2",
+    "./data/TN/standard/data.csv.gz": "23a9ac026511d9e228c6d1d9de33008e"
   },
   "fetch_state": {
     "raw/KMMRCoverage_County.xlsx": {
@@ -80,7 +61,7 @@
       "status": "skipped",
       "bytes": 14816,
       "sha256": "49a636c83dd610610b920c76068cfd17823fdf3b2e76947a84e41148e7ca9500",
-      "fetched_at": "2026-09-09 14:01:49",
+      "fetched_at": "2026-09-11 15:19:44",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2024.pdf": {
@@ -89,7 +70,7 @@
       "status": "skipped",
       "bytes": 283394,
       "sha256": "0f47bc88a9061d6081074f188150a51b6b8b34aa839da9bc0b0899b0a4c61b3e",
-      "fetched_at": "2026-09-09 14:01:49",
+      "fetched_at": "2026-09-11 15:19:45",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2023.pdf": {
@@ -98,7 +79,7 @@
       "status": "skipped",
       "bytes": 353179,
       "sha256": "6985d2e2b5b149e35a3192fd53f9798416375e555cdccefbba6e86245e6b085b",
-      "fetched_at": "2026-09-09 14:01:49",
+      "fetched_at": "2026-09-11 15:19:45",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2022.pdf": {
@@ -107,7 +88,7 @@
       "status": "skipped",
       "bytes": 392211,
       "sha256": "a329fd889c37f24e6d34c5d0ca8a2f49af0e1d2a908b7285e8b6f3fb2def2973",
-      "fetched_at": "2026-09-09 14:01:50",
+      "fetched_at": "2026-09-11 15:19:45",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2021.pdf": {
@@ -116,7 +97,7 @@
       "status": "skipped",
       "bytes": 422743,
       "sha256": "ba6f27e883ab8b3acca4ebfda9fc79a7044bc8ababec6c5e1114a14c700130cd",
-      "fetched_at": "2026-09-09 14:01:50",
+      "fetched_at": "2026-09-11 15:19:45",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2020.pdf": {
@@ -125,7 +106,7 @@
       "status": "skipped",
       "bytes": 259621,
       "sha256": "e653b04eb77158eaa7ac7fcbd02d3e6e3f9f1d5184821cc18b53d800cf849e43",
-      "fetched_at": "2026-09-09 14:01:50",
+      "fetched_at": "2026-09-11 15:19:46",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2019.pdf": {
@@ -134,7 +115,7 @@
       "status": "skipped",
       "bytes": 954632,
       "sha256": "c377965b09762904227fa2afdd09d88005da0c7777e2b3796d8b69eee1828b57",
-      "fetched_at": "2026-09-09 14:01:50",
+      "fetched_at": "2026-09-11 15:19:46",
       "attempts": 0
     },
     "raw/KINDERGARTEN_SURVEY.csv": {
@@ -146,7 +127,7 @@
       "sha256": "8220682b9a78e7b801f5844cabd65a55bdabb7546313857d2df406d048d86e73",
       "etag": "\"35417-60258d473cb40-gzip\"",
       "last_modified": "Mon, 07 Aug 2023 17:46:45 GMT",
-      "fetched_at": "2026-09-09 14:02:04",
+      "fetched_at": "2026-09-11 15:20:04",
       "attempts": 1
     },
     "raw/kindergarten_schools_2018_public.pdf": {
@@ -155,7 +136,7 @@
       "status": "skipped",
       "bytes": 422659,
       "sha256": "4a6474ff9336d01bd08247bb0d00e5ba7e597c525deb97df75530436d3ae00e7",
-      "fetched_at": "2026-09-09 14:01:57",
+      "fetched_at": "2026-09-11 15:19:54",
       "attempts": 0
     },
     "raw/kindergarten_schools_2018_private.pdf": {
@@ -164,7 +145,7 @@
       "status": "skipped",
       "bytes": 236762,
       "sha256": "5d8fd95b631bd6a1ec1b50d856dc0e08d15997f90e0e63461804836ed9a2ec0c",
-      "fetched_at": "2026-09-09 14:01:57",
+      "fetched_at": "2026-09-11 15:19:55",
       "attempts": 0
     },
     "raw/kindergarten_schools_2017_public.pdf": {
@@ -173,7 +154,7 @@
       "status": "skipped",
       "bytes": 410425,
       "sha256": "24e3c3636407a202df2ce23fdc5759bf764496d502fad3fba8cef52a5ca923ba",
-      "fetched_at": "2026-09-09 14:02:04",
+      "fetched_at": "2026-09-11 15:20:04",
       "attempts": 0
     },
     "raw/kindergarten_schools_2017_private.pdf": {
@@ -182,7 +163,7 @@
       "status": "skipped",
       "bytes": 222130,
       "sha256": "419de921c6a567a60d10b1edb8c783b0c36d2687aeb16310cf5ebdcd72c9f513",
-      "fetched_at": "2026-09-09 14:02:04",
+      "fetched_at": "2026-09-11 15:20:04",
       "attempts": 0
     }
   }

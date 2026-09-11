@@ -5,39 +5,27 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-04 17:36:23",
+      "last_run": "2026-09-11 15:20:27",
       "frequency": 0,
-      "run_time": 3.937,
+      "run_time": 3.853,
       "last_status": {
         "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "fetch: fetched https://www.dshs.texas.gov/immunizations/data/school/coverage (216,824 bytes)",
+          "fetch: fetched https://www.dshs.texas.gov/immunizations/data/school/coverage (217,370 bytes)",
           "TX coverage: 14 file(s): 0 updated, 0 unchanged, 14 skipped, 0 failed",
-          "fetch: fetched https://www.dshs.texas.gov/immunizations/data/school/conscientious-exemptions (208,753 bytes)",
-          "TX exemptions: 3 file(s): 0 updated, 0 unchanged, 3 skipped, 0 failed",
-          "TX: 9945 county/state rows and 23129 district rows, school years 2013-09-01 to 2025-09-01"
+          "fetch: fetched https://www.dshs.texas.gov/immunizations/data/school/conscientious-exemptions (209,300 bytes)",
+          "TX exemptions: 3 file(s): 0 updated, 0 unchanged, 3 skipped, 0 failed"
         ],
         "success": true
       }
     }
   ],
-  "checked": "2026-09-09 10:11:03",
+  "checked": "2026-09-11 15:20:48",
   "check_results": {
-    "data/TX/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
-    },
     "data/TX/standard/data_districts.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: district", "missing_info: school_type", "missing_info: grade"]
+    },
+    "data/TX/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
     }
   },
   "raw_state": {
@@ -61,8 +49,8 @@
   },
   "standard_state": {
     "./data/TX/measure_info.json": "daccf3022540ea356ae958262423b8b2",
-    "./data/TX/standard/data.csv.gz": "1432f693cd58fd9d02c577720e7208e4",
-    "./data/TX/standard/data_districts.csv.gz": "a188b6596454762b187f1d15d0ac2db9"
+    "./data/TX/standard/data_districts.csv.gz": "a188b6596454762b187f1d15d0ac2db9",
+    "./data/TX/standard/data.csv.gz": "1432f693cd58fd9d02c577720e7208e4"
   },
   "script_hash": "6f5815bbbf5de34313fd0bb78f278868",
   "fetch_state": {

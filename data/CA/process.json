@@ -5,24 +5,24 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-08-25 14:47:05",
+      "last_run": "2026-09-11 15:17:50",
       "frequency": 0,
-      "run_time": 2.32,
+      "run_time": 109.74,
       "last_status": {
         "log": [],
         "success": true
       }
     }
   ],
-  "checked": "2026-09-09 10:11:02",
+  "checked": "2026-09-11 15:20:46",
   "check_results": {
-    "data/CA/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: grade"]
-    },
     "data/CA/standard/data_grade7.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
     },
     "data/CA/standard/data_kindergarten.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/CA/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
     }
   },
@@ -36,62 +36,50 @@
   "script_hash": "ccae263eb625a9109b8a5239e8be4d06",
   "standard_state": {
     "./data/CA/measure_info.json": "9e58a4103e09954e7b33e2c61fd3f67b",
-    "./data/CA/standard/data.csv.gz": "5a3db233591beaef99a81e7091ac8eb5",
     "./data/CA/standard/data_grade7.csv.gz": "453301d9c100c2a3af3375ec8ac0ced9",
-    "./data/CA/standard/data_kindergarten.csv.gz": "058428a1c46845cc6e55f571f486d6f5"
+    "./data/CA/standard/data_kindergarten.csv.gz": "058428a1c46845cc6e55f571f486d6f5",
+    "./data/CA/standard/data.csv.gz": "5a3db233591beaef99a81e7091ac8eb5"
   },
   "fetch_state": {
     "raw/CA_KG_cdph_2024-25.xlsx": {
       "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/2024-25KindergartenReport.xlsx",
       "dest": "raw/CA_KG_cdph_2024-25.xlsx",
-      "status": "unchanged",
-      "http_status": 304,
+      "status": "failed",
       "bytes": 40771,
       "sha256": "e49eb79cdba992ba5301308382e7004dbf05cb328774b3bb245a6e5e101929d8",
-      "etag": "\"{6E122EA2-390D-45B1-8656-1934BBA376CB},7\"",
-      "last_modified": "Thu, 08 Jan 2026 23:20:56 GMT",
-      "fetched_at": "2026-09-04 21:35:36",
-      "attempts": 1,
-      "error": {}
+      "fetched_at": "2026-09-11 15:16:20",
+      "attempts": 3,
+      "error": "attempt 1: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 2: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 3: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate"
     },
     "raw/CA_KG_cdph_2023-24.xlsx": {
       "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/2023-24GradeKReport.xlsx",
       "dest": "raw/CA_KG_cdph_2023-24.xlsx",
-      "status": "unchanged",
-      "http_status": 304,
+      "status": "failed",
       "bytes": 48072,
       "sha256": "661b8acd1a830adfbcb1e187e00b0ef772484c5b097e7fd40afbd9d213301959",
-      "etag": "\"{881A55A5-BEF7-4EBE-A7ED-12FF2E5032FF},6\"",
-      "last_modified": "Sat, 15 Mar 2025 00:16:32 GMT",
-      "fetched_at": "2026-09-04 21:35:36",
-      "attempts": 1,
-      "error": {}
+      "fetched_at": "2026-09-11 15:16:43",
+      "attempts": 3,
+      "error": "attempt 1: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 2: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 3: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate"
     },
     "raw/CA_KG_cdph_2022-23.xlsx": {
       "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/2022-23GradeKReport.xlsx",
       "dest": "raw/CA_KG_cdph_2022-23.xlsx",
-      "status": "unchanged",
-      "http_status": 304,
+      "status": "failed",
       "bytes": 93122,
       "sha256": "d5f879fdc57f86a8c060a711ad4c9f4832c617ed46ab3900c77005d1cdd7d0b1",
-      "etag": "\"{98D4ED65-4C57-4C17-A36F-8F697A388138},14\"",
-      "last_modified": "Tue, 18 Feb 2025 21:51:28 GMT",
-      "fetched_at": "2026-09-04 21:35:36",
-      "attempts": 1,
-      "error": {}
+      "fetched_at": "2026-09-11 15:17:06",
+      "attempts": 3,
+      "error": "attempt 1: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 2: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 3: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate"
     },
     "raw/CA_7th_cdph_2019-20.xlsx": {
       "url": "https://www.cdph.ca.gov/Programs/CID/DCDC/CDPH%20Document%20Library/Immunization/2020SchoolAssessmentReport.xlsx",
       "dest": "raw/CA_7th_cdph_2019-20.xlsx",
-      "status": "unchanged",
-      "http_status": 304,
+      "status": "failed",
       "bytes": 60802,
       "sha256": "3a44897bee31856a6f656d6d4444dce9b18bb72bd8025df417bb89ba930440a8",
-      "etag": "\"{DF712032-23BC-48EB-9E8D-67224FD7E0CC},8\"",
-      "last_modified": "Tue, 28 Feb 2023 20:28:12 GMT",
-      "fetched_at": "2026-09-04 21:35:37",
-      "attempts": 1,
-      "error": {}
+      "fetched_at": "2026-09-11 15:17:30",
+      "attempts": 3,
+      "error": "attempt 1: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 2: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate; attempt 3: SSL peer certificate or SSH remote key was not OK [www.cdph.ca.gov]:\nSSL certificate problem: unable to get local issuer certificate"
     }
   }
 }

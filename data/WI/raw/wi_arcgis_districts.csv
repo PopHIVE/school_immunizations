@@ -142,7 +142,7 @@
 141,"Horicon","2576",6,"Unified","Horicon Sch Dist",98.61286255,"98.6%",258130299.821944,158374.786783562
 142,"Hortonville Area","2583",6,"Unified","Hortonville Area Sch Dist",91.75329175,"91.8%",555502554.546222,148013.399473373
 143,"Howard-Suamico","2604",7,"Unified","Howard-Suamico Sch Dist",91.68970283,"91.7%",281150134.805688,166787.765389049
-144,"Howards Grove","2605",7,"Unified","Howards Grove Sch Dist",93.08108108,"93.1%",257861378.293014,155987.43079323
+144,"Howards Grove","2605",7,"Unified","Howards Grove Sch Dist",93.08108108,"93.1%",257861378.293014,155987.430793231
 145,"Butternut","0840",12,"Unified",,-3,"No data",1254555482.55631,207608.956521607
 146,"Cochrane-Fountain City","1155",4,"Unified",,-3,"No data",809241029.949177,321718.11064491
 147,"De Soto Area","1421",4,"Unified",,-3,"No data",797300228.868472,241154.192554053
@@ -168,7 +168,7 @@
 167,"Kewaunee","2814",7,"Unified","Kewaunee Sch Dist",92.54947614,"92.5%",655934075.390342,133668.562105586
 168,"Kickapoo Area","5960",3,"Unified","Kickapoo Area Sch Dist",87.68577495,"87.7%",730442904.455067,288733.778820255
 169,"Kiel Area","2828",7,"Unified","Kiel Area Sch Dist",91.86241611,"91.9%",544161046.941735,174976.636802863
-170,"Kimberly Area","2835",6,"Unified","Kimberly Area Sch Dist",93.37478143,"93.4%",67666413.1585688,43990.690101613
+170,"Kimberly Area","2835",6,"Unified","Kimberly Area Sch Dist",93.37478143,"93.4%",67666413.1585688,43990.6901016129
 171,"Kohler","2842",7,"Unified","Kohler Sch Dist",94.42231076,"94.4%",53027239.5698247,64170.6821700485
 172,"La Crosse","2849",4,"Unified","La Crosse Sch Dist",92.4674886,"92.5%",479039713.059349,215194.497885469
 173,"La Farge","2863",4,"Unified","La Farge Sch Dist",86.45418327,"86.5%",351307868.796764,144623.481122254
@@ -239,7 +239,7 @@
 238,"Niagara","3969",8,"Unified","Niagara Sch Dist",91.18329466,"91.2%",378794438.934986,97139.4364028817
 239,"Nicolet UHS","2177",1,"Secondary","Nicolet Union High Sch Sch Dist",98.40225564,"98.4%",80273306.3344162,59340.5408153713
 240,"Norris","3976",1,"Unified","Norris Sch Dist",84.93150685,"84.9%",5986413.34518741,14171.9586863404
-241,"North Cape","4690",2,"Elementary","North Cape Sch Dist",96.53465347,"96.5%",98278227.320303,79412.5485006254
+241,"North Cape","4690",2,"Elementary","North Cape Sch Dist",96.53465347,"96.5%",98278227.3203029,79412.5485006254
 242,"North Crawford","2016",3,"Unified","North Crawford Sch Dist",74.59459459,"74.6%",796881051.064836,332624.407307861
 243,"North Fond Du Lac","3983",6,"Unified","North Fond du Lac Sch Dist",93.19264806,"93.2%",141291202.655322,81542.5086848122
 244,"North Lakeland","0616",9,"Elementary","North Lakeland Sch Dist",92,"92%",1442323937.90583,192150.220156888
@@ -276,7 +276,7 @@
 275,"Port Edwards","4508",5,"Unified","Port Edwards Sch Dist",90.88785047,"90.9%",308971870.567073,104743.362395928
 276,"Portage Community","4501",5,"Unified","Portage Community Sch Dist",90.22201228,"90.2%",1041796073.82176,253389.615331594
 277,"Potosi","4529",3,"Unified","Potosi Sch Dist",89.27444795,"89.3%",311883950.897347,228302.358926141
-278,"Poynette","4536",5,"Unified","Poynette Sch Dist",83.59840954,"83.6%",489352482.789868,148810.36085493
+278,"Poynette","4536",5,"Unified","Poynette Sch Dist",83.59840954,"83.6%",489352482.789868,148810.360854931
 279,"Prairie Du Chien Area","4543",3,"Unified","Prairie du Chien Area Sch Dist",86.5404837,"86.5%",442359214.711266,176180.922892832
 280,"Prairie Farm Public","4557",11,"Unified","Prairie Farm Public Sch Dist",98.93048128,"98.9%",463098578.323963,209340.68755575
 281,"Prescott","4578",11,"Unified","Prescott Sch Dist",96.16919393,"96.2%",374770358.772274,119334.3301154
@@ -314,7 +314,7 @@
 313,"Saint Francis","5026",1,"Unified","Saint Francis Sch Dist",92.03373946,"92%",12412241.2610303,19854.2463182727
 314,"Sauk Prairie","5100",5,"Unified","Sauk Prairie Sch Dist",91.60502959,"91.6%",1154216273.02588,313887.421763638
 315,"Sevastopol","5130",7,"Unified","Sevastopol Sch Dist",81.81818182,"81.8%",606064294.841983,132338.684922963
-316,"Seymour Community","5138",7,"Unified","Seymour Community Sch Dist",89.9948427,"90%",850403590.0916,188501.836795711
+316,"Seymour Community","5138",7,"Unified","Seymour Community Sch Dist",89.9948427,"90%",850403590.091601,188501.836795711
 317,"Sharon J11","5258",2,"Elementary","Sharon J11 Sch Dist",93.33333333,"93.3%",92890501.0086919,57222.5525969457
 318,"Shawano","5264",8,"Unified","Shawano Sch Dist",91.06120652,"91.1%",859846588.154363,242161.987306584
 319,"Sheboygan Area","5271",7,"Unified","Sheboygan Area Sch Dist",92.39380236,"92.4%",254041306.399794,252515.978089857
@@ -411,7 +411,7 @@
 410,"Pulaski Community","4613",7,"Unified","Pulaski Community Sch Dist",92.43081932,"92.4%",942630204.034189,290408.670919375
 411,"Menomonie Area","3444",11,"Unified","Menomonie Area Sch Dist",91.93251534,"91.9%",1275156443.4107,360502.900661705
 412,"Wauzeka-Steuben","6251",3,"Unified","Wauzeka-Steuben Sch Dist",90.46052632,"90.5%",461034116.979047,204385.463260036
-413,"Loyal","3206",10,"Unified","Loyal Sch Dist",93.83697813,"93.8%",579163630.15033,180434.699104675
+413,"Loyal","3206",10,"Unified","Loyal Sch Dist",93.83697813,"93.8%",579163630.150331,180434.699104675
 414,"Verona Area","5901",2,"Unified","Verona Area Sch Dist",89.85853077,"89.9%",259935367.062415,149520.248066604
 415,"Mayville","3367",6,"Unified","Mayville Sch Dist",84.63886063,"84.6%",482660776.099222,195819.181920161
 416,"Durand-Arkansaw","1499",11,"Unified","Durand-Arkansaw Sch Dist",90.94608342,"90.9%",1506908317.60822,556597.261571573

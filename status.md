@@ -53,7 +53,7 @@ flowchart LR
     s47(("<strong><a href="https://health.wyo.gov/publichealth/immunization/immunization-data/wyoming-county-report-cards/" target="_blank" rel="noreferrer">Wyoming County Immunization Report Cards</a></strong>"))
     subgraph AK["`AK`"]
         direction LR
-        n1["`data.csv.gz<br/><br/><ul><li><code>geography_nas</code></li><li><code>missing_info: grade, geography_name, type</code></li></ul>`"]:::warn
+        n1["`data.csv.gz<br/><br/><ul><li><code>missing_info: grade, geography_name, type</code></li></ul>`"]:::warn
     end
     subgraph AL["`AL`"]
         direction LR
@@ -69,24 +69,24 @@ flowchart LR
     end
     subgraph CA["`CA`"]
         direction LR
-        n5["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n6["`data_grade7.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n7["`data_kindergarten.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n5["`data_grade7.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n6["`data_kindergarten.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n7["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
     end
     subgraph CO["`CO`"]
         direction LR
-        n8["`data.csv.gz<br/><br/><ul><li><code>missing_info: grade, geography_name, type</code></li></ul>`"]:::warn
-        n9["`data_districts.csv.gz<br/><br/><ul><li><code>geography_nas</code></li><li><code>missing_info: geography_name, type, district_id, district, grade</code></li></ul>`"]:::warn
-        n10["`data_schools.csv.gz<br/><br/><ul><li><code>geography_nas</code></li><li><code>missing_info: geography_name, type, school_id, school_name, district, school_type, grade</code></li></ul>`"]:::warn
+        n8["`data_districts.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, district_id, district, grade</code></li></ul>`"]:::warn
+        n9["`data_schools.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_id, school_name, district, school_type, grade</code></li></ul>`"]:::warn
+        n10["`data.csv.gz<br/><br/><ul><li><code>missing_info: grade, geography_name, type</code></li></ul>`"]:::warn
     end
     subgraph CT["`CT`"]
         direction LR
-        n11["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n12["`data_7th.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n13["`data_all_grades.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n14["`data_k.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n15["`data_pre_k.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n16["`data_schools.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade, school_name, school_type, city, planning_region</code></li></ul>`"]:::warn
+        n11["`data_7th.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n12["`data_all_grades.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n13["`data_k.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n14["`data_pre_k.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n15["`data_schools.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade, school_name, school_type, city, planning_region</code></li></ul>`"]:::warn
+        n16["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
     end
     subgraph DC["`DC`"]
         direction LR
@@ -97,9 +97,9 @@ flowchart LR
     end
     subgraph FL["`FL`"]
         direction LR
-        n18["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n19["`data_exemptions.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
-        n20["`data_kindergarten.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n18["`data_exemptions.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n19["`data_kindergarten.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n20["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
     end
     subgraph GA["`GA`"]
         direction LR
@@ -142,7 +142,7 @@ flowchart LR
     end
     subgraph MD["`MD`"]
         direction LR
-        n30["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, school_type, grade</code></li></ul>`"]:::warn
+        n30["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, school_type, grade</code></li><li><code>type_changed: geography</code></li></ul>`"]:::warn
     end
     subgraph ME["`ME`"]
         direction LR
@@ -150,7 +150,7 @@ flowchart LR
     end
     subgraph MI["`MI`"]
         direction LR
-        n32["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, district, school_type, grade</code></li></ul>`"]:::warn
+        n32["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, district, school_type, grade</code></li><li><code>type_changed: geography</code></li></ul>`"]:::warn
     end
     subgraph MN["`MN`"]
         direction LR
@@ -158,7 +158,7 @@ flowchart LR
     end
     subgraph MO["`MO`"]
         direction LR
-        n34["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul>`"]:::warn
+        n34["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, grade</code></li></ul><br />Script Failed:<br />'path' does not exist: ‘./raw/Missouri Vaccine Exemption.xlsx’`"]:::fail
     end
     subgraph MS["`MS`"]
         direction LR
@@ -174,7 +174,7 @@ flowchart LR
     end
     subgraph ND["`ND`"]
         direction LR
-        n38["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, grade</code></li></ul>`"]:::warn
+        n38["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, grade</code></li><li><code>type_changed: geography</code></li></ul>`"]:::warn
     end
     subgraph NE["`NE`"]
         direction LR
@@ -205,7 +205,7 @@ flowchart LR
     end
     subgraph OK["`OK`"]
         direction LR
-        n45["`data.csv.gz<br/><br/><ul><li><code>geography_nas</code></li><li><code>missing_info: geography_name, type, school_name, district, city, school_type, grade</code></li></ul>`"]:::warn
+        n45["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, district, city, school_type, grade</code></li></ul>`"]:::warn
     end
     subgraph OR["`OR`"]
         direction LR
@@ -221,7 +221,7 @@ flowchart LR
     end
     subgraph SC["`SC`"]
         direction LR
-        n49["`data.csv.gz<br/><br/><ul><li><code>geography_nas</code></li><li><code>missing_info: geography_name, type, school_name, school_type, city, grade_range, grade</code></li></ul>`"]:::warn
+        n49["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, school_type, city, grade_range, grade</code></li></ul>`"]:::warn
     end
     subgraph SD["`SD`"]
         direction LR
@@ -229,14 +229,14 @@ flowchart LR
     end
     subgraph TN["`TN`"]
         direction LR
-        n51["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_type, grade</code></li></ul>`"]:::warn
-        n52["`data_schools.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_type, school_name, grade</code></li></ul>`"]:::warn
-        n53["`data_survey_counties.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_type, grade</code></li></ul>`"]:::warn
+        n51["`data_schools.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_type, school_name, grade</code></li></ul>`"]:::warn
+        n52["`data_survey_counties.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_type, grade</code></li></ul>`"]:::warn
+        n53["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_type, grade</code></li></ul>`"]:::warn
     end
     subgraph TX["`TX`"]
         direction LR
-        n54["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, grade</code></li></ul>`"]:::warn
-        n55["`data_districts.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, district, school_type, grade</code></li></ul>`"]:::warn
+        n54["`data_districts.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, district, school_type, grade</code></li></ul>`"]:::warn
+        n55["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, grade</code></li></ul>`"]:::warn
     end
     subgraph UT["`UT`"]
         direction LR
@@ -252,9 +252,9 @@ flowchart LR
     end
     subgraph WA["`WA`"]
         direction LR
-        n59["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, grade</code></li></ul>`"]:::warn
-        n60["`data_districts.csv.gz<br/><br/><ul><li><code>geography_nas</code></li><li><code>missing_info: geography_name, district, grade</code></li></ul>`"]:::warn
-        n61["`data_schools_2014_2016.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, district, school_type, grade</code></li></ul>`"]:::warn
+        n59["`data_districts.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, district, grade</code></li></ul>`"]:::warn
+        n60["`data_schools_2014_2016.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, district, school_type, grade</code></li></ul>`"]:::warn
+        n61["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, grade</code></li></ul>`"]:::warn
     end
     subgraph WI["`WI`"]
         direction LR
@@ -266,8 +266,8 @@ flowchart LR
     end
     subgraph WY["`WY`"]
         direction LR
-        n64["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type</code></li></ul>`"]:::warn
-        n65["`data_kindergarten.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, grade</code></li></ul>`"]:::warn
+        n64["`data_kindergarten.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, grade</code></li></ul>`"]:::warn
+        n65["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type</code></li></ul>`"]:::warn
     end
     s0 --> n1
     s1 --> n2

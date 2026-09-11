@@ -5,44 +5,16 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-09 09:58:38",
+      "last_run": "2026-09-11 15:18:35",
       "frequency": 0,
-      "run_time": 55.046,
+      "run_time": 44.461,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "",
-          "Attaching package: 'vroom'",
-          "",
-          "The following objects are masked from 'package:readr':",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          "",
-          "fetch: fetched cdphe_sccidr_facility_2017_2022.csv.gz (4,704,335 bytes compressed)",
-          "fetch: fetched cdphe_sccidr_facility_2023_2025.csv.gz (2,110,403 bytes compressed)",
-          "CO: 43756 school rows, school years 2017-09-01 to 2025-09-01; 3 (time, school_name, district, grade) key(s) are shared by two facilities with different school_id",
-          "CO: 3145 district rows, 2916 with a county FIPS, 13 districts spanning more than one county"
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "2026-09-09 10:11:02",
+  "checked": "2026-09-11 15:20:46",
   "check_results": {
     "data/CO/raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": {
       "data": "not_compressed"
@@ -53,16 +25,14 @@
     "data/CO/raw/cdphe_sccidr_statewide.csv": {
       "data": "not_compressed"
     },
-    "data/CO/standard/data.csv.gz": {
-      "measures": ["missing_info: grade", "missing_info: geography_name", "missing_info: type"]
-    },
     "data/CO/standard/data_districts.csv.gz": {
-      "data": "geography_nas",
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: district_id", "missing_info: district", "missing_info: grade"]
     },
     "data/CO/standard/data_schools.csv.gz": {
-      "data": "geography_nas",
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_id", "missing_info: school_name", "missing_info: district", "missing_info: school_type", "missing_info: grade"]
+    },
+    "data/CO/standard/data.csv.gz": {
+      "measures": ["missing_info: grade", "missing_info: geography_name", "missing_info: type"]
     }
   },
   "raw_state": {
@@ -75,9 +45,9 @@
   "script_hash": "48adb15fdbc31fa243cb13e0cbf2b32b",
   "standard_state": {
     "./data/CO/measure_info.json": "1f9a5c6cd666799e2c643205e4b7b520",
-    "./data/CO/standard/data.csv.gz": "266974a3a7b750cca29d0e685658193e",
     "./data/CO/standard/data_districts.csv.gz": "009fd201802f3888730c850045700d8f",
-    "./data/CO/standard/data_schools.csv.gz": "45c091c95c6263aaf68549d97b7edb70"
+    "./data/CO/standard/data_schools.csv.gz": "45c091c95c6263aaf68549d97b7edb70",
+    "./data/CO/standard/data.csv.gz": "266974a3a7b750cca29d0e685658193e"
   },
   "fetch_state": {
     "raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": {

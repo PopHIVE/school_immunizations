@@ -9,13 +9,18 @@
   },
   "resources": [
     {
-      "bytes": 4781,
-      "encoding": "ISO-8859-1",
-      "md5": "e151be1ac0c0f23008031c348b2500b7",
+      "bytes": 668,
+      "encoding": "windows-1252",
+      "md5": "d480dba8eb82e0760839c76232cade45",
       "format": "csv",
-      "name": "data.csv",
-      "filename": "data.csv.gz",
-      "versions": {},
+      "name": "data_kindergarten.csv",
+      "filename": "data_kindergarten.csv.gz",
+      "versions": {
+        "hash": ["5207764b5c9d0f60fddd369d25ad0edf2ba494de"],
+        "author": ["Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>"],
+        "date": ["Thu Sep 10 16:16:56 2026 -0400"],
+        "message": ["Rework source fetching, add PDF parsing and new state sources (#11)"]
+      },
       "source": [],
       "data_format": "wide",
       "ids": [
@@ -26,8 +31,257 @@
       "id_length": 0,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-09-08 15:21:43.091942",
-      "last_modified": "2026-09-08 15:21:43.091942",
+      "created": "2026-09-11 15:14:19.389412",
+      "last_modified": "2026-09-11 15:14:19.389412",
+      "vintage": {},
+      "row_count": 48,
+      "entity_count": 24,
+      "schema": {
+        "fields": [
+          {
+            "name": "time",
+            "duplicates": 46,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "2022-09-01": 24,
+              "2023-09-01": 24
+            }
+          },
+          {
+            "name": "geography",
+            "duplicates": 24,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "56": 2,
+              "56001": 2,
+              "56003": 2,
+              "56005": 2,
+              "56007": 2,
+              "56009": 2,
+              "56011": 2,
+              "56013": 2,
+              "56015": 2,
+              "56017": 2,
+              "56019": 2,
+              "56021": 2,
+              "56023": 2,
+              "56025": 2,
+              "56027": 2,
+              "56029": 2,
+              "56031": 2,
+              "56033": 2,
+              "56035": 2,
+              "56037": 2,
+              "56039": 2,
+              "56041": 2,
+              "56043": 2,
+              "56045": 2
+            }
+          },
+          {
+            "name": "geography_name",
+            "duplicates": 24,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Albany": 2,
+              "Big Horn": 2,
+              "Campbell": 2,
+              "Carbon": 2,
+              "Converse": 2,
+              "Crook": 2,
+              "Fremont": 2,
+              "Goshen": 2,
+              "Hot Springs": 2,
+              "Johnson": 2,
+              "Laramie": 2,
+              "Lincoln": 2,
+              "Natrona": 2,
+              "Niobrara": 2,
+              "Park": 2,
+              "Platte": 2,
+              "Sheridan": 2,
+              "Sublette": 2,
+              "Sweetwater": 2,
+              "Teton": 2,
+              "Uinta": 2,
+              "Washakie": 2,
+              "Weston": 2,
+              "Wyoming": 2
+            }
+          },
+          {
+            "name": "type",
+            "duplicates": 46,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "county": 46,
+              "state": 2
+            }
+          },
+          {
+            "name": "grade",
+            "duplicates": 47,
+            "info": [],
+            "time_range": [0, 1],
+            "type": "string",
+            "missing": 0,
+            "table": {
+              "Kindergarten": 48
+            }
+          },
+          {
+            "name": "rate_dtap",
+            "duplicates": 27,
+            "info": {
+              "id": "rate_dtap",
+              "short_name": "DTaP/Tdap coverage",
+              "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.880625,
+            "sd": 0.092008,
+            "min": 0.48,
+            "max": 0.97
+          },
+          {
+            "name": "rate_mmr",
+            "duplicates": 33,
+            "info": {
+              "id": "rate_mmr",
+              "short_name": "MMR coverage",
+              "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.903333,
+            "sd": 0.076557,
+            "min": 0.57,
+            "max": 0.97
+          },
+          {
+            "name": "rate_varicella",
+            "duplicates": 30,
+            "info": {
+              "id": "rate_varicella",
+              "short_name": "Varicella coverage",
+              "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.894375,
+            "sd": 0.080949,
+            "min": 0.57,
+            "max": 0.97
+          },
+          {
+            "name": "rate_polio",
+            "duplicates": 28,
+            "info": {
+              "id": "rate_polio",
+              "short_name": "Polio coverage",
+              "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
+              "category": "immunization",
+              "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
+              "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
+              "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
+              "measure_type": "Rate",
+              "unit": "Rate",
+              "time_resolution": "Year",
+              "sources": [
+                {
+                  "id": "wy_school_immunization"
+                }
+              ]
+            },
+            "time_range": [0, 1],
+            "type": "float",
+            "missing": 0,
+            "mean": 0.886667,
+            "sd": 0.086328,
+            "min": 0.52,
+            "max": 0.97
+          }
+        ]
+      },
+      "sha512": "ebb0931edf668ad2bf1c2a886216840c50461565ac4ebe9555fe571caf7e5e8f7414aa43abb07c703fba4254902be949e63f698750d1333a0ac1bc78386a3ba0"
+    },
+    {
+      "bytes": 4781,
+      "encoding": "windows-1252",
+      "md5": "e151be1ac0c0f23008031c348b2500b7",
+      "format": "csv",
+      "name": "data.csv",
+      "filename": "data.csv.gz",
+      "versions": {
+        "hash": ["5207764b5c9d0f60fddd369d25ad0edf2ba494de"],
+        "author": ["Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>"],
+        "date": ["Thu Sep 10 16:16:56 2026 -0400"],
+        "message": ["Rework source fetching, add PDF parsing and new state sources (#11)"]
+      },
+      "source": [],
+      "data_format": "wide",
+      "ids": [
+        {
+          "variable": "geography"
+        }
+      ],
+      "id_length": 0,
+      "time": "time",
+      "profile": "data-resource",
+      "created": "2026-09-11 15:14:19.388967",
+      "last_modified": "2026-09-11 15:14:19.388967",
       "vintage": {},
       "row_count": 143,
       "entity_count": 24,
@@ -54,12 +308,34 @@
             "duplicates": 119,
             "info": [],
             "time_range": [0, 5],
-            "type": "integer",
+            "type": "string",
             "missing": 0,
-            "mean": 53674.832168,
-            "sd": 11260.478077,
-            "min": 56,
-            "max": 56045
+            "table": {
+              "56": 6,
+              "56001": 6,
+              "56003": 6,
+              "56005": 6,
+              "56007": 6,
+              "56009": 5,
+              "56011": 6,
+              "56013": 6,
+              "56015": 6,
+              "56017": 6,
+              "56019": 6,
+              "56021": 6,
+              "56023": 6,
+              "56025": 6,
+              "56027": 6,
+              "56029": 6,
+              "56031": 6,
+              "56033": 6,
+              "56035": 6,
+              "56037": 6,
+              "56039": 6,
+              "56041": 6,
+              "56043": 6,
+              "56045": 6
+            }
           },
           {
             "name": "geography_name",
@@ -726,228 +1002,6 @@
         ]
       },
       "sha512": "cf5078ce20b5a282a22f5370a50c43d23c6073ea0fe9f63a461eb92706b111b9a0efd4ba3aaccce02bae4957ec45633666a0898998262deaa9811d33b18de755"
-    },
-    {
-      "bytes": 668,
-      "encoding": "ISO-8859-1",
-      "md5": "d480dba8eb82e0760839c76232cade45",
-      "format": "csv",
-      "name": "data_kindergarten.csv",
-      "filename": "data_kindergarten.csv.gz",
-      "versions": {},
-      "source": [],
-      "data_format": "wide",
-      "ids": [
-        {
-          "variable": "geography"
-        }
-      ],
-      "id_length": 0,
-      "time": "time",
-      "profile": "data-resource",
-      "created": "2026-09-08 15:21:43.099411",
-      "last_modified": "2026-09-08 15:21:43.099411",
-      "vintage": {},
-      "row_count": 48,
-      "entity_count": 24,
-      "schema": {
-        "fields": [
-          {
-            "name": "time",
-            "duplicates": 46,
-            "info": [],
-            "time_range": [0, 1],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "2022-09-01": 24,
-              "2023-09-01": 24
-            }
-          },
-          {
-            "name": "geography",
-            "duplicates": 24,
-            "info": [],
-            "time_range": [0, 1],
-            "type": "integer",
-            "missing": 0,
-            "mean": 53691.041667,
-            "sd": 11302.036015,
-            "min": 56,
-            "max": 56045
-          },
-          {
-            "name": "geography_name",
-            "duplicates": 24,
-            "info": [],
-            "time_range": [0, 1],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Albany": 2,
-              "Big Horn": 2,
-              "Campbell": 2,
-              "Carbon": 2,
-              "Converse": 2,
-              "Crook": 2,
-              "Fremont": 2,
-              "Goshen": 2,
-              "Hot Springs": 2,
-              "Johnson": 2,
-              "Laramie": 2,
-              "Lincoln": 2,
-              "Natrona": 2,
-              "Niobrara": 2,
-              "Park": 2,
-              "Platte": 2,
-              "Sheridan": 2,
-              "Sublette": 2,
-              "Sweetwater": 2,
-              "Teton": 2,
-              "Uinta": 2,
-              "Washakie": 2,
-              "Weston": 2,
-              "Wyoming": 2
-            }
-          },
-          {
-            "name": "type",
-            "duplicates": 46,
-            "info": [],
-            "time_range": [0, 1],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "county": 46,
-              "state": 2
-            }
-          },
-          {
-            "name": "grade",
-            "duplicates": 47,
-            "info": [],
-            "time_range": [0, 1],
-            "type": "string",
-            "missing": 0,
-            "table": {
-              "Kindergarten": 48
-            }
-          },
-          {
-            "name": "rate_dtap",
-            "duplicates": 27,
-            "info": {
-              "id": "rate_dtap",
-              "short_name": "DTaP/Tdap coverage",
-              "long_name": "Proportion of students up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for diphtheria-tetanus-pertussis (DTaP/Tdap) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for DTaP/Tdap vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "wy_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 1],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.880625,
-            "sd": 0.092008,
-            "min": 0.48,
-            "max": 0.97
-          },
-          {
-            "name": "rate_mmr",
-            "duplicates": 33,
-            "info": {
-              "id": "rate_mmr",
-              "short_name": "MMR coverage",
-              "long_name": "Proportion of students up to date for measles-mumps-rubella (MMR) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for measles-mumps-rubella (MMR) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for measles-mumps-rubella (MMR) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for MMR vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "wy_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 1],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.903333,
-            "sd": 0.076557,
-            "min": 0.57,
-            "max": 0.97
-          },
-          {
-            "name": "rate_varicella",
-            "duplicates": 30,
-            "info": {
-              "id": "rate_varicella",
-              "short_name": "Varicella coverage",
-              "long_name": "Proportion of students up to date for varicella (chickenpox) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for varicella (chickenpox) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for varicella (chickenpox) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for varicella vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "wy_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 1],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.894375,
-            "sd": 0.080949,
-            "min": 0.57,
-            "max": 0.97
-          },
-          {
-            "name": "rate_polio",
-            "duplicates": 28,
-            "info": {
-              "id": "rate_polio",
-              "short_name": "Polio coverage",
-              "long_name": "Proportion of students up to date for polio (IPV/OPV) vaccination",
-              "category": "immunization",
-              "short_description": "Proportion of assessed school students who are up to date for polio (IPV/OPV) vaccination.",
-              "long_description": "Share of assessed school students reported as up to date for polio (IPV/OPV) vaccination in the state's annual school immunization survey. The antigen-specific series definition, the grade(s) assessed, and whether the figure reflects all enrolled students or only those surveyed vary by state; see the source description.",
-              "statement": "In {location}, {value} of school students were up to date for polio vaccination.",
-              "measure_type": "Rate",
-              "unit": "Rate",
-              "time_resolution": "Year",
-              "sources": [
-                {
-                  "id": "wy_school_immunization"
-                }
-              ]
-            },
-            "time_range": [0, 1],
-            "type": "float",
-            "missing": 0,
-            "mean": 0.886667,
-            "sd": 0.086328,
-            "min": 0.52,
-            "max": 0.97
-          }
-        ]
-      },
-      "sha512": "ebb0931edf668ad2bf1c2a886216840c50461565ac4ebe9555fe571caf7e5e8f7414aa43abb07c703fba4254902be949e63f698750d1333a0ac1bc78386a3ba0"
     }
   ],
   "measure_info": {
@@ -1418,6 +1472,14 @@
         "data_kindergarten.csv.gz": "Kindergarten cohort only"
       },
       "id": "_catalog"
+    }
+  },
+  "change_report": {
+    "data_kindergarten.csv.gz": {
+      "state": "unchanged"
+    },
+    "data.csv.gz": {
+      "state": "unchanged"
     }
   }
 }

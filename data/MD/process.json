@@ -5,46 +5,19 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-04 17:40:50",
+      "last_run": "2026-09-11 15:19:17",
       "frequency": 0,
-      "run_time": 8.407,
+      "run_time": 2.142,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "",
-          "Attaching package: 'vroom'",
-          "",
-          "The following objects are masked from 'package:readr':",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          "",
-          "fetch: fetched https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/Kindergarten_Immunization_Rates_by_School.aspx (81,472 bytes)",
-          "fetch: fetched Percent of Kindergarteners Vaccinated by School 2025-2026.xlsx (94,267 bytes)",
-          "fetch: fetched Percent of Kindergarteners Vaccinated by School 2024-2025.xlsx (89,556 bytes)"
-        ],
+        "log": "fetch: fetched https://health.maryland.gov/phpa/OIDEOR/IMMUN/Pages/Kindergarten_Immunization_Rates_by_School.aspx (81,472 bytes)",
         "success": true
       }
     }
   ],
-  "checked": "2026-09-09 10:11:02",
+  "checked": "2026-09-11 15:20:47",
   "check_results": {
     "data/MD/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: grade"]
+      "measures": ["type_changed: geography", "missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: grade"]
     }
   },
   "raw_state": {
@@ -54,13 +27,13 @@
     "raw/Percent of Kindergarteners Vaccinated by School 2022-2023.xlsx": "ceab2d98efa59ef8f3a27a1705c0aaa2",
     "raw/Percent of Kindergarteners Vaccinated by School 2023-2024.xlsx": "626fcbada64e3cd72df373f2f2e3fe7f",
     "raw/Percent of Kindergarteners Vaccinated by School 2024-2025.xlsx": "52c3ea3278d57c8ace1b84873422f786",
-    "raw/Percent of Kindergarteners Vaccinated by School 2025-2026.xlsx": "6cb0d6ea9fcaa3737919beb174e58b47",
-    "raw/Percent of Kindergarteners Vaccinated by School 2025-2026_04102026.xlsx": "b83f1c6dbdb02b5909ba7aacc5acdaf9"
+    "raw/Percent of Kindergarteners Vaccinated by School 2025-2026_04102026.xlsx": "b83f1c6dbdb02b5909ba7aacc5acdaf9",
+    "raw/Percent of Kindergarteners Vaccinated by School 2025-2026.xlsx": "6cb0d6ea9fcaa3737919beb174e58b47"
   },
   "script_hash": "e0c09584fd5142126dad62a0b1892403",
   "standard_state": {
     "./data/MD/measure_info.json": "0a97e4bdbd164c7b1ffe8060aeb5a838",
-    "./data/MD/standard/data.csv.gz": "26c2c9284f97ceb7e8d45e90ebfe6ca9"
+    "./data/MD/standard/data.csv.gz": "938cafdfe47a1760f3e7930f4d640a57"
   },
   "fetch_state": {
     "raw/Percent of Kindergarteners Vaccinated by School 2025-2026.xlsx": {
@@ -69,7 +42,7 @@
       "status": "skipped",
       "bytes": 94267,
       "sha256": "7fd3c6391a94240eb34740f0b7336b9d42e96ef8f9379dc76d751b8202d05da9",
-      "fetched_at": "2026-09-09 13:42:22",
+      "fetched_at": "2026-09-11 15:19:15",
       "attempts": 0
     },
     "raw/Percent of Kindergarteners Vaccinated by School 2024-2025.xlsx": {
@@ -78,7 +51,7 @@
       "status": "skipped",
       "bytes": 89556,
       "sha256": "2ae11f685d47442ddd6e9d7c95161f1531cdef768811204f91a7b847bd8e98f1",
-      "fetched_at": "2026-09-09 13:42:22",
+      "fetched_at": "2026-09-11 15:19:15",
       "attempts": 0
     },
     "raw/Percent of Kindergarteners Vaccinated by School 2023-2024.xlsx": {
@@ -87,7 +60,7 @@
       "status": "skipped",
       "bytes": 137064,
       "sha256": "3b30531a59113e737281a04bb06a5575918a90dcabc2b4fb8cf60fc2662c2221",
-      "fetched_at": "2026-09-09 13:42:22",
+      "fetched_at": "2026-09-11 15:19:15",
       "attempts": 0
     },
     "raw/Percent of Kindergarteners Vaccinated by School 2022-2023.xlsx": {
@@ -96,7 +69,7 @@
       "status": "skipped",
       "bytes": 98223,
       "sha256": "afeffe539d469feb21aafebd59ca30c59fb510bcc9b0cc295de9bb06a77beedc",
-      "fetched_at": "2026-09-09 13:42:22",
+      "fetched_at": "2026-09-11 15:19:15",
       "attempts": 0
     },
     "raw/Percent of Kindergarteners Vaccinated by School 2021-2022.xlsx": {
@@ -105,7 +78,7 @@
       "status": "skipped",
       "bytes": 88306,
       "sha256": "d9d31d11eb11ff6125a2b49abee1652564568f949cf9ef84b8230369a433c334",
-      "fetched_at": "2026-09-09 13:42:22",
+      "fetched_at": "2026-09-11 15:19:15",
       "attempts": 0
     },
     "raw/Percent of Kindergarteners Vaccinated by School 2020-2021.xlsx": {
@@ -114,7 +87,7 @@
       "status": "skipped",
       "bytes": 97891,
       "sha256": "dd545b9596cf974511d8d79ba3f8bda37aa74031a88eada5849515b4a13cd526",
-      "fetched_at": "2026-09-09 13:42:22",
+      "fetched_at": "2026-09-11 15:19:15",
       "attempts": 0
     },
     "raw/Percent of Kindergarteners Vaccinated by School 2019-2020.xlsx": {
@@ -123,7 +96,7 @@
       "status": "skipped",
       "bytes": 105502,
       "sha256": "c433de9ed8e5ccb3c38bab7a2122aeebe33f963e8f5a0ed99424c5a26a8bbede",
-      "fetched_at": "2026-09-09 13:42:22",
+      "fetched_at": "2026-09-11 15:19:15",
       "attempts": 0
     }
   }

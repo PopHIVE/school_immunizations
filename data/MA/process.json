@@ -23,7 +23,7 @@
       }
     }
   ],
-  "checked": "2026-09-09 10:11:02",
+  "checked": "2026-09-11 15:20:47",
   "check_results": {
     "data/MA/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -61,5 +61,241 @@
   "standard_state": {
     "./data/MA/measure_info.json": "06a8f13156f33fb5600954e9bd4cf067",
     "./data/MA/standard/data.csv.gz": "294b1dfcc9730fbc54548845ae9e18a2"
+  },
+  "fetch_state": {
+    "raw/MA_grade7_by_county_2013-2014.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2013-2014-0/download",
+      "dest": "raw/MA_grade7_by_county_2013-2014.xlsx",
+      "status": "skipped",
+      "bytes": 9448,
+      "sha256": "ffd4bd6b5db53dbd2654fb302094539c4673ab8e29abebd6d28335454df31100",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2014-2015.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2014-2015/download",
+      "dest": "raw/MA_grade7_by_county_2014-2015.xlsx",
+      "status": "skipped",
+      "bytes": 9409,
+      "sha256": "0ec09d7d0b5fdbf0b03f65c511aff057d423395f14e79eee0dd65991fada9686",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2015-2016.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-statewide-immunization-and-exemption-rates-by-county-2015-2016-0/download",
+      "dest": "raw/MA_grade7_by_county_2015-2016.xlsx",
+      "status": "skipped",
+      "bytes": 9698,
+      "sha256": "71795e13bf2b5f8d729f671d4bf22ec54f9005dca974a6b00ba616dc16b9382a",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2016-2017.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2016-2017-0/download",
+      "dest": "raw/MA_grade7_by_county_2016-2017.xlsx",
+      "status": "skipped",
+      "bytes": 10041,
+      "sha256": "358f635e54e0af3aeb8a2d897f0f2ba84aae24b04cf503dd7212fd07d71c76b2",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2017-2018.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2017-2018-1/download",
+      "dest": "raw/MA_grade7_by_county_2017-2018.xlsx",
+      "status": "skipped",
+      "bytes": 12718,
+      "sha256": "309d056c3cd1240aebdbe17b139d481c306087e4cc52ce27e68664f56ad1cd0a",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2018-2019.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2018-2019/download",
+      "dest": "raw/MA_grade7_by_county_2018-2019.xlsx",
+      "status": "skipped",
+      "bytes": 14408,
+      "sha256": "17b39154e3025193b7608fc8b962e42104d2656a76776d53aae5bb4e8a31c2e2",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2019-2020.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2019-2020/download",
+      "dest": "raw/MA_grade7_by_county_2019-2020.xlsx",
+      "status": "skipped",
+      "bytes": 15105,
+      "sha256": "3289be5393811c03ca31c04d19aacfec8f1047457570558ed9c09298e000d59b",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2020-2021.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2020-2021/download",
+      "dest": "raw/MA_grade7_by_county_2020-2021.xlsx",
+      "status": "skipped",
+      "bytes": 21770,
+      "sha256": "35066ab02b2c5477aae8bf6b4a3aa2db4e185b6fed163880e127543e97d2a3a7",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2021-2022.xlsx": {
+      "url": "https://www.mass.gov/doc/2021-2022-grade-7-immunization-and-exemption-rates-by-county/download",
+      "dest": "raw/MA_grade7_by_county_2021-2022.xlsx",
+      "status": "skipped",
+      "bytes": 22752,
+      "sha256": "2021c827a559ad5ec1be485d936ea142f074bf2d81926ee7cad1c69018a9791c",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2022-2023.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2022-2023/download",
+      "dest": "raw/MA_grade7_by_county_2022-2023.xlsx",
+      "status": "skipped",
+      "bytes": 15124,
+      "sha256": "3cfc7302d1db7f5f7cd790603a8c27435a174684d87fc7db5d0bde78464bb987",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2023-2024.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2023-2024/download",
+      "dest": "raw/MA_grade7_by_county_2023-2024.xlsx",
+      "status": "skipped",
+      "bytes": 16601,
+      "sha256": "0ce5085e53e6f9dd617b323a45b314b88a5f9269bcaa7e387d681dac9364dec8",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2024-2025.xlsx": {
+      "url": "https://www.mass.gov/doc/2024-2025-grade-7-immunization-and-exemption-rates-by-county/download",
+      "dest": "raw/MA_grade7_by_county_2024-2025.xlsx",
+      "status": "skipped",
+      "bytes": 16705,
+      "sha256": "1581fae9e11b7f1c1b43bd95928da7549e69ac77cfe613b20c0df37497f75486",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_grade7_by_county_2025-2026.xlsx": {
+      "url": "https://www.mass.gov/doc/grade-7-immunization-and-exemption-rates-by-county-2025-2026/download",
+      "dest": "raw/MA_grade7_by_county_2025-2026.xlsx",
+      "status": "skipped",
+      "bytes": 17306,
+      "sha256": "5a92cc08fb8b81e9ad7444d780b2d93e9a42489a1ba91c5571e05792afcc997d",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2013-2014.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2013-2014/download",
+      "dest": "raw/MA_kindergarten_by_county_2013-2014.xlsx",
+      "status": "skipped",
+      "bytes": 10015,
+      "sha256": "622d779de1d9fbbe730131175f9c01521a848460a4df7e0d07ec773996d685b8",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2014-2015.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2014-2015/download",
+      "dest": "raw/MA_kindergarten_by_county_2014-2015.xlsx",
+      "status": "skipped",
+      "bytes": 10231,
+      "sha256": "b98f491b64af81ee385ba90c4856fc9a20584b75993aaa139b87c76387328165",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2015-2016.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2015-2016/download",
+      "dest": "raw/MA_kindergarten_by_county_2015-2016.xlsx",
+      "status": "skipped",
+      "bytes": 10619,
+      "sha256": "fa07f8cdd5b55153cf8ff230bd6e16115bca9fc082964866f87fbc8192a0e56a",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2016-2017.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2016-2017-0/download",
+      "dest": "raw/MA_kindergarten_by_county_2016-2017.xlsx",
+      "status": "skipped",
+      "bytes": 10743,
+      "sha256": "ace72ef6a490654d635bdba38f89283f582b32840d3a6c8a9654e69820fc2a32",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2017-2018.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2017-2018-2/download",
+      "dest": "raw/MA_kindergarten_by_county_2017-2018.xlsx",
+      "status": "skipped",
+      "bytes": 13618,
+      "sha256": "ec92b83cdd6f6bb29e117c9b297835c2ec56fe9f2e6810135c0cf8fb0bad9b67",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2018-2019.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2018-2019/download",
+      "dest": "raw/MA_kindergarten_by_county_2018-2019.xlsx",
+      "status": "skipped",
+      "bytes": 14347,
+      "sha256": "3b19b5449bb37fcd70f04b4fcf6c2e0cbb2e848a58ce1e4e57e5a6af0dec0d92",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2019-2020.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2019-2020/download",
+      "dest": "raw/MA_kindergarten_by_county_2019-2020.xlsx",
+      "status": "skipped",
+      "bytes": 15873,
+      "sha256": "e41151c6b49f90c6b5a70bdcafaaba07455d8e9a2f5a003a2ffd5f3522202712",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2020-2021.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2020-2021/download",
+      "dest": "raw/MA_kindergarten_by_county_2020-2021.xlsx",
+      "status": "skipped",
+      "bytes": 22462,
+      "sha256": "21a5eb7869ba6d3a29186a4801c570c10362619aaa8c67f6fcd0985369b36a6a",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2021-2022.xlsx": {
+      "url": "https://www.mass.gov/doc/2021-2022-kindergarten-immunization-and-exemption-rates-by-county/download",
+      "dest": "raw/MA_kindergarten_by_county_2021-2022.xlsx",
+      "status": "skipped",
+      "bytes": 468817,
+      "sha256": "b56209090519219dbb8f1f7fae941b3d39e7286e99341e748ad75f495c557c07",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2022-2023.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2022-2023/download",
+      "dest": "raw/MA_kindergarten_by_county_2022-2023.xlsx",
+      "status": "skipped",
+      "bytes": 15952,
+      "sha256": "886443a55e3f585a5b90c8911d777ee1624eedc0641f896ac336414a15da728b",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2023-2024.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2023-2024/download",
+      "dest": "raw/MA_kindergarten_by_county_2023-2024.xlsx",
+      "status": "skipped",
+      "bytes": 16709,
+      "sha256": "4da4cc533d321e01a11ec6eb623b6048f0aca012367b89d5611fa696fe8c0fdc",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2024-2025.xlsx": {
+      "url": "https://www.mass.gov/doc/2024-2025-kindergarten-immunization-and-exemption-rates-by-county/download",
+      "dest": "raw/MA_kindergarten_by_county_2024-2025.xlsx",
+      "status": "skipped",
+      "bytes": 16750,
+      "sha256": "81077812ef29f472fbba1454bd331a8fb8a16f066c5b808fe7da64a06bfacc25",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    },
+    "raw/MA_kindergarten_by_county_2025-2026.xlsx": {
+      "url": "https://www.mass.gov/doc/kindergarten-immunization-and-exemption-rates-by-county-2025-2026/download",
+      "dest": "raw/MA_kindergarten_by_county_2025-2026.xlsx",
+      "status": "skipped",
+      "bytes": 17422,
+      "sha256": "69b52b25f0ce4821c5d7bc821d3adcdbdc9dd8fb6ae0c73acd57f739666f89f0",
+      "fetched_at": "2026-09-11 15:19:15",
+      "attempts": 0
+    }
   }
 }
