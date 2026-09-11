@@ -12,7 +12,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "County or county-equivalent immunization and exemption rates by school year, grade, vaccine.",
-    "last_check_time": "2026-09-09 14:13:49",
+    "last_check_time": "2026-09-11 15:33:33",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Kindergarten immunization and exemption rates by school. The id is stable: created 2022-05-05 as the 2021-2022 table and retitled/overwritten each year (2025-2026 as of Sept 2026); the portal keeps only the current year. ingest.R finds the table through the Socrata catalog, reads the school year from the title, and saves each year as raw/ct_school_k_<start year>.csv so earlier years survive here.",
-    "last_check_time": "2026-09-09 14:13:50",
+    "last_check_time": "2026-09-11 15:33:34",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -48,7 +48,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Seventh grade immunization and exemption rates by school (adds MenACWY and Tdap). Same stable-id, retitled-yearly pattern as socrata_school_k; saved as raw/ct_school_7_<start year>.csv.",
-    "last_check_time": "2026-09-09 14:13:52",
+    "last_check_time": "2026-09-11 15:33:38",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -66,7 +66,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Vaccine exemption rates by school, all grades (religious, medical, total; no coverage). Same stable-id, retitled-yearly pattern as socrata_school_k; saved as raw/ct_school_exempt_<start year>.csv.",
-    "last_check_time": "2026-09-09 14:13:53",
+    "last_check_time": "2026-09-11 15:33:39",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -84,7 +84,7 @@
     "latest_year_ingested": 2024,
     "ci_reachable": true,
     "notes": "DPH all-grades exemption workbook by traditional county; no API.",
-    "last_check_time": "2026-09-09 14:13:53",
+    "last_check_time": "2026-09-11 15:33:39",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

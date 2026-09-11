@@ -12,7 +12,7 @@
     "latest_year_ingested": 2022,
     "ci_reachable": true,
     "notes": "Two one-page chart PDFs linked from the DPH school immunizations page: School_Survey_Exemption_Rates.pdf (kindergarten immunization status by school year: fully immunized, medical exemption, religious exemption, out of compliance) and School_Survey_Coverage_Rates.pdf (kindergarten coverage by antigen: DTaP, MMR, Polio, Hep B, Varicella). Statewide only; DPH publishes no county table. Both files are replaced in place at a fixed URL (under wp-content/uploads/sites/12/, moved from sites/10/ in 2026) when a year is added; the charts ran 2016-17 to 2022-23 as of 2026-09. The coverage chart labels only the Polio bar in 2016-17 and 2017-18.",
-    "last_check_time": "2026-09-09 14:13:57",
+    "last_check_time": "2026-09-11 15:33:42",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

@@ -12,7 +12,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "'45-Day Report of Schools with Required Immunization Certification', one PDF per school year (2024-25 and 2025-26 posted March 2026). School-level table: region, county, type, school, city, grade range, total students, percent with required immunizations (whole percent, top-coded '>96%', a few '<5%'; total students '<10' for the smallest). The posted name carries a revision date (45_Day_Report_25-26_20260310.pdf); the raw copy is named by school year and re-fetched when the posted name changes.",
-    "last_check_time": "2026-09-09 14:15:16",
+    "last_check_time": "2026-09-11 15:34:05",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": 2022,
     "ci_reachable": true,
     "notes": "County coverage and exemption page; its tables are Tableau Public with data access disabled, so nothing can be fetched. The county religious-exemption series (2018-19 to 2022-23) was transcribed from the five-year report into raw/SC_2019-23.csv.",
-    "last_check_time": "2026-09-09 14:15:16",
+    "last_check_time": "2026-09-11 15:34:05",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

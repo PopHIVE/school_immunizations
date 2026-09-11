@@ -12,7 +12,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "County exemption counts (ages 0-18) by calendar year; the NMDOH ArcGIS dashboard is not yet wired.",
-    "last_check_time": "2026-09-09 14:14:54",
+    "last_check_time": "2026-09-11 15:33:54",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

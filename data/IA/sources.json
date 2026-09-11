@@ -12,7 +12,7 @@
     "latest_year_ingested": 2024,
     "ci_reachable": true,
     "notes": "Medical and religious exemption certificates by county from the annual K-12 audit, exported by hand as UTF-16 tab-delimited CSV. Output rows grade = 'K-12'.",
-    "last_check_time": "2026-09-09 14:14:04",
+    "last_check_time": "2026-09-11 15:33:46",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Kindergarten Summary Report by County, one PDF per school year on publications.iowa.gov (2012-13, 2018-19, 2020-21, 2021-22, 2023-24 to 2025-26; no 2013-14 to 2017-18, 2019-20 or 2022-23 report is posted). Found through the site search; results come 20 to a page, so page_url is the first page and url the second, and the ingest walks search_offset until a page has no match. The 2012-13 file is named 'kindergarten 2012-2013.pdf', which is why the pattern accepts a year range in place of 'summary'. Stored as raw/kindergarten_county_<YYYY>-<YY>.pdf; files never change once posted. Output rows grade = 'Kindergarten', county plus a state total.",
-    "last_check_time": "2026-09-09 14:14:05",
+    "last_check_time": "2026-09-11 15:33:48",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
