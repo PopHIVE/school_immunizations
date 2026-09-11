@@ -55,6 +55,8 @@ jobs:
           if [ "${{ github.event.inputs.fetch }}" = "true" ]; then git add data/*/raw; fi
           if ! git diff --cached --quiet; then
             git commit -m "source check"
+            # the nightly build may have pushed in the meantime
+            git pull --rebase origin ${{ github.ref_name }}
             git push
           fi
       - if: ${{ steps.check.outputs.exit == '2' }}

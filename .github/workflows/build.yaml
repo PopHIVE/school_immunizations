@@ -49,6 +49,8 @@ jobs:
           git config user.name "GitHub Actions"
           git add -A
           git commit -m "scheduled data build"
+          # the weekly source check may have pushed in the meantime
+          git pull --rebase origin ${{ github.ref_name }}
           git push
       - if: ${{ steps.status.outputs.exit != '0' }}
         run: |
