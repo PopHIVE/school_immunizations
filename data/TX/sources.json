@@ -12,7 +12,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Per-year Kindergarten and Seventh Grade workbooks (2019-20 onward), sheets 'Coverage by District' and 'Coverage by County'; proportions per antigen, 'NR'/'NR**' = no report, county sheet ends with a 'Texas' total row. Three files are posted with an .xls name but are xlsx inside (2019-20 Seventh Grade, both 2021-22), so the ingest sniffs the signature rather than trusting the extension.",
-    "last_check_time": "2026-09-09 14:16:51",
+    "last_check_time": "2026-09-11 15:26:44",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Multi-year 'Conscientious Exemptions by County' workbook (sheets Kindergarten, 7th Grade, K-12; one column per school year), reissued yearly with a shifted window. Three overlapping issues are posted (2013-2024, 2015-2025, 2016-2026); the ingest unions them, newest issue winning. Proportions; 'NR**' = no report; one header reads '2022-2023%'.",
-    "last_check_time": "2026-09-09 14:16:56",
+    "last_check_time": "2026-09-11 15:26:45",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

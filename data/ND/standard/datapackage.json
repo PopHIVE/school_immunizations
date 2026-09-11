@@ -9,14 +9,15 @@
   },
   "resources": [
     {
-      "bytes": 104506,
-      "encoding": "ISO-8859-1",
-      "md5": "6068af10e1609e922482c2adca3c721a",
+      "bytes": 104527,
+      "encoding": "windows-1252",
+      "md5": "2d0090943730d64d381b78a40616793d",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "5207764b5c9d0f60fddd369d25ad0edf2ba494de",
           "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "55abea59c2ccfafe4782b83208e9af4f499a3482",
           "219bd702153d8be0ba951c5d08031bd30aeb1942",
@@ -24,6 +25,7 @@
           "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
         ],
         "author": [
+          "Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>",
           "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "cawerin <aiwenc@andrew.cmu.edu>",
           "cawerin <aiwenc@andrew.cmu.edu>",
@@ -31,6 +33,7 @@
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Thu Sep 10 16:16:56 2026 -0400",
           "Wed Aug 26 09:31:25 2026 -0400",
           "Thu Jun 25 18:12:59 2026 -0400",
           "Sun May 3 01:46:59 2026 -0400",
@@ -38,6 +41,7 @@
           "Thu Feb 12 07:17:55 2026 -0500"
         ],
         "message": [
+          "Rework source fetching, add PDF parsing and new state sources (#11)",
           "Update ingests to use APIs",
           "standardize variable names & created mega sheet for all counties",
           "aggregation first attempt",
@@ -55,8 +59,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-09-09 10:09:06.166225",
-      "last_modified": "2026-09-09 10:09:06.166225",
+      "created": "2026-09-11 15:19:28.908514",
+      "last_modified": "2026-09-11 15:19:28.908514",
       "vintage": {},
       "row_count": 5270,
       "entity_count": 53,
@@ -147,12 +151,63 @@
             "duplicates": 5217,
             "info": [],
             "time_range": [1, 2],
-            "type": "integer",
+            "type": "string",
             "missing": 0,
-            "mean": 38053.924478,
-            "sd": 32.397934,
-            "min": 38001,
-            "max": 38105
+            "table": {
+              "38001": 30,
+              "38003": 80,
+              "38005": 127,
+              "38007": 14,
+              "38009": 73,
+              "38011": 65,
+              "38013": 73,
+              "38015": 319,
+              "38017": 520,
+              "38019": 64,
+              "38021": 67,
+              "38023": 39,
+              "38025": 49,
+              "38027": 44,
+              "38029": 70,
+              "38031": 39,
+              "38033": 43,
+              "38035": 273,
+              "38037": 53,
+              "38039": 53,
+              "38041": 54,
+              "38043": 43,
+              "38045": 90,
+              "38047": 54,
+              "38049": 97,
+              "38051": 63,
+              "38053": 106,
+              "38055": 153,
+              "38057": 63,
+              "38059": 208,
+              "38061": 84,
+              "38063": 56,
+              "38065": 38,
+              "38067": 112,
+              "38069": 45,
+              "38071": 75,
+              "38073": 62,
+              "38075": 63,
+              "38077": 146,
+              "38079": 153,
+              "38081": 90,
+              "38083": 38,
+              "38085": 55,
+              "38087": 6,
+              "38089": 195,
+              "38091": 41,
+              "38093": 168,
+              "38095": 44,
+              "38097": 98,
+              "38099": 89,
+              "38101": 336,
+              "38103": 62,
+              "38105": 188
+            }
           },
           {
             "name": "type",
@@ -172,7 +227,7 @@
             "info": [],
             "time_range": [1, 2],
             "type": "string",
-            "missing": 0,
+            "missing": 1039,
             "table": {
               "Academy For Children": 1,
               "Alexander Public School": 22,
@@ -364,8 +419,8 @@
               "Kindred Elem School": 7,
               "Kindred High School": 11,
               "Kindred Home School": 3,
-              "Kindred Public School (Homeschool)": 1,
               "Kindred Public School - Homeschool": 1,
+              "Kindred Public School (Homeschool)": 1,
               "Kulm Public School": 20,
               "L E Berger Elem School": 7,
               "Lake Agassiz Elem School": 8,
@@ -448,7 +503,6 @@
               "Mott-Regent Public School": 20,
               "Mt Pleasant Public School": 20,
               "Munich Public School": 15,
-              "NA": 1039,
               "Napoleon Public School": 20,
               "Nathan Twining Elem-Middle School": 13,
               "Nativity Elem School": 8,
@@ -726,7 +780,7 @@
           },
           {
             "name": "rate_personal_exempt",
-            "duplicates": 4417,
+            "duplicates": 4416,
             "info": {
               "id": "rate_personal_exempt",
               "short_name": "Non-medical exemption rate",
@@ -810,7 +864,7 @@
           },
           {
             "name": "rate_mmr",
-            "duplicates": 4247,
+            "duplicates": 4243,
             "info": {
               "id": "rate_mmr",
               "short_name": "MMR coverage",
@@ -838,7 +892,7 @@
           },
           {
             "name": "rate_polio",
-            "duplicates": 4238,
+            "duplicates": 4235,
             "info": {
               "id": "rate_polio",
               "short_name": "Polio coverage",
@@ -894,7 +948,7 @@
           },
           {
             "name": "rate_hep_b",
-            "duplicates": 4296,
+            "duplicates": 4293,
             "info": {
               "id": "rate_hep_b",
               "short_name": "Hepatitis B coverage",
@@ -922,7 +976,7 @@
           },
           {
             "name": "rate_varicella",
-            "duplicates": 4231,
+            "duplicates": 4228,
             "info": {
               "id": "rate_varicella",
               "short_name": "Varicella coverage",
@@ -978,7 +1032,7 @@
           },
           {
             "name": "rate_menacwy",
-            "duplicates": 4393,
+            "duplicates": 4394,
             "info": {
               "id": "rate_menacwy",
               "short_name": "Meningococcal (MenACWY) coverage",
@@ -1006,7 +1060,7 @@
           }
         ]
       },
-      "sha512": "1e1bf1cc7a2a6989b530570ae2d5d633fd5ddd50a7dac6375a27e98409d647b6e73b4ec3ae559247a89352c9a6d3e9e7fa7245ed4647879524ac86352deb284d"
+      "sha512": "f47f3c1a061e59ba344d335b349f94c6338d4b01a6b57319cfdf9ba45d61d9f770f715f881b997805cf29e8c73bdf7bd3a7d19393d0fc7787ea725e8a4608c52"
     }
   ],
   "measure_info": {
@@ -1242,7 +1296,92 @@
   },
   "change_report": {
     "data.csv.gz": {
-      "state": "unchanged"
+      "state": "changed",
+      "variables": {
+        "time": {
+          "status": "present",
+          "same_type": true,
+          "added_levels": [],
+          "dropped_levels": []
+        },
+        "geography_name": {
+          "status": "present",
+          "same_type": true,
+          "added_levels": [],
+          "dropped_levels": []
+        },
+        "geography": {
+          "status": "present",
+          "same_type": false,
+          "added_levels": ["38001", "38003", "38005", "38007", "38009", "38011", "38013", "38015", "38017", "38019", "38021", "38023", "38025", "38027", "38029", "38031", "38033", "38035", "38037", "38039", "38041", "38043", "38045", "38047", "38049", "38051", "38053", "38055", "38057", "38059", "38061", "38063", "38065", "38067", "38069", "38071", "38073", "38075", "38077", "38079", "38081", "38083", "38085", "38087", "38089", "38091", "38093", "38095", "38097", "38099", "38101", "38103", "38105"]
+        },
+        "type": {
+          "status": "present",
+          "same_type": true,
+          "added_levels": [],
+          "dropped_levels": []
+        },
+        "school_name": {
+          "status": "present",
+          "same_type": true,
+          "added_levels": [],
+          "dropped_levels": "NA"
+        },
+        "grade": {
+          "status": "present",
+          "same_type": true,
+          "added_levels": [],
+          "dropped_levels": []
+        },
+        "N_enrolled": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_no_record": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_personal_exempt": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_medical_exempt": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_religious_exempt": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_mmr": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_polio": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_dtap": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_hep_b": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_varicella": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_tdap": {
+          "status": "present",
+          "same_type": true
+        },
+        "rate_menacwy": {
+          "status": "present",
+          "same_type": true
+        }
+      }
     }
   }
 }

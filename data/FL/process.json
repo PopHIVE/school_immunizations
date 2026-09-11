@@ -5,35 +5,11 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-04 12:21:53",
+      "last_run": "2026-09-11 15:19:00",
       "frequency": 0,
-      "run_time": 4.879,
+      "run_time": 7.29,
       "last_status": {
         "log": [
-          "",
-          "Attaching package: ‘dplyr’",
-          "",
-          "The following objects are masked from ‘package:stats’:",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from ‘package:base’:",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "",
-          "Attaching package: ‘vroom’",
-          "",
-          "The following objects are masked from ‘package:readr’:",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          "",
-          "fetch: updated FL_kindergarten_recent10yr.xlsx (15,735 bytes)",
           "New names:",
           "• `` -> `...1`",
           "• `` -> `...2`",
@@ -55,69 +31,21 @@
           "• `` -> `...18`",
           "• `` -> `...19`",
           "• `` -> `...20`",
-          "• `` -> `...21`",
-          "fetch: updated FL_kindergarten_early10yr.xlsx (15,863 bytes)",
-          "New names:",
-          "• `` -> `...1`",
-          "• `` -> `...2`",
-          "• `` -> `...3`",
-          "• `` -> `...4`",
-          "• `` -> `...5`",
-          "• `` -> `...6`",
-          "• `` -> `...7`",
-          "• `` -> `...8`",
-          "• `` -> `...9`",
-          "• `` -> `...10`",
-          "• `` -> `...11`",
-          "• `` -> `...12`",
-          "• `` -> `...13`",
-          "• `` -> `...14`",
-          "• `` -> `...15`",
-          "• `` -> `...16`",
-          "• `` -> `...17`",
-          "• `` -> `...18`",
-          "• `` -> `...19`",
-          "• `` -> `...20`",
-          "• `` -> `...21`",
-          "New names:",
-          "• `` -> `...1`",
-          "• `` -> `...2`",
-          "• `` -> `...3`",
-          "• `` -> `...4`",
-          "• `` -> `...5`",
-          "• `` -> `...6`",
-          "• `` -> `...7`",
-          "• `` -> `...8`",
-          "• `` -> `...9`",
-          "• `` -> `...10`",
-          "• `` -> `...11`",
-          "• `` -> `...12`",
-          "• `` -> `...13`",
-          "• `` -> `...14`",
-          "• `` -> `...15`",
-          "• `` -> `...16`",
-          "• `` -> `...17`",
-          "• `` -> `...18`",
-          "• `` -> `...19`",
-          "• `` -> `...20`",
-          "• `` -> `...21`",
-          "Florida: dropping 14 column(s) with no data: N_dtap, N_polio, N_mmr, N_hep_b, N_varicella, N_personal_exempt, N_medical_exempt, rate_dtap, rate_polio, rate_mmr, rate_hep_b, rate_varicella, rate_personal_exempt, rate_medical_exempt",
-          "Florida (exemptions): dropping 2 column(s) with no data: N_complete, rate_complete",
-          "Florida (kindergarten): dropping 3 column(s) with no data: N_full_exempt, rate_full_exempt, total_pop_4_18"
+          "• `` -> `...21`"
         ],
         "success": true
       }
     }
   ],
-  "checked": "2026-09-09 10:11:02",
+  "checked": "2026-09-11 15:20:47",
   "check_results": {
-    "data/FL/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: grade"]
-    },
     "data/FL/standard/data_exemptions.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
     },
     "data/FL/standard/data_kindergarten.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: grade"]
+    },
+    "data/FL/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
     }
   },
@@ -181,9 +109,9 @@
   "script_hash": "9b5ad83f1c40acbc2abc1884a6d29313",
   "standard_state": {
     "./data/FL/measure_info.json": "4e61945fcb976ae2f52e32388de2de25",
-    "./data/FL/standard/data.csv.gz": "875a3937680c9d91795e2cb16be7fc31",
     "./data/FL/standard/data_exemptions.csv.gz": "e40ccddf5d49e04bbe0926e465416851",
-    "./data/FL/standard/data_kindergarten.csv.gz": "bf8a7ea315db0eee091b22c3c4d3cee1"
+    "./data/FL/standard/data_kindergarten.csv.gz": "bf8a7ea315db0eee091b22c3c4d3cee1",
+    "./data/FL/standard/data.csv.gz": "875a3937680c9d91795e2cb16be7fc31"
   },
   "fetch_state": {
     "raw/FL_kindergarten_recent10yr.xlsx": {
@@ -193,9 +121,9 @@
       "http_status": 200,
       "bytes": 15735,
       "sha256": "01f3d7efe19ee5f042ad93b969dc777ae3d71301b2910717d2e0b3e2a617faa4",
-      "etag": "W/\"8a7024a06440dd1:0\"",
-      "last_modified": "Wed, 09 Sep 2026 14:08:01 GMT",
-      "fetched_at": "2026-09-09 14:08:03",
+      "etag": "W/\"c46e4edd042dd1:0\"",
+      "last_modified": "Fri, 11 Sep 2026 15:18:57 GMT",
+      "fetched_at": "2026-09-11 15:18:57",
       "attempts": 1
     },
     "raw/FL_kindergarten_early10yr.xlsx": {
@@ -205,9 +133,9 @@
       "http_status": 200,
       "bytes": 15863,
       "sha256": "ad861f9843bb29cfaf77259f7aff5e8d9ba952c8c9b057e394031fa2b8587028",
-      "etag": "W/\"e6d65a26440dd1:0\"",
-      "last_modified": "Wed, 09 Sep 2026 14:08:05 GMT",
-      "fetched_at": "2026-09-09 14:08:07",
+      "etag": "W/\"7fbbd4de042dd1:0\"",
+      "last_modified": "Fri, 11 Sep 2026 15:18:59 GMT",
+      "fetched_at": "2026-09-11 15:18:59",
       "attempts": 1
     }
   }

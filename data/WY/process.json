@@ -5,73 +5,22 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-08 15:19:28",
+      "last_run": "2026-09-11 15:20:46",
       "frequency": 0,
-      "run_time": 19.386,
+      "run_time": 0.174,
       "last_status": {
-        "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "WY: 2018 Converse (1).pdf is a scanned image with no text layer; Converse 2018 is not parsed",
-          "WY: county values: percent printed without its sign, read as percent points: 2019 Sweetwater.xlsx '3 Polio' 87",
-          "WY: one waiver figure where two are expected in: 2018 Hot Springs.xlsx medical=22; 2018 Johnson.xlsx 5_plus=534; 2018 Johnson.xlsx medical=22; 2018 Lincoln.xlsx medical=22; 2018 Natrona.xlsx medical=22; 2018 Sheridan.xlsx medical=22; 2018 Sublette.xlsx medical=22",
-          "WY: 2018 Hot Springs.xlsx: medical county count recovered as 1 from the other three",
-          "WY: 2018 Lincoln.xlsx: medical county count recovered as 1 from the other three",
-          "WY: 2018 Natrona.xlsx: medical county count recovered as 1 from the other three",
-          "WY: 2018 Sheridan.xlsx: medical county count recovered as 1 from the other three",
-          "WY: 2018 Sublette.xlsx: medical county count recovered as 1 from the other three",
-          "WY: state figures differ between cards (the majority value is kept):",
-          "  2019 hpv_2dose_13_17y: 0.34 on 22 of 23 cards; Albany_2019.xlsx=0.27",
-          "  2023 mmr: 0.93 on 22 of 23 cards; Campbell_2023.xlsx=0.92",
-          "  2023 polio: 0.92 on 22 of 23 cards; Campbell_2023.xlsx=0.94",
-          "  2023 varicella: 0.94 on 22 of 23 cards; Campbell_2023.xlsx=0.93",
-          "WY: kindergarten doses by year: 2022 dtap=5, 2022 mmr=2, 2022 polio=4, 2022 varicella=2, 2023 dtap=4, 2023 mmr=1, 2023 polio=3, 2023 varicella=1",
-          "WY: 143 rows: 2018 county=22, 2018 state=1, 2019 county=23, 2019 state=1, 2020 county=23, 2020 state=1, 2021 county=23, 2021 state=1, 2022 county=23, 2022 state=1, 2023 county=23, 2023 state=1",
-          "WY: cards carrying each measure, by year:",
-          "                measure 2018 2019 2020 2021 2022 2023",
-          "      dtap_4dose_19_35m   22   23    4   23   23   23",
-          "          dtap_5dose_6y   22   23   23   23   NA   NA",
-          "     hep_a_2dose_19_35m   22   23   23   23   23   23",
-          "     hep_b_3dose_19_35m   22   23    4   23   23   23",
-          "       hib_3dose_19_35m   22   23   23   23   23   23",
-          "       hpv_2dose_13_17y   22   23   23   23   23   23",
-          "   menacwy_1dose_13_17y   22   23   23   23   23   23",
-          "   menacwy_2dose_16_18y   22   23   23   23   23   23",
-          "       mmr_1dose_19_35m   22   23    4   23   23   23",
-          "           mmr_2dose_6y   22   23   23   23   NA   NA",
-          "       pcv_4dose_19_35m   22   23    4   23   23   23",
-          "     polio_3dose_19_35m   22   23   23   23   23   23",
-          " rotavirus_2dose_19_35m   22   23   23   23   23   23",
-          "          series_19_35m   22   23   23   23   23   23",
-          "              series_6y   22   23   23   23   NA   NA",
-          "            tdap_13_17y   22   23   23   23   23   23",
-          " varicella_1dose_19_35m   22   23   23   23   23   23",
-          "     varicella_2dose_6y   22   23   23   23   NA   NA",
-          "                   dtap   NA   NA   NA   NA   23   23",
-          "                    mmr   NA   NA   NA   NA   23   23",
-          "                  polio   NA   NA   NA   NA   23   23",
-          "              varicella   NA   NA   NA   NA   23   23"
-        ],
+        "log": [],
         "success": true
       }
     }
   ],
-  "checked": "2026-09-09 10:11:04",
+  "checked": "2026-09-11 15:20:49",
   "check_results": {
-    "data/WY/standard/data.csv.gz": {
-      "measures": ["missing_info: geography_name", "missing_info: type"]
-    },
     "data/WY/standard/data_kindergarten.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
+    },
+    "data/WY/standard/data.csv.gz": {
+      "measures": ["missing_info: geography_name", "missing_info: type"]
     }
   },
   "script_hash": "22bef111a73c69d6544cbcf8560a97d4",
@@ -217,7 +166,7 @@
   },
   "standard_state": {
     "./data/WY/measure_info.json": "ea27c549a3bddcb75e12fd9fb8ab0efc",
-    "./data/WY/standard/data.csv.gz": "e151be1ac0c0f23008031c348b2500b7",
-    "./data/WY/standard/data_kindergarten.csv.gz": "d480dba8eb82e0760839c76232cade45"
+    "./data/WY/standard/data_kindergarten.csv.gz": "d480dba8eb82e0760839c76232cade45",
+    "./data/WY/standard/data.csv.gz": "e151be1ac0c0f23008031c348b2500b7"
   }
 }

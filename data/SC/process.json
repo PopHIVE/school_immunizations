@@ -45,13 +45,12 @@
       }
     }
   ],
-  "checked": "2026-09-09 10:11:03",
+  "checked": "2026-09-11 15:20:48",
   "check_results": {
     "data/SC/raw/SC_2019-23.csv": {
       "data": "not_compressed"
     },
     "data/SC/standard/data.csv.gz": {
-      "data": "geography_nas",
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: city", "missing_info: grade_range", "missing_info: grade"]
     }
   },

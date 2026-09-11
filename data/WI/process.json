@@ -5,47 +5,13 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-04 17:29:56",
+      "last_run": "2026-09-11 15:20:45",
       "frequency": 0,
-      "run_time": 3.593,
+      "run_time": 3.734,
       "last_status": {
         "log": [
-          "",
-          "Attaching package: 'dplyr'",
-          "",
-          "The following objects are masked from 'package:stats':",
-          "",
-          "    filter, lag",
-          "",
-          "The following objects are masked from 'package:base':",
-          "",
-          "    intersect, setdiff, setequal, union",
-          "",
-          "Registered S3 methods overwritten by 'readr':",
-          "  method                    from ",
-          "  as.data.frame.spec_tbl_df vroom",
-          "  as_tibble.spec_tbl_df     vroom",
-          "  format.col_spec           vroom",
-          "  print.col_spec            vroom",
-          "  print.collector           vroom",
-          "  print.date_names          vroom",
-          "  print.locale              vroom",
-          "  str.col_spec              vroom",
-          "",
-          "Attaching package: 'readr'",
-          "",
-          "The following objects are masked from 'package:vroom':",
-          "",
-          "    as.col_spec, col_character, col_date, col_datetime, col_double,",
-          "    col_factor, col_guess, col_integer, col_logical, col_number,",
-          "    col_skip, col_time, cols, cols_condense, cols_only, date_names,",
-          "    date_names_lang, date_names_langs, default_locale, fwf_cols,",
-          "    fwf_empty, fwf_positions, fwf_widths, locale, output_column,",
-          "    problems, spec",
-          "",
-          "fetch: fetched https://www.dhs.wisconsin.gov/immunization/child-adolescent-vaccine-data.htm (175,081 bytes)",
+          "fetch: fetched https://www.dhs.wisconsin.gov/immunization/child-adolescent-vaccine-data.htm (175,077 bytes)",
           "WI: MMR workbook taken from the vaccine data page: https://www.dhs.wisconsin.gov/immunization/mmr-map-data.xlsx",
-          "fetch: fetched mmr-map-data.xlsx (39,368 bytes)",
           "WI: ArcGIS school layer matches the 2022-23 workbook; snapshot only",
           "WI: 21880 rows (21369 school from 7 workbooks, 511 county MMR for 7 years)"
         ],
@@ -53,7 +19,7 @@
       }
     }
   ],
-  "checked": "2026-09-09 10:11:04",
+  "checked": "2026-09-11 15:20:49",
   "check_results": {
     "data/WI/raw/wi_arcgis_districts.csv": {
       "data": "not_compressed"
@@ -66,6 +32,7 @@
     }
   },
   "raw_state": {
+    "raw/mmr-map-data.xlsx": "0e37f9a529fa5b83d273f3bb47f57c9a",
     "raw/School Immunization Rates, Wisconsin, 2018.xlsx": "e380b09690f3c34b88cd4bca7bf4a591",
     "raw/School Immunization Rates, Wisconsin, 2019.xlsx": "196740c830e929e60de147dd63aa58fb",
     "raw/School Immunization Rates, Wisconsin, 2020.xlsx": "a5db1581dd3a633218c04f03ea7ffcbe",
@@ -73,8 +40,7 @@
     "raw/School Immunization Rates, Wisconsin, 2022.xlsx": "6f736565269c2823c028fb9fbffdcd08",
     "raw/School Immunization Rates, Wisconsin, 2023.xlsx": "bdf0d2b62c24951b98091b9faeea16eb",
     "raw/School Immunization Rates, Wisconsin, 2024.xlsx": "331d7b36b9cb896ae9a657e43a3eda51",
-    "raw/mmr-map-data.xlsx": "0e37f9a529fa5b83d273f3bb47f57c9a",
-    "raw/wi_arcgis_districts.csv": "9b7af380ae396ef09dea9e05fd0b088b",
+    "raw/wi_arcgis_districts.csv": "e57b531d0a5993f33cb8f578574ec35a",
     "raw/wi_arcgis_schools.csv": "a88b687a02accc1ba59a3365b2fffe94"
   },
   "script_hash": "4e23eecb22bf53f2a25828632819e8fa",
@@ -91,7 +57,7 @@
       "bytes": 39368,
       "sha256": "c2b77730987f966680836bfb5cf49491c2921d909fca52713a84ca8424c684dc",
       "last_modified": "Tue, 10 Mar 2026 15:30:48 GMT",
-      "fetched_at": "2026-09-09 14:10:58",
+      "fetched_at": "2026-09-11 15:20:42",
       "attempts": 1
     },
     "raw/wi_arcgis_schools.csv": {
@@ -101,17 +67,17 @@
       "http_status": 200,
       "bytes": 748984,
       "sha256": "c7fe074b187874084bc18783c9b4b96263fc546bfb8e920b04a9c49c5e852d0b",
-      "fetched_at": "2026-09-09 14:10:59",
+      "fetched_at": "2026-09-11 15:20:44",
       "attempts": 1
     },
     "raw/wi_arcgis_districts.csv": {
       "url": "https://dhsgis.wi.gov/server/rest/services/DHS_IMMZ/School_Immunization_Rates/MapServer/1/query",
       "dest": "raw/wi_arcgis_districts.csv",
-      "status": "unchanged",
+      "status": "updated",
       "http_status": 200,
-      "bytes": 47951,
-      "sha256": "3988dea574c2c76f4cdd016de6c1b99eb9cffe3eb68b93cb19be076677270ced",
-      "fetched_at": "2026-09-09 14:11:00",
+      "bytes": 47958,
+      "sha256": "2fe1b637963c437c1421813edc37af0841c7517243485df9908a66ae83aaac29",
+      "fetched_at": "2026-09-11 15:20:44",
       "attempts": 1
     }
   }
