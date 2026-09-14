@@ -227,6 +227,13 @@ for (st in state_dirs) {
           status <- "unverifiable"
           detail <- c(detail, sprintf("HTTP 403 for %s; check from a workstation", url))
           soft_flag <- TRUE
+        } else if (!hc$ok && is.na(hc$code)) {
+          # no HTTP status at all: the runner could not connect (some state
+          # servers drop datacenter traffic; dhsgis.wi.gov did on 2026-09-14
+          # while answering a workstation). Says nothing about the file.
+          status <- "no response"
+          detail <- c(detail, sprintf("no response from %s; check from a workstation", url))
+          soft_flag <- TRUE
         } else if (!hc$ok) {
           status <- "unreachable"
           detail <- c(detail, sprintf("HTTP %s for %s", hc$code, url))
@@ -279,9 +286,11 @@ for (st in state_dirs) {
       if (s$access %in% c("index_page") && !is.null(s$page_url) && !is.null(s$pattern)) {
         pages <- unique(c(s$page_url, if (!is.null(s$url) && nzchar(s$url)) s$url))
         found <- character(); cands <- character(); page_fail <- character(); blocked <- FALSE
+        http_error <- FALSE
         for (pg in pages) {
           l <- discover_quietly(pg, s$pattern)
           if (any(grepl("HTTP 403", attr(l, "warnings")))) blocked <- TRUE
+          if (any(grepl("HTTP [0-9]{3}", attr(l, "warnings")))) http_error <- TRUE
           if (is.null(l) || !isTRUE(attr(l, "fetched"))) { page_fail <- c(page_fail, pg); next }
           found <- c(found, l$url); cands <- c(cands, attr(l, "candidates"))
         }
@@ -291,6 +300,12 @@ for (st in state_dirs) {
             status <- "unverifiable"
             detail <- c(detail, if (blocked) "HTTP 403: site refused this client; check from a workstation"
                                 else "site blocks this client; check from a workstation")
+            soft_flag <- TRUE
+          } else if (!http_error) {
+            # connection failed with no HTTP status: the runner's network, not
+            # the page
+            status <- "no response"
+            detail <- c(detail, paste("no response from:", paste(page_fail, collapse = ", ")))
             soft_flag <- TRUE
           } else {
             status <- "unreachable"
@@ -383,7 +398,7 @@ lines <- c(
   sprintf("Checked %s UTC by `scripts/check_sources.R`. Do not edit by hand.",
           format(Sys.time(), "%Y-%m-%d %H:%M", tz = "UTC")),
   "",
-  "Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream changed` (ETag or Last-Modified differs from the last fetch), `stale` (the school year that should be available by now has not been ingested), `unreachable`, `pattern matched nothing`, `not automatable` (manual, request or dashboard sources; staleness only), `unverifiable` (site blocks this client).",
+  "Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream changed` (ETag or Last-Modified differs from the last fetch), `stale` (the school year that should be available by now has not been ingested), `unreachable` (an HTTP error), `no response` (the runner could not connect; check from a workstation), `pattern matched nothing`, `not automatable` (manual, request or dashboard sources; staleness only), `unverifiable` (site blocks this client).",
   "",
   "| State | Source | Access | Status | Expected year | Latest ingested | Detail |",
   "|---|---|---|---|---|---|---|",
@@ -393,7 +408,7 @@ lines <- c(
 writeLines(lines, out_md)
 
 n_hard <- sum(df$status %in% c("unreachable", "pattern matched nothing"))
-n_soft <- sum(df$status %in% c("new files", "upstream changed", "stale"))
+n_soft <- sum(df$status %in% c("new files", "upstream changed", "stale", "no response"))
 message(sprintf("check_sources: %d source(s); %d hard failure(s), %d flag(s)", nrow(df), n_hard, n_soft))
 if (hard_fail) quit(status = 2L)
 if (soft_flag) quit(status = 1L)

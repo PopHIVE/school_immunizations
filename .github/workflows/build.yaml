@@ -21,6 +21,10 @@ jobs:
           use-public-rspm: true      
       - uses: r-lib/actions/setup-renv@v2
       - run: Rscript -e "renv::install('dissc-yale/dcf')"
+        env:
+          # authenticated GitHub API calls; unauthenticated ones hit the rate
+          # limit and the install failed on 2026-09-13
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       - run: Rscript scripts/build.R
       # dcf_build() records a failed ingest in that state's process.json and
       # carries on, so the build step itself never fails. build_status.R
