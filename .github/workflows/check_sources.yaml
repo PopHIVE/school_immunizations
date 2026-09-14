@@ -36,6 +36,10 @@ jobs:
           use-public-rspm: true
       - uses: r-lib/actions/setup-renv@v2
       - run: Rscript -e "renv::install('dissc-yale/dcf')"
+        env:
+          # authenticated GitHub API calls; unauthenticated ones hit the rate
+          # limit and the install failed on 2026-09-13
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
       - id: check
         run: |
           set +e
