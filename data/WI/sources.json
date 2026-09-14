@@ -12,7 +12,7 @@
     "latest_year_ingested": 2024,
     "ci_reachable": true,
     "notes": "Per-year school immunization rate workbooks (waivers by school).",
-    "last_check_time": "2026-09-14 14:25:18",
+    "last_check_time": "2026-09-14 14:27:41",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": 2024,
     "ci_reachable": true,
     "notes": "Registry (WIR) county MMR coverage by CALENDAR year: 1 dose at 24 months, 2 doses at 6 years, 2 doses ages 6-18; Statewide plus 72 counties, 2019 on (2025 present as of March 2026). Not the school survey. Linked from the child/adolescent page as mmr-map-data.xlsx (same bytes as the -2019-2024 name); data.htm does not link it. Kept in raw/ as mmr-map-data.xlsx and re-fetched whole because DHS restates all years in place. Year 2023 carries a dagger: from 2023 the denominator drops WIR records with no activity, so the 6-18 series breaks there. In 2025 the age bands moved from 5-6 / 5-18 to 6 / 6-18 and every year was restated. Calendar year N is dated (N-1)-09-01.",
-    "last_check_time": "2026-09-14 14:25:19",
+    "last_check_time": "2026-09-14 14:27:42",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -48,7 +48,7 @@
     "latest_year_ingested": 2022,
     "ci_reachable": true,
     "notes": "Layer 0 = school (min-requirement, in-process, behind-schedule, no-record, health/religious/personal waiver, waived-all %; numeric fields hold 4 for '<5%', -6 for 'No Report Received', -9 for 'No Data' (<10 students); the _TXT fields carry the printed value), layer 1 = district (Percent_Immunized). One school year only. The service metadata says 2019/2020 but the data match the 2022-23 workbook school-for-school on DIST_SCHL; no county column. Snapshot only, not published from here while a workbook covers the same year.",
-    "last_check_time": "2026-09-14 14:25:19",
+    "last_check_time": "2026-09-14 14:27:42",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
