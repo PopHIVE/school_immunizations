@@ -12,7 +12,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "Exemption rates by county and grade obtained by request.",
-    "last_check_time": "2026-09-11 15:33:48",
+    "last_check_time": "2026-09-14 11:56:33",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "Annual School Immunization Coverage Assessment Report for Kentucky Counties (K, 7th, 11th coverage), published as a PDF. The 2024-25 file at chfs.ky.gov/agencies/dph/dehp/imm/2425AnnualSchoolSurveyReport.pdf answered HTTP 404 on 2026-09-08; the healthtracking.ky.gov pages that link the report render their links in JavaScript. Not ingested: no file link found.",
-    "last_check_time": "2026-09-11 15:33:48",
+    "last_check_time": "2026-09-14 11:56:33",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

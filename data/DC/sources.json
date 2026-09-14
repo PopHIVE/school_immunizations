@@ -12,7 +12,7 @@
     "latest_year_ingested": null,
     "ci_reachable": false,
     "notes": "DC Health publishes kindergarten MMR rates by school on this page, but dchealth.dc.gov answers HTTP 403 'Access denied' to every non-residential client tried (curl and R with full browser headers, several User-Agent and Accept variants). No file is in raw/ yet. Options: fetch the page from a residential connection and commit the table, request the data from DC Health Immunization Division, or use the Washington Post school and county rows for DC that PopHIVE/Ingest already carries. Geography for the District is FIPS 11001.",
-    "last_check_time": "2026-09-11 15:33:39",
+    "last_check_time": "2026-09-14 11:56:22",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

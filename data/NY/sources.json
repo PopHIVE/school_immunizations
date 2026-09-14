@@ -12,7 +12,7 @@
     "latest_year_ingested": 2024,
     "ci_reachable": true,
     "notes": "School Immunization Survey, 2019-20 onward, by school.",
-    "last_check_time": "2026-09-11 15:33:57",
+    "last_check_time": "2026-09-14 11:56:44",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": 2018,
     "ci_reachable": true,
     "notes": "School Immunization Survey 2012-13 through 2018-19; closed series.",
-    "last_check_time": "2026-09-11 15:34:00",
+    "last_check_time": "2026-09-14 11:56:48",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

@@ -12,7 +12,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Kindergarten coverage by school, aggregated to county (enrollment-weighted). The county page publishes PDF tables only. Hrefs are %20-encoded; files are kept under the decoded basename. MDH revises posted workbooks in place (2023-2024 and 2025-2026 were re-saved 2 Sep 2026; the live 2023-2024 has a different layout from the copy in raw/), and years already in raw/ are not re-fetched.",
-    "last_check_time": "2026-09-11 15:33:49",
+    "last_check_time": "2026-09-14 11:56:33",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
