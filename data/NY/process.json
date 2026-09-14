@@ -18,7 +18,7 @@
       }
     }
   ],
-  "checked": "2026-09-12 06:42:19",
+  "checked": "2026-09-14 07:19:57",
   "check_results": {
     "data/NY/raw/ny_school_immunization_survey_2012_2018.csv": {
       "data": "not_compressed"
@@ -44,13 +44,13 @@
     "raw/ny_school_immunization_survey.csv": {
       "url": "https://health.data.ny.gov/api/views/btkd-y8bp/rows.csv?accessType=DOWNLOAD",
       "dest": "raw/ny_school_immunization_survey.csv",
-      "status": "updated",
+      "status": "unchanged",
       "http_status": 200,
       "bytes": 6161329,
       "sha256": "37ae6f8ba937d333cba7bd5d7c731aaf0db2ba39cd12f68ecc55b0c6a9794585",
       "etag": "\"anVsaWV0dC4xMzcwNF8xXzYyRndWTERzeXR1cDU2aDFVdkVLN1Q1VXBaY2xR---gzipkj18_odLqAZH32B0YcJZ6BYIL8w--gzip--gzip\"",
       "last_modified": "Tue, 23 Jun 2026 12:49:12 GMT",
-      "fetched_at": "2026-09-12 06:41:01",
+      "fetched_at": "2026-09-14 07:19:20",
       "attempts": 1
     },
     "raw/ny_school_immunization_survey_2012_2018.csv": {
@@ -59,7 +59,7 @@
       "status": "skipped",
       "bytes": 8810179,
       "sha256": "687d6552b08d70ef457158417df00647229309e2c7d9e42fbd4800d14fd88192",
-      "fetched_at": "2026-09-12 06:41:01",
+      "fetched_at": "2026-09-14 07:19:20",
       "attempts": 0
     }
   }
