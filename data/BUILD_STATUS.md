@@ -1,6 +1,6 @@
 # Build status
 
-Written 2026-09-14 07:20 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
+Written 2026-09-15 06:54 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
 
 | State | Ingest | Last run | Fetches | Rows | Latest year | Error |
 |---|---|---|---|---|---|---|
@@ -11,10 +11,10 @@ Written 2026-09-14 07:20 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | CA | ok | 2026-09-11 15:17:50 | 4 failed | 696 | 2024 |  |
 | CO | ok | 2026-09-11 15:18:35 | 5 unchanged | 1,743 | 2025 |  |
 | CT | ok | 2026-09-11 15:18:42 | 4 unchanged | 448 | 2025 |  |
-| DC | ok | 2026-09-14 07:18:47 |  |  |  |  |
+| DC | ok | 2026-09-15 06:53:37 |  |  |  |  |
 | DE | ok | 2026-09-08 14:50:31 | 2 unchanged | 7 | 2022 |  |
 | FL | ok | 2026-09-11 15:19:00 | 2 unchanged | 1,407 | 2025 |  |
-| GA | ok | 2026-09-14 07:19:03 |  |  |  |  |
+| GA | ok | 2026-09-15 06:53:53 |  |  |  |  |
 | HI | ok | 2026-09-04 17:29:26 | 1 skipped | 4,131 | 2024 |  |
 | IA | ok | 2026-09-08 14:55:53 | 7 skipped | 2,086 | 2025 |  |
 | ID | ok | 2026-08-25 14:47:12 |  | 308 | 2024 |  |
@@ -33,7 +33,7 @@ Written 2026-09-14 07:20 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | MT | ok | 2026-08-25 14:47:35 |  | 224 | 2020 |  |
 | NC | ok | 2026-08-25 14:47:35 |  | 397 | 2023 |  |
 | ND | ok | 2026-09-11 15:19:28 |  | 5,270 | 2024 |  |
-| NE | ok | 2026-09-14 07:19:16 |  |  |  |  |
+| NE | ok | 2026-09-15 06:54:05 |  |  |  |  |
 | NH | ok | 2026-08-25 14:47:37 |  | 40 | 2024 |  |
 | NJ | ok | 2026-08-25 14:47:37 |  | 1,584 | 2024 |  |
 | NM | ok | 2026-08-25 14:47:38 |  | 442 | 2023 |  |
