@@ -9,14 +9,15 @@
   },
   "resources": [
     {
-      "bytes": 1560115,
+      "bytes": 1560118,
       "encoding": "windows-1252",
-      "md5": "5c2ef537e32e6dbc47bbfa5142c16db4",
+      "md5": "be96780dce2f06f15a6654b951996bb5",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "4dc149e98376fd3c116687505382e1899f930445",
           "5207764b5c9d0f60fddd369d25ad0edf2ba494de",
           "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
           "5ece9a0635db3e3c5de2493036d3e1bc0fe811b1",
@@ -26,6 +27,7 @@
           "5bafb181ffaef8fb36c83c2e6fb7b4944280ffcd"
         ],
         "author": [
+          "GitHub Actions <actions@github.com>",
           "Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>",
           "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "weinbergerlab <dweinber@gmail.com>",
@@ -35,6 +37,7 @@
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Sat Sep 12 06:42:30 2026 +0000",
           "Thu Sep 10 16:16:56 2026 -0400",
           "Wed Aug 26 09:31:25 2026 -0400",
           "Fri Jul 24 14:54:29 2026 -0400",
@@ -44,6 +47,7 @@
           "Thu Feb 12 07:17:55 2026 -0500"
         ],
         "message": [
+          "scheduled data build",
           "Rework source fetching, add PDF parsing and new state sources (#11)",
           "Update ingests to use APIs",
           "Rewire NY, CO, CA ingest to pull from official APIs",
@@ -63,8 +67,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-09-12 06:41:03.011661",
-      "last_modified": "2026-09-12 06:41:03.011661",
+      "created": "2026-09-16 06:58:48.253249",
+      "last_modified": "2026-09-16 06:58:48.253249",
       "vintage": {},
       "row_count": 69554,
       "entity_count": 62,
@@ -15661,7 +15665,7 @@
           }
         ]
       },
-      "sha512": "2e64ab55b7a6fb78d53953edf5629bd2c3c26481a6854d68010ff24480389338a035f26df77762a291c4bce84fa22d1207db539e19728008b7c5d5dcdc72f0e0"
+      "sha512": "8c2731bcd50c9a28ddeaad38a9a8ba1e13994c30882d3ac3b8c19554f3ffbcf0a9048eeeaec379c8998f4eda13199929edd4de1e1751ee83766dfaa50a5c0439"
     }
   ],
   "measure_info": {
@@ -15907,8 +15911,9 @@
         },
         "geography": {
           "status": "present",
-          "same_type": false,
-          "added_levels": ["36001", "36003", "36005", "36007", "36009", "36011", "36013", "36015", "36017", "36019", "36021", "36023", "36025", "36027", "36029", "36031", "36033", "36035", "36037", "36039", "36041", "36043", "36045", "36047", "36049", "36051", "36053", "36055", "36057", "36059", "36061", "36063", "36065", "36067", "36069", "36071", "36073", "36075", "36077", "36079", "36081", "36083", "36085", "36087", "36089", "36091", "36093", "36095", "36097", "36099", "36101", "36103", "36105", "36107", "36109", "36111", "36113", "36115", "36117", "36119", "36121", "36123"]
+          "same_type": true,
+          "added_levels": [],
+          "dropped_levels": []
         },
         "geography_name": {
           "status": "present",
@@ -15926,13 +15931,13 @@
           "status": "present",
           "same_type": true,
           "added_levels": [],
-          "dropped_levels": "NA"
+          "dropped_levels": []
         },
         "district": {
           "status": "present",
           "same_type": true,
           "added_levels": [],
-          "dropped_levels": "NA"
+          "dropped_levels": []
         },
         "school_type": {
           "status": "present",

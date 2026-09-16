@@ -197,7 +197,7 @@ flowchart LR
     end
     subgraph NY["`NY`"]
         direction LR
-        n43["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, school_id, school_name, district, school_type</code></li><li><code>type_changed: geography</code></li></ul>`"]:::warn
+        n43["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, school_id, school_name, district, school_type</code></li></ul>`"]:::warn
     end
     subgraph OH["`OH`"]
         direction LR
