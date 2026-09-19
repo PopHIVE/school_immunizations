@@ -1,6 +1,6 @@
 # Build status
 
-Written 2026-09-18 06:50 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
+Written 2026-09-19 06:54 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
 
 | State | Ingest | Last run | Fetches | Rows | Latest year | Error |
 |---|---|---|---|---|---|---|
@@ -11,10 +11,10 @@ Written 2026-09-18 06:50 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | CA | ok | 2026-09-11 15:17:50 | 4 failed | 696 | 2024 |  |
 | CO | ok | 2026-09-11 15:18:35 | 5 unchanged | 1,743 | 2025 |  |
 | CT | ok | 2026-09-11 15:18:42 | 4 unchanged | 448 | 2025 |  |
-| DC | ok | 2026-09-18 06:49:05 |  |  |  |  |
+| DC | ok | 2026-09-19 06:48:43 |  |  |  |  |
 | DE | ok | 2026-09-08 14:50:31 | 2 unchanged | 7 | 2022 |  |
 | FL | ok | 2026-09-11 15:19:00 | 2 unchanged | 1,407 | 2025 |  |
-| GA | ok | 2026-09-18 06:49:21 |  |  |  |  |
+| GA | ok | 2026-09-19 06:48:59 |  |  |  |  |
 | HI | ok | 2026-09-04 17:29:26 | 1 skipped | 4,131 | 2024 |  |
 | IA | ok | 2026-09-08 14:55:53 | 7 skipped | 2,086 | 2025 |  |
 | ID | ok | 2026-08-25 14:47:12 |  | 308 | 2024 |  |
@@ -33,7 +33,7 @@ Written 2026-09-18 06:50 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | MT | ok | 2026-08-25 14:47:35 |  | 224 | 2020 |  |
 | NC | ok | 2026-08-25 14:47:35 |  | 397 | 2023 |  |
 | ND | ok | 2026-09-11 15:19:28 |  | 5,270 | 2024 |  |
-| NE | ok | 2026-09-18 06:49:35 |  |  |  |  |
+| NE | ok | 2026-09-19 06:53:38 |  |  |  |  |
 | NH | ok | 2026-08-25 14:47:37 |  | 40 | 2024 |  |
 | NJ | ok | 2026-08-25 14:47:37 |  | 1,584 | 2024 |  |
 | NM | ok | 2026-08-25 14:47:38 |  | 442 | 2023 |  |
@@ -52,6 +52,6 @@ Written 2026-09-18 06:50 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | VA | ok | 2026-08-25 14:47:54 |  | 14,931 | 2024 |  |
 | VT | ok | 2026-08-25 14:47:55 |  | 256 | 2024 |  |
 | WA | ok | 2026-09-11 15:20:40 | 18 skipped | 1,194 | 2025 |  |
-| WI | ok | 2026-09-11 15:20:45 | 2 failed, 1 unchanged | 21,880 | 2024 |  |
+| WI | ok | 2026-09-11 15:20:45 | 3 unchanged | 21,880 | 2024 |  |
 | WV | ok | 2026-09-09 10:11:01 |  | 1,980 | 2025 |  |
 | WY | ok | 2026-09-11 15:20:46 |  | 143 | 2023 |  |
