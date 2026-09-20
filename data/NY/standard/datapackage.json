@@ -9,14 +9,15 @@
   },
   "resources": [
     {
-      "bytes": 1560118,
+      "bytes": 1560115,
       "encoding": "windows-1252",
-      "md5": "be96780dce2f06f15a6654b951996bb5",
+      "md5": "5c2ef537e32e6dbc47bbfa5142c16db4",
       "format": "csv",
       "name": "data.csv",
       "filename": "data.csv.gz",
       "versions": {
         "hash": [
+          "8b545e1fff2212583d9b99f305a23e3128cf9507",
           "4dc149e98376fd3c116687505382e1899f930445",
           "5207764b5c9d0f60fddd369d25ad0edf2ba494de",
           "92409f20acd04882bdbf1a8e17d1aa5eea0d7085",
@@ -28,6 +29,7 @@
         ],
         "author": [
           "GitHub Actions <actions@github.com>",
+          "GitHub Actions <actions@github.com>",
           "Madi Baltagulov <156106808+MadiBal@users.noreply.github.com>",
           "anshap32 <73296024+anshap32@users.noreply.github.com>",
           "weinbergerlab <dweinber@gmail.com>",
@@ -37,6 +39,7 @@
           "cawerin <aiwenc@andrew.cmu.edu>"
         ],
         "date": [
+          "Wed Sep 16 06:59:48 2026 +0000",
           "Sat Sep 12 06:42:30 2026 +0000",
           "Thu Sep 10 16:16:56 2026 -0400",
           "Wed Aug 26 09:31:25 2026 -0400",
@@ -47,6 +50,7 @@
           "Thu Feb 12 07:17:55 2026 -0500"
         ],
         "message": [
+          "scheduled data build",
           "scheduled data build",
           "Rework source fetching, add PDF parsing and new state sources (#11)",
           "Update ingests to use APIs",
@@ -67,8 +71,8 @@
       "id_length": 5,
       "time": "time",
       "profile": "data-resource",
-      "created": "2026-09-16 06:58:48.253249",
-      "last_modified": "2026-09-16 06:58:48.253249",
+      "created": "2026-09-20 07:14:14.881332",
+      "last_modified": "2026-09-20 07:14:14.881332",
       "vintage": {},
       "row_count": 69554,
       "entity_count": 62,
@@ -15665,7 +15669,7 @@
           }
         ]
       },
-      "sha512": "8c2731bcd50c9a28ddeaad38a9a8ba1e13994c30882d3ac3b8c19554f3ffbcf0a9048eeeaec379c8998f4eda13199929edd4de1e1751ee83766dfaa50a5c0439"
+      "sha512": "2e64ab55b7a6fb78d53953edf5629bd2c3c26481a6854d68010ff24480389338a035f26df77762a291c4bce84fa22d1207db539e19728008b7c5d5dcdc72f0e0"
     }
   ],
   "measure_info": {
