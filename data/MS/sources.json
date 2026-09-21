@@ -12,7 +12,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "Record-level medical and religious exemption workbooks obtained by request.",
-    "last_check_time": "2026-09-14 11:56:41",
+    "last_check_time": "2026-09-21 12:07:18",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "School Immunization Compliance Reports 2021-22 to 2024-25 and Medical and Religious Exemptions Reports 2022-23 to 2024-25, linked from the page. Not ingested: county figures are drawn as bar charts and choropleth maps with no value labels in the text layer; only region and state totals are text.",
-    "last_check_time": "2026-09-14 11:56:41",
+    "last_check_time": "2026-09-21 12:07:18",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

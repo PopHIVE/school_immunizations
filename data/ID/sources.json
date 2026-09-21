@@ -12,7 +12,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "Per-series exemption rates by county from a DHW records request; the public dashboard has no export.",
-    "last_check_time": "2026-09-14 11:56:32",
+    "last_check_time": "2026-09-21 12:07:12",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

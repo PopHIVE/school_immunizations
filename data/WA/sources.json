@@ -12,7 +12,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Per-year state, county and district immunization status by grade and vaccine (2016-17 onward). The 2025-26 link carries a document-number prefix (3481176-2025-2026SchoolYear.xlsx); saved without it. The same page posts a per-school workbook for each year (<YYYY>-<YYYY>SchoolBuilding.xlsx, about 23 MB each; 2025-26 is 3481175-2025-2026BuildingRates.xlsx), not downloaded or ingested.",
-    "last_check_time": "2026-09-14 11:57:49",
+    "last_check_time": "2026-09-21 12:08:16",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "County exemption workbook obtained by request (Kindergarten and K-12 2018-19 to 2023-24, 7th grade 2020-21 to 2023-24). Superseded by doh_school_year_workbooks, which reproduces it except for five counties in 2021-22 and four county-year rows the public files omit (see ingest.R); no longer parsed.",
-    "last_check_time": "2026-09-14 11:57:49",
+    "last_check_time": "2026-09-21 12:08:16",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -106,7 +106,7 @@
       }
     ],
     "notes": "School-level survey results DOH published on data.wa.gov before the WTN workbooks: one dataset per school year and cohort (Kindergarten, Sixth Grade, K-12) for 2014-15, 2015-16 and 2016-17, found through the Socrata catalog (api.us.socrata.com, domains=data.wa.gov, q=immunization) on 2026-09-09. A closed series: nothing was added after 2016-17 and the dataset ids do not change, so each file is fetched once (if_exists = skip) to raw/wa_socrata_<start year>_<k|6th|k12>.csv and parsed into standard/data_schools_2014_2016.csv.gz. The dataset titled 'Sixth (6th) grade immunization data, 2014-2015' (mgne-w2kv) is a copy of the 2014-15 K-12 table (i89p-imif), row for row with the K-12 columns, so there is no sixth-grade table for 2014-15 and it is not fetched. 'Asotin County Immunization Data by School' (jzrz-dku2) is a single-county extract and is not used. url points at the 2016-17 K-12 dataset for the source check.",
-    "last_check_time": "2026-09-14 11:57:50",
+    "last_check_time": "2026-09-21 12:08:18",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

@@ -12,7 +12,7 @@
     "latest_year_ingested": null,
     "ci_reachable": true,
     "notes": "Quarterly 'Alaska Vaccination Coverage Report' workbooks from VacTrAK, supplied to the project directly. No fixed download URL found; new quarters are added to raw/ by hand.",
-    "last_check_time": "2026-09-14 11:56:17",
+    "last_check_time": "2026-09-21 12:06:57",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

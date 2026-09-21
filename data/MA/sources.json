@@ -12,7 +12,7 @@
     "latest_year_ingested": null,
     "ci_reachable": false,
     "notes": "By-county kindergarten and grade 7 workbooks. mass.gov sits behind a WAF that blocks datacenter IPs; new years are fetched from a workstation.",
-    "last_check_time": "2026-09-14 11:56:33",
+    "last_check_time": "2026-09-21 12:07:12",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": null,
     "ci_reachable": false,
     "notes": "Archive of prior years.",
-    "last_check_time": "2026-09-14 11:56:33",
+    "last_check_time": "2026-09-21 12:07:12",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null

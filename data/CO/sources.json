@@ -12,7 +12,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "CDPHE school and child care immunization data, one MapServer with the county table at index 1, paged through /query (same rows and order as the hub's CSV export). County rows of standard/data.csv.gz. Layer 0 is county boundaries and table 3 is college/university data; neither is ingested.",
-    "last_check_time": "2026-09-14 11:56:18",
+    "last_check_time": "2026-09-21 12:06:57",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -30,7 +30,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Table 4 of the same MapServer: statewide totals in the county table's layout with no geography column. Written as type = \"state\" rows (geography 08) of standard/data.csv.gz.",
-    "last_check_time": "2026-09-14 11:56:18",
+    "last_check_time": "2026-09-21 12:06:57",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -48,7 +48,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Table 2 of the same MapServer: school districts (ID, District_Name), Kindergarten and School survey types, no county column. Written to standard/data_districts.csv.gz; the county FIPS is taken from the facility tables where every facility of the district sits in one county.",
-    "last_check_time": "2026-09-14 11:56:18",
+    "last_check_time": "2026-09-21 12:06:57",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -66,7 +66,7 @@
     "latest_year_ingested": 2022,
     "ci_reachable": true,
     "notes": "Table 5 of the same MapServer: facilities (schools and child care sites) with district, facility type and county, school years 2017-18 to 2022-23. Fetched with a where clause keeping only the Fully Immunized, Medical Exemption and Nonmedical Exemption metrics (the full table is 1.07 million rows, 160 MB) and stored gzip-compressed. Stacked with table 6 into standard/data_schools.csv.gz. This table is closed; a new year lands in table 6.",
-    "last_check_time": "2026-09-14 11:56:18",
+    "last_check_time": "2026-09-21 12:06:57",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
@@ -84,7 +84,7 @@
     "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Table 6 of the same MapServer: facilities, school years 2023-24 on, same layout as table 5, fetched with the same metric filter and stored gzip-compressed. Stacked with table 5 into standard/data_schools.csv.gz. If CDPHE opens a further table for later years it needs an entry here and in LAYERS in ingest.R.",
-    "last_check_time": "2026-09-14 11:56:18",
+    "last_check_time": "2026-09-21 12:06:57",
     "last_check_ok": true,
     "last_fetch_time": null,
     "last_fetch_ok": null
