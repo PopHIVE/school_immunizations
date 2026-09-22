@@ -5,9 +5,9 @@
     {
       "path": "ingest.R",
       "manual": false,
-      "last_run": "2026-09-21 07:22:38",
+      "last_run": "2026-09-22 06:59:08",
       "frequency": 0,
-      "run_time": 0.011,
+      "run_time": 0.009,
       "last_status": {
         "log": "NE: no raw files; source is request-only (see sources.json)",
         "success": true
