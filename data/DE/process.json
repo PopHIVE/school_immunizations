@@ -32,7 +32,7 @@
       }
     }
   ],
-  "checked": "2026-09-22 07:00:18",
+  "checked": "2026-09-23 06:55:51",
   "check_results": {
     "data/DE/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
@@ -40,24 +40,28 @@
   },
   "fetch_state": {
     "raw/School_Survey_Coverage_Rates.pdf": {
-      "url": "https://dhss.delaware.gov/dph/dpc/school-immunizations/",
+      "url": "https://dhss.delaware.gov/wp-content/uploads/sites/12/dph/pdf/School_Survey_Coverage_Rates.pdf",
       "dest": "raw/School_Survey_Coverage_Rates.pdf",
-      "status": "failed",
+      "status": "unchanged",
+      "http_status": 200,
       "bytes": 348895,
       "sha256": "f6c2b18d801f1b89d04ebf92e4ad371615495891cd021b7948e2b6b6490c955f",
-      "fetched_at": "2026-09-22 06:58:50",
-      "attempts": 0,
-      "error": "index page could not be fetched"
+      "etag": "\"692e8ac6-552df\"",
+      "last_modified": "Tue, 02 Dec 2025 06:44:22 GMT",
+      "fetched_at": "2026-09-23 06:54:17",
+      "attempts": 1
     },
     "raw/School_Survey_Exemption_Rates.pdf": {
-      "url": "https://dhss.delaware.gov/dph/dpc/school-immunizations/",
+      "url": "https://dhss.delaware.gov/wp-content/uploads/sites/12/dph/pdf/School_Survey_Exemption_Rates.pdf",
       "dest": "raw/School_Survey_Exemption_Rates.pdf",
-      "status": "failed",
+      "status": "unchanged",
+      "http_status": 200,
       "bytes": 444456,
       "sha256": "4844b93360390b4151b35368da05f4a98634f2d673dcab4321a152ffcf124ede",
-      "fetched_at": "2026-09-22 06:58:50",
-      "attempts": 0,
-      "error": "index page could not be fetched"
+      "etag": "\"692e8ac6-6c828\"",
+      "last_modified": "Tue, 02 Dec 2025 06:44:22 GMT",
+      "fetched_at": "2026-09-23 06:54:20",
+      "attempts": 1
     }
   },
   "raw_state": {
