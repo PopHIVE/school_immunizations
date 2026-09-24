@@ -19,7 +19,7 @@
       }
     }
   ],
-  "checked": "2026-09-23 06:55:53",
+  "checked": "2026-09-24 06:55:36",
   "check_results": {
     "data/WI/raw/wi_arcgis_districts.csv": {
       "data": "not_compressed"
@@ -57,28 +57,28 @@
       "bytes": 39368,
       "sha256": "c2b77730987f966680836bfb5cf49491c2921d909fca52713a84ca8424c684dc",
       "last_modified": "Tue, 10 Mar 2026 15:30:48 GMT",
-      "fetched_at": "2026-09-22 06:59:56",
+      "fetched_at": "2026-09-24 06:55:29",
       "attempts": 1
     },
     "raw/wi_arcgis_schools.csv": {
       "url": "https://dhsgis.wi.gov/server/rest/services/DHS_IMMZ/School_Immunization_Rates/MapServer/0/query",
       "dest": "raw/wi_arcgis_schools.csv",
-      "status": "failed",
+      "status": "unchanged",
+      "http_status": 200,
       "bytes": 748984,
       "sha256": "c7fe074b187874084bc18783c9b4b96263fc546bfb8e920b04a9c49c5e852d0b",
-      "fetched_at": "2026-09-22 07:00:06",
-      "attempts": 1,
-      "error": "Timeout was reached [dhsgis.wi.gov]:\nFailed to connect to dhsgis.wi.gov port 443 after 10002 ms: Timeout was reached"
+      "fetched_at": "2026-09-24 06:55:31",
+      "attempts": 1
     },
     "raw/wi_arcgis_districts.csv": {
       "url": "https://dhsgis.wi.gov/server/rest/services/DHS_IMMZ/School_Immunization_Rates/MapServer/1/query",
       "dest": "raw/wi_arcgis_districts.csv",
-      "status": "failed",
+      "status": "unchanged",
+      "http_status": 200,
       "bytes": 47958,
       "sha256": "2fe1b637963c437c1421813edc37af0841c7517243485df9908a66ae83aaac29",
-      "fetched_at": "2026-09-22 07:00:16",
-      "attempts": 1,
-      "error": "Timeout was reached [dhsgis.wi.gov]:\nFailed to connect to dhsgis.wi.gov port 443 after 10002 ms: Timeout was reached"
+      "fetched_at": "2026-09-24 06:55:32",
+      "attempts": 1
     }
   }
 }
