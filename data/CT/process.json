@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-09-25 06:50:36",
+  "checked": "2026-09-26 06:51:06",
   "check_results": {
     "data/CT/raw/ct_county_immunization_exemption_8kid-pp5k.csv": {
       "data": "not_compressed"
@@ -74,7 +74,7 @@
       "sha256": "0c8ec38b0644119d98439e7c15de61b19582c690f3e54a0e3ca930db8520b013",
       "etag": "\"aW5kaWEuNDU3M18yXzMwaDV4cXNTUVFtc2F6cUgzN0FyMkdlMHlUOFhN---gzipBJhXxrvo2MvouReCEXlFFw28Afw--gzip--gzip\"",
       "last_modified": "Wed, 22 Jul 2026 18:18:18 GMT",
-      "fetched_at": "2026-09-04 21:40:13",
+      "fetched_at": "2026-09-26 06:47:34",
       "attempts": 1
     },
     "raw/ct_school_k_2025.csv": {
@@ -86,8 +86,8 @@
       "sha256": "d10808788ff8c63f22b925523f52f79ee689d3664bdc9264b31dcd6489eb0504",
       "etag": "\"aW5kaWEuNDU3NV8zXzU0cVlid0ZmS25sSEJGSmtwTlVMeFI1eDNoLVU0---gzipMbpP5cXshqIXs2TUSa1DmslZv4E--gzip--gzip\"",
       "last_modified": "Wed, 22 Jul 2026 18:17:35 GMT",
-      "fetched_at": "2026-09-04 21:40:13",
-      "attempts": 1
+      "fetched_at": "2026-09-26 06:49:41",
+      "attempts": 2
     },
     "raw/ct_school_7_2025.csv": {
       "url": "https://data.ct.gov/resource/rz57-x4bb.csv?$limit=50000",
@@ -98,7 +98,7 @@
       "sha256": "da619e7a0e6c1b536dd3d5701baf67d4e2ba7cf1ddb410bf49a624787c01e39b",
       "etag": "\"Z29sZi40OTg0NF8zXzUzLTBIMmszZ1dyZVdra2N6TndRYXlwc1ZMM3pj---gzipiC8T6j4kjso1e7SLnromvqSdzFQ--gzip--gzip\"",
       "last_modified": "Wed, 22 Jul 2026 18:18:20 GMT",
-      "fetched_at": "2026-09-04 21:40:16",
+      "fetched_at": "2026-09-26 06:49:44",
       "attempts": 1
     },
     "raw/ct_school_exempt_2025.csv": {
@@ -110,7 +110,7 @@
       "sha256": "da550c063acdbbd08f44d9f610ebdf77a197e50927825045beada3fab986f925",
       "etag": "\"Z29sZi40OTg0NV8zXzM0cnpWWnMzVnRQd3hPYnVsRmxuWDF4YzFTSE1j---gziptaNsYtzM0wPD0XmzBBecbBHEWyw--gzip--gzip\"",
       "last_modified": "Wed, 22 Jul 2026 18:13:53 GMT",
-      "fetched_at": "2026-09-04 21:40:18",
+      "fetched_at": "2026-09-26 06:49:47",
       "attempts": 1
     }
   }
