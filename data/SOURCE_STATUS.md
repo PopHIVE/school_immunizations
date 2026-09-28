@@ -1,6 +1,6 @@
 # Source status
 
-Checked 2026-09-21 12:08 UTC by `scripts/check_sources.R`. Do not edit by hand.
+Checked 2026-09-28 13:05 UTC by `scripts/check_sources.R`. Do not edit by hand.
 
 Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream changed` (ETag or Last-Modified differs from the last fetch), `stale` (the school year that should be available by now has not been ingested), `unreachable` (an HTTP error), `no response` (the runner could not connect; check from a workstation), `pattern matched nothing`, `not automatable` (manual, request or dashboard sources; staleness only), `unverifiable` (site blocks this client).
 
@@ -61,7 +61,7 @@ Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream chang
 | OK | osdh_county_tables | index_page | ok | 2025 | 2025 | 17 unmatched data link(s) on page, e.g. Title-70-Oklahoma-School-Immunization-Law.pdf; immunization-regulations.pdf; Guide%20To%20Immunization%20Requirements.pdf |
 | OK | osdh_school_level | index_page | ok | 2025 | 2025 | 21 unmatched data link(s) on page, e.g. Title-70-Oklahoma-School-Immunization-Law.pdf; immunization-regulations.pdf; Guide%20To%20Immunization%20Requirements.pdf |
 | OR | oha_k12_workbook | static | stale | 2025 | 2024 | expected school year 2025, latest ingested 2024 |
-| PA | padoh_county_surveys | index_page | ok | 2025 | 2025 | 19 unmatched data link(s) on page, e.g. School%20Immunization%20Survey%20Summary%20for%20PA%202025-2026.xls; School%20Immunization%20Survey%20Summary%20for%20PA%202024-2025.xls; School%20Immunization%20Survey%20Summary%20for%20Pa%202023-2024.xlsx |
+| PA | padoh_county_surveys | index_page | ok | 2025 | 2025 | 20 unmatched data link(s) on page, e.g. School%20Immunization%20Survey%20Summary%20for%20PA%202025-2026.xls; School%20Immunization%20Survey%20Summary%20for%20PA%202024-2025.xls; School%20Immunization%20Survey%20Summary%20for%20Pa%202023-2024.xlsx |
 | RI | ridoh_supplied | request | not automatable | 2025 |  |  |
 | SC | dph_45_day_reports | index_page | ok | 2025 | 2025 | 3 unmatched data link(s) on page, e.g. 00029-ENG-CR.pdf; R.60-8.pdf; CR-011762.pdf |
 | SC | dph_county_page | dashboard | stale | 2025 | 2022 | expected school year 2025, latest ingested 2022 |
