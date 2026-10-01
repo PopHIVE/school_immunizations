@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-09-30 07:39:00",
+  "checked": "2026-10-01 08:07:00",
   "check_results": {
     "data/CO/raw/CDPHE_Colorado_School_and_Child_Care_Immunization_County_Data_.csv": {
       "data": "not_compressed"
@@ -57,7 +57,7 @@
       "http_status": 200,
       "bytes": 4921025,
       "sha256": "199ba14f05087cdf249fbf64783983be284adca8c50add6da431de6a741d990c",
-      "fetched_at": "2026-09-09 14:00:25",
+      "fetched_at": "2026-10-01 07:56:45",
       "attempts": 1
     },
     "raw/cdphe_sccidr_statewide.csv": {
@@ -67,7 +67,7 @@
       "http_status": 200,
       "bytes": 68058,
       "sha256": "96adfbaa4f8532f414c58e9615dad982cadc68cfa0e33701c46e171e75d184fb",
-      "fetched_at": "2026-09-09 14:00:26",
+      "fetched_at": "2026-10-01 07:56:46",
       "attempts": 1
     },
     "raw/cdphe_sccidr_district.csv": {
@@ -77,7 +77,7 @@
       "http_status": 200,
       "bytes": 9134510,
       "sha256": "016aa7c87f06f03f9dd71acce69694452c57b80c6a8d2ea6d7ed4b7ec266455c",
-      "fetched_at": "2026-09-09 14:00:29",
+      "fetched_at": "2026-10-01 07:56:48",
       "attempts": 1
     },
     "raw/cdphe_sccidr_facility_2017_2022.csv.gz": {
@@ -87,18 +87,18 @@
       "http_status": 200,
       "bytes": 4704335,
       "sha256": "f6f4dccf9a38136e11d6d09170c188159f5cd36901249eb3e3897c9ab3f5ed99",
-      "fetched_at": "2026-09-09 14:00:56",
+      "fetched_at": "2026-10-01 07:57:08",
       "attempts": 1
     },
     "raw/cdphe_sccidr_facility_2023_2025.csv.gz": {
       "url": "https://www.cohealthmaps.dphe.state.co.us/arcgis/rest/services/OPEN_DATA/cdphe_sccidr/MapServer/6/query",
       "dest": "raw/cdphe_sccidr_facility_2023_2025.csv.gz",
-      "status": "unchanged",
-      "http_status": 200,
+      "status": "failed",
       "bytes": 2110403,
       "sha256": "5f812169653076dcf04b3bfce65ad40aa9deb163c23cbd0877b81a03e4437900",
-      "fetched_at": "2026-09-09 14:01:08",
-      "attempts": 1
+      "fetched_at": "2026-10-01 07:57:10",
+      "attempts": 1,
+      "error": "arcgis: file1c884dd6dada.csv could not be downloaded from https://www.cohealthmaps.dphe.state.co.us/arcgis/rest/services/OPEN_DATA/cdphe_sccidr/MapServer/6/query (HTTP 500) and there is no committed copy to fall back on"
     }
   }
 }
