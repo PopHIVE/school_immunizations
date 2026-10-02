@@ -37,7 +37,7 @@
       }
     }
   ],
-  "checked": "2026-10-01 08:07:00",
+  "checked": "2026-10-02 07:42:30",
   "check_results": {
     "data/FL/standard/data_exemptions.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -117,22 +117,26 @@
     "raw/FL_kindergarten_recent10yr.xlsx": {
       "url": "https://www.flhealthcharts.gov/ChartsDashboards/rdPage.aspx?rdReport=NonVitalIndNoGrp.TenYrsRpt&cid=75&rdReportFormat=NativeExcel&rdExportTableID=dtTenYrsDataGrid&rdShowGridlines=True&rdHasWaitPanel=True&rdExcelOutputFormat=Excel2007&rdExportFilename=NonVitalInd_TenYrsReport.xlsx",
       "dest": "raw/FL_kindergarten_recent10yr.xlsx",
-      "status": "failed",
+      "status": "unchanged",
+      "http_status": 200,
       "bytes": 15735,
       "sha256": "01f3d7efe19ee5f042ad93b969dc777ae3d71301b2910717d2e0b3e2a617faa4",
-      "fetched_at": "2026-10-01 08:03:47",
-      "attempts": 3,
-      "error": "attempt 1: Timeout was reached [www.flhealthcharts.gov]:\nOperation timed out after 120001 milliseconds with 0 bytes received; attempt 2: Timeout was reached [www.flhealthcharts.gov]:\nRecv failure: Connection reset by peer; attempt 3: Timeout was reached [www.flhealthcharts.gov]:\nOperation timed out after 120002 milliseconds with 0 bytes received"
+      "etag": "W/\"61c77c3e4152dd1:0\"",
+      "last_modified": "Fri, 02 Oct 2026 07:40:06 GMT",
+      "fetched_at": "2026-10-02 07:40:07",
+      "attempts": 1
     },
     "raw/FL_kindergarten_early10yr.xlsx": {
       "url": "https://www.flhealthcharts.gov/ChartsDashboards/rdPage.aspx?rdReport=NonVitalIndNoGrp.TenYrsRpt&cid=75&rdReportFormat=NativeExcel&rdExportTableID=dtTenYrsDataGrid&rdShowGridlines=True&rdHasWaitPanel=True&rdExcelOutputFormat=Excel2007&rdExportFilename=NonVitalInd_TenYrsReport.xlsx&drpYear=2016",
       "dest": "raw/FL_kindergarten_early10yr.xlsx",
-      "status": "failed",
+      "status": "unchanged",
+      "http_status": 200,
       "bytes": 15863,
       "sha256": "ad861f9843bb29cfaf77259f7aff5e8d9ba952c8c9b057e394031fa2b8587028",
-      "fetched_at": "2026-10-01 08:06:08",
-      "attempts": 3,
-      "error": "attempt 1: Couldn't connect to server [www.flhealthcharts.gov]:\nFailed to connect to www.flhealthcharts.gov port 443 after 64 ms: Couldn't connect to server; attempt 2: Timeout was reached [www.flhealthcharts.gov]:\nOperation timed out after 120001 milliseconds with 0 bytes received; attempt 3: Couldn't connect to server [www.flhealthcharts.gov]:\nFailed to connect to www.flhealthcharts.gov port 443 after 558 ms: Couldn't connect to server"
+      "etag": "W/\"fdd031404152dd1:0\"",
+      "last_modified": "Fri, 02 Oct 2026 07:40:09 GMT",
+      "fetched_at": "2026-10-02 07:40:10",
+      "attempts": 1
     }
   }
 }

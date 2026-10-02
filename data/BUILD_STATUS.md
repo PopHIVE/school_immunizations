@@ -1,6 +1,6 @@
 # Build status
 
-Written 2026-10-01 08:07 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
+Written 2026-10-02 07:42 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
 
 | State | Ingest | Last run | Fetches | Rows | Latest year | Error |
 |---|---|---|---|---|---|---|
@@ -9,12 +9,12 @@ Written 2026-10-01 08:07 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | AR | ok | 2026-08-25 14:47:01 |  | 3,055 | 2024 |  |
 | AZ | ok | 2026-09-09 09:39:15 |  | 208 | 2023 |  |
 | CA | ok | 2026-09-11 15:17:50 | 4 failed | 696 | 2024 |  |
-| CO | ok | 2026-09-11 15:18:35 | 1 failed, 4 unchanged | 1,743 | 2025 |  |
+| CO | ok | 2026-09-11 15:18:35 | 5 unchanged | 1,743 | 2025 |  |
 | CT | ok | 2026-09-11 15:18:42 | 4 unchanged | 448 | 2025 |  |
-| DC | ok | 2026-10-01 07:57:17 |  |  |  |  |
+| DC | ok | 2026-10-02 07:39:53 |  |  |  |  |
 | DE | ok | 2026-09-08 14:50:31 | 2 unchanged | 7 | 2022 |  |
-| FL | ok | 2026-09-11 15:19:00 | 2 failed | 1,407 | 2025 |  |
-| GA | ok | 2026-10-01 08:06:08 |  |  |  |  |
+| FL | ok | 2026-09-11 15:19:00 | 2 unchanged | 1,407 | 2025 |  |
+| GA | ok | 2026-10-02 07:40:10 |  |  |  |  |
 | HI | ok | 2026-09-04 17:29:26 | 1 skipped | 4,131 | 2024 |  |
 | IA | ok | 2026-09-08 14:55:53 | 7 skipped | 2,086 | 2025 |  |
 | ID | ok | 2026-08-25 14:47:12 |  | 308 | 2024 |  |
@@ -33,12 +33,12 @@ Written 2026-10-01 08:07 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | MT | ok | 2026-08-25 14:47:35 |  | 224 | 2020 |  |
 | NC | ok | 2026-08-25 14:47:35 |  | 397 | 2023 |  |
 | ND | ok | 2026-09-11 15:19:28 |  | 5,270 | 2024 |  |
-| NE | ok | 2026-10-01 08:06:21 |  |  |  |  |
+| NE | ok | 2026-10-02 07:41:23 |  |  |  |  |
 | NH | ok | 2026-08-25 14:47:37 |  | 40 | 2024 |  |
 | NJ | ok | 2026-08-25 14:47:37 |  | 1,584 | 2024 |  |
 | NM | ok | 2026-08-25 14:47:38 |  | 442 | 2023 |  |
 | NV | ok | 2026-08-25 14:47:38 |  | 272 | 2024 |  |
-| NY | ok | 2026-10-01 08:06:25 | 1 skipped, 1 updated | 69,554 | 2024 |  |
+| NY | ok | 2026-10-01 08:06:25 | 1 skipped, 1 unchanged | 69,554 | 2024 |  |
 | OH | ok | 2026-09-09 09:39:16 |  | 88 | 2024 |  |
 | OK | ok | 2026-09-04 17:30:09 | 5 skipped, 1 unchanged | 8,806 | 2025 |  |
 | OR | ok | 2026-08-25 14:47:48 | 1 unchanged | 1,822 | 2024 |  |
