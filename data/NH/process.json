@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-10-02 07:42:31",
+  "checked": "2026-10-03 07:16:30",
   "check_results": {
     "data/NH/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]

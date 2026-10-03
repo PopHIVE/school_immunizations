@@ -197,7 +197,11 @@ flowchart LR
     end
     subgraph NY["`NY`"]
         direction LR
-        n43["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, school_id, school_name, district, school_type</code></li></ul>`"]:::warn
+        n43["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, school_id, school_name, district, school_type</code></li></ul><br />Script Failed:<br />join_county_fips(NY): 3 row(s) carry 3 label(s) that are not NY counties:
+  STATEN ISLAND
+  Warne
+  BROOKLYN
+Fix the parser, or account for each label with statewide=, no_fips=, drop= or drop_na=.`"]:::fail
     end
     subgraph OH["`OH`"]
         direction LR
