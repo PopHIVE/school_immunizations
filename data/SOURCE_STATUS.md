@@ -1,6 +1,6 @@
 # Source status
 
-Checked 2026-09-28 13:05 UTC by `scripts/check_sources.R`. Do not edit by hand.
+Checked 2026-10-05 13:59 UTC by `scripts/check_sources.R`. Do not edit by hand.
 
 Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream changed` (ETag or Last-Modified differs from the last fetch), `stale` (the school year that should be available by now has not been ingested), `unreachable` (an HTTP error), `no response` (the runner could not connect; check from a workstation), `pattern matched nothing`, `not automatable` (manual, request or dashboard sources; staleness only), `unverifiable` (site blocks this client).
 
@@ -28,7 +28,7 @@ Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream chang
 | FL | flhealthcharts_kindergarten | report_viewer | ok | 2025 | 2025 |  |
 | FL | scraped_exemptions | manual | not automatable |  |  |  |
 | GA | dph_no_source | request | not automatable | 2025 |  |  |
-| HI | doh_exemption_reports | index_page | ok | 2024 | 2024 | 12 unmatched data link(s) on page, e.g. 11-157.pdf; Immunization_Examination_Req_Report_for_School_Year_24_25.pdf; Immunization_Examination_Req_Report_for_School_Year_23_24.pdf |
+| HI | doh_exemption_reports | index_page | stale | 2025 | 2024 | 12 unmatched data link(s) on page, e.g. 11-157.pdf; Immunization_Examination_Req_Report_for_School_Year_24_25.pdf; Immunization_Examination_Req_Report_for_School_Year_23_24.pdf \| expected school year 2025, latest ingested 2024 |
 | IA | audit_exemption_csvs | manual | stale | 2025 | 2024 | expected school year 2025, latest ingested 2024 |
 | IA | kindergarten_summary_pdf | index_page | ok | 2025 | 2025 | 19 unmatched data link(s) on page, e.g. K-12%20Immunization%20Summary%202025-26.pdf; K-12%20Grade%20Summary%20by%20School%202025-26.pdf; K-12%20Grade%20Summary%20by%20School%202024-25.pdf |
 | ID | dhw_data_request | request | not automatable | 2025 |  |  |
@@ -55,7 +55,7 @@ Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream chang
 | NJ | njdoh_status_reports | manual | not automatable | 2025 |  |  |
 | NM | nmdoh_exemption_csvs | manual | not automatable | 2025 |  |  |
 | NV | dpbh_mmr_workbook | request | not automatable | 2025 |  |  |
-| NY | socrata_2019_on | socrata | stale | 2025 | 2024 | expected school year 2025, latest ingested 2024 |
+| NY | socrata_2019_on | socrata | upstream changed | 2025 | 2024 | server: "anVsaWV0dC4xMzcwNF8xXzY1RndWTERzeXR1cDU2aDFVdkVLN1Q1VXBaY2xR---gzipkj18_odLqAZH32B0YcJZ6BYIL8w--gzip" / Fri, 02 Oct 2026 20:00:29 GMT; recorded: "anVsaWV0dC4xMzcwNF8xXzYyRndWTERzeXR1cDU2aDFVdkVLN1Q1VXBaY2xR---gzipkj18_odLqAZH32B0YcJZ6BYIL8w--gzip--gzip" / Tue, 23 Jun 2026 12:49:12 GMT \| expected school year 2025, latest ingested 2024 |
 | NY | socrata_2012_2018 | socrata | ok |  | 2018 |  |
 | OH | dataohio_dashboard | dashboard | not automatable | 2025 |  |  |
 | OK | osdh_county_tables | index_page | ok | 2025 | 2025 | 17 unmatched data link(s) on page, e.g. Title-70-Oklahoma-School-Immunization-Law.pdf; immunization-regulations.pdf; Guide%20To%20Immunization%20Requirements.pdf |
