@@ -1,6 +1,6 @@
 # Source status
 
-Checked 2026-10-05 13:59 UTC by `scripts/check_sources.R`. Do not edit by hand.
+Checked 2026-10-12 14:36 UTC by `scripts/check_sources.R`. Do not edit by hand.
 
 Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream changed` (ETag or Last-Modified differs from the last fetch), `stale` (the school year that should be available by now has not been ingested), `unreachable` (an HTTP error), `no response` (the runner could not connect; check from a workstation), `pattern matched nothing`, `not automatable` (manual, request or dashboard sources; staleness only), `unverifiable` (site blocks this client).
 
@@ -67,8 +67,8 @@ Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream chang
 | SC | dph_county_page | dashboard | stale | 2025 | 2022 | expected school year 2025, latest ingested 2022 |
 | SD | doh_data_request | request | not automatable | 2025 |  |  |
 | TN | tdh_mmr_county | static | ok |  | 2024 |  |
-| TN | kindergarten_compliance_pdf | index_page | stale | 2025 | 2024 | 174 unmatched data link(s) on page, e.g. 2024-Immunization-Status-Survey-of-24-Month-Old-Children.pdf; 2023_Immunization_Status_Survey_of_24-Month-Old_Children.pdf; 2022-24-Month-Old-Survey.pdf \| expected school year 2025, latest ingested 2024 |
-| TN | kindergarten_school_reports_pdf | index_page | ok |  | 2018 | 176 unmatched data link(s) on page, e.g. 2024-Immunization-Status-Survey-of-24-Month-Old-Children.pdf; 2023_Immunization_Status_Survey_of_24-Month-Old_Children.pdf; 2022-24-Month-Old-Survey.pdf |
+| TN | kindergarten_compliance_pdf | index_page | stale | 2025 | 2024 | 175 unmatched data link(s) on page, e.g. 2024-Immunization-Status-Survey-of-24-Month-Old-Children.pdf; 2023_Immunization_Status_Survey_of_24-Month-Old_Children.pdf; 2022-24-Month-Old-Survey.pdf \| expected school year 2025, latest ingested 2024 |
+| TN | kindergarten_school_reports_pdf | index_page | ok |  | 2018 | 177 unmatched data link(s) on page, e.g. 2024-Immunization-Status-Survey-of-24-Month-Old-Children.pdf; 2023_Immunization_Status_Survey_of_24-Month-Old_Children.pdf; 2022-24-Month-Old-Survey.pdf |
 | TN | kindergarten_survey_csv | static | ok |  | 2021 |  |
 | TX | dshs_coverage_workbooks | index_page | ok | 2025 | 2025 | 7 unmatched data link(s) on page, e.g. 2025-2026-annual-report-of-immunization-status-of-students.pdf; 2024-2025_Annual_Report_of_Immunization_Status_of_Students.pdf; 2023-2024_Annual_Report_of_Immunization_Status_of_Students.pdf |
 | TX | dshs_conscientious_exemptions | index_page | ok | 2025 | 2025 | 8 unmatched data link(s) on page, e.g. 2025-2026-conscientious-exemptions-by-school-district.pdf; 2024-2025_K-12_Conscientious_Exemptions_by_District.pdf; 2023-2024_K-12_Conscientious_Exemptions_by_District.pdf |
