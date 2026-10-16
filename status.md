@@ -146,7 +146,7 @@ flowchart LR
     end
     subgraph ME["`ME`"]
         direction LR
-        n31["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, school_name, grade</code></li></ul>`"]:::warn
+        n31["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, school_name, grade</code></li></ul><br />Script Failed:<br />length(urls) == length(dests) is not TRUE`"]:::fail
     end
     subgraph MI["`MI`"]
         direction LR
