@@ -18,7 +18,7 @@
       }
     }
   ],
-  "checked": "2026-10-18 06:47:01",
+  "checked": "2026-10-19 07:07:09",
   "check_results": {
     "data/TN/raw/KINDERGARTEN_SURVEY.csv": {
       "data": "not_compressed"
@@ -61,7 +61,7 @@
       "status": "skipped",
       "bytes": 14816,
       "sha256": "49a636c83dd610610b920c76068cfd17823fdf3b2e76947a84e41148e7ca9500",
-      "fetched_at": "2026-10-18 06:46:09",
+      "fetched_at": "2026-10-19 07:06:19",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2024.pdf": {
@@ -121,14 +121,12 @@
     "raw/KINDERGARTEN_SURVEY.csv": {
       "url": "https://www.tn.gov/content/dam/tn/health/documents/cedep/coverage-rate-dashboard/KINDERGARTEN_SURVEY.csv",
       "dest": "raw/KINDERGARTEN_SURVEY.csv",
-      "status": "unchanged",
-      "http_status": 200,
+      "status": "failed",
       "bytes": 218135,
       "sha256": "8220682b9a78e7b801f5844cabd65a55bdabb7546313857d2df406d048d86e73",
-      "etag": "\"35417-60258d473cb40-gzip\"",
-      "last_modified": "Mon, 07 Aug 2023 17:46:45 GMT",
-      "fetched_at": "2026-10-18 06:46:34",
-      "attempts": 1
+      "fetched_at": "2026-10-19 07:06:59",
+      "attempts": 3,
+      "error": "attempt 1: HTTP 403; attempt 2: HTTP 403; attempt 3: HTTP 403"
     },
     "raw/kindergarten_schools_2018_public.pdf": {
       "url": "https://www.tn.gov/content/dam/tn/health/documents/cedep-weeklyreports/kindergarten-immunization-compliance/2018_19_Public_Report.pdf",

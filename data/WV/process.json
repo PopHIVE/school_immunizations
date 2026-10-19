@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-10-18 06:47:02",
+  "checked": "2026-10-19 07:07:10",
   "check_results": {
     "data/WV/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
