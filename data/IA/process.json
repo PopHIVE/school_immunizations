@@ -43,7 +43,7 @@
       }
     }
   ],
-  "checked": "2026-10-21 06:46:01",
+  "checked": "2026-10-22 06:50:33",
   "check_results": {
     "data/IA/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
