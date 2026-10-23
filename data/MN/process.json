@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-10-22 06:50:33",
+  "checked": "2026-10-23 07:22:18",
   "check_results": {
     "data/MN/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -35,36 +35,36 @@
       "url": "https://www.health.state.mn.us/people/immunize/stats/school/kcounty2526.xlsx",
       "dest": "raw/kcounty2526.xlsx",
       "status": "unchanged",
-      "http_status": 304,
+      "http_status": 200,
       "bytes": 38342,
       "sha256": "c20101aa989ecfe3f733512caec69ce08787432245bd57120fb816de5af578fd",
-      "etag": "\"1776170579\"",
-      "last_modified": "Tue, 14 Apr 2026 12:42:59 GMT",
-      "fetched_at": "2026-09-09 14:09:04",
+      "etag": "\"888363fdb3bc5c78a20fb71ee63d910dae877730de099b634c6aa3b7c8ef56b8\"",
+      "last_modified": "Tue, 14 Apr 2026 12:43:14 GMT",
+      "fetched_at": "2026-10-23 07:21:29",
       "attempts": 1
     },
     "raw/kcounty2425.xlsx": {
       "url": "https://www.health.state.mn.us/people/immunize/stats/school/kcounty2425.xlsx",
       "dest": "raw/kcounty2425.xlsx",
       "status": "unchanged",
-      "http_status": 304,
+      "http_status": 200,
       "bytes": 37965,
       "sha256": "7cf00c7d5cd06cc91d55dfb918fdf0ad1ca4fada521573d5082d7b05835969e6",
-      "etag": "\"1746733583\"",
-      "last_modified": "Thu, 08 May 2025 19:46:23 GMT",
-      "fetched_at": "2026-09-09 14:09:04",
+      "etag": "\"63ed3a3f279133b682316a36961db6d13f0ac5610df3b74d2b9cfe4412b40dec\"",
+      "last_modified": "Thu, 08 May 2025 19:46:52 GMT",
+      "fetched_at": "2026-10-23 07:21:29",
       "attempts": 1
     },
     "raw/kcounty2324.xlsx": {
       "url": "https://www.health.state.mn.us/people/immunize/stats/school/kcounty2324.xlsx",
       "dest": "raw/kcounty2324.xlsx",
       "status": "unchanged",
-      "http_status": 304,
+      "http_status": 200,
       "bytes": 35877,
       "sha256": "665b2ab8354471811ea669f8584a4e6045fec385106607d1cb6989c04f436f12",
-      "etag": "\"1710254889\"",
-      "last_modified": "Tue, 12 Mar 2024 14:48:09 GMT",
-      "fetched_at": "2026-09-09 14:09:04",
+      "etag": "\"2da1cca77bf71d61ecfe3655478507db252be4f2c55761884476e625624327df\"",
+      "last_modified": "Tue, 12 Mar 2024 14:49:00 GMT",
+      "fetched_at": "2026-10-23 07:21:29",
       "attempts": 1
     }
   }
