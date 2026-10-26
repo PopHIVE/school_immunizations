@@ -18,7 +18,7 @@
       }
     }
   ],
-  "checked": "2026-10-25 07:07:13",
+  "checked": "2026-10-26 07:14:10",
   "check_results": {
     "data/TN/raw/KINDERGARTEN_SURVEY.csv": {
       "data": "not_compressed"
@@ -61,7 +61,7 @@
       "status": "skipped",
       "bytes": 14816,
       "sha256": "49a636c83dd610610b920c76068cfd17823fdf3b2e76947a84e41148e7ca9500",
-      "fetched_at": "2026-10-25 07:06:23",
+      "fetched_at": "2026-10-26 07:13:18",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2024.pdf": {
@@ -70,7 +70,7 @@
       "status": "skipped",
       "bytes": 283394,
       "sha256": "0f47bc88a9061d6081074f188150a51b6b8b34aa839da9bc0b0899b0a4c61b3e",
-      "fetched_at": "2026-10-23 07:21:51",
+      "fetched_at": "2026-10-26 07:13:39",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2023.pdf": {
@@ -79,7 +79,7 @@
       "status": "skipped",
       "bytes": 353179,
       "sha256": "6985d2e2b5b149e35a3192fd53f9798416375e555cdccefbba6e86245e6b085b",
-      "fetched_at": "2026-10-23 07:21:51",
+      "fetched_at": "2026-10-26 07:13:40",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2022.pdf": {
@@ -88,7 +88,7 @@
       "status": "skipped",
       "bytes": 392211,
       "sha256": "a329fd889c37f24e6d34c5d0ca8a2f49af0e1d2a908b7285e8b6f3fb2def2973",
-      "fetched_at": "2026-10-23 07:21:51",
+      "fetched_at": "2026-10-26 07:13:40",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2021.pdf": {
@@ -97,7 +97,7 @@
       "status": "skipped",
       "bytes": 422743,
       "sha256": "ba6f27e883ab8b3acca4ebfda9fc79a7044bc8ababec6c5e1114a14c700130cd",
-      "fetched_at": "2026-10-23 07:21:51",
+      "fetched_at": "2026-10-26 07:13:40",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2020.pdf": {
@@ -106,7 +106,7 @@
       "status": "skipped",
       "bytes": 259621,
       "sha256": "e653b04eb77158eaa7ac7fcbd02d3e6e3f9f1d5184821cc18b53d800cf849e43",
-      "fetched_at": "2026-10-23 07:21:52",
+      "fetched_at": "2026-10-26 07:13:40",
       "attempts": 0
     },
     "raw/kindergarten_compliance_2019.pdf": {
@@ -115,18 +115,20 @@
       "status": "skipped",
       "bytes": 954632,
       "sha256": "c377965b09762904227fa2afdd09d88005da0c7777e2b3796d8b69eee1828b57",
-      "fetched_at": "2026-10-23 07:21:52",
+      "fetched_at": "2026-10-26 07:13:40",
       "attempts": 0
     },
     "raw/KINDERGARTEN_SURVEY.csv": {
       "url": "https://www.tn.gov/content/dam/tn/health/documents/cedep/coverage-rate-dashboard/KINDERGARTEN_SURVEY.csv",
       "dest": "raw/KINDERGARTEN_SURVEY.csv",
-      "status": "failed",
+      "status": "unchanged",
+      "http_status": 200,
       "bytes": 218135,
       "sha256": "8220682b9a78e7b801f5844cabd65a55bdabb7546313857d2df406d048d86e73",
-      "fetched_at": "2026-10-25 07:07:03",
-      "attempts": 3,
-      "error": "attempt 1: HTTP 403; attempt 2: HTTP 403; attempt 3: HTTP 403"
+      "etag": "\"35417-60258d473cb40-gzip\"",
+      "last_modified": "Mon, 07 Aug 2023 17:46:45 GMT",
+      "fetched_at": "2026-10-26 07:13:58",
+      "attempts": 1
     },
     "raw/kindergarten_schools_2018_public.pdf": {
       "url": "https://www.tn.gov/content/dam/tn/health/documents/cedep-weeklyreports/kindergarten-immunization-compliance/2018_19_Public_Report.pdf",
@@ -134,7 +136,7 @@
       "status": "skipped",
       "bytes": 422659,
       "sha256": "4a6474ff9336d01bd08247bb0d00e5ba7e597c525deb97df75530436d3ae00e7",
-      "fetched_at": "2026-10-23 07:21:59",
+      "fetched_at": "2026-10-26 07:13:48",
       "attempts": 0
     },
     "raw/kindergarten_schools_2018_private.pdf": {
@@ -143,7 +145,7 @@
       "status": "skipped",
       "bytes": 236762,
       "sha256": "5d8fd95b631bd6a1ec1b50d856dc0e08d15997f90e0e63461804836ed9a2ec0c",
-      "fetched_at": "2026-10-23 07:21:59",
+      "fetched_at": "2026-10-26 07:13:49",
       "attempts": 0
     },
     "raw/kindergarten_schools_2017_public.pdf": {
@@ -152,7 +154,7 @@
       "status": "skipped",
       "bytes": 410425,
       "sha256": "24e3c3636407a202df2ce23fdc5759bf764496d502fad3fba8cef52a5ca923ba",
-      "fetched_at": "2026-10-23 07:22:07",
+      "fetched_at": "2026-10-26 07:13:58",
       "attempts": 0
     },
     "raw/kindergarten_schools_2017_private.pdf": {
@@ -161,7 +163,7 @@
       "status": "skipped",
       "bytes": 222130,
       "sha256": "419de921c6a567a60d10b1edb8c783b0c36d2687aeb16310cf5ebdcd72c9f513",
-      "fetched_at": "2026-10-23 07:22:08",
+      "fetched_at": "2026-10-26 07:13:58",
       "attempts": 0
     }
   }
