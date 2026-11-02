@@ -1,7 +1,6 @@
-# Weekly source check: reachability, new files upstream, staleness. Added
-# 2026-09-08 and not yet exercised on GitHub Actions; the first scheduled run
-# after this lands is the verification, or trigger it by hand with
-# workflow_dispatch (states empty = all, fetch = false).
+# Weekly source check: reachability, new files upstream, staleness. Runs on
+# the Monday schedule, or by hand with workflow_dispatch (states empty = all,
+# fetch = false).
 name: check sources
 
 on:
@@ -20,7 +19,9 @@ on:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    # Pinned for the same reason as build.yaml: ubuntu-latest became 26.04 on
+    # 2026-10-27 and the lockfile's readxl / ragg stack does not build there.
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:

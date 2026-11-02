@@ -5,7 +5,11 @@ on:
 
 jobs:
   process:
-    runs-on: ubuntu-latest
+    # Pinned, not ubuntu-latest: on 2026-10-27 that label moved to Ubuntu
+    # 26.04, which has no Posit binaries and a GCC 15 that cannot compile the
+    # readxl / systemfonts / textshaping / ragg versions in renv.lock. Move
+    # off 24.04 only after updating those packages in the lockfile.
+    runs-on: ubuntu-24.04
     permissions:
       contents: write
     steps:
@@ -31,10 +35,7 @@ jobs:
       # reads every process.json, writes data/BUILD_STATUS.md, and exits
       # non-zero when an ingest failed or a download failed with no
       # committed file to fall back on. The commit still happens first so
-      # the status table and any partial data land in the repo. This step and
-      # the libpoppler-cpp-dev install above (for pdftools) were added on
-      # 2026-09-08 and have not yet run on GitHub Actions; the first nightly
-      # build after they land is the verification.
+      # the status table and any partial data land in the repo.
       - id: status
         run: |
           set +e
