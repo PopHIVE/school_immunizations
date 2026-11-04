@@ -19,7 +19,7 @@
       }
     }
   ],
-  "checked": "2026-11-03 08:48:45",
+  "checked": "2026-11-04 08:16:22",
   "check_results": {
     "data/TX/standard/data_districts.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: district", "missing_info: school_type", "missing_info: grade"]
