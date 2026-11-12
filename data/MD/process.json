@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-11-11 08:35:04",
+  "checked": "2026-11-12 08:59:16",
   "check_results": {
     "data/MD/standard/data.csv.gz": {
       "measures": ["type_changed: geography", "missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: grade"]

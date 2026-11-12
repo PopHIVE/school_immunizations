@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-11-11 08:35:05",
+  "checked": "2026-11-12 08:59:18",
   "check_results": {
     "data/WY/standard/data_kindergarten.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: grade"]
