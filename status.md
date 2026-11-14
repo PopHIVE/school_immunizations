@@ -106,7 +106,7 @@ flowchart LR
     end
     subgraph HI["`HI`"]
         direction LR
-        n21["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, school_type, grade</code></li></ul>`"]:::warn
+        n21["`data.csv.gz<br/><br/><ul><li><code>missing_info: geography_name, type, school_name, school_type, grade</code></li><li><code>type_changed: geography</code></li></ul>`"]:::warn
     end
     subgraph IA["`IA`"]
         direction LR

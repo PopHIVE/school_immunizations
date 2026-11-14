@@ -9,7 +9,7 @@
     "dest_glob": "raw/*.xlsx",
     "publish_month": 10,
     "publish_lag_years": 1,
-    "latest_year_ingested": 2024,
+    "latest_year_ingested": 2025,
     "ci_reachable": true,
     "notes": "Annual school-by-school immunization and examination report; xlsx from 2024-25, PDF only before. Older years were transcribed to xlsx by hand.",
     "last_check_time": "2026-11-09 15:25:22",
