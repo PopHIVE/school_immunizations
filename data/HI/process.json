@@ -88,7 +88,7 @@
       }
     }
   ],
-  "checked": "2026-11-14 08:16:23",
+  "checked": "2026-11-15 08:35:52",
   "check_results": {
     "data/HI/standard/data.csv.gz": {
       "measures": ["type_changed: geography", "missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: school_type", "missing_info: grade"]
@@ -120,20 +120,17 @@
       "status": "skipped",
       "bytes": 53322,
       "sha256": "10e273e1313979a4cf347ec89dc7793c21734ee025ecec6a11ad72e793f277fd",
-      "fetched_at": "2026-11-14 08:14:57",
+      "fetched_at": "2026-11-15 08:34:44",
       "attempts": 0
     },
     "raw/Immunization_Examination_Req_Report_for_School_Year_25_26.xlsx": {
       "url": "https://health.hawaii.gov/docd/files/2026/11/Immunization_Examination_Req_Report_for_School_Year_25_26.xlsx",
       "dest": "raw/Immunization_Examination_Req_Report_for_School_Year_25_26.xlsx",
-      "status": "updated",
-      "http_status": 200,
+      "status": "skipped",
       "bytes": 54047,
       "sha256": "618d3e94a6741b720f09e558af6bbabcb53a4709b9787f50cf51d6cddb707cd4",
-      "etag": "\"da3a08db0ddd9d93189fc9df7dc9317e\"",
-      "last_modified": "Fri, 13 Nov 2026 21:22:16 GMT",
-      "fetched_at": "2026-11-14 08:14:54",
-      "attempts": 1
+      "fetched_at": "2026-11-15 08:34:44",
+      "attempts": 0
     }
   }
 }
