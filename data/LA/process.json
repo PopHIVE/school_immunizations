@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-11-16 08:45:53",
+  "checked": "2026-11-17 09:52:43",
   "check_results": {
     "data/LA/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
