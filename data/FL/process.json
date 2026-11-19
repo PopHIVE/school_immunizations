@@ -37,7 +37,7 @@
       }
     }
   ],
-  "checked": "2026-11-18 09:44:37",
+  "checked": "2026-11-19 09:40:06",
   "check_results": {
     "data/FL/standard/data_exemptions.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: grade"]
@@ -121,9 +121,9 @@
       "http_status": 200,
       "bytes": 15735,
       "sha256": "01f3d7efe19ee5f042ad93b969dc777ae3d71301b2910717d2e0b3e2a617faa4",
-      "etag": "W/\"95e72c4f4177dd1:0\"",
-      "last_modified": "Wed, 18 Nov 2026 09:43:47 GMT",
-      "fetched_at": "2026-11-18 09:43:48",
+      "etag": "W/\"9a6191b6978dd1:0\"",
+      "last_modified": "Thu, 19 Nov 2026 09:38:20 GMT",
+      "fetched_at": "2026-11-19 09:38:21",
       "attempts": 1
     },
     "raw/FL_kindergarten_early10yr.xlsx": {
@@ -133,9 +133,9 @@
       "http_status": 200,
       "bytes": 15863,
       "sha256": "ad861f9843bb29cfaf77259f7aff5e8d9ba952c8c9b057e394031fa2b8587028",
-      "etag": "W/\"8f7c4c514177dd1:0\"",
-      "last_modified": "Wed, 18 Nov 2026 09:43:51 GMT",
-      "fetched_at": "2026-11-18 09:43:52",
+      "etag": "W/\"357eafb8978dd1:0\"",
+      "last_modified": "Thu, 19 Nov 2026 09:38:23 GMT",
+      "fetched_at": "2026-11-19 09:38:25",
       "attempts": 1
     }
   }
