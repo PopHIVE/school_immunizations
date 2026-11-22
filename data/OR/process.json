@@ -14,7 +14,7 @@
       }
     }
   ],
-  "checked": "2026-11-21 08:59:37",
+  "checked": "2026-11-22 09:01:47",
   "check_results": {
     "data/OR/standard/data.csv.gz": {
       "measures": ["missing_info: geography_name", "missing_info: type", "missing_info: school_name", "missing_info: grade"]
@@ -32,15 +32,12 @@
     "raw/SchK-12.xlsx": {
       "url": "https://www.oregon.gov/oha/PH/PREVENTIONWELLNESS/VACCINESIMMUNIZATION/GETTINGIMMUNIZED/Documents/SchK-12.xlsx",
       "dest": "raw/SchK-12.xlsx",
-      "status": "unchanged",
-      "http_status": 200,
+      "status": "failed",
       "bytes": 402766,
       "sha256": "1ec0083e48bbf116d8911b3be9e8e87503ba0f5e325ad10a48e06c56b636db24",
-      "etag": "\"{5F51D93E-2E18-4222-9C80-DE77FA26F969},40\"",
-      "last_modified": "Wed, 19 Aug 2026 04:54:19 GMT",
-      "fetched_at": "2026-09-04 16:20:59",
-      "attempts": 1,
-      "error": {}
+      "fetched_at": "2026-11-22 09:01:01",
+      "attempts": 3,
+      "error": "attempt 1: HTTP 200 but does not start with a workbook signature; attempt 2: HTTP 200 but only 33 bytes (minimum 1024); attempt 3: HTTP 200 but does not start with a workbook signature"
     }
   }
 }
