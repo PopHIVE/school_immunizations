@@ -1,6 +1,6 @@
 # Source status
 
-Checked 2026-11-16 14:57 UTC by `scripts/check_sources.R`. Do not edit by hand.
+Checked 2026-11-23 17:32 UTC by `scripts/check_sources.R`. Do not edit by hand.
 
 Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream changed` (ETag or Last-Modified differs from the last fetch), `stale` (the school year that should be available by now has not been ingested), `unreachable` (an HTTP error), `no response` (the runner could not connect; check from a workstation), `pattern matched nothing`, `not automatable` (manual, request or dashboard sources; staleness only), `unverifiable` (site blocks this client).
 
@@ -42,7 +42,7 @@ Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream chang
 | MA | mass_gov_archive | index_page | unverifiable | 2025 |  | site blocks datacenter IPs; not checked from CI |
 | MD | mdh_by_school | index_page | ok | 2025 | 2025 | 5 unmatched data link(s) on page, e.g. ImmuNet_Reminder-Recall-Request.pdf; 2018-2019-Maryland-Schools-Kindergarten.xlsx; 2017-2018-Maryland-Schools-Kindergarten.xlsx |
 | ME | mecdc_workbooks | index_page | stale | 2025 | 2024 | 59 unmatched data link(s) on page, e.g. 2025%20Healthcare%20Facility%20Immunization%20Assessment%20Report%20FINAL_3.pdf; 2024%20HCW%20Immunization%20Assessment%20FINAL.pdf; 2023%20Healthcare%20Worker%20Immunization%20Assessment%20FINAL%20DRAFT.pdf \| expected school year 2025, latest ingested 2024 |
-| MI | mdhhs_building_files | index_page | stale | 2025 | 2024 | 8 unmatched data link(s) on page, e.g. MDHHS-Dept-Overview.pdf; Nonmedical-Waiver-Frequently-Asked-Questions.pdf; School-Summary_ADA_2024.pdf \| expected school year 2025, latest ingested 2024 |
+| MI | mdhhs_building_files | index_page | stale | 2025 | 2024 | 7 unmatched data link(s) on page, e.g. MDHHS-Dept-Overview.pdf; Nonmedical-Waiver-Frequently-Asked-Questions.pdf; School-Summary_ADA_2025.pdf \| expected school year 2025, latest ingested 2024 |
 | MN | mdh_county_workbooks | index_page | ok | 2025 | 2025 | 36 unmatched data link(s) on page, e.g. aisrsumm2526.pdf; kdistrict2526.xlsx; kschool2526.xlsx |
 | MO | dhss_dashboard_workbook | dashboard | not automatable | 2025 |  |  |
 | MS | msdh_exemption_records | manual | not automatable | 2025 |  |  |
@@ -67,9 +67,9 @@ Status values: `ok`, `new files` (posted upstream, not in raw/), `upstream chang
 | SC | dph_county_page | dashboard | stale | 2025 | 2022 | expected school year 2025, latest ingested 2022 |
 | SD | doh_data_request | request | not automatable | 2025 |  |  |
 | TN | tdh_mmr_county | static | ok |  | 2024 |  |
-| TN | kindergarten_compliance_pdf | index_page | stale | 2025 | 2024 | 175 unmatched data link(s) on page, e.g. 2024-Immunization-Status-Survey-of-24-Month-Old-Children.pdf; 2023_Immunization_Status_Survey_of_24-Month-Old_Children.pdf; 2022-24-Month-Old-Survey.pdf \| expected school year 2025, latest ingested 2024 |
-| TN | kindergarten_school_reports_pdf | index_page | ok |  | 2018 | 177 unmatched data link(s) on page, e.g. 2024-Immunization-Status-Survey-of-24-Month-Old-Children.pdf; 2023_Immunization_Status_Survey_of_24-Month-Old_Children.pdf; 2022-24-Month-Old-Survey.pdf |
-| TN | kindergarten_survey_csv | static | ok |  | 2021 |  |
+| TN | kindergarten_compliance_pdf | index_page | unverifiable | 2025 | 2024 | HTTP 403: site refused this client; check from a workstation \| expected school year 2025, latest ingested 2024 |
+| TN | kindergarten_school_reports_pdf | index_page | unverifiable |  | 2018 | HTTP 403: site refused this client; check from a workstation |
+| TN | kindergarten_survey_csv | static | unverifiable |  | 2021 | HTTP 403 for https://www.tn.gov/content/dam/tn/health/documents/cedep/coverage-rate-dashboard/KINDERGARTEN_SURVEY.csv; check from a workstation |
 | TX | dshs_coverage_workbooks | index_page | ok | 2025 | 2025 | 7 unmatched data link(s) on page, e.g. 2025-2026-annual-report-of-immunization-status-of-students.pdf; 2024-2025_Annual_Report_of_Immunization_Status_of_Students.pdf; 2023-2024_Annual_Report_of_Immunization_Status_of_Students.pdf |
 | TX | dshs_conscientious_exemptions | index_page | ok | 2025 | 2025 | 8 unmatched data link(s) on page, e.g. 2025-2026-conscientious-exemptions-by-school-district.pdf; 2024-2025_K-12_Conscientious_Exemptions_by_District.pdf; 2023-2024_K-12_Conscientious_Exemptions_by_District.pdf |
 | UT | udhhs_exemption_workbook | request | not automatable | 2025 |  |  |
