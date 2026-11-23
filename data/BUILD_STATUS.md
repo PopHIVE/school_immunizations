@@ -1,6 +1,6 @@
 # Build status
 
-Written 2026-11-22 09:01 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
+Written 2026-11-23 10:20 UTC by `scripts/build_status.R` after `dcf::dcf_build()`. Do not edit by hand.
 
 | State | Ingest | Last run | Fetches | Rows | Latest year | Error |
 |---|---|---|---|---|---|---|
@@ -11,10 +11,10 @@ Written 2026-11-22 09:01 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | CA | ok | 2026-09-11 15:17:50 | 4 failed | 696 | 2024 |  |
 | CO | ok | 2026-09-11 15:18:35 | 5 unchanged | 1,743 | 2025 |  |
 | CT | ok | 2026-09-11 15:18:42 | 4 unchanged | 448 | 2025 |  |
-| DC | ok | 2026-11-22 08:59:40 |  |  |  |  |
+| DC | ok | 2026-11-23 10:19:17 |  |  |  |  |
 | DE | ok | 2026-09-08 14:50:31 | 2 unchanged | 7 | 2022 |  |
 | FL | ok | 2026-09-11 15:19:00 | 2 unchanged | 1,407 | 2025 |  |
-| GA | ok | 2026-11-22 08:59:57 |  |  |  |  |
+| GA | ok | 2026-11-23 10:19:35 |  |  |  |  |
 | HI | ok | 2026-11-14 08:14:58 | 2 skipped | 4,539 | 2025 |  |
 | IA | ok | 2026-09-08 14:55:53 | 7 skipped | 2,086 | 2025 |  |
 | ID | ok | 2026-08-25 14:47:12 |  | 308 | 2024 |  |
@@ -33,7 +33,7 @@ Written 2026-11-22 09:01 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | MT | ok | 2026-08-25 14:47:35 |  | 224 | 2020 |  |
 | NC | ok | 2026-08-25 14:47:35 |  | 397 | 2023 |  |
 | ND | ok | 2026-09-11 15:19:28 |  | 5,270 | 2024 |  |
-| NE | ok | 2026-11-22 09:00:05 |  |  |  |  |
+| NE | ok | 2026-11-23 10:19:44 |  |  |  |  |
 | NH | ok | 2026-08-25 14:47:37 |  | 40 | 2024 |  |
 | NJ | ok | 2026-08-25 14:47:37 |  | 1,584 | 2024 |  |
 | NM | ok | 2026-08-25 14:47:38 |  | 442 | 2023 |  |
@@ -41,7 +41,7 @@ Written 2026-11-22 09:01 UTC by `scripts/build_status.R` after `dcf::dcf_build()
 | NY | ok | 2026-10-01 08:06:25 | 1 skipped, 1 unchanged | 69,554 | 2024 |  |
 | OH | ok | 2026-09-09 09:39:16 |  | 88 | 2024 |  |
 | OK | ok | 2026-09-04 17:30:09 | 5 skipped, 1 unchanged | 8,806 | 2025 |  |
-| OR | ok | 2026-08-25 14:47:48 | 1 failed | 1,822 | 2024 |  |
+| OR | ok | 2026-08-25 14:47:48 | 1 unchanged | 1,822 | 2024 |  |
 | PA | ok | 2026-08-25 14:47:50 | 6 skipped | 1,606 | 2025 |  |
 | RI | ok | 2026-08-25 14:47:50 |  | 21 | 2024 |  |
 | SC | ok | 2026-09-08 14:52:28 | 1 skipped, 1 unchanged | 3,271 | 2025 |  |
